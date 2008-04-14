@@ -54,62 +54,49 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-# ifndef __CTI_HEADER_H_
-# define __CTI_HEADER_H_
+// CTIMask.h: interface for the CTIMask class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(_CTIMASK_H_)
+#define _CTIMASK_H_
 
 #if _MSC_VER > 1000
 #pragma once
 #endif // _MSC_VER > 1000
 
 # if defined (_DEBUG)
-# pragma message( __FILE__" : Image header")
+# pragma message( __FILE__" : Image mask")
 # endif // (_DEBUG)
-
+//////////////////////////////////////////////////////////////////////////////////
 #include "resource.h"
-#include "CTIDefines.h"
-#include "CTIImage.h"
-#include "CTIMemory.h"
-#include "CTIMask.h"
+#include "ctidefines.h"
+#include "ctiimage.h"
+#include "ctimemory.h"
+#include "ctimaskline.h"
+////////////////////////////////////////////////////////////////////////////////////
+class CTIMask;
+typedef CTIMask  *PCTIMask, **PPCTIMask;
 
-class CTIImageHeader
+class CTIMask  
 {
-private:
-	CTIImageHeader *          pNext;
-	Int8                      ImageName[CIMAGE_MAX_IMAGE_NAME];
-	PCIMAGEBITMAPINFOHEADER   ImageInfo;
-	void *                    Image;
-	PCTIMask                  WriteMask;
-	PCTIMask                  ReadMask;
-	Bool32                    ImageExternal;
-	Bool32                    mbEnableReadMask;
-	Bool32                    mbEnableWriteMask;
-	Handle                    hImage;
-
 public:
-	CTIImageHeader();
-	CTIImageHeader(PChar8  lpName, Handle hImagehandle, Word32 Flag);
-	CTIImageHeader(PChar8  lpName, PCIMAGEBITMAPINFOHEADER lpInfo, void * lpImage, Word32 wFlag);
-	~CTIImageHeader();
+	Bool32 GetLine(Word32 wLine, PPCTIMaskLine ppcLine);
+	Bool32        IsRectOnMask(PCIMAGE_Rect pRect);
+	Bool32        RemoveRectangle(PCIMAGE_Rect pRect);
+	Bool32        AddRectangle(PCIMAGE_Rect pRect);
+	CTIMask(Word32 Width, Word32 Height);
+	CTIMask();
+	virtual ~CTIMask();
 
+protected:
+	CTIMaskLine mcLine;
+	Word32 mwMaskHeight;
+	Word32 mwMaskWidth;
+	Word32 mwSegments;
+	Word32 mwLines;
 private:
-
-public:
-	Bool32                    IsMaskEnabled(PChar8 MaskType);
-	Bool32                    EnableMask(PChar8 cMaskType, Bool32 mEnabled);
-	Bool32                    CheckName(PChar8  Name);
-	CTIImageHeader *          GetNext(void) { return pNext; };
-	CTIImageHeader *          SetNext(CTIImageHeader * pSet ) { return (pNext = pSet); };
-	void *                    GetImage(void) { return Image; };
-	PCIMAGEBITMAPINFOHEADER   GetImageInfo(void) { return ImageInfo; };
-	Bool32                    IsExtImage(void) { return !IsIntImage(); };
-	Bool32                    IsIntImage(void) { return (ImageExternal == 0); };
-	Handle                    GetImageHandle(void) { return hImage; };
-	Handle                    SetImageHandle(Handle NewHandle) { return (hImage = NewHandle); };
-	Bool32                    SetWriteMask(PCTIMask WMask){return ((WriteMask = WMask) != NULL); };
-	PCTIMask                  GetWriteMask(void){return WriteMask; };
-	Bool32                    SetReadMask(PCTIMask RMask) {return ((ReadMask = RMask) != NULL); };
-	PCTIMask                  GetReadMask(void) {return ReadMask; };
+	Bool32 SetPtrToPrevLine(Word32 wLine, PPCTIMaskLine ppLine);
 };
-# endif    //__CTI_HEADER_H_
-//////////////////////////////////////////////////////////////////////////////////////////////////////////
-// end of file
+
+#endif // !defined(_CTIMASK_H_)

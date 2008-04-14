@@ -54,199 +54,216 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-// CTIMaskLineSegment.cpp: implementation of the CTIMaskLineSegment class.
+// CTIMask.cpp: implementation of the CTIMask class.
 //
 //////////////////////////////////////////////////////////////////////
 
-#include "CTIMaskLineSegment.h"
+#include "ctimask.h"
 
 //////////////////////////////////////////////////////////////////////
 // Construction/Destruction
 //////////////////////////////////////////////////////////////////////
 
-CTIMaskLineSegment::CTIMaskLineSegment()
-                   : mpNext(NULL), 
-				     mwStart(-1), 
-					 mwEnd(-1)
-{
-}
+CTIMask::CTIMask()
+        :mwMaskWidth(0),
+		 mwMaskHeight(0),
+		 mwSegments(0),
+		 mcLine(0),
+		 mwLines(0) {}
 
-CTIMaskLineSegment::~CTIMaskLineSegment()
-{
+CTIMask::CTIMask(Word32 Width, Word32 Height)
+        :mwMaskWidth(Width),
+		 mwMaskHeight(Height),
+		 mwSegments(0),
+		 mcLine(0),
+		 mwLines(0) {}
 
-}
-
-CTIMaskLineSegment::CTIMaskLineSegment(Int32 Start, Int32 End) 
-                   : mpNext(NULL), 
-				     mwStart(-1), 
-					 mwEnd(-1)
+CTIMask::~CTIMask()
 {
-	if ( Start >= 0 && End >= 0 && Start <= End)
+	PCTIMaskLine  pPL = mcLine.GetNext();
+	PCTIMaskLine  pL = mcLine.GetNext();
+
+	while ( pL )
 	{
-		mwStart = Start;
-		mwEnd   = End; 
+		pL = pL->GetNext();
+		delete pPL;
+		pPL = pL;
 	}
 }
 
-CTIMaskLineSegment::CTIMaskLineSegment(PCTIMaskLineSegment pSegm) 
-                   : mpNext(pSegm->GetNext()), 
-				     mwStart(pSegm->GetStart()), 
-					 mwEnd(pSegm->GetEnd())
+Bool32 CTIMask::AddRectangle(PCIMAGE_Rect pRect)
 {
-}
+	Word32        wXb;
+	Word32        wXe;
+	Word32        wYb;
+	Word32        wYe;
+	PCTIMaskLine  pPL = &mcLine;
+	PCTIMaskLine  pL;
+	Word32        wLine;
 
-Word32 CTIMaskLineSegment::IsIntersectWith(PCTIMaskLineSegment pSegm)
-{
-	Word32 Intrsct = 0;
-	Word32 S;
-	Word32 E;
-	Int32  iDS;
-	Int32  iDE;
+	if ( !IsRectOnMask(pRect) )
+		return FALSE;
 
-	if ( pSegm )
+	wXb = pRect->dwX;
+	wYb = pRect->dwY;
+	wXe = wXb + pRect->dwWidth;
+	wYe = wYb + pRect->dwHeight;
+
+	CTIMaskLineSegment  Segm(wXb,wXe);
+
+	if ( !SetPtrToPrevLine(wYb, &pPL) )
 	{
-		S = pSegm->GetStart();
-		E = pSegm->GetEnd();
-		iDS = GetPointDirect(S);
-		iDE = GetPointDirect(E);
+		SetReturnCode(IDS_CIMAGE_UNABLE_ADD_MASK);
+		return FALSE;
+	}
+	pL = pPL->GetNext();
 
-		if ( IsEqual(pSegm)	)
-			Intrsct = CTIMLSEGMINTERSECTEQUAL;
+	for ( wLine = wYb; wLine < wYe; wLine++ )
+	{
+		if ( !pL )
+			pPL->SetNext( pL = new CTIMaskLine(mwMaskWidth, wLine, &Segm) );
 		else
 		{
-			if ( iDS == CTIMLSEGMPOINTLEF && 
-				 iDE == CTIMLSEGMPOINTRIGHT )
-				 Intrsct = CTIMLSEGMINTERSECTOVER;
-			else
+			if ( pL->GetLineNumber() == wLine )
 			{
-				if ( IsPointInSegment(S) )
+				// кладем новый сегмент в линию
+				if ( !pL->AddSegment(&Segm) )
 				{
-					if ( IsPointInSegment(E) )
-						Intrsct = CTIMLSEGMINTERSECTIN;
-					else
-						Intrsct = CTIMLSEGMINTERSECTRIGHT;
-				}
-				else
-				{
-					if ( IsPointInSegment(E) )
-						Intrsct = CTIMLSEGMINTERSECTLEFT;
-					else
-						if ( iDS == CTIMLSEGMPOINTLEF &&
-							 iDE == CTIMLSEGMPOINTLEF    )
-						Intrsct = CTIMLSEGMINTERSECTFULLLEFT;
-						else
-							Intrsct = CTIMLSEGMINTERSECTFULLRIGHT;
+					SetReturnCode(IDS_CIMAGE_UNABLE_ADD_MASK);
+					return FALSE;
 				}
 			}
+			else
+			{
+				// двставляем новую линию
+				pPL->SetNext( pL = new CTIMaskLine(mwMaskWidth, wLine, &Segm, pL) );
+			}
 		}
+			
+		if ( pL )
+			pL = ( (pPL = pL)->GetNext() );
+
 	}
-	return Intrsct;
+
+	mwSegments++;
+	return TRUE;
 }
 
-Bool32 CTIMaskLineSegment::IntersectWith(PCTIMaskLineSegment pSegm)
+Bool32 CTIMask::RemoveRectangle(PCIMAGE_Rect pRect)
 {
-	Bool32 bRet = FALSE;
+	Word32        wXb;
+	Word32        wXe;
+	Word32        wYb;
+	Word32        wYe;
+	PCTIMaskLine  pPL = &mcLine;
+	PCTIMaskLine  pL;
+	Word32        wLine;
 
-	if (pSegm)
-	{
-		switch( IsIntersectWith(pSegm) )
-		{
-		case CTIMLSEGMINTERSECTLEFT :
-			mwEnd  = pSegm->GetEnd();
-			bRet =  TRUE;
-			break;
-		case CTIMLSEGMINTERSECTRIGHT :
-			mwStart = pSegm->GetStart();
-			bRet =  TRUE;
-			break;
-		case CTIMLSEGMINTERSECTIN :
-			mwEnd   = pSegm->GetEnd();
-			mwStart = pSegm->GetStart();
-			bRet = TRUE;
-			break;
-		}
-	}
-	return bRet;
-}
+	if ( !IsRectOnMask(pRect) )
+		return FALSE;
 
-Bool32 CTIMaskLineSegment::AddWith(PCTIMaskLineSegment pSegm)
-{
-	Bool32 bRet = FALSE;
+	wXb = pRect->dwX;
+	wYb = pRect->dwY;
+	wXe = wXb + pRect->dwWidth;
+	wYe = wYb + pRect->dwHeight;
 
-	if (pSegm)
-	{
-		switch( IsIntersectWith(pSegm) )
-		{
-		case CTIMLSEGMINTERSECTLEFT :
-			mwStart = pSegm->GetStart();
-			bRet = TRUE;
-			break;
-		case CTIMLSEGMINTERSECTRIGHT :
-			mwEnd  = pSegm->GetEnd();
-			bRet = TRUE;
-			break;
-		case CTIMLSEGMINTERSECTIN :
-			bRet = TRUE;
-			break;
-		case CTIMLSEGMINTERSECTOVER:
-			mwStart = pSegm->GetStart();
-			mwEnd  = pSegm->GetEnd();
-			bRet = TRUE;
-			break;
-		}
-	}
-	return bRet;
-}
-
-Bool32 CTIMaskLineSegment::CutLeftTo(PCTIMaskLineSegment pSegm)
-{
-	Bool32 bRet = FALSE;
-
-	if (pSegm)
-	{
-		switch( IsIntersectWith(pSegm) )
-		{
-		case CTIMLSEGMINTERSECTRIGHT :
-		case CTIMLSEGMINTERSECTIN :
-			mwEnd  = pSegm->GetStart();
-			bRet = TRUE;
-			break;
-		}
-	}
-	return bRet;
-}
-
-Bool32 CTIMaskLineSegment::CutRightTo(PCTIMaskLineSegment pSegm)
-{
-	Bool32 bRet = FALSE;
-
-	if (pSegm)
-	{
-		switch( IsIntersectWith(pSegm) )
-		{
-		case CTIMLSEGMINTERSECTLEFT :
-		case CTIMLSEGMINTERSECTIN :
-			mwStart = pSegm->GetEnd();
-			bRet = TRUE;
-			break;
-		}
-	}
-	return bRet;
-}
-
-Int32 CTIMaskLineSegment::GetPointDirect(Word32 X)
-{
-	Int32 iRet = CTIMLSEGMPOINTIN;
-
-	if ( !IsPointInSegment(X) )
-	{
-		if ( (Int32)X < GetStart() )
-			iRet = CTIMLSEGMPOINTLEF;
-		else
-			iRet = CTIMLSEGMPOINTRIGHT;
-	}
+	CTIMaskLineSegment  Segm(wXb,wXe);
 	
-	return iRet;
+	if ( !SetPtrToPrevLine(wYb, &pPL) )
+	{
+		SetReturnCode(IDS_CIMAGE_UNABLE_REMOVE_MASK);
+		return FALSE;
+	}
+	pL = pPL->GetNext();
+
+	for ( wLine = wYb; wLine < wYe; wLine++ )
+	{
+		if ( !pL )
+		{
+			SetReturnCode(IDS_CIMAGE_UNABLE_REMOVE_MASK);
+			return FALSE;
+		}
+		else
+			if ( !pL->RemoveSegment(&Segm) )
+			{
+				SetReturnCode(IDS_CIMAGE_UNABLE_REMOVE_MASK);
+				return FALSE;
+			}
+
+		if ( pL->GetSegmentsNumber() == 0 )
+		{
+			pPL->SetNext(pL->GetNext());
+			delete pL;
+			pL = pPL->GetNext();
+		}
+
+		if ( pL )
+			pL = ( (pPL = pL)->GetNext() );
+	}
+
+	mwSegments--;
+	return TRUE;
 }
-/////////////////////////////////////////////////////////////////////////
-// end of file
+
+
+Bool32 CTIMask::IsRectOnMask(PCIMAGE_Rect pRect)
+{
+	return  ( pRect &&
+		     ( pRect->dwX < (Int32)mwMaskWidth || 
+		      (pRect->dwX + pRect->dwWidth) < mwMaskWidth || 
+			  pRect->dwY < (Int32)mwMaskHeight || 
+			  (pRect->dwY + pRect->dwHeight) < mwMaskHeight ) );
+}
+
+Bool32 CTIMask::SetPtrToPrevLine(Word32 wLine, PPCTIMaskLine ppLine)
+{
+	if ( !ppLine )
+		return FALSE;
+
+	while ( (*ppLine)->GetNext() )
+	{
+		if ( ((*ppLine)->GetNext())->GetLineNumber() >= wLine )
+			break;
+
+		(*ppLine) = ((*ppLine)->GetNext());
+	}
+
+	return TRUE;
+}
+
+Bool32 CTIMask::GetLine(Word32 wLine, PPCTIMaskLine ppcLine)
+{
+	PCTIMaskLine pL = mcLine.GetNext();
+	Bool32 bLinePresent = FALSE;
+	Int32 iLine;
+
+	*ppcLine = NULL;
+
+	if ( wLine > mwMaskHeight )
+	{
+		return FALSE;
+	}
+
+	while ( pL )
+	{
+		iLine = pL->GetLineNumber();
+
+		if ( iLine < (Int32)wLine )
+		{
+			pL = pL->GetNext();
+			continue;
+		}
+
+		if ( iLine == (Int32)wLine )
+		{
+			*ppcLine = pL;
+			bLinePresent = TRUE;
+			break;
+		}
+
+		if ( iLine > (Int32)wLine )
+			break;
+	}
+
+	return bLinePresent;
+}

@@ -54,119 +54,62 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////
-//
-//
-//
-//
-//
-//
-//
-//////////////////////////////////////////////////////////////////////////////////////////////////////////
+# ifndef __CTI_HEADER_H_
+# define __CTI_HEADER_H_
 
-#include "CTIImageHeader.h"
+#if _MSC_VER > 1000
+#pragma once
+#endif // _MSC_VER > 1000
 
-CTIImageHeader::CTIImageHeader()
+# if defined (_DEBUG)
+# pragma message( __FILE__" : Image header")
+# endif // (_DEBUG)
+
+#include "resource.h"
+#include "ctidefines.h"
+#include "ctiimage.h"
+#include "ctimemory.h"
+#include "ctimask.h"
+
+class CTIImageHeader
 {
-	CIMAGE_STRING_COPY((PChar8)ImageName, "Fictiv image");
-	ImageInfo = (PCIMAGEBITMAPINFOHEADER)(Image = (void *)(0xffff0000));
-	ImageExternal = 1;
-	ReadMask = NULL;
-	WriteMask = NULL;
-	mbEnableReadMask = TRUE;
-	mbEnableWriteMask = TRUE;
-}
+private:
+	CTIImageHeader *          pNext;
+	Int8                      ImageName[CIMAGE_MAX_IMAGE_NAME];
+	PCIMAGEBITMAPINFOHEADER   ImageInfo;
+	void *                    Image;
+	PCTIMask                  WriteMask;
+	PCTIMask                  ReadMask;
+	Bool32                    ImageExternal;
+	Bool32                    mbEnableReadMask;
+	Bool32                    mbEnableWriteMask;
+	Handle                    hImage;
 
-CTIImageHeader::CTIImageHeader(PChar8  lpName, Handle hImageHandle, Word32 wFlag)
-{
-	if( CIMAGE_STRING_LENGHT(lpName) < CIMAGE_MAX_IMAGE_NAME )
-		CIMAGE_STRING_COPY((PChar8)ImageName, lpName);
-	else
-		CIMAGE_STRING_N_COPY((PChar8)ImageName, lpName, CIMAGE_MAX_IMAGE_NAME);
+public:
+	CTIImageHeader();
+	CTIImageHeader(PChar8  lpName, Handle hImagehandle, Word32 Flag);
+	CTIImageHeader(PChar8  lpName, PCIMAGEBITMAPINFOHEADER lpInfo, void * lpImage, Word32 wFlag);
+	~CTIImageHeader();
 
-	hImage = hImageHandle;
-	ImageInfo = NULL;
-	Image = NULL;
-	ImageExternal = wFlag;
-	ReadMask = NULL;
-	WriteMask = NULL;
-	mbEnableReadMask = TRUE;
-	mbEnableWriteMask = TRUE;
-}
+private:
 
-CTIImageHeader::CTIImageHeader(PChar8  lpName, PCIMAGEBITMAPINFOHEADER lpInfo, void * lpImage, Word32 wFlag)
-{
-	if( CIMAGE_STRING_LENGHT(lpName) < CIMAGE_MAX_IMAGE_NAME )
-		CIMAGE_STRING_COPY((PChar8)ImageName, lpName);
-	else
-		CIMAGE_STRING_N_COPY((PChar8)ImageName, lpName, CIMAGE_MAX_IMAGE_NAME);
-
-	ImageInfo = lpInfo;
-	Image = lpImage;
-	ImageExternal = wFlag;
-	ReadMask = NULL;
-	WriteMask = NULL;
-	mbEnableReadMask = TRUE;
-	mbEnableWriteMask = TRUE;
-}
-
-CTIImageHeader::~CTIImageHeader()
-{
-	if ( IsIntImage() )
-	{
-		CIMAGEFree(GetImageHandle());
-	}
-
-	if ( ReadMask )
-	{
-		delete ReadMask;
-	}
-
-	if ( WriteMask )
-	{
-		delete WriteMask;
-	}
-
-}
-
-Bool32 CTIImageHeader::CheckName(PChar8  Name)
-{
-	Bool32 Check = FALSE;
-
-	if ( Name && Name[0] != 0 && CIMAGE_STRING_LENGHT(Name) < CIMAGE_MAX_IMAGE_NAME )
-	{
-		Check = ( CIMAGE_STRING_COMPARE(Name, (PChar8)ImageName) == 0 );
-	}
-
-	return Check;
-}
-
-Bool32 CTIImageHeader::EnableMask(PChar8 cMaskType, Bool32 mEnabled)
-{
-	if ( cMaskType[0] == 'w' )
-	{
-		mbEnableWriteMask = mEnabled;
-		return TRUE;
-	}
-
-	if ( cMaskType[0] == 'r' )
-	{
-		mbEnableReadMask = mEnabled;
-		return TRUE;
-	}
-
-	return FALSE;
-}
-
-Bool32 CTIImageHeader::IsMaskEnabled(PChar8 cMaskType)
-{
-	if ( cMaskType[0] == 'w' )
-		return mbEnableWriteMask;
-
-	if ( cMaskType[0] == 'r' )
-		return mbEnableReadMask;
-
-	return FALSE;
-}
+public:
+	Bool32                    IsMaskEnabled(PChar8 MaskType);
+	Bool32                    EnableMask(PChar8 cMaskType, Bool32 mEnabled);
+	Bool32                    CheckName(PChar8  Name);
+	CTIImageHeader *          GetNext(void) { return pNext; };
+	CTIImageHeader *          SetNext(CTIImageHeader * pSet ) { return (pNext = pSet); };
+	void *                    GetImage(void) { return Image; };
+	PCIMAGEBITMAPINFOHEADER   GetImageInfo(void) { return ImageInfo; };
+	Bool32                    IsExtImage(void) { return !IsIntImage(); };
+	Bool32                    IsIntImage(void) { return (ImageExternal == 0); };
+	Handle                    GetImageHandle(void) { return hImage; };
+	Handle                    SetImageHandle(Handle NewHandle) { return (hImage = NewHandle); };
+	Bool32                    SetWriteMask(PCTIMask WMask){return ((WriteMask = WMask) != NULL); };
+	PCTIMask                  GetWriteMask(void){return WriteMask; };
+	Bool32                    SetReadMask(PCTIMask RMask) {return ((ReadMask = RMask) != NULL); };
+	PCTIMask                  GetReadMask(void) {return ReadMask; };
+};
+# endif    //__CTI_HEADER_H_
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 // end of file

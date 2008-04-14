@@ -54,49 +54,67 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-// CTIMask.h: interface for the CTIMask class.
+#ifndef __CTI_MEMORY_H__
+#define __CTI_MEMORY_H__
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-//////////////////////////////////////////////////////////////////////
-
-#if !defined(_CTIMASK_H_)
-#define _CTIMASK_H_
-
 #if _MSC_VER > 1000
 #pragma once
 #endif // _MSC_VER > 1000
 
 # if defined (_DEBUG)
-# pragma message( __FILE__" : Image mask")
+ #ifdef _NO_CFIO
+  # pragma message( __FILE__" : CImage memory manager")
+ #else
+  # pragma message( __FILE__" : CImage memory manager (CFIO)")
+ #endif
 # endif // (_DEBUG)
-//////////////////////////////////////////////////////////////////////////////////
-#include "resource.h"
-#include "CTIDefines.h"
-#include "CTIImage.h"
-#include "CTIMemory.h"
-#include "CTIMaskLine.h"
-////////////////////////////////////////////////////////////////////////////////////
-class CTIMask;
-typedef CTIMask  *PCTIMask, **PPCTIMask;
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
 
-class CTIMask  
-{
-public:
-	Bool32 GetLine(Word32 wLine, PPCTIMaskLine ppcLine);
-	Bool32        IsRectOnMask(PCIMAGE_Rect pRect);
-	Bool32        RemoveRectangle(PCIMAGE_Rect pRect);
-	Bool32        AddRectangle(PCIMAGE_Rect pRect);
-	CTIMask(Word32 Width, Word32 Height);
-	CTIMask();
-	virtual ~CTIMask();
-
-protected:
-	CTIMaskLine mcLine;
-	Word32 mwMaskHeight;
-	Word32 mwMaskWidth;
-	Word32 mwSegments;
-	Word32 mwLines;
-private:
-	Bool32 SetPtrToPrevLine(Word32 wLine, PPCTIMaskLine ppLine);
-};
-
-#endif // !defined(_CTIMASK_H_)
+/*#include <crtdbg.h>*/
+//////////////////////////////////////////////////////////////////////////////////////////
+//
+#include "ctiimage.h"
+//#ifndef Handle
+//	#define Handle void * 
+//#endif 
+///////////////////////////////////////////////////////////////////////////////////////////
+//
+#ifdef _DEBUG
+	#ifndef IS_VALID
+		#define IS_VALID(a) _ASSERT(_CrtIsValidPointer(a, 1, TRUE ))
+	#endif
+#else
+	#ifndef IS_VALID
+		#define IS_VALID(a) 
+	#endif
+#endif
+///////////////////////////////////////////////////////////////////////////////////
+void SetReturnCode(Word16 rc);
+Word16 GetReturnCode();
+/////////////////////////////////////////////////////////////////////////////////////////
+//
+Bool32  InitCFIOInterface(Bool32 Status);
+void    CIMAGEComment(PChar8 Comment);
+void *	CIMAGEAlloc(Word32 stAllocateBlock);
+void *	CIMAGEDAlloc(Word32 stAllocateBlock, PChar8 Comment);
+void	CIMAGEFree(void * mem);
+void *  CIMAGELock(void * mem);
+void    CIMAGEUnlock(void * mem);
+/////////////////////////////////////////////////////////////////////////////////////////
+//
+Handle  CIMAGEOpenSave(char * lpName);
+Handle  CIMAGEOpenRestore(char * lpName);
+/////////////////////////////////////////////////////////////////////////////////////////
+//
+unsigned int  CIMAGEWrite(Handle h,void * lpdata,unsigned int size);
+unsigned int  CIMAGERead(Handle h,void * lpdata,unsigned int size);
+/////////////////////////////////////////////////////////////////////////////////////////
+//
+void    CIMAGEClose(Handle h);
+/////////////////////////////////////////////////////////////////////////////////////////
+//
+#endif
+/////////////////////////////////////////////////////////////////////////////////////////
+//end of file

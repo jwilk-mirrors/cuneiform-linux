@@ -54,61 +54,72 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-// CTIMaskLine.h: interface for the CTIMaskLine class.
+// CTIMaskLineSegment.h: interface for the CTIMaskLineSegment class.
 //
 //////////////////////////////////////////////////////////////////////
 
-#if !defined(_CTIMASKLINE_H_)
-#define _CTIMASKLINE_H_
+#if !defined(_CTIMASKLINESEGMENT_H_)
+#define _CTIMASKLINESEGMENT_H_
 
 #if _MSC_VER > 1000
 #pragma once
 #endif // _MSC_VER > 1000
 
 # if defined (_DEBUG)
-# pragma message( __FILE__" : Image mask line")
+# pragma message( __FILE__" : Image mask segment")
 # endif // (_DEBUG)
-///////////////////////////////////////////////////////////////////////////
-//
+////////////////////////////////////////////////////////////////////////////////////
 #include "resource.h"
-#include "CTIDefines.h"
-#include "CTIImage.h"
-#include "CTIMemory.h"
-#include "CTIMaskLineSegment.h"
-///////////////////////////////////////////////////////////////////////////
-class CTIMaskLine;
-typedef CTIMaskLine *PCTIMaskLine, **PPCTIMaskLine;
-///////////////////////////////////////////////////////////////////////////
-class CTIMaskLine  
+#include "ctidefines.h"
+#include "ctiimage.h"
+#include "ctimemory.h"
+////////////////////////////////////////////////////////////////////////////////////
+class CTIMaskLineSegment;
+typedef   CTIMaskLineSegment         *PCTIMaskLineSegment,   **PPCTIMaskLineSegment;
+/////////////////////////////////////////////////////////////////////////////////////
+class CTIMaskLineSegment  
 {
-public:
-	Bool32        IsSegmentOnLine(PCTIMaskLineSegment pSegm){ return (pSegm->GetStart() >= 0 && pSegm->GetStart() <= (Int32)mwLenght && pSegm->GetEnd() <= (Int32)mwLenght); };
-	Bool32        RemoveSegment(PCTIMaskLineSegment pSegm);
-	Bool32        AddSegment(PCTIMaskLineSegment pSegm);
-	PCTIMaskLine  GetNext() { return mpNext; };
-	void          SetNext(PCTIMaskLine pLine) { mpNext = pLine; };
-	Word32        SetLineNumber( Word32 nLine ) { return mwLine = nLine; };
-	Word32        GetLineNumber( void ) { return mwLine; };
-	Word32        GetSegmentsNumber( void ) { return mwSegments; };
-	Bool32        IsLine(Word32 nLine) { return ((Int32)nLine == mwLine); };
-	Bool32        GetLeftIntersection(PCTIMaskLineSegment pcSegm);
+//#define                   CTIMLSEGMINTERSECTNO                  0
+#define                   CTIMLSEGMINTERSECTIN                  1
+#define                   CTIMLSEGMINTERSECTLEFT                2
+#define                   CTIMLSEGMINTERSECTRIGHT               3
+#define                   CTIMLSEGMINTERSECTOVER                4
+#define                   CTIMLSEGMINTERSECTEQUAL               5
+#define                   CTIMLSEGMINTERSECTFULLLEFT            6
+#define                   CTIMLSEGMINTERSECTFULLRIGHT           7
+#define                   CTIMLSEGMPOINTRIGHT                   1
+#define                   CTIMLSEGMPOINTLEF                    -1
+#define                   CTIMLSEGMPOINTIN                      0
 
 public:
-	CTIMaskLine(Word32 Lenght, Word32 nLine, PCTIMaskLineSegment pSegm, PCTIMaskLine pcNextLine);
-	CTIMaskLine(Word32 Lenght, Word32 nLine, PCTIMaskLineSegment pSegm);
-	CTIMaskLine(Word32 Lenght, PCTIMaskLineSegment pSegm);
-	CTIMaskLine(Word32 Lenght);
-	CTIMaskLine();
-	virtual ~CTIMaskLine();
+	void                  SetNext(PCTIMaskLineSegment pNext) { mpNext = pNext; };
+	PCTIMaskLineSegment   GetNext(void) { return mpNext; };
+	Int32                 GetStart(void) { return mwStart; };
+	Int32                 GetEnd(void) { return mwEnd; };
+	Bool32                IsPointInSegment(Int32 X) {return (X >= mwStart && X <= mwEnd);};
+	Bool32                CutRightTo(PCTIMaskLineSegment pSegm);
+	// обрезать с конца
+	Bool32                CutLeftTo(PCTIMaskLineSegment pSegm);
+	// обрезать с начала
+	Bool32                AddWith(PCTIMaskLineSegment pSegm);
+	// пересечение данного сегмента с аргументом
+	Bool32                IntersectWith(PCTIMaskLineSegment pSegm);
+	// положение данного сегмента относительно аргумента
+	Word32                IsIntersectWith(PCTIMaskLineSegment pSegm);
+	// равенство сегментов
+	Bool32                IsEqual(PCTIMaskLineSegment pSegm) { return (mwEnd == pSegm->GetEnd() && mwStart == pSegm->GetStart()); };
 
+public:
+	Int32 GetPointDirect(Word32 X);
+	CTIMaskLineSegment();
+	CTIMaskLineSegment(Int32 Start, Int32 End);
+	CTIMaskLineSegment(PCTIMaskLineSegment pSegm);
+	virtual ~CTIMaskLineSegment();
+	
 protected:
-	Int32 mwLine;
-	PCTIMaskLine mpNext;
-	Word32 mwSegments;
-	Word32 mwLenght;
-	CTIMaskLineSegment mcFirst;
-private:
-	Bool32 CheckSegments(void);
+	PCTIMaskLineSegment mpNext;
+	Int32 mwEnd;
+	Int32 mwStart;
 };
 
-#endif // !defined(_CTIMASKLINE_H_)
+#endif // !defined(_CTIMASKLINESEGMENT_H_)

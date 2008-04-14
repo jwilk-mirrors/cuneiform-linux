@@ -54,67 +54,119 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-#ifndef __CTI_MEMORY_H__
-#define __CTI_MEMORY_H__
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-#if _MSC_VER > 1000
-#pragma once
-#endif // _MSC_VER > 1000
+//
+//
+//
+//
+//
+//
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-# if defined (_DEBUG)
- #ifdef _NO_CFIO
-  # pragma message( __FILE__" : CImage memory manager")
- #else
-  # pragma message( __FILE__" : CImage memory manager (CFIO)")
- #endif
-# endif // (_DEBUG)
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//
+#include "ctiimageheader.h"
 
-#include <crtdbg.h>
-//////////////////////////////////////////////////////////////////////////////////////////
-//
-#include "CTIImage.h"
-//#ifndef Handle
-//	#define Handle void * 
-//#endif 
-///////////////////////////////////////////////////////////////////////////////////////////
-//
-#ifdef _DEBUG
-	#ifndef IS_VALID
-		#define IS_VALID(a) _ASSERT(_CrtIsValidPointer(a, 1, TRUE ))
-	#endif
-#else
-	#ifndef IS_VALID
-		#define IS_VALID(a) 
-	#endif
-#endif
-///////////////////////////////////////////////////////////////////////////////////
-void SetReturnCode(Word16 rc);
-Word16 GetReturnCode();
-/////////////////////////////////////////////////////////////////////////////////////////
-//
-Bool32  InitCFIOInterface(Bool32 Status);
-void    CIMAGEComment(PChar8 Comment);
-void *	CIMAGEAlloc(Word32 stAllocateBlock);
-void *	CIMAGEDAlloc(Word32 stAllocateBlock, PChar8 Comment);
-void	CIMAGEFree(void * mem);
-void *  CIMAGELock(void * mem);
-void    CIMAGEUnlock(void * mem);
-/////////////////////////////////////////////////////////////////////////////////////////
-//
-Handle  CIMAGEOpenSave(char * lpName);
-Handle  CIMAGEOpenRestore(char * lpName);
-/////////////////////////////////////////////////////////////////////////////////////////
-//
-unsigned int  CIMAGEWrite(Handle h,void * lpdata,unsigned int size);
-unsigned int  CIMAGERead(Handle h,void * lpdata,unsigned int size);
-/////////////////////////////////////////////////////////////////////////////////////////
-//
-void    CIMAGEClose(Handle h);
-/////////////////////////////////////////////////////////////////////////////////////////
-//
-#endif
-/////////////////////////////////////////////////////////////////////////////////////////
-//end of file
+CTIImageHeader::CTIImageHeader()
+{
+	CIMAGE_STRING_COPY((PChar8)ImageName, "Fictiv image");
+	ImageInfo = (PCIMAGEBITMAPINFOHEADER)(Image = (void *)(0xffff0000));
+	ImageExternal = 1;
+	ReadMask = NULL;
+	WriteMask = NULL;
+	mbEnableReadMask = TRUE;
+	mbEnableWriteMask = TRUE;
+}
+
+CTIImageHeader::CTIImageHeader(PChar8  lpName, Handle hImageHandle, Word32 wFlag)
+{
+	if( CIMAGE_STRING_LENGHT(lpName) < CIMAGE_MAX_IMAGE_NAME )
+		CIMAGE_STRING_COPY((PChar8)ImageName, lpName);
+	else
+		CIMAGE_STRING_N_COPY((PChar8)ImageName, lpName, CIMAGE_MAX_IMAGE_NAME);
+
+	hImage = hImageHandle;
+	ImageInfo = NULL;
+	Image = NULL;
+	ImageExternal = wFlag;
+	ReadMask = NULL;
+	WriteMask = NULL;
+	mbEnableReadMask = TRUE;
+	mbEnableWriteMask = TRUE;
+}
+
+CTIImageHeader::CTIImageHeader(PChar8  lpName, PCIMAGEBITMAPINFOHEADER lpInfo, void * lpImage, Word32 wFlag)
+{
+	if( CIMAGE_STRING_LENGHT(lpName) < CIMAGE_MAX_IMAGE_NAME )
+		CIMAGE_STRING_COPY((PChar8)ImageName, lpName);
+	else
+		CIMAGE_STRING_N_COPY((PChar8)ImageName, lpName, CIMAGE_MAX_IMAGE_NAME);
+
+	ImageInfo = lpInfo;
+	Image = lpImage;
+	ImageExternal = wFlag;
+	ReadMask = NULL;
+	WriteMask = NULL;
+	mbEnableReadMask = TRUE;
+	mbEnableWriteMask = TRUE;
+}
+
+CTIImageHeader::~CTIImageHeader()
+{
+	if ( IsIntImage() )
+	{
+		CIMAGEFree(GetImageHandle());
+	}
+
+	if ( ReadMask )
+	{
+		delete ReadMask;
+	}
+
+	if ( WriteMask )
+	{
+		delete WriteMask;
+	}
+
+}
+
+Bool32 CTIImageHeader::CheckName(PChar8  Name)
+{
+	Bool32 Check = FALSE;
+
+	if ( Name && Name[0] != 0 && CIMAGE_STRING_LENGHT(Name) < CIMAGE_MAX_IMAGE_NAME )
+	{
+		Check = ( CIMAGE_STRING_COMPARE(Name, (PChar8)ImageName) == 0 );
+	}
+
+	return Check;
+}
+
+Bool32 CTIImageHeader::EnableMask(PChar8 cMaskType, Bool32 mEnabled)
+{
+	if ( cMaskType[0] == 'w' )
+	{
+		mbEnableWriteMask = mEnabled;
+		return TRUE;
+	}
+
+	if ( cMaskType[0] == 'r' )
+	{
+		mbEnableReadMask = mEnabled;
+		return TRUE;
+	}
+
+	return FALSE;
+}
+
+Bool32 CTIImageHeader::IsMaskEnabled(PChar8 cMaskType)
+{
+	if ( cMaskType[0] == 'w' )
+		return mbEnableWriteMask;
+
+	if ( cMaskType[0] == 'r' )
+		return mbEnableReadMask;
+
+	return FALSE;
+}
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+// end of file
