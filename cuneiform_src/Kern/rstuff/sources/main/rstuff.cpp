@@ -60,34 +60,17 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 /*  и далнейшая                                                               */
 /*  правка     :  Алексей Коноплев                                            */
 /*  Редакция   :  08.06.00                                                    */
-/*  Файл       :  'Normalise.cpp'                                             */
-/*  Содержание :  Нормализация сырья                                          */
+/*  Файл       :  'dll.cpp'                                                   */
+/*  Содержание :  Интерфейс библиотеки                                        */
 /*  Назначение :                                                              */
 /*----------------------------------------------------------------------------*/
 
 //#include <windows.h>
 //#include "resource.h"
 //#include "dpuma.h"
-#include <stdio.h>
-#include <string.h>
-#include "RStuff.H"
-#include "RSFunc.h"
-#include "RSGlobalData.h"
-#include "DPuma.h"
-
-#include "mpumatime.h"
-#include "pumadef.h"
-#include "CCom.h"
-#include "CPage.h"
-#include "RLine.h"
-////////////////////////////////////////////////////////////////////////////////
-// Нормализация сырья
-// (07.07.2000) Изначально взято из puma.dll без изменений 
-Bool32 Layout( PRSPreProcessImage Image )
-{
-	Bool32 rc = TRUE;
-
-	return rc;
-}
-/////////////////////////////////////////////////////////////////////////////////////////////////////
+#include "rstuff.h"
+//#include "RSFunc.h"
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // end of file
