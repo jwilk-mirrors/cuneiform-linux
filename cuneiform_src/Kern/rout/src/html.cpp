@@ -2,33 +2,33 @@
 Copyright (c) 1993-2008, Cognitive Technologies
 All rights reserved.
 
-Разрешается повторное распространение и использование как в виде исходного кода,
-так и в двоичной форме, с изменениями или без, при соблюдении следующих условий:
+пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ,
+пїЅпїЅпїЅ пїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ:
 
-      * При повторном распространении исходного кода должны оставаться указанное
-        выше уведомление об авторском праве, этот список условий и последующий
-        отказ от гарантий.
-      * При повторном распространении двоичного кода в документации и/или в
-        других материалах, поставляемых при распространении, должны сохраняться
-        указанная выше информация об авторском праве, этот список условий и
-        последующий отказ от гарантий.
-      * Ни название Cognitive Technologies, ни имена ее сотрудников не могут
-        быть использованы в качестве средства поддержки и/или продвижения
-        продуктов, основанных на этом ПО, без предварительного письменного
-        разрешения.
+      * пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+        пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+        пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
+      * пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ/пїЅпїЅпїЅ пїЅ
+        пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+        пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ
+        пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
+      * пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ Cognitive Technologies, пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+        пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ/пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+        пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+        пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 
-ЭТА ПРОГРАММА ПРЕДОСТАВЛЕНА ВЛАДЕЛЬЦАМИ АВТОРСКИХ ПРАВ И/ИЛИ ДРУГИМИ ЛИЦАМИ "КАК
-ОНА ЕСТЬ" БЕЗ КАКОГО-ЛИБО ВИДА ГАРАНТИЙ, ВЫРАЖЕННЫХ ЯВНО ИЛИ ПОДРАЗУМЕВАЕМЫХ,
-ВКЛЮЧАЯ ГАРАНТИИ КОММЕРЧЕСКОЙ ЦЕННОСТИ И ПРИГОДНОСТИ ДЛЯ КОНКРЕТНОЙ ЦЕЛИ, НО НЕ
-ОГРАНИЧИВАЯСЬ ИМИ. НИ ВЛАДЕЛЕЦ АВТОРСКИХ ПРАВ И НИ ОДНО ДРУГОЕ ЛИЦО, КОТОРОЕ
-МОЖЕТ ИЗМЕНЯТЬ И/ИЛИ ПОВТОРНО РАСПРОСТРАНЯТЬ ПРОГРАММУ, НИ В КОЕМ СЛУЧАЕ НЕ
-НЕСЁТ ОТВЕТСТВЕННОСТИ, ВКЛЮЧАЯ ЛЮБЫЕ ОБЩИЕ, СЛУЧАЙНЫЕ, СПЕЦИАЛЬНЫЕ ИЛИ
-ПОСЛЕДОВАВШИЕ УБЫТКИ, СВЯЗАННЫЕ С ИСПОЛЬЗОВАНИЕМ ИЛИ ПОНЕСЕННЫЕ ВСЛЕДСТВИЕ
-НЕВОЗМОЖНОСТИ ИСПОЛЬЗОВАНИЯ ПРОГРАММЫ (ВКЛЮЧАЯ ПОТЕРИ ДАННЫХ, ИЛИ ДАННЫЕ,
-СТАВШИЕ НЕГОДНЫМИ, ИЛИ УБЫТКИ И/ИЛИ ПОТЕРИ ДОХОДОВ, ПОНЕСЕННЫЕ ИЗ-ЗА ДЕЙСТВИЙ
-ТРЕТЬИХ ЛИЦ И/ИЛИ ОТКАЗА ПРОГРАММЫ РАБОТАТЬ СОВМЕСТНО С ДРУГИМИ ПРОГРАММАМИ,
-НО НЕ ОГРАНИЧИВАЯСЬ ЭТИМИ СЛУЧАЯМИ), НО НЕ ОГРАНИЧИВАЯСЬ ИМИ, ДАЖЕ ЕСЛИ ТАКОЙ
-ВЛАДЕЛЕЦ ИЛИ ДРУГОЕ ЛИЦО БЫЛИ ИЗВЕЩЕНЫ О ВОЗМОЖНОСТИ ТАКИХ УБЫТКОВ И ПОТЕРЬ.
+пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ/пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅ
+пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ" пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ-пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ,
+пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅпїЅ
+пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ. пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ/пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ
+пїЅпїЅСЁпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
+пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ,
+пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ/пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ-пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ/пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ,
+пїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ), пїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ, пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
@@ -59,7 +59,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 //********************************************************************
 //
-// HTML.cpp - формат HTML
+// HTML.cpp - пїЅпїЅпїЅпїЅпїЅпїЅ HTML
 //
 // This file creation date: 27.05.99
 // By Eugene Pliskin pliskin@cs.isa.ac.ru
@@ -69,6 +69,11 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "stdafx.h"
 #include "rout_own.h"
 #include "compat_defs.h"
+
+#include <string>
+#include <sstream>
+
+using namespace std;
 
 static BOOL Static_MakeHTML(Handle hObject, long reason);
 
@@ -80,19 +85,19 @@ static BOOL OptimizeTags();
 static BOOL Picture();
 static BOOL CreatePageFilesFolder();
 
-static ULONG sFontStyle = 0;		// Стиль шрифта
+static ULONG sFontStyle = 0;		// пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 static long rowspan = 0, colspan = 0;
 static BOOL hocrmode = FALSE; // If true, print hOCR tags to output.
 
 //********************************************************************
 BOOL MakeHTML()
 {
-/* Формат HTML.
+/* пїЅпїЅпїЅпїЅпїЅпїЅ HTML.
 
-   Включаются таблицы.
-   Концы строк сохраняются, если gPreserveLineBreaks = TRUE.
+   пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
+   пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅ gPreserveLineBreaks = TRUE.
 */
-	sFontStyle = 0;			// Стиль шрифта
+	sFontStyle = 0;			// пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 	hocrmode = FALSE;
 
 	return BrowsePage(Static_MakeHTML,
@@ -106,114 +111,239 @@ BOOL MakeHOCR() {
     hocrmode = TRUE;
     return BrowsePage(Static_MakeHTML, FALSE, FALSE);
 }
+
+/*!
+\brief \~english Put stream bufer into buffer for OCR results.
+       \~russian пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ
+                 пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
+*/
+static BOOL
+strm2buf(const ostringstream& outStrm)
+{
+	unsigned long sizeMem = outStrm.str().size();
+	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+	CHECK_MEMORY(sizeMem + 10);
+
+	::memcpy(gMemCur, outStrm.str().c_str(), sizeMem);
+	gMemCur += sizeMem;
+
+	return TRUE;
+}
+
+/*!
+\brief \~english Put info about hOCR text line into buffer for OCR results.
+       \~russian пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ hOCR пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
+*/
+static BOOL
+writeHocrLine(Byte* pLineStart, const edRect& rcLine, const unsigned int iLine)
+{
+	ASSERT(pLineStart);
+	ostringstream outStrm;
+	outStrm << "<span class='ocr_line' id='line_" << iLine << "' "
+		<< "title=\"bbox "
+		<< rcLine.left << " "
+		<< rcLine.top << " "
+		<< rcLine.right << " "
+		<< rcLine.bottom << "\">";
+	outStrm.write(reinterpret_cast<const char*>(pLineStart), gMemCur - pLineStart);
+	outStrm << "</span>";
+
+	unsigned long sizeMem = outStrm.str().size();
+	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+	CHECK_MEMORY(sizeMem + 10);
+
+	::memcpy(pLineStart, outStrm.str().c_str(), sizeMem);
+	gMemCur = pLineStart + sizeMem;
+
+	return TRUE;
+}
+static bool
+isGoodCharRect(const edRect& rc)
+{
+	bool goodCharRect = true;
+	goodCharRect = goodCharRect && (rc.left != -1);
+	goodCharRect = goodCharRect && (rc.left != 65535);
+	goodCharRect = goodCharRect && (rc.right != 65535);
+	goodCharRect = goodCharRect && (rc.top != 65535);
+	goodCharRect = goodCharRect && (rc.bottom != 65535);
+	return goodCharRect;
+}
+
 //********************************************************************
 BOOL Static_MakeHTML(
 			Handle hObject,
-			long reason	// См. enum BROWSE_REASON
+			long reason	// пїЅпїЅ. enum BROWSE_REASON
 			)
 {
-    char buf[256] = "";
-    edRect r;
-// В конце вызывается WordControl
+	static char buf[256] = {0};
+    //! \~russian пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+	edRect r = {0};
+
+	static unsigned int iPage(1);
+    //! \~russian пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+	static edRect rcLine = {0};
+    //! \~russian пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+	static bool isInLine(false);
+    //! \~russian пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+	static unsigned int iLine(1);
+    //! \~russian пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+	static Byte* pLineStart = 0;
+
+	// пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ WordControl
 
 	switch(reason)
+	{
+		case BROWSE_CHAR: // пїЅпїЅпїЅпїЅпїЅпїЅ
 		{
-		case BROWSE_CHAR:
-			// Символ
-			// Установить язык
-			{
+			// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 			long lang = CED_GetCharFontLang(hObject);
 			if (lang != gLanguage)
 				SetLanguage(lang);
-			}
-
-			// Стиль шрифта
+			// пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 			FontStyle(CED_GetCharFontAttribs(hObject));
 
 			r = CED_GetCharLayout(hObject);
-			// Записать символ
-                        if(r.left != -1 && hocrmode) {
-                            sprintf(buf, "<span title=\"bbox %d %d %d %d\">", r.left,
-                            r.top, r.right, r.bottom);
-                            PUT_STRING(buf);
-                        }
+			// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+            if(isGoodCharRect(r) && hocrmode)
+			{
+                sprintf(buf, "<span title=\"bbox %d %d %d %d\">"
+					, r.left, r.top, r.right, r.bottom);
+                PUT_STRING(buf);
+				if (0 == isInLine)
+				// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+				{
+					if (isGoodCharRect(r))
+					{
+						rcLine = r;
+						isInLine = true;
+					}
+				}
+				else
+				{
+					if (isGoodCharRect(r))
+					{
+						rcLine.left = min(rcLine.left, r.left);
+						rcLine.top = min(rcLine.top, r.top);
+						rcLine.right = max(rcLine.right, r.right);
+						rcLine.bottom = max(rcLine.bottom, r.bottom);
+					}
+					else
+					{
+					}
+				}
+            }
+            ONE_CHAR(hObject);
+            if(r.left != -1 && hocrmode)
+                PUT_STRING("</span>");
 
-                        ONE_CHAR(hObject);
-                        if(r.left != -1 && hocrmode)
-                            PUT_STRING("</span>");
-
+			break;
+		}
+		case BROWSE_LINE_START:
+			// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+			pLineStart = gMemCur;
+			::memset(&rcLine, 0, sizeof(rcLine));
 			break;
 
 		case BROWSE_LINE_END:
-			// Конец строки текста
+			// пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+			writeHocrLine(pLineStart, rcLine, iLine++);
+			isInLine = false;
 			if ( gPreserveLineBreaks || gEdLineHardBreak )
+			{
 				PUT_STRING("<br>");
+			}
+			NEW_LINE;
 			break;
 
 		case BROWSE_PARAGRAPH_START:
-			// Начало абзаца
+			// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 			FontStyle(0);
 			BeginParagraph(hObject);
 			break;
 
 		case BROWSE_PARAGRAPH_END:
-			// Конец абзаца
+			// пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 			FontStyle(0);
 			PUT_STRING("</p>");
+			NEW_LINE;
 			break;
 
 		case BROWSE_PAGE_START:
 			// Start of page.
 			FontStyle(0);
-			PUT_STRING("<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"   \"http://www.w3.org/TR/html4/loose.dtd\">\n");
-			PUT_STRING("<html><head><title></title>");
-			if (gActiveCode==ROUT_CODE_UTF8) 
-				 PUT_STRING("<meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\" >");
-			PUT_STRING("</head><body>");
-
+			{
+				ostringstream outStrm;
+				outStrm << "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 "
+					       "Transitional//EN\""
+						   " \"http://www.w3.org/TR/html4/loose.dtd\">" << endl;
+				outStrm << "<html><head><title></title>" << endl;
+				if (gActiveCode==ROUT_CODE_UTF8)
+				{
+					outStrm << "<meta http-equiv=\"Content-Type\""
+						       " content=\"text/html;charset=utf-8\" >" << endl;
+				}
+				outStrm << "<meta name='ocr-system' content='openocr'>" << endl;
+				outStrm << "</head>" << endl << "<body>";
+				strm2buf(outStrm);
+			}
+			{
+				ostringstream outStrm;
+				EDSIZE sizeImage(CED_GetPageImageSize(hObject));
+				const char* pImageName = CED_GetPageImageName(hObject);
+				assert(pImageName);
+				//пїЅпїЅпїЅпїЅпїЅпїЅ <div class='ocr_page' title='image "page-000.pbm"; bbox 0 0 4306 6064'>
+				outStrm << "<div class='ocr_page' id='page_" << iPage << "' ";
+				outStrm << "title='image \"" << pImageName << "\"; bbox 0 0 "
+					<< sizeImage.cx << " " << sizeImage.cy << "'" << endl;
+				strm2buf(outStrm);
+				++iPage;
+			}
 			break;
 
 		case BROWSE_PAGE_END:
-			// Конец страницы
+			// пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+			PUT_STRING("</div>");
+			// пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 			PUT_STRING("</body></html>");
+			iLine = 1;
 			break;
 
 		case BROWSE_TABLE_START:
-			// Начало таблицы
+			// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 			FontStyle(0);
 			PUT_STRING("<table border>");
 			break;
 
 		case BROWSE_TABLE_END:
-			// Конец таблицы
+			// пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 			FontStyle(0);
 			PUT_STRING("</table>");
 			break;
 
 		case BROWSE_ROW_START:
-			// Начало строки таблицы
+			// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 			PUT_STRING("<tr>");
 			break;
 
 		case BROWSE_CELL_START:
-			// Начало ячейки таблицы
+			// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 			CellStart();
 			break;
 
 		case BROWSE_PICTURE:
-			// Картинка
+			// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 			Picture();
 			break;
 
 		}
 
-	// Слежение за словами и строками
+	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	WORDS_CONTROL(reason);
 
-	// Устранение избыточных тегов
+	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 	OptimizeTags();
 
-	return TRUE;	// Продолжить просмотр
+	return TRUE;	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 }
 //********************************************************************
 static BOOL FontStyle(ULONG newStyle)
@@ -245,7 +375,7 @@ else if ((sFontStyle & FONT_UNDERLINE) &&
 		 !(newStyle & FONT_UNDERLINE))
 	{PUT_STRING("</u>");}
 
-// Запомнить шрифт
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 sFontStyle = newStyle;
 return TRUE;
 }
@@ -290,23 +420,23 @@ static BOOL BeginParagraph(Handle hObject)
 //********************************************************************
 static BOOL CellStart()
 {
-// Ячейка таблицы
+// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	char buf[80] = "";
 
-	// Вычислить размер ячейки
+	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 	CalcCellSpan();
 
 	if ( rowspan == 1 && colspan == 1 )
 		strcpy(buf,"<td>");
 
 	else if ( rowspan > 1 && colspan == 1 )
-		sprintf(buf,"<td rowspan=%d>",rowspan);
+		sprintf(buf,"<td rowspan=%l>",rowspan);
 
 	else if ( rowspan == 1 && colspan > 1 )
-		sprintf(buf,"<td colspan=%d>",colspan);
+		sprintf(buf,"<td colspan=%l>",colspan);
 
 	else // ( rowspan > 1 && colspan > 1 )
-		sprintf(buf,"<td rowspan=%d colspan=%d>",rowspan,colspan);
+		sprintf(buf,"<td rowspan=%l colspan=%l>",rowspan,colspan);
 
 	PUT_STRING(buf);
 	return TRUE;
@@ -314,13 +444,13 @@ static BOOL CellStart()
 //********************************************************************
 static BOOL CalcCellSpan()
 {
-// Вычислить размер ячейки
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 	long row,col;
 
 	rowspan = 0;
 	colspan = 0;
 
-	// Просмотр вниз от текущей ячейки
+	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 	row = gIndexTableRow;
 	col = gIndexTableCol;
 
@@ -332,7 +462,7 @@ static BOOL CalcCellSpan()
 		row++;
 		}
 
-	// Просмотр вправо от текущей ячейки
+	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 	row = gIndexTableRow;
 	col = gIndexTableCol;
 
@@ -350,7 +480,7 @@ static BOOL CalcCellSpan()
 //********************************************************************
 static BOOL OptimizeTags()
 {
-	// Устранение избыточных тегов
+	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 	long l1 = 0, l2 = 0;
 	char *p;
 
@@ -376,15 +506,15 @@ static BOOL OptimizeTags()
 //********************************************************************
 static BOOL Picture()
 {
-/* Картинка.
+/* пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 
 	gPictureNumber - img number 1
 	gPictureData   - DIB address, wiith header
 	gPictureLength - DIB length, with header
 
-	1. Создать подпапку для картинок "<page>_files"
-	2. Записать картинку в BMP-файл <номер>.bmp.
-	3. Вставить тег "img" со ссылкой на файл картинки.
+	1. пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "<page>_files"
+	2. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ BMP-пїЅпїЅпїЅпїЅ <пїЅпїЅпїЅпїЅпїЅ>.bmp.
+	3. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ "img" пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 */
 	char buf[256] = "";
 	char absPicFileName[256] = "";
@@ -435,19 +565,19 @@ static BOOL Picture()
  * Create a subdirectory to hold image files for html document.
  */
 static BOOL CreatePageFilesFolder() {
-    // Создать подпапку для картинок gPageFilesFolder.
+    // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ gPageFilesFolder.
     char dir[_MAX_PATH], name[_MAX_PATH], ext[_MAX_EXT], path[_MAX_PATH];
 
-    // Задано ли имя страницы?
+    // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ?
     if (!gPageName[0])
         return FALSE;
 
-    // Изготовить имя подпапки
+    // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     split_path(gPageName, dir, name, ext);
     memset(gPageFilesFolder, 0, sizeof(gPageFilesFolder));
     sprintf(gPageFilesFolder, "%s_files", name);
 
-    // Создать подпапку
+    // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     if(dir[0])
         sprintf(path, "%s/%s", dir, gPageFilesFolder);
     else
