@@ -63,6 +63,10 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 // This file creation date: 27.05.99
 // By Eugene Pliskin pliskin@cs.isa.ac.ru
+//
+// Changes by julien:
+//   * added ocr_cinfo element (placed inside ocr_line element)
+//   * moved <br> to be inside the ocr_line element (according to hocr spec)
 //********************************************************************
 
 #include <string.h>
@@ -72,6 +76,8 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #include <string>
 #include <sstream>
+
+#include <vector>
 
 using namespace std;
 
@@ -130,12 +136,14 @@ strm2buf(const ostringstream& outStrm)
 	return TRUE;
 }
 
+
+
 /*!
 \brief \~english Put info about hOCR text line into buffer for OCR results.
        \~russian ��������� ��������� ������ hOCR � ����� ����������� �������������.
 */
 static BOOL
-writeHocrLine(Byte* pLineStart, const edRect& rcLine, const unsigned int iLine)
+writeHocrLineStartTag(Byte* pLineStart, const edRect& rcLine, const unsigned int iLine)
 {
 	ASSERT(pLineStart);
 	ostringstream outStrm;
@@ -146,7 +154,6 @@ writeHocrLine(Byte* pLineStart, const edRect& rcLine, const unsigned int iLine)
 		<< rcLine.right << " "
 		<< rcLine.bottom << "\">";
 	outStrm.write(reinterpret_cast<const char*>(pLineStart), gMemCur - pLineStart);
-	outStrm << "</span>";
 
 	unsigned long sizeMem = outStrm.str().size();
 	// �������� ������������� ������
@@ -157,6 +164,9 @@ writeHocrLine(Byte* pLineStart, const edRect& rcLine, const unsigned int iLine)
 
 	return TRUE;
 }
+
+
+
 static bool
 isGoodCharRect(const edRect& rc)
 {
@@ -168,6 +178,36 @@ isGoodCharRect(const edRect& rc)
 	goodCharRect = goodCharRect && (rc.bottom != 65535);
 	return goodCharRect;
 }
+
+// decided to use CHECK_MEMORY macro in case it becomes a function which does more things than check if gMemCur+a>gMemEnd
+// as a consequence, this function always returns true unless there is a memory issue.
+static BOOL
+writeHocrCharBBoxesInfo(const std::vector<edRect > &charBboxes, const unsigned int iLine)
+{
+	ostringstream outStrm;
+	outStrm << "<span class='ocr_cinfo' id='line_" << iLine << "' " << "title=\"x_bboxes ";
+
+	for (unsigned int i = 0; i < charBboxes.size(); i++) {
+
+		outStrm << charBboxes[i].left << " " << charBboxes[i].top << " "
+				<< charBboxes[i].right << " " << charBboxes[i].bottom;
+	}
+
+	outStrm << "\"></span>";
+
+	unsigned long sizeMem = outStrm.str().size();
+
+	// (check memory assures gMemCur can store and has 10 bytes extra).
+	// the comment below was copied from writeHocrLine
+	// �������� ������������� ������
+	CHECK_MEMORY(sizeMem + 10);
+
+	::memcpy(gMemCur, outStrm.str().c_str(), sizeMem);
+	gMemCur += sizeMem;
+
+	return TRUE;
+}
+
 
 //********************************************************************
 BOOL Static_MakeHTML(
@@ -181,13 +221,21 @@ BOOL Static_MakeHTML(
 
 	static unsigned int iPage(1);
     //! \~russian ������������� ������
+	//! \~english rectangle state variable, for the current line, is expanded per incoming char.
 	static edRect rcLine = {0};
     //! \~russian ������������� ������
+	//! \~english true if last none-space character was in line (i.e had a valid bbox).
 	static bool isInLine(false);
     //! \~russian ����� ������� ������
+	//! \~english state flag for current line nr.
 	static unsigned int iLine(1);
     //! \~russian ������� ������ ������ � ��������� ������ ������
 	static Byte* pLineStart = 0;
+	//! \~english is the ptr to the location that gMemCur pointed to when reason was BROWSE_LINE_START
+
+	static std::vector<edRect >	currentLineCharBBoxes;
+	currentLineCharBBoxes.reserve(200);
+
 
 	// � ����� ���������� WordControl
 
@@ -203,13 +251,12 @@ BOOL Static_MakeHTML(
 			FontStyle(CED_GetCharFontAttribs(hObject));
 
 			r = CED_GetCharLayout(hObject);
+            currentLineCharBBoxes.push_back(r);
+
 			// �������� ������
             if(isGoodCharRect(r) && hocrmode)
 			{
-                sprintf(buf, "<span title=\"bbox %d %d %d %d\">"
-					, r.left, r.top, r.right, r.bottom);
-                PUT_STRING(buf);
-				if (0 == isInLine)
+                if (0 == isInLine)
 				// ������ ����������� ������ ������
 				{
 					if (isGoodCharRect(r))
@@ -233,8 +280,6 @@ BOOL Static_MakeHTML(
 				}
             }
             ONE_CHAR(hObject);
-            if(r.left != -1 && hocrmode)
-                PUT_STRING("</span>");
 
 			break;
 		}
@@ -246,12 +291,24 @@ BOOL Static_MakeHTML(
 
 		case BROWSE_LINE_END:
 			// ����� ������ ������
-			writeHocrLine(pLineStart, rcLine, iLine++);
+			writeHocrLineStartTag(pLineStart, rcLine, iLine);
+
+			// write character bounding boxes info
+			if (currentLineCharBBoxes.size())
+				writeHocrCharBBoxesInfo(currentLineCharBBoxes, iLine);
+			currentLineCharBBoxes.resize(0);
+
+
 			isInLine = false;
 			if ( gPreserveLineBreaks || gEdLineHardBreak )
 			{
 				PUT_STRING("<br>");
 			}
+
+			iLine++;
+			// close HocrLine tag
+			PUT_STRING("</span>");
+
 			NEW_LINE;
 			break;
 
@@ -294,7 +351,7 @@ BOOL Static_MakeHTML(
 				//������ <div class='ocr_page' title='image "page-000.pbm"; bbox 0 0 4306 6064'>
 				outStrm << "<div class='ocr_page' id='page_" << iPage << "' ";
 				outStrm << "title='image \"" << pImageName << "\"; bbox 0 0 "
-					<< sizeImage.cx << " " << sizeImage.cy << "'" << endl;
+					<< sizeImage.cx << " " << sizeImage.cy << "'>" << endl;
 				strm2buf(outStrm);
 				++iPage;
 			}
@@ -430,13 +487,13 @@ static BOOL CellStart()
 		strcpy(buf,"<td>");
 
 	else if ( rowspan > 1 && colspan == 1 )
-		sprintf(buf,"<td rowspan=%l>",rowspan);
+		sprintf(buf,"<td rowspan=%d>",rowspan);
 
 	else if ( rowspan == 1 && colspan > 1 )
-		sprintf(buf,"<td colspan=%l>",colspan);
+		sprintf(buf,"<td colspan=%d>",colspan);
 
 	else // ( rowspan > 1 && colspan > 1 )
-		sprintf(buf,"<td rowspan=%l colspan=%l>",rowspan,colspan);
+		sprintf(buf,"<td rowspan=%d colspan=%d>",rowspan,colspan);
 
 	PUT_STRING(buf);
 	return TRUE;
