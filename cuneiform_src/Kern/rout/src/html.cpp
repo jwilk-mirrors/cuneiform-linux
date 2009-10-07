@@ -59,15 +59,16 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 //********************************************************************
 //
-// HTML.cpp - пїЅпїЅпїЅпїЅпїЅпїЅ HTML
+// HTML.cpp - формат HTML
 //
 // This file creation date: 27.05.99
 // By Eugene Pliskin pliskin@cs.isa.ac.ru
 //
 // Changes by julien:
 //   * added ocr_cinfo element (placed inside ocr_line element)
-//   * moved <br> to be inside the ocr_line element (according to hocr spec)
-//   * moved font style tags as to adhere to html 4.01 spec. (they were "crossing" spans)
+//   * moved <br> to be inside the ocr_line element (hocr spec)
+//   * moved font style tags as to adhere to html 4.01 spec. 
+//     (they were "crossing" spans)
 //********************************************************************
 
 
@@ -200,7 +201,7 @@ writeHocrCharBBoxesInfo(const std::vector<edRect > &charBboxes, const unsigned i
 
 	// (check memory assures gMemCur can store and has 10 bytes extra).
 	// the comment below was copied from writeHocrLine
-	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+	// проверим достаточность памяти
 	CHECK_MEMORY(sizeMem + 10);
 
 	::memcpy(gMemCur, outStrm.str().c_str(), sizeMem);
