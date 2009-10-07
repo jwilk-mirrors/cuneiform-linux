@@ -253,12 +253,12 @@ BOOL Static_MakeHTML(
 			FontStyle(CED_GetCharFontAttribs(hObject));
 
 			r = CED_GetCharLayout(hObject);
-            currentLineCharBBoxes.push_back(r);
+           		currentLineCharBBoxes.push_back(r);
 
 			// Записать символ
-            if(isGoodCharRect(r) && hocrmode)
+            		if(isGoodCharRect(r) && hocrmode)
 			{
-                if (0 == isInLine)
+                		if (0 == isInLine)
 				// начнем определение границ строки
 				{
 					if (isGoodCharRect(r))
