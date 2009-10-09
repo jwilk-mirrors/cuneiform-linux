@@ -63,12 +63,6 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 // This file creation date: 27.05.99
 // By Eugene Pliskin pliskin@cs.isa.ac.ru
-//
-// Changes by julien:
-//   * added ocr_cinfo element (placed inside ocr_line element)
-//   * moved <br> to be inside the ocr_line element (hocr spec)
-//   * moved font style tags as to adhere to html 4.01 spec. 
-//     (they were "crossing" spans)
 //********************************************************************
 
 
@@ -293,12 +287,14 @@ BOOL Static_MakeHTML(
 
 		case BROWSE_LINE_END:
 			// Конец строки текста
-			writeHocrLineStartTag(pLineStart, rcLine, iLine);
+			if (hocrmode)
+				writeHocrLineStartTag(pLineStart, rcLine, iLine);
 			FontStyle(0);
 
 			// write character bounding boxes info
 			if (currentLineCharBBoxes.size())
-				writeHocrCharBBoxesInfo(currentLineCharBBoxes, iLine);
+				if (hocrmode)
+					writeHocrCharBBoxesInfo(currentLineCharBBoxes, iLine);
 			currentLineCharBBoxes.resize(0);
 
 
