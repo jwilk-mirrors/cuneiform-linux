@@ -57,6 +57,37 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #ifndef _LANGDEF_INCLUDED_
 #define _LANGDEF_INCLUDED_
 
+#if defined (__NT__) || defined (_WINNT_) || defined(__MINGW32__) // 06.09.00 E.P.
+  #undef LANG_ENGLISH
+  #undef LANG_GERMAN
+  #undef LANG_FRENCH
+  #undef LANG_RUSSIAN
+  #undef LANG_SWEDISH
+  #undef LANG_SPANISH
+  #undef LANG_ITALIAN
+  #undef LANG_UKRAINIAN
+  #undef LANG_TOTAL
+  #undef LANG_SERBIAN
+  #undef LANG_CROATIAN
+  #undef LANG_DANISH
+  #undef LANG_PORTUGUESE
+  #undef LANG_DUTCH
+  #undef LANG_TOTAL
+  #undef LANG_POLISH
+  #undef LANG_UZBEK
+  #undef LANG_KAZ
+  #undef LANG_KAZ_ENG
+  #undef LANG_CZECH
+  #undef LANG_ROMAN
+  #undef LANG_HUNGAR
+  #undef LANG_BULGAR
+  #undef LANG_SLOVENIAN
+  #undef LANG_LATVIAN
+  #undef LANG_LITHUANIAN
+  #undef LANG_ESTONIAN
+  #undef LANG_TURKISH
+#endif
+
 enum Languages {
     LANG_ENGLISH    = 0,
     LANG_GERMAN     = 1,

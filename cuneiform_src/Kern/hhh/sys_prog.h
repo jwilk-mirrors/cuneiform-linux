@@ -128,7 +128,11 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/stat.h>
+#ifdef WIN32
+typedef unsigned int uint;
+#else
 #include <sys/types.h>
+#endif
 #include <string.h>
 #include <fcntl.h>
 

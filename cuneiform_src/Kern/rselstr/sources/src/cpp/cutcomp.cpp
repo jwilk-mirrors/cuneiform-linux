@@ -67,8 +67,10 @@
 #include "polyblock.h"
 //#include "rreccom.h"
 
+#ifndef WIN32
 #define RGB(r,g,b)          ((COLORREF)(((BYTE)(r)|((WORD)((BYTE)(g))<<8))|(((uint32_t)(BYTE)(b))<<16)))
 typedef uint32_t COLORREF;
+#endif
 
 int inf_cut_h = 15;
 int sup_cut_h;

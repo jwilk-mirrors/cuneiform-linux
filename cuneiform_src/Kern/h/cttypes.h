@@ -57,7 +57,33 @@
 #ifndef __CTTYPES_H
 #define __CTTYPES_H
 
+#ifdef _MSC_VER
+/*
+MSVC does not come with stdint.h, even though it was standardized
+way back in 1999. But what would you expect from the company that brought
+you Internet Explorer?
+*/
+
+typedef __int8 int8_t;
+typedef unsigned __int8 uint8_t;
+typedef __int16 int16_t;
+typedef unsigned __int16 uint16_t;
+typedef __int32 int32_t;
+typedef unsigned __int32 uint32_t;
+typedef __int64 int64_t;
+typedef unsigned __int64 uint64_t;
+
+#if _MSC_VER <= 1200
+typedef unsigned long intptr_t;
+#endif
+
+#else
 #include <stdint.h>
+#endif
+
+#ifdef WIN32
+#include<windows.h>
+#endif
 
 /*** _SETTYPES() ***/
 #undef _SETTYPES
@@ -175,6 +201,8 @@ typedef const char* LPCSTR;
 typedef const char* LPCWSTR;
 typedef const char* LPCTSTR;
 
+typedef uint32_t * PDWORD;
+typedef uint32_t * LPDWORD;
 #endif
 
 typedef int BOOL;
@@ -188,7 +216,6 @@ typedef unsigned char * PBYTE;
 typedef int16_t SINT;
 
 typedef LONG * PLONG;
-typedef uint32_t * PDWORD;
 
 typedef int16_t _INT;
 typedef int16_t * _PINT;
@@ -197,7 +224,6 @@ typedef int16_t * _PINT;
 typedef WORD * PWORD;
 
 typedef BYTE* LPBYTE;
-typedef uint32_t * LPDWORD;
 typedef BOOL* LPBOOL;
 typedef LONG* LPLONG;
 typedef void* LPVOID;

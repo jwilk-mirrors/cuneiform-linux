@@ -518,7 +518,7 @@ uint32_t wBuffSize=256;
                 pName++;
             strncpy(szComputerName,lpBuffer+2,pName-(lpBuffer+2));
             szComputerName[pName-(lpBuffer+2)]=0;
-            if(!GetComputerName(szComputerNameThis,&wBuffSize))
+            if(!GetComputerName(szComputerNameThis,(DWORD*)&wBuffSize))
                 return 0;
             if(strcmp(szComputerNameThis,szComputerName))
                 nResult|=STD_DIRINFO_DRV_NET;
@@ -666,7 +666,7 @@ uint32_t nValType=0; BYTE szValData[256]={0}; uint32_t nDataLen=sizeof(szValData
         if(RegOpenKeyEx(HKEY_CURRENT_USER,szKeyPath,0,KEY_ALL_ACCESS,&hkThisDrive)!=ERROR_SUCCESS)
             return FALSE;
         if(RegQueryValueEx(hkThisDrive,"RemotePath",NULL,
-            &nValType,szValData,&nDataLen)!=ERROR_SUCCESS)
+            (DWORD*)&nValType,szValData,(DWORD*)&nDataLen)!=ERROR_SUCCESS)
             return FALSE;
     }
     sprintf(pszNetPath,"%s%s",szValData,xpPathWoDrv.buf);
