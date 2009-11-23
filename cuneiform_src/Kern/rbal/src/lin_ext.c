@@ -2,33 +2,33 @@
 Copyright (c) 1993-2008, Cognitive Technologies
 All rights reserved.
 
-Ğàçğåøàåòñÿ ïîâòîğíîå ğàñïğîñòğàíåíèå è èñïîëüçîâàíèå êàê â âèäå èñõîäíîãî êîäà,
-òàê è â äâîè÷íîé ôîğìå, ñ èçìåíåíèÿìè èëè áåç, ïğè ñîáëşäåíèè ñëåäóşùèõ óñëîâèé:
+Ğ Ğ°Ğ·Ñ€ĞµÑˆĞ°ĞµÑ‚ÑÑ Ğ¿Ğ¾Ğ²Ñ‚Ğ¾Ñ€Ğ½Ğ¾Ğµ Ñ€Ğ°ÑĞ¿Ñ€Ğ¾ÑÑ‚Ñ€Ğ°Ğ½ĞµĞ½Ğ¸Ğµ Ğ¸ Ğ¸ÑĞ¿Ğ¾Ğ»ÑŒĞ·Ğ¾Ğ²Ğ°Ğ½Ğ¸Ğµ ĞºĞ°Ğº Ğ² Ğ²Ğ¸Ğ´Ğµ Ğ¸ÑÑ…Ğ¾Ğ´Ğ½Ğ¾Ğ³Ğ¾ ĞºĞ¾Ğ´Ğ°,
+Ñ‚Ğ°Ğº Ğ¸ Ğ² Ğ´Ğ²Ğ¾Ğ¸Ñ‡Ğ½Ğ¾Ğ¹ Ñ„Ğ¾Ñ€Ğ¼Ğµ, Ñ Ğ¸Ğ·Ğ¼ĞµĞ½ĞµĞ½Ğ¸ÑĞ¼Ğ¸ Ğ¸Ğ»Ğ¸ Ğ±ĞµĞ·, Ğ¿Ñ€Ğ¸ ÑĞ¾Ğ±Ğ»ÑĞ´ĞµĞ½Ğ¸Ğ¸ ÑĞ»ĞµĞ´ÑƒÑÑ‰Ğ¸Ñ… ÑƒÑĞ»Ğ¾Ğ²Ğ¸Ğ¹:
 
-      * Ïğè ïîâòîğíîì ğàñïğîñòğàíåíèè èñõîäíîãî êîäà äîëæíû îñòàâàòüñÿ óêàçàííîå
-        âûøå óâåäîìëåíèå îá àâòîğñêîì ïğàâå, ıòîò ñïèñîê óñëîâèé è ïîñëåäóşùèé
-        îòêàç îò ãàğàíòèé.
-      * Ïğè ïîâòîğíîì ğàñïğîñòğàíåíèè äâîè÷íîãî êîäà â äîêóìåíòàöèè è/èëè â
-        äğóãèõ ìàòåğèàëàõ, ïîñòàâëÿåìûõ ïğè ğàñïğîñòğàíåíèè, äîëæíû ñîõğàíÿòüñÿ
-        óêàçàííàÿ âûøå èíôîğìàöèÿ îá àâòîğñêîì ïğàâå, ıòîò ñïèñîê óñëîâèé è
-        ïîñëåäóşùèé îòêàç îò ãàğàíòèé.
-      * Íè íàçâàíèå Cognitive Technologies, íè èìåíà åå ñîòğóäíèêîâ íå ìîãóò
-        áûòü èñïîëüçîâàíû â êà÷åñòâå ñğåäñòâà ïîääåğæêè è/èëè ïğîäâèæåíèÿ
-        ïğîäóêòîâ, îñíîâàííûõ íà ıòîì ÏÎ, áåç ïğåäâàğèòåëüíîãî ïèñüìåííîãî
-        ğàçğåøåíèÿ.
+      * ĞŸÑ€Ğ¸ Ğ¿Ğ¾Ğ²Ñ‚Ğ¾Ñ€Ğ½Ğ¾Ğ¼ Ñ€Ğ°ÑĞ¿Ñ€Ğ¾ÑÑ‚Ñ€Ğ°Ğ½ĞµĞ½Ğ¸Ğ¸ Ğ¸ÑÑ…Ğ¾Ğ´Ğ½Ğ¾Ğ³Ğ¾ ĞºĞ¾Ğ´Ğ° Ğ´Ğ¾Ğ»Ğ¶Ğ½Ñ‹ Ğ¾ÑÑ‚Ğ°Ğ²Ğ°Ñ‚ÑŒÑÑ ÑƒĞºĞ°Ğ·Ğ°Ğ½Ğ½Ğ¾Ğµ
+        Ğ²Ñ‹ÑˆĞµ ÑƒĞ²ĞµĞ´Ğ¾Ğ¼Ğ»ĞµĞ½Ğ¸Ğµ Ğ¾Ğ± Ğ°Ğ²Ñ‚Ğ¾Ñ€ÑĞºĞ¾Ğ¼ Ğ¿Ñ€Ğ°Ğ²Ğµ, ÑÑ‚Ğ¾Ñ‚ ÑĞ¿Ğ¸ÑĞ¾Ğº ÑƒÑĞ»Ğ¾Ğ²Ğ¸Ğ¹ Ğ¸ Ğ¿Ğ¾ÑĞ»ĞµĞ´ÑƒÑÑ‰Ğ¸Ğ¹
+        Ğ¾Ñ‚ĞºĞ°Ğ· Ğ¾Ñ‚ Ğ³Ğ°Ñ€Ğ°Ğ½Ñ‚Ğ¸Ğ¹.
+      * ĞŸÑ€Ğ¸ Ğ¿Ğ¾Ğ²Ñ‚Ğ¾Ñ€Ğ½Ğ¾Ğ¼ Ñ€Ğ°ÑĞ¿Ñ€Ğ¾ÑÑ‚Ñ€Ğ°Ğ½ĞµĞ½Ğ¸Ğ¸ Ğ´Ğ²Ğ¾Ğ¸Ñ‡Ğ½Ğ¾Ğ³Ğ¾ ĞºĞ¾Ğ´Ğ° Ğ² Ğ´Ğ¾ĞºÑƒĞ¼ĞµĞ½Ñ‚Ğ°Ñ†Ğ¸Ğ¸ Ğ¸/Ğ¸Ğ»Ğ¸ Ğ²
+        Ğ´Ñ€ÑƒĞ³Ğ¸Ñ… Ğ¼Ğ°Ñ‚ĞµÑ€Ğ¸Ğ°Ğ»Ğ°Ñ…, Ğ¿Ğ¾ÑÑ‚Ğ°Ğ²Ğ»ÑĞµĞ¼Ñ‹Ñ… Ğ¿Ñ€Ğ¸ Ñ€Ğ°ÑĞ¿Ñ€Ğ¾ÑÑ‚Ñ€Ğ°Ğ½ĞµĞ½Ğ¸Ğ¸, Ğ´Ğ¾Ğ»Ğ¶Ğ½Ñ‹ ÑĞ¾Ñ…Ñ€Ğ°Ğ½ÑÑ‚ÑŒÑÑ
+        ÑƒĞºĞ°Ğ·Ğ°Ğ½Ğ½Ğ°Ñ Ğ²Ñ‹ÑˆĞµ Ğ¸Ğ½Ñ„Ğ¾Ñ€Ğ¼Ğ°Ñ†Ğ¸Ñ Ğ¾Ğ± Ğ°Ğ²Ñ‚Ğ¾Ñ€ÑĞºĞ¾Ğ¼ Ğ¿Ñ€Ğ°Ğ²Ğµ, ÑÑ‚Ğ¾Ñ‚ ÑĞ¿Ğ¸ÑĞ¾Ğº ÑƒÑĞ»Ğ¾Ğ²Ğ¸Ğ¹ Ğ¸
+        Ğ¿Ğ¾ÑĞ»ĞµĞ´ÑƒÑÑ‰Ğ¸Ğ¹ Ğ¾Ñ‚ĞºĞ°Ğ· Ğ¾Ñ‚ Ğ³Ğ°Ñ€Ğ°Ğ½Ñ‚Ğ¸Ğ¹.
+      * ĞĞ¸ Ğ½Ğ°Ğ·Ğ²Ğ°Ğ½Ğ¸Ğµ Cognitive Technologies, Ğ½Ğ¸ Ğ¸Ğ¼ĞµĞ½Ğ° ĞµĞµ ÑĞ¾Ñ‚Ñ€ÑƒĞ´Ğ½Ğ¸ĞºĞ¾Ğ² Ğ½Ğµ Ğ¼Ğ¾Ğ³ÑƒÑ‚
+        Ğ±Ñ‹Ñ‚ÑŒ Ğ¸ÑĞ¿Ğ¾Ğ»ÑŒĞ·Ğ¾Ğ²Ğ°Ğ½Ñ‹ Ğ² ĞºĞ°Ñ‡ĞµÑÑ‚Ğ²Ğµ ÑÑ€ĞµĞ´ÑÑ‚Ğ²Ğ° Ğ¿Ğ¾Ğ´Ğ´ĞµÑ€Ğ¶ĞºĞ¸ Ğ¸/Ğ¸Ğ»Ğ¸ Ğ¿Ñ€Ğ¾Ğ´Ğ²Ğ¸Ğ¶ĞµĞ½Ğ¸Ñ
+        Ğ¿Ñ€Ğ¾Ğ´ÑƒĞºÑ‚Ğ¾Ğ², Ğ¾ÑĞ½Ğ¾Ğ²Ğ°Ğ½Ğ½Ñ‹Ñ… Ğ½Ğ° ÑÑ‚Ğ¾Ğ¼ ĞŸĞ, Ğ±ĞµĞ· Ğ¿Ñ€ĞµĞ´Ğ²Ğ°Ñ€Ğ¸Ñ‚ĞµĞ»ÑŒĞ½Ğ¾Ğ³Ğ¾ Ğ¿Ğ¸ÑÑŒĞ¼ĞµĞ½Ğ½Ğ¾Ğ³Ğ¾
+        Ñ€Ğ°Ğ·Ñ€ĞµÑˆĞµĞ½Ğ¸Ñ.
 
-İÒÀ ÏĞÎÃĞÀÌÌÀ ÏĞÅÄÎÑÒÀÂËÅÍÀ ÂËÀÄÅËÜÖÀÌÈ ÀÂÒÎĞÑÊÈÕ ÏĞÀÂ È/ÈËÈ ÄĞÓÃÈÌÈ ËÈÖÀÌÈ "ÊÀÊ
-ÎÍÀ ÅÑÒÜ" ÁÅÇ ÊÀÊÎÃÎ-ËÈÁÎ ÂÈÄÀ ÃÀĞÀÍÒÈÉ, ÂÛĞÀÆÅÍÍÛÕ ßÂÍÎ ÈËÈ ÏÎÄĞÀÇÓÌÅÂÀÅÌÛÕ,
-ÂÊËŞ×Àß ÃÀĞÀÍÒÈÈ ÊÎÌÌÅĞ×ÅÑÊÎÉ ÖÅÍÍÎÑÒÈ È ÏĞÈÃÎÄÍÎÑÒÈ ÄËß ÊÎÍÊĞÅÒÍÎÉ ÖÅËÈ, ÍÎ ÍÅ
-ÎÃĞÀÍÈ×ÈÂÀßÑÜ ÈÌÈ. ÍÈ ÂËÀÄÅËÅÖ ÀÂÒÎĞÑÊÈÕ ÏĞÀÂ È ÍÈ ÎÄÍÎ ÄĞÓÃÎÅ ËÈÖÎ, ÊÎÒÎĞÎÅ
-ÌÎÆÅÒ ÈÇÌÅÍßÒÜ È/ÈËÈ ÏÎÂÒÎĞÍÎ ĞÀÑÏĞÎÑÒĞÀÍßÒÜ ÏĞÎÃĞÀÌÌÓ, ÍÈ Â ÊÎÅÌ ÑËÓ×ÀÅ ÍÅ
-ÍÅÑ¨Ò ÎÒÂÅÒÑÒÂÅÍÍÎÑÒÈ, ÂÊËŞ×Àß ËŞÁÛÅ ÎÁÙÈÅ, ÑËÓ×ÀÉÍÛÅ, ÑÏÅÖÈÀËÜÍÛÅ ÈËÈ
-ÏÎÑËÅÄÎÂÀÂØÈÅ ÓÁÛÒÊÈ, ÑÂßÇÀÍÍÛÅ Ñ ÈÑÏÎËÜÇÎÂÀÍÈÅÌ ÈËÈ ÏÎÍÅÑÅÍÍÛÅ ÂÑËÅÄÑÒÂÈÅ
-ÍÅÂÎÇÌÎÆÍÎÑÒÈ ÈÑÏÎËÜÇÎÂÀÍÈß ÏĞÎÃĞÀÌÌÛ (ÂÊËŞ×Àß ÏÎÒÅĞÈ ÄÀÍÍÛÕ, ÈËÈ ÄÀÍÍÛÅ,
-ÑÒÀÂØÈÅ ÍÅÃÎÄÍÛÌÈ, ÈËÈ ÓÁÛÒÊÈ È/ÈËÈ ÏÎÒÅĞÈ ÄÎÕÎÄÎÂ, ÏÎÍÅÑÅÍÍÛÅ ÈÇ-ÇÀ ÄÅÉÑÒÂÈÉ
-ÒĞÅÒÜÈÕ ËÈÖ È/ÈËÈ ÎÒÊÀÇÀ ÏĞÎÃĞÀÌÌÛ ĞÀÁÎÒÀÒÜ ÑÎÂÌÅÑÒÍÎ Ñ ÄĞÓÃÈÌÈ ÏĞÎÃĞÀÌÌÀÌÈ,
-ÍÎ ÍÅ ÎÃĞÀÍÈ×ÈÂÀßÑÜ İÒÈÌÈ ÑËÓ×ÀßÌÈ), ÍÎ ÍÅ ÎÃĞÀÍÈ×ÈÂÀßÑÜ ÈÌÈ, ÄÀÆÅ ÅÑËÈ ÒÀÊÎÉ
-ÂËÀÄÅËÅÖ ÈËÈ ÄĞÓÃÎÅ ËÈÖÎ ÁÛËÈ ÈÇÂÅÙÅÍÛ Î ÂÎÇÌÎÆÍÎÑÒÈ ÒÀÊÈÕ ÓÁÛÒÊÎÂ È ÏÎÒÅĞÜ.
+Ğ­Ğ¢Ğ ĞŸĞ ĞĞ“Ğ ĞĞœĞœĞ ĞŸĞ Ğ•Ğ”ĞĞ¡Ğ¢ĞĞ’Ğ›Ğ•ĞĞ Ğ’Ğ›ĞĞ”Ğ•Ğ›Ğ¬Ğ¦ĞĞœĞ˜ ĞĞ’Ğ¢ĞĞ Ğ¡ĞšĞ˜Ğ¥ ĞŸĞ ĞĞ’ Ğ˜/Ğ˜Ğ›Ğ˜ Ğ”Ğ Ğ£Ğ“Ğ˜ĞœĞ˜ Ğ›Ğ˜Ğ¦ĞĞœĞ˜ "ĞšĞĞš
+ĞĞĞ Ğ•Ğ¡Ğ¢Ğ¬" Ğ‘Ğ•Ğ— ĞšĞĞšĞĞ“Ğ-Ğ›Ğ˜Ğ‘Ğ Ğ’Ğ˜Ğ”Ğ Ğ“ĞĞ ĞĞĞ¢Ğ˜Ğ™, Ğ’Ğ«Ğ ĞĞ–Ğ•ĞĞĞ«Ğ¥ Ğ¯Ğ’ĞĞ Ğ˜Ğ›Ğ˜ ĞŸĞĞ”Ğ ĞĞ—Ğ£ĞœĞ•Ğ’ĞĞ•ĞœĞ«Ğ¥,
+Ğ’ĞšĞ›Ğ®Ğ§ĞĞ¯ Ğ“ĞĞ ĞĞĞ¢Ğ˜Ğ˜ ĞšĞĞœĞœĞ•Ğ Ğ§Ğ•Ğ¡ĞšĞĞ™ Ğ¦Ğ•ĞĞĞĞ¡Ğ¢Ğ˜ Ğ˜ ĞŸĞ Ğ˜Ğ“ĞĞ”ĞĞĞ¡Ğ¢Ğ˜ Ğ”Ğ›Ğ¯ ĞšĞĞĞšĞ Ğ•Ğ¢ĞĞĞ™ Ğ¦Ğ•Ğ›Ğ˜, ĞĞ ĞĞ•
+ĞĞ“Ğ ĞĞĞ˜Ğ§Ğ˜Ğ’ĞĞ¯Ğ¡Ğ¬ Ğ˜ĞœĞ˜. ĞĞ˜ Ğ’Ğ›ĞĞ”Ğ•Ğ›Ğ•Ğ¦ ĞĞ’Ğ¢ĞĞ Ğ¡ĞšĞ˜Ğ¥ ĞŸĞ ĞĞ’ Ğ˜ ĞĞ˜ ĞĞ”ĞĞ Ğ”Ğ Ğ£Ğ“ĞĞ• Ğ›Ğ˜Ğ¦Ğ, ĞšĞĞ¢ĞĞ ĞĞ•
+ĞœĞĞ–Ğ•Ğ¢ Ğ˜Ğ—ĞœĞ•ĞĞ¯Ğ¢Ğ¬ Ğ˜/Ğ˜Ğ›Ğ˜ ĞŸĞĞ’Ğ¢ĞĞ ĞĞ Ğ ĞĞ¡ĞŸĞ ĞĞ¡Ğ¢Ğ ĞĞĞ¯Ğ¢Ğ¬ ĞŸĞ ĞĞ“Ğ ĞĞœĞœĞ£, ĞĞ˜ Ğ’ ĞšĞĞ•Ğœ Ğ¡Ğ›Ğ£Ğ§ĞĞ• ĞĞ•
+ĞĞ•Ğ¡ĞĞ¢ ĞĞ¢Ğ’Ğ•Ğ¢Ğ¡Ğ¢Ğ’Ğ•ĞĞĞĞ¡Ğ¢Ğ˜, Ğ’ĞšĞ›Ğ®Ğ§ĞĞ¯ Ğ›Ğ®Ğ‘Ğ«Ğ• ĞĞ‘Ğ©Ğ˜Ğ•, Ğ¡Ğ›Ğ£Ğ§ĞĞ™ĞĞ«Ğ•, Ğ¡ĞŸĞ•Ğ¦Ğ˜ĞĞ›Ğ¬ĞĞ«Ğ• Ğ˜Ğ›Ğ˜
+ĞŸĞĞ¡Ğ›Ğ•Ğ”ĞĞ’ĞĞ’Ğ¨Ğ˜Ğ• Ğ£Ğ‘Ğ«Ğ¢ĞšĞ˜, Ğ¡Ğ’Ğ¯Ğ—ĞĞĞĞ«Ğ• Ğ¡ Ğ˜Ğ¡ĞŸĞĞ›Ğ¬Ğ—ĞĞ’ĞĞĞ˜Ğ•Ğœ Ğ˜Ğ›Ğ˜ ĞŸĞĞĞ•Ğ¡Ğ•ĞĞĞ«Ğ• Ğ’Ğ¡Ğ›Ğ•Ğ”Ğ¡Ğ¢Ğ’Ğ˜Ğ•
+ĞĞ•Ğ’ĞĞ—ĞœĞĞ–ĞĞĞ¡Ğ¢Ğ˜ Ğ˜Ğ¡ĞŸĞĞ›Ğ¬Ğ—ĞĞ’ĞĞĞ˜Ğ¯ ĞŸĞ ĞĞ“Ğ ĞĞœĞœĞ« (Ğ’ĞšĞ›Ğ®Ğ§ĞĞ¯ ĞŸĞĞ¢Ğ•Ğ Ğ˜ Ğ”ĞĞĞĞ«Ğ¥, Ğ˜Ğ›Ğ˜ Ğ”ĞĞĞĞ«Ğ•,
+Ğ¡Ğ¢ĞĞ’Ğ¨Ğ˜Ğ• ĞĞ•Ğ“ĞĞ”ĞĞ«ĞœĞ˜, Ğ˜Ğ›Ğ˜ Ğ£Ğ‘Ğ«Ğ¢ĞšĞ˜ Ğ˜/Ğ˜Ğ›Ğ˜ ĞŸĞĞ¢Ğ•Ğ Ğ˜ Ğ”ĞĞ¥ĞĞ”ĞĞ’, ĞŸĞĞĞ•Ğ¡Ğ•ĞĞĞ«Ğ• Ğ˜Ğ—-Ğ—Ğ Ğ”Ğ•Ğ™Ğ¡Ğ¢Ğ’Ğ˜Ğ™
+Ğ¢Ğ Ğ•Ğ¢Ğ¬Ğ˜Ğ¥ Ğ›Ğ˜Ğ¦ Ğ˜/Ğ˜Ğ›Ğ˜ ĞĞ¢ĞšĞĞ—Ğ ĞŸĞ ĞĞ“Ğ ĞĞœĞœĞ« Ğ ĞĞ‘ĞĞ¢ĞĞ¢Ğ¬ Ğ¡ĞĞ’ĞœĞ•Ğ¡Ğ¢ĞĞ Ğ¡ Ğ”Ğ Ğ£Ğ“Ğ˜ĞœĞ˜ ĞŸĞ ĞĞ“Ğ ĞĞœĞœĞĞœĞ˜,
+ĞĞ ĞĞ• ĞĞ“Ğ ĞĞĞ˜Ğ§Ğ˜Ğ’ĞĞ¯Ğ¡Ğ¬ Ğ­Ğ¢Ğ˜ĞœĞ˜ Ğ¡Ğ›Ğ£Ğ§ĞĞ¯ĞœĞ˜), ĞĞ ĞĞ• ĞĞ“Ğ ĞĞĞ˜Ğ§Ğ˜Ğ’ĞĞ¯Ğ¡Ğ¬ Ğ˜ĞœĞ˜, Ğ”ĞĞ–Ğ• Ğ•Ğ¡Ğ›Ğ˜ Ğ¢ĞĞšĞĞ™
+Ğ’Ğ›ĞĞ”Ğ•Ğ›Ğ•Ğ¦ Ğ˜Ğ›Ğ˜ Ğ”Ğ Ğ£Ğ“ĞĞ• Ğ›Ğ˜Ğ¦Ğ Ğ‘Ğ«Ğ›Ğ˜ Ğ˜Ğ—Ğ’Ğ•Ğ©Ğ•ĞĞ« Ğ Ğ’ĞĞ—ĞœĞĞ–ĞĞĞ¡Ğ¢Ğ˜ Ğ¢ĞĞšĞ˜Ğ¥ Ğ£Ğ‘Ğ«Ğ¢ĞšĞĞ’ Ğ˜ ĞŸĞĞ¢Ğ•Ğ Ğ¬.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
@@ -74,12 +74,12 @@ extern INT it_done;
 static Int16 skew_corr_stat(CSTR_line ln, INT pool_src);
 static Int16 rast_is_BOX_solid (CSTR_rast B1,Int16 scale);
 static BOOL snap_monitor_stat(void);
-static BOOL snap_monitor_ori_stat(CSTR_line *snap_line, Int32 num_lines);//IGOR
+static BOOL snap_monitor_ori_stat(CSTR_line *snap_line, int32_t num_lines);//IGOR
 static BOOL snap_is_marked_stat(CSTR_line ln);//IGOR
 static BOOL snap_baselines_stat(BYTE a);//IGOR
-static void snap_draw_line_stat(Handle wnd, Point16 *start, Point16 *end, Int32 skew,
-					                               Word32 rgb, Int16 pen, Word32 key);//IGOR
-static void snap_del_line_stat(Handle wnd, Word32 key);//IGOR
+static void snap_draw_line_stat(Handle wnd, Point16 *start, Point16 *end, int32_t skew,
+					                               uint32_t rgb, Int16 pen, uint32_t key);//IGOR
+static void snap_del_line_stat(Handle wnd, uint32_t key);//IGOR
 static BOOL snap_show_text_stat(BYTE *txt);
 static BOOL snap_activity_stat(BYTE a);
 
@@ -90,13 +90,13 @@ Int16 (*RSTR_rast_is_BOX_solid) (CSTR_rast B1,Int16 scale) = rast_is_BOX_solid;
 BOOL (*snap_monitor_rbal)(void)=snap_monitor_stat;
 BOOL (*snap_show_text_rbal)(BYTE *txt)=snap_show_text_stat;
 BOOL (*snap_activity_rbal)(BYTE a)=snap_activity_stat;
-BOOL (*snap_monitor_ori_rbal)(CSTR_line *snap_line, Int32 num_lines)=snap_monitor_ori_stat; //IGOR
+BOOL (*snap_monitor_ori_rbal)(CSTR_line *snap_line, int32_t num_lines)=snap_monitor_ori_stat; //IGOR
 BOOL (*snap_is_marked_rbal)(CSTR_line ln)=snap_is_marked_stat;//IGOR
 BOOL (*snap_baselines_rbal)(BYTE a)=snap_baselines_stat;//IGOR
-void (*snap_draw_line_rbal)(Handle wnd, Point16 *start, Point16 *end, Int32 skew,
-					                   Word32 rgb, Int16 pen, Word32 key)
+void (*snap_draw_line_rbal)(Handle wnd, Point16 *start, Point16 *end, int32_t skew,
+					                   uint32_t rgb, Int16 pen, uint32_t key)
 							=snap_draw_line_stat;//IGOR
-void (*snap_del_line_rbal)(Handle wnd, Word32 key) = snap_del_line_stat;//IGOR
+void (*snap_del_line_rbal)(Handle wnd, uint32_t key) = snap_del_line_stat;//IGOR
 
 CSTR_line lin_str=(CSTR_line)NULL;
 
@@ -108,7 +108,7 @@ Word16 actual_resolution=300;
 Word8  fEdCode = 0;  // ASCII
 BOOL   line_BL=FALSE;
 Word8  spec_camera = 0;
-Int32  nIncline=0;
+int32_t  nIncline=0;
 Word8  no_linpen=0;
 Int16  prop_l_delta=0, prop_r_delta=0;
 
@@ -372,7 +372,7 @@ static Int16 skew_corr_stat(CSTR_line ln, INT pool_src)
 ////////////
 /////////////////////
 // dms.c
-// ñäåëàòü B1->env   (è äëÿ CSTR_rast -> comp )
+// ÑĞ´ĞµĞ»Ğ°Ñ‚ÑŒ B1->env   (Ğ¸ Ğ´Ğ»Ñ CSTR_rast -> comp )
 static Int16 rast_is_BOX_solid (CSTR_rast B1,Int16 scale)
 {
 	return 0;
@@ -464,7 +464,7 @@ void dust_ini(CSTR_line lin)
 BOOL snap_monitor_stat(void)
 { return FALSE;}
 ///////
-BOOL snap_monitor_ori_stat(CSTR_line *snap_line, Int32 num_lines)//IGOR
+BOOL snap_monitor_ori_stat(CSTR_line *snap_line, int32_t num_lines)//IGOR
 {return FALSE;}
 ///////
 BOOL snap_is_marked_stat(CSTR_line ln)//IGOR
@@ -473,11 +473,11 @@ BOOL snap_is_marked_stat(CSTR_line ln)//IGOR
 BOOL snap_baselines_stat(BYTE a)//IGOR
 { return FALSE;}
 ///////
-void snap_draw_line_stat(Handle wnd, Point16 *start, Point16 *end, Int32 skew,
-											Word32 rgb, Int16 pen, Word32 key)//IGOR
+void snap_draw_line_stat(Handle wnd, Point16 *start, Point16 *end, int32_t skew,
+											uint32_t rgb, Int16 pen, uint32_t key)//IGOR
 { return;}
 ///////
-void snap_del_line_stat(Handle wnd, Word32 key)//IGOR
+void snap_del_line_stat(Handle wnd, uint32_t key)//IGOR
 { return;}
 ///////
 BOOL snap_show_text_stat(BYTE *txt)
@@ -493,8 +493,8 @@ BOOL snap_newcell (CSTR_rast c)
 }
 */
 /////////////////
-// old - åñëè arg==0 - äîáàâèòü ìóñîğ èç ñòğîêè lin_str
-// ïğîâåğèòü/èçìåíèòü ìåòêè ìóñîğ-íåò
+// old - ĞµÑĞ»Ğ¸ arg==0 - Ğ´Ğ¾Ğ±Ğ°Ğ²Ğ¸Ñ‚ÑŒ Ğ¼ÑƒÑĞ¾Ñ€ Ğ¸Ğ· ÑÑ‚Ñ€Ğ¾ĞºĞ¸ lin_str
+// Ğ¿Ñ€Ğ¾Ğ²ĞµÑ€Ğ¸Ñ‚ÑŒ/Ğ¸Ğ·Ğ¼ĞµĞ½Ğ¸Ñ‚ÑŒ Ğ¼ĞµÑ‚ĞºĞ¸ Ğ¼ÑƒÑĞ¾Ñ€-Ğ½ĞµÑ‚
 static void test_dust(void)     // INT arg)
 {
 /*
@@ -515,14 +515,14 @@ static void test_dust(void)     // INT arg)
 }
 
 //////////////
-// ÷åğíîâîå îïğåäåëåíèå ÁË
+// Ñ‡ĞµÑ€Ğ½Ğ¾Ğ²Ğ¾Ğµ Ğ¾Ğ¿Ñ€ĞµĞ´ĞµĞ»ĞµĞ½Ğ¸Ğµ Ğ‘Ğ›
 //
-// Äëÿ íîâîé	 âåğñèè :
-// ñíà÷àëà âõîä - ln,0
-// âûõîä
-// Äîáàâëåíèå äóñòà ñíàğóæè
-// Âõîä ln, 1
-// Âõîä ln, 2
+// Ğ”Ğ»Ñ Ğ½Ğ¾Ğ²Ğ¾Ğ¹	 Ğ²ĞµÑ€ÑĞ¸Ğ¸ :
+// ÑĞ½Ğ°Ñ‡Ğ°Ğ»Ğ° Ğ²Ñ…Ğ¾Ğ´ - ln,0
+// Ğ²Ñ‹Ñ…Ğ¾Ğ´
+// Ğ”Ğ¾Ğ±Ğ°Ğ²Ğ»ĞµĞ½Ğ¸Ğµ Ğ´ÑƒÑÑ‚Ğ° ÑĞ½Ğ°Ñ€ÑƒĞ¶Ğ¸
+// Ğ’Ñ…Ğ¾Ğ´ ln, 1
+// Ğ’Ñ…Ğ¾Ğ´ ln, 2
 //
 static int basedraft(CSTR_line ln, Word8 isDust)
 {
@@ -533,7 +533,7 @@ static int basedraft(CSTR_line ln, Word8 isDust)
 
   lin_str = ln;
 
-  if( !isDust ) // íà÷àëüíûé ïğîõîä
+  if( !isDust ) // Ğ½Ğ°Ñ‡Ğ°Ğ»ÑŒĞ½Ñ‹Ğ¹ Ğ¿Ñ€Ğ¾Ñ…Ğ¾Ğ´
   {
    //if (line_number == 0)
    if ( line_number <= 1 )
@@ -560,7 +560,7 @@ static int basedraft(CSTR_line ln, Word8 isDust)
   if( isDust > 1)
 	  goto mainCircle;
 
-  if( isDust ) // âòîğîé ïğîõîä - óæå ñ äóñòîì
+  if( isDust ) // Ğ²Ñ‚Ğ¾Ñ€Ğ¾Ğ¹ Ğ¿Ñ€Ğ¾Ñ…Ğ¾Ğ´ - ÑƒĞ¶Ğµ Ñ Ğ´ÑƒÑÑ‚Ğ¾Ğ¼
   {
    if ((forbiset) && (db_status))
      li_snap("forbid=");
@@ -575,7 +575,7 @@ static int basedraft(CSTR_line ln, Word8 isDust)
    if( !CSTR_GetNextRaster(cell_f(),f_letter) )
    	   goto drfin;  // line emptied
 
-// íàéòè-óòî÷íèòü íàêëîí nIncline ; âòîğîé ïàğàìåòğ 1 - åñëè ïî cell!
+// Ğ½Ğ°Ğ¹Ñ‚Ğ¸-ÑƒÑ‚Ğ¾Ñ‡Ğ½Ğ¸Ñ‚ÑŒ Ğ½Ğ°ĞºĞ»Ğ¾Ğ½ nIncline ; Ğ²Ñ‚Ğ¾Ñ€Ğ¾Ğ¹ Ğ¿Ğ°Ñ€Ğ°Ğ¼ĞµÑ‚Ñ€ 1 - ĞµÑĞ»Ğ¸ Ğ¿Ğ¾ cell!
    nIncline = RSTR_skew_corr(ln,2);
 
    C=cell_f();
@@ -601,14 +601,14 @@ static int basedraft(CSTR_line ln, Word8 isDust)
   oNb1=oNb2=oNb3=oNb4=0;
   cells_inln = 0;
 
-// âñå îáíóëèòü
+// Ğ²ÑĞµ Ğ¾Ğ±Ğ½ÑƒĞ»Ğ¸Ñ‚ÑŒ
   gen_reset();
 
   trans_total = 0;
   fl_artifact = 0;
   ntot_old = ncut_old = nmult_old = ndead_old = nvers_old = 0;
 
- // ñáîğ ñòàòèñòèêè, ïîèñê ÁË
+ // ÑĞ±Ğ¾Ñ€ ÑÑ‚Ğ°Ñ‚Ğ¸ÑÑ‚Ğ¸ĞºĞ¸, Ğ¿Ğ¾Ğ¸ÑĞº Ğ‘Ğ›
   defbas(0);
 
   bsdust_ps = Ps;
@@ -637,9 +637,9 @@ static int basedraft(CSTR_line ln, Word8 isDust)
     hist_done = 0;
   }
 
-  return 0;    // âåğíåìñÿ çà äóñòîì -
-	           // êàêèå-òî ÁË óæå åñòü, ìîæíî òî÷íåå
-	           // îïğåäåëèòü òî÷êè i, j  è ò.ï.
+  return 0;    // Ğ²ĞµÑ€Ğ½ĞµĞ¼ÑÑ Ğ·Ğ° Ğ´ÑƒÑÑ‚Ğ¾Ğ¼ -
+	           // ĞºĞ°ĞºĞ¸Ğµ-Ñ‚Ğ¾ Ğ‘Ğ› ÑƒĞ¶Ğµ ĞµÑÑ‚ÑŒ, Ğ¼Ğ¾Ğ¶Ğ½Ğ¾ Ñ‚Ğ¾Ñ‡Ğ½ĞµĞµ
+	           // Ğ¾Ğ¿Ñ€ĞµĞ´ĞµĞ»Ğ¸Ñ‚ÑŒ Ñ‚Ğ¾Ñ‡ĞºĞ¸ i, j  Ğ¸ Ñ‚.Ğ¿.
 
 
 mainCircle:
@@ -659,7 +659,7 @@ mainCircle:
    	   goto drfin;  // line emptied
 
 
-// íàéòè-óòî÷íèòü íàêëîí nIncline
+// Ğ½Ğ°Ğ¹Ñ‚Ğ¸-ÑƒÑ‚Ğ¾Ñ‡Ğ½Ğ¸Ñ‚ÑŒ Ğ½Ğ°ĞºĞ»Ğ¾Ğ½ nIncline
    nIncline = RSTR_skew_corr(ln,2);
 
    C=cell_f();
@@ -675,7 +675,7 @@ mainCircle:
    if (fl_artifact > 1)
 	   break;
 
-   // óòî÷íèòü ÁË
+   // ÑƒÑ‚Ğ¾Ñ‡Ğ½Ğ¸Ñ‚ÑŒ Ğ‘Ğ›
    defbas(0);
  }
 

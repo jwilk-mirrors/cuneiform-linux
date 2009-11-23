@@ -2,33 +2,33 @@
 Copyright (c) 1993-2008, Cognitive Technologies
 All rights reserved.
 
-Разрешается повторное распространение и использование как в виде исходного кода,
-так и в двоичной форме, с изменениями или без, при соблюдении следующих условий:
+Р Р°Р·СЂРµС€Р°РµС‚СЃСЏ РїРѕРІС‚РѕСЂРЅРѕРµ СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРµ Рё РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ РєР°Рє РІ РІРёРґРµ РёСЃС…РѕРґРЅРѕРіРѕ РєРѕРґР°,
+С‚Р°Рє Рё РІ РґРІРѕРёС‡РЅРѕР№ С„РѕСЂРјРµ, СЃ РёР·РјРµРЅРµРЅРёСЏРјРё РёР»Рё Р±РµР·, РїСЂРё СЃРѕР±Р»СЋРґРµРЅРёРё СЃР»РµРґСѓСЋС‰РёС… СѓСЃР»РѕРІРёР№:
 
-      * При повторном распространении исходного кода должны оставаться указанное
-        выше уведомление об авторском праве, этот список условий и последующий
-        отказ от гарантий.
-      * При повторном распространении двоичного кода в документации и/или в
-        других материалах, поставляемых при распространении, должны сохраняться
-        указанная выше информация об авторском праве, этот список условий и
-        последующий отказ от гарантий.
-      * Ни название Cognitive Technologies, ни имена ее сотрудников не могут
-        быть использованы в качестве средства поддержки и/или продвижения
-        продуктов, основанных на этом ПО, без предварительного письменного
-        разрешения.
+      * РџСЂРё РїРѕРІС‚РѕСЂРЅРѕРј СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё РёСЃС…РѕРґРЅРѕРіРѕ РєРѕРґР° РґРѕР»Р¶РЅС‹ РѕСЃС‚Р°РІР°С‚СЊСЃСЏ СѓРєР°Р·Р°РЅРЅРѕРµ
+        РІС‹С€Рµ СѓРІРµРґРѕРјР»РµРЅРёРµ РѕР± Р°РІС‚РѕСЂСЃРєРѕРј РїСЂР°РІРµ, СЌС‚РѕС‚ СЃРїРёСЃРѕРє СѓСЃР»РѕРІРёР№ Рё РїРѕСЃР»РµРґСѓСЋС‰РёР№
+        РѕС‚РєР°Р· РѕС‚ РіР°СЂР°РЅС‚РёР№.
+      * РџСЂРё РїРѕРІС‚РѕСЂРЅРѕРј СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё РґРІРѕРёС‡РЅРѕРіРѕ РєРѕРґР° РІ РґРѕРєСѓРјРµРЅС‚Р°С†РёРё Рё/РёР»Рё РІ
+        РґСЂСѓРіРёС… РјР°С‚РµСЂРёР°Р»Р°С…, РїРѕСЃС‚Р°РІР»СЏРµРјС‹С… РїСЂРё СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё, РґРѕР»Р¶РЅС‹ СЃРѕС…СЂР°РЅСЏС‚СЊСЃСЏ
+        СѓРєР°Р·Р°РЅРЅР°СЏ РІС‹С€Рµ РёРЅС„РѕСЂРјР°С†РёСЏ РѕР± Р°РІС‚РѕСЂСЃРєРѕРј РїСЂР°РІРµ, СЌС‚РѕС‚ СЃРїРёСЃРѕРє СѓСЃР»РѕРІРёР№ Рё
+        РїРѕСЃР»РµРґСѓСЋС‰РёР№ РѕС‚РєР°Р· РѕС‚ РіР°СЂР°РЅС‚РёР№.
+      * РќРё РЅР°Р·РІР°РЅРёРµ Cognitive Technologies, РЅРё РёРјРµРЅР° РµРµ СЃРѕС‚СЂСѓРґРЅРёРєРѕРІ РЅРµ РјРѕРіСѓС‚
+        Р±С‹С‚СЊ РёСЃРїРѕР»СЊР·РѕРІР°РЅС‹ РІ РєР°С‡РµСЃС‚РІРµ СЃСЂРµРґСЃС‚РІР° РїРѕРґРґРµСЂР¶РєРё Рё/РёР»Рё РїСЂРѕРґРІРёР¶РµРЅРёСЏ
+        РїСЂРѕРґСѓРєС‚РѕРІ, РѕСЃРЅРѕРІР°РЅРЅС‹С… РЅР° СЌС‚РѕРј РџРћ, Р±РµР· РїСЂРµРґРІР°СЂРёС‚РµР»СЊРЅРѕРіРѕ РїРёСЃСЊРјРµРЅРЅРѕРіРѕ
+        СЂР°Р·СЂРµС€РµРЅРёСЏ.
 
-ЭТА ПРОГРАММА ПРЕДОСТАВЛЕНА ВЛАДЕЛЬЦАМИ АВТОРСКИХ ПРАВ И/ИЛИ ДРУГИМИ ЛИЦАМИ "КАК
-ОНА ЕСТЬ" БЕЗ КАКОГО-ЛИБО ВИДА ГАРАНТИЙ, ВЫРАЖЕННЫХ ЯВНО ИЛИ ПОДРАЗУМЕВАЕМЫХ,
-ВКЛЮЧАЯ ГАРАНТИИ КОММЕРЧЕСКОЙ ЦЕННОСТИ И ПРИГОДНОСТИ ДЛЯ КОНКРЕТНОЙ ЦЕЛИ, НО НЕ
-ОГРАНИЧИВАЯСЬ ИМИ. НИ ВЛАДЕЛЕЦ АВТОРСКИХ ПРАВ И НИ ОДНО ДРУГОЕ ЛИЦО, КОТОРОЕ
-МОЖЕТ ИЗМЕНЯТЬ И/ИЛИ ПОВТОРНО РАСПРОСТРАНЯТЬ ПРОГРАММУ, НИ В КОЕМ СЛУЧАЕ НЕ
-НЕСЁТ ОТВЕТСТВЕННОСТИ, ВКЛЮЧАЯ ЛЮБЫЕ ОБЩИЕ, СЛУЧАЙНЫЕ, СПЕЦИАЛЬНЫЕ ИЛИ
-ПОСЛЕДОВАВШИЕ УБЫТКИ, СВЯЗАННЫЕ С ИСПОЛЬЗОВАНИЕМ ИЛИ ПОНЕСЕННЫЕ ВСЛЕДСТВИЕ
-НЕВОЗМОЖНОСТИ ИСПОЛЬЗОВАНИЯ ПРОГРАММЫ (ВКЛЮЧАЯ ПОТЕРИ ДАННЫХ, ИЛИ ДАННЫЕ,
-СТАВШИЕ НЕГОДНЫМИ, ИЛИ УБЫТКИ И/ИЛИ ПОТЕРИ ДОХОДОВ, ПОНЕСЕННЫЕ ИЗ-ЗА ДЕЙСТВИЙ
-ТРЕТЬИХ ЛИЦ И/ИЛИ ОТКАЗА ПРОГРАММЫ РАБОТАТЬ СОВМЕСТНО С ДРУГИМИ ПРОГРАММАМИ,
-НО НЕ ОГРАНИЧИВАЯСЬ ЭТИМИ СЛУЧАЯМИ), НО НЕ ОГРАНИЧИВАЯСЬ ИМИ, ДАЖЕ ЕСЛИ ТАКОЙ
-ВЛАДЕЛЕЦ ИЛИ ДРУГОЕ ЛИЦО БЫЛИ ИЗВЕЩЕНЫ О ВОЗМОЖНОСТИ ТАКИХ УБЫТКОВ И ПОТЕРЬ.
+Р­РўРђ РџР РћР“Р РђРњРњРђ РџР Р•Р”РћРЎРўРђР’Р›Р•РќРђ Р’Р›РђР”Р•Р›Р¬Р¦РђРњР РђР’РўРћР РЎРљРРҐ РџР РђР’ Р/РР›Р Р”Р РЈР“РРњР Р›РР¦РђРњР "РљРђРљ
+РћРќРђ Р•РЎРўР¬" Р‘Р•Р— РљРђРљРћР“Рћ-Р›РР‘Рћ Р’РР”Рђ Р“РђР РђРќРўРР™, Р’Р«Р РђР–Р•РќРќР«РҐ РЇР’РќРћ РР›Р РџРћР”Р РђР—РЈРњР•Р’РђР•РњР«РҐ,
+Р’РљР›Р®Р§РђРЇ Р“РђР РђРќРўРР РљРћРњРњР•Р Р§Р•РЎРљРћР™ Р¦Р•РќРќРћРЎРўР Р РџР РР“РћР”РќРћРЎРўР Р”Р›РЇ РљРћРќРљР Р•РўРќРћР™ Р¦Р•Р›Р, РќРћ РќР•
+РћР“Р РђРќРР§РР’РђРЇРЎР¬ РРњР. РќР Р’Р›РђР”Р•Р›Р•Р¦ РђР’РўРћР РЎРљРРҐ РџР РђР’ Р РќР РћР”РќРћ Р”Р РЈР“РћР• Р›РР¦Рћ, РљРћРўРћР РћР•
+РњРћР–Р•Рў РР—РњР•РќРЇРўР¬ Р/РР›Р РџРћР’РўРћР РќРћ Р РђРЎРџР РћРЎРўР РђРќРЇРўР¬ РџР РћР“Р РђРњРњРЈ, РќР Р’ РљРћР•Рњ РЎР›РЈР§РђР• РќР•
+РќР•РЎРЃРў РћРўР’Р•РўРЎРўР’Р•РќРќРћРЎРўР, Р’РљР›Р®Р§РђРЇ Р›Р®Р‘Р«Р• РћР‘Р©РР•, РЎР›РЈР§РђР™РќР«Р•, РЎРџР•Р¦РРђР›Р¬РќР«Р• РР›Р
+РџРћРЎР›Р•Р”РћР’РђР’РЁРР• РЈР‘Р«РўРљР, РЎР’РЇР—РђРќРќР«Р• РЎ РРЎРџРћР›Р¬Р—РћР’РђРќРР•Рњ РР›Р РџРћРќР•РЎР•РќРќР«Р• Р’РЎР›Р•Р”РЎРўР’РР•
+РќР•Р’РћР—РњРћР–РќРћРЎРўР РРЎРџРћР›Р¬Р—РћР’РђРќРРЇ РџР РћР“Р РђРњРњР« (Р’РљР›Р®Р§РђРЇ РџРћРўР•Р Р Р”РђРќРќР«РҐ, РР›Р Р”РђРќРќР«Р•,
+РЎРўРђР’РЁРР• РќР•Р“РћР”РќР«РњР, РР›Р РЈР‘Р«РўРљР Р/РР›Р РџРћРўР•Р Р Р”РћРҐРћР”РћР’, РџРћРќР•РЎР•РќРќР«Р• РР—-Р—Рђ Р”Р•Р™РЎРўР’РР™
+РўР Р•РўР¬РРҐ Р›РР¦ Р/РР›Р РћРўРљРђР—Рђ РџР РћР“Р РђРњРњР« Р РђР‘РћРўРђРўР¬ РЎРћР’РњР•РЎРўРќРћ РЎ Р”Р РЈР“РРњР РџР РћР“Р РђРњРњРђРњР,
+РќРћ РќР• РћР“Р РђРќРР§РР’РђРЇРЎР¬ Р­РўРРњР РЎР›РЈР§РђРЇРњР), РќРћ РќР• РћР“Р РђРќРР§РР’РђРЇРЎР¬ РРњР, Р”РђР–Р• Р•РЎР›Р РўРђРљРћР™
+Р’Р›РђР”Р•Р›Р•Р¦ РР›Р Р”Р РЈР“РћР• Р›РР¦Рћ Р‘Р«Р›Р РР—Р’Р•Р©Р•РќР« Рћ Р’РћР—РњРћР–РќРћРЎРўР РўРђРљРРҐ РЈР‘Р«РўРљРћР’ Р РџРћРўР•Р Р¬.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
@@ -59,7 +59,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "backup.h"
 #include "namedata.h"
 
-#define SAVE_COMPRESSED  // Сохранять данные в блоках в упакованном виде
+#define SAVE_COMPRESSED  // РЎРѕС…СЂР°РЅСЏС‚СЊ РґР°РЅРЅС‹Рµ РІ Р±Р»РѕРєР°С… РІ СѓРїР°РєРѕРІР°РЅРЅРѕРј РІРёРґРµ
 
 extern PtrList<BACKUPPAGE> Page;
 extern Handle              hCurPage;
@@ -76,7 +76,7 @@ extern PtrList<NAMEDATA>	NameData;
 #define BLOCK_N_N(page,block) _BLOCK_N(PAGE_N(page),block)
 
 //###########################################
-CPAGE_FUNC(Handle) CPAGE_CreatePage(Handle type,void * lpdata, Word32 size)
+CPAGE_FUNC(Handle) CPAGE_CreatePage(Handle type,void * lpdata, uint32_t size)
 {
 	PROLOG;
 	BACKUPPAGE tail;
@@ -145,10 +145,10 @@ CPAGE_FUNC(Bool32) CPAGE_Undo(Handle page,Handle num)
 	SetReturnCode_cpage(IDS_ERR_NO);
 	if(num==NULL)
 	{
-		Word32 number = CPAGE_GetBuckUpCount(page);
+		uint32_t number = CPAGE_GetBuckUpCount(page);
 		if(number)
 		{
-			Word32 cur = CPAGE_GetBuckUpCurPos(page);
+			uint32_t cur = CPAGE_GetBuckUpCurPos(page);
 			if(cur == 0)
 			{
 				rc = FALSE;
@@ -174,10 +174,10 @@ CPAGE_FUNC(Bool32) CPAGE_Redo(Handle page,Handle num)
 	SetReturnCode_cpage(IDS_ERR_NO);
 	if(num==NULL)
 	{
-		Word32 number = CPAGE_GetBuckUpCount(page);
+		uint32_t number = CPAGE_GetBuckUpCount(page);
 		if(number)
 		{
-			Word32 cur = CPAGE_GetBuckUpCurPos(page);
+			uint32_t cur = CPAGE_GetBuckUpCurPos(page);
 			if(cur == (number - 1))
 			{
 				rc = FALSE;
@@ -196,15 +196,15 @@ lOut:EPILOG;
 	return rc;
 }
 //###########################################
-CPAGE_FUNC(Word32) CPAGE_GetBuckUpCount(Handle page)
+CPAGE_FUNC(uint32_t) CPAGE_GetBuckUpCount(Handle page)
 {
 	PROLOG;
-	Word32 rc = PAGE_H(page).BackUpPage.GetCount();
+	uint32_t rc = PAGE_H(page).BackUpPage.GetCount();
 	EPILOG;
 	return rc;
 }
 //###########################################
-CPAGE_FUNC(Handle) CPAGE_GetBuckUpHandle(Handle page,Word32 number)
+CPAGE_FUNC(Handle) CPAGE_GetBuckUpHandle(Handle page,uint32_t number)
 {
 	PROLOG;
 	Handle rc = PAGE_H(page).BackUpPage.GetHandle(number);
@@ -212,15 +212,15 @@ CPAGE_FUNC(Handle) CPAGE_GetBuckUpHandle(Handle page,Word32 number)
 	return rc;
 }
 //###########################################
-CPAGE_FUNC(Word32) CPAGE_GetBuckUpCurPos(Handle page)
+CPAGE_FUNC(uint32_t) CPAGE_GetBuckUpCurPos(Handle page)
 {
 	PROLOG;
-	Word32 rc = PAGE_H(page).GetCurPos();
+	uint32_t rc = PAGE_H(page).GetCurPos();
 	EPILOG;
 	return rc;
 }
 //###########################################
-CPAGE_FUNC(Handle)	CPAGE_CreateBlock(Handle page, Handle Type, Word32 UserNum , Word32 Flags,void * lpData, Word32 Size)
+CPAGE_FUNC(Handle)	CPAGE_CreateBlock(Handle page, Handle Type, uint32_t UserNum , uint32_t Flags,void * lpData, uint32_t Size)
 {
 	PROLOG;
 	SetReturnCode_cpage(IDS_ERR_NO);
@@ -234,7 +234,7 @@ CPAGE_FUNC(Handle)	CPAGE_CreateBlock(Handle page, Handle Type, Word32 UserNum , 
 	return rc;
 }
 //###########################################
-CPAGE_FUNC(Bool32) CPAGE_SetPageData(Handle page, Handle type, void * lpdata, Word32 size)
+CPAGE_FUNC(Bool32) CPAGE_SetPageData(Handle page, Handle type, void * lpdata, uint32_t size)
 {
 	PROLOG;
 	SetReturnCode_cpage(IDS_ERR_NO);
@@ -246,7 +246,7 @@ CPAGE_FUNC(Bool32) CPAGE_SetPageData(Handle page, Handle type, void * lpdata, Wo
 	return rc;
 }
 //###########################################
-CPAGE_FUNC(Word32) CPAGE_GetPageData(Handle page, Handle type, void * lpdata, Word32 size)
+CPAGE_FUNC(uint32_t) CPAGE_GetPageData(Handle page, Handle type, void * lpdata, uint32_t size)
 {
 	PROLOG;
 	SetReturnCode_cpage(IDS_ERR_NO);
@@ -256,7 +256,7 @@ CPAGE_FUNC(Word32) CPAGE_GetPageData(Handle page, Handle type, void * lpdata, Wo
 #endif
 
 	DefConvertInit();
-	Word32 rc = PAGE_H(page).GetData( type, lpdata, size);
+	uint32_t rc = PAGE_H(page).GetData( type, lpdata, size);
 	EPILOG;
 	return rc;
 }
@@ -270,16 +270,16 @@ CPAGE_FUNC(Handle)  CPAGE_GetBlockType(Handle page,Handle block)
 	return rc;
 }
 //###########################################
-CPAGE_FUNC(Word32)  CPAGE_GetBlockUserNum(Handle page,Handle block)
+CPAGE_FUNC(uint32_t)  CPAGE_GetBlockUserNum(Handle page,Handle block)
 {
 	PROLOG;
 	SetReturnCode_cpage(IDS_ERR_NO);
-	Word32 rc = BLOCK_H_H(page,block).GetUserNum();
+	uint32_t rc = BLOCK_H_H(page,block).GetUserNum();
 	EPILOG;
 	return rc;
 }
 //###########################################
-CPAGE_FUNC(void)    CPAGE_SetBlockUserNum(Handle page,Handle block,Word32 user)
+CPAGE_FUNC(void)    CPAGE_SetBlockUserNum(Handle page,Handle block,uint32_t user)
 {
 	PROLOG;
 	SetReturnCode_cpage(IDS_ERR_NO);
@@ -287,16 +287,16 @@ CPAGE_FUNC(void)    CPAGE_SetBlockUserNum(Handle page,Handle block,Word32 user)
 	EPILOG;
 }
 //###########################################
-CPAGE_FUNC(Word32)  CPAGE_GetBlockFlags(Handle page,Handle block)
+CPAGE_FUNC(uint32_t)  CPAGE_GetBlockFlags(Handle page,Handle block)
 {
 	PROLOG;
 	SetReturnCode_cpage(IDS_ERR_NO);
-	Word32 rc = BLOCK_H_H(page,block).GetFlags();
+	uint32_t rc = BLOCK_H_H(page,block).GetFlags();
 	EPILOG;
 	return rc;
 }
 //###########################################
-CPAGE_FUNC(void)    CPAGE_SetBlockFlags(Handle page,Handle block,Word32 flags)
+CPAGE_FUNC(void)    CPAGE_SetBlockFlags(Handle page,Handle block,uint32_t flags)
 {
 	PROLOG;
 	SetReturnCode_cpage(IDS_ERR_NO);
@@ -304,7 +304,7 @@ CPAGE_FUNC(void)    CPAGE_SetBlockFlags(Handle page,Handle block,Word32 flags)
 	EPILOG;
 }
 //###########################################
-CPAGE_FUNC(Bool32)  CPAGE_SetBlockData(Handle page, Handle block, Handle Type, void * lpData, Word32 Size)
+CPAGE_FUNC(Bool32)  CPAGE_SetBlockData(Handle page, Handle block, Handle Type, void * lpData, uint32_t Size)
 {
 	PROLOG;
 	SetReturnCode_cpage(IDS_ERR_NO);
@@ -316,7 +316,7 @@ CPAGE_FUNC(Bool32)  CPAGE_SetBlockData(Handle page, Handle block, Handle Type, v
 	return rc;
 }
 //###########################################
-CPAGE_FUNC(Word32)  CPAGE_GetBlockData(Handle page, Handle block, Handle Type, void * lpData, Word32 Size)
+CPAGE_FUNC(uint32_t)  CPAGE_GetBlockData(Handle page, Handle block, Handle Type, void * lpData, uint32_t Size)
 {
 	PROLOG;
 	SetReturnCode_cpage(IDS_ERR_NO);
@@ -324,25 +324,25 @@ CPAGE_FUNC(Word32)  CPAGE_GetBlockData(Handle page, Handle block, Handle Type, v
 	_ASSERT(CPAGE_GetNameInternalType(Type));
 #endif
 	DefConvertInit();
-	Word32 rc = BLOCK_H_H(page,block).GetData(Type, lpData, Size);
+	uint32_t rc = BLOCK_H_H(page,block).GetData(Type, lpData, Size);
 	EPILOG;
 	return rc;
 }
 //###########################################
-CPAGE_FUNC(Word32) CPAGE_GetCountPage()
+CPAGE_FUNC(uint32_t) CPAGE_GetCountPage()
 {
 	PROLOG;
 	SetReturnCode_cpage(IDS_ERR_NO);
-	Word32 rc = Page.GetCount();
+	uint32_t rc = Page.GetCount();
 	EPILOG;
 	return rc;
 }
 //###########################################
-CPAGE_FUNC(Word32) CPAGE_GetCountBlock(Handle page)
+CPAGE_FUNC(uint32_t) CPAGE_GetCountBlock(Handle page)
 {
 	PROLOG;
 	SetReturnCode_cpage(IDS_ERR_NO);
-	Word32 rc = PAGE_H(page).Block.GetCount();
+	uint32_t rc = PAGE_H(page).Block.GetCount();
 	EPILOG;
 	return rc;
 }
@@ -368,9 +368,9 @@ CPAGE_FUNC(Bool32)  CPAGE_SavePage(Handle page,Int8 * lpName)
 	if(file)
 	{
 #ifdef SAVE_COMPRESSED
-		Word32 vers = VERSION_FILE_COMPRESSED;
+		uint32_t vers = VERSION_FILE_COMPRESSED;
 #else
-		Word32 vers = VERSION_FILE;
+		uint32_t vers = VERSION_FILE;
 #endif
 		if(myWrite(file,&vers,sizeof(vers))==sizeof(vers))
 		{
@@ -416,7 +416,7 @@ CPAGE_FUNC(Handle)  CPAGE_RestorePage(Bool32 remove,Int8 * lpName)
 		int i;
 		int count;
 
-		Word32 vers = 0;
+		uint32_t vers = 0;
 		if(myRead(file,&vers,sizeof(vers))==sizeof(vers))
 		{
 			if (vers==VERSION_FILE_COMPRESSED)
@@ -452,7 +452,7 @@ CPAGE_FUNC(Handle)  CPAGE_RestorePage(Bool32 remove,Int8 * lpName)
 return rc;
 }
 //###########################################
-CPAGE_FUNC(Handle)  CPAGE_GetHandlePage(Word32 page)
+CPAGE_FUNC(Handle)  CPAGE_GetHandlePage(uint32_t page)
 {
 	PROLOG;
 	Handle rc = Page.GetHandle(page);
@@ -460,7 +460,7 @@ CPAGE_FUNC(Handle)  CPAGE_GetHandlePage(Word32 page)
 	return rc;
 }
 //###########################################
-CPAGE_FUNC(Handle)  CPAGE_GetHandleBlock(Handle page,Word32 block)
+CPAGE_FUNC(Handle)  CPAGE_GetHandleBlock(Handle page,uint32_t block)
 {
 	PROLOG;
 	Handle rc = PAGE_H(page).Block.GetHandle(block);
@@ -488,7 +488,7 @@ CPAGE_FUNC(Handle)  CPAGE_GetUserPageType()
 {
 	PROLOG;
 	/*
-	static Word32 number = 0x10000000;
+	static uint32_t number = 0x10000000;
 	return number++;
 	*/
 	Handle rc = CPAGE_GetUserBlockType();
@@ -499,7 +499,7 @@ CPAGE_FUNC(Handle)  CPAGE_GetUserPageType()
 CPAGE_FUNC(Handle)  CPAGE_GetUserBlockType()
 {
 	PROLOG;
-	static Word32 number = 1;
+	static uint32_t number = 1;
 	char Name[260];
 	sprintf(Name,"UserType:%i",number++);
 	Handle rc = CPAGE_GetInternalType(Name);
@@ -611,20 +611,20 @@ CPAGE_FUNC(Bool32)  CPAGE_DeleteAll()
 	return rc;
 }
 //###########################################
-CPAGE_FUNC(Word32)  CPAGE_GetCurrentPage( )
+CPAGE_FUNC(uint32_t)  CPAGE_GetCurrentPage( )
 {
 	PROLOG;
-	Word32 rc = CPAGE_GetNumberPage(hCurPage);
+	uint32_t rc = CPAGE_GetNumberPage(hCurPage);
 	EPILOG;
 	return rc;
 }
 //###########################################
-CPAGE_FUNC(Bool32)  CPAGE_SetCurrentPage(Word32 page)
+CPAGE_FUNC(Bool32)  CPAGE_SetCurrentPage(uint32_t page)
 {
 	PROLOG;
 	Bool32 rc = TRUE;
 	if( page>=CPAGE_GetCountPage() ||
-		page == (Word32)-1)
+		page == (uint32_t)-1)
 	{
 		SetReturnCode_cpage(IDS_ERR_NOPAGE);
 		rc = FALSE;
@@ -636,24 +636,24 @@ CPAGE_FUNC(Bool32)  CPAGE_SetCurrentPage(Word32 page)
 	return rc;
 }
 //###########################################
-CPAGE_FUNC(Word32)  CPAGE_GetNumberPage( Handle hPage )
+CPAGE_FUNC(uint32_t)  CPAGE_GetNumberPage( Handle hPage )
 {
 	PROLOG;
-	Word32 rc = (Word32)-1;
+	uint32_t rc = (uint32_t)-1;
 	if(hPage)
-		rc = (Word32)Page.GetPos(hPage);
+		rc = (uint32_t)Page.GetPos(hPage);
 	EPILOG;
 	return rc;
 }
 //###########################################
-// Если блоки конвертируемы один в другой, тогда имеет смысл оставить только один,
-// наиболее полный тип. Именно это и делает эта функция.
+// Р•СЃР»Рё Р±Р»РѕРєРё РєРѕРЅРІРµСЂС‚РёСЂСѓРµРјС‹ РѕРґРёРЅ РІ РґСЂСѓРіРѕР№, С‚РѕРіРґР° РёРјРµРµС‚ СЃРјС‹СЃР» РѕСЃС‚Р°РІРёС‚СЊ С‚РѕР»СЊРєРѕ РѕРґРёРЅ,
+// РЅР°РёР±РѕР»РµРµ РїРѕР»РЅС‹Р№ С‚РёРї. РРјРµРЅРЅРѕ СЌС‚Рѕ Рё РґРµР»Р°РµС‚ СЌС‚Р° С„СѓРЅРєС†РёСЏ.
 //
 CPAGE_FUNC(Bool32)  CPAGE_UpdateBlocks( Handle hPage, Handle type )
 {
 	PROLOG;
 	Bool32  rc = TRUE;
-	Word32	size = 0;
+	uint32_t	size = 0;
 	char *	lpData = NULL;
 	Handle  temporaray = 0;
 
@@ -670,19 +670,19 @@ CPAGE_FUNC(Bool32)  CPAGE_UpdateBlocks( Handle hPage, Handle type )
 		rc = TRUE;
 		goto lOut;
 	}
-	// Создадим временные блоки и удалим старые.
-	// Тем самым предотвращаем зацикливание.
+	// РЎРѕР·РґР°РґРёРј РІСЂРµРјРµРЅРЅС‹Рµ Р±Р»РѕРєРё Рё СѓРґР°Р»РёРј СЃС‚Р°СЂС‹Рµ.
+	// РўРµРј СЃР°РјС‹Рј РїСЂРµРґРѕС‚РІСЂР°С‰Р°РµРј Р·Р°С†РёРєР»РёРІР°РЅРёРµ.
 	temporaray = CPAGE_GetInternalType("temporary");
 	while(hBlock)
 	{
-		Handle hNextBlock = CPAGE_GetBlockNext(hPage,hBlock,type);// type - запрашиваемый тип блока
-		Handle dwType	  = CPAGE_GetBlockType(hPage,hBlock); // dwType - Реальный тип блока
-		if(dwType != type) // Была произведена конвертация из типа dwType !
+		Handle hNextBlock = CPAGE_GetBlockNext(hPage,hBlock,type);// type - Р·Р°РїСЂР°С€РёРІР°РµРјС‹Р№ С‚РёРї Р±Р»РѕРєР°
+		Handle dwType	  = CPAGE_GetBlockType(hPage,hBlock); // dwType - Р РµР°Р»СЊРЅС‹Р№ С‚РёРї Р±Р»РѕРєР°
+		if(dwType != type) // Р‘С‹Р»Р° РїСЂРѕРёР·РІРµРґРµРЅР° РєРѕРЅРІРµСЂС‚Р°С†РёСЏ РёР· С‚РёРїР° dwType !
 		{
-			Word32 UserNum = CPAGE_GetBlockUserNum(hPage,hBlock);
-			Word32 Flags   = CPAGE_GetBlockFlags(hPage,hBlock);
+			uint32_t UserNum = CPAGE_GetBlockUserNum(hPage,hBlock);
+			uint32_t Flags   = CPAGE_GetBlockFlags(hPage,hBlock);
 			if(lpData == NULL)
-			{ // Определим необходимый размер и отведем память.
+			{ // РћРїСЂРµРґРµР»РёРј РЅРµРѕР±С…РѕРґРёРјС‹Р№ СЂР°Р·РјРµСЂ Рё РѕС‚РІРµРґРµРј РїР°РјСЏС‚СЊ.
 				size = CPAGE_GetBlockData(hPage,hBlock,type,NULL,0);
 				if(size)
 				{
@@ -714,8 +714,8 @@ CPAGE_FUNC(Bool32)  CPAGE_UpdateBlocks( Handle hPage, Handle type )
 		}
 		hBlock = hNextBlock;
 	}
-	// Переименуем временные блоки
-	if(lpData) // Проверка на существование таких блоков
+	// РџРµСЂРµРёРјРµРЅСѓРµРј РІСЂРµРјРµРЅРЅС‹Рµ Р±Р»РѕРєРё
+	if(lpData) // РџСЂРѕРІРµСЂРєР° РЅР° СЃСѓС‰РµСЃС‚РІРѕРІР°РЅРёРµ С‚Р°РєРёС… Р±Р»РѕРєРѕРІ
 	{
 		myFree(lpData);
 		for(hBlock = CPAGE_GetBlockFirst(hPage,temporaray);
@@ -729,16 +729,16 @@ lOut:EPILOG;
 return rc;
 }
 //###########################################
-CPAGE_FUNC(Word32)  CPAGE_GetBlockInterNum(Handle page,Handle block)
+CPAGE_FUNC(uint32_t)  CPAGE_GetBlockInterNum(Handle page,Handle block)
 {
 	PROLOG;
 	SetReturnCode_cpage(IDS_ERR_NO);
-	Word32 rc = BLOCK_H_H(page,block).GetInterNum();
+	uint32_t rc = BLOCK_H_H(page,block).GetInterNum();
 	EPILOG;
 	return rc;
 }
 //###########################################
-CPAGE_FUNC(void)    CPAGE_SetBlockInterNum(Handle page,Handle block,Word32 inter)
+CPAGE_FUNC(void)    CPAGE_SetBlockInterNum(Handle page,Handle block,uint32_t inter)
 {
 	PROLOG;
 	SetReturnCode_cpage(IDS_ERR_NO);

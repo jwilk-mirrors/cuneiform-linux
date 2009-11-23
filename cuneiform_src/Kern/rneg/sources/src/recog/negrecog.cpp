@@ -73,8 +73,8 @@ extern BOOL dpRecOneLetter;
 
 void NegRecog(Handle hCPage,NegList** proot,int& nRC,int skew)
 {
- Word32 code_recd=512<<19;
- Word32 code_resd=512<<19+512<<16;
+ uint32_t code_recd=512<<19;
+ uint32_t code_resd=512<<19+512<<16;
  CCOM_handle hNegCCOM;
  CCOM_comp * pcomp;
  Rect16* pN;
@@ -281,7 +281,7 @@ void NegRecog(Handle hCPage,NegList** proot,int& nRC,int skew)
                BITMAPINFOHEADER   lpBI;     // Pointer to DIB info structure
                RGBQUAD            Palette1;
                RGBQUAD            Palette2;
-	           DWORD              bfSize, dwDIBSize;
+	           uint32_t              bfSize, dwDIBSize;
 	           HANDLE             hDIB;
 	           Word8*              pDIB;
 	           Word8*              pTmpDIB;
@@ -359,7 +359,7 @@ void NegRecog(Handle hCPage,NegList** proot,int& nRC,int skew)
             }
 //----------------------------------------------------------------------
 
-        	  if( !(RSTR_RecogOneLetter_all (&rec,Alf, &(vs[j]),(Int32)(1)) ) )
+        	  if( !(RSTR_RecogOneLetter_all (&rec,Alf, &(vs[j]),(int32_t)(1)) ) )
                 Prob[1]=0;
 	          else
               {
@@ -369,11 +369,11 @@ void NegRecog(Handle hCPage,NegList** proot,int& nRC,int skew)
 				if (ShowNegByOne)
 					LDPUMA_ConsoleN("handprint symbol: %c , probability = %d", (char)vs[j].Alt[0].Code, vs[j].Alt[0].Prob);
               }
-//	  if( !(RSTR_RecogOneLetter_all (&rec,Alf, &(vs[j]),(Int32)(2)) ) )
+//	  if( !(RSTR_RecogOneLetter_all (&rec,Alf, &(vs[j]),(int32_t)(2)) ) )
 //            Prob[2]=0;
 //	  else
 //		  Prob[2]=vs[j].Alt[0].Prob;
-	          if( !(RSTR_RecogOneLetter_all (&rec,Alf, &(vs[j]),(Int32)(0)) ) )
+	          if( !(RSTR_RecogOneLetter_all (&rec,Alf, &(vs[j]),(int32_t)(0)) ) )
                 Prob[0]=0;
 	          else
               {
@@ -1392,7 +1392,7 @@ void SortLetter(Rect16 *pRc,int n,BOOL vert)
  }
 }
 
-void NegDrawRect(Handle wnd,Word32 OperCode,Word32 color,Rect16 Rc)
+void NegDrawRect(Handle wnd,uint32_t OperCode,uint32_t color,Rect16 Rc)
 {
 
 	Rect16 Rect;

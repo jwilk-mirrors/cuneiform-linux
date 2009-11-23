@@ -2,33 +2,33 @@
 Copyright (c) 1993-2008, Cognitive Technologies
 All rights reserved.
 
-Ðàçðåøàåòñÿ ïîâòîðíîå ðàñïðîñòðàíåíèå è èñïîëüçîâàíèå êàê â âèäå èñõîäíîãî êîäà,
-òàê è â äâîè÷íîé ôîðìå, ñ èçìåíåíèÿìè èëè áåç, ïðè ñîáëþäåíèè ñëåäóþùèõ óñëîâèé:
+Ð Ð°Ð·Ñ€ÐµÑˆÐ°ÐµÑ‚ÑÑ Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€Ð½Ð¾Ðµ Ñ€Ð°ÑÐ¿Ñ€Ð¾ÑÑ‚Ñ€Ð°Ð½ÐµÐ½Ð¸Ðµ Ð¸ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð² Ð²Ð¸Ð´Ðµ Ð¸ÑÑ…Ð¾Ð´Ð½Ð¾Ð³Ð¾ ÐºÐ¾Ð´Ð°,
+Ñ‚Ð°Ðº Ð¸ Ð² Ð´Ð²Ð¾Ð¸Ñ‡Ð½Ð¾Ð¹ Ñ„Ð¾Ñ€Ð¼Ðµ, Ñ Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸ÑÐ¼Ð¸ Ð¸Ð»Ð¸ Ð±ÐµÐ·, Ð¿Ñ€Ð¸ ÑÐ¾Ð±Ð»ÑŽÐ´ÐµÐ½Ð¸Ð¸ ÑÐ»ÐµÐ´ÑƒÑŽÑ‰Ð¸Ñ… ÑƒÑÐ»Ð¾Ð²Ð¸Ð¹:
 
-      * Ïðè ïîâòîðíîì ðàñïðîñòðàíåíèè èñõîäíîãî êîäà äîëæíû îñòàâàòüñÿ óêàçàííîå
-        âûøå óâåäîìëåíèå îá àâòîðñêîì ïðàâå, ýòîò ñïèñîê óñëîâèé è ïîñëåäóþùèé
-        îòêàç îò ãàðàíòèé.
-      * Ïðè ïîâòîðíîì ðàñïðîñòðàíåíèè äâîè÷íîãî êîäà â äîêóìåíòàöèè è/èëè â
-        äðóãèõ ìàòåðèàëàõ, ïîñòàâëÿåìûõ ïðè ðàñïðîñòðàíåíèè, äîëæíû ñîõðàíÿòüñÿ
-        óêàçàííàÿ âûøå èíôîðìàöèÿ îá àâòîðñêîì ïðàâå, ýòîò ñïèñîê óñëîâèé è
-        ïîñëåäóþùèé îòêàç îò ãàðàíòèé.
-      * Íè íàçâàíèå Cognitive Technologies, íè èìåíà åå ñîòðóäíèêîâ íå ìîãóò
-        áûòü èñïîëüçîâàíû â êà÷åñòâå ñðåäñòâà ïîääåðæêè è/èëè ïðîäâèæåíèÿ
-        ïðîäóêòîâ, îñíîâàííûõ íà ýòîì ÏÎ, áåç ïðåäâàðèòåëüíîãî ïèñüìåííîãî
-        ðàçðåøåíèÿ.
+      * ÐŸÑ€Ð¸ Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€Ð½Ð¾Ð¼ Ñ€Ð°ÑÐ¿Ñ€Ð¾ÑÑ‚Ñ€Ð°Ð½ÐµÐ½Ð¸Ð¸ Ð¸ÑÑ…Ð¾Ð´Ð½Ð¾Ð³Ð¾ ÐºÐ¾Ð´Ð° Ð´Ð¾Ð»Ð¶Ð½Ñ‹ Ð¾ÑÑ‚Ð°Ð²Ð°Ñ‚ÑŒÑÑ ÑƒÐºÐ°Ð·Ð°Ð½Ð½Ð¾Ðµ
+        Ð²Ñ‹ÑˆÐµ ÑƒÐ²ÐµÐ´Ð¾Ð¼Ð»ÐµÐ½Ð¸Ðµ Ð¾Ð± Ð°Ð²Ñ‚Ð¾Ñ€ÑÐºÐ¾Ð¼ Ð¿Ñ€Ð°Ð²Ðµ, ÑÑ‚Ð¾Ñ‚ ÑÐ¿Ð¸ÑÐ¾Ðº ÑƒÑÐ»Ð¾Ð²Ð¸Ð¹ Ð¸ Ð¿Ð¾ÑÐ»ÐµÐ´ÑƒÑŽÑ‰Ð¸Ð¹
+        Ð¾Ñ‚ÐºÐ°Ð· Ð¾Ñ‚ Ð³Ð°Ñ€Ð°Ð½Ñ‚Ð¸Ð¹.
+      * ÐŸÑ€Ð¸ Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€Ð½Ð¾Ð¼ Ñ€Ð°ÑÐ¿Ñ€Ð¾ÑÑ‚Ñ€Ð°Ð½ÐµÐ½Ð¸Ð¸ Ð´Ð²Ð¾Ð¸Ñ‡Ð½Ð¾Ð³Ð¾ ÐºÐ¾Ð´Ð° Ð² Ð´Ð¾ÐºÑƒÐ¼ÐµÐ½Ñ‚Ð°Ñ†Ð¸Ð¸ Ð¸/Ð¸Ð»Ð¸ Ð²
+        Ð´Ñ€ÑƒÐ³Ð¸Ñ… Ð¼Ð°Ñ‚ÐµÑ€Ð¸Ð°Ð»Ð°Ñ…, Ð¿Ð¾ÑÑ‚Ð°Ð²Ð»ÑÐµÐ¼Ñ‹Ñ… Ð¿Ñ€Ð¸ Ñ€Ð°ÑÐ¿Ñ€Ð¾ÑÑ‚Ñ€Ð°Ð½ÐµÐ½Ð¸Ð¸, Ð´Ð¾Ð»Ð¶Ð½Ñ‹ ÑÐ¾Ñ…Ñ€Ð°Ð½ÑÑ‚ÑŒÑÑ
+        ÑƒÐºÐ°Ð·Ð°Ð½Ð½Ð°Ñ Ð²Ñ‹ÑˆÐµ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð¾Ð± Ð°Ð²Ñ‚Ð¾Ñ€ÑÐºÐ¾Ð¼ Ð¿Ñ€Ð°Ð²Ðµ, ÑÑ‚Ð¾Ñ‚ ÑÐ¿Ð¸ÑÐ¾Ðº ÑƒÑÐ»Ð¾Ð²Ð¸Ð¹ Ð¸
+        Ð¿Ð¾ÑÐ»ÐµÐ´ÑƒÑŽÑ‰Ð¸Ð¹ Ð¾Ñ‚ÐºÐ°Ð· Ð¾Ñ‚ Ð³Ð°Ñ€Ð°Ð½Ñ‚Ð¸Ð¹.
+      * ÐÐ¸ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ðµ Cognitive Technologies, Ð½Ð¸ Ð¸Ð¼ÐµÐ½Ð° ÐµÐµ ÑÐ¾Ñ‚Ñ€ÑƒÐ´Ð½Ð¸ÐºÐ¾Ð² Ð½Ðµ Ð¼Ð¾Ð³ÑƒÑ‚
+        Ð±Ñ‹Ñ‚ÑŒ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ñ‹ Ð² ÐºÐ°Ñ‡ÐµÑÑ‚Ð²Ðµ ÑÑ€ÐµÐ´ÑÑ‚Ð²Ð° Ð¿Ð¾Ð´Ð´ÐµÑ€Ð¶ÐºÐ¸ Ð¸/Ð¸Ð»Ð¸ Ð¿Ñ€Ð¾Ð´Ð²Ð¸Ð¶ÐµÐ½Ð¸Ñ
+        Ð¿Ñ€Ð¾Ð´ÑƒÐºÑ‚Ð¾Ð², Ð¾ÑÐ½Ð¾Ð²Ð°Ð½Ð½Ñ‹Ñ… Ð½Ð° ÑÑ‚Ð¾Ð¼ ÐŸÐž, Ð±ÐµÐ· Ð¿Ñ€ÐµÐ´Ð²Ð°Ñ€Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾Ð³Ð¾ Ð¿Ð¸ÑÑŒÐ¼ÐµÐ½Ð½Ð¾Ð³Ð¾
+        Ñ€Ð°Ð·Ñ€ÐµÑˆÐµÐ½Ð¸Ñ.
 
-ÝÒÀ ÏÐÎÃÐÀÌÌÀ ÏÐÅÄÎÑÒÀÂËÅÍÀ ÂËÀÄÅËÜÖÀÌÈ ÀÂÒÎÐÑÊÈÕ ÏÐÀÂ È/ÈËÈ ÄÐÓÃÈÌÈ ËÈÖÀÌÈ "ÊÀÊ
-ÎÍÀ ÅÑÒÜ" ÁÅÇ ÊÀÊÎÃÎ-ËÈÁÎ ÂÈÄÀ ÃÀÐÀÍÒÈÉ, ÂÛÐÀÆÅÍÍÛÕ ßÂÍÎ ÈËÈ ÏÎÄÐÀÇÓÌÅÂÀÅÌÛÕ,
-ÂÊËÞ×Àß ÃÀÐÀÍÒÈÈ ÊÎÌÌÅÐ×ÅÑÊÎÉ ÖÅÍÍÎÑÒÈ È ÏÐÈÃÎÄÍÎÑÒÈ ÄËß ÊÎÍÊÐÅÒÍÎÉ ÖÅËÈ, ÍÎ ÍÅ
-ÎÃÐÀÍÈ×ÈÂÀßÑÜ ÈÌÈ. ÍÈ ÂËÀÄÅËÅÖ ÀÂÒÎÐÑÊÈÕ ÏÐÀÂ È ÍÈ ÎÄÍÎ ÄÐÓÃÎÅ ËÈÖÎ, ÊÎÒÎÐÎÅ
-ÌÎÆÅÒ ÈÇÌÅÍßÒÜ È/ÈËÈ ÏÎÂÒÎÐÍÎ ÐÀÑÏÐÎÑÒÐÀÍßÒÜ ÏÐÎÃÐÀÌÌÓ, ÍÈ Â ÊÎÅÌ ÑËÓ×ÀÅ ÍÅ
-ÍÅÑ¨Ò ÎÒÂÅÒÑÒÂÅÍÍÎÑÒÈ, ÂÊËÞ×Àß ËÞÁÛÅ ÎÁÙÈÅ, ÑËÓ×ÀÉÍÛÅ, ÑÏÅÖÈÀËÜÍÛÅ ÈËÈ
-ÏÎÑËÅÄÎÂÀÂØÈÅ ÓÁÛÒÊÈ, ÑÂßÇÀÍÍÛÅ Ñ ÈÑÏÎËÜÇÎÂÀÍÈÅÌ ÈËÈ ÏÎÍÅÑÅÍÍÛÅ ÂÑËÅÄÑÒÂÈÅ
-ÍÅÂÎÇÌÎÆÍÎÑÒÈ ÈÑÏÎËÜÇÎÂÀÍÈß ÏÐÎÃÐÀÌÌÛ (ÂÊËÞ×Àß ÏÎÒÅÐÈ ÄÀÍÍÛÕ, ÈËÈ ÄÀÍÍÛÅ,
-ÑÒÀÂØÈÅ ÍÅÃÎÄÍÛÌÈ, ÈËÈ ÓÁÛÒÊÈ È/ÈËÈ ÏÎÒÅÐÈ ÄÎÕÎÄÎÂ, ÏÎÍÅÑÅÍÍÛÅ ÈÇ-ÇÀ ÄÅÉÑÒÂÈÉ
-ÒÐÅÒÜÈÕ ËÈÖ È/ÈËÈ ÎÒÊÀÇÀ ÏÐÎÃÐÀÌÌÛ ÐÀÁÎÒÀÒÜ ÑÎÂÌÅÑÒÍÎ Ñ ÄÐÓÃÈÌÈ ÏÐÎÃÐÀÌÌÀÌÈ,
-ÍÎ ÍÅ ÎÃÐÀÍÈ×ÈÂÀßÑÜ ÝÒÈÌÈ ÑËÓ×ÀßÌÈ), ÍÎ ÍÅ ÎÃÐÀÍÈ×ÈÂÀßÑÜ ÈÌÈ, ÄÀÆÅ ÅÑËÈ ÒÀÊÎÉ
-ÂËÀÄÅËÅÖ ÈËÈ ÄÐÓÃÎÅ ËÈÖÎ ÁÛËÈ ÈÇÂÅÙÅÍÛ Î ÂÎÇÌÎÆÍÎÑÒÈ ÒÀÊÈÕ ÓÁÛÒÊÎÂ È ÏÎÒÅÐÜ.
+Ð­Ð¢Ð ÐŸÐ ÐžÐ“Ð ÐÐœÐœÐ ÐŸÐ Ð•Ð”ÐžÐ¡Ð¢ÐÐ’Ð›Ð•ÐÐ Ð’Ð›ÐÐ”Ð•Ð›Ð¬Ð¦ÐÐœÐ˜ ÐÐ’Ð¢ÐžÐ Ð¡ÐšÐ˜Ð¥ ÐŸÐ ÐÐ’ Ð˜/Ð˜Ð›Ð˜ Ð”Ð Ð£Ð“Ð˜ÐœÐ˜ Ð›Ð˜Ð¦ÐÐœÐ˜ "ÐšÐÐš
+ÐžÐÐ Ð•Ð¡Ð¢Ð¬" Ð‘Ð•Ð— ÐšÐÐšÐžÐ“Ðž-Ð›Ð˜Ð‘Ðž Ð’Ð˜Ð”Ð Ð“ÐÐ ÐÐÐ¢Ð˜Ð™, Ð’Ð«Ð ÐÐ–Ð•ÐÐÐ«Ð¥ Ð¯Ð’ÐÐž Ð˜Ð›Ð˜ ÐŸÐžÐ”Ð ÐÐ—Ð£ÐœÐ•Ð’ÐÐ•ÐœÐ«Ð¥,
+Ð’ÐšÐ›Ð®Ð§ÐÐ¯ Ð“ÐÐ ÐÐÐ¢Ð˜Ð˜ ÐšÐžÐœÐœÐ•Ð Ð§Ð•Ð¡ÐšÐžÐ™ Ð¦Ð•ÐÐÐžÐ¡Ð¢Ð˜ Ð˜ ÐŸÐ Ð˜Ð“ÐžÐ”ÐÐžÐ¡Ð¢Ð˜ Ð”Ð›Ð¯ ÐšÐžÐÐšÐ Ð•Ð¢ÐÐžÐ™ Ð¦Ð•Ð›Ð˜, ÐÐž ÐÐ•
+ÐžÐ“Ð ÐÐÐ˜Ð§Ð˜Ð’ÐÐ¯Ð¡Ð¬ Ð˜ÐœÐ˜. ÐÐ˜ Ð’Ð›ÐÐ”Ð•Ð›Ð•Ð¦ ÐÐ’Ð¢ÐžÐ Ð¡ÐšÐ˜Ð¥ ÐŸÐ ÐÐ’ Ð˜ ÐÐ˜ ÐžÐ”ÐÐž Ð”Ð Ð£Ð“ÐžÐ• Ð›Ð˜Ð¦Ðž, ÐšÐžÐ¢ÐžÐ ÐžÐ•
+ÐœÐžÐ–Ð•Ð¢ Ð˜Ð—ÐœÐ•ÐÐ¯Ð¢Ð¬ Ð˜/Ð˜Ð›Ð˜ ÐŸÐžÐ’Ð¢ÐžÐ ÐÐž Ð ÐÐ¡ÐŸÐ ÐžÐ¡Ð¢Ð ÐÐÐ¯Ð¢Ð¬ ÐŸÐ ÐžÐ“Ð ÐÐœÐœÐ£, ÐÐ˜ Ð’ ÐšÐžÐ•Ðœ Ð¡Ð›Ð£Ð§ÐÐ• ÐÐ•
+ÐÐ•Ð¡ÐÐ¢ ÐžÐ¢Ð’Ð•Ð¢Ð¡Ð¢Ð’Ð•ÐÐÐžÐ¡Ð¢Ð˜, Ð’ÐšÐ›Ð®Ð§ÐÐ¯ Ð›Ð®Ð‘Ð«Ð• ÐžÐ‘Ð©Ð˜Ð•, Ð¡Ð›Ð£Ð§ÐÐ™ÐÐ«Ð•, Ð¡ÐŸÐ•Ð¦Ð˜ÐÐ›Ð¬ÐÐ«Ð• Ð˜Ð›Ð˜
+ÐŸÐžÐ¡Ð›Ð•Ð”ÐžÐ’ÐÐ’Ð¨Ð˜Ð• Ð£Ð‘Ð«Ð¢ÐšÐ˜, Ð¡Ð’Ð¯Ð—ÐÐÐÐ«Ð• Ð¡ Ð˜Ð¡ÐŸÐžÐ›Ð¬Ð—ÐžÐ’ÐÐÐ˜Ð•Ðœ Ð˜Ð›Ð˜ ÐŸÐžÐÐ•Ð¡Ð•ÐÐÐ«Ð• Ð’Ð¡Ð›Ð•Ð”Ð¡Ð¢Ð’Ð˜Ð•
+ÐÐ•Ð’ÐžÐ—ÐœÐžÐ–ÐÐžÐ¡Ð¢Ð˜ Ð˜Ð¡ÐŸÐžÐ›Ð¬Ð—ÐžÐ’ÐÐÐ˜Ð¯ ÐŸÐ ÐžÐ“Ð ÐÐœÐœÐ« (Ð’ÐšÐ›Ð®Ð§ÐÐ¯ ÐŸÐžÐ¢Ð•Ð Ð˜ Ð”ÐÐÐÐ«Ð¥, Ð˜Ð›Ð˜ Ð”ÐÐÐÐ«Ð•,
+Ð¡Ð¢ÐÐ’Ð¨Ð˜Ð• ÐÐ•Ð“ÐžÐ”ÐÐ«ÐœÐ˜, Ð˜Ð›Ð˜ Ð£Ð‘Ð«Ð¢ÐšÐ˜ Ð˜/Ð˜Ð›Ð˜ ÐŸÐžÐ¢Ð•Ð Ð˜ Ð”ÐžÐ¥ÐžÐ”ÐžÐ’, ÐŸÐžÐÐ•Ð¡Ð•ÐÐÐ«Ð• Ð˜Ð—-Ð—Ð Ð”Ð•Ð™Ð¡Ð¢Ð’Ð˜Ð™
+Ð¢Ð Ð•Ð¢Ð¬Ð˜Ð¥ Ð›Ð˜Ð¦ Ð˜/Ð˜Ð›Ð˜ ÐžÐ¢ÐšÐÐ—Ð ÐŸÐ ÐžÐ“Ð ÐÐœÐœÐ« Ð ÐÐ‘ÐžÐ¢ÐÐ¢Ð¬ Ð¡ÐžÐ’ÐœÐ•Ð¡Ð¢ÐÐž Ð¡ Ð”Ð Ð£Ð“Ð˜ÐœÐ˜ ÐŸÐ ÐžÐ“Ð ÐÐœÐœÐÐœÐ˜,
+ÐÐž ÐÐ• ÐžÐ“Ð ÐÐÐ˜Ð§Ð˜Ð’ÐÐ¯Ð¡Ð¬ Ð­Ð¢Ð˜ÐœÐ˜ Ð¡Ð›Ð£Ð§ÐÐ¯ÐœÐ˜), ÐÐž ÐÐ• ÐžÐ“Ð ÐÐÐ˜Ð§Ð˜Ð’ÐÐ¯Ð¡Ð¬ Ð˜ÐœÐ˜, Ð”ÐÐ–Ð• Ð•Ð¡Ð›Ð˜ Ð¢ÐÐšÐžÐ™
+Ð’Ð›ÐÐ”Ð•Ð›Ð•Ð¦ Ð˜Ð›Ð˜ Ð”Ð Ð£Ð“ÐžÐ• Ð›Ð˜Ð¦Ðž Ð‘Ð«Ð›Ð˜ Ð˜Ð—Ð’Ð•Ð©Ð•ÐÐ« Ðž Ð’ÐžÐ—ÐœÐžÐ–ÐÐžÐ¡Ð¢Ð˜ Ð¢ÐÐšÐ˜Ð¥ Ð£Ð‘Ð«Ð¢ÐšÐžÐ’ Ð˜ ÐŸÐžÐ¢Ð•Ð Ð¬.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
@@ -106,23 +106,23 @@ static Word8 buf_for_output1[256];
 static Word8 buf_for_output2[256];
 static Word8 buf_for_output3[256];
 static Word8 left_limit_word[] =" ./\x1e\x1f";
-static Word8 right_limit_word[]=" -.,ÐÝÞ\'\":/";
-static Word8 rus_similar[]="Ÿ18$";
+static Word8 right_limit_word[]=" -.,Ð Ð­Ð®\'\":/";
+static Word8 rus_similar[]="ÑŸ18$";
 static Word8 eng_similar[]="SISS";
-static Word8 rus_alias  []="£¯â¡‚8";
+static Word8 rus_alias  []="ÐˆÐ‡Ð²ÐŽâ€š8";
 static Word8 eng_alias  []="rnr68B";
-static Word8 rus_equal  []="â®àªåá¢¬…’“Ž€Š•‘‚Œ¥ã¨®à åá“Ž•‘­£ýõ123456789031";
-static Word8 eng_equal  []="TOPKXCBMETYOPAHKXCBMeyuopaxcyopxcHIam1234567890‡º";
-static Word8 rus_uni_letters[]="©‰é™ä”ë›¤„¦†íïŸîž\xf0";
+static Word8 rus_equal  []="Ð²Â®Ð°Ð„ÐµÐ±ÑžÂ¬â€¦â€™â€œÐ‹Ñ’Ð‚ÐŒÐ‰â€¢â€˜â€šÐŠÒÐ³ÐÂ®Ð°Â ÐµÐ±â€œÐ‹Ñ’â€¢â€˜Â­ÐˆÑÑ…123456789031";
+static Word8 eng_equal  []="TOPKXCBMETYOPAHKXCBMeyuopaxcyopxcHIam1234567890â€¡Ñ”";
+static Word8 rus_uni_letters[]="Â©â€°Ð¹â„¢Ð´â€Ð»â€ºÂ¤â€žÂ¦â€ Ð½ÑœÐ¿ÑŸÐ¾Ñ›Ðƒ\xf0";
 static Word8 eng_uni_letters[]="iwWRFGLZz\xb1\xb2\xb3\xb4\xb5\xb6\xb9"; //+N
-static Word8 non_letters[]="«»()";
+static Word8 non_letters[]="Â«Â»()";
 static Word8 true_terms[]="/-\x5F";
 
-static Bool16	my_snap_monitor_ori(CSTR_line *snap_line, Int32 num_lines){return FALSE;};
+static Bool16	my_snap_monitor_ori(CSTR_line *snap_line, int32_t num_lines){return FALSE;};
 static Bool16	my_snap_activity(Word8 a){return FALSE;};
 static Bool16	my_snap_show_text(Word8 *txt){return FALSE;};
 
-static Bool16	(*snap_monitor_ori)(CSTR_line *snap_line, Int32 num_lines)=my_snap_monitor_ori;
+static Bool16	(*snap_monitor_ori)(CSTR_line *snap_line, int32_t num_lines)=my_snap_monitor_ori;
 static Bool16	(*snap_activity)(Word8 a)=my_snap_activity;
 static Bool16	(*snap_show_text)(Word8 *txt)=my_snap_show_text;
 static Word8	db_status=0;
@@ -146,7 +146,7 @@ static  Bool32  tables=FALSE;
 
 static  void rsadd_clear_hide(CSTR_line lrus);
 static  Bool32 rsadd_eng_L(CSTR_rast eng,CSTR_rast enge,CSTR_rast rus);
-static  Bool32 rsadd_hide_segment(CSTR_rast rus,Int32 b,Int32 e,Int32 lim) ;
+static  Bool32 rsadd_hide_segment(CSTR_rast rus,int32_t b,int32_t e,int32_t lim) ;
 
 static CSTR_rast rsadd_next_word(CSTR_rast cs)
 {
@@ -169,7 +169,7 @@ do{
 return (attr.flg&CSTR_f_fict)?(CSTR_rast)0:c;
 }
 
-static CSTR_rast rsadd_end_word(CSTR_rast cs,Word8 *str,Word8 *word_len,Int16 left_limit,Int16 right_limit, Int32 need_space,
+static CSTR_rast rsadd_end_word(CSTR_rast cs,Word8 *str,Word8 *word_len,Int16 left_limit,Int16 right_limit, int32_t need_space,
 								Bool32 rightTrue) //Nick 11.05.2001
 {
 CSTR_rast       c=cs, n;
@@ -180,13 +180,13 @@ Bool32          solid=FALSE,prev_over=FALSE;
 
 
 if( rightTrue )
-// ïîèñê â ïåðâóþ î÷åðåäü ïî ïðàâîé ãðàíèöå
+// Ð¿Ð¾Ð¸ÑÐº Ð² Ð¿ÐµÑ€Ð²ÑƒÑŽ Ð¾Ñ‡ÐµÑ€ÐµÐ´ÑŒ Ð¿Ð¾ Ð¿Ñ€Ð°Ð²Ð¾Ð¹ Ð³Ñ€Ð°Ð½Ð¸Ñ†Ðµ
 // Nick 11.05.2001
 {
 	Bool32 wasEnd = FALSE;
     CSTR_rast best=NULL;
-	Int32 bestDist=32000;
-	Int32 dist;
+	int32_t bestDist=32000;
+	int32_t dist;
 
 	for(c=cs;c;c=CSTR_GetNext(c) )
 	{
@@ -210,7 +210,7 @@ if( rightTrue )
 
 		CSTR_GetCollection(c,&vers);
 
-		// ñëîâî æåëàòåëüíî áåç çíàêîâ!
+		// ÑÐ»Ð¾Ð²Ð¾ Ð¶ÐµÐ»Ð°Ñ‚ÐµÐ»ÑŒÐ½Ð¾ Ð±ÐµÐ· Ð·Ð½Ð°ÐºÐ¾Ð²!
 		if( memchr(right_limit_word,vers.Alt[0].Code,sizeof(right_limit_word)) )
 			dist ++;
 
@@ -325,9 +325,9 @@ if( i )
 return c;
 }
 ///////////
-// Ïðîâåðèòü îêðóæåíèå ñëîâà
+// ÐŸÑ€Ð¾Ð²ÐµÑ€Ð¸Ñ‚ÑŒ Ð¾ÐºÑ€ÑƒÐ¶ÐµÐ½Ð¸Ðµ ÑÐ»Ð¾Ð²Ð°
 // Nick 16.06.2001
-static Bool32 GoodWordBounds(CSTR_rast cs, CSTR_rast best, Int32 engCol, Int32 engLastCol)
+static Bool32 GoodWordBounds(CSTR_rast cs, CSTR_rast best, int32_t engCol, int32_t engLastCol)
 {
 	CSTR_rast_attr rattr;
 	Rect32 rect;
@@ -362,7 +362,7 @@ static Bool32 GoodWordBounds(CSTR_rast cs, CSTR_rast best, Int32 engCol, Int32 e
 	if( !IsGood )
 		return TRUE;
 
-	// äëèííîå ñëîâî?
+	// Ð´Ð»Ð¸Ð½Ð½Ð¾Ðµ ÑÐ»Ð¾Ð²Ð¾?
 	if( iUp >= 5 )
 		return TRUE;
 
@@ -390,7 +390,7 @@ static Bool32 GoodWordBounds(CSTR_rast cs, CSTR_rast best, Int32 engCol, Int32 e
 				rattr.row < iUp
 			  )
 			{
-              // âñåõ âçÿëè ?
+              // Ð²ÑÐµÑ… Ð²Ð·ÑÐ»Ð¸ ?
               if( rattr.col >= engLastCol )
 			    return FALSE;
 
@@ -433,7 +433,7 @@ static Bool32 GoodWordBounds(CSTR_rast cs, CSTR_rast best, Int32 engCol, Int32 e
 		  )
 		  return TRUE;
 
-		// ìîãëè çàõâàòèòü ëèøíåãî?
+		// Ð¼Ð¾Ð³Ð»Ð¸ Ð·Ð°Ñ…Ð²Ð°Ñ‚Ð¸Ñ‚ÑŒ Ð»Ð¸ÑˆÐ½ÐµÐ³Ð¾?
 		c = cs;
 		CSTR_GetCollection(c,&vers);
 		CSTR_GetAttr(c, &rattr);
@@ -549,7 +549,7 @@ return;
 
 Bool32 rsadd_is_upper(Word8 Code, Word8 language)
 {
-Int32   code=(Int32)Code;
+int32_t   code=(int32_t)Code;
 
 switch( language )
     {
@@ -563,13 +563,13 @@ return FALSE;
 
 Bool32 rsadd_is_thick(Word8 Code, Word8 language)
 {
-Int32   code=(Int32)Code;
+int32_t   code=(int32_t)Code;
 if( code>49 && code<58 || code==48 )
     return TRUE;
 switch( language )
     {
     case    LANG_RUSSIAN:
-        return( code>191 && !strchr("øØùÙæÆûÛþÞ",code) );
+        return( code>191 && !strchr("ÑˆÐ¨Ñ‰Ð©Ð¶Ð–Ñ‹Ð«ÑŽÐ®",code) );
     case    LANG_ENGLISH:
         return( strchr("QERTYUOPASDFGHJKLZXCVBNMqeyuopasdghkzxcvbn",code)!=NULL );
     }
@@ -578,7 +578,7 @@ return FALSE;
 
 Bool32 rsadd_is_digit(Word8 Code)
 {
-Int32   code=(Int32)Code;
+int32_t   code=(int32_t)Code;
 
 return memchr("0123456789",code,10)!=NULL;
 }
@@ -700,7 +700,7 @@ static Bool32 rsadd_CopyWord(   CSTR_rast   cn,
                                 CSTR_rast   eng,CSTR_rast   enge,
                                 Bool32 rus_lang,
                                 CSTR_rast   *svb,CSTR_rast   *sve,
-								Int32 lastPos )
+								int32_t lastPos )
 {
 CSTR_rast   c;
 CCOM_comp    *  comp;
@@ -937,7 +937,7 @@ Bool32  find_in_paar_arrays(Word8 e,Word8 r,
                     Word8 *eng,
                     Word8 *rus)
 {
-Int32   ndx;
+int32_t   ndx;
 Bool32  comp,find;
 Word8 * p;
 
@@ -1105,7 +1105,7 @@ static char *rsadd_prev_eng_group_err[]={
 };
 Bool32 rsadd_eng_group(Word8 *wrd,Word8 last)
 {
-Int32   i;
+int32_t   i;
 for(i=0; rsadd_prev_eng_group[i][0]!=0;i++)
     {
     if( !strcasecmp(rsadd_prev_eng_group[i],wrd) )
@@ -1149,14 +1149,14 @@ return (rsadd_get_solid(b,e)    ||
 }
 
 static Word8 *russian_voc_spec[]={
-"£.",
+"Ðˆ.",
 "\0"
 };
 
 Bool32   rsadd_is_short_form(Word8 *rwrd)
 {
-Word8   russian_year[]="£.";
-Int32   i,ii,iv;
+Word8   russian_year[]="Ðˆ.";
+int32_t   i,ii,iv;
 Word8   *p;
 
 ii=strlen(rwrd);
@@ -1234,12 +1234,12 @@ while( rus )
 return;
 }
 
-Bool32  rsadd_bl_conflict(CSTR_rast eng,CSTR_rast enge,Int32 BL_small)
+Bool32  rsadd_bl_conflict(CSTR_rast eng,CSTR_rast enge,int32_t BL_small)
 {
 CSTR_rast       c;
 CSTR_rast_attr  attr;
 UniVersions     u;
-Int32           all, small_;
+int32_t           all, small_;
 
 for(all=small_=0,c=eng;c && c!=enge;c=CSTR_GetNext(c))
     {
@@ -1294,9 +1294,9 @@ Bool32          rsolid, esolid, verdict, aliases,
 Word8           typea  ;
 RSADD_STAT      estat, rstat;
 CSTR_rast       svb,sve, cn,cne, nb, ne, pruse;
-Int32           nall,neng,num_word, BL_cap,BL_small ;
+int32_t           nall,neng,num_word, BL_cap,BL_small ;
 RecVersions     v;
-Int32           engCol;
+int32_t           engCol;
 Bool32          isSolid;
 
 
@@ -1641,7 +1641,7 @@ while(1)
             { // save for pass2
             if( estat.norec!=estat.nall )
                 {
-                if( !strcmp("£",rwrd) )
+                if( !strcmp("Ðˆ",rwrd) )
                     {
                     ruse = rsadd_skip_punct(ruse);
                     enge = rsadd_skip_punct(enge);
@@ -1724,10 +1724,10 @@ while( rus )
 return;
 }
 
-Bool32 rsadd_hide_segment(CSTR_rast rus,Int32 b,Int32 e,Int32 lim)
+Bool32 rsadd_hide_segment(CSTR_rast rus,int32_t b,int32_t e,int32_t lim)
 {
 CSTR_rast_attr  attr;
-Int32           ri, le, right, hide;
+int32_t           ri, le, right, hide;
 CSTR_rast       rri;
 
 right=-16000;
@@ -1767,7 +1767,7 @@ return FALSE;
 
 Bool32 rsadd_eng_L(CSTR_rast eng,CSTR_rast enge,CSTR_rast rus)
 {
-Int32           lim,hide;
+int32_t           lim,hide;
 UniVersions     uvs;
 CSTR_rast_attr  attr;
 CSTR_rast       pr=CSTR_GetPrev(enge);
@@ -1805,14 +1805,14 @@ RSADD_FUNC(void)    RSADD_Done(void)
 return;
 }
 
-RSADD_FUNC(Word32)  RSADD_GetReturnCode(void)
+RSADD_FUNC(uint32_t)  RSADD_GetReturnCode(void)
 {
 if( wLowRC==RSADD_ERR_NO)
   return 0;
 return (wHeightRC<<16)|(wLowRC-RSADD_ERR_MIN);
 }
 
-RSADD_FUNC(char*)   RSADD_GetReturnString(Word32 dwError)
+RSADD_FUNC(char*)   RSADD_GetReturnString(uint32_t dwError)
 {
 	Word16 rc = (Word16)(dwError & 0xFFFF + RSADD_ERR_MIN);
 	static char szBuffer[512];
@@ -1828,7 +1828,7 @@ RSADD_FUNC(char*)   RSADD_GetReturnString(Word32 dwError)
 	return szBuffer;
 }
 
-RSADD_FUNC(Bool32)  RSADD_SetImportData(Word32 dwType, void * pData)
+RSADD_FUNC(Bool32)  RSADD_SetImportData(uint32_t dwType, void * pData)
 {
 
   wLowRC = RSADD_ERR_NO;
@@ -1842,27 +1842,27 @@ RSADD_FUNC(Bool32)  RSADD_SetImportData(Word32 dwType, void * pData)
 return TRUE;
 }
 
-RSADD_FUNC(Bool32)  RSADD_GetExportData(Word32 dwType, void * pData)
+RSADD_FUNC(Bool32)  RSADD_GetExportData(uint32_t dwType, void * pData)
 {
 	Bool32 rc = TRUE;
 
-#define EXPORT(a) *(Word32*)(pData)=          (Word32)a;
+#define EXPORT(a) *(uint32_t*)(pData)=          (uint32_t)a;
   wLowRC = RSADD_ERR_NO;
 	switch(dwType)
 	{
-	case    RSADD_TAKE:				// ãëàâíàÿ ôóíêöèÿ ñëèÿíèÿ äâóõ ñòðîê
+	case    RSADD_TAKE:				// Ð³Ð»Ð°Ð²Ð½Ð°Ñ Ñ„ÑƒÐ½ÐºÑ†Ð¸Ñ ÑÐ»Ð¸ÑÐ½Ð¸Ñ Ð´Ð²ÑƒÑ… ÑÑ‚Ñ€Ð¾Ðº
         *(FNRSADD_take*)(pData)=			RSADD_take;
 		break;
-    case    RSADD_GETALIASES:		// ñïèñîê ðîäñòâåííûõ ñèìâîëîâ
+    case    RSADD_GETALIASES:		// ÑÐ¿Ð¸ÑÐ¾Ðº Ñ€Ð¾Ð´ÑÑ‚Ð²ÐµÐ½Ð½Ñ‹Ñ… ÑÐ¸Ð¼Ð²Ð¾Ð»Ð¾Ð²
         *(FNRSADD_get_aliases*)(pData)=		RSADD_get_aliases;
         break;
-    case    RSADD_GETALIASCLASS:    // êëàññ ðîäñòâåííûõ ñèìâîëîâ
+    case    RSADD_GETALIASCLASS:    // ÐºÐ»Ð°ÑÑ Ñ€Ð¾Ð´ÑÑ‚Ð²ÐµÐ½Ð½Ñ‹Ñ… ÑÐ¸Ð¼Ð²Ð¾Ð»Ð¾Ð²
         *(FNRSADD_get_alias_class*)(pData)=	RSADD_get_alias_class;
         break;
-	case    RSADD_KILL_DUSTS:		// óíè÷òîæèòü ëèøíèå äóñòû
+	case    RSADD_KILL_DUSTS:		// ÑƒÐ½Ð¸Ñ‡Ñ‚Ð¾Ð¶Ð¸Ñ‚ÑŒ Ð»Ð¸ÑˆÐ½Ð¸Ðµ Ð´ÑƒÑÑ‚Ñ‹
         *(FNRSADD_kill_dusts*)(pData)=		RSADD_kill_dusts;
         break;
-	case    RSADD_SETRSTR:			// ïðè¸ì èíôîðìàöèè è ôóíêöèé èç á-êè RSTR
+	case    RSADD_SETRSTR:			// Ð¿Ñ€Ð¸Ñ‘Ð¼ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ð¸ Ð¸ Ñ„ÑƒÐ½ÐºÑ†Ð¸Ð¹ Ð¸Ð· Ð±-ÐºÐ¸ RSTR
         *(FNRSADD_SetRSTR*)(pData)=	RSADD_SetRSTR;
         break;
 

@@ -2,33 +2,33 @@
 Copyright (c) 1993-2008, Cognitive Technologies
 All rights reserved.
 
-Разрешается повторное распространение и использование как в виде исходного кода,
-так и в двоичной форме, с изменениями или без, при соблюдении следующих условий:
+Р Р°Р·СЂРµС€Р°РµС‚СЃСЏ РїРѕРІС‚РѕСЂРЅРѕРµ СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРµ Рё РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ РєР°Рє РІ РІРёРґРµ РёСЃС…РѕРґРЅРѕРіРѕ РєРѕРґР°,
+С‚Р°Рє Рё РІ РґРІРѕРёС‡РЅРѕР№ С„РѕСЂРјРµ, СЃ РёР·РјРµРЅРµРЅРёСЏРјРё РёР»Рё Р±РµР·, РїСЂРё СЃРѕР±Р»СЋРґРµРЅРёРё СЃР»РµРґСѓСЋС‰РёС… СѓСЃР»РѕРІРёР№:
 
-      * При повторном распространении исходного кода должны оставаться указанное
-        выше уведомление об авторском праве, этот список условий и последующий
-        отказ от гарантий.
-      * При повторном распространении двоичного кода в документации и/или в
-        других материалах, поставляемых при распространении, должны сохраняться
-        указанная выше информация об авторском праве, этот список условий и
-        последующий отказ от гарантий.
-      * Ни название Cognitive Technologies, ни имена ее сотрудников не могут
-        быть использованы в качестве средства поддержки и/или продвижения
-        продуктов, основанных на этом ПО, без предварительного письменного
-        разрешения.
+      * РџСЂРё РїРѕРІС‚РѕСЂРЅРѕРј СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё РёСЃС…РѕРґРЅРѕРіРѕ РєРѕРґР° РґРѕР»Р¶РЅС‹ РѕСЃС‚Р°РІР°С‚СЊСЃСЏ СѓРєР°Р·Р°РЅРЅРѕРµ
+        РІС‹С€Рµ СѓРІРµРґРѕРјР»РµРЅРёРµ РѕР± Р°РІС‚РѕСЂСЃРєРѕРј РїСЂР°РІРµ, СЌС‚РѕС‚ СЃРїРёСЃРѕРє СѓСЃР»РѕРІРёР№ Рё РїРѕСЃР»РµРґСѓСЋС‰РёР№
+        РѕС‚РєР°Р· РѕС‚ РіР°СЂР°РЅС‚РёР№.
+      * РџСЂРё РїРѕРІС‚РѕСЂРЅРѕРј СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё РґРІРѕРёС‡РЅРѕРіРѕ РєРѕРґР° РІ РґРѕРєСѓРјРµРЅС‚Р°С†РёРё Рё/РёР»Рё РІ
+        РґСЂСѓРіРёС… РјР°С‚РµСЂРёР°Р»Р°С…, РїРѕСЃС‚Р°РІР»СЏРµРјС‹С… РїСЂРё СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё, РґРѕР»Р¶РЅС‹ СЃРѕС…СЂР°РЅСЏС‚СЊСЃСЏ
+        СѓРєР°Р·Р°РЅРЅР°СЏ РІС‹С€Рµ РёРЅС„РѕСЂРјР°С†РёСЏ РѕР± Р°РІС‚РѕСЂСЃРєРѕРј РїСЂР°РІРµ, СЌС‚РѕС‚ СЃРїРёСЃРѕРє СѓСЃР»РѕРІРёР№ Рё
+        РїРѕСЃР»РµРґСѓСЋС‰РёР№ РѕС‚РєР°Р· РѕС‚ РіР°СЂР°РЅС‚РёР№.
+      * РќРё РЅР°Р·РІР°РЅРёРµ Cognitive Technologies, РЅРё РёРјРµРЅР° РµРµ СЃРѕС‚СЂСѓРґРЅРёРєРѕРІ РЅРµ РјРѕРіСѓС‚
+        Р±С‹С‚СЊ РёСЃРїРѕР»СЊР·РѕРІР°РЅС‹ РІ РєР°С‡РµСЃС‚РІРµ СЃСЂРµРґСЃС‚РІР° РїРѕРґРґРµСЂР¶РєРё Рё/РёР»Рё РїСЂРѕРґРІРёР¶РµРЅРёСЏ
+        РїСЂРѕРґСѓРєС‚РѕРІ, РѕСЃРЅРѕРІР°РЅРЅС‹С… РЅР° СЌС‚РѕРј РџРћ, Р±РµР· РїСЂРµРґРІР°СЂРёС‚РµР»СЊРЅРѕРіРѕ РїРёСЃСЊРјРµРЅРЅРѕРіРѕ
+        СЂР°Р·СЂРµС€РµРЅРёСЏ.
 
-ЭТА ПРОГРАММА ПРЕДОСТАВЛЕНА ВЛАДЕЛЬЦАМИ АВТОРСКИХ ПРАВ И/ИЛИ ДРУГИМИ ЛИЦАМИ "КАК
-ОНА ЕСТЬ" БЕЗ КАКОГО-ЛИБО ВИДА ГАРАНТИЙ, ВЫРАЖЕННЫХ ЯВНО ИЛИ ПОДРАЗУМЕВАЕМЫХ,
-ВКЛЮЧАЯ ГАРАНТИИ КОММЕРЧЕСКОЙ ЦЕННОСТИ И ПРИГОДНОСТИ ДЛЯ КОНКРЕТНОЙ ЦЕЛИ, НО НЕ
-ОГРАНИЧИВАЯСЬ ИМИ. НИ ВЛАДЕЛЕЦ АВТОРСКИХ ПРАВ И НИ ОДНО ДРУГОЕ ЛИЦО, КОТОРОЕ
-МОЖЕТ ИЗМЕНЯТЬ И/ИЛИ ПОВТОРНО РАСПРОСТРАНЯТЬ ПРОГРАММУ, НИ В КОЕМ СЛУЧАЕ НЕ
-НЕСЁТ ОТВЕТСТВЕННОСТИ, ВКЛЮЧАЯ ЛЮБЫЕ ОБЩИЕ, СЛУЧАЙНЫЕ, СПЕЦИАЛЬНЫЕ ИЛИ
-ПОСЛЕДОВАВШИЕ УБЫТКИ, СВЯЗАННЫЕ С ИСПОЛЬЗОВАНИЕМ ИЛИ ПОНЕСЕННЫЕ ВСЛЕДСТВИЕ
-НЕВОЗМОЖНОСТИ ИСПОЛЬЗОВАНИЯ ПРОГРАММЫ (ВКЛЮЧАЯ ПОТЕРИ ДАННЫХ, ИЛИ ДАННЫЕ,
-СТАВШИЕ НЕГОДНЫМИ, ИЛИ УБЫТКИ И/ИЛИ ПОТЕРИ ДОХОДОВ, ПОНЕСЕННЫЕ ИЗ-ЗА ДЕЙСТВИЙ
-ТРЕТЬИХ ЛИЦ И/ИЛИ ОТКАЗА ПРОГРАММЫ РАБОТАТЬ СОВМЕСТНО С ДРУГИМИ ПРОГРАММАМИ,
-НО НЕ ОГРАНИЧИВАЯСЬ ЭТИМИ СЛУЧАЯМИ), НО НЕ ОГРАНИЧИВАЯСЬ ИМИ, ДАЖЕ ЕСЛИ ТАКОЙ
-ВЛАДЕЛЕЦ ИЛИ ДРУГОЕ ЛИЦО БЫЛИ ИЗВЕЩЕНЫ О ВОЗМОЖНОСТИ ТАКИХ УБЫТКОВ И ПОТЕРЬ.
+Р­РўРђ РџР РћР“Р РђРњРњРђ РџР Р•Р”РћРЎРўРђР’Р›Р•РќРђ Р’Р›РђР”Р•Р›Р¬Р¦РђРњР РђР’РўРћР РЎРљРРҐ РџР РђР’ Р/РР›Р Р”Р РЈР“РРњР Р›РР¦РђРњР "РљРђРљ
+РћРќРђ Р•РЎРўР¬" Р‘Р•Р— РљРђРљРћР“Рћ-Р›РР‘Рћ Р’РР”Рђ Р“РђР РђРќРўРР™, Р’Р«Р РђР–Р•РќРќР«РҐ РЇР’РќРћ РР›Р РџРћР”Р РђР—РЈРњР•Р’РђР•РњР«РҐ,
+Р’РљР›Р®Р§РђРЇ Р“РђР РђРќРўРР РљРћРњРњР•Р Р§Р•РЎРљРћР™ Р¦Р•РќРќРћРЎРўР Р РџР РР“РћР”РќРћРЎРўР Р”Р›РЇ РљРћРќРљР Р•РўРќРћР™ Р¦Р•Р›Р, РќРћ РќР•
+РћР“Р РђРќРР§РР’РђРЇРЎР¬ РРњР. РќР Р’Р›РђР”Р•Р›Р•Р¦ РђР’РўРћР РЎРљРРҐ РџР РђР’ Р РќР РћР”РќРћ Р”Р РЈР“РћР• Р›РР¦Рћ, РљРћРўРћР РћР•
+РњРћР–Р•Рў РР—РњР•РќРЇРўР¬ Р/РР›Р РџРћР’РўРћР РќРћ Р РђРЎРџР РћРЎРўР РђРќРЇРўР¬ РџР РћР“Р РђРњРњРЈ, РќР Р’ РљРћР•Рњ РЎР›РЈР§РђР• РќР•
+РќР•РЎРЃРў РћРўР’Р•РўРЎРўР’Р•РќРќРћРЎРўР, Р’РљР›Р®Р§РђРЇ Р›Р®Р‘Р«Р• РћР‘Р©РР•, РЎР›РЈР§РђР™РќР«Р•, РЎРџР•Р¦РРђР›Р¬РќР«Р• РР›Р
+РџРћРЎР›Р•Р”РћР’РђР’РЁРР• РЈР‘Р«РўРљР, РЎР’РЇР—РђРќРќР«Р• РЎ РРЎРџРћР›Р¬Р—РћР’РђРќРР•Рњ РР›Р РџРћРќР•РЎР•РќРќР«Р• Р’РЎР›Р•Р”РЎРўР’РР•
+РќР•Р’РћР—РњРћР–РќРћРЎРўР РРЎРџРћР›Р¬Р—РћР’РђРќРРЇ РџР РћР“Р РђРњРњР« (Р’РљР›Р®Р§РђРЇ РџРћРўР•Р Р Р”РђРќРќР«РҐ, РР›Р Р”РђРќРќР«Р•,
+РЎРўРђР’РЁРР• РќР•Р“РћР”РќР«РњР, РР›Р РЈР‘Р«РўРљР Р/РР›Р РџРћРўР•Р Р Р”РћРҐРћР”РћР’, РџРћРќР•РЎР•РќРќР«Р• РР—-Р—Рђ Р”Р•Р™РЎРўР’РР™
+РўР Р•РўР¬РРҐ Р›РР¦ Р/РР›Р РћРўРљРђР—Рђ РџР РћР“Р РђРњРњР« Р РђР‘РћРўРђРўР¬ РЎРћР’РњР•РЎРўРќРћ РЎ Р”Р РЈР“РРњР РџР РћР“Р РђРњРњРђРњР,
+РќРћ РќР• РћР“Р РђРќРР§РР’РђРЇРЎР¬ Р­РўРРњР РЎР›РЈР§РђРЇРњР), РќРћ РќР• РћР“Р РђРќРР§РР’РђРЇРЎР¬ РРњР, Р”РђР–Р• Р•РЎР›Р РўРђРљРћР™
+Р’Р›РђР”Р•Р›Р•Р¦ РР›Р Р”Р РЈР“РћР• Р›РР¦Рћ Р‘Р«Р›Р РР—Р’Р•Р©Р•РќР« Рћ Р’РћР—РњРћР–РќРћРЎРўР РўРђРљРРҐ РЈР‘Р«РўРљРћР’ Р РџРћРўР•Р Р¬.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
@@ -82,12 +82,12 @@ Bool32      gbFax100 = FALSE;
 Bool32      gbGarbage = TRUE;
 Int8*       sp_err="no spell errors";
 // from COR_SPEL.C
-Bool32 correct_line_spell(CSTR_line line, CSTR_rast* re, CSTR_rast* rb, Int32 line_num,
-						  Bool32 disable_new_dict, Bool32 disable_check_word, Int32* rf);
+Bool32 correct_line_spell(CSTR_line line, CSTR_rast* re, CSTR_rast* rb, int32_t line_num,
+						  Bool32 disable_new_dict, Bool32 disable_check_word, int32_t* rf);
 
 extern Bool32   rpstr_correct_spell(CSTR_line ln,
-    CSTR_rast *addbeg, CSTR_rast *addend, Int32 *linefrag,
-    Int32 num_ln,Bool32 disable_new_dict, Bool32 disable_check_word);
+    CSTR_rast *addbeg, CSTR_rast *addend, int32_t *linefrag,
+    int32_t num_ln,Bool32 disable_new_dict, Bool32 disable_check_word);
 extern Bool32 rpstr_txt_spell(char * s,Word8 lang);
 
 extern int Snap_Console(char *text);;
@@ -107,7 +107,7 @@ static Word8 get_lang4page()
 }
 
 // memory funct
-static void *   rpstr_alloc(Word32 len)
+static void *   rpstr_alloc(uint32_t len)
     {
     void *ma = malloc(len);
     if( !ma )
@@ -115,11 +115,11 @@ static void *   rpstr_alloc(Word32 len)
     memset(ma,0,len);
     return ma;
     }
-static void     rpstr_free(void *ptr,Word32 len) { free(ptr);};
-static void *   rpstr_realloc(void *ptr,Word32 len) { return realloc(ptr,len);};
-static void * (*my_alloc)(Word32 len)=rpstr_alloc;
-static void   (*my_free)(void *,Word32 len)=rpstr_free;
-static void * (*my_realloc)(void *,Word32 len)=rpstr_realloc;
+static void     rpstr_free(void *ptr,uint32_t len) { free(ptr);};
+static void *   rpstr_realloc(void *ptr,uint32_t len) { return realloc(ptr,len);};
+static void * (*my_alloc)(uint32_t len)=rpstr_alloc;
+static void   (*my_free)(void *,uint32_t len)=rpstr_free;
+static void * (*my_realloc)(void *,uint32_t len)=rpstr_realloc;
 
 
 
@@ -163,14 +163,14 @@ Snap_Console(buf);
 return;
 }
 
-Word32 myMonitorProc(Handle wnd,Handle hwnd,Word32 message,Word32 wParam,Word32 lParam)
+uint32_t myMonitorProc(Handle wnd,Handle hwnd,uint32_t message,uint32_t wParam,uint32_t lParam)
 {
 int             ret=0;
-Word32          pos;
+uint32_t          pos;
 CSTR_rast       r=(CSTR_rast)0;
 CSTR_rast_attr  attr;
 
-pos=LDPUMA_CSTR_GetPosition((Word32 *)&r);
+pos=LDPUMA_CSTR_GetPosition((uint32_t *)&r);
 
 if (!is_turkish_language(language)) // 12.06.2002 E.P.
 	language=3;
@@ -192,7 +192,7 @@ switch(message)
                 if( attr.flg&(CSTR_f_bad|CSTR_f_let) )
                     show_spell(r);
                 else
-                    Snap_Console("Не буква");
+                    Snap_Console("РќРµ Р±СѓРєРІР°");
                 ret=1;
                 }
             break;
@@ -207,7 +207,7 @@ switch(message)
 		{
         case    VK_ESCAPE:
             snap_enable = FALSE;
-            Snap_Console("корректируй до конца");
+            Snap_Console("РєРѕСЂСЂРµРєС‚РёСЂСѓР№ РґРѕ РєРѕРЅС†Р°");
             ret=-1;
             break;
         case    VK_RETURN:
@@ -215,14 +215,14 @@ switch(message)
             ret=-1;
             break;
         case    VK_F1:
-            Snap_Console("ESC - до конца без снэпа");
-            Snap_Console("F1  - справка");
-            Snap_Console("F2  - новая строка");
-            Snap_Console("Alt+F  - запись FRH");
-            Snap_Console("Alt+S  - словари");
-            Snap_Console("Alt+X  - прервать");
-            Snap_Console("Home/End - начало/конец строки");
-            Snap_Console("+/- - увеличить/уменьшить шрифт");
+            Snap_Console("ESC - РґРѕ РєРѕРЅС†Р° Р±РµР· СЃРЅСЌРїР°");
+            Snap_Console("F1  - СЃРїСЂР°РІРєР°");
+            Snap_Console("F2  - РЅРѕРІР°СЏ СЃС‚СЂРѕРєР°");
+            Snap_Console("Alt+F  - Р·Р°РїРёСЃСЊ FRH");
+            Snap_Console("Alt+S  - СЃР»РѕРІР°СЂРё");
+            Snap_Console("Alt+X  - РїСЂРµСЂРІР°С‚СЊ");
+            Snap_Console("Home/End - РЅР°С‡Р°Р»Рѕ/РєРѕРЅРµС† СЃС‚СЂРѕРєРё");
+            Snap_Console("+/- - СѓРІРµР»РёС‡РёС‚СЊ/СѓРјРµРЅСЊС€РёС‚СЊ С€СЂРёС„С‚");
             break;
         case    VK_F2:
             skip_line=TRUE;
@@ -234,7 +234,7 @@ switch(message)
 		break;
 	}
 
-return (Word32)(ret);
+return (uint32_t)(ret);
 }
 
 /////////////////////
@@ -250,21 +250,21 @@ snap_enable = TRUE;
 exit_enable = FALSE;
 LDPUMA_Init(0,NULL);
 //kegl_snap_init();
-LDPUMA_Registry(&hSnapSpell,"Словарь и постобработка",NULL);
-LDPUMA_RegistryHelp(hSnapSpell,"Словарь",FALSE);
-LDPUMA_Registry(&hSnapWordSpell,"Запретить проверку словами",hSnapSpell);
-LDPUMA_Registry(&hSnapMatch,"Показать проверку словами",hSnapWordSpell);
-LDPUMA_RegistryHelp(hSnapWordSpell,"Разрешить проверку словами",FALSE);
-LDPUMA_Registry(&hSnapCapDrop,"Запретить обработку БУКВИЦ",hSnapSpell);
-LDPUMA_RegistryHelp(hSnapCapDrop,"Запретить обработку БУКВИЦ",FALSE);
+LDPUMA_Registry(&hSnapSpell,"РЎР»РѕРІР°СЂСЊ Рё РїРѕСЃС‚РѕР±СЂР°Р±РѕС‚РєР°",NULL);
+LDPUMA_RegistryHelp(hSnapSpell,"РЎР»РѕРІР°СЂСЊ",FALSE);
+LDPUMA_Registry(&hSnapWordSpell,"Р—Р°РїСЂРµС‚РёС‚СЊ РїСЂРѕРІРµСЂРєСѓ СЃР»РѕРІР°РјРё",hSnapSpell);
+LDPUMA_Registry(&hSnapMatch,"РџРѕРєР°Р·Р°С‚СЊ РїСЂРѕРІРµСЂРєСѓ СЃР»РѕРІР°РјРё",hSnapWordSpell);
+LDPUMA_RegistryHelp(hSnapWordSpell,"Р Р°Р·СЂРµС€РёС‚СЊ РїСЂРѕРІРµСЂРєСѓ СЃР»РѕРІР°РјРё",FALSE);
+LDPUMA_Registry(&hSnapCapDrop,"Р—Р°РїСЂРµС‚РёС‚СЊ РѕР±СЂР°Р±РѕС‚РєСѓ Р‘РЈРљР’РР¦",hSnapSpell);
+LDPUMA_RegistryHelp(hSnapCapDrop,"Р—Р°РїСЂРµС‚РёС‚СЊ РѕР±СЂР°Р±РѕС‚РєСѓ Р‘РЈРљР’РР¦",FALSE);
 
-LDPUMA_Registry(&hSnapEndWord,"Отменить проверку окончаний",hSnapSpell);
-LDPUMA_RegistryHelp(hSnapEndWord,"Разрешить или нет любые замены окончаний",FALSE);
-LDPUMA_Registry(&hSnapStartWord,"Отменить осторожность в именах",hSnapSpell);
-LDPUMA_RegistryHelp(hSnapStartWord,"Обращаться или нет одинаково со всеми словами",FALSE);
+LDPUMA_Registry(&hSnapEndWord,"РћС‚РјРµРЅРёС‚СЊ РїСЂРѕРІРµСЂРєСѓ РѕРєРѕРЅС‡Р°РЅРёР№",hSnapSpell);
+LDPUMA_RegistryHelp(hSnapEndWord,"Р Р°Р·СЂРµС€РёС‚СЊ РёР»Рё РЅРµС‚ Р»СЋР±С‹Рµ Р·Р°РјРµРЅС‹ РѕРєРѕРЅС‡Р°РЅРёР№",FALSE);
+LDPUMA_Registry(&hSnapStartWord,"РћС‚РјРµРЅРёС‚СЊ РѕСЃС‚РѕСЂРѕР¶РЅРѕСЃС‚СЊ РІ РёРјРµРЅР°С…",hSnapSpell);
+LDPUMA_RegistryHelp(hSnapStartWord,"РћР±СЂР°С‰Р°С‚СЊСЃСЏ РёР»Рё РЅРµС‚ РѕРґРёРЅР°РєРѕРІРѕ СЃРѕ РІСЃРµРјРё СЃР»РѕРІР°РјРё",FALSE);
 
-LDPUMA_Registry(&hVertCompD,"Прорисовка букв в вертикальных строках!",NULL);
-LDPUMA_RegistryHelp(hVertCompD,"Разрешить прорисовку букв в вертикальных строках",FALSE);
+LDPUMA_Registry(&hVertCompD,"РџСЂРѕСЂРёСЃРѕРІРєР° Р±СѓРєРІ РІ РІРµСЂС‚РёРєР°Р»СЊРЅС‹С… СЃС‚СЂРѕРєР°С…!",NULL);
+LDPUMA_RegistryHelp(hVertCompD,"Р Р°Р·СЂРµС€РёС‚СЊ РїСЂРѕСЂРёСЃРѕРІРєСѓ Р±СѓРєРІ РІ РІРµСЂС‚РёРєР°Р»СЊРЅС‹С… СЃС‚СЂРѕРєР°С…",FALSE);
 return TRUE;
 }
 
@@ -280,14 +280,14 @@ return;
 }
 
 
-RPSTR_FUNC(Word32)   RPSTR_GetReturnCode(void)
+RPSTR_FUNC(uint32_t)   RPSTR_GetReturnCode(void)
 {
 if( wLowRC == RPSTR_ERR_NO )
     return 0;
 return (wHeightRC<<16)|(wLowRC-RPSTR_ERR_MIN);
 }
 
-RPSTR_FUNC(char*)   RPSTR_GetReturnString(Word32 dwError)
+RPSTR_FUNC(char*)   RPSTR_GetReturnString(uint32_t dwError)
 {
   Word16 rc = (Word16)(dwError & 0xFFFF + RPSTR_ERR_MIN);
 	static char szBuffer[512];
@@ -311,18 +311,18 @@ exit_enable = FALSE;
 return TRUE;
 }
 
-//Bool32 CorrectKegl(Int32 version);
+//Bool32 CorrectKegl(int32_t version);
 
-//RPSTR_FUNC(Bool32) RPSTR_CorrectKegl(Int32 version)
+//RPSTR_FUNC(Bool32) RPSTR_CorrectKegl(int32_t version)
 //{
 //  return CorrectKegl(version);
 //}
 
 
 
-RPSTR_FUNC(Bool32) RPSTR_CorrectIncline(Int32 version)
+RPSTR_FUNC(Bool32) RPSTR_CorrectIncline(int32_t version)
 {
-Int32   n=CSTR_GetMaxFragment(version),i;
+int32_t   n=CSTR_GetMaxFragment(version),i;
 for(i=0;i<=n;i++)
     {
     if( !incl_test_fragment(version,i) )
@@ -333,8 +333,8 @@ for(i=0;i<=n;i++)
 return TRUE;
 }
 
-Bool32 correct_line_spell(CSTR_line line, CSTR_rast* re, CSTR_rast* rb, Int32 line_num,
-						  Bool32 disable_new_dict, Bool32 disable_check_word, Int32* rf)
+Bool32 correct_line_spell(CSTR_line line, CSTR_rast* re, CSTR_rast* rb, int32_t line_num,
+						  Bool32 disable_new_dict, Bool32 disable_check_word, int32_t* rf)
 {
 	char            snapstr[256];
 //	CSTR_attr       lattr;
@@ -382,11 +382,11 @@ Bool32 correct_line_spell(CSTR_line line, CSTR_rast* re, CSTR_rast* rb, Int32 li
 	return TRUE;
 }
 
-RPSTR_FUNC(Bool32) RPSTR_CorrectLineSpell(CSTR_line line, Int32 line_num, CSTR_rast* re, CSTR_rast* rb, Int32* rf)
+RPSTR_FUNC(Bool32) RPSTR_CorrectLineSpell(CSTR_line line, int32_t line_num, CSTR_rast* re, CSTR_rast* rb, int32_t* rf)
 {
 //	CSTR_rast re=(CSTR_rast)0;
 //	CSTR_rast rb=(CSTR_rast)0;
-//	Int32 rf = -1;
+//	int32_t rf = -1;
 	Bool32 disable_new_dict=FALSE, disable_check_word=FALSE;
 
 	exit_enable = FALSE;
@@ -415,9 +415,9 @@ RPSTR_FUNC(Bool32) RPSTR_CorrectLineSpell(CSTR_line line, Int32 line_num, CSTR_r
 	return TRUE;
 }
 
-RPSTR_FUNC(Bool32) RPSTR_CorrectSpell(Int32 version)
+RPSTR_FUNC(Bool32) RPSTR_CorrectSpell(int32_t version)
 {
-Int32           n,  i, rf=-1;
+int32_t           n,  i, rf=-1;
 CSTR_line       line;
 //char            snapstr[256];
 CSTR_rast       rb=(CSTR_rast)0, re=(CSTR_rast)0;
@@ -445,7 +445,7 @@ for(i=1;i<=n;i++)
 	if (!correct_line_spell(line, &re, &rb, i, disable_new_dict, disable_check_word, &rf))
 		return FALSE;
 
-/*  вынесено в функцию correct_line_spell
+/*  РІС‹РЅРµСЃРµРЅРѕ РІ С„СѓРЅРєС†РёСЋ correct_line_spell
 
 	CSTR_GetLineAttr(line,&lattr);
 //    if( !(lattr.Flags & CSTR_STR_CapDrop) )
@@ -498,9 +498,9 @@ if( !LDPUMA_SkipEx(hSnapSpell,TRUE,TRUE,1) )
 return TRUE;
 }
 
-RPSTR_FUNC(Bool32) RPSTR_CollectCapDrops(Int32 version)
+RPSTR_FUNC(Bool32) RPSTR_CollectCapDrops(int32_t version)
 {
-Int32   n=CSTR_GetMaxFragment(version),i;
+int32_t   n=CSTR_GetMaxFragment(version),i;
 CSTR_line   ln_cd, ln_main;
 if( !LDPUMA_SkipEx(hSnapCapDrop,FALSE,FALSE,0)  )
     return FALSE;
@@ -514,12 +514,12 @@ for(i=0;i<=n;i++)
 return TRUE;
 }
 
-RPSTR_FUNC(Bool32) RPSTR_GetExportData(Word32 dwType, void * pData)
+RPSTR_FUNC(Bool32) RPSTR_GetExportData(uint32_t dwType, void * pData)
 {
 	Bool32 rc = TRUE;
   #define RPSTR_VERSION_CODE 1
-    Int32  vers = RPSTR_VERSION_CODE;
-#define EXPORT(name) *(Word32*)(pData)=(Word32)name;
+    int32_t  vers = RPSTR_VERSION_CODE;
+#define EXPORT(name) *(uint32_t*)(pData)=(uint32_t)name;
   wLowRC = RPSTR_ERR_NO;
 	switch(dwType)
 	{
@@ -554,7 +554,7 @@ RPSTR_FUNC(Bool32) RPSTR_GetExportData(Word32 dwType, void * pData)
 return rc;
 }
 
-RPSTR_FUNC(Bool32) RPSTR_SetImportData(Word32 dwType, void * pData)
+RPSTR_FUNC(Bool32) RPSTR_SetImportData(uint32_t dwType, void * pData)
 {
 
   wLowRC = RPSTR_ERR_NO;

@@ -2,33 +2,33 @@
 Copyright (c) 1993-2008, Cognitive Technologies
 All rights reserved.
 
-Разрешается повторное распространение и использование как в виде исходного кода,
-так и в двоичной форме, с изменениями или без, при соблюдении следующих условий:
+Р Р°Р·СЂРµС€Р°РµС‚СЃСЏ РїРѕРІС‚РѕСЂРЅРѕРµ СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРµ Рё РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ РєР°Рє РІ РІРёРґРµ РёСЃС…РѕРґРЅРѕРіРѕ РєРѕРґР°,
+С‚Р°Рє Рё РІ РґРІРѕРёС‡РЅРѕР№ С„РѕСЂРјРµ, СЃ РёР·РјРµРЅРµРЅРёСЏРјРё РёР»Рё Р±РµР·, РїСЂРё СЃРѕР±Р»СЋРґРµРЅРёРё СЃР»РµРґСѓСЋС‰РёС… СѓСЃР»РѕРІРёР№:
 
-      * При повторном распространении исходного кода должны оставаться указанное
-        выше уведомление об авторском праве, этот список условий и последующий
-        отказ от гарантий.
-      * При повторном распространении двоичного кода в документации и/или в
-        других материалах, поставляемых при распространении, должны сохраняться
-        указанная выше информация об авторском праве, этот список условий и
-        последующий отказ от гарантий.
-      * Ни название Cognitive Technologies, ни имена ее сотрудников не могут
-        быть использованы в качестве средства поддержки и/или продвижения
-        продуктов, основанных на этом ПО, без предварительного письменного
-        разрешения.
+      * РџСЂРё РїРѕРІС‚РѕСЂРЅРѕРј СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё РёСЃС…РѕРґРЅРѕРіРѕ РєРѕРґР° РґРѕР»Р¶РЅС‹ РѕСЃС‚Р°РІР°С‚СЊСЃСЏ СѓРєР°Р·Р°РЅРЅРѕРµ
+        РІС‹С€Рµ СѓРІРµРґРѕРјР»РµРЅРёРµ РѕР± Р°РІС‚РѕСЂСЃРєРѕРј РїСЂР°РІРµ, СЌС‚РѕС‚ СЃРїРёСЃРѕРє СѓСЃР»РѕРІРёР№ Рё РїРѕСЃР»РµРґСѓСЋС‰РёР№
+        РѕС‚РєР°Р· РѕС‚ РіР°СЂР°РЅС‚РёР№.
+      * РџСЂРё РїРѕРІС‚РѕСЂРЅРѕРј СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё РґРІРѕРёС‡РЅРѕРіРѕ РєРѕРґР° РІ РґРѕРєСѓРјРµРЅС‚Р°С†РёРё Рё/РёР»Рё РІ
+        РґСЂСѓРіРёС… РјР°С‚РµСЂРёР°Р»Р°С…, РїРѕСЃС‚Р°РІР»СЏРµРјС‹С… РїСЂРё СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё, РґРѕР»Р¶РЅС‹ СЃРѕС…СЂР°РЅСЏС‚СЊСЃСЏ
+        СѓРєР°Р·Р°РЅРЅР°СЏ РІС‹С€Рµ РёРЅС„РѕСЂРјР°С†РёСЏ РѕР± Р°РІС‚РѕСЂСЃРєРѕРј РїСЂР°РІРµ, СЌС‚РѕС‚ СЃРїРёСЃРѕРє СѓСЃР»РѕРІРёР№ Рё
+        РїРѕСЃР»РµРґСѓСЋС‰РёР№ РѕС‚РєР°Р· РѕС‚ РіР°СЂР°РЅС‚РёР№.
+      * РќРё РЅР°Р·РІР°РЅРёРµ Cognitive Technologies, РЅРё РёРјРµРЅР° РµРµ СЃРѕС‚СЂСѓРґРЅРёРєРѕРІ РЅРµ РјРѕРіСѓС‚
+        Р±С‹С‚СЊ РёСЃРїРѕР»СЊР·РѕРІР°РЅС‹ РІ РєР°С‡РµСЃС‚РІРµ СЃСЂРµРґСЃС‚РІР° РїРѕРґРґРµСЂР¶РєРё Рё/РёР»Рё РїСЂРѕРґРІРёР¶РµРЅРёСЏ
+        РїСЂРѕРґСѓРєС‚РѕРІ, РѕСЃРЅРѕРІР°РЅРЅС‹С… РЅР° СЌС‚РѕРј РџРћ, Р±РµР· РїСЂРµРґРІР°СЂРёС‚РµР»СЊРЅРѕРіРѕ РїРёСЃСЊРјРµРЅРЅРѕРіРѕ
+        СЂР°Р·СЂРµС€РµРЅРёСЏ.
 
-ЭТА ПРОГРАММА ПРЕДОСТАВЛЕНА ВЛАДЕЛЬЦАМИ АВТОРСКИХ ПРАВ И/ИЛИ ДРУГИМИ ЛИЦАМИ "КАК
-ОНА ЕСТЬ" БЕЗ КАКОГО-ЛИБО ВИДА ГАРАНТИЙ, ВЫРАЖЕННЫХ ЯВНО ИЛИ ПОДРАЗУМЕВАЕМЫХ,
-ВКЛЮЧАЯ ГАРАНТИИ КОММЕРЧЕСКОЙ ЦЕННОСТИ И ПРИГОДНОСТИ ДЛЯ КОНКРЕТНОЙ ЦЕЛИ, НО НЕ
-ОГРАНИЧИВАЯСЬ ИМИ. НИ ВЛАДЕЛЕЦ АВТОРСКИХ ПРАВ И НИ ОДНО ДРУГОЕ ЛИЦО, КОТОРОЕ
-МОЖЕТ ИЗМЕНЯТЬ И/ИЛИ ПОВТОРНО РАСПРОСТРАНЯТЬ ПРОГРАММУ, НИ В КОЕМ СЛУЧАЕ НЕ
-НЕСЁТ ОТВЕТСТВЕННОСТИ, ВКЛЮЧАЯ ЛЮБЫЕ ОБЩИЕ, СЛУЧАЙНЫЕ, СПЕЦИАЛЬНЫЕ ИЛИ
-ПОСЛЕДОВАВШИЕ УБЫТКИ, СВЯЗАННЫЕ С ИСПОЛЬЗОВАНИЕМ ИЛИ ПОНЕСЕННЫЕ ВСЛЕДСТВИЕ
-НЕВОЗМОЖНОСТИ ИСПОЛЬЗОВАНИЯ ПРОГРАММЫ (ВКЛЮЧАЯ ПОТЕРИ ДАННЫХ, ИЛИ ДАННЫЕ,
-СТАВШИЕ НЕГОДНЫМИ, ИЛИ УБЫТКИ И/ИЛИ ПОТЕРИ ДОХОДОВ, ПОНЕСЕННЫЕ ИЗ-ЗА ДЕЙСТВИЙ
-ТРЕТЬИХ ЛИЦ И/ИЛИ ОТКАЗА ПРОГРАММЫ РАБОТАТЬ СОВМЕСТНО С ДРУГИМИ ПРОГРАММАМИ,
-НО НЕ ОГРАНИЧИВАЯСЬ ЭТИМИ СЛУЧАЯМИ), НО НЕ ОГРАНИЧИВАЯСЬ ИМИ, ДАЖЕ ЕСЛИ ТАКОЙ
-ВЛАДЕЛЕЦ ИЛИ ДРУГОЕ ЛИЦО БЫЛИ ИЗВЕЩЕНЫ О ВОЗМОЖНОСТИ ТАКИХ УБЫТКОВ И ПОТЕРЬ.
+Р­РўРђ РџР РћР“Р РђРњРњРђ РџР Р•Р”РћРЎРўРђР’Р›Р•РќРђ Р’Р›РђР”Р•Р›Р¬Р¦РђРњР РђР’РўРћР РЎРљРРҐ РџР РђР’ Р/РР›Р Р”Р РЈР“РРњР Р›РР¦РђРњР "РљРђРљ
+РћРќРђ Р•РЎРўР¬" Р‘Р•Р— РљРђРљРћР“Рћ-Р›РР‘Рћ Р’РР”Рђ Р“РђР РђРќРўРР™, Р’Р«Р РђР–Р•РќРќР«РҐ РЇР’РќРћ РР›Р РџРћР”Р РђР—РЈРњР•Р’РђР•РњР«РҐ,
+Р’РљР›Р®Р§РђРЇ Р“РђР РђРќРўРР РљРћРњРњР•Р Р§Р•РЎРљРћР™ Р¦Р•РќРќРћРЎРўР Р РџР РР“РћР”РќРћРЎРўР Р”Р›РЇ РљРћРќРљР Р•РўРќРћР™ Р¦Р•Р›Р, РќРћ РќР•
+РћР“Р РђРќРР§РР’РђРЇРЎР¬ РРњР. РќР Р’Р›РђР”Р•Р›Р•Р¦ РђР’РўРћР РЎРљРРҐ РџР РђР’ Р РќР РћР”РќРћ Р”Р РЈР“РћР• Р›РР¦Рћ, РљРћРўРћР РћР•
+РњРћР–Р•Рў РР—РњР•РќРЇРўР¬ Р/РР›Р РџРћР’РўРћР РќРћ Р РђРЎРџР РћРЎРўР РђРќРЇРўР¬ РџР РћР“Р РђРњРњРЈ, РќР Р’ РљРћР•Рњ РЎР›РЈР§РђР• РќР•
+РќР•РЎРЃРў РћРўР’Р•РўРЎРўР’Р•РќРќРћРЎРўР, Р’РљР›Р®Р§РђРЇ Р›Р®Р‘Р«Р• РћР‘Р©РР•, РЎР›РЈР§РђР™РќР«Р•, РЎРџР•Р¦РРђР›Р¬РќР«Р• РР›Р
+РџРћРЎР›Р•Р”РћР’РђР’РЁРР• РЈР‘Р«РўРљР, РЎР’РЇР—РђРќРќР«Р• РЎ РРЎРџРћР›Р¬Р—РћР’РђРќРР•Рњ РР›Р РџРћРќР•РЎР•РќРќР«Р• Р’РЎР›Р•Р”РЎРўР’РР•
+РќР•Р’РћР—РњРћР–РќРћРЎРўР РРЎРџРћР›Р¬Р—РћР’РђРќРРЇ РџР РћР“Р РђРњРњР« (Р’РљР›Р®Р§РђРЇ РџРћРўР•Р Р Р”РђРќРќР«РҐ, РР›Р Р”РђРќРќР«Р•,
+РЎРўРђР’РЁРР• РќР•Р“РћР”РќР«РњР, РР›Р РЈР‘Р«РўРљР Р/РР›Р РџРћРўР•Р Р Р”РћРҐРћР”РћР’, РџРћРќР•РЎР•РќРќР«Р• РР—-Р—Рђ Р”Р•Р™РЎРўР’РР™
+РўР Р•РўР¬РРҐ Р›РР¦ Р/РР›Р РћРўРљРђР—Рђ РџР РћР“Р РђРњРњР« Р РђР‘РћРўРђРўР¬ РЎРћР’РњР•РЎРўРќРћ РЎ Р”Р РЈР“РРњР РџР РћР“Р РђРњРњРђРњР,
+РќРћ РќР• РћР“Р РђРќРР§РР’РђРЇРЎР¬ Р­РўРРњР РЎР›РЈР§РђРЇРњР), РќРћ РќР• РћР“Р РђРќРР§РР’РђРЇРЎР¬ РРњР, Р”РђР–Р• Р•РЎР›Р РўРђРљРћР™
+Р’Р›РђР”Р•Р›Р•Р¦ РР›Р Р”Р РЈР“РћР• Р›РР¦Рћ Р‘Р«Р›Р РР—Р’Р•Р©Р•РќР« Рћ Р’РћР—РњРћР–РќРћРЎРўР РўРђРљРРҐ РЈР‘Р«РўРљРћР’ Р РџРћРўР•Р Р¬.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
@@ -100,8 +100,8 @@ private:
 	char                       szFileFolder[CFIO_MAX_PATH];
 	char                       szStorageFolder[CFIO_MAX_PATH];
 	char                       szBuffer[CFIO_MAX_PATH];
-	//Word32                     wHeightRC;
-	//Word32                     wLowRC;
+	//uint32_t                     wHeightRC;
+	//uint32_t                     wLowRC;
 
 public:
 	CTCControl();
@@ -109,69 +109,69 @@ public:
 
 // import functions
 public:
-	Bool32 SetFolder(Word32 wFolder, PChar8 pcBuff);
-	Bool32 GetFolder(Word32 wFolder, PChar8 pcBuff);
+	Bool32 SetFolder(uint32_t wFolder, PChar8 pcBuff);
+	Bool32 GetFolder(uint32_t wFolder, PChar8 pcBuff);
 
 // import functions
 public:
-	Handle OpenStorage(PChar8 lpName, Word32 wTypes);
-	Bool32 CloseStorage(Handle  hStorage, Word32  dwFlag);
+	Handle OpenStorage(PChar8 lpName, uint32_t wTypes);
+	Bool32 CloseStorage(Handle  hStorage, uint32_t  dwFlag);
 	Bool32 DeleteStorage(PChar8 lpName);
 	Bool32 WriteFileToStorage(Handle hStorage, Handle hFile, PChar8 lpName);
 	Handle ReadFileFromStorage(Handle hStorage, PChar8 lpName);
-	Handle OpenFile(Handle hFile, PChar8 lpName, Word32 dwFlag);
-	Bool32 CloseFile(Handle hFile, Word32 dwFlag, Handle hStorage = NULL);
-	Word32 WriteFile(Handle hFile, PInt8 lpData, Word32 dwSize);
-	Word32 ReadFromFile(Handle hFile, PInt8 lpData, Word32 dwSize);
-	Word32 Seek(Handle hFile, Word32 dwBytes, Word32 dwFrom);
-	Word32 Tell(Handle hFile);
+	Handle OpenFile(Handle hFile, PChar8 lpName, uint32_t dwFlag);
+	Bool32 CloseFile(Handle hFile, uint32_t dwFlag, Handle hStorage = NULL);
+	uint32_t WriteFile(Handle hFile, PInt8 lpData, uint32_t dwSize);
+	uint32_t ReadFromFile(Handle hFile, PInt8 lpData, uint32_t dwSize);
+	uint32_t Seek(Handle hFile, uint32_t dwBytes, uint32_t dwFrom);
+	uint32_t Tell(Handle hFile);
 	Bool32 Flush(Handle hFile);
-	Handle Alloc(Word32 dwSize, Word32 dwFlag, const char *cOwner, const char *Coment);
-	Handle ReAlloc(Handle hMemory, Word32 wNewSize, Word32 wFlag);
+	Handle Alloc(uint32_t dwSize, uint32_t dwFlag, const char *cOwner, const char *Coment);
+	Handle ReAlloc(Handle hMemory, uint32_t wNewSize, uint32_t wFlag);
 	Bool32 Free(Handle hMem);
 	LPVOID Lock(Handle hMem);
 	Bool32 Unlock(Handle hMem);
-	Word32 WriteMemToFile(Handle hMem, PChar8 lpName);
-	Word32 ReadMemFromFile(PChar8 lpName, Handle * phMem, Word32 wFlag = MAF_GALL_GHND);
-	Word32 WriteMemToStorage(Handle hMem, Handle hStorage, PChar8 lpName);
-	Word32 ReadMemFromStorage(Handle hStorage, PChar8 lpName, Handle * phMem);
+	uint32_t WriteMemToFile(Handle hMem, PChar8 lpName);
+	uint32_t ReadMemFromFile(PChar8 lpName, Handle * phMem, uint32_t wFlag = MAF_GALL_GHND);
+	uint32_t WriteMemToStorage(Handle hMem, Handle hStorage, PChar8 lpName);
+	uint32_t ReadMemFromStorage(Handle hStorage, PChar8 lpName, Handle * phMem);
 
 private:
-	Handle AddFileInList(CTCGlobalFile * File, Word32 Flag, Handle Storage);
-	Handle OpenFileAndAttach(PChar8 lpNAme, Word32 Flag, Handle Storage = NULL);
-	Handle AllocNewMemory(Word32 wFlag, Word32 wSize, Bool32 Global, const char *cOwner, const char* Coment);
-	Bool32 AddNewMemoryInList( Handle hMemory, Word32 wSize, Word32 IsGlobal, const char *cOwner, const char *Coment);
-	Bool32 FreeMemory(Handle hMemory, Word32 wFlag = 0x0);
-	Bool32 TakeMemory(Handle hMemory, Word32 * wMemorySize, Word32 * wMemoryFlag);
+	Handle AddFileInList(CTCGlobalFile * File, uint32_t Flag, Handle Storage);
+	Handle OpenFileAndAttach(PChar8 lpNAme, uint32_t Flag, Handle Storage = NULL);
+	Handle AllocNewMemory(uint32_t wFlag, uint32_t wSize, Bool32 Global, const char *cOwner, const char* Coment);
+	Bool32 AddNewMemoryInList( Handle hMemory, uint32_t wSize, uint32_t IsGlobal, const char *cOwner, const char *Coment);
+	Bool32 FreeMemory(Handle hMemory, uint32_t wFlag = 0x0);
+	Bool32 TakeMemory(Handle hMemory, uint32_t * wMemorySize, uint32_t * wMemoryFlag);
 	Bool32 GetMemory(Handle hMemory, PPCTCMemoryHeader pHeader);
 	Bool32 DeleteMemoryFromList(Handle hMemory);
 	LPVOID LockMemory(Handle hMemory);
 	Bool32 UnlockMemory(Handle hMemory);
 	Bool32 LockatorMemoryInList(Handle hMemory, Bool32 bLock);
-	Bool32 AttachFileToStorage(Handle File, Handle Storage, Word32 Flag);
-	Bool32 DeleteFileFromList(Handle File, Word32 Flag, Handle Stotrage = NULL);
+	Bool32 AttachFileToStorage(Handle File, Handle Storage, uint32_t Flag);
+	Bool32 DeleteFileFromList(Handle File, uint32_t Flag, Handle Stotrage = NULL);
 	Bool32 FlushFile(Handle File);
-	Word32 TellFilePointer(Handle File);
-	Bool32 CloseFileAndAttach(Handle File, Word32 Flag, Handle Storage);
+	uint32_t TellFilePointer(Handle File);
+	Bool32 CloseFileAndAttach(Handle File, uint32_t Flag, Handle Storage);
 	Bool32 DeleteFileFromDisk(Handle File);
-	Word32 SeekFilePointer(Handle File, Word32 Position, Word32 From);
-	Word32 ReadDataFromFile(Handle File, void * lpData, Word32 Size);
-	Word32 WriteDataToFile(Handle File, void * lpData, Word32 Size);
-	Bool32 CloseFileAndDettach(Handle File, Word32 Flag, Handle Storage);
-	Handle CompliteStorage(Handle Storage, Word32 Flag);
-	Word32 WriteItemToStorage(CTCStorageHeader * Storage, void * pItem, Word32 Size);
-	Word32 WriteFileToStorage(CTCStorageHeader * Storage, CTCFileHeader * File);
-	Bool32 CloseStorageFile(Handle Storage, Word32 Flag = 0);
-	Bool32 CloseAllStorageFile(Handle Storage, Word32 Flag);
-	Word32 CompliteAllStorage(Handle Storage, Word32 Flag);
-	Word32 DecompileStorage(Handle Storage);
-	Handle AddStorageInList(CTCGlobalFile * lpNewStorageName, Word32 wNewFlag);
-	Handle OpenNewStorage(PChar8 lpName, Word32 wFlag);
-	Handle OpenCompliteStorage(PChar8 lpName, Word32 wFlag);
-	Word32 ReadFileFromStorage(CTCStorageHeader * Storage, STORAGEITEM * pInfo, CTCGlobalFile ** pFile);
-	Word32 ReadItemFromStorage(CTCStorageHeader * Storage, void * lpData, Word32 wSize);
+	uint32_t SeekFilePointer(Handle File, uint32_t Position, uint32_t From);
+	uint32_t ReadDataFromFile(Handle File, void * lpData, uint32_t Size);
+	uint32_t WriteDataToFile(Handle File, void * lpData, uint32_t Size);
+	Bool32 CloseFileAndDettach(Handle File, uint32_t Flag, Handle Storage);
+	Handle CompliteStorage(Handle Storage, uint32_t Flag);
+	uint32_t WriteItemToStorage(CTCStorageHeader * Storage, void * pItem, uint32_t Size);
+	uint32_t WriteFileToStorage(CTCStorageHeader * Storage, CTCFileHeader * File);
+	Bool32 CloseStorageFile(Handle Storage, uint32_t Flag = 0);
+	Bool32 CloseAllStorageFile(Handle Storage, uint32_t Flag);
+	uint32_t CompliteAllStorage(Handle Storage, uint32_t Flag);
+	uint32_t DecompileStorage(Handle Storage);
+	Handle AddStorageInList(CTCGlobalFile * lpNewStorageName, uint32_t wNewFlag);
+	Handle OpenNewStorage(PChar8 lpName, uint32_t wFlag);
+	Handle OpenCompliteStorage(PChar8 lpName, uint32_t wFlag);
+	uint32_t ReadFileFromStorage(CTCStorageHeader * Storage, STORAGEITEM * pInfo, CTCGlobalFile ** pFile);
+	uint32_t ReadItemFromStorage(CTCStorageHeader * Storage, void * lpData, uint32_t wSize);
 	PChar8 MakeNameForStorage(PChar8 FileName, CTCStorageHeader * phStorage = NULL, Bool32 KeepName = FALSE);
-	PChar8 FileNameToFolder(PChar8 Buffer, PChar8 FolderName, PChar8 FileName, Word32 Size);
+	PChar8 FileNameToFolder(PChar8 Buffer, PChar8 FolderName, PChar8 FileName, uint32_t Size);
 };
 //////////////////////////////////////////////////////////////////////////////////////////////////
 //

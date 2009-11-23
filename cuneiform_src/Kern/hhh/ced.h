@@ -2,33 +2,33 @@
 Copyright (c) 1993-2008, Cognitive Technologies
 All rights reserved.
 
-Разрешается повторное распространение и использование как в виде исходного кода,
-так и в двоичной форме, с изменениями или без, при соблюдении следующих условий:
+Р Р°Р·СЂРµС€Р°РµС‚СЃСЏ РїРѕРІС‚РѕСЂРЅРѕРµ СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРµ Рё РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ РєР°Рє РІ РІРёРґРµ РёСЃС…РѕРґРЅРѕРіРѕ РєРѕРґР°,
+С‚Р°Рє Рё РІ РґРІРѕРёС‡РЅРѕР№ С„РѕСЂРјРµ, СЃ РёР·РјРµРЅРµРЅРёСЏРјРё РёР»Рё Р±РµР·, РїСЂРё СЃРѕР±Р»СЋРґРµРЅРёРё СЃР»РµРґСѓСЋС‰РёС… СѓСЃР»РѕРІРёР№:
 
-      * При повторном распространении исходного кода должны оставаться указанное
-        выше уведомление об авторском праве, этот список условий и последующий
-        отказ от гарантий.
-      * При повторном распространении двоичного кода в документации и/или в
-        других материалах, поставляемых при распространении, должны сохраняться
-        указанная выше информация об авторском праве, этот список условий и
-        последующий отказ от гарантий.
-      * Ни название Cognitive Technologies, ни имена ее сотрудников не могут
-        быть использованы в качестве средства поддержки и/или продвижения
-        продуктов, основанных на этом ПО, без предварительного письменного
-        разрешения.
+      * РџСЂРё РїРѕРІС‚РѕСЂРЅРѕРј СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё РёСЃС…РѕРґРЅРѕРіРѕ РєРѕРґР° РґРѕР»Р¶РЅС‹ РѕСЃС‚Р°РІР°С‚СЊСЃСЏ СѓРєР°Р·Р°РЅРЅРѕРµ
+        РІС‹С€Рµ СѓРІРµРґРѕРјР»РµРЅРёРµ РѕР± Р°РІС‚РѕСЂСЃРєРѕРј РїСЂР°РІРµ, СЌС‚РѕС‚ СЃРїРёСЃРѕРє СѓСЃР»РѕРІРёР№ Рё РїРѕСЃР»РµРґСѓСЋС‰РёР№
+        РѕС‚РєР°Р· РѕС‚ РіР°СЂР°РЅС‚РёР№.
+      * РџСЂРё РїРѕРІС‚РѕСЂРЅРѕРј СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё РґРІРѕРёС‡РЅРѕРіРѕ РєРѕРґР° РІ РґРѕРєСѓРјРµРЅС‚Р°С†РёРё Рё/РёР»Рё РІ
+        РґСЂСѓРіРёС… РјР°С‚РµСЂРёР°Р»Р°С…, РїРѕСЃС‚Р°РІР»СЏРµРјС‹С… РїСЂРё СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё, РґРѕР»Р¶РЅС‹ СЃРѕС…СЂР°РЅСЏС‚СЊСЃСЏ
+        СѓРєР°Р·Р°РЅРЅР°СЏ РІС‹С€Рµ РёРЅС„РѕСЂРјР°С†РёСЏ РѕР± Р°РІС‚РѕСЂСЃРєРѕРј РїСЂР°РІРµ, СЌС‚РѕС‚ СЃРїРёСЃРѕРє СѓСЃР»РѕРІРёР№ Рё
+        РїРѕСЃР»РµРґСѓСЋС‰РёР№ РѕС‚РєР°Р· РѕС‚ РіР°СЂР°РЅС‚РёР№.
+      * РќРё РЅР°Р·РІР°РЅРёРµ Cognitive Technologies, РЅРё РёРјРµРЅР° РµРµ СЃРѕС‚СЂСѓРґРЅРёРєРѕРІ РЅРµ РјРѕРіСѓС‚
+        Р±С‹С‚СЊ РёСЃРїРѕР»СЊР·РѕРІР°РЅС‹ РІ РєР°С‡РµСЃС‚РІРµ СЃСЂРµРґСЃС‚РІР° РїРѕРґРґРµСЂР¶РєРё Рё/РёР»Рё РїСЂРѕРґРІРёР¶РµРЅРёСЏ
+        РїСЂРѕРґСѓРєС‚РѕРІ, РѕСЃРЅРѕРІР°РЅРЅС‹С… РЅР° СЌС‚РѕРј РџРћ, Р±РµР· РїСЂРµРґРІР°СЂРёС‚РµР»СЊРЅРѕРіРѕ РїРёСЃСЊРјРµРЅРЅРѕРіРѕ
+        СЂР°Р·СЂРµС€РµРЅРёСЏ.
 
-ЭТА ПРОГРАММА ПРЕДОСТАВЛЕНА ВЛАДЕЛЬЦАМИ АВТОРСКИХ ПРАВ И/ИЛИ ДРУГИМИ ЛИЦАМИ "КАК
-ОНА ЕСТЬ" БЕЗ КАКОГО-ЛИБО ВИДА ГАРАНТИЙ, ВЫРАЖЕННЫХ ЯВНО ИЛИ ПОДРАЗУМЕВАЕМЫХ,
-ВКЛЮЧАЯ ГАРАНТИИ КОММЕРЧЕСКОЙ ЦЕННОСТИ И ПРИГОДНОСТИ ДЛЯ КОНКРЕТНОЙ ЦЕЛИ, НО НЕ
-ОГРАНИЧИВАЯСЬ ИМИ. НИ ВЛАДЕЛЕЦ АВТОРСКИХ ПРАВ И НИ ОДНО ДРУГОЕ ЛИЦО, КОТОРОЕ
-МОЖЕТ ИЗМЕНЯТЬ И/ИЛИ ПОВТОРНО РАСПРОСТРАНЯТЬ ПРОГРАММУ, НИ В КОЕМ СЛУЧАЕ НЕ
-НЕСЁТ ОТВЕТСТВЕННОСТИ, ВКЛЮЧАЯ ЛЮБЫЕ ОБЩИЕ, СЛУЧАЙНЫЕ, СПЕЦИАЛЬНЫЕ ИЛИ
-ПОСЛЕДОВАВШИЕ УБЫТКИ, СВЯЗАННЫЕ С ИСПОЛЬЗОВАНИЕМ ИЛИ ПОНЕСЕННЫЕ ВСЛЕДСТВИЕ
-НЕВОЗМОЖНОСТИ ИСПОЛЬЗОВАНИЯ ПРОГРАММЫ (ВКЛЮЧАЯ ПОТЕРИ ДАННЫХ, ИЛИ ДАННЫЕ,
-СТАВШИЕ НЕГОДНЫМИ, ИЛИ УБЫТКИ И/ИЛИ ПОТЕРИ ДОХОДОВ, ПОНЕСЕННЫЕ ИЗ-ЗА ДЕЙСТВИЙ
-ТРЕТЬИХ ЛИЦ И/ИЛИ ОТКАЗА ПРОГРАММЫ РАБОТАТЬ СОВМЕСТНО С ДРУГИМИ ПРОГРАММАМИ,
-НО НЕ ОГРАНИЧИВАЯСЬ ЭТИМИ СЛУЧАЯМИ), НО НЕ ОГРАНИЧИВАЯСЬ ИМИ, ДАЖЕ ЕСЛИ ТАКОЙ
-ВЛАДЕЛЕЦ ИЛИ ДРУГОЕ ЛИЦО БЫЛИ ИЗВЕЩЕНЫ О ВОЗМОЖНОСТИ ТАКИХ УБЫТКОВ И ПОТЕРЬ.
+Р­РўРђ РџР РћР“Р РђРњРњРђ РџР Р•Р”РћРЎРўРђР’Р›Р•РќРђ Р’Р›РђР”Р•Р›Р¬Р¦РђРњР РђР’РўРћР РЎРљРРҐ РџР РђР’ Р/РР›Р Р”Р РЈР“РРњР Р›РР¦РђРњР "РљРђРљ
+РћРќРђ Р•РЎРўР¬" Р‘Р•Р— РљРђРљРћР“Рћ-Р›РР‘Рћ Р’РР”Рђ Р“РђР РђРќРўРР™, Р’Р«Р РђР–Р•РќРќР«РҐ РЇР’РќРћ РР›Р РџРћР”Р РђР—РЈРњР•Р’РђР•РњР«РҐ,
+Р’РљР›Р®Р§РђРЇ Р“РђР РђРќРўРР РљРћРњРњР•Р Р§Р•РЎРљРћР™ Р¦Р•РќРќРћРЎРўР Р РџР РР“РћР”РќРћРЎРўР Р”Р›РЇ РљРћРќРљР Р•РўРќРћР™ Р¦Р•Р›Р, РќРћ РќР•
+РћР“Р РђРќРР§РР’РђРЇРЎР¬ РРњР. РќР Р’Р›РђР”Р•Р›Р•Р¦ РђР’РўРћР РЎРљРРҐ РџР РђР’ Р РќР РћР”РќРћ Р”Р РЈР“РћР• Р›РР¦Рћ, РљРћРўРћР РћР•
+РњРћР–Р•Рў РР—РњР•РќРЇРўР¬ Р/РР›Р РџРћР’РўРћР РќРћ Р РђРЎРџР РћРЎРўР РђРќРЇРўР¬ РџР РћР“Р РђРњРњРЈ, РќР Р’ РљРћР•Рњ РЎР›РЈР§РђР• РќР•
+РќР•РЎРЃРў РћРўР’Р•РўРЎРўР’Р•РќРќРћРЎРўР, Р’РљР›Р®Р§РђРЇ Р›Р®Р‘Р«Р• РћР‘Р©РР•, РЎР›РЈР§РђР™РќР«Р•, РЎРџР•Р¦РРђР›Р¬РќР«Р• РР›Р
+РџРћРЎР›Р•Р”РћР’РђР’РЁРР• РЈР‘Р«РўРљР, РЎР’РЇР—РђРќРќР«Р• РЎ РРЎРџРћР›Р¬Р—РћР’РђРќРР•Рњ РР›Р РџРћРќР•РЎР•РќРќР«Р• Р’РЎР›Р•Р”РЎРўР’РР•
+РќР•Р’РћР—РњРћР–РќРћРЎРўР РРЎРџРћР›Р¬Р—РћР’РђРќРРЇ РџР РћР“Р РђРњРњР« (Р’РљР›Р®Р§РђРЇ РџРћРўР•Р Р Р”РђРќРќР«РҐ, РР›Р Р”РђРќРќР«Р•,
+РЎРўРђР’РЁРР• РќР•Р“РћР”РќР«РњР, РР›Р РЈР‘Р«РўРљР Р/РР›Р РџРћРўР•Р Р Р”РћРҐРћР”РћР’, РџРћРќР•РЎР•РќРќР«Р• РР—-Р—Рђ Р”Р•Р™РЎРўР’РР™
+РўР Р•РўР¬РРҐ Р›РР¦ Р/РР›Р РћРўРљРђР—Рђ РџР РћР“Р РђРњРњР« Р РђР‘РћРўРђРўР¬ РЎРћР’РњР•РЎРўРќРћ РЎ Р”Р РЈР“РРњР РџР РћР“Р РђРњРњРђРњР,
+РќРћ РќР• РћР“Р РђРќРР§РР’РђРЇРЎР¬ Р­РўРРњР РЎР›РЈР§РђРЇРњР), РќРћ РќР• РћР“Р РђРќРР§РР’РђРЇРЎР¬ РРњР, Р”РђР–Р• Р•РЎР›Р РўРђРљРћР™
+Р’Р›РђР”Р•Р›Р•Р¦ РР›Р Р”Р РЈР“РћР• Р›РР¦Рћ Р‘Р«Р›Р РР—Р’Р•Р©Р•РќР« Рћ Р’РћР—РњРћР–РќРћРЎРўР РўРђРљРРҐ РЈР‘Р«РўРљРћР’ Р РџРћРўР•Р Р¬.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
@@ -104,17 +104,17 @@ typedef struct edPoint
 
 typedef struct edSize
 {
-	Int32 cx,cy;
+	int32_t cx,cy;
 } EDSIZE;
 
 typedef struct edRect
 {
-	Int32 left,top,right,bottom;
+	int32_t left,top,right,bottom;
 } EDRECT;
 
 typedef struct edCol
 {
-	Int32 width,space;
+	int32_t width,space;
 } EDCOL;
 
 
@@ -160,7 +160,7 @@ typedef struct edCol
 
 #endif
 
-//Для CreateFrame
+//Р”Р»СЏ CreateFrame
 #define HPOS_PAGE		(0<<4)
 #define HPOS_MRG		(1<<4)
 #define HPOS_COL		(2<<4)
@@ -169,20 +169,20 @@ typedef struct edCol
 #define VPOS_MRG		1
 #define VPOS_PARA		2
 
-//База для шрифта/признака картинки
+//Р‘Р°Р·Р° РґР»СЏ С€СЂРёС„С‚Р°/РїСЂРёР·РЅР°РєР° РєР°СЂС‚РёРЅРєРё
 #define ED_PICT_BASE	0x10000
 
-//Для разрыва раздела
+//Р”Р»СЏ СЂР°Р·СЂС‹РІР° СЂР°Р·РґРµР»Р°
 #define ED_SECT_NEW_PAGE       1
 #define ED_SECT_CONTINUE       0
 /* orientation selections */
 #define ED_ORIENT_PORTRAIT   0
 #define ED_ORIENT_LANDSCAPE  1
 
-//Положение фрейма
+//РџРѕР»РѕР¶РµРЅРёРµ С„СЂРµР№РјР°
 #define	ED_POSXR	(0x7fffffff-1)
 
-//Стили символов
+//РЎС‚РёР»Рё СЃРёРјРІРѕР»РѕРІ
 #define ED_ULINED		1
 #define ED_HIDDEN		2
 #define ED_BOLD			4
@@ -194,27 +194,27 @@ typedef struct edCol
 #define	ED_SUBSCR		512
 #define ED_FNOTE		1024
 
-//для абзацев
+//РґР»СЏ Р°Р±Р·Р°С†РµРІ
 #define ED_PARA_KEEP	1
 #define ED_PARA_KEEP_NEXT	3
 
 //- Positions the paragraph to the right within the reference frame.
 #define	ED_POSXC 	(0x7fffffff-2)
 //- Centers the frame horizontally within the reference frame.
-//Слияние ячеек
+//РЎР»РёСЏРЅРёРµ СЏС‡РµРµРє
 #define	ED_CELL_MRGF	1
-// - ячейка первая в объединяемой группе
+// - СЏС‡РµР№РєР° РїРµСЂРІР°СЏ РІ РѕР±СЉРµРґРёРЅСЏРµРјРѕР№ РіСЂСѓРїРїРµ
 #define	ED_CELL_MRG		2
-//- ячейка очередная в объедияемой группе, т.е.
+//- СЏС‡РµР№РєР° РѕС‡РµСЂРµРґРЅР°СЏ РІ РѕР±СЉРµРґРёСЏРµРјРѕР№ РіСЂСѓРїРїРµ, С‚.Рµ.
 
 #define ED_DROPCAP		1
-// - Фрейм является буквицей
+// - Р¤СЂРµР№Рј СЏРІР»СЏРµС‚СЃСЏ Р±СѓРєРІРёС†РµР№
 
 #define ED_TDIR_UP		2
 #define ED_TDIR_DOWN	4
-// - направление текста в ячейке таблицы или фрейме
+// - РЅР°РїСЂР°РІР»РµРЅРёРµ С‚РµРєСЃС‚Р° РІ СЏС‡РµР№РєРµ С‚Р°Р±Р»РёС†С‹ РёР»Рё С„СЂРµР№РјРµ
 
-//Типы границ ячейки, абзаца и др.
+//РўРёРїС‹ РіСЂР°РЅРёС† СЏС‡РµР№РєРё, Р°Р±Р·Р°С†Р° Рё РґСЂ.
 #define ED_BRDR_NONE	0
 #define ED_BRDR_SINGLE	1
 #define ED_BRDR_SHADOWED 2
@@ -222,18 +222,18 @@ typedef struct edCol
 #define ED_BRDR_DASHED	4
 #define ED_BRDR_DOUBLE	5
 
-//#include "ced_struct.h" //Структуры, обрабатываемые CED_FormattedLoad
+//#include "ced_struct.h" //РЎС‚СЂСѓРєС‚СѓСЂС‹, РѕР±СЂР°Р±Р°С‚С‹РІР°РµРјС‹Рµ CED_FormattedLoad
 
 CED_FUNC(Bool32) CED_Init(Word16 wHeightCode,Handle hStorage);
 CED_FUNC(Bool32) CED_Done();
-CED_FUNC(Word32) CED_GetReturnCode();
-CED_FUNC(char *) CED_GetReturnString(Word32 dwError);
-CED_FUNC(Bool32) CED_GetExportData(Word32 dwType, void * pData);
-CED_FUNC(Bool32) CED_SetImportData(Word32 dwType, void * pData);
-char * GetModulesString(Word32 dwError);
+CED_FUNC(uint32_t) CED_GetReturnCode();
+CED_FUNC(char *) CED_GetReturnString(uint32_t dwError);
+CED_FUNC(Bool32) CED_GetExportData(uint32_t dwType, void * pData);
+CED_FUNC(Bool32) CED_SetImportData(uint32_t dwType, void * pData);
+char * GetModulesString(uint32_t dwError);
 /////////////////////////////////////////////////////////////
 
-//Импорт
+//РРјРїРѕСЂС‚
 enum CED_IMPORT_ENTRIES
 {
 	CED_FNCED_BitmapRef = 1,
@@ -265,9 +265,9 @@ enum CED_IMPORT_ENTRIES
 	CED_FNCED_ExtentionNew
 };
 
-typedef void (*FNRDProc)(Word8* ptr, Word32 lth);
+typedef void (*FNRDProc)(Word8* ptr, uint32_t lth);
 
-//Для CreatePicture
+//Р”Р»СЏ CreatePicture
 #define ED_ALIGN_BOT            0        // align picture bottom to base line
 #define ED_ALIGN_MIDDLE         1        // center picture vertically to baseline
 #define ED_ALIGN_TOP            2        // align picture top to base line
@@ -300,11 +300,11 @@ DEC_FUN(void, CED_ListOfFragments,(const struct list_of_fragments* pt));
 DEC_FUN(void, CED_Extention,(const struct edExtention* pt,const void* ptExt));
 DEC_FUN(void, CED_ExtentionNew,(const struct edExtentionNew* pt,const void* ptExt));
 DEC_FUN(void, CED_Aksant,(const struct aksant* pt));
-DEC_FUN(void, CED_Letter,(const struct letter* pt,const Word32 alternatives));
+DEC_FUN(void, CED_Letter,(const struct letter* pt,const uint32_t alternatives));
 
 #undef DEC_FUN
 
-//Экспорт
+//Р­РєСЃРїРѕСЂС‚
 
 typedef enum
 {
@@ -422,9 +422,9 @@ typedef enum
 #define DEC_FUN(a,b,c) typedef a (*FN##b)c; CED_FUNC(a) b c
 //#define DEC_FUN(a,b,c) typedef a (*FN##b)c;a b c
 
-DEC_FUN(Word32, CED_IsEdFile, (char * file,Bool32 readFromFile, Word32 bufLen));
+DEC_FUN(uint32_t, CED_IsEdFile, (char * file,Bool32 readFromFile, uint32_t bufLen));
 
-DEC_FUN(Word32, CED_ReadED,(char * file,Bool32 readFromFile, Word32 bufLen));
+DEC_FUN(uint32_t, CED_ReadED,(char * file,Bool32 readFromFile, uint32_t bufLen));
 DEC_FUN(void,CED_SetRawDataProc,(FNRDProc proc));
 
 DEC_FUN(Handle, CED_CreatePage,(char * _imageName,EDSIZE _sizeOfImage,EDSIZE _dpi,int _turn,int _pageNumber,EDSIZE _sizeInTwips, EDRECT _pageBordersInTwips, char _unrecogChar, Bool32 _resizeToFit));
@@ -447,82 +447,82 @@ DEC_FUN(Handle, CED_CreateTableRow,(Handle hEdSection, Handle hEdTable, int left
 DEC_FUN(Handle, CED_CreateCell,(Handle hEdSection,Handle hEdRow, int cellX, int merging, int vertTextAlign, int leftBrdrType, int leftBrdrWidth, int rightBrdrType, int rightBrdrWidth, int topBrdrType, int topBrdrWidth, int bottomBrdrType, int bottomBrdrWidth, EDBOX layout, int shading, int color));
 DEC_FUN(Bool32, CED_SetCellFlag,(Handle hEdCell, int flag));
 DEC_FUN(void, CED_DeletePage,(Handle hEdPage));
-DEC_FUN(Handle, CED_ReadFormattedEd,(char * lpEdFile,Bool32 readFromFile, Word32 bufLen));
+DEC_FUN(Handle, CED_ReadFormattedEd,(char * lpEdFile,Bool32 readFromFile, uint32_t bufLen));
 DEC_FUN(Bool32, CED_WriteFormattedEd,(char * lpEdFileName, Handle hEdPage));
 DEC_FUN(char*, CED_GetPageImageName,(Handle hEdPage));
 DEC_FUN(EDSIZE, CED_GetPageImageSize,(Handle hEdPage));
 DEC_FUN(EDSIZE,CED_GetPageDpi,(Handle hEdPage));
-DEC_FUN(Word32, CED_GetPageTurn,(Handle hEdPage));
+DEC_FUN(uint32_t, CED_GetPageTurn,(Handle hEdPage));
 DEC_FUN(EDSIZE,CED_GetPageSize,(Handle hEdPage));
 DEC_FUN(EDRECT, CED_GetPageBorders,(Handle hEdPage));
-DEC_FUN(Word32, CED_GetPageNumber,(Handle hEdPage));
+DEC_FUN(uint32_t, CED_GetPageNumber,(Handle hEdPage));
 DEC_FUN(char,CED_GetPageUnrecogChar,(Handle hEdPage));
 DEC_FUN(Bool32, CED_GetPageResize,(Handle hEdPage));
-DEC_FUN(Word32,CED_GetNumberOfParagraphs,(Handle hEdPage));
-DEC_FUN(Word32, CED_GetNumOfFonts,(Handle hEdPage));
+DEC_FUN(uint32_t,CED_GetNumberOfParagraphs,(Handle hEdPage));
+DEC_FUN(uint32_t, CED_GetNumOfFonts,(Handle hEdPage));
 DEC_FUN(Bool32, CED_GetPicture,(Handle hEdPage,int number, int* pictNumber, EDSIZE* pictSize, EDSIZE* pictGoal, int* pictAlign , int* type, void ** data, int* len));
-DEC_FUN(Word32, CED_GetNumOfPics,(Handle hEdPage));
+DEC_FUN(uint32_t, CED_GetNumOfPics,(Handle hEdPage));
 DEC_FUN(Handle, CED_GetParagraph,(Handle hEdPage,int _num));
 DEC_FUN(Bool32, CED_GetFont,(Handle hEdPage,int number, BYTE* fontNumber, BYTE* fontPitchAndFamily, BYTE* fontCharset,char** fontName));
-DEC_FUN(Word32,CED_GetCountSection,(Handle hEdPage));
-DEC_FUN(Handle, CED_GetSection,(Handle hEdPage, Word32 number));
+DEC_FUN(uint32_t,CED_GetCountSection,(Handle hEdPage));
+DEC_FUN(Handle, CED_GetSection,(Handle hEdPage, uint32_t number));
 DEC_FUN(Bool32, CED_GetSectLineBetCol,(Handle hEdSection));
 DEC_FUN(EDRECT, CED_GetSectionBorder,(Handle hEdSection));
-DEC_FUN(Word32, CED_GetCountColumn,(Handle hEdSection));
-DEC_FUN(Word32, CED_GetNumSnakeCols,(Handle hEdSection));
+DEC_FUN(uint32_t, CED_GetCountColumn,(Handle hEdSection));
+DEC_FUN(uint32_t, CED_GetNumSnakeCols,(Handle hEdSection));
 DEC_FUN(Handle, CED_GetColumn,(Handle hEdSection,int number));
-DEC_FUN(Int32, CED_GetSnakeColumnWidth,(Handle hEdSection,int number));
-DEC_FUN(Int32, CED_GetSnakeColumnSpacing,(Handle hEdSection,int number));
+DEC_FUN(int32_t, CED_GetSnakeColumnWidth,(Handle hEdSection,int number));
+DEC_FUN(int32_t, CED_GetSnakeColumnSpacing,(Handle hEdSection,int number));
 DEC_FUN(Bool32, CED_GetSectionParams,(Handle hEdSection,EDRECT* border, int* colInterval, char* sectionBreak, int* width, int* height, char* orientation, int* headerY, int* footerY));
-//DEC_FUN(Word32, CED_GetCountFrame,(Handle hEdSection));
+//DEC_FUN(uint32_t, CED_GetCountFrame,(Handle hEdSection));
 //DEC_FUN(Handle, CED_GetFrame,(Handle hEdSection,int number));
 DEC_FUN(EDBOX, CED_GetFrameRect,(Handle hEdFrame));
-DEC_FUN(Int32, CED_GetFramePosition,(Handle hEdFrame));
-DEC_FUN(Int32, CED_GetFrameBorderSpace,(Handle hEdFrame));
-DEC_FUN(Int32, CED_GetFrameDxfrtextx, (Handle hEdFrame));
-DEC_FUN(Int32, CED_GetFrameDxfrtexty, (Handle hEdFrame));
-DEC_FUN(Int32, CED_GetFrameFlag, (Handle hEdFrame));
+DEC_FUN(int32_t, CED_GetFramePosition,(Handle hEdFrame));
+DEC_FUN(int32_t, CED_GetFrameBorderSpace,(Handle hEdFrame));
+DEC_FUN(int32_t, CED_GetFrameDxfrtextx, (Handle hEdFrame));
+DEC_FUN(int32_t, CED_GetFrameDxfrtexty, (Handle hEdFrame));
+DEC_FUN(int32_t, CED_GetFrameFlag, (Handle hEdFrame));
 DEC_FUN(Handle, CED_GetFirstObject,(Handle hObject));
 DEC_FUN(Handle, CED_GetNextObject,(Handle hObject));
 DEC_FUN(Bool32, CED_IsTable,(Handle hObject));
 DEC_FUN(Bool32, CED_IsFrame,(Handle hObject));
 DEC_FUN(Bool32, CED_IsParagraph,(Handle hObject));
 DEC_FUN(Bool32, CED_IsFictive,(Handle hEdParagraph));
-DEC_FUN(Word32, CED_GetCountRow,(Handle hEdTable));
+DEC_FUN(uint32_t, CED_GetCountRow,(Handle hEdTable));
 DEC_FUN(Handle, CED_GetTableRow,(Handle hEdTable, int num));
 DEC_FUN(Bool32, CED_GetTableRowParams,(Handle hEdRow, int* left, int* rowHeight, int* leftBrdrType, int* leftBrdrWidth, int* rightBrdrType, int* rightBrdrWidth, int* topBrdrType, int* topBrdrWidth, int* bottomBrdrType, int* bottomBrdrWidth, int* gaph, int* position, Bool32* header));
-DEC_FUN(Word32, CED_GetCountCell,(Handle hEdRow));
+DEC_FUN(uint32_t, CED_GetCountCell,(Handle hEdRow));
 DEC_FUN(Handle, CED_GetCell,(Handle hEdRow, int number));
 DEC_FUN(Bool32, CED_GetCellParams,(Handle hEdCell, int* cellX, int* merging, int* vertTextAlign, int* leftBrdrType, int* leftBrdrWidth, int* rightBrdrType, int* rightBrdrWidth, int* topBrdrType, int* topBrdrWidth, int* bottomBrdrType, int* bottomBrdrWidth, EDBOX* layout, int* shading, int* color));
-DEC_FUN(Int32, CED_GetCellFlag, (Handle hEdCell));
-DEC_FUN(Int32*,CED_GetLinesX,(Handle hEdTable));
-DEC_FUN(Int32 *,CED_GetRowsHeights,(Handle hEdTable));
-DEC_FUN(Word32*,CED_GetTableOfCells,(Handle hEdTable));
+DEC_FUN(int32_t, CED_GetCellFlag, (Handle hEdCell));
+DEC_FUN(int32_t*,CED_GetLinesX,(Handle hEdTable));
+DEC_FUN(int32_t *,CED_GetRowsHeights,(Handle hEdTable));
+DEC_FUN(uint32_t*,CED_GetTableOfCells,(Handle hEdTable));
 DEC_FUN(EDSIZE, CED_GetSize,(Handle hEdTable));
 DEC_FUN(Handle, CED_GetLogicalCell,(Handle hEdTable, int number));
 DEC_FUN(int, CED_GetCountLogicalCell,(Handle hEdTable));
 DEC_FUN(EDRECT, CED_GetIndent,(Handle hEdParagraph));
-DEC_FUN(Word32,CED_GetAlignment,(Handle hEdParagraph));
+DEC_FUN(uint32_t,CED_GetAlignment,(Handle hEdParagraph));
 DEC_FUN(EDBOX, CED_GetLayout,(Handle hEdParagraph));
-DEC_FUN(Word32, CED_GetUserNumber,(Handle hEdParagraph));
+DEC_FUN(uint32_t, CED_GetUserNumber,(Handle hEdParagraph));
 DEC_FUN(EDSIZE, CED_GetInterval,(Handle hEdParagraph));
 DEC_FUN(Bool32, CED_GetParaParams,(Handle hEdParagraph,int*  color, int*  shading, int* spaceBetweenLines, char* spcBtwLnsMult, char*  keep));
 DEC_FUN(Bool32, CED_GetParaBorders,(Handle hEdParagraph, int* leftBrdrType, int* leftBrdrWidth, int* rightBrdrType, int* rightBrdrWidth, int* topBrdrType, int* topBrdrWidth, int* bottomBrdrType, int* bottomBrdrWidth,int* brdrBtw));
-DEC_FUN(Word32, CED_GetCountLine,(Handle hEdParagraph));
+DEC_FUN(uint32_t, CED_GetCountLine,(Handle hEdParagraph));
 DEC_FUN(Handle, CED_GetLine,(Handle hEdParagraph,int number));
 DEC_FUN(Bool32, CED_GetLineHardBreak,(Handle hEdLine));
-DEC_FUN(Int32, CED_GetLineDefChrFontHeight,(Handle hEdLine));
-DEC_FUN(Word32, CED_GetCountChar,(Handle hEdLine));
+DEC_FUN(int32_t, CED_GetLineDefChrFontHeight,(Handle hEdLine));
+DEC_FUN(uint32_t, CED_GetCountChar,(Handle hEdLine));
 DEC_FUN(Handle, CED_GetChar,(Handle hEdLine,int number));
 DEC_FUN(Bool32, CED_IsPicture,(Handle hEdChar));
 DEC_FUN(LETTER*, CED_GetAlternatives,(Handle hEdChar));
-DEC_FUN(Int32, CED_GetCharFontHeight,(Handle hEdChar));
-DEC_FUN(Int32, CED_GetCharFontAttribs,(Handle hEdChar));
-DEC_FUN(Int32, CED_GetCharFontNum,(Handle hEdChar));
+DEC_FUN(int32_t, CED_GetCharFontHeight,(Handle hEdChar));
+DEC_FUN(int32_t, CED_GetCharFontAttribs,(Handle hEdChar));
+DEC_FUN(int32_t, CED_GetCharFontNum,(Handle hEdChar));
 DEC_FUN(EDRECT, CED_GetCharLayout,(Handle hEdChar));
-DEC_FUN(Int32, CED_GetCharFontLang,(Handle hEdChar));
-DEC_FUN(Int32, CED_GetCharBackgroundColor,(Handle hEdChar));
-DEC_FUN(Int32, CED_GetCharForegroundColor,(Handle hEdChar));
+DEC_FUN(int32_t, CED_GetCharFontLang,(Handle hEdChar));
+DEC_FUN(int32_t, CED_GetCharBackgroundColor,(Handle hEdChar));
+DEC_FUN(int32_t, CED_GetCharForegroundColor,(Handle hEdChar));
 
 
 DEC_FUN(Bool32, CED_WriteFormattedRtf,(const char * fileName, Handle hEdPage));

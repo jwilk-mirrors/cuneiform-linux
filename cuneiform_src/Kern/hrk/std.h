@@ -2,33 +2,33 @@
 Copyright (c) 1993-2008, Cognitive Technologies
 All rights reserved.
 
-–‡ÁÂ¯‡ÂÚÒˇ ÔÓ‚ÚÓÌÓÂ ‡ÒÔÓÒÚ‡ÌÂÌËÂ Ë ËÒÔÓÎ¸ÁÓ‚‡ÌËÂ Í‡Í ‚ ‚Ë‰Â ËÒıÓ‰ÌÓ„Ó ÍÓ‰‡,
-Ú‡Í Ë ‚ ‰‚ÓË˜ÌÓÈ ÙÓÏÂ, Ò ËÁÏÂÌÂÌËˇÏË ËÎË ·ÂÁ, ÔË ÒÓ·Î˛‰ÂÌËË ÒÎÂ‰Û˛˘Ëı ÛÒÎÓ‚ËÈ:
+–†–∞–∑—Ä–µ—à–∞–µ—Ç—Å—è –ø–æ–≤—Ç–æ—Ä–Ω–æ–µ —Ä–∞—Å–ø—Ä–æ—Å—Ç—Ä–∞–Ω–µ–Ω–∏–µ –∏ –∏—Å–ø–æ–ª—å–∑–æ–≤–∞–Ω–∏–µ –∫–∞–∫ –≤ –≤–∏–¥–µ –∏—Å—Ö–æ–¥–Ω–æ–≥–æ –∫–æ–¥–∞,
+—Ç–∞–∫ –∏ –≤ –¥–≤–æ–∏—á–Ω–æ–π —Ñ–æ—Ä–º–µ, —Å –∏–∑–º–µ–Ω–µ–Ω–∏—è–º–∏ –∏–ª–∏ –±–µ–∑, –ø—Ä–∏ —Å–æ–±–ª—é–¥–µ–Ω–∏–∏ —Å–ª–µ–¥—É—é—â–∏—Ö —É—Å–ª–æ–≤–∏–π:
 
-      * œË ÔÓ‚ÚÓÌÓÏ ‡ÒÔÓÒÚ‡ÌÂÌËË ËÒıÓ‰ÌÓ„Ó ÍÓ‰‡ ‰ÓÎÊÌ˚ ÓÒÚ‡‚‡Ú¸Òˇ ÛÍ‡Á‡ÌÌÓÂ
-        ‚˚¯Â Û‚Â‰ÓÏÎÂÌËÂ Ó· ‡‚ÚÓÒÍÓÏ Ô‡‚Â, ˝ÚÓÚ ÒÔËÒÓÍ ÛÒÎÓ‚ËÈ Ë ÔÓÒÎÂ‰Û˛˘ËÈ
-        ÓÚÍ‡Á ÓÚ „‡‡ÌÚËÈ.
-      * œË ÔÓ‚ÚÓÌÓÏ ‡ÒÔÓÒÚ‡ÌÂÌËË ‰‚ÓË˜ÌÓ„Ó ÍÓ‰‡ ‚ ‰ÓÍÛÏÂÌÚ‡ˆËË Ë/ËÎË ‚
-        ‰Û„Ëı Ï‡ÚÂË‡Î‡ı, ÔÓÒÚ‡‚ÎˇÂÏ˚ı ÔË ‡ÒÔÓÒÚ‡ÌÂÌËË, ‰ÓÎÊÌ˚ ÒÓı‡ÌˇÚ¸Òˇ
-        ÛÍ‡Á‡ÌÌ‡ˇ ‚˚¯Â ËÌÙÓÏ‡ˆËˇ Ó· ‡‚ÚÓÒÍÓÏ Ô‡‚Â, ˝ÚÓÚ ÒÔËÒÓÍ ÛÒÎÓ‚ËÈ Ë
-        ÔÓÒÎÂ‰Û˛˘ËÈ ÓÚÍ‡Á ÓÚ „‡‡ÌÚËÈ.
-      * ÕË Ì‡Á‚‡ÌËÂ Cognitive Technologies, ÌË ËÏÂÌ‡ ÂÂ ÒÓÚÛ‰ÌËÍÓ‚ ÌÂ ÏÓ„ÛÚ
-        ·˚Ú¸ ËÒÔÓÎ¸ÁÓ‚‡Ì˚ ‚ Í‡˜ÂÒÚ‚Â ÒÂ‰ÒÚ‚‡ ÔÓ‰‰ÂÊÍË Ë/ËÎË ÔÓ‰‚ËÊÂÌËˇ
-        ÔÓ‰ÛÍÚÓ‚, ÓÒÌÓ‚‡ÌÌ˚ı Ì‡ ˝ÚÓÏ œŒ, ·ÂÁ ÔÂ‰‚‡ËÚÂÎ¸ÌÓ„Ó ÔËÒ¸ÏÂÌÌÓ„Ó
-        ‡ÁÂ¯ÂÌËˇ.
+      * –ü—Ä–∏ –ø–æ–≤—Ç–æ—Ä–Ω–æ–º —Ä–∞—Å–ø—Ä–æ—Å—Ç—Ä–∞–Ω–µ–Ω–∏–∏ –∏—Å—Ö–æ–¥–Ω–æ–≥–æ –∫–æ–¥–∞ –¥–æ–ª–∂–Ω—ã –æ—Å—Ç–∞–≤–∞—Ç—å—Å—è —É–∫–∞–∑–∞–Ω–Ω–æ–µ
+        –≤—ã—à–µ —É–≤–µ–¥–æ–º–ª–µ–Ω–∏–µ –æ–± –∞–≤—Ç–æ—Ä—Å–∫–æ–º –ø—Ä–∞–≤–µ, —ç—Ç–æ—Ç —Å–ø–∏—Å–æ–∫ —É—Å–ª–æ–≤–∏–π –∏ –ø–æ—Å–ª–µ–¥—É—é—â–∏–π
+        –æ—Ç–∫–∞–∑ –æ—Ç –≥–∞—Ä–∞–Ω—Ç–∏–π.
+      * –ü—Ä–∏ –ø–æ–≤—Ç–æ—Ä–Ω–æ–º —Ä–∞—Å–ø—Ä–æ—Å—Ç—Ä–∞–Ω–µ–Ω–∏–∏ –¥–≤–æ–∏—á–Ω–æ–≥–æ –∫–æ–¥–∞ –≤ –¥–æ–∫—É–º–µ–Ω—Ç–∞—Ü–∏–∏ –∏/–∏–ª–∏ –≤
+        –¥—Ä—É–≥–∏—Ö –º–∞—Ç–µ—Ä–∏–∞–ª–∞—Ö, –ø–æ—Å—Ç–∞–≤–ª—è–µ–º—ã—Ö –ø—Ä–∏ —Ä–∞—Å–ø—Ä–æ—Å—Ç—Ä–∞–Ω–µ–Ω–∏–∏, –¥–æ–ª–∂–Ω—ã —Å–æ—Ö—Ä–∞–Ω—è—Ç—å—Å—è
+        —É–∫–∞–∑–∞–Ω–Ω–∞—è –≤—ã—à–µ –∏–Ω—Ñ–æ—Ä–º–∞—Ü–∏—è –æ–± –∞–≤—Ç–æ—Ä—Å–∫–æ–º –ø—Ä–∞–≤–µ, —ç—Ç–æ—Ç —Å–ø–∏—Å–æ–∫ —É—Å–ª–æ–≤–∏–π –∏
+        –ø–æ—Å–ª–µ–¥—É—é—â–∏–π –æ—Ç–∫–∞–∑ –æ—Ç –≥–∞—Ä–∞–Ω—Ç–∏–π.
+      * –ù–∏ –Ω–∞–∑–≤–∞–Ω–∏–µ Cognitive Technologies, –Ω–∏ –∏–º–µ–Ω–∞ –µ–µ —Å–æ—Ç—Ä—É–¥–Ω–∏–∫–æ–≤ –Ω–µ –º–æ–≥—É—Ç
+        –±—ã—Ç—å –∏—Å–ø–æ–ª—å–∑–æ–≤–∞–Ω—ã –≤ –∫–∞—á–µ—Å—Ç–≤–µ —Å—Ä–µ–¥—Å—Ç–≤–∞ –ø–æ–¥–¥–µ—Ä–∂–∫–∏ –∏/–∏–ª–∏ –ø—Ä–æ–¥–≤–∏–∂–µ–Ω–∏—è
+        –ø—Ä–æ–¥—É–∫—Ç–æ–≤, –æ—Å–Ω–æ–≤–∞–Ω–Ω—ã—Ö –Ω–∞ —ç—Ç–æ–º –ü–û, –±–µ–∑ –ø—Ä–µ–¥–≤–∞—Ä–∏—Ç–µ–ª—å–Ω–æ–≥–æ –ø–∏—Å—å–º–µ–Ω–Ω–æ–≥–æ
+        —Ä–∞–∑—Ä–µ—à–µ–Ω–∏—è.
 
-›“¿ œ–Œ√–¿ÃÃ¿ œ–≈ƒŒ—“¿¬À≈Õ¿ ¬À¿ƒ≈À‹÷¿Ã» ¿¬“Œ–— »’ œ–¿¬ »/»À» ƒ–”√»Ã» À»÷¿Ã» " ¿ 
-ŒÕ¿ ≈—“‹" ¡≈«  ¿ Œ√Œ-À»¡Œ ¬»ƒ¿ √¿–¿Õ“»…, ¬€–¿∆≈ÕÕ€’ ﬂ¬ÕŒ »À» œŒƒ–¿«”Ã≈¬¿≈Ã€’,
-¬ Àﬁ◊¿ﬂ √¿–¿Õ“»»  ŒÃÃ≈–◊≈— Œ… ÷≈ÕÕŒ—“» » œ–»√ŒƒÕŒ—“» ƒÀﬂ  ŒÕ –≈“ÕŒ… ÷≈À», ÕŒ Õ≈
-Œ√–¿Õ»◊»¬¿ﬂ—‹ »Ã». Õ» ¬À¿ƒ≈À≈÷ ¿¬“Œ–— »’ œ–¿¬ » Õ» ŒƒÕŒ ƒ–”√Œ≈ À»÷Œ,  Œ“Œ–Œ≈
-ÃŒ∆≈“ »«Ã≈Õﬂ“‹ »/»À» œŒ¬“Œ–ÕŒ –¿—œ–Œ—“–¿Õﬂ“‹ œ–Œ√–¿ÃÃ”, Õ» ¬  Œ≈Ã —À”◊¿≈ Õ≈
-Õ≈—®“ Œ“¬≈“—“¬≈ÕÕŒ—“», ¬ Àﬁ◊¿ﬂ Àﬁ¡€≈ Œ¡Ÿ»≈, —À”◊¿…Õ€≈, —œ≈÷»¿À‹Õ€≈ »À»
-œŒ—À≈ƒŒ¬¿¬ÿ»≈ ”¡€“ », —¬ﬂ«¿ÕÕ€≈ — »—œŒÀ‹«Œ¬¿Õ»≈Ã »À» œŒÕ≈—≈ÕÕ€≈ ¬—À≈ƒ—“¬»≈
-Õ≈¬Œ«ÃŒ∆ÕŒ—“» »—œŒÀ‹«Œ¬¿Õ»ﬂ œ–Œ√–¿ÃÃ€ (¬ Àﬁ◊¿ﬂ œŒ“≈–» ƒ¿ÕÕ€’, »À» ƒ¿ÕÕ€≈,
-—“¿¬ÿ»≈ Õ≈√ŒƒÕ€Ã», »À» ”¡€“ » »/»À» œŒ“≈–» ƒŒ’ŒƒŒ¬, œŒÕ≈—≈ÕÕ€≈ »«-«¿ ƒ≈…—“¬»…
-“–≈“‹»’ À»÷ »/»À» Œ“ ¿«¿ œ–Œ√–¿ÃÃ€ –¿¡Œ“¿“‹ —Œ¬Ã≈—“ÕŒ — ƒ–”√»Ã» œ–Œ√–¿ÃÃ¿Ã»,
-ÕŒ Õ≈ Œ√–¿Õ»◊»¬¿ﬂ—‹ ›“»Ã» —À”◊¿ﬂÃ»), ÕŒ Õ≈ Œ√–¿Õ»◊»¬¿ﬂ—‹ »Ã», ƒ¿∆≈ ≈—À» “¿ Œ…
-¬À¿ƒ≈À≈÷ »À» ƒ–”√Œ≈ À»÷Œ ¡€À» »«¬≈Ÿ≈Õ€ Œ ¬Œ«ÃŒ∆ÕŒ—“» “¿ »’ ”¡€“ Œ¬ » œŒ“≈–‹.
+–≠–¢–ê –ü–†–û–ì–†–ê–ú–ú–ê –ü–†–ï–î–û–°–¢–ê–í–õ–ï–ù–ê –í–õ–ê–î–ï–õ–¨–¶–ê–ú–ò –ê–í–¢–û–†–°–ö–ò–• –ü–†–ê–í –ò/–ò–õ–ò –î–†–£–ì–ò–ú–ò –õ–ò–¶–ê–ú–ò "–ö–ê–ö
+–û–ù–ê –ï–°–¢–¨" –ë–ï–ó –ö–ê–ö–û–ì–û-–õ–ò–ë–û –í–ò–î–ê –ì–ê–†–ê–ù–¢–ò–ô, –í–´–†–ê–ñ–ï–ù–ù–´–• –Ø–í–ù–û –ò–õ–ò –ü–û–î–†–ê–ó–£–ú–ï–í–ê–ï–ú–´–•,
+–í–ö–õ–Æ–ß–ê–Ø –ì–ê–†–ê–ù–¢–ò–ò –ö–û–ú–ú–ï–†–ß–ï–°–ö–û–ô –¶–ï–ù–ù–û–°–¢–ò –ò –ü–†–ò–ì–û–î–ù–û–°–¢–ò –î–õ–Ø –ö–û–ù–ö–†–ï–¢–ù–û–ô –¶–ï–õ–ò, –ù–û –ù–ï
+–û–ì–†–ê–ù–ò–ß–ò–í–ê–Ø–°–¨ –ò–ú–ò. –ù–ò –í–õ–ê–î–ï–õ–ï–¶ –ê–í–¢–û–†–°–ö–ò–• –ü–†–ê–í –ò –ù–ò –û–î–ù–û –î–†–£–ì–û–ï –õ–ò–¶–û, –ö–û–¢–û–†–û–ï
+–ú–û–ñ–ï–¢ –ò–ó–ú–ï–ù–Ø–¢–¨ –ò/–ò–õ–ò –ü–û–í–¢–û–†–ù–û –†–ê–°–ü–†–û–°–¢–†–ê–ù–Ø–¢–¨ –ü–†–û–ì–†–ê–ú–ú–£, –ù–ò –í –ö–û–ï–ú –°–õ–£–ß–ê–ï –ù–ï
+–ù–ï–°–Å–¢ –û–¢–í–ï–¢–°–¢–í–ï–ù–ù–û–°–¢–ò, –í–ö–õ–Æ–ß–ê–Ø –õ–Æ–ë–´–ï –û–ë–©–ò–ï, –°–õ–£–ß–ê–ô–ù–´–ï, –°–ü–ï–¶–ò–ê–õ–¨–ù–´–ï –ò–õ–ò
+–ü–û–°–õ–ï–î–û–í–ê–í–®–ò–ï –£–ë–´–¢–ö–ò, –°–í–Ø–ó–ê–ù–ù–´–ï –° –ò–°–ü–û–õ–¨–ó–û–í–ê–ù–ò–ï–ú –ò–õ–ò –ü–û–ù–ï–°–ï–ù–ù–´–ï –í–°–õ–ï–î–°–¢–í–ò–ï
+–ù–ï–í–û–ó–ú–û–ñ–ù–û–°–¢–ò –ò–°–ü–û–õ–¨–ó–û–í–ê–ù–ò–Ø –ü–†–û–ì–†–ê–ú–ú–´ (–í–ö–õ–Æ–ß–ê–Ø –ü–û–¢–ï–†–ò –î–ê–ù–ù–´–•, –ò–õ–ò –î–ê–ù–ù–´–ï,
+–°–¢–ê–í–®–ò–ï –ù–ï–ì–û–î–ù–´–ú–ò, –ò–õ–ò –£–ë–´–¢–ö–ò –ò/–ò–õ–ò –ü–û–¢–ï–†–ò –î–û–•–û–î–û–í, –ü–û–ù–ï–°–ï–ù–ù–´–ï –ò–ó-–ó–ê –î–ï–ô–°–¢–í–ò–ô
+–¢–†–ï–¢–¨–ò–• –õ–ò–¶ –ò/–ò–õ–ò –û–¢–ö–ê–ó–ê –ü–†–û–ì–†–ê–ú–ú–´ –†–ê–ë–û–¢–ê–¢–¨ –°–û–í–ú–ï–°–¢–ù–û –° –î–†–£–ì–ò–ú–ò –ü–†–û–ì–†–ê–ú–ú–ê–ú–ò,
+–ù–û –ù–ï –û–ì–†–ê–ù–ò–ß–ò–í–ê–Ø–°–¨ –≠–¢–ò–ú–ò –°–õ–£–ß–ê–Ø–ú–ò), –ù–û –ù–ï –û–ì–†–ê–ù–ò–ß–ò–í–ê–Ø–°–¨ –ò–ú–ò, –î–ê–ñ–ï –ï–°–õ–ò –¢–ê–ö–û–ô
+–í–õ–ê–î–ï–õ–ï–¶ –ò–õ–ò –î–†–£–ì–û–ï –õ–ò–¶–û –ë–´–õ–ò –ò–ó–í–ï–©–ï–ù–´ –û –í–û–ó–ú–û–ñ–ù–û–°–¢–ò –¢–ê–ö–ò–• –£–ë–´–¢–ö–û–í –ò –ü–û–¢–ï–†–¨.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
@@ -90,8 +90,8 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 //////////////////////////////////
 // CONSOLE()
-   STD_FUNC( int  )  stdConsole( const char* str, ... );  // Ò ÔÂÂ‚Ó‰ÓÏ ÒÚÓÍË
-   STD_FUNC( int )   stdConsole_( const char* str, ... ); // ·ÂÁ ÔÂÂ‚Ó‰‡ ÒÚÓÍË
+   STD_FUNC( int  )  stdConsole( const char* str, ... );  // —Å –ø–µ—Ä–µ–≤–æ–¥–æ–º —Å—Ç—Ä–æ–∫–∏
+   STD_FUNC( int )   stdConsole_( const char* str, ... ); // –±–µ–∑ –ø–µ—Ä–µ–≤–æ–¥–∞ —Å—Ç—Ä–æ–∫–∏
    typedef int (*FTConsole)( const char* str, ... );
    STD_FUNC( void )  stdSetConsoleHandler( FTConsole handler );
    STD_FUNC( void )  stdSetConsoleFile( char * file );
@@ -114,8 +114,8 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 //////////////////////////////////
 // malloc() -free()
-   STD_FUNC( void* ) stdMalloc( Int32 size );
-   STD_FUNC( void* ) stdRealloc( void* old_ptr, Int32 new_size, Int32 old_size );
+   STD_FUNC( void* ) stdMalloc( int32_t size );
+   STD_FUNC( void* ) stdRealloc( void* old_ptr, int32_t new_size, int32_t old_size );
    STD_FUNC( void )  stdFree( void* ptr );
    STD_FUNC( void )  stdFreeX( void** pptr );
       // smart version of free: checks *ptr,
@@ -123,27 +123,27 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 typedef struct tagStdMemInfo
 {
-   Int32 nMallocCnt;
-   Int32 nFreeCnt;
-   Int32 nReallocCnt;
+   int32_t nMallocCnt;
+   int32_t nFreeCnt;
+   int32_t nReallocCnt;
    char  reserved[244];
 }  StdMemInfo;
 
    STD_FUNC( void )  stdGetMemInfo( StdMemInfo* pMemInf );
       // debug purpose function - if _DEBUG not defined, returned values are 0
 
-   STD_FUNC( void* ) stdMemcpy( void* dest , void* src , Int32 copy_count );
+   STD_FUNC( void* ) stdMemcpy( void* dest , void* src , int32_t copy_count );
       // in 32-bit - falls to memcpy,
       // in 16-bit - takes care about 64k segments bounds
 
-   STD_FUNC( Int32 ) stdOpen( const char *filename, Int32 oflag, Int32 pmode DEFAULT_ZERO );
-   STD_FUNC( Int32 ) stdTell( Int32 handle );
-   STD_FUNC( Int32 ) stdSeek( Int32 handle, Int32 offset, Int32 origin  );
-   STD_FUNC( Int32 ) stdFileLength( Int32 hnd );
-   STD_FUNC( Int32 ) stdClose( Int32 handle ); // ret: 0 -success, -1 -failed
-   STD_FUNC( Int32 ) stdRead( Int32 handle, void *buffer, Int32 count );
-   STD_FUNC( Int32 ) stdWrite( Int32 handle, void *buffer, Int32 count );
-   STD_FUNC( Int32 ) stdAccess( const char *path, Int32 mode);
+   STD_FUNC( int32_t ) stdOpen( const char *filename, int32_t oflag, int32_t pmode DEFAULT_ZERO );
+   STD_FUNC( int32_t ) stdTell( int32_t handle );
+   STD_FUNC( int32_t ) stdSeek( int32_t handle, int32_t offset, int32_t origin  );
+   STD_FUNC( int32_t ) stdFileLength( int32_t hnd );
+   STD_FUNC( int32_t ) stdClose( int32_t handle ); // ret: 0 -success, -1 -failed
+   STD_FUNC( int32_t ) stdRead( int32_t handle, void *buffer, int32_t count );
+   STD_FUNC( int32_t ) stdWrite( int32_t handle, void *buffer, int32_t count );
+   STD_FUNC( int32_t ) stdAccess( const char *path, int32_t mode);
 
 #ifdef __cplusplus
    inline bool stdFileExists(const char* path)
@@ -169,8 +169,8 @@ typedef struct tagStdMemInfo
    STD_FUNC( Bool32 ) stdCopyDirectory(
       const char * lpDirNameDst,const char * lpDirNameSrc);
 
-  STD_FUNC( Word32 ) stdGetCurrentDirectory(
-      Word32 nBufferLength,   // size, in characters, of directory buffer
+  STD_FUNC( uint32_t ) stdGetCurrentDirectory(
+      uint32_t nBufferLength,   // size, in characters, of directory buffer
       char * lpBuffer   // address of buffer for current directory
       ); // Win32 ::GetCurrentDirectory() analog
 
@@ -178,20 +178,20 @@ typedef struct tagStdMemInfo
       const char * lpBuffer   // address of buffer for current directory
       ); // Win32 ::SetCurrentDirectory() analog
 
-   STD_FUNC( Int32 ) stdGetDirectoryInfo(
+   STD_FUNC( int32_t ) stdGetDirectoryInfo(
       const char * lpBuffer, // current directory name buffer
-      Int32 nFlags,
+      int32_t nFlags,
 #define STD_DIRINFO_FL_DRVTYPE                  0x00000001
       void* pExtParm DEFAULT_NULL
       ); //return special info
 #define STD_DIRINFO_DRV_LOCAL                    0x00000001
 #define STD_DIRINFO_DRV_NET                         0x00000002
 
-   STD_FUNC( Int32 ) stdCmpFileTime(
+   STD_FUNC( int32_t ) stdCmpFileTime(
       const char * lpFileName1,
       const char * lpFileName2,
 #define STD_CMPFILETIME_FL_LASTCHANGE 0x00000001                    -1
-      Int32 nFlags
+      int32_t nFlags
 #ifdef __cplusplus
                      =STD_CMPFILETIME_FL_LASTCHANGE
 #endif
@@ -199,7 +199,7 @@ typedef struct tagStdMemInfo
 
    STD_FUNC( Bool32 ) stdNetPathFromLocal(
        char* pszNetPath,
-       Int32 nNetPathSize,
+       int32_t nNetPathSize,
        const char* pszLocalPath
        ); //return network path from local path for mapped drives
 
@@ -223,7 +223,7 @@ STD_FUNC( Bool32 ) stdMoveFile(
       const char * lpFileNameSrc,
 #define STD_MOVEFILE_FL_OVERWRITE      0x00000001                    -1
 #define STD_MOVEFILE_FL_DEFAULT        STD_MOVEFILE_FL_OVERWRITE                    -1
-      Int32 nFlags
+      int32_t nFlags
 #ifdef __cplusplus
       =STD_MOVEFILE_FL_OVERWRITE
 #endif
@@ -243,18 +243,18 @@ STD_FUNC( Bool32 ) stdMoveFile(
       // sets home directory to be current
 
    //Analog of Windows MessageBox function
-   STD_FUNC( Int32 ) stdMessageBox(
+   STD_FUNC( int32_t ) stdMessageBox(
       const char * szMessageText,
       const char * szMessageTitle,
-	  Int32 nFlags  DEFAULT_ZERO //defined in windows.h or wmb.h
+	  int32_t nFlags  DEFAULT_ZERO //defined in windows.h or wmb.h
       );	//return value: defined in windows.h or wmb.h
 
    //MessageBox function with no repeate checkbox
    //all params as in stdMessageBox function except key
-   STD_FUNC( Int32 ) stdRptMessageBox(
+   STD_FUNC( int32_t ) stdRptMessageBox(
       const char * szMessageText,
       const char * szMessageTitle,
-	  Int32 nFlags DEFAULT_ZERO, //defined in windows.h or wmb.h
+	  int32_t nFlags DEFAULT_ZERO, //defined in windows.h or wmb.h
       const char * szKey DEFAULT_NULL //if ommited then key is szMessageText
       );	//return value: defined in windows.h or wmb.h
 
@@ -269,9 +269,9 @@ STD_FUNC( Bool32 ) stdMoveFile(
 	STD_FUNC(void) stdStrAsciiToAnsi( char* Str);
 	STD_FUNC(void) stdStrAnsiToAscii( char* Str);
     STD_FUNC(void) stdStrAnsiToUnicode(wchar_t* pUnicode,const char* pAnsi);
-	STD_FUNC(void) stdStrNAsciiToAnsi( char* Str,Int32 nLen);
-	STD_FUNC(void) stdStrNAnsiToAscii( char* Str,Int32 nLen);
-    STD_FUNC(void) stdStrNAnsiToUnicode(wchar_t* pUnicode,const char* pAnsi,Int32 nLen);
+	STD_FUNC(void) stdStrNAsciiToAnsi( char* Str,int32_t nLen);
+	STD_FUNC(void) stdStrNAnsiToAscii( char* Str,int32_t nLen);
+    STD_FUNC(void) stdStrNAnsiToUnicode(wchar_t* pUnicode,const char* pAnsi,int32_t nLen);
 
 
     STD_FUNC( Bool32) stdLeoCompareChar(Word8 c1, Word8 c2);
@@ -282,7 +282,7 @@ STD_FUNC( Bool32 ) stdMoveFile(
 #define     STD_LEO_CASE_NONE   0
 #define     STD_LEO_CASE_LOWER  1
 #define     STD_LEO_CASE_UPPER  2
-    STD_FUNC( Int32 ) stdLeoIsCase(Word8 Code);
+    STD_FUNC( int32_t ) stdLeoIsCase(Word8 Code);
       // upper, lower or nondefined
     STD_FUNC( Word8)  stdLeoSetUpperCase(Word8 Code);
       // 'A'lat => 'A'lat, 'o'rus => 'O'rus, 'e'rus => 'e'rus
@@ -290,8 +290,8 @@ STD_FUNC( Bool32 ) stdMoveFile(
       // 'C'lat => 'C'lat, 'O'rus => 'o'rus, 'A'rus => 'A'rus
     STD_FUNC(Word8 *) stdLeoGetTypeface(Word8 c);
 
-    STD_FUNC(void) stdQsort(void *pMas,Int32 Num, Int32 width,
-			  Int32 (*compare)(const void *elm1,const void *elm2) );
+    STD_FUNC(void) stdQsort(void *pMas,int32_t Num, int32_t width,
+			  int32_t (*compare)(const void *elm1,const void *elm2) );
 /*
 //////////////////////////////////
 // open(), read(), _write(), close(), filelength(), seek(), tell()
@@ -308,7 +308,7 @@ STD_FUNC( Bool32 ) stdMoveFile(
 #define STD_SETPROF_DIR_PROJECT                     0x00000000
 #define STD_SETPROF_DIR_WINDOWS                   0x00000001
 #define STD_SETPROF_DIR_VERSION						0x00000002
-STD_FUNC( Bool32 ) stdGetProfileString(char* szString,Int32* nStrLen,const char* szIniFileName,const char* szSection,const char* szKey,Int32 nFlags
+STD_FUNC( Bool32 ) stdGetProfileString(char* szString,int32_t* nStrLen,const char* szIniFileName,const char* szSection,const char* szKey,int32_t nFlags
 #ifdef __cplusplus
                                        =STD_SETPROF_DIR_PROJECT
 #endif
@@ -317,21 +317,21 @@ STD_FUNC( Bool32 ) stdGetProfileString(char* szString,Int32* nStrLen,const char*
                                        =""
 #endif
                                        );
-STD_FUNC( Bool32 ) stdSetProfileString(const char* szString,const char* szIniFileName,const char* szSection,const char* szKey,Int32 nFlags
+STD_FUNC( Bool32 ) stdSetProfileString(const char* szString,const char* szIniFileName,const char* szSection,const char* szKey,int32_t nFlags
 #ifdef __cplusplus
                                        =STD_SETPROF_DIR_PROJECT
 #endif
                                        );
-STD_FUNC( Int32 ) stdGetProfileInt(const char* szIniFileName,const char* szSection,const char* szKey,Int32 nFlags
+STD_FUNC( int32_t ) stdGetProfileInt(const char* szIniFileName,const char* szSection,const char* szKey,int32_t nFlags
 #ifdef __cplusplus
                                        =STD_SETPROF_DIR_PROJECT
 #endif
-                                        ,  Int32 nValDefault
+                                        ,  int32_t nValDefault
 #ifdef __cplusplus
                                        =0
 #endif
                                        );
-STD_FUNC( Bool32 ) stdSetProfileInt(Int32 nValue,const char* szIniFileName,const char* szSection,const char* szKey,Int32 nFlags
+STD_FUNC( Bool32 ) stdSetProfileInt(int32_t nValue,const char* szIniFileName,const char* szSection,const char* szKey,int32_t nFlags
 #ifdef __cplusplus
                                        =STD_SETPROF_DIR_PROJECT
 #endif
@@ -351,7 +351,7 @@ STD_FUNC(const char*) stdGetProperty(const char* pKey);
 	 STD_FUNC(int) stdBits2Ints(
 		Word8*   pBits,
 		int      nByteWidth,
-		Int32*   pIntervals  // pointer to intervals buffer,
+		int32_t*   pIntervals  // pointer to intervals buffer,
 									// should have length (in bytes) == (nByteWidth*4)*4
                           );
 #endif
@@ -359,26 +359,26 @@ STD_FUNC(const char*) stdGetProperty(const char* pKey);
 
    /////////////////////
    // Error handling
-   STD_FUNC( Int32 ) stdGetErrorCount(void);
-   STD_FUNC( Int32 ) stdSetErrorCount( Int32 _nErrCount );
+   STD_FUNC( int32_t ) stdGetErrorCount(void);
+   STD_FUNC( int32_t ) stdSetErrorCount( int32_t _nErrCount );
    typedef struct tagStdError
    {
-      Int32 nErrorCode;
+      int32_t nErrorCode;
       char  szCondition[128];
       char  szFile[128];
-      Int32 nLine;
-      Int32 lData;
+      int32_t nLine;
+      int32_t lData;
    } StdError;
 
-   STD_FUNC( Int32 ) stdSetError( Int32 nErrorCode, const char* cond, const char* file,
-      Int32 nline, Int32 lData
+   STD_FUNC( int32_t ) stdSetError( int32_t nErrorCode, const char* cond, const char* file,
+      int32_t nline, int32_t lData
 #ifdef __cplusplus
 	  = 0
 #endif
 	  );
-   // ‚ÓÁ‚‡˘‡ÂÚ ÌÓÏÂ ÔÓ‰ ÍÓÚÓ˚Ï Á‡Â„ËÒÚËÓ‚‡Ì‡ Ó¯Ë·Í‡
+   // –≤–æ–∑–≤—Ä–∞—â–∞–µ—Ç –Ω–æ–º–µ—Ä –ø–æ–¥ –∫–æ—Ç–æ—Ä—ã–º –∑–∞—Ä–µ–≥–∏—Å—Ç—Ä–∏—Ä–æ–≤–∞–Ω–∞ –æ—à–∏–±–∫–∞
 
-   STD_FUNC( Bool32 ) stdGetError( Int32 nError
+   STD_FUNC( Bool32 ) stdGetError( int32_t nError
 #ifdef __cplusplus
 	  = 0
 #endif
@@ -387,12 +387,12 @@ STD_FUNC(const char*) stdGetProperty(const char* pKey);
 	  = NULL
 #endif
 );
-   // true - ÂÒÚ¸ Ó¯Ë·Í‡ Ò Ú‡ÍËÏ ÌÓÏÂÓÏ (‰Ë‡Ô‡ÁÓÌ [0, stdGetErrorCount()-1] ):
-   // ÔÓÒÚÂÈ¯ËÈ ‚‡Ë‡ÌÚ ËÒÔÓÎ¸ÁÓ‚‡ÌËˇ:
+   // true - –µ—Å—Ç—å –æ—à–∏–±–∫–∞ —Å —Ç–∞–∫–∏–º –Ω–æ–º–µ—Ä–æ–º (–¥–∏–∞–ø–∞–∑–æ–Ω [0, stdGetErrorCount()-1] ):
+   // –ø—Ä–æ—Å—Ç–µ–π—à–∏–π –≤–∞—Ä–∏–∞–Ω—Ç –∏—Å–ø–æ–ª—å–∑–æ–≤–∞–Ω–∏—è:
    //
    // stdSetErrorCount(0)
    // ...
-   // if (stdGetError())   // ·˚ÎË Á‡Â„ËÒÚËÓ‚‡Ì˚ Ó¯Ë·ÍË
+   // if (stdGetError())   // –±—ã–ª–∏ –∑–∞—Ä–µ–≥–∏—Å—Ç—Ä–∏—Ä–æ–≤–∞–Ω—ã –æ—à–∏–±–∫–∏
    //    MyErrorProc();
 
    STD_FUNC( Bool32 ) stdGetLastError( StdError* pse
@@ -400,7 +400,7 @@ STD_FUNC(const char*) stdGetProperty(const char* pKey);
 	  = NULL
 #endif
 );
-   // false - ÍÓÎË˜ÂÒÚ‚Ó Ó¯Ë·ÓÍ == 0
+   // false - –∫–æ–ª–∏—á–µ—Å—Ç–≤–æ –æ—à–∏–±–æ–∫ == 0
 
 
    #ifdef __cplusplus

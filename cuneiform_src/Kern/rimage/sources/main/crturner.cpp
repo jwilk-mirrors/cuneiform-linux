@@ -2,33 +2,33 @@
 Copyright (c) 1993-2008, Cognitive Technologies
 All rights reserved.
 
-–‡ÁÂ¯‡ÂÚÒˇ ÔÓ‚ÚÓÌÓÂ ‡ÒÔÓÒÚ‡ÌÂÌËÂ Ë ËÒÔÓÎ¸ÁÓ‚‡ÌËÂ Í‡Í ‚ ‚Ë‰Â ËÒıÓ‰ÌÓ„Ó ÍÓ‰‡,
-Ú‡Í Ë ‚ ‰‚ÓË˜ÌÓÈ ÙÓÏÂ, Ò ËÁÏÂÌÂÌËˇÏË ËÎË ·ÂÁ, ÔË ÒÓ·Î˛‰ÂÌËË ÒÎÂ‰Û˛˘Ëı ÛÒÎÓ‚ËÈ:
+–†–∞–∑—Ä–µ—à–∞–µ—Ç—Å—è –ø–æ–≤—Ç–æ—Ä–Ω–æ–µ —Ä–∞—Å–ø—Ä–æ—Å—Ç—Ä–∞–Ω–µ–Ω–∏–µ –∏ –∏—Å–ø–æ–ª—å–∑–æ–≤–∞–Ω–∏–µ –∫–∞–∫ –≤ –≤–∏–¥–µ –∏—Å—Ö–æ–¥–Ω–æ–≥–æ –∫–æ–¥–∞,
+—Ç–∞–∫ –∏ –≤ –¥–≤–æ–∏—á–Ω–æ–π —Ñ–æ—Ä–º–µ, —Å –∏–∑–º–µ–Ω–µ–Ω–∏—è–º–∏ –∏–ª–∏ –±–µ–∑, –ø—Ä–∏ —Å–æ–±–ª—é–¥–µ–Ω–∏–∏ —Å–ª–µ–¥—É—é—â–∏—Ö —É—Å–ª–æ–≤–∏–π:
 
-      * œË ÔÓ‚ÚÓÌÓÏ ‡ÒÔÓÒÚ‡ÌÂÌËË ËÒıÓ‰ÌÓ„Ó ÍÓ‰‡ ‰ÓÎÊÌ˚ ÓÒÚ‡‚‡Ú¸Òˇ ÛÍ‡Á‡ÌÌÓÂ
-        ‚˚¯Â Û‚Â‰ÓÏÎÂÌËÂ Ó· ‡‚ÚÓÒÍÓÏ Ô‡‚Â, ˝ÚÓÚ ÒÔËÒÓÍ ÛÒÎÓ‚ËÈ Ë ÔÓÒÎÂ‰Û˛˘ËÈ
-        ÓÚÍ‡Á ÓÚ „‡‡ÌÚËÈ.
-      * œË ÔÓ‚ÚÓÌÓÏ ‡ÒÔÓÒÚ‡ÌÂÌËË ‰‚ÓË˜ÌÓ„Ó ÍÓ‰‡ ‚ ‰ÓÍÛÏÂÌÚ‡ˆËË Ë/ËÎË ‚
-        ‰Û„Ëı Ï‡ÚÂË‡Î‡ı, ÔÓÒÚ‡‚ÎˇÂÏ˚ı ÔË ‡ÒÔÓÒÚ‡ÌÂÌËË, ‰ÓÎÊÌ˚ ÒÓı‡ÌˇÚ¸Òˇ
-        ÛÍ‡Á‡ÌÌ‡ˇ ‚˚¯Â ËÌÙÓÏ‡ˆËˇ Ó· ‡‚ÚÓÒÍÓÏ Ô‡‚Â, ˝ÚÓÚ ÒÔËÒÓÍ ÛÒÎÓ‚ËÈ Ë
-        ÔÓÒÎÂ‰Û˛˘ËÈ ÓÚÍ‡Á ÓÚ „‡‡ÌÚËÈ.
-      * ÕË Ì‡Á‚‡ÌËÂ Cognitive Technologies, ÌË ËÏÂÌ‡ ÂÂ ÒÓÚÛ‰ÌËÍÓ‚ ÌÂ ÏÓ„ÛÚ
-        ·˚Ú¸ ËÒÔÓÎ¸ÁÓ‚‡Ì˚ ‚ Í‡˜ÂÒÚ‚Â ÒÂ‰ÒÚ‚‡ ÔÓ‰‰ÂÊÍË Ë/ËÎË ÔÓ‰‚ËÊÂÌËˇ
-        ÔÓ‰ÛÍÚÓ‚, ÓÒÌÓ‚‡ÌÌ˚ı Ì‡ ˝ÚÓÏ œŒ, ·ÂÁ ÔÂ‰‚‡ËÚÂÎ¸ÌÓ„Ó ÔËÒ¸ÏÂÌÌÓ„Ó
-        ‡ÁÂ¯ÂÌËˇ.
+      * –ü—Ä–∏ –ø–æ–≤—Ç–æ—Ä–Ω–æ–º —Ä–∞—Å–ø—Ä–æ—Å—Ç—Ä–∞–Ω–µ–Ω–∏–∏ –∏—Å—Ö–æ–¥–Ω–æ–≥–æ –∫–æ–¥–∞ –¥–æ–ª–∂–Ω—ã –æ—Å—Ç–∞–≤–∞—Ç—å—Å—è —É–∫–∞–∑–∞–Ω–Ω–æ–µ
+        –≤—ã—à–µ —É–≤–µ–¥–æ–º–ª–µ–Ω–∏–µ –æ–± –∞–≤—Ç–æ—Ä—Å–∫–æ–º –ø—Ä–∞–≤–µ, —ç—Ç–æ—Ç —Å–ø–∏—Å–æ–∫ —É—Å–ª–æ–≤–∏–π –∏ –ø–æ—Å–ª–µ–¥—É—é—â–∏–π
+        –æ—Ç–∫–∞–∑ –æ—Ç –≥–∞—Ä–∞–Ω—Ç–∏–π.
+      * –ü—Ä–∏ –ø–æ–≤—Ç–æ—Ä–Ω–æ–º —Ä–∞—Å–ø—Ä–æ—Å—Ç—Ä–∞–Ω–µ–Ω–∏–∏ –¥–≤–æ–∏—á–Ω–æ–≥–æ –∫–æ–¥–∞ –≤ –¥–æ–∫—É–º–µ–Ω—Ç–∞—Ü–∏–∏ –∏/–∏–ª–∏ –≤
+        –¥—Ä—É–≥–∏—Ö –º–∞—Ç–µ—Ä–∏–∞–ª–∞—Ö, –ø–æ—Å—Ç–∞–≤–ª—è–µ–º—ã—Ö –ø—Ä–∏ —Ä–∞—Å–ø—Ä–æ—Å—Ç—Ä–∞–Ω–µ–Ω–∏–∏, –¥–æ–ª–∂–Ω—ã —Å–æ—Ö—Ä–∞–Ω—è—Ç—å—Å—è
+        —É–∫–∞–∑–∞–Ω–Ω–∞—è –≤—ã—à–µ –∏–Ω—Ñ–æ—Ä–º–∞—Ü–∏—è –æ–± –∞–≤—Ç–æ—Ä—Å–∫–æ–º –ø—Ä–∞–≤–µ, —ç—Ç–æ—Ç —Å–ø–∏—Å–æ–∫ —É—Å–ª–æ–≤–∏–π –∏
+        –ø–æ—Å–ª–µ–¥—É—é—â–∏–π –æ—Ç–∫–∞–∑ –æ—Ç –≥–∞—Ä–∞–Ω—Ç–∏–π.
+      * –ù–∏ –Ω–∞–∑–≤–∞–Ω–∏–µ Cognitive Technologies, –Ω–∏ –∏–º–µ–Ω–∞ –µ–µ —Å–æ—Ç—Ä—É–¥–Ω–∏–∫–æ–≤ –Ω–µ –º–æ–≥—É—Ç
+        –±—ã—Ç—å –∏—Å–ø–æ–ª—å–∑–æ–≤–∞–Ω—ã –≤ –∫–∞—á–µ—Å—Ç–≤–µ —Å—Ä–µ–¥—Å—Ç–≤–∞ –ø–æ–¥–¥–µ—Ä–∂–∫–∏ –∏/–∏–ª–∏ –ø—Ä–æ–¥–≤–∏–∂–µ–Ω–∏—è
+        –ø—Ä–æ–¥—É–∫—Ç–æ–≤, –æ—Å–Ω–æ–≤–∞–Ω–Ω—ã—Ö –Ω–∞ —ç—Ç–æ–º –ü–û, –±–µ–∑ –ø—Ä–µ–¥–≤–∞—Ä–∏—Ç–µ–ª—å–Ω–æ–≥–æ –ø–∏—Å—å–º–µ–Ω–Ω–æ–≥–æ
+        —Ä–∞–∑—Ä–µ—à–µ–Ω–∏—è.
 
-›“¿ œ–Œ√–¿ÃÃ¿ œ–≈ƒŒ—“¿¬À≈Õ¿ ¬À¿ƒ≈À‹÷¿Ã» ¿¬“Œ–— »’ œ–¿¬ »/»À» ƒ–”√»Ã» À»÷¿Ã» " ¿ 
-ŒÕ¿ ≈—“‹" ¡≈«  ¿ Œ√Œ-À»¡Œ ¬»ƒ¿ √¿–¿Õ“»…, ¬€–¿∆≈ÕÕ€’ ﬂ¬ÕŒ »À» œŒƒ–¿«”Ã≈¬¿≈Ã€’,
-¬ Àﬁ◊¿ﬂ √¿–¿Õ“»»  ŒÃÃ≈–◊≈— Œ… ÷≈ÕÕŒ—“» » œ–»√ŒƒÕŒ—“» ƒÀﬂ  ŒÕ –≈“ÕŒ… ÷≈À», ÕŒ Õ≈
-Œ√–¿Õ»◊»¬¿ﬂ—‹ »Ã». Õ» ¬À¿ƒ≈À≈÷ ¿¬“Œ–— »’ œ–¿¬ » Õ» ŒƒÕŒ ƒ–”√Œ≈ À»÷Œ,  Œ“Œ–Œ≈
-ÃŒ∆≈“ »«Ã≈Õﬂ“‹ »/»À» œŒ¬“Œ–ÕŒ –¿—œ–Œ—“–¿Õﬂ“‹ œ–Œ√–¿ÃÃ”, Õ» ¬  Œ≈Ã —À”◊¿≈ Õ≈
-Õ≈—®“ Œ“¬≈“—“¬≈ÕÕŒ—“», ¬ Àﬁ◊¿ﬂ Àﬁ¡€≈ Œ¡Ÿ»≈, —À”◊¿…Õ€≈, —œ≈÷»¿À‹Õ€≈ »À»
-œŒ—À≈ƒŒ¬¿¬ÿ»≈ ”¡€“ », —¬ﬂ«¿ÕÕ€≈ — »—œŒÀ‹«Œ¬¿Õ»≈Ã »À» œŒÕ≈—≈ÕÕ€≈ ¬—À≈ƒ—“¬»≈
-Õ≈¬Œ«ÃŒ∆ÕŒ—“» »—œŒÀ‹«Œ¬¿Õ»ﬂ œ–Œ√–¿ÃÃ€ (¬ Àﬁ◊¿ﬂ œŒ“≈–» ƒ¿ÕÕ€’, »À» ƒ¿ÕÕ€≈,
-—“¿¬ÿ»≈ Õ≈√ŒƒÕ€Ã», »À» ”¡€“ » »/»À» œŒ“≈–» ƒŒ’ŒƒŒ¬, œŒÕ≈—≈ÕÕ€≈ »«-«¿ ƒ≈…—“¬»…
-“–≈“‹»’ À»÷ »/»À» Œ“ ¿«¿ œ–Œ√–¿ÃÃ€ –¿¡Œ“¿“‹ —Œ¬Ã≈—“ÕŒ — ƒ–”√»Ã» œ–Œ√–¿ÃÃ¿Ã»,
-ÕŒ Õ≈ Œ√–¿Õ»◊»¬¿ﬂ—‹ ›“»Ã» —À”◊¿ﬂÃ»), ÕŒ Õ≈ Œ√–¿Õ»◊»¬¿ﬂ—‹ »Ã», ƒ¿∆≈ ≈—À» “¿ Œ…
-¬À¿ƒ≈À≈÷ »À» ƒ–”√Œ≈ À»÷Œ ¡€À» »«¬≈Ÿ≈Õ€ Œ ¬Œ«ÃŒ∆ÕŒ—“» “¿ »’ ”¡€“ Œ¬ » œŒ“≈–‹.
+–≠–¢–ê –ü–†–û–ì–†–ê–ú–ú–ê –ü–†–ï–î–û–°–¢–ê–í–õ–ï–ù–ê –í–õ–ê–î–ï–õ–¨–¶–ê–ú–ò –ê–í–¢–û–†–°–ö–ò–• –ü–†–ê–í –ò/–ò–õ–ò –î–†–£–ì–ò–ú–ò –õ–ò–¶–ê–ú–ò "–ö–ê–ö
+–û–ù–ê –ï–°–¢–¨" –ë–ï–ó –ö–ê–ö–û–ì–û-–õ–ò–ë–û –í–ò–î–ê –ì–ê–†–ê–ù–¢–ò–ô, –í–´–†–ê–ñ–ï–ù–ù–´–• –Ø–í–ù–û –ò–õ–ò –ü–û–î–†–ê–ó–£–ú–ï–í–ê–ï–ú–´–•,
+–í–ö–õ–Æ–ß–ê–Ø –ì–ê–†–ê–ù–¢–ò–ò –ö–û–ú–ú–ï–†–ß–ï–°–ö–û–ô –¶–ï–ù–ù–û–°–¢–ò –ò –ü–†–ò–ì–û–î–ù–û–°–¢–ò –î–õ–Ø –ö–û–ù–ö–†–ï–¢–ù–û–ô –¶–ï–õ–ò, –ù–û –ù–ï
+–û–ì–†–ê–ù–ò–ß–ò–í–ê–Ø–°–¨ –ò–ú–ò. –ù–ò –í–õ–ê–î–ï–õ–ï–¶ –ê–í–¢–û–†–°–ö–ò–• –ü–†–ê–í –ò –ù–ò –û–î–ù–û –î–†–£–ì–û–ï –õ–ò–¶–û, –ö–û–¢–û–†–û–ï
+–ú–û–ñ–ï–¢ –ò–ó–ú–ï–ù–Ø–¢–¨ –ò/–ò–õ–ò –ü–û–í–¢–û–†–ù–û –†–ê–°–ü–†–û–°–¢–†–ê–ù–Ø–¢–¨ –ü–†–û–ì–†–ê–ú–ú–£, –ù–ò –í –ö–û–ï–ú –°–õ–£–ß–ê–ï –ù–ï
+–ù–ï–°–Å–¢ –û–¢–í–ï–¢–°–¢–í–ï–ù–ù–û–°–¢–ò, –í–ö–õ–Æ–ß–ê–Ø –õ–Æ–ë–´–ï –û–ë–©–ò–ï, –°–õ–£–ß–ê–ô–ù–´–ï, –°–ü–ï–¶–ò–ê–õ–¨–ù–´–ï –ò–õ–ò
+–ü–û–°–õ–ï–î–û–í–ê–í–®–ò–ï –£–ë–´–¢–ö–ò, –°–í–Ø–ó–ê–ù–ù–´–ï –° –ò–°–ü–û–õ–¨–ó–û–í–ê–ù–ò–ï–ú –ò–õ–ò –ü–û–ù–ï–°–ï–ù–ù–´–ï –í–°–õ–ï–î–°–¢–í–ò–ï
+–ù–ï–í–û–ó–ú–û–ñ–ù–û–°–¢–ò –ò–°–ü–û–õ–¨–ó–û–í–ê–ù–ò–Ø –ü–†–û–ì–†–ê–ú–ú–´ (–í–ö–õ–Æ–ß–ê–Ø –ü–û–¢–ï–†–ò –î–ê–ù–ù–´–•, –ò–õ–ò –î–ê–ù–ù–´–ï,
+–°–¢–ê–í–®–ò–ï –ù–ï–ì–û–î–ù–´–ú–ò, –ò–õ–ò –£–ë–´–¢–ö–ò –ò/–ò–õ–ò –ü–û–¢–ï–†–ò –î–û–•–û–î–û–í, –ü–û–ù–ï–°–ï–ù–ù–´–ï –ò–ó-–ó–ê –î–ï–ô–°–¢–í–ò–ô
+–¢–†–ï–¢–¨–ò–• –õ–ò–¶ –ò/–ò–õ–ò –û–¢–ö–ê–ó–ê –ü–†–û–ì–†–ê–ú–ú–´ –†–ê–ë–û–¢–ê–¢–¨ –°–û–í–ú–ï–°–¢–ù–û –° –î–†–£–ì–ò–ú–ò –ü–†–û–ì–†–ê–ú–ú–ê–ú–ò,
+–ù–û –ù–ï –û–ì–†–ê–ù–ò–ß–ò–í–ê–Ø–°–¨ –≠–¢–ò–ú–ò –°–õ–£–ß–ê–Ø–ú–ò), –ù–û –ù–ï –û–ì–†–ê–ù–ò–ß–ò–í–ê–Ø–°–¨ –ò–ú–ò, –î–ê–ñ–ï –ï–°–õ–ò –¢–ê–ö–û–ô
+–í–õ–ê–î–ï–õ–ï–¶ –ò–õ–ò –î–†–£–ì–û–ï –õ–ò–¶–û –ë–´–õ–ò –ò–ó–í–ï–©–ï–ù–´ –û –í–û–ó–ú–û–ñ–ù–û–°–¢–ò –¢–ê–ö–ò–• –£–ë–´–¢–ö–û–í –ò –ü–û–¢–ï–†–¨.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
@@ -54,7 +54,7 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-// —RTurner.cpp: implementation of the CRTurner class.
+// –°RTurner.cpp: implementation of the CRTurner class.
 //
 //////////////////////////////////////////////////////////////////////
 //#define RIMAGE_DUMP_TO_FILE
@@ -76,7 +76,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 CRTurner::CRTurner()
 {
-	Word32 i,j;
+	uint32_t i,j;
 	Word8 mask, mask2;
 
 	hLineBuffer = 0x00000000;   //NULL;
@@ -129,7 +129,7 @@ CRTurner::~CRTurner()
 
 }
 
-void * CRTurner::TurnDIB(void *pDIB, Word32 wAngle)
+void * CRTurner::TurnDIB(void *pDIB, uint32_t wAngle)
 {
     return NULL;
 }
@@ -139,7 +139,7 @@ Bool32 CRTurner::FreeDIB(void *pDIB)
 	return TRUE;
 }
 
-Bool32 CRTurner::TurnDIB(PCTDIB pInDIB, PCTDIB pOutDIB, Word32 wAngle)
+Bool32 CRTurner::TurnDIB(PCTDIB pInDIB, PCTDIB pOutDIB, uint32_t wAngle)
 {
 	Bool32 bRet;
 
@@ -253,30 +253,30 @@ Bool32 CRTurner::Turn270(PCTDIB pInDIB, PCTDIB pOutDIB)
 Bool32 CRTurner::Turn180LA(PCTDIB pInDIB, PCTDIB pOutDIB)
 {
 	Bool32 bRet = FALSE;
-	Word32 nLine;
-	Word32 sLine;
-	Word32 sLineSize;
-	Word32 sShift;
-	Word32 rShift;
+	uint32_t nLine;
+	uint32_t sLine;
+	uint32_t sLineSize;
+	uint32_t sShift;
+	uint32_t rShift;
 	PWord8 sPix;
 	PWord8 nPix;
-	Word32 wLines = pInDIB->GetLinesNumber();
-	Word32 sLineWidth = pInDIB->GetLineWidth();
-	Word32 sBytesPerLine = pOutDIB->GetUsedLineWidthInBytes();
-	Word32 cByte;
+	uint32_t wLines = pInDIB->GetLinesNumber();
+	uint32_t sLineWidth = pInDIB->GetLineWidth();
+	uint32_t sBytesPerLine = pOutDIB->GetUsedLineWidthInBytes();
+	uint32_t cByte;
 
 	FreeBuffers();
 
 	hLineBuffer = RIMAGEDAlloc((sLineSize = pInDIB->GetLineWidthInBytes()),"CRTurner::Turn180LA - line buffer" );
 	LineBuffer  = (PWord8)RIMAGELock(hLineBuffer);
 
-	// ÔÓÁËˆËˇ ÔÓÒÎÂ‰ÌÂ„Ó ÔËÍÒÂÎ‡
+	// –ø–æ–∑–∏—Ü–∏—è –ø–æ—Å–ª–µ–¥–Ω–µ–≥–æ –ø–∏–∫—Å–µ–ª–∞
 	sShift = pOutDIB->GetPixelShiftInByte(pOutDIB->GetLineWidth() - 1);
 	rShift = 7 - sShift;
 
 	for( nLine = 0, sLine = wLines - 1; nLine < wLines; nLine++, sLine--)
 	{
-		// ÍÓÔËÛÂÏ ‚ ·ÛÙÂ ‚Ò˛ ÒÚÓÍÛ Ë ÔË ˝ÚÓÏ Ò‰‚Ë„‡ÂÏ Â∏
+		// –∫–æ–ø–∏—Ä—É–µ–º –≤ –±—É—Ñ–µ—Ä –≤—Å—é —Å—Ç—Ä–æ–∫—É –∏ –ø—Ä–∏ —ç—Ç–æ–º —Å–¥–≤–∏–≥–∞–µ–º –µ—ë
 		sPix = (PWord8)pInDIB->GetPtrToLine(sLine);
 
 		if ( sShift == 7 )
@@ -290,7 +290,7 @@ Bool32 CRTurner::Turn180LA(PCTDIB pInDIB, PCTDIB pOutDIB)
 
 		for (  cByte = 0; cByte < sBytesPerLine; cByte++ )
 		{
-			// ÔÓÒÚÓ ÍÓÔËÛÂÏ ÔÂÂ‚Ó‡˜Ë‚‡ˇ
+			// –ø—Ä–æ—Å—Ç–æ –∫–æ–ø–∏—Ä—É–µ–º –ø–µ—Ä–µ–≤–æ—Ä–∞—á–∏–≤–∞—è
 			*nPix = Turn1at180[*sPix];
 			nPix--;
 			sPix++;
@@ -302,12 +302,12 @@ Bool32 CRTurner::Turn180LA(PCTDIB pInDIB, PCTDIB pOutDIB)
 
 			for (  cByte = 0; cByte < sBytesPerLine; cByte++ )
 			{
-				// Ò‰‚Ë„‡ÂÏ
+				// —Å–¥–≤–∏–≥–∞–µ–º
 				*nPix = (*nPix) << rShift;
 				*nPix |= (*(nPix + 1) >> (sShift + 1) ) & (wLeftMask[sShift]);
 				nPix++;
 			}
-			// ÚÂÔÂ¸ ÍÓÔËÛÂÏ ‚ ‚˚ıÓ‰ÌÓÈ
+			// —Ç–µ–ø–µ—Ä—å –∫–æ–ø–∏—Ä—É–µ–º –≤ –≤—ã—Ö–æ–¥–Ω–æ–π
 			sPix = LineBuffer;
 			nPix = (PWord8)pOutDIB->GetPtrToLine(nLine);
 			memcpy(nPix, sPix, sBytesPerLine);
@@ -357,25 +357,25 @@ Bool32 CRTurner::CheckInAndOut90(PCTDIB pIn, PCTDIB pOut)
 
 Bool32 CRTurner::Turn90LA(PCTDIB pInDIB, PCTDIB pOutDIB)
 {
-	Word32 dLines = pOutDIB->GetLinesNumber();
-	Word32 sLines = pInDIB->GetLinesNumber();  //
-	Int32  sX;
-	Int32  dX;
-	Int32  dLine;
-	Int32  sLine;
+	uint32_t dLines = pOutDIB->GetLinesNumber();
+	uint32_t sLines = pInDIB->GetLinesNumber();  //
+	int32_t  sX;
+	int32_t  dX;
+	int32_t  dLine;
+	int32_t  sLine;
 	PWord8 sPix;
 	PWord8 dPix;
-	Word32 sBytesPerLine = pOutDIB->GetLineWidth()/8;
-	Word32 cByte;
-	Word32 sShift;
+	uint32_t sBytesPerLine = pOutDIB->GetLineWidth()/8;
+	uint32_t cByte;
+	uint32_t sShift;
 
-	for ( dLine = 0, sX = 0; dLine < (Int32)dLines; dLine++, sX++ )
+	for ( dLine = 0, sX = 0; dLine < (int32_t)dLines; dLine++, sX++ )
 	{
-		// Ì‡˜‡ÎÓ ÎËÌËË
+		// –Ω–∞—á–∞–ª–æ –ª–∏–Ω–∏–∏
 		dPix = (PWord8)pOutDIB->GetPtrToLine(dLine);
-		// Ò‰‚Ë„
+		// —Å–¥–≤–∏–≥
 		sShift = pInDIB->GetPixelShiftInByte(sX);
-		// ÔÓ 8 ÔËÍÒÂÎÂÈ
+		// –ø–æ 8 –ø–∏–∫—Å–µ–ª–µ–π
 		for ( cByte = 0, sLine = sLines - 1, dX = 0; cByte < sBytesPerLine; cByte++, dX += 8 )
 		{
 			*dPix = 0x0;
@@ -415,7 +415,7 @@ Bool32 CRTurner::Turn90LA(PCTDIB pInDIB, PCTDIB pOutDIB)
 			dPix++;
 		}
 
-		// ÔÓÒÎÂ‰ÌËÈ ÌÂÔÓÎÌ˚È ÔËÍÒÂÎ
+		// –ø–æ—Å–ª–µ–¥–Ω–∏–π –Ω–µ–ø–æ–ª–Ω—ã–π –ø–∏–∫—Å–µ–ª
 		if ( sLine >= 0 )
 		{
 			*dPix = 0x0;
@@ -432,25 +432,25 @@ Bool32 CRTurner::Turn90LA(PCTDIB pInDIB, PCTDIB pOutDIB)
 
 Bool32 CRTurner::Turn270LA(PCTDIB pInDIB, PCTDIB pOutDIB)
 {
-	Word32 dLines = pOutDIB->GetLinesNumber();
-	Word32 sLines = pInDIB->GetLinesNumber();  //
-	Int32  sX;
-	Int32  dX;
-	Int32  dLine;
-	Int32  sLine;
+	uint32_t dLines = pOutDIB->GetLinesNumber();
+	uint32_t sLines = pInDIB->GetLinesNumber();  //
+	int32_t  sX;
+	int32_t  dX;
+	int32_t  dLine;
+	int32_t  sLine;
 	PWord8 sPix;
 	PWord8 dPix;
-	Word32 sBytesPerLine = pOutDIB->GetLineWidth()/8;
-	Word32 cByte;
-	Word32 sShift;
+	uint32_t sBytesPerLine = pOutDIB->GetLineWidth()/8;
+	uint32_t cByte;
+	uint32_t sShift;
 
-	for ( dLine = 0, sX = dLines - 1; dLine < (Int32)dLines; dLine++, sX-- )
+	for ( dLine = 0, sX = dLines - 1; dLine < (int32_t)dLines; dLine++, sX-- )
 	{
-		// Ì‡˜‡ÎÓ ÎËÌËË
+		// –Ω–∞—á–∞–ª–æ –ª–∏–Ω–∏–∏
 		dPix = (PWord8)pOutDIB->GetPtrToLine(dLine);
-		// Ò‰‚Ë„
+		// —Å–¥–≤–∏–≥
 		sShift = pInDIB->GetPixelShiftInByte(sX);
-		// ÔÓ 8 ÔËÍÒÂÎÂÈ
+		// –ø–æ 8 –ø–∏–∫—Å–µ–ª–µ–π
 		for ( cByte = 0, sLine = 0, dX = 0; cByte < sBytesPerLine; cByte++, dX += 8 )
 		{
 			*dPix = 0x0;
@@ -490,13 +490,13 @@ Bool32 CRTurner::Turn270LA(PCTDIB pInDIB, PCTDIB pOutDIB)
 			dPix++;
 		}
 
-		// ÔÓÒÎÂ‰ÌËÈ ÌÂÔÓÎÌ˚È ÔËÍÒÂÎ
-		// ÂÒÎË ÂÒÚ¸
-		if ( sLine < (Int32)sLines )
+		// –ø–æ—Å–ª–µ–¥–Ω–∏–π –Ω–µ–ø–æ–ª–Ω—ã–π –ø–∏–∫—Å–µ–ª
+		// –µ—Å–ª–∏ –µ—Å—Ç—å
+		if ( sLine < (int32_t)sLines )
 		{
 			*dPix = 0x0;
 
-			for ( ; sLine < (Int32)sLines; sLine++, dX++ )
+			for ( ; sLine < (int32_t)sLines; sLine++, dX++ )
 			{
 				sPix = (PWord8)pInDIB->GetPtrToPixel(sX, sLine);
 
@@ -510,28 +510,28 @@ Bool32 CRTurner::Turn270LA(PCTDIB pInDIB, PCTDIB pOutDIB)
 Bool32 CRTurner::Turn90GC(PCTDIB pIn, PCTDIB pOut)
 {
 	Bool32  bRet = FALSE;
-	Int32   sX;
-	Int32   dX;
-	Int32   dLine;
-	Int32   sLine;
+	int32_t   sX;
+	int32_t   dX;
+	int32_t   dLine;
+	int32_t   sLine;
 	PWord8  sPix8;
 	PWord8  dPix8;
 	PWord16 sPix16;
 	PWord16 dPix16;
-	PWord32 sPix32;
-	PWord32 dPix32;
-	Word32  dLines = pOut->GetLinesNumber();
-	Word32  sLines = pIn->GetLinesNumber();  //
-	Word32  wPixSize = pIn->GetPixelSize() / 8;
+	uint32_t * sPix32;
+	uint32_t * dPix32;
+	uint32_t  dLines = pOut->GetLinesNumber();
+	uint32_t  sLines = pIn->GetLinesNumber();  //
+	uint32_t  wPixSize = pIn->GetPixelSize() / 8;
 
 	switch (wPixSize)
 	{
 	case 1:
-		for( dLine = 0, sX = 0;  dLine < (Int32)dLines; dLine++, sX++ )
+		for( dLine = 0, sX = 0;  dLine < (int32_t)dLines; dLine++, sX++ )
 		{
 		CONTINUEPIXEL(dPix8 = (PWord8)pOut->GetPtrToLine( dLine ));
 
-			for ( sLine = sLines - 1, dX = 0; dX < (Int32)sLines; sLine--, dX++, dPix8++ )
+			for ( sLine = sLines - 1, dX = 0; dX < (int32_t)sLines; sLine--, dX++, dPix8++ )
 			{
 				CONTINUEPIXEL(sPix8 = (PWord8)pIn->GetPtrToPixel( sX, sLine));
 				*dPix8 = *sPix8;
@@ -541,11 +541,11 @@ Bool32 CRTurner::Turn90GC(PCTDIB pIn, PCTDIB pOut)
 		break;
 
 	case 2:
-		for( dLine = 0, sX = 0;  dLine < (Int32)dLines; dLine++, sX++ )
+		for( dLine = 0, sX = 0;  dLine < (int32_t)dLines; dLine++, sX++ )
 		{
 			CONTINUEPIXEL(dPix16 = (PWord16)pOut->GetPtrToLine( dLine ));
 
-			for ( sLine = sLines - 1, dX = 0; dX < (Int32)sLines; sLine--, dX++, dPix16++ )
+			for ( sLine = sLines - 1, dX = 0; dX < (int32_t)sLines; sLine--, dX++, dPix16++ )
 			{
 				CONTINUEPIXEL(sPix16 = (PWord16)pIn->GetPtrToPixel( sX, sLine));
 				*dPix16 = *sPix16;
@@ -555,11 +555,11 @@ Bool32 CRTurner::Turn90GC(PCTDIB pIn, PCTDIB pOut)
 		break;
 
 	case 3:
-		for( dLine = 0, sX = 0;  dLine < (Int32)dLines; dLine++, sX++ )
+		for( dLine = 0, sX = 0;  dLine < (int32_t)dLines; dLine++, sX++ )
 		{
 			CONTINUEPIXEL(dPix8 = (PWord8)pOut->GetPtrToLine( dLine )) ;
 
-			for ( sLine = sLines - 1, dX = 0; dX < (Int32)sLines; sLine--, dX++ )
+			for ( sLine = sLines - 1, dX = 0; dX < (int32_t)sLines; sLine--, dX++ )
 			{
 				CONTINUEPIXEL(sPix8 = (PWord8)pIn->GetPtrToPixel( sX, sLine));
 				*dPix8++ = *sPix8++;
@@ -571,13 +571,13 @@ Bool32 CRTurner::Turn90GC(PCTDIB pIn, PCTDIB pOut)
 		break;
 
 	case 4:
-		for( dLine = 0, sX = 0;  dLine < (Int32)dLines; dLine++, sX++ )
+		for( dLine = 0, sX = 0;  dLine < (int32_t)dLines; dLine++, sX++ )
 		{
-			CONTINUEPIXEL(dPix32 = (PWord32)pOut->GetPtrToLine( dLine ));
+			CONTINUEPIXEL(dPix32 = (uint32_t *)pOut->GetPtrToLine( dLine ));
 
-			for ( sLine = sLines - 1, dX = 0; dX < (Int32)sLines; sLine--, dX++, dPix32++ )
+			for ( sLine = sLines - 1, dX = 0; dX < (int32_t)sLines; sLine--, dX++, dPix32++ )
 			{
-				CONTINUEPIXEL(sPix32 = (PWord32)pIn->GetPtrToPixel( sX, sLine));
+				CONTINUEPIXEL(sPix32 = (uint32_t *)pIn->GetPtrToPixel( sX, sLine));
 				*dPix32 = *sPix32;
 			}
 		}
@@ -594,18 +594,18 @@ Bool32 CRTurner::Turn90GC(PCTDIB pIn, PCTDIB pOut)
 Bool32 CRTurner::Turn180GC(PCTDIB pIn, PCTDIB pOut)
 {
 	Bool32  bRet = FALSE;
-	Word32  dLine;
-	Word32  sLine;
-	Word32  wPix;
+	uint32_t  dLine;
+	uint32_t  sLine;
+	uint32_t  wPix;
 	PWord8  sPix8;
 	PWord8  dPix8;
 	PWord16 sPix16;
 	PWord16 dPix16;
-	PWord32 sPix32;
-	PWord32 dPix32;
-	Word32  wPixSize = pIn->GetPixelSize() / 8;
-	Word32  wLines = pIn->GetLinesNumber();
-	Word32  sLineWidth = pIn->GetLineWidth();
+	uint32_t * sPix32;
+	uint32_t * dPix32;
+	uint32_t  wPixSize = pIn->GetPixelSize() / 8;
+	uint32_t  wLines = pIn->GetLinesNumber();
+	uint32_t  sLineWidth = pIn->GetLineWidth();
 
 	switch (wPixSize)
 	{
@@ -656,8 +656,8 @@ Bool32 CRTurner::Turn180GC(PCTDIB pIn, PCTDIB pOut)
 	case 4:
 		for( dLine = 0, sLine = wLines - 1; dLine < wLines; dLine++, sLine--)
 		{
-			sPix32 = (PWord32)pIn->GetPtrToPixel( sLineWidth - 1, sLine);
-			dPix32 = (PWord32)pOut->GetPtrToLine( dLine );
+			sPix32 = (uint32_t *)pIn->GetPtrToPixel( sLineWidth - 1, sLine);
+			dPix32 = (uint32_t *)pOut->GetPtrToLine( dLine );
 
 			for ( wPix = 0; wPix < sLineWidth; wPix++, sPix32--, dPix32++ )
 			{
@@ -677,28 +677,28 @@ Bool32 CRTurner::Turn180GC(PCTDIB pIn, PCTDIB pOut)
 Bool32 CRTurner::Turn270GC(PCTDIB pIn, PCTDIB pOut)
 {
 	Bool32  bRet = FALSE;
-	Int32   sX;
-	Int32   dX;
-	Int32   dLine;
-	Int32   sLine;
+	int32_t   sX;
+	int32_t   dX;
+	int32_t   dLine;
+	int32_t   sLine;
 	PWord8  sPix8;
 	PWord8  dPix8;
 	PWord16 sPix16;
 	PWord16 dPix16;
-	PWord32 sPix32;
-	PWord32 dPix32;
-	Word32  dLines = pOut->GetLinesNumber();
-	Word32  sLines = pIn->GetLinesNumber();  //
-	Word32  wPixSize = pIn->GetPixelSize() / 8;
+	uint32_t * sPix32;
+	uint32_t * dPix32;
+	uint32_t  dLines = pOut->GetLinesNumber();
+	uint32_t  sLines = pIn->GetLinesNumber();  //
+	uint32_t  wPixSize = pIn->GetPixelSize() / 8;
 
 	switch (wPixSize)
 	{
 	case 1:
-		for( dLine = 0, sX = dLines - 1;  dLine < (Int32)dLines; dLine++, sX-- )
+		for( dLine = 0, sX = dLines - 1;  dLine < (int32_t)dLines; dLine++, sX-- )
 		{
 			CONTINUEPIXEL(dPix8 = (PWord8)pOut->GetPtrToLine( dLine ));
 
-			for ( sLine = 0, dX = 0; sLine < (Int32)sLines; sLine++, dX++, dPix8++ )
+			for ( sLine = 0, dX = 0; sLine < (int32_t)sLines; sLine++, dX++, dPix8++ )
 			{
 				CONTINUEPIXEL(sPix8 = (PWord8)pIn->GetPtrToPixel( sX, sLine));
 				*dPix8 = *sPix8;
@@ -708,11 +708,11 @@ Bool32 CRTurner::Turn270GC(PCTDIB pIn, PCTDIB pOut)
 		break;
 
 	case 2:
-		for( dLine = 0, sX = dLines - 1;  dLine < (Int32)dLines; dLine++, sX-- )
+		for( dLine = 0, sX = dLines - 1;  dLine < (int32_t)dLines; dLine++, sX-- )
 		{
 			CONTINUEPIXEL(dPix16 = (PWord16)pOut->GetPtrToLine( dLine ));
 
-			for ( sLine = 0, dX = 0; sLine < (Int32)sLines; sLine++, dX++, dPix16++ )
+			for ( sLine = 0, dX = 0; sLine < (int32_t)sLines; sLine++, dX++, dPix16++ )
 			{
 				CONTINUEPIXEL(sPix16 = (PWord16)pIn->GetPtrToPixel( sX, sLine));
 				*dPix16 = *sPix16;
@@ -722,11 +722,11 @@ Bool32 CRTurner::Turn270GC(PCTDIB pIn, PCTDIB pOut)
 		break;
 
 	case 3:
-		for( dLine = 0, sX = dLines - 1;  dLine < (Int32)dLines; dLine++, sX-- )
+		for( dLine = 0, sX = dLines - 1;  dLine < (int32_t)dLines; dLine++, sX-- )
 		{
 			CONTINUEPIXEL(dPix8 = (PWord8)pOut->GetPtrToLine( dLine ));
 
-			for ( sLine = 0, dX = 0; sLine < (Int32)sLines; sLine++, dX++  )
+			for ( sLine = 0, dX = 0; sLine < (int32_t)sLines; sLine++, dX++  )
 			{
 				CONTINUEPIXEL(sPix8 = (PWord8)pIn->GetPtrToPixel( sX, sLine));
 				*dPix8++ = *sPix8++;
@@ -738,13 +738,13 @@ Bool32 CRTurner::Turn270GC(PCTDIB pIn, PCTDIB pOut)
 		break;
 
 	case 4:
-		for( dLine = 0, sX = dLines - 1;  dLine < (Int32)dLines; dLine++, sX-- )
+		for( dLine = 0, sX = dLines - 1;  dLine < (int32_t)dLines; dLine++, sX-- )
 		{
-			CONTINUEPIXEL(dPix32 = (PWord32)pOut->GetPtrToLine( dLine ));
+			CONTINUEPIXEL(dPix32 = (uint32_t *)pOut->GetPtrToLine( dLine ));
 
-			for ( sLine = 0, dX = 0; sLine < (Int32)sLines; sLine++, dX++, dPix32++ )
+			for ( sLine = 0, dX = 0; sLine < (int32_t)sLines; sLine++, dX++, dPix32++ )
 			{
-				CONTINUEPIXEL(sPix32 = (PWord32)pIn->GetPtrToPixel( sX, sLine));
+				CONTINUEPIXEL(sPix32 = (uint32_t *)pIn->GetPtrToPixel( sX, sLine));
 				*dPix32 = *sPix32;
 			}
 		}
@@ -761,7 +761,7 @@ Bool32 CRTurner::Turn270GC(PCTDIB pIn, PCTDIB pOut)
 Bool32 CRTurner::WriteDIBtoBMP(const char *cName, PCTDIB pDIB)
 {
 #ifdef RIMAGE_DUMP_TO_FILE
-	Word32  wBMPSize = pDIB->GetDIBSize() + 14;
+	uint32_t  wBMPSize = pDIB->GetDIBSize() + 14;
 	PumaMemoryToFileDumper BMPDump(cName);
 
 	BMPDump.AddDump("BM",2);

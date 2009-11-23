@@ -2,33 +2,33 @@
 Copyright (c) 1993-2008, Cognitive Technologies
 All rights reserved.
 
-Ðàçðåøàåòñÿ ïîâòîðíîå ðàñïðîñòðàíåíèå è èñïîëüçîâàíèå êàê â âèäå èñõîäíîãî êîäà,
-òàê è â äâîè÷íîé ôîðìå, ñ èçìåíåíèÿìè èëè áåç, ïðè ñîáëþäåíèè ñëåäóþùèõ óñëîâèé:
+Ð Ð°Ð·Ñ€ÐµÑˆÐ°ÐµÑ‚ÑÑ Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€Ð½Ð¾Ðµ Ñ€Ð°ÑÐ¿Ñ€Ð¾ÑÑ‚Ñ€Ð°Ð½ÐµÐ½Ð¸Ðµ Ð¸ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð² Ð²Ð¸Ð´Ðµ Ð¸ÑÑ…Ð¾Ð´Ð½Ð¾Ð³Ð¾ ÐºÐ¾Ð´Ð°,
+Ñ‚Ð°Ðº Ð¸ Ð² Ð´Ð²Ð¾Ð¸Ñ‡Ð½Ð¾Ð¹ Ñ„Ð¾Ñ€Ð¼Ðµ, Ñ Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸ÑÐ¼Ð¸ Ð¸Ð»Ð¸ Ð±ÐµÐ·, Ð¿Ñ€Ð¸ ÑÐ¾Ð±Ð»ÑŽÐ´ÐµÐ½Ð¸Ð¸ ÑÐ»ÐµÐ´ÑƒÑŽÑ‰Ð¸Ñ… ÑƒÑÐ»Ð¾Ð²Ð¸Ð¹:
 
-      * Ïðè ïîâòîðíîì ðàñïðîñòðàíåíèè èñõîäíîãî êîäà äîëæíû îñòàâàòüñÿ óêàçàííîå
-        âûøå óâåäîìëåíèå îá àâòîðñêîì ïðàâå, ýòîò ñïèñîê óñëîâèé è ïîñëåäóþùèé
-        îòêàç îò ãàðàíòèé.
-      * Ïðè ïîâòîðíîì ðàñïðîñòðàíåíèè äâîè÷íîãî êîäà â äîêóìåíòàöèè è/èëè â
-        äðóãèõ ìàòåðèàëàõ, ïîñòàâëÿåìûõ ïðè ðàñïðîñòðàíåíèè, äîëæíû ñîõðàíÿòüñÿ
-        óêàçàííàÿ âûøå èíôîðìàöèÿ îá àâòîðñêîì ïðàâå, ýòîò ñïèñîê óñëîâèé è
-        ïîñëåäóþùèé îòêàç îò ãàðàíòèé.
-      * Íè íàçâàíèå Cognitive Technologies, íè èìåíà åå ñîòðóäíèêîâ íå ìîãóò
-        áûòü èñïîëüçîâàíû â êà÷åñòâå ñðåäñòâà ïîääåðæêè è/èëè ïðîäâèæåíèÿ
-        ïðîäóêòîâ, îñíîâàííûõ íà ýòîì ÏÎ, áåç ïðåäâàðèòåëüíîãî ïèñüìåííîãî
-        ðàçðåøåíèÿ.
+      * ÐŸÑ€Ð¸ Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€Ð½Ð¾Ð¼ Ñ€Ð°ÑÐ¿Ñ€Ð¾ÑÑ‚Ñ€Ð°Ð½ÐµÐ½Ð¸Ð¸ Ð¸ÑÑ…Ð¾Ð´Ð½Ð¾Ð³Ð¾ ÐºÐ¾Ð´Ð° Ð´Ð¾Ð»Ð¶Ð½Ñ‹ Ð¾ÑÑ‚Ð°Ð²Ð°Ñ‚ÑŒÑÑ ÑƒÐºÐ°Ð·Ð°Ð½Ð½Ð¾Ðµ
+        Ð²Ñ‹ÑˆÐµ ÑƒÐ²ÐµÐ´Ð¾Ð¼Ð»ÐµÐ½Ð¸Ðµ Ð¾Ð± Ð°Ð²Ñ‚Ð¾Ñ€ÑÐºÐ¾Ð¼ Ð¿Ñ€Ð°Ð²Ðµ, ÑÑ‚Ð¾Ñ‚ ÑÐ¿Ð¸ÑÐ¾Ðº ÑƒÑÐ»Ð¾Ð²Ð¸Ð¹ Ð¸ Ð¿Ð¾ÑÐ»ÐµÐ´ÑƒÑŽÑ‰Ð¸Ð¹
+        Ð¾Ñ‚ÐºÐ°Ð· Ð¾Ñ‚ Ð³Ð°Ñ€Ð°Ð½Ñ‚Ð¸Ð¹.
+      * ÐŸÑ€Ð¸ Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€Ð½Ð¾Ð¼ Ñ€Ð°ÑÐ¿Ñ€Ð¾ÑÑ‚Ñ€Ð°Ð½ÐµÐ½Ð¸Ð¸ Ð´Ð²Ð¾Ð¸Ñ‡Ð½Ð¾Ð³Ð¾ ÐºÐ¾Ð´Ð° Ð² Ð´Ð¾ÐºÑƒÐ¼ÐµÐ½Ñ‚Ð°Ñ†Ð¸Ð¸ Ð¸/Ð¸Ð»Ð¸ Ð²
+        Ð´Ñ€ÑƒÐ³Ð¸Ñ… Ð¼Ð°Ñ‚ÐµÑ€Ð¸Ð°Ð»Ð°Ñ…, Ð¿Ð¾ÑÑ‚Ð°Ð²Ð»ÑÐµÐ¼Ñ‹Ñ… Ð¿Ñ€Ð¸ Ñ€Ð°ÑÐ¿Ñ€Ð¾ÑÑ‚Ñ€Ð°Ð½ÐµÐ½Ð¸Ð¸, Ð´Ð¾Ð»Ð¶Ð½Ñ‹ ÑÐ¾Ñ…Ñ€Ð°Ð½ÑÑ‚ÑŒÑÑ
+        ÑƒÐºÐ°Ð·Ð°Ð½Ð½Ð°Ñ Ð²Ñ‹ÑˆÐµ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð¾Ð± Ð°Ð²Ñ‚Ð¾Ñ€ÑÐºÐ¾Ð¼ Ð¿Ñ€Ð°Ð²Ðµ, ÑÑ‚Ð¾Ñ‚ ÑÐ¿Ð¸ÑÐ¾Ðº ÑƒÑÐ»Ð¾Ð²Ð¸Ð¹ Ð¸
+        Ð¿Ð¾ÑÐ»ÐµÐ´ÑƒÑŽÑ‰Ð¸Ð¹ Ð¾Ñ‚ÐºÐ°Ð· Ð¾Ñ‚ Ð³Ð°Ñ€Ð°Ð½Ñ‚Ð¸Ð¹.
+      * ÐÐ¸ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ðµ Cognitive Technologies, Ð½Ð¸ Ð¸Ð¼ÐµÐ½Ð° ÐµÐµ ÑÐ¾Ñ‚Ñ€ÑƒÐ´Ð½Ð¸ÐºÐ¾Ð² Ð½Ðµ Ð¼Ð¾Ð³ÑƒÑ‚
+        Ð±Ñ‹Ñ‚ÑŒ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ñ‹ Ð² ÐºÐ°Ñ‡ÐµÑÑ‚Ð²Ðµ ÑÑ€ÐµÐ´ÑÑ‚Ð²Ð° Ð¿Ð¾Ð´Ð´ÐµÑ€Ð¶ÐºÐ¸ Ð¸/Ð¸Ð»Ð¸ Ð¿Ñ€Ð¾Ð´Ð²Ð¸Ð¶ÐµÐ½Ð¸Ñ
+        Ð¿Ñ€Ð¾Ð´ÑƒÐºÑ‚Ð¾Ð², Ð¾ÑÐ½Ð¾Ð²Ð°Ð½Ð½Ñ‹Ñ… Ð½Ð° ÑÑ‚Ð¾Ð¼ ÐŸÐž, Ð±ÐµÐ· Ð¿Ñ€ÐµÐ´Ð²Ð°Ñ€Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾Ð³Ð¾ Ð¿Ð¸ÑÑŒÐ¼ÐµÐ½Ð½Ð¾Ð³Ð¾
+        Ñ€Ð°Ð·Ñ€ÐµÑˆÐµÐ½Ð¸Ñ.
 
-ÝÒÀ ÏÐÎÃÐÀÌÌÀ ÏÐÅÄÎÑÒÀÂËÅÍÀ ÂËÀÄÅËÜÖÀÌÈ ÀÂÒÎÐÑÊÈÕ ÏÐÀÂ È/ÈËÈ ÄÐÓÃÈÌÈ ËÈÖÀÌÈ "ÊÀÊ
-ÎÍÀ ÅÑÒÜ" ÁÅÇ ÊÀÊÎÃÎ-ËÈÁÎ ÂÈÄÀ ÃÀÐÀÍÒÈÉ, ÂÛÐÀÆÅÍÍÛÕ ßÂÍÎ ÈËÈ ÏÎÄÐÀÇÓÌÅÂÀÅÌÛÕ,
-ÂÊËÞ×Àß ÃÀÐÀÍÒÈÈ ÊÎÌÌÅÐ×ÅÑÊÎÉ ÖÅÍÍÎÑÒÈ È ÏÐÈÃÎÄÍÎÑÒÈ ÄËß ÊÎÍÊÐÅÒÍÎÉ ÖÅËÈ, ÍÎ ÍÅ
-ÎÃÐÀÍÈ×ÈÂÀßÑÜ ÈÌÈ. ÍÈ ÂËÀÄÅËÅÖ ÀÂÒÎÐÑÊÈÕ ÏÐÀÂ È ÍÈ ÎÄÍÎ ÄÐÓÃÎÅ ËÈÖÎ, ÊÎÒÎÐÎÅ
-ÌÎÆÅÒ ÈÇÌÅÍßÒÜ È/ÈËÈ ÏÎÂÒÎÐÍÎ ÐÀÑÏÐÎÑÒÐÀÍßÒÜ ÏÐÎÃÐÀÌÌÓ, ÍÈ Â ÊÎÅÌ ÑËÓ×ÀÅ ÍÅ
-ÍÅÑ¨Ò ÎÒÂÅÒÑÒÂÅÍÍÎÑÒÈ, ÂÊËÞ×Àß ËÞÁÛÅ ÎÁÙÈÅ, ÑËÓ×ÀÉÍÛÅ, ÑÏÅÖÈÀËÜÍÛÅ ÈËÈ
-ÏÎÑËÅÄÎÂÀÂØÈÅ ÓÁÛÒÊÈ, ÑÂßÇÀÍÍÛÅ Ñ ÈÑÏÎËÜÇÎÂÀÍÈÅÌ ÈËÈ ÏÎÍÅÑÅÍÍÛÅ ÂÑËÅÄÑÒÂÈÅ
-ÍÅÂÎÇÌÎÆÍÎÑÒÈ ÈÑÏÎËÜÇÎÂÀÍÈß ÏÐÎÃÐÀÌÌÛ (ÂÊËÞ×Àß ÏÎÒÅÐÈ ÄÀÍÍÛÕ, ÈËÈ ÄÀÍÍÛÅ,
-ÑÒÀÂØÈÅ ÍÅÃÎÄÍÛÌÈ, ÈËÈ ÓÁÛÒÊÈ È/ÈËÈ ÏÎÒÅÐÈ ÄÎÕÎÄÎÂ, ÏÎÍÅÑÅÍÍÛÅ ÈÇ-ÇÀ ÄÅÉÑÒÂÈÉ
-ÒÐÅÒÜÈÕ ËÈÖ È/ÈËÈ ÎÒÊÀÇÀ ÏÐÎÃÐÀÌÌÛ ÐÀÁÎÒÀÒÜ ÑÎÂÌÅÑÒÍÎ Ñ ÄÐÓÃÈÌÈ ÏÐÎÃÐÀÌÌÀÌÈ,
-ÍÎ ÍÅ ÎÃÐÀÍÈ×ÈÂÀßÑÜ ÝÒÈÌÈ ÑËÓ×ÀßÌÈ), ÍÎ ÍÅ ÎÃÐÀÍÈ×ÈÂÀßÑÜ ÈÌÈ, ÄÀÆÅ ÅÑËÈ ÒÀÊÎÉ
-ÂËÀÄÅËÅÖ ÈËÈ ÄÐÓÃÎÅ ËÈÖÎ ÁÛËÈ ÈÇÂÅÙÅÍÛ Î ÂÎÇÌÎÆÍÎÑÒÈ ÒÀÊÈÕ ÓÁÛÒÊÎÂ È ÏÎÒÅÐÜ.
+Ð­Ð¢Ð ÐŸÐ ÐžÐ“Ð ÐÐœÐœÐ ÐŸÐ Ð•Ð”ÐžÐ¡Ð¢ÐÐ’Ð›Ð•ÐÐ Ð’Ð›ÐÐ”Ð•Ð›Ð¬Ð¦ÐÐœÐ˜ ÐÐ’Ð¢ÐžÐ Ð¡ÐšÐ˜Ð¥ ÐŸÐ ÐÐ’ Ð˜/Ð˜Ð›Ð˜ Ð”Ð Ð£Ð“Ð˜ÐœÐ˜ Ð›Ð˜Ð¦ÐÐœÐ˜ "ÐšÐÐš
+ÐžÐÐ Ð•Ð¡Ð¢Ð¬" Ð‘Ð•Ð— ÐšÐÐšÐžÐ“Ðž-Ð›Ð˜Ð‘Ðž Ð’Ð˜Ð”Ð Ð“ÐÐ ÐÐÐ¢Ð˜Ð™, Ð’Ð«Ð ÐÐ–Ð•ÐÐÐ«Ð¥ Ð¯Ð’ÐÐž Ð˜Ð›Ð˜ ÐŸÐžÐ”Ð ÐÐ—Ð£ÐœÐ•Ð’ÐÐ•ÐœÐ«Ð¥,
+Ð’ÐšÐ›Ð®Ð§ÐÐ¯ Ð“ÐÐ ÐÐÐ¢Ð˜Ð˜ ÐšÐžÐœÐœÐ•Ð Ð§Ð•Ð¡ÐšÐžÐ™ Ð¦Ð•ÐÐÐžÐ¡Ð¢Ð˜ Ð˜ ÐŸÐ Ð˜Ð“ÐžÐ”ÐÐžÐ¡Ð¢Ð˜ Ð”Ð›Ð¯ ÐšÐžÐÐšÐ Ð•Ð¢ÐÐžÐ™ Ð¦Ð•Ð›Ð˜, ÐÐž ÐÐ•
+ÐžÐ“Ð ÐÐÐ˜Ð§Ð˜Ð’ÐÐ¯Ð¡Ð¬ Ð˜ÐœÐ˜. ÐÐ˜ Ð’Ð›ÐÐ”Ð•Ð›Ð•Ð¦ ÐÐ’Ð¢ÐžÐ Ð¡ÐšÐ˜Ð¥ ÐŸÐ ÐÐ’ Ð˜ ÐÐ˜ ÐžÐ”ÐÐž Ð”Ð Ð£Ð“ÐžÐ• Ð›Ð˜Ð¦Ðž, ÐšÐžÐ¢ÐžÐ ÐžÐ•
+ÐœÐžÐ–Ð•Ð¢ Ð˜Ð—ÐœÐ•ÐÐ¯Ð¢Ð¬ Ð˜/Ð˜Ð›Ð˜ ÐŸÐžÐ’Ð¢ÐžÐ ÐÐž Ð ÐÐ¡ÐŸÐ ÐžÐ¡Ð¢Ð ÐÐÐ¯Ð¢Ð¬ ÐŸÐ ÐžÐ“Ð ÐÐœÐœÐ£, ÐÐ˜ Ð’ ÐšÐžÐ•Ðœ Ð¡Ð›Ð£Ð§ÐÐ• ÐÐ•
+ÐÐ•Ð¡ÐÐ¢ ÐžÐ¢Ð’Ð•Ð¢Ð¡Ð¢Ð’Ð•ÐÐÐžÐ¡Ð¢Ð˜, Ð’ÐšÐ›Ð®Ð§ÐÐ¯ Ð›Ð®Ð‘Ð«Ð• ÐžÐ‘Ð©Ð˜Ð•, Ð¡Ð›Ð£Ð§ÐÐ™ÐÐ«Ð•, Ð¡ÐŸÐ•Ð¦Ð˜ÐÐ›Ð¬ÐÐ«Ð• Ð˜Ð›Ð˜
+ÐŸÐžÐ¡Ð›Ð•Ð”ÐžÐ’ÐÐ’Ð¨Ð˜Ð• Ð£Ð‘Ð«Ð¢ÐšÐ˜, Ð¡Ð’Ð¯Ð—ÐÐÐÐ«Ð• Ð¡ Ð˜Ð¡ÐŸÐžÐ›Ð¬Ð—ÐžÐ’ÐÐÐ˜Ð•Ðœ Ð˜Ð›Ð˜ ÐŸÐžÐÐ•Ð¡Ð•ÐÐÐ«Ð• Ð’Ð¡Ð›Ð•Ð”Ð¡Ð¢Ð’Ð˜Ð•
+ÐÐ•Ð’ÐžÐ—ÐœÐžÐ–ÐÐžÐ¡Ð¢Ð˜ Ð˜Ð¡ÐŸÐžÐ›Ð¬Ð—ÐžÐ’ÐÐÐ˜Ð¯ ÐŸÐ ÐžÐ“Ð ÐÐœÐœÐ« (Ð’ÐšÐ›Ð®Ð§ÐÐ¯ ÐŸÐžÐ¢Ð•Ð Ð˜ Ð”ÐÐÐÐ«Ð¥, Ð˜Ð›Ð˜ Ð”ÐÐÐÐ«Ð•,
+Ð¡Ð¢ÐÐ’Ð¨Ð˜Ð• ÐÐ•Ð“ÐžÐ”ÐÐ«ÐœÐ˜, Ð˜Ð›Ð˜ Ð£Ð‘Ð«Ð¢ÐšÐ˜ Ð˜/Ð˜Ð›Ð˜ ÐŸÐžÐ¢Ð•Ð Ð˜ Ð”ÐžÐ¥ÐžÐ”ÐžÐ’, ÐŸÐžÐÐ•Ð¡Ð•ÐÐÐ«Ð• Ð˜Ð—-Ð—Ð Ð”Ð•Ð™Ð¡Ð¢Ð’Ð˜Ð™
+Ð¢Ð Ð•Ð¢Ð¬Ð˜Ð¥ Ð›Ð˜Ð¦ Ð˜/Ð˜Ð›Ð˜ ÐžÐ¢ÐšÐÐ—Ð ÐŸÐ ÐžÐ“Ð ÐÐœÐœÐ« Ð ÐÐ‘ÐžÐ¢ÐÐ¢Ð¬ Ð¡ÐžÐ’ÐœÐ•Ð¡Ð¢ÐÐž Ð¡ Ð”Ð Ð£Ð“Ð˜ÐœÐ˜ ÐŸÐ ÐžÐ“Ð ÐÐœÐœÐÐœÐ˜,
+ÐÐž ÐÐ• ÐžÐ“Ð ÐÐÐ˜Ð§Ð˜Ð’ÐÐ¯Ð¡Ð¬ Ð­Ð¢Ð˜ÐœÐ˜ Ð¡Ð›Ð£Ð§ÐÐ¯ÐœÐ˜), ÐÐž ÐÐ• ÐžÐ“Ð ÐÐÐ˜Ð§Ð˜Ð’ÐÐ¯Ð¡Ð¬ Ð˜ÐœÐ˜, Ð”ÐÐ–Ð• Ð•Ð¡Ð›Ð˜ Ð¢ÐÐšÐžÐ™
+Ð’Ð›ÐÐ”Ð•Ð›Ð•Ð¦ Ð˜Ð›Ð˜ Ð”Ð Ð£Ð“ÐžÐ• Ð›Ð˜Ð¦Ðž Ð‘Ð«Ð›Ð˜ Ð˜Ð—Ð’Ð•Ð©Ð•ÐÐ« Ðž Ð’ÐžÐ—ÐœÐžÐ–ÐÐžÐ¡Ð¢Ð˜ Ð¢ÐÐšÐ˜Ð¥ Ð£Ð‘Ð«Ð¢ÐšÐžÐ’ Ð˜ ÐŸÐžÐ¢Ð•Ð Ð¬.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
@@ -78,18 +78,18 @@ static HINSTANCE  ghInst     = NULL;
 Bool32     gbBold     = TRUE;
 Bool32     gbItalic   = TRUE;
 Bool32     gbSize     = TRUE;
-Word32     gnFormat	  = 1;    // 0 - íå ôîðìàòèðîâàòü
-							  // 1 - ôîðìàòèðîâàòü ñ ôðåéìàìè è  êîëîíêàìè
-							  // 2 - òîëüêî ôðåéìû
+uint32_t     gnFormat	  = 1;    // 0 - Ð½Ðµ Ñ„Ð¾Ñ€Ð¼Ð°Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ
+							  // 1 - Ñ„Ð¾Ñ€Ð¼Ð°Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ñ Ñ„Ñ€ÐµÐ¹Ð¼Ð°Ð¼Ð¸ Ð¸  ÐºÐ¾Ð»Ð¾Ð½ÐºÐ°Ð¼Ð¸
+							  // 2 - Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ñ„Ñ€ÐµÐ¹Ð¼Ñ‹
 const char * gpSerifName	  = "MS Serif Cyr";
 const char * gpSansSerifName= "MS Sans Serif Cyr";
 const char * gpCourierName  = "Courier Cyr";
 char   UnRecogSymbol  = '~';
-Word32 gnLanguage = LANG_RUSENG;
+uint32_t gnLanguage = LANG_RUSENG;
 
 /////////////////////////////////////////
 BOOL APIENTRY DllMain( HINSTANCE hModule,
-                        DWORD ul_reason_for_call,
+uint32_t ul_reason_for_call,
                         LPVOID lpReserved )
 {
  switch( ul_reason_for_call )
@@ -114,66 +114,66 @@ RFRMT_FUNC(Bool32) RFRMT_Init(Word16 wHeightCode,HANDLE hStorage)
 {
  LDPUMA_Init(0,NULL);
  LDPUMA_Registry(&hDebugRoot,SNAP_ROOT_CONVERTERS,NULL);
- LDPUMA_Registry(&hDebugMy,"Îòëàäêà ôîðìàòèðîâàíèÿ",hDebugRoot);
+ LDPUMA_Registry(&hDebugMy,"ÐžÑ‚Ð»Ð°Ð´ÐºÐ° Ñ„Ð¾Ñ€Ð¼Ð°Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ñ",hDebugRoot);
 
- LDPUMA_Registry(&hDebugKegl,"Êåãëü íå èçìåíÿòü",hDebugMy);
- LDPUMA_RegistryHelp(hDebugKegl,"Ýòà îïöèÿ ïðåäíàçíà÷åíà äëÿ êîððåêòèðîâêè ðàçìåðà êåãëÿ ïðè ôîðìàòèðîâàíèè",FALSE);
+ LDPUMA_Registry(&hDebugKegl,"ÐšÐµÐ³Ð»ÑŒ Ð½Ðµ Ð¸Ð·Ð¼ÐµÐ½ÑÑ‚ÑŒ",hDebugMy);
+ LDPUMA_RegistryHelp(hDebugKegl,"Ð­Ñ‚Ð° Ð¾Ð¿Ñ†Ð¸Ñ Ð¿Ñ€ÐµÐ´Ð½Ð°Ð·Ð½Ð°Ñ‡ÐµÐ½Ð° Ð´Ð»Ñ ÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð¸Ñ€Ð¾Ð²ÐºÐ¸ Ñ€Ð°Ð·Ð¼ÐµÑ€Ð° ÐºÐµÐ³Ð»Ñ Ð¿Ñ€Ð¸ Ñ„Ð¾Ñ€Ð¼Ð°Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ð¸",FALSE);
 
- LDPUMA_Registry(&hDebugFrame,"Âñå ôðàãìåíòû ôðåéìû",hDebugMy);
- LDPUMA_RegistryHelp(hDebugFrame,"Ýòà îïöèÿ ïðåäíàçíà÷åíà äëÿ ôîðìàòèðîâàíèÿ ôðåéìàìè",FALSE);
+ LDPUMA_Registry(&hDebugFrame,"Ð’ÑÐµ Ñ„Ñ€Ð°Ð³Ð¼ÐµÐ½Ñ‚Ñ‹ Ñ„Ñ€ÐµÐ¹Ð¼Ñ‹",hDebugMy);
+ LDPUMA_RegistryHelp(hDebugFrame,"Ð­Ñ‚Ð° Ð¾Ð¿Ñ†Ð¸Ñ Ð¿Ñ€ÐµÐ´Ð½Ð°Ð·Ð½Ð°Ñ‡ÐµÐ½Ð° Ð´Ð»Ñ Ñ„Ð¾Ñ€Ð¼Ð°Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ñ Ñ„Ñ€ÐµÐ¹Ð¼Ð°Ð¼Ð¸",FALSE);
 
- LDPUMA_Registry(&hDebugAlign,"Îòëàäêà âûðàâíèâàíèÿ ïàðàãðàôà",hDebugMy);
- LDPUMA_RegistryHelp(hDebugAlign,"Îòëàäêà âûðàâíèâàíèÿ ïàðàãðàôà",FALSE);
+ LDPUMA_Registry(&hDebugAlign,"ÐžÑ‚Ð»Ð°Ð´ÐºÐ° Ð²Ñ‹Ñ€Ð°Ð²Ð½Ð¸Ð²Ð°Ð½Ð¸Ñ Ð¿Ð°Ñ€Ð°Ð³Ñ€Ð°Ñ„Ð°",hDebugMy);
+ LDPUMA_RegistryHelp(hDebugAlign,"ÐžÑ‚Ð»Ð°Ð´ÐºÐ° Ð²Ñ‹Ñ€Ð°Ð²Ð½Ð¸Ð²Ð°Ð½Ð¸Ñ Ð¿Ð°Ñ€Ð°Ð³Ñ€Ð°Ñ„Ð°",FALSE);
 
- LDPUMA_Registry(&hDebugLineTransfer,"Ñòðîêè íå ïåðåíîñèòü",hDebugMy);
- LDPUMA_RegistryHelp(hDebugLineTransfer,"Ñòðîêè íå ïåðåíîñèòü",FALSE);
+ LDPUMA_Registry(&hDebugLineTransfer,"Ð¡Ñ‚Ñ€Ð¾ÐºÐ¸ Ð½Ðµ Ð¿ÐµÑ€ÐµÐ½Ð¾ÑÐ¸Ñ‚ÑŒ",hDebugMy);
+ LDPUMA_RegistryHelp(hDebugLineTransfer,"Ð¡Ñ‚Ñ€Ð¾ÐºÐ¸ Ð½Ðµ Ð¿ÐµÑ€ÐµÐ½Ð¾ÑÐ¸Ñ‚ÑŒ",FALSE);
 
- LDPUMA_Registry(&hDebugProfile,"Îöåíêà âðåìåíè ðàáîòû.",hDebugMy);
- LDPUMA_RegistryHelp(hDebugProfile,"Îöåíêà âðåìåíè ðàáîòû.",FALSE);
- LDPUMA_Registry(&hDebugProfStart,"Íà÷àëî ðàáîòû",hDebugProfile);
- LDPUMA_RegistryHelp(hDebugProfStart,"Îöåíêà âðåìåíè ðàáîòû.",FALSE);
+ LDPUMA_Registry(&hDebugProfile,"ÐžÑ†ÐµÐ½ÐºÐ° Ð²Ñ€ÐµÐ¼ÐµÐ½Ð¸ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹.",hDebugMy);
+ LDPUMA_RegistryHelp(hDebugProfile,"ÐžÑ†ÐµÐ½ÐºÐ° Ð²Ñ€ÐµÐ¼ÐµÐ½Ð¸ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹.",FALSE);
+ LDPUMA_Registry(&hDebugProfStart,"ÐÐ°Ñ‡Ð°Ð»Ð¾ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹",hDebugProfile);
+ LDPUMA_RegistryHelp(hDebugProfStart,"ÐžÑ†ÐµÐ½ÐºÐ° Ð²Ñ€ÐµÐ¼ÐµÐ½Ð¸ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹.",FALSE);
 
- LDPUMA_Registry(&hDebugProfTable,"Òàáëèöà",hDebugProfile);
- LDPUMA_RegistryHelp(hDebugProfTable,"Îöåíêà âðåìåíè ðàáîòû.",FALSE);
+ LDPUMA_Registry(&hDebugProfTable,"Ð¢Ð°Ð±Ð»Ð¸Ñ†Ð°",hDebugProfile);
+ LDPUMA_RegistryHelp(hDebugProfTable,"ÐžÑ†ÐµÐ½ÐºÐ° Ð²Ñ€ÐµÐ¼ÐµÐ½Ð¸ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹.",FALSE);
 
- LDPUMA_Registry(&hDebugProfCell,"ß÷åéêè",hDebugProfile);
- LDPUMA_RegistryHelp(hDebugProfCell,"Îöåíêà âðåìåíè ðàáîòû.",FALSE);
+ LDPUMA_Registry(&hDebugProfCell,"Ð¯Ñ‡ÐµÐ¹ÐºÐ¸",hDebugProfile);
+ LDPUMA_RegistryHelp(hDebugProfCell,"ÐžÑ†ÐµÐ½ÐºÐ° Ð²Ñ€ÐµÐ¼ÐµÐ½Ð¸ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹.",FALSE);
 
  LDPUMA_Registry(&hDebugProfTmp,"Tmp",hDebugProfile);
- LDPUMA_RegistryHelp(hDebugProfTmp,"Îöåíêà âðåìåíè ðàáîòû.",FALSE);
+ LDPUMA_RegistryHelp(hDebugProfTmp,"ÐžÑ†ÐµÐ½ÐºÐ° Ð²Ñ€ÐµÐ¼ÐµÐ½Ð¸ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹.",FALSE);
 
- LDPUMA_Registry(&hDebugProfEndTable,"Êîíåö òàáëèöû",hDebugProfile);
- LDPUMA_RegistryHelp(hDebugProfEndTable,"Îöåíêà âðåìåíè ðàáîòû.",FALSE);
+ LDPUMA_Registry(&hDebugProfEndTable,"ÐšÐ¾Ð½ÐµÑ† Ñ‚Ð°Ð±Ð»Ð¸Ñ†Ñ‹",hDebugProfile);
+ LDPUMA_RegistryHelp(hDebugProfEndTable,"ÐžÑ†ÐµÐ½ÐºÐ° Ð²Ñ€ÐµÐ¼ÐµÐ½Ð¸ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹.",FALSE);
 
- LDPUMA_Registry(&hDebugProfWrite,"Çàïèñü òàáëèöû",hDebugProfile);
- LDPUMA_RegistryHelp(hDebugProfWrite,"Îöåíêà âðåìåíè ðàáîòû.",FALSE);
+ LDPUMA_Registry(&hDebugProfWrite,"Ð—Ð°Ð¿Ð¸ÑÑŒ Ñ‚Ð°Ð±Ð»Ð¸Ñ†Ñ‹",hDebugProfile);
+ LDPUMA_RegistryHelp(hDebugProfWrite,"ÐžÑ†ÐµÐ½ÐºÐ° Ð²Ñ€ÐµÐ¼ÐµÐ½Ð¸ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹.",FALSE);
 
- LDPUMA_Registry(&hDebugProfWriteRow,"Çàïèñü ñòðîêè òàáëèöû",hDebugProfile);
- LDPUMA_RegistryHelp(hDebugProfWriteRow,"Îöåíêà âðåìåíè ðàáîòû.",FALSE);
+ LDPUMA_Registry(&hDebugProfWriteRow,"Ð—Ð°Ð¿Ð¸ÑÑŒ ÑÑ‚Ñ€Ð¾ÐºÐ¸ Ñ‚Ð°Ð±Ð»Ð¸Ñ†Ñ‹",hDebugProfile);
+ LDPUMA_RegistryHelp(hDebugProfWriteRow,"ÐžÑ†ÐµÐ½ÐºÐ° Ð²Ñ€ÐµÐ¼ÐµÐ½Ð¸ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹.",FALSE);
 
- LDPUMA_Registry(&hDebugProfWriteCell,"Çàïèñü ÿ÷åéêè òàáëèöû",hDebugProfile);
- LDPUMA_RegistryHelp(hDebugProfWriteCell,"Îöåíêà âðåìåíè ðàáîòû.",FALSE);
+ LDPUMA_Registry(&hDebugProfWriteCell,"Ð—Ð°Ð¿Ð¸ÑÑŒ ÑÑ‡ÐµÐ¹ÐºÐ¸ Ñ‚Ð°Ð±Ð»Ð¸Ñ†Ñ‹",hDebugProfile);
+ LDPUMA_RegistryHelp(hDebugProfWriteCell,"ÐžÑ†ÐµÐ½ÐºÐ° Ð²Ñ€ÐµÐ¼ÐµÐ½Ð¸ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹.",FALSE);
 
- LDPUMA_Registry(&hDebugProfWriteChar,"Çàïèñü ñèìâîëà",hDebugProfile);
- LDPUMA_RegistryHelp(hDebugProfWriteChar,"Îöåíêà âðåìåíè ðàáîòû.",FALSE);
+ LDPUMA_Registry(&hDebugProfWriteChar,"Ð—Ð°Ð¿Ð¸ÑÑŒ ÑÐ¸Ð¼Ð²Ð¾Ð»Ð°",hDebugProfile);
+ LDPUMA_RegistryHelp(hDebugProfWriteChar,"ÐžÑ†ÐµÐ½ÐºÐ° Ð²Ñ€ÐµÐ¼ÐµÐ½Ð¸ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹.",FALSE);
 
- LDPUMA_Registry(&hDebugProfEnd,"Êîíåö ðàáîòû",hDebugProfile);
- LDPUMA_RegistryHelp(hDebugProfEnd,"Îöåíêà âðåìåíè ðàáîòû.",FALSE);
+ LDPUMA_Registry(&hDebugProfEnd,"ÐšÐ¾Ð½ÐµÑ† Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹",hDebugProfile);
+ LDPUMA_RegistryHelp(hDebugProfEnd,"ÐžÑ†ÐµÐ½ÐºÐ° Ð²Ñ€ÐµÐ¼ÐµÐ½Ð¸ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹.",FALSE);
 
- LDPUMA_Registry(&hTest,"Òåñò ïàìÿòè çàïèñè êàðòèíîê",hDebugMy);
- LDPUMA_Registry(&hTestDIBData,"Ïîëó÷èòü èñõîäíóþ êàðòèíêó",hTest);
+ LDPUMA_Registry(&hTest,"Ð¢ÐµÑÑ‚ Ð¿Ð°Ð¼ÑÑ‚Ð¸ Ð·Ð°Ð¿Ð¸ÑÐ¸ ÐºÐ°Ñ€Ñ‚Ð¸Ð½Ð¾Ðº",hDebugMy);
+ LDPUMA_Registry(&hTestDIBData,"ÐŸÐ¾Ð»ÑƒÑ‡Ð¸Ñ‚ÑŒ Ð¸ÑÑ…Ð¾Ð´Ð½ÑƒÑŽ ÐºÐ°Ñ€Ñ‚Ð¸Ð½ÐºÑƒ",hTest);
 
- LDPUMA_Registry(&hTestTurn,"Ïîâîðîòà íà 90\180",hTest);
- LDPUMA_Registry(&hTestRotate,"Äîâîðîòà íà ìàëûé óãîë",hTest);
+ LDPUMA_Registry(&hTestTurn,"ÐŸÐ¾Ð²Ð¾Ñ€Ð¾Ñ‚Ð° Ð½Ð° 90\180",hTest);
+ LDPUMA_Registry(&hTestRotate,"Ð”Ð¾Ð²Ð¾Ñ€Ð¾Ñ‚Ð° Ð½Ð° Ð¼Ð°Ð»Ñ‹Ð¹ ÑƒÐ³Ð¾Ð»",hTest);
 
- LDPUMA_Registry(&hTestWriteMetafile,"Çàïèñü â ìåòàôàéë",hTest);
- LDPUMA_Registry(&hTestGetMaskDIB,"Ïîëó÷åíèÿ ìàñêèðîâàííîãî DIB",hTest);
+ LDPUMA_Registry(&hTestWriteMetafile,"Ð—Ð°Ð¿Ð¸ÑÑŒ Ð² Ð¼ÐµÑ‚Ð°Ñ„Ð°Ð¹Ð»",hTest);
+ LDPUMA_Registry(&hTestGetMaskDIB,"ÐŸÐ¾Ð»ÑƒÑ‡ÐµÐ½Ð¸Ñ Ð¼Ð°ÑÐºÐ¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ð¾Ð³Ð¾ DIB",hTest);
 
- LDPUMA_Registry(&hTestWriteED,"Çàïèñü â ED",hTest);
- LDPUMA_Registry(&hTestEnd,"Â êîíöå ôóíêöèè",hTest);
- LDPUMA_Registry(&hTestDeleteImage,"Óäàëåíèå âðåìåííûõ èçîáðàæåíèé",hTest);
+ LDPUMA_Registry(&hTestWriteED,"Ð—Ð°Ð¿Ð¸ÑÑŒ Ð² ED",hTest);
+ LDPUMA_Registry(&hTestEnd,"Ð’ ÐºÐ¾Ð½Ñ†Ðµ Ñ„ÑƒÐ½ÐºÑ†Ð¸Ð¸",hTest);
+ LDPUMA_Registry(&hTestDeleteImage,"Ð£Ð´Ð°Ð»ÐµÐ½Ð¸Ðµ Ð²Ñ€ÐµÐ¼ÐµÐ½Ð½Ñ‹Ñ… Ð¸Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ð¹",hTest);
 
-// LDPUMA_Registry (&hUseCLine,"Ðàáîòà ñ êîíòåéíåðîì ëèíèé", NULL);
+// LDPUMA_Registry (&hUseCLine,"Ð Ð°Ð±Ð¾Ñ‚Ð° Ñ ÐºÐ¾Ð½Ñ‚ÐµÐ¹Ð½ÐµÑ€Ð¾Ð¼ Ð»Ð¸Ð½Ð¸Ð¹", NULL);
 
 
  gwHeightRC = wHeightCode;
@@ -189,18 +189,18 @@ RFRMT_FUNC(Bool32) RFRMT_Done()
 }
 //////////////////////////////////////////////////////////////////////////////////
 //
-RFRMT_FUNC(Word32) RFRMT_GetReturnCode()
+RFRMT_FUNC(uint32_t) RFRMT_GetReturnCode()
 {
- Word32 rc = 0;
+ uint32_t rc = 0;
 
  if((gwLowRC - IDS_ERR_NO)>0)
-	rc = (Word32)(gwHeightRC<<16)|(gwLowRC - IDS_ERR_NO);
+	rc = (uint32_t)(gwHeightRC<<16)|(gwLowRC - IDS_ERR_NO);
 
  return rc;
 }
 //////////////////////////////////////////////////////////////////////////////////
 //
-RFRMT_FUNC(Int8 *) RFRMT_GetReturnString(Word32 dwError)
+RFRMT_FUNC(Int8 *) RFRMT_GetReturnString(uint32_t dwError)
 {
  Word16 rc = (Word16)(dwError & 0xFFFF) + IDS_ERR_NO;
  static Int8 szBuffer[512];
@@ -217,7 +217,7 @@ RFRMT_FUNC(Int8 *) RFRMT_GetReturnString(Word32 dwError)
 }
 //////////////////////////////////////////////////////////////////////////////////
 //
-RFRMT_FUNC(Bool32) RFRMT_GetExportData(Word32 dwType, void * pData)
+RFRMT_FUNC(Bool32) RFRMT_GetExportData(uint32_t dwType, void * pData)
 {
  Bool32 rc = TRUE;
 
@@ -247,7 +247,7 @@ return rc;
 }
 //////////////////////////////////////////////////////////////////////////////////
 //
-RFRMT_FUNC(Bool32) RFRMT_SetImportData(Word32 dwType, const void * pData)
+RFRMT_FUNC(Bool32) RFRMT_SetImportData(uint32_t dwType, const void * pData)
 {
  Bool32 rc = TRUE;
 
@@ -260,12 +260,12 @@ RFRMT_FUNC(Bool32) RFRMT_SetImportData(Word32 dwType, const void * pData)
 	CASE_DATA(RFRMT_Bool32_Bold,Bool32,gbBold);
 	CASE_DATA(RFRMT_Bool32_Italic,Bool32,gbItalic);
 	CASE_DATA(RFRMT_Bool32_Size,Bool32,gbSize);
-	CASE_DATA(RFRMT_Word32_Format,Word32,gnFormat);
+	CASE_DATA(RFRMT_Word32_Format,uint32_t,gnFormat);
 	CASE_PDATA(RFRMT_char_SerifName,const char *,gpSerifName);
 	CASE_PDATA(RFRMT_char_SansSerifName,const char *,gpSansSerifName);
 	CASE_PDATA(RFRMT_char_CourierName,const char *,gpCourierName);
 	CASE_DATA(RFRMT_Word8_UnRecogSymbol,Word8,UnRecogSymbol);
-	CASE_DATA(RFRMT_Word32_Language,Word32,gnLanguage);// !!!Art - ÿçûê ðàñïîçíàâàíèÿ ïîíàäîáèëñÿ äëÿ óìîë÷àíèÿ â ðåäàêòîð
+	CASE_DATA(RFRMT_Word32_Language,uint32_t,gnLanguage);// !!!Art - ÑÐ·Ñ‹Ðº Ñ€Ð°ÑÐ¿Ð¾Ð·Ð½Ð°Ð²Ð°Ð½Ð¸Ñ Ð¿Ð¾Ð½Ð°Ð´Ð¾Ð±Ð¸Ð»ÑÑ Ð´Ð»Ñ ÑƒÐ¼Ð¾Ð»Ñ‡Ð°Ð½Ð¸Ñ Ð² Ñ€ÐµÐ´Ð°ÐºÑ‚Ð¾Ñ€
 	 default:
 		gwLowRC = IDS_ERR_NOTIMPLEMENT;
 		rc = FALSE;

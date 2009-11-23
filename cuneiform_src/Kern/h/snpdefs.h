@@ -2,33 +2,33 @@
 Copyright (c) 1993-2008, Cognitive Technologies
 All rights reserved.
 
-Разрешается повторное распространение и использование как в виде исходного кода,
-так и в двоичной форме, с изменениями или без, при соблюдении следующих условий:
+Р Р°Р·СЂРµС€Р°РµС‚СЃСЏ РїРѕРІС‚РѕСЂРЅРѕРµ СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРµ Рё РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ РєР°Рє РІ РІРёРґРµ РёСЃС…РѕРґРЅРѕРіРѕ РєРѕРґР°,
+С‚Р°Рє Рё РІ РґРІРѕРёС‡РЅРѕР№ С„РѕСЂРјРµ, СЃ РёР·РјРµРЅРµРЅРёСЏРјРё РёР»Рё Р±РµР·, РїСЂРё СЃРѕР±Р»СЋРґРµРЅРёРё СЃР»РµРґСѓСЋС‰РёС… СѓСЃР»РѕРІРёР№:
 
-      * При повторном распространении исходного кода должны оставаться указанное
-        выше уведомление об авторском праве, этот список условий и последующий
-        отказ от гарантий.
-      * При повторном распространении двоичного кода в документации и/или в
-        других материалах, поставляемых при распространении, должны сохраняться
-        указанная выше информация об авторском праве, этот список условий и
-        последующий отказ от гарантий.
-      * Ни название Cognitive Technologies, ни имена ее сотрудников не могут
-        быть использованы в качестве средства поддержки и/или продвижения
-        продуктов, основанных на этом ПО, без предварительного письменного
-        разрешения.
+      * РџСЂРё РїРѕРІС‚РѕСЂРЅРѕРј СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё РёСЃС…РѕРґРЅРѕРіРѕ РєРѕРґР° РґРѕР»Р¶РЅС‹ РѕСЃС‚Р°РІР°С‚СЊСЃСЏ СѓРєР°Р·Р°РЅРЅРѕРµ
+        РІС‹С€Рµ СѓРІРµРґРѕРјР»РµРЅРёРµ РѕР± Р°РІС‚РѕСЂСЃРєРѕРј РїСЂР°РІРµ, СЌС‚РѕС‚ СЃРїРёСЃРѕРє СѓСЃР»РѕРІРёР№ Рё РїРѕСЃР»РµРґСѓСЋС‰РёР№
+        РѕС‚РєР°Р· РѕС‚ РіР°СЂР°РЅС‚РёР№.
+      * РџСЂРё РїРѕРІС‚РѕСЂРЅРѕРј СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё РґРІРѕРёС‡РЅРѕРіРѕ РєРѕРґР° РІ РґРѕРєСѓРјРµРЅС‚Р°С†РёРё Рё/РёР»Рё РІ
+        РґСЂСѓРіРёС… РјР°С‚РµСЂРёР°Р»Р°С…, РїРѕСЃС‚Р°РІР»СЏРµРјС‹С… РїСЂРё СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё, РґРѕР»Р¶РЅС‹ СЃРѕС…СЂР°РЅСЏС‚СЊСЃСЏ
+        СѓРєР°Р·Р°РЅРЅР°СЏ РІС‹С€Рµ РёРЅС„РѕСЂРјР°С†РёСЏ РѕР± Р°РІС‚РѕСЂСЃРєРѕРј РїСЂР°РІРµ, СЌС‚РѕС‚ СЃРїРёСЃРѕРє СѓСЃР»РѕРІРёР№ Рё
+        РїРѕСЃР»РµРґСѓСЋС‰РёР№ РѕС‚РєР°Р· РѕС‚ РіР°СЂР°РЅС‚РёР№.
+      * РќРё РЅР°Р·РІР°РЅРёРµ Cognitive Technologies, РЅРё РёРјРµРЅР° РµРµ СЃРѕС‚СЂСѓРґРЅРёРєРѕРІ РЅРµ РјРѕРіСѓС‚
+        Р±С‹С‚СЊ РёСЃРїРѕР»СЊР·РѕРІР°РЅС‹ РІ РєР°С‡РµСЃС‚РІРµ СЃСЂРµРґСЃС‚РІР° РїРѕРґРґРµСЂР¶РєРё Рё/РёР»Рё РїСЂРѕРґРІРёР¶РµРЅРёСЏ
+        РїСЂРѕРґСѓРєС‚РѕРІ, РѕСЃРЅРѕРІР°РЅРЅС‹С… РЅР° СЌС‚РѕРј РџРћ, Р±РµР· РїСЂРµРґРІР°СЂРёС‚РµР»СЊРЅРѕРіРѕ РїРёСЃСЊРјРµРЅРЅРѕРіРѕ
+        СЂР°Р·СЂРµС€РµРЅРёСЏ.
 
-ЭТА ПРОГРАММА ПРЕДОСТАВЛЕНА ВЛАДЕЛЬЦАМИ АВТОРСКИХ ПРАВ И/ИЛИ ДРУГИМИ ЛИЦАМИ "КАК
-ОНА ЕСТЬ" БЕЗ КАКОГО-ЛИБО ВИДА ГАРАНТИЙ, ВЫРАЖЕННЫХ ЯВНО ИЛИ ПОДРАЗУМЕВАЕМЫХ,
-ВКЛЮЧАЯ ГАРАНТИИ КОММЕРЧЕСКОЙ ЦЕННОСТИ И ПРИГОДНОСТИ ДЛЯ КОНКРЕТНОЙ ЦЕЛИ, НО НЕ
-ОГРАНИЧИВАЯСЬ ИМИ. НИ ВЛАДЕЛЕЦ АВТОРСКИХ ПРАВ И НИ ОДНО ДРУГОЕ ЛИЦО, КОТОРОЕ
-МОЖЕТ ИЗМЕНЯТЬ И/ИЛИ ПОВТОРНО РАСПРОСТРАНЯТЬ ПРОГРАММУ, НИ В КОЕМ СЛУЧАЕ НЕ
-НЕСЁТ ОТВЕТСТВЕННОСТИ, ВКЛЮЧАЯ ЛЮБЫЕ ОБЩИЕ, СЛУЧАЙНЫЕ, СПЕЦИАЛЬНЫЕ ИЛИ
-ПОСЛЕДОВАВШИЕ УБЫТКИ, СВЯЗАННЫЕ С ИСПОЛЬЗОВАНИЕМ ИЛИ ПОНЕСЕННЫЕ ВСЛЕДСТВИЕ
-НЕВОЗМОЖНОСТИ ИСПОЛЬЗОВАНИЯ ПРОГРАММЫ (ВКЛЮЧАЯ ПОТЕРИ ДАННЫХ, ИЛИ ДАННЫЕ,
-СТАВШИЕ НЕГОДНЫМИ, ИЛИ УБЫТКИ И/ИЛИ ПОТЕРИ ДОХОДОВ, ПОНЕСЕННЫЕ ИЗ-ЗА ДЕЙСТВИЙ
-ТРЕТЬИХ ЛИЦ И/ИЛИ ОТКАЗА ПРОГРАММЫ РАБОТАТЬ СОВМЕСТНО С ДРУГИМИ ПРОГРАММАМИ,
-НО НЕ ОГРАНИЧИВАЯСЬ ЭТИМИ СЛУЧАЯМИ), НО НЕ ОГРАНИЧИВАЯСЬ ИМИ, ДАЖЕ ЕСЛИ ТАКОЙ
-ВЛАДЕЛЕЦ ИЛИ ДРУГОЕ ЛИЦО БЫЛИ ИЗВЕЩЕНЫ О ВОЗМОЖНОСТИ ТАКИХ УБЫТКОВ И ПОТЕРЬ.
+Р­РўРђ РџР РћР“Р РђРњРњРђ РџР Р•Р”РћРЎРўРђР’Р›Р•РќРђ Р’Р›РђР”Р•Р›Р¬Р¦РђРњР РђР’РўРћР РЎРљРРҐ РџР РђР’ Р/РР›Р Р”Р РЈР“РРњР Р›РР¦РђРњР "РљРђРљ
+РћРќРђ Р•РЎРўР¬" Р‘Р•Р— РљРђРљРћР“Рћ-Р›РР‘Рћ Р’РР”Рђ Р“РђР РђРќРўРР™, Р’Р«Р РђР–Р•РќРќР«РҐ РЇР’РќРћ РР›Р РџРћР”Р РђР—РЈРњР•Р’РђР•РњР«РҐ,
+Р’РљР›Р®Р§РђРЇ Р“РђР РђРќРўРР РљРћРњРњР•Р Р§Р•РЎРљРћР™ Р¦Р•РќРќРћРЎРўР Р РџР РР“РћР”РќРћРЎРўР Р”Р›РЇ РљРћРќРљР Р•РўРќРћР™ Р¦Р•Р›Р, РќРћ РќР•
+РћР“Р РђРќРР§РР’РђРЇРЎР¬ РРњР. РќР Р’Р›РђР”Р•Р›Р•Р¦ РђР’РўРћР РЎРљРРҐ РџР РђР’ Р РќР РћР”РќРћ Р”Р РЈР“РћР• Р›РР¦Рћ, РљРћРўРћР РћР•
+РњРћР–Р•Рў РР—РњР•РќРЇРўР¬ Р/РР›Р РџРћР’РўРћР РќРћ Р РђРЎРџР РћРЎРўР РђРќРЇРўР¬ РџР РћР“Р РђРњРњРЈ, РќР Р’ РљРћР•Рњ РЎР›РЈР§РђР• РќР•
+РќР•РЎРЃРў РћРўР’Р•РўРЎРўР’Р•РќРќРћРЎРўР, Р’РљР›Р®Р§РђРЇ Р›Р®Р‘Р«Р• РћР‘Р©РР•, РЎР›РЈР§РђР™РќР«Р•, РЎРџР•Р¦РРђР›Р¬РќР«Р• РР›Р
+РџРћРЎР›Р•Р”РћР’РђР’РЁРР• РЈР‘Р«РўРљР, РЎР’РЇР—РђРќРќР«Р• РЎ РРЎРџРћР›Р¬Р—РћР’РђРќРР•Рњ РР›Р РџРћРќР•РЎР•РќРќР«Р• Р’РЎР›Р•Р”РЎРўР’РР•
+РќР•Р’РћР—РњРћР–РќРћРЎРўР РРЎРџРћР›Р¬Р—РћР’РђРќРРЇ РџР РћР“Р РђРњРњР« (Р’РљР›Р®Р§РђРЇ РџРћРўР•Р Р Р”РђРќРќР«РҐ, РР›Р Р”РђРќРќР«Р•,
+РЎРўРђР’РЁРР• РќР•Р“РћР”РќР«РњР, РР›Р РЈР‘Р«РўРљР Р/РР›Р РџРћРўР•Р Р Р”РћРҐРћР”РћР’, РџРћРќР•РЎР•РќРќР«Р• РР—-Р—Рђ Р”Р•Р™РЎРўР’РР™
+РўР Р•РўР¬РРҐ Р›РР¦ Р/РР›Р РћРўРљРђР—Рђ РџР РћР“Р РђРњРњР« Р РђР‘РћРўРђРўР¬ РЎРћР’РњР•РЎРўРќРћ РЎ Р”Р РЈР“РРњР РџР РћР“Р РђРњРњРђРњР,
+РќРћ РќР• РћР“Р РђРќРР§РР’РђРЇРЎР¬ Р­РўРРњР РЎР›РЈР§РђРЇРњР), РќРћ РќР• РћР“Р РђРќРР§РР’РђРЇРЎР¬ РРњР, Р”РђР–Р• Р•РЎР›Р РўРђРљРћР™
+Р’Р›РђР”Р•Р›Р•Р¦ РР›Р Р”Р РЈР“РћР• Р›РР¦Рћ Р‘Р«Р›Р РР—Р’Р•Р©Р•РќР« Рћ Р’РћР—РњРћР–РќРћРЎРўР РўРђРљРРҐ РЈР‘Р«РўРљРћР’ Р РџРћРўР•Р Р¬.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
@@ -91,7 +91,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
    ////////////////////////////////////////////////
    // Public Attributes
    CppPublic
-      Word32         Status;
+      uint32_t         Status;
          // zero - not active node
          #define STN_DRAW           0x00000001L  // some drawing permitted by user
          #define STN_STOP           0x00000002L  // stopping permitted by user
@@ -104,10 +104,10 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
      char           Name[64];
 
-      Word32         UserLocal;
+      uint32_t         UserLocal;
          // for local usage
 
-      Word32         hTreeCtrl;
+      uint32_t         hTreeCtrl;
          // handle of proper TreeCtrl item, don't touch!
 
    /////////////////////////////////////////////////
@@ -143,23 +143,23 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
    // Iterability
 
    CppPrivate
-      Word32         IterTotal;
+      uint32_t         IterTotal;
          // set in dll when node is used inside loop
          // (if count of iteration is known);
          // does not control execution and nodes activation
          // used simply to bring information for user
 
-      Word32         IterCur;
+      uint32_t         IterCur;
          // used when node is located inside loop
          // should be set (in dll) to 0 at start of loop
          // and incremented at start of each iteration
 
-      Word32         IterParent;
+      uint32_t         IterParent;
          // if nonzero - node not activated;
          // increased by iterated parent node
          // to temporary disable activation
    CppPublic
-      Word32         IterStop;
+      uint32_t         IterStop;
          // normally set by user to activate
          // node when IterStop == IterCur
          // first iteration correspond to 1 (but not 0)
@@ -168,12 +168,12 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #if defined( __cplusplus ) && !defined( DPUMA_SNAP)
       public:
-         Word32 GetIterTotal() { return IterTotal; };
-         Word32 GetIterCur()   { return IterCur; };
-         Word32 GetIterParent(){ return IterParent; };
-         Word32 GetIterStop()  { return IterStop; };
+         uint32_t GetIterTotal() { return IterTotal; };
+         uint32_t GetIterCur()   { return IterCur; };
+         uint32_t GetIterParent(){ return IterParent; };
+         uint32_t GetIterStop()  { return IterStop; };
    friend        void   __SnpIterParent( SnpTreeNode* node, Bool activate );
-   friend        void    SnpStartLoop( SnpTreeNode* node, Word32 iter_total );
+   friend        void    SnpStartLoop( SnpTreeNode* node, uint32_t iter_total );
    friend        void    SnpLoopNext( SnpTreeNode* node );
    friend        Bool16  SnpSkip( SnpTreeNode* node );
 #endif
@@ -194,9 +194,9 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
          // in image real coords
       Rect16* zone_rect,
          // in image real coords
-      Word32   users_zone_handle,
+      uint32_t   users_zone_handle,
          // one of the SetZoneOn() parameters
-      Word32   apps_zone_handle
+      uint32_t   apps_zone_handle
          // SetZoneOn() returned value
                         );
 
@@ -224,46 +224,46 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
    void (*FTDrawRect)( // adds rect to be drawn
       Rect16* rc,
          // in image ideal coords
-      Int32  skew,
+      int32_t  skew,
          // ideal-to-real coords skew (Tangens/1024)
-      Word32 rgb_color,
+      uint32_t rgb_color,
          // rect color, use "wrgb.h" if windows.h invisible
-      Int32 pen_width,
+      int32_t pen_width,
          // positive - absolute pen width in screen pixels
          // if zero - fills all rect
          // negative means final pen width == zoom*100/(-width),
          // f.e. -100 means one real image pixel width
-      Word32 key
+      uint32_t key
          // some unique nonzero number to be used later on call HideRects;
-         // usially address of proper SnpTreeNode casted to Word32
+         // usially address of proper SnpTreeNode casted to uint32_t
                      );
 
    typedef
    void (*FTHideRects)( // hides rects with specified key, 0-hides all
-      Word32 key
+      uint32_t key
                      );
 
    typedef
    void (*FTDrawLine)( // adds line to be drawn
       Point16* start, Point16* end,
          // in image ideal coords
-      Int32  skew,
+      int32_t  skew,
          // ideal-to-real coords skew (Tangens/1024)
-      Word32 rgb_color,
+      uint32_t rgb_color,
          // rect color, use "wrgb.h" if windows.h invisible
       Int16 pen_width,
          // positive - absolute pen width in screen pixels
          // if zero - no drawing
          // negative means: final pen width == zoom*100/(-width),
          // f.e. -100 means one real image pixel width
-      Word32 key
+      uint32_t key
          // some unique nonzero number to be used later on call HideLines
-         // usially address of proper SnpTreeNode casted to Word32
+         // usially address of proper SnpTreeNode casted to uint32_t
                      );
 
    typedef
    void (*FTHideLines)( // hides lines with specified key, 0-hides all
-      Word32 key
+      uint32_t key
                      );
 
    typedef
@@ -273,14 +273,14 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                           );
 
    typedef
-   Word32 (*FTSetZoneOn)(   // setup zone expected mouse input:
+   uint32_t (*FTSetZoneOn)(   // setup zone expected mouse input:
       Rect16*  zone_rect,
          // in image real coords
-      Word32   rgb_color,
+      uint32_t   rgb_color,
          // zone color, use "wrgb.h" if "windows.h" invisible
       char*    status_line_comment,
          // to be shown in status line when mouse moves in; may be NULL
-      Word32   users_zone_handle,
+      uint32_t   users_zone_handle,
          // user defined handle to be passed back by on_mouse_down(..user_zone_handle...)
       FTOnMouseDown  on_mouse_down
          // user's handler of "mouse down" event; may be NULL
@@ -289,7 +289,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
    typedef
    void (*FTSetZoneOff)( // turns zone off
-      Word32 zone_handle
+      uint32_t zone_handle
          // result of SetZoneOn
                        );
 
@@ -300,14 +300,14 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
    typedef Bool16 (*FTGetUserString)( // runs dialog to accept single string
       char * static_text,
       char * result_string,         // in - on start, out - result
-      Word32 result_string_length   // max length
+      uint32_t result_string_length   // max length
                                     );
       // returns FALSE if user cancel
       // in this case *result_long is not changed
 
-   typedef Bool16 (*FTGetUserLong)( // runs dialog to accept single Int32
+   typedef Bool16 (*FTGetUserLong)( // runs dialog to accept single int32_t
       char * static_text,
-      Int32 * result_long
+      int32_t * result_long
                                  );
       // returns FALSE if user cancel;
       // in this case *result_long is not changed
@@ -322,7 +322,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
          // point to be returned in image real coords
                                    );
 
-   typedef Word32 (*FTWaitUserInput)( // starts input loop
+   typedef uint32_t (*FTWaitUserInput)( // starts input loop
       SnpTreeNode* cur_node
          // current SnpTreeNode, used to correct following navigation
 									 );
@@ -513,7 +513,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                                     );
 
    typedef void   (*FTRasterHeader)( // header string with marked position
-      char *Text, Int32 mark         // to raster window
+      char *Text, int32_t mark         // to raster window
                                     );
 
    typedef void   (*FTZoomToRect)(   //zooms tiff window to given rectangle
@@ -562,7 +562,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       FTMessBoxOk       fMessBoxOk;     // invokes OK MessageBox
       FTMessBoxYesNo    fMessBoxYesNo;  // invokes Yes/No MessageBox
       FTGetUserString   fGetUserString; // runs dialog to accept zt string
-      FTGetUserLong     fGetUserLong;   // runs dialog to accept single Int32
+      FTGetUserLong     fGetUserLong;   // runs dialog to accept single int32_t
       FTGetUserRect     fGetUserRect;   // starts mouse rect input
       FTGetUserPoint    fGetUserPoint;  // starts mouse point input
       FTWaitUserInput   fWaitUserInput; // starts input loop

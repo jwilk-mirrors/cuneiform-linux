@@ -67,20 +67,19 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
 #include <string.h>
+#include <string>
+#include <sstream>
+#include <vector>
+
 #include "stdafx.h"
 #include "rout_own.h"
 #include "compat_defs.h"
-
-#include <string>
-#include <sstream>
-
-#include <vector>
 
 using namespace std;
 
 static BOOL Static_MakeHTML(Handle hObject, long reason);
 
-static BOOL FontStyle(ULONG newStyle);
+static BOOL FontStyle(ulong newStyle);
 static BOOL BeginParagraph(Handle hObject);
 static BOOL CellStart();
 static BOOL CalcCellSpan();
@@ -88,7 +87,7 @@ static BOOL OptimizeTags();
 static BOOL Picture();
 static BOOL CreatePageFilesFolder();
 
-static ULONG sFontStyle = 0;		// Стиль шрифта
+static ulong sFontStyle = 0;		// Стиль шрифта
 static long rowspan = 0, colspan = 0;
 static BOOL hocrmode = FALSE; // If true, print hOCR tags to output.
 
@@ -402,7 +401,7 @@ BOOL Static_MakeHTML(
 	return TRUE;	// Продолжить просмотр
 }
 //********************************************************************
-static BOOL FontStyle(ULONG newStyle)
+static BOOL FontStyle(ulong newStyle)
 {
 
 if ((newStyle & FONT_BOLD) &&
@@ -441,7 +440,7 @@ static BOOL BeginParagraph(Handle hObject)
 	const char *p = NULL;
 	char buf[80] = "";
         edBox b = CED_GetLayout(hObject);
-        ULONG alignment = CED_GetAlignment(hObject);
+        ulong alignment = CED_GetAlignment(hObject);
 
         switch (alignment & ALIGN_MASK)	{
 	case ALIGN_CENTER:
@@ -639,7 +638,7 @@ static BOOL CreatePageFilesFolder() {
     else
         sprintf(path, "%s", gPageFilesFolder);
     if (CreateDirectory(&path[0], 0) == FALSE) {
-        DWORD err = GetLastError();
+        uint32_t err = GetLastError();
         if (err != ERROR_ALREADY_EXISTS) {
             DEBUG_PRINT("CreatePageFilesFolder error = %d",err);
             return FALSE;

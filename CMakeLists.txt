@@ -25,5 +25,7 @@ endif()
 
 include(install_files.cmake)
 
+#add_subdirectory(tests)
 add_subdirectory(datafiles)
 add_subdirectory(cuneiform_src)
+

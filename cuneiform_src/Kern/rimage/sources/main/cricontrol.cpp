@@ -2,33 +2,33 @@
 Copyright (c) 1993-2008, Cognitive Technologies
 All rights reserved.
 
-Ðàçðåøàåòñÿ ïîâòîðíîå ðàñïðîñòðàíåíèå è èñïîëüçîâàíèå êàê â âèäå èñõîäíîãî êîäà,
-òàê è â äâîè÷íîé ôîðìå, ñ èçìåíåíèÿìè èëè áåç, ïðè ñîáëþäåíèè ñëåäóþùèõ óñëîâèé:
+Ð Ð°Ð·Ñ€ÐµÑˆÐ°ÐµÑ‚ÑÑ Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€Ð½Ð¾Ðµ Ñ€Ð°ÑÐ¿Ñ€Ð¾ÑÑ‚Ñ€Ð°Ð½ÐµÐ½Ð¸Ðµ Ð¸ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð² Ð²Ð¸Ð´Ðµ Ð¸ÑÑ…Ð¾Ð´Ð½Ð¾Ð³Ð¾ ÐºÐ¾Ð´Ð°,
+Ñ‚Ð°Ðº Ð¸ Ð² Ð´Ð²Ð¾Ð¸Ñ‡Ð½Ð¾Ð¹ Ñ„Ð¾Ñ€Ð¼Ðµ, Ñ Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸ÑÐ¼Ð¸ Ð¸Ð»Ð¸ Ð±ÐµÐ·, Ð¿Ñ€Ð¸ ÑÐ¾Ð±Ð»ÑŽÐ´ÐµÐ½Ð¸Ð¸ ÑÐ»ÐµÐ´ÑƒÑŽÑ‰Ð¸Ñ… ÑƒÑÐ»Ð¾Ð²Ð¸Ð¹:
 
-      * Ïðè ïîâòîðíîì ðàñïðîñòðàíåíèè èñõîäíîãî êîäà äîëæíû îñòàâàòüñÿ óêàçàííîå
-        âûøå óâåäîìëåíèå îá àâòîðñêîì ïðàâå, ýòîò ñïèñîê óñëîâèé è ïîñëåäóþùèé
-        îòêàç îò ãàðàíòèé.
-      * Ïðè ïîâòîðíîì ðàñïðîñòðàíåíèè äâîè÷íîãî êîäà â äîêóìåíòàöèè è/èëè â
-        äðóãèõ ìàòåðèàëàõ, ïîñòàâëÿåìûõ ïðè ðàñïðîñòðàíåíèè, äîëæíû ñîõðàíÿòüñÿ
-        óêàçàííàÿ âûøå èíôîðìàöèÿ îá àâòîðñêîì ïðàâå, ýòîò ñïèñîê óñëîâèé è
-        ïîñëåäóþùèé îòêàç îò ãàðàíòèé.
-      * Íè íàçâàíèå Cognitive Technologies, íè èìåíà åå ñîòðóäíèêîâ íå ìîãóò
-        áûòü èñïîëüçîâàíû â êà÷åñòâå ñðåäñòâà ïîääåðæêè è/èëè ïðîäâèæåíèÿ
-        ïðîäóêòîâ, îñíîâàííûõ íà ýòîì ÏÎ, áåç ïðåäâàðèòåëüíîãî ïèñüìåííîãî
-        ðàçðåøåíèÿ.
+      * ÐŸÑ€Ð¸ Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€Ð½Ð¾Ð¼ Ñ€Ð°ÑÐ¿Ñ€Ð¾ÑÑ‚Ñ€Ð°Ð½ÐµÐ½Ð¸Ð¸ Ð¸ÑÑ…Ð¾Ð´Ð½Ð¾Ð³Ð¾ ÐºÐ¾Ð´Ð° Ð´Ð¾Ð»Ð¶Ð½Ñ‹ Ð¾ÑÑ‚Ð°Ð²Ð°Ñ‚ÑŒÑÑ ÑƒÐºÐ°Ð·Ð°Ð½Ð½Ð¾Ðµ
+        Ð²Ñ‹ÑˆÐµ ÑƒÐ²ÐµÐ´Ð¾Ð¼Ð»ÐµÐ½Ð¸Ðµ Ð¾Ð± Ð°Ð²Ñ‚Ð¾Ñ€ÑÐºÐ¾Ð¼ Ð¿Ñ€Ð°Ð²Ðµ, ÑÑ‚Ð¾Ñ‚ ÑÐ¿Ð¸ÑÐ¾Ðº ÑƒÑÐ»Ð¾Ð²Ð¸Ð¹ Ð¸ Ð¿Ð¾ÑÐ»ÐµÐ´ÑƒÑŽÑ‰Ð¸Ð¹
+        Ð¾Ñ‚ÐºÐ°Ð· Ð¾Ñ‚ Ð³Ð°Ñ€Ð°Ð½Ñ‚Ð¸Ð¹.
+      * ÐŸÑ€Ð¸ Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€Ð½Ð¾Ð¼ Ñ€Ð°ÑÐ¿Ñ€Ð¾ÑÑ‚Ñ€Ð°Ð½ÐµÐ½Ð¸Ð¸ Ð´Ð²Ð¾Ð¸Ñ‡Ð½Ð¾Ð³Ð¾ ÐºÐ¾Ð´Ð° Ð² Ð´Ð¾ÐºÑƒÐ¼ÐµÐ½Ñ‚Ð°Ñ†Ð¸Ð¸ Ð¸/Ð¸Ð»Ð¸ Ð²
+        Ð´Ñ€ÑƒÐ³Ð¸Ñ… Ð¼Ð°Ñ‚ÐµÑ€Ð¸Ð°Ð»Ð°Ñ…, Ð¿Ð¾ÑÑ‚Ð°Ð²Ð»ÑÐµÐ¼Ñ‹Ñ… Ð¿Ñ€Ð¸ Ñ€Ð°ÑÐ¿Ñ€Ð¾ÑÑ‚Ñ€Ð°Ð½ÐµÐ½Ð¸Ð¸, Ð´Ð¾Ð»Ð¶Ð½Ñ‹ ÑÐ¾Ñ…Ñ€Ð°Ð½ÑÑ‚ÑŒÑÑ
+        ÑƒÐºÐ°Ð·Ð°Ð½Ð½Ð°Ñ Ð²Ñ‹ÑˆÐµ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð¾Ð± Ð°Ð²Ñ‚Ð¾Ñ€ÑÐºÐ¾Ð¼ Ð¿Ñ€Ð°Ð²Ðµ, ÑÑ‚Ð¾Ñ‚ ÑÐ¿Ð¸ÑÐ¾Ðº ÑƒÑÐ»Ð¾Ð²Ð¸Ð¹ Ð¸
+        Ð¿Ð¾ÑÐ»ÐµÐ´ÑƒÑŽÑ‰Ð¸Ð¹ Ð¾Ñ‚ÐºÐ°Ð· Ð¾Ñ‚ Ð³Ð°Ñ€Ð°Ð½Ñ‚Ð¸Ð¹.
+      * ÐÐ¸ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ðµ Cognitive Technologies, Ð½Ð¸ Ð¸Ð¼ÐµÐ½Ð° ÐµÐµ ÑÐ¾Ñ‚Ñ€ÑƒÐ´Ð½Ð¸ÐºÐ¾Ð² Ð½Ðµ Ð¼Ð¾Ð³ÑƒÑ‚
+        Ð±Ñ‹Ñ‚ÑŒ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ñ‹ Ð² ÐºÐ°Ñ‡ÐµÑÑ‚Ð²Ðµ ÑÑ€ÐµÐ´ÑÑ‚Ð²Ð° Ð¿Ð¾Ð´Ð´ÐµÑ€Ð¶ÐºÐ¸ Ð¸/Ð¸Ð»Ð¸ Ð¿Ñ€Ð¾Ð´Ð²Ð¸Ð¶ÐµÐ½Ð¸Ñ
+        Ð¿Ñ€Ð¾Ð´ÑƒÐºÑ‚Ð¾Ð², Ð¾ÑÐ½Ð¾Ð²Ð°Ð½Ð½Ñ‹Ñ… Ð½Ð° ÑÑ‚Ð¾Ð¼ ÐŸÐž, Ð±ÐµÐ· Ð¿Ñ€ÐµÐ´Ð²Ð°Ñ€Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾Ð³Ð¾ Ð¿Ð¸ÑÑŒÐ¼ÐµÐ½Ð½Ð¾Ð³Ð¾
+        Ñ€Ð°Ð·Ñ€ÐµÑˆÐµÐ½Ð¸Ñ.
 
-ÝÒÀ ÏÐÎÃÐÀÌÌÀ ÏÐÅÄÎÑÒÀÂËÅÍÀ ÂËÀÄÅËÜÖÀÌÈ ÀÂÒÎÐÑÊÈÕ ÏÐÀÂ È/ÈËÈ ÄÐÓÃÈÌÈ ËÈÖÀÌÈ "ÊÀÊ
-ÎÍÀ ÅÑÒÜ" ÁÅÇ ÊÀÊÎÃÎ-ËÈÁÎ ÂÈÄÀ ÃÀÐÀÍÒÈÉ, ÂÛÐÀÆÅÍÍÛÕ ßÂÍÎ ÈËÈ ÏÎÄÐÀÇÓÌÅÂÀÅÌÛÕ,
-ÂÊËÞ×Àß ÃÀÐÀÍÒÈÈ ÊÎÌÌÅÐ×ÅÑÊÎÉ ÖÅÍÍÎÑÒÈ È ÏÐÈÃÎÄÍÎÑÒÈ ÄËß ÊÎÍÊÐÅÒÍÎÉ ÖÅËÈ, ÍÎ ÍÅ
-ÎÃÐÀÍÈ×ÈÂÀßÑÜ ÈÌÈ. ÍÈ ÂËÀÄÅËÅÖ ÀÂÒÎÐÑÊÈÕ ÏÐÀÂ È ÍÈ ÎÄÍÎ ÄÐÓÃÎÅ ËÈÖÎ, ÊÎÒÎÐÎÅ
-ÌÎÆÅÒ ÈÇÌÅÍßÒÜ È/ÈËÈ ÏÎÂÒÎÐÍÎ ÐÀÑÏÐÎÑÒÐÀÍßÒÜ ÏÐÎÃÐÀÌÌÓ, ÍÈ Â ÊÎÅÌ ÑËÓ×ÀÅ ÍÅ
-ÍÅÑ¨Ò ÎÒÂÅÒÑÒÂÅÍÍÎÑÒÈ, ÂÊËÞ×Àß ËÞÁÛÅ ÎÁÙÈÅ, ÑËÓ×ÀÉÍÛÅ, ÑÏÅÖÈÀËÜÍÛÅ ÈËÈ
-ÏÎÑËÅÄÎÂÀÂØÈÅ ÓÁÛÒÊÈ, ÑÂßÇÀÍÍÛÅ Ñ ÈÑÏÎËÜÇÎÂÀÍÈÅÌ ÈËÈ ÏÎÍÅÑÅÍÍÛÅ ÂÑËÅÄÑÒÂÈÅ
-ÍÅÂÎÇÌÎÆÍÎÑÒÈ ÈÑÏÎËÜÇÎÂÀÍÈß ÏÐÎÃÐÀÌÌÛ (ÂÊËÞ×Àß ÏÎÒÅÐÈ ÄÀÍÍÛÕ, ÈËÈ ÄÀÍÍÛÅ,
-ÑÒÀÂØÈÅ ÍÅÃÎÄÍÛÌÈ, ÈËÈ ÓÁÛÒÊÈ È/ÈËÈ ÏÎÒÅÐÈ ÄÎÕÎÄÎÂ, ÏÎÍÅÑÅÍÍÛÅ ÈÇ-ÇÀ ÄÅÉÑÒÂÈÉ
-ÒÐÅÒÜÈÕ ËÈÖ È/ÈËÈ ÎÒÊÀÇÀ ÏÐÎÃÐÀÌÌÛ ÐÀÁÎÒÀÒÜ ÑÎÂÌÅÑÒÍÎ Ñ ÄÐÓÃÈÌÈ ÏÐÎÃÐÀÌÌÀÌÈ,
-ÍÎ ÍÅ ÎÃÐÀÍÈ×ÈÂÀßÑÜ ÝÒÈÌÈ ÑËÓ×ÀßÌÈ), ÍÎ ÍÅ ÎÃÐÀÍÈ×ÈÂÀßÑÜ ÈÌÈ, ÄÀÆÅ ÅÑËÈ ÒÀÊÎÉ
-ÂËÀÄÅËÅÖ ÈËÈ ÄÐÓÃÎÅ ËÈÖÎ ÁÛËÈ ÈÇÂÅÙÅÍÛ Î ÂÎÇÌÎÆÍÎÑÒÈ ÒÀÊÈÕ ÓÁÛÒÊÎÂ È ÏÎÒÅÐÜ.
+Ð­Ð¢Ð ÐŸÐ ÐžÐ“Ð ÐÐœÐœÐ ÐŸÐ Ð•Ð”ÐžÐ¡Ð¢ÐÐ’Ð›Ð•ÐÐ Ð’Ð›ÐÐ”Ð•Ð›Ð¬Ð¦ÐÐœÐ˜ ÐÐ’Ð¢ÐžÐ Ð¡ÐšÐ˜Ð¥ ÐŸÐ ÐÐ’ Ð˜/Ð˜Ð›Ð˜ Ð”Ð Ð£Ð“Ð˜ÐœÐ˜ Ð›Ð˜Ð¦ÐÐœÐ˜ "ÐšÐÐš
+ÐžÐÐ Ð•Ð¡Ð¢Ð¬" Ð‘Ð•Ð— ÐšÐÐšÐžÐ“Ðž-Ð›Ð˜Ð‘Ðž Ð’Ð˜Ð”Ð Ð“ÐÐ ÐÐÐ¢Ð˜Ð™, Ð’Ð«Ð ÐÐ–Ð•ÐÐÐ«Ð¥ Ð¯Ð’ÐÐž Ð˜Ð›Ð˜ ÐŸÐžÐ”Ð ÐÐ—Ð£ÐœÐ•Ð’ÐÐ•ÐœÐ«Ð¥,
+Ð’ÐšÐ›Ð®Ð§ÐÐ¯ Ð“ÐÐ ÐÐÐ¢Ð˜Ð˜ ÐšÐžÐœÐœÐ•Ð Ð§Ð•Ð¡ÐšÐžÐ™ Ð¦Ð•ÐÐÐžÐ¡Ð¢Ð˜ Ð˜ ÐŸÐ Ð˜Ð“ÐžÐ”ÐÐžÐ¡Ð¢Ð˜ Ð”Ð›Ð¯ ÐšÐžÐÐšÐ Ð•Ð¢ÐÐžÐ™ Ð¦Ð•Ð›Ð˜, ÐÐž ÐÐ•
+ÐžÐ“Ð ÐÐÐ˜Ð§Ð˜Ð’ÐÐ¯Ð¡Ð¬ Ð˜ÐœÐ˜. ÐÐ˜ Ð’Ð›ÐÐ”Ð•Ð›Ð•Ð¦ ÐÐ’Ð¢ÐžÐ Ð¡ÐšÐ˜Ð¥ ÐŸÐ ÐÐ’ Ð˜ ÐÐ˜ ÐžÐ”ÐÐž Ð”Ð Ð£Ð“ÐžÐ• Ð›Ð˜Ð¦Ðž, ÐšÐžÐ¢ÐžÐ ÐžÐ•
+ÐœÐžÐ–Ð•Ð¢ Ð˜Ð—ÐœÐ•ÐÐ¯Ð¢Ð¬ Ð˜/Ð˜Ð›Ð˜ ÐŸÐžÐ’Ð¢ÐžÐ ÐÐž Ð ÐÐ¡ÐŸÐ ÐžÐ¡Ð¢Ð ÐÐÐ¯Ð¢Ð¬ ÐŸÐ ÐžÐ“Ð ÐÐœÐœÐ£, ÐÐ˜ Ð’ ÐšÐžÐ•Ðœ Ð¡Ð›Ð£Ð§ÐÐ• ÐÐ•
+ÐÐ•Ð¡ÐÐ¢ ÐžÐ¢Ð’Ð•Ð¢Ð¡Ð¢Ð’Ð•ÐÐÐžÐ¡Ð¢Ð˜, Ð’ÐšÐ›Ð®Ð§ÐÐ¯ Ð›Ð®Ð‘Ð«Ð• ÐžÐ‘Ð©Ð˜Ð•, Ð¡Ð›Ð£Ð§ÐÐ™ÐÐ«Ð•, Ð¡ÐŸÐ•Ð¦Ð˜ÐÐ›Ð¬ÐÐ«Ð• Ð˜Ð›Ð˜
+ÐŸÐžÐ¡Ð›Ð•Ð”ÐžÐ’ÐÐ’Ð¨Ð˜Ð• Ð£Ð‘Ð«Ð¢ÐšÐ˜, Ð¡Ð’Ð¯Ð—ÐÐÐÐ«Ð• Ð¡ Ð˜Ð¡ÐŸÐžÐ›Ð¬Ð—ÐžÐ’ÐÐÐ˜Ð•Ðœ Ð˜Ð›Ð˜ ÐŸÐžÐÐ•Ð¡Ð•ÐÐÐ«Ð• Ð’Ð¡Ð›Ð•Ð”Ð¡Ð¢Ð’Ð˜Ð•
+ÐÐ•Ð’ÐžÐ—ÐœÐžÐ–ÐÐžÐ¡Ð¢Ð˜ Ð˜Ð¡ÐŸÐžÐ›Ð¬Ð—ÐžÐ’ÐÐÐ˜Ð¯ ÐŸÐ ÐžÐ“Ð ÐÐœÐœÐ« (Ð’ÐšÐ›Ð®Ð§ÐÐ¯ ÐŸÐžÐ¢Ð•Ð Ð˜ Ð”ÐÐÐÐ«Ð¥, Ð˜Ð›Ð˜ Ð”ÐÐÐÐ«Ð•,
+Ð¡Ð¢ÐÐ’Ð¨Ð˜Ð• ÐÐ•Ð“ÐžÐ”ÐÐ«ÐœÐ˜, Ð˜Ð›Ð˜ Ð£Ð‘Ð«Ð¢ÐšÐ˜ Ð˜/Ð˜Ð›Ð˜ ÐŸÐžÐ¢Ð•Ð Ð˜ Ð”ÐžÐ¥ÐžÐ”ÐžÐ’, ÐŸÐžÐÐ•Ð¡Ð•ÐÐÐ«Ð• Ð˜Ð—-Ð—Ð Ð”Ð•Ð™Ð¡Ð¢Ð’Ð˜Ð™
+Ð¢Ð Ð•Ð¢Ð¬Ð˜Ð¥ Ð›Ð˜Ð¦ Ð˜/Ð˜Ð›Ð˜ ÐžÐ¢ÐšÐÐ—Ð ÐŸÐ ÐžÐ“Ð ÐÐœÐœÐ« Ð ÐÐ‘ÐžÐ¢ÐÐ¢Ð¬ Ð¡ÐžÐ’ÐœÐ•Ð¡Ð¢ÐÐž Ð¡ Ð”Ð Ð£Ð“Ð˜ÐœÐ˜ ÐŸÐ ÐžÐ“Ð ÐÐœÐœÐÐœÐ˜,
+ÐÐž ÐÐ• ÐžÐ“Ð ÐÐÐ˜Ð§Ð˜Ð’ÐÐ¯Ð¡Ð¬ Ð­Ð¢Ð˜ÐœÐ˜ Ð¡Ð›Ð£Ð§ÐÐ¯ÐœÐ˜), ÐÐž ÐÐ• ÐžÐ“Ð ÐÐÐ˜Ð§Ð˜Ð’ÐÐ¯Ð¡Ð¬ Ð˜ÐœÐ˜, Ð”ÐÐ–Ð• Ð•Ð¡Ð›Ð˜ Ð¢ÐÐšÐžÐ™
+Ð’Ð›ÐÐ”Ð•Ð›Ð•Ð¦ Ð˜Ð›Ð˜ Ð”Ð Ð£Ð“ÐžÐ• Ð›Ð˜Ð¦Ðž Ð‘Ð«Ð›Ð˜ Ð˜Ð—Ð’Ð•Ð©Ð•ÐÐ« Ðž Ð’ÐžÐ—ÐœÐžÐ–ÐÐžÐ¡Ð¢Ð˜ Ð¢ÐÐšÐ˜Ð¥ Ð£Ð‘Ð«Ð¢ÐšÐžÐ’ Ð˜ ÐŸÐžÐ¢Ð•Ð Ð¬.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
@@ -59,8 +59,8 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 //
 //
-//   Èñïîëüçîâàòü
-//   Âåðñèè:     CImage.dll - 31 Jan 2000
+//   Ð˜ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÑŒ
+//   Ð’ÐµÑ€ÑÐ¸Ð¸:     CImage.dll - 31 Jan 2000
 //               RDIB.dll   - 31 Jan 2000
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 #include "cricontrol.h"
@@ -132,11 +132,11 @@ Bool32 CRIControl::SetMargins(PRIMAGEMARGINS pMargins)
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-Bool32 CRIControl::Binarise(PChar8 cDIBIn, PChar8 cDIBOut, Word32 wFlag, Word32 UseMargins)
+Bool32 CRIControl::Binarise(PChar8 cDIBIn, PChar8 cDIBOut, uint32_t wFlag, uint32_t UseMargins)
 {
 	Bool32 Ret = TRUE;
 	CTBinarize bType = CTBIN_UNKNOWN;
-	// îòêðûâàåì èñõîäíûé
+	// Ð¾Ñ‚ÐºÑ€Ñ‹Ð²Ð°ÐµÐ¼ Ð¸ÑÑ…Ð¾Ð´Ð½Ñ‹Ð¹
 	if ( !OpenSourceDIB(cDIBIn) )
 	{
 		return FALSE;
@@ -150,19 +150,19 @@ Bool32 CRIControl::Binarise(PChar8 cDIBIn, PChar8 cDIBOut, Word32 wFlag, Word32 
 		return FALSE;
     }
 		*/
-	// ñîçäàåì íîâûé
+	// ÑÐ¾Ð·Ð´Ð°ÐµÐ¼ Ð½Ð¾Ð²Ñ‹Ð¹
 	if ( ! CreateDestinatonDIB(1) )           // create DIB 1 bit per pixel
 	{
         CloseSourceDIB();
 		SetReturnCode_rimage(IDS_RIMAGE_CANNOT_CREATE_NEW_DIB);
 		return FALSE;
 	}
-	//îòêðûâàåì áèíàðèçàòîð
+	//Ð¾Ñ‚ÐºÑ€Ñ‹Ð²Ð°ÐµÐ¼ Ð±Ð¸Ð½Ð°Ñ€Ð¸Ð·Ð°Ñ‚Ð¾Ñ€
 	if ( !mpBinarizator )
 	{
 		mpBinarizator = new CRIBinarizator(&mcProgress);
 	}
-	// çàêèäûâàåì òóäà êàðòèíêè
+	// Ð·Ð°ÐºÐ¸Ð´Ñ‹Ð²Ð°ÐµÐ¼ Ñ‚ÑƒÐ´Ð° ÐºÐ°Ñ€Ñ‚Ð¸Ð½ÐºÐ¸
 	if ( !mpBinarizator->SetRasters(mpSourceDIB, mpDestinationDIB) )
 	{
 		SetReturnCode_rimage(IDS_RIMAGE_CANNOT_SET_DIB);
@@ -177,20 +177,20 @@ Bool32 CRIControl::Binarise(PChar8 cDIBIn, PChar8 cDIBOut, Word32 wFlag, Word32 
 	{
 		bType = CTBIN_KRONROD;
 	}
-	// áèíàðèçóåì
+	// Ð±Ð¸Ð½Ð°Ñ€Ð¸Ð·ÑƒÐµÐ¼
 	if ( !mpBinarizator->Binarize(bType, wFlag) )
 	{
 		SetReturnCode_rimage(IDS_RIMAGE_CANT_BINARYZE);
 		Ret = FALSE;
 	}
-	//îòïèñâàåì íîâûé â êîíòåéíåð è îñâîáîæäàåì
+	//Ð¾Ñ‚Ð¿Ð¸ÑÐ²Ð°ÐµÐ¼ Ð½Ð¾Ð²Ñ‹Ð¹ Ð² ÐºÐ¾Ð½Ñ‚ÐµÐ¹Ð½ÐµÑ€ Ð¸ Ð¾ÑÐ²Ð¾Ð±Ð¾Ð¶Ð´Ð°ÐµÐ¼
 	if ( !CloseDestinationDIB(cDIBOut) )
 	{
 		SetReturnCode_rimage(IDS_RIMAGE_UNDER_CONSTRUCTION);
 		Ret = FALSE;
 	}
 
-	//çàêðûâàåì èñõîäíûé
+	//Ð·Ð°ÐºÑ€Ñ‹Ð²Ð°ÐµÐ¼ Ð¸ÑÑ…Ð¾Ð´Ð½Ñ‹Ð¹
 	if ( !CloseSourceDIB() )
 	{
 		SetReturnCode_rimage(IDS_RIMAGE_UNDER_CONSTRUCTION);
@@ -200,12 +200,12 @@ Bool32 CRIControl::Binarise(PChar8 cDIBIn, PChar8 cDIBOut, Word32 wFlag, Word32 
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-Bool32 CRIControl::Rotate(PChar8  cDIBIn, PChar8  cDIBOut, Int32 High, Int32 Low, Word32 UseMargins)
+Bool32 CRIControl::Rotate(PChar8  cDIBIn, PChar8  cDIBOut, int32_t High, int32_t Low, uint32_t UseMargins)
 {
 	Bool32 Ret = TRUE;
 	Bool32 NoDest = FALSE;
 
-	// îòêðûâàåì èñõîäíûé
+	// Ð¾Ñ‚ÐºÑ€Ñ‹Ð²Ð°ÐµÐ¼ Ð¸ÑÑ…Ð¾Ð´Ð½Ñ‹Ð¹
 	if ( !OpenSourceDIB(cDIBIn) )
 	{
 		return FALSE;
@@ -219,20 +219,20 @@ Bool32 CRIControl::Rotate(PChar8  cDIBIn, PChar8  cDIBOut, Int32 High, Int32 Low
 
 	mpDestinationDIB = new CTDIB;
 
-	//îòêðûâàåì âåðòåëêó
+	//Ð¾Ñ‚ÐºÑ€Ñ‹Ð²Ð°ÐµÐ¼ Ð²ÐµÑ€Ñ‚ÐµÐ»ÐºÑƒ
 	if ( !mpRotator )
 	{
 		mpRotator = new CRRotator(&mcProgress);
 	}
 
-	// çàáûâàåì ñòàðîå èìÿ
+	// Ð·Ð°Ð±Ñ‹Ð²Ð°ÐµÐ¼ ÑÑ‚Ð°Ñ€Ð¾Ðµ Ð¸Ð¼Ñ
 	mcLastDIBName[0] = 0x0;
 
 	if ( !mpRotator->Rotate(mpSourceDIB, mpDestinationDIB, High, Low) )
 	{
 		Word16 wRet = GetReturnCode_rimage();
-// !!! Art Èçìåíèë - òåïåðü îíà çàíîñèò íå õåíäëû, à óêàçàòåëè, à òî ïàìÿòü óòåêàëà
-//ïî÷åìó-òî...
+// !!! Art Ð˜Ð·Ð¼ÐµÐ½Ð¸Ð» - Ñ‚ÐµÐ¿ÐµÑ€ÑŒ Ð¾Ð½Ð° Ð·Ð°Ð½Ð¾ÑÐ¸Ñ‚ Ð½Ðµ Ñ…ÐµÐ½Ð´Ð»Ñ‹, Ð° ÑƒÐºÐ°Ð·Ð°Ñ‚ÐµÐ»Ð¸, Ð° Ñ‚Ð¾ Ð¿Ð°Ð¼ÑÑ‚ÑŒ ÑƒÑ‚ÐµÐºÐ°Ð»Ð°
+//Ð¿Ð¾Ñ‡ÐµÐ¼Ñƒ-Ñ‚Ð¾...
 		//		Handle hDIBtoSet;
 		PVOID  pDIBtoSet;
 
@@ -258,7 +258,7 @@ Bool32 CRIControl::Rotate(PChar8  cDIBIn, PChar8  cDIBOut, Int32 High, Int32 Low
 		WriteDIBtoBMP("Allex.DIBAfterDeskew.bmp",mpDestinationDIB);
 	}
 
-	//îòïèñâàåì íîâûé â êîíòåéíåð è îñâîáîæäàåì
+	//Ð¾Ñ‚Ð¿Ð¸ÑÐ²Ð°ÐµÐ¼ Ð½Ð¾Ð²Ñ‹Ð¹ Ð² ÐºÐ¾Ð½Ñ‚ÐµÐ¹Ð½ÐµÑ€ Ð¸ Ð¾ÑÐ²Ð¾Ð±Ð¾Ð¶Ð´Ð°ÐµÐ¼
 	if ( !CloseDestinationDIB(cDIBOut) )
 	{
 		if ( NoDest == FALSE )
@@ -270,7 +270,7 @@ Bool32 CRIControl::Rotate(PChar8  cDIBIn, PChar8  cDIBOut, Int32 High, Int32 Low
 
 	strcpy(mcLastDIBName, cDIBOut);
 
-	//çàêðûâàåì èñõîäíûé
+	//Ð·Ð°ÐºÑ€Ñ‹Ð²Ð°ÐµÐ¼ Ð¸ÑÑ…Ð¾Ð´Ð½Ñ‹Ð¹
 	if ( !CloseSourceDIB() )
 	{
 		SetReturnCode_rimage(IDS_RIMAGE_UNDER_CONSTRUCTION);
@@ -280,10 +280,10 @@ Bool32 CRIControl::Rotate(PChar8  cDIBIn, PChar8  cDIBOut, Int32 High, Int32 Low
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-Bool32 CRIControl::Turn(PChar8  cDIBIn, PChar8  cDIBOut, Word32 wFlag, Word32 UseMargins)
+Bool32 CRIControl::Turn(PChar8  cDIBIn, PChar8  cDIBOut, uint32_t wFlag, uint32_t UseMargins)
 {
-	Int32     NewWidth;
-	Int32     NewHeight;
+	int32_t     NewWidth;
+	int32_t     NewHeight;
 	Bool32    bRet = FALSE;
 	//void *   pSDIB;
 
@@ -298,7 +298,7 @@ Bool32 CRIControl::Turn(PChar8  cDIBIn, PChar8  cDIBOut, Word32 wFlag, Word32 Us
 		SetReturnCode_rimage(IDS_RIMAGE_INTERNAL_MODULE_ERROR);
 		return FALSE;
 	}
-	// îòêðûâàåì èñõîäíûé
+	// Ð¾Ñ‚ÐºÑ€Ñ‹Ð²Ð°ÐµÐ¼ Ð¸ÑÑ…Ð¾Ð´Ð½Ñ‹Ð¹
 	if ( !OpenSourceDIB(cDIBIn) )
 	{
 		return FALSE;
@@ -312,13 +312,13 @@ Bool32 CRIControl::Turn(PChar8  cDIBIn, PChar8  cDIBOut, Word32 wFlag, Word32 Us
 		return FALSE;
 	}
 	*/
-	//îòêðûâàåì âåðòåëêó
+	//Ð¾Ñ‚ÐºÑ€Ñ‹Ð²Ð°ÐµÐ¼ Ð²ÐµÑ€Ñ‚ÐµÐ»ÐºÑƒ
 	if ( !mpTurner )
 	{
 		mpTurner = new CRTurner;
 	}
 
-	// ãåíåðèì íîâåíüêèé
+	// Ð³ÐµÐ½ÐµÑ€Ð¸Ð¼ Ð½Ð¾Ð²ÐµÐ½ÑŒÐºÐ¸Ð¹
 	if ( mpDestinationDIB )
 	{
 		SetReturnCode_rimage(IDS_RIMAGE_INTERNAL_MODULE_ERROR);
@@ -341,7 +341,7 @@ Bool32 CRIControl::Turn(PChar8  cDIBIn, PChar8  cDIBOut, Word32 wFlag, Word32 Us
 
 
 
-	// âåðòèì
+	// Ð²ÐµÑ€Ñ‚Ð¸Ð¼
 	/*
 	if ( !(mp_TurnedDIB = mpTurner->TurnDIB(pSDIB, wFlag)) )
 	{
@@ -351,7 +351,7 @@ Bool32 CRIControl::Turn(PChar8  cDIBIn, PChar8  cDIBOut, Word32 wFlag, Word32 Us
 	*/
 
 	/*
-	//îòïèñâàåì íîâûé â êîíòåéíåð è îñâîáîæäàåì
+	//Ð¾Ñ‚Ð¿Ð¸ÑÐ²Ð°ÐµÐ¼ Ð½Ð¾Ð²Ñ‹Ð¹ Ð² ÐºÐ¾Ð½Ñ‚ÐµÐ¹Ð½ÐµÑ€ Ð¸ Ð¾ÑÐ²Ð¾Ð±Ð¾Ð¶Ð´Ð°ÐµÐ¼
 	if ( !WriteDIB(cDIBOutt, mp_TurnedDIB) )
 	{
 		SetReturnCode_rimage(IDS_RIMAGE_UNABLE_WRITE_DIB);
@@ -366,13 +366,13 @@ Bool32 CRIControl::Turn(PChar8  cDIBIn, PChar8  cDIBOut, Word32 wFlag, Word32 Us
 
 	mp_TurnedDIB = NULL;
 	*/
-	//îòïèñâàåì íîâûé â êîíòåéíåð è îñâîáîæäàåì
+	//Ð¾Ñ‚Ð¿Ð¸ÑÐ²Ð°ÐµÐ¼ Ð½Ð¾Ð²Ñ‹Ð¹ Ð² ÐºÐ¾Ð½Ñ‚ÐµÐ¹Ð½ÐµÑ€ Ð¸ Ð¾ÑÐ²Ð¾Ð±Ð¾Ð¶Ð´Ð°ÐµÐ¼
 	if ( !CloseDestinationDIB(cDIBOut) )
 	{
 		SetReturnCode_rimage(IDS_RIMAGE_CANNT_SAVE_OUTCOMING_DIB);
 		bRet = FALSE;
 	}
-	//çàêðûâàåì èñõîäíûé
+	//Ð·Ð°ÐºÑ€Ñ‹Ð²Ð°ÐµÐ¼ Ð¸ÑÑ…Ð¾Ð´Ð½Ñ‹Ð¹
 	if ( !CloseSourceDIB() )
 	{
 		SetReturnCode_rimage(IDS_RIMAGE_UNDER_CONSTRUCTION);
@@ -382,30 +382,30 @@ Bool32 CRIControl::Turn(PChar8  cDIBIn, PChar8  cDIBOut, Word32 wFlag, Word32 Us
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-Bool32 CRIControl::Inverse(PChar8  cDIBIn, PChar8  cDIBOut, Word32 UseMargins)
+Bool32 CRIControl::Inverse(PChar8  cDIBIn, PChar8  cDIBOut, uint32_t UseMargins)
 {
 	Bool32    bErrors = TRUE;
-	// êîïèðóåì èç èñõîäíîãî DIB â îáðàáàòûâàåìûé
-	// ïîëó÷àåì çàïîëíåííûé mpDescinationDIB è ïóñòîé mpSourceDIB
+	// ÐºÐ¾Ð¿Ð¸Ñ€ÑƒÐµÐ¼ Ð¸Ð· Ð¸ÑÑ…Ð¾Ð´Ð½Ð¾Ð³Ð¾ DIB Ð² Ð¾Ð±Ñ€Ð°Ð±Ð°Ñ‚Ñ‹Ð²Ð°ÐµÐ¼Ñ‹Ð¹
+	// Ð¿Ð¾Ð»ÑƒÑ‡Ð°ÐµÐ¼ Ð·Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ð½Ñ‹Ð¹ mpDescinationDIB Ð¸ Ð¿ÑƒÑÑ‚Ð¾Ð¹ mpSourceDIB
 	if ( !OpenDestinationDIBfromSource( cDIBIn ) )
 	{
 		return FALSE;
 	}
 
-	//îòêðûâàåì èíâåðòîð
+	//Ð¾Ñ‚ÐºÑ€Ñ‹Ð²Ð°ÐµÐ¼ Ð¸Ð½Ð²ÐµÑ€Ñ‚Ð¾Ñ€
 	if ( !mpInvertor )
 	{
 		mpInvertor = new CRInvertor;
 	}
 
-	// Èíâåðòèðóåì
+	// Ð˜Ð½Ð²ÐµÑ€Ñ‚Ð¸Ñ€ÑƒÐµÐ¼
 	if ( !mpInvertor->Inverse(mpDestinationDIB) )
 	{
 		SetReturnCode_rimage(IDS_RIMAGE_CANNOT_INVERT_IMAGE);
 		bErrors = FALSE;
 	}
 
-	//îòïèñâàåì íîâûé â êîíòåéíåð è îñâîáîæäàåì
+	//Ð¾Ñ‚Ð¿Ð¸ÑÐ²Ð°ÐµÐ¼ Ð½Ð¾Ð²Ñ‹Ð¹ Ð² ÐºÐ¾Ð½Ñ‚ÐµÐ¹Ð½ÐµÑ€ Ð¸ Ð¾ÑÐ²Ð¾Ð±Ð¾Ð¶Ð´Ð°ÐµÐ¼
 	if ( !SetDestinationDIBtoStorage(cDIBOut) )
 	{
 		SetReturnCode_rimage(IDS_RIMAGE_UNABLE_WRITE_DIB);
@@ -415,10 +415,10 @@ Bool32 CRIControl::Inverse(PChar8  cDIBIn, PChar8  cDIBOut, Word32 UseMargins)
 	return bErrors;
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
-// âçÿòü áåç êîïèðîâûàíèÿ
+// Ð²Ð·ÑÑ‚ÑŒ Ð±ÐµÐ· ÐºÐ¾Ð¿Ð¸Ñ€Ð¾Ð²Ñ‹Ð°Ð½Ð¸Ñ
 Bool32 CRIControl::GetDIB(PChar8  cDIB, PHandle phDIB)
 {
-	// áåðåì ñ êîïèðîâàíèåì, ÷òî á ìàñêà áûëà!
+	// Ð±ÐµÑ€ÐµÐ¼ Ñ ÐºÐ¾Ð¿Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸ÐµÐ¼, Ñ‡Ñ‚Ð¾ Ð± Ð¼Ð°ÑÐºÐ° Ð±Ñ‹Ð»Ð°!
 	if ( CIMAGE_ReadDIB((PWord8)cDIB, phDIB, TRUE) )
 		return TRUE;
 
@@ -427,7 +427,7 @@ Bool32 CRIControl::GetDIB(PChar8  cDIB, PHandle phDIB)
 
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
-// ïîëîæèòü áåç êîïèðîâûàíèÿ
+// Ð¿Ð¾Ð»Ð¾Ð¶Ð¸Ñ‚ÑŒ Ð±ÐµÐ· ÐºÐ¾Ð¿Ð¸Ñ€Ð¾Ð²Ñ‹Ð°Ð½Ð¸Ñ
 Bool32 CRIControl::SetDIB(PChar8  cDIB, Handle hDIB)
 {
 	if ( CIMAGE_WriteDIB((PWord8)cDIB, hDIB, TRUE) )
@@ -437,7 +437,7 @@ Bool32 CRIControl::SetDIB(PChar8  cDIB, Handle hDIB)
 	return FALSE;
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
-// ïîëîæèòüü c êîïèðîâûàíèåì
+// Ð¿Ð¾Ð»Ð¾Ð¶Ð¸Ñ‚ÑŒÑŒ c ÐºÐ¾Ð¿Ð¸Ñ€Ð¾Ð²Ñ‹Ð°Ð½Ð¸ÐµÐ¼
 Bool32 CRIControl::WriteDIB(PChar8  cDIB, Handle hDIB)
 {
 	if ( CIMAGE_WriteDIB((PWord8)cDIB, hDIB, FALSE) )
@@ -447,7 +447,7 @@ Bool32 CRIControl::WriteDIB(PChar8  cDIB, Handle hDIB)
 	return FALSE;
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
-// âçÿòü ñ êîïèðîâûàíèåì
+// Ð²Ð·ÑÑ‚ÑŒ Ñ ÐºÐ¾Ð¿Ð¸Ñ€Ð¾Ð²Ñ‹Ð°Ð½Ð¸ÐµÐ¼
 Bool32 CRIControl::ReadDIB(PChar8  cDIB, PHandle phDIB)
 {
 	if ( CIMAGE_ReadDIB((PWord8)cDIB, phDIB, FALSE) )
@@ -511,7 +511,7 @@ Bool32 CRIControl::OpenSourceDIB(PChar8  cDIBName)
 	return TRUE;
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
-//Ñîçäàåì âðåìåííûé DIB êóäà îòïèøåì, ÷òî ïîëó÷èëè
+//Ð¡Ð¾Ð·Ð´Ð°ÐµÐ¼ Ð²Ñ€ÐµÐ¼ÐµÐ½Ð½Ñ‹Ð¹ DIB ÐºÑƒÐ´Ð° Ð¾Ñ‚Ð¿Ð¸ÑˆÐµÐ¼, Ñ‡Ñ‚Ð¾ Ð¿Ð¾Ð»ÑƒÑ‡Ð¸Ð»Ð¸
 Bool32 CRIControl::CloseDestinationDIB(PChar8  cDIBName)
 {
 	Handle hDIB = NULL;
@@ -568,12 +568,12 @@ Bool32 CRIControl::CloseDestinationDIB(PChar8  cDIBName)
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Creating new DIB by CTDIB class and 4 RIMAGE functions
-Bool32 CRIControl::CreateDestinatonDIB(Word32 BitCount)
+Bool32 CRIControl::CreateDestinatonDIB(uint32_t BitCount)
 {
-	Word32 wNewHeight;
-	Word32 wNewWidth;
-	Word32 wXResolution;
-	Word32 wYResolution;
+	uint32_t wNewHeight;
+	uint32_t wNewWidth;
+	uint32_t wXResolution;
+	uint32_t wYResolution;
 	CTDIBRGBQUAD       BWQuads[2] = {{0x00,0x00,0x00,0x00},{0xff,0xff,0xff,0x00} };
 
 
@@ -668,7 +668,7 @@ Bool32 CRIControl::SetDestinationDIBtoStorage(PChar8  cDIBName)
 	{
 		return CloseDestinationDIB(cDIBName);
 	}
-	// çàïèñûââàåì â áëîê âûäåëåíûé â CIMAGE ïðè îòêðûòèè
+	// Ð·Ð°Ð¿Ð¸ÑÑ‹Ð²Ð²Ð°ÐµÐ¼ Ð² Ð±Ð»Ð¾Ðº Ð²Ñ‹Ð´ÐµÐ»ÐµÐ½Ñ‹Ð¹ Ð² CIMAGE Ð¿Ñ€Ð¸ Ð¾Ñ‚ÐºÑ€Ñ‹Ñ‚Ð¸Ð¸
 	if ( mpDestinationDIB == NULL )
 		return FALSE;
 
@@ -695,11 +695,11 @@ Bool32 CRIControl::SetDestinationDIBtoStorage(PChar8  cDIBName)
 	return bErrors;
 }
 
-Bool32 CRIControl::Roll(PChar8 cDIBIn, PChar8 cDIBOut, Int32 Num, Int32 Denum, Word32 bUseMargins)
+Bool32 CRIControl::Roll(PChar8 cDIBIn, PChar8 cDIBOut, int32_t Num, int32_t Denum, uint32_t bUseMargins)
 {
 	Bool32 Ret = TRUE;
 
-	// îòêðûâàåì èñõîäíûé
+	// Ð¾Ñ‚ÐºÑ€Ñ‹Ð²Ð°ÐµÐ¼ Ð¸ÑÑ…Ð¾Ð´Ð½Ñ‹Ð¹
 	if ( !OpenSourceDIB(cDIBIn) )
 	{
 		return FALSE;
@@ -712,7 +712,7 @@ Bool32 CRIControl::Roll(PChar8 cDIBIn, PChar8 cDIBOut, Int32 Num, Int32 Denum, W
 	}
 	mpDestinationDIB = new CTDIB;
 
-	//îòêðûâàåì âåðòåëêó
+	//Ð¾Ñ‚ÐºÑ€Ñ‹Ð²Ð°ÐµÐ¼ Ð²ÐµÑ€Ñ‚ÐµÐ»ÐºÑƒ
 	if ( !mpRotator )
 	{
 		mpRotator = new CRRotator;
@@ -724,14 +724,14 @@ Bool32 CRIControl::Roll(PChar8 cDIBIn, PChar8 cDIBOut, Int32 Num, Int32 Denum, W
 		Ret = FALSE;
 	}
 
-	//îòïèñâàåì íîâûé â êîíòåéíåð è îñâîáîæäàåì
+	//Ð¾Ñ‚Ð¿Ð¸ÑÐ²Ð°ÐµÐ¼ Ð½Ð¾Ð²Ñ‹Ð¹ Ð² ÐºÐ¾Ð½Ñ‚ÐµÐ¹Ð½ÐµÑ€ Ð¸ Ð¾ÑÐ²Ð¾Ð±Ð¾Ð¶Ð´Ð°ÐµÐ¼
 	if ( !CloseDestinationDIB(cDIBOut) )
 	{
 		SetReturnCode_rimage(IDS_RIMAGE_CANNT_SAVE_OUTCOMING_DIB);
 		Ret = FALSE;
 	}
 
-	//çàêðûâàåì èñõîäíûé
+	//Ð·Ð°ÐºÑ€Ñ‹Ð²Ð°ÐµÐ¼ Ð¸ÑÑ…Ð¾Ð´Ð½Ñ‹Ð¹
 	if ( !CloseSourceDIB() )
 	{
 		SetReturnCode_rimage(IDS_RIMAGE_UNDER_CONSTRUCTION);
@@ -750,7 +750,7 @@ Bool32 CRIControl::StartProgress()
 	return mcProgress.Start();
 }
 
-Bool32 CRIControl::RotatePoint(PChar8 cDIB, Int32 iX, Int32 iY, PInt32 prX, PInt32 prY)
+Bool32 CRIControl::RotatePoint(PChar8 cDIB, int32_t iX, int32_t iY, int32_t * prX, int32_t * prY)
 {
 	Bool32 bRet = FALSE;
 
@@ -766,7 +766,7 @@ Bool32 CRIControl::WriteDIBtoBMP(const char *cName, PCTDIB pDIB)
 {
 #ifdef RIMAGE_DUMP_ENABLE
 
-	Word32  wBMPSize = pDIB->GetDIBSize() + 14;
+	uint32_t  wBMPSize = pDIB->GetDIBSize() + 14;
 	PumaMemoryToFileDumper BMPDump(cName);
 
 	BMPDump.AddDump("BM",2);

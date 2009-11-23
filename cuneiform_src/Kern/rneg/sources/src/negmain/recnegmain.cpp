@@ -2,33 +2,33 @@
 Copyright (c) 1993-2008, Cognitive Technologies
 All rights reserved.
 
-Разрешается повторное распространение и использование как в виде исходного кода,
-так и в двоичной форме, с изменениями или без, при соблюдении следующих условий:
+Р Р°Р·СЂРµС€Р°РµС‚СЃСЏ РїРѕРІС‚РѕСЂРЅРѕРµ СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРµ Рё РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ РєР°Рє РІ РІРёРґРµ РёСЃС…РѕРґРЅРѕРіРѕ РєРѕРґР°,
+С‚Р°Рє Рё РІ РґРІРѕРёС‡РЅРѕР№ С„РѕСЂРјРµ, СЃ РёР·РјРµРЅРµРЅРёСЏРјРё РёР»Рё Р±РµР·, РїСЂРё СЃРѕР±Р»СЋРґРµРЅРёРё СЃР»РµРґСѓСЋС‰РёС… СѓСЃР»РѕРІРёР№:
 
-      * При повторном распространении исходного кода должны оставаться указанное
-        выше уведомление об авторском праве, этот список условий и последующий
-        отказ от гарантий.
-      * При повторном распространении двоичного кода в документации и/или в
-        других материалах, поставляемых при распространении, должны сохраняться
-        указанная выше информация об авторском праве, этот список условий и
-        последующий отказ от гарантий.
-      * Ни название Cognitive Technologies, ни имена ее сотрудников не могут
-        быть использованы в качестве средства поддержки и/или продвижения
-        продуктов, основанных на этом ПО, без предварительного письменного
-        разрешения.
+      * РџСЂРё РїРѕРІС‚РѕСЂРЅРѕРј СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё РёСЃС…РѕРґРЅРѕРіРѕ РєРѕРґР° РґРѕР»Р¶РЅС‹ РѕСЃС‚Р°РІР°С‚СЊСЃСЏ СѓРєР°Р·Р°РЅРЅРѕРµ
+        РІС‹С€Рµ СѓРІРµРґРѕРјР»РµРЅРёРµ РѕР± Р°РІС‚РѕСЂСЃРєРѕРј РїСЂР°РІРµ, СЌС‚РѕС‚ СЃРїРёСЃРѕРє СѓСЃР»РѕРІРёР№ Рё РїРѕСЃР»РµРґСѓСЋС‰РёР№
+        РѕС‚РєР°Р· РѕС‚ РіР°СЂР°РЅС‚РёР№.
+      * РџСЂРё РїРѕРІС‚РѕСЂРЅРѕРј СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё РґРІРѕРёС‡РЅРѕРіРѕ РєРѕРґР° РІ РґРѕРєСѓРјРµРЅС‚Р°С†РёРё Рё/РёР»Рё РІ
+        РґСЂСѓРіРёС… РјР°С‚РµСЂРёР°Р»Р°С…, РїРѕСЃС‚Р°РІР»СЏРµРјС‹С… РїСЂРё СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё, РґРѕР»Р¶РЅС‹ СЃРѕС…СЂР°РЅСЏС‚СЊСЃСЏ
+        СѓРєР°Р·Р°РЅРЅР°СЏ РІС‹С€Рµ РёРЅС„РѕСЂРјР°С†РёСЏ РѕР± Р°РІС‚РѕСЂСЃРєРѕРј РїСЂР°РІРµ, СЌС‚РѕС‚ СЃРїРёСЃРѕРє СѓСЃР»РѕРІРёР№ Рё
+        РїРѕСЃР»РµРґСѓСЋС‰РёР№ РѕС‚РєР°Р· РѕС‚ РіР°СЂР°РЅС‚РёР№.
+      * РќРё РЅР°Р·РІР°РЅРёРµ Cognitive Technologies, РЅРё РёРјРµРЅР° РµРµ СЃРѕС‚СЂСѓРґРЅРёРєРѕРІ РЅРµ РјРѕРіСѓС‚
+        Р±С‹С‚СЊ РёСЃРїРѕР»СЊР·РѕРІР°РЅС‹ РІ РєР°С‡РµСЃС‚РІРµ СЃСЂРµРґСЃС‚РІР° РїРѕРґРґРµСЂР¶РєРё Рё/РёР»Рё РїСЂРѕРґРІРёР¶РµРЅРёСЏ
+        РїСЂРѕРґСѓРєС‚РѕРІ, РѕСЃРЅРѕРІР°РЅРЅС‹С… РЅР° СЌС‚РѕРј РџРћ, Р±РµР· РїСЂРµРґРІР°СЂРёС‚РµР»СЊРЅРѕРіРѕ РїРёСЃСЊРјРµРЅРЅРѕРіРѕ
+        СЂР°Р·СЂРµС€РµРЅРёСЏ.
 
-ЭТА ПРОГРАММА ПРЕДОСТАВЛЕНА ВЛАДЕЛЬЦАМИ АВТОРСКИХ ПРАВ И/ИЛИ ДРУГИМИ ЛИЦАМИ "КАК
-ОНА ЕСТЬ" БЕЗ КАКОГО-ЛИБО ВИДА ГАРАНТИЙ, ВЫРАЖЕННЫХ ЯВНО ИЛИ ПОДРАЗУМЕВАЕМЫХ,
-ВКЛЮЧАЯ ГАРАНТИИ КОММЕРЧЕСКОЙ ЦЕННОСТИ И ПРИГОДНОСТИ ДЛЯ КОНКРЕТНОЙ ЦЕЛИ, НО НЕ
-ОГРАНИЧИВАЯСЬ ИМИ. НИ ВЛАДЕЛЕЦ АВТОРСКИХ ПРАВ И НИ ОДНО ДРУГОЕ ЛИЦО, КОТОРОЕ
-МОЖЕТ ИЗМЕНЯТЬ И/ИЛИ ПОВТОРНО РАСПРОСТРАНЯТЬ ПРОГРАММУ, НИ В КОЕМ СЛУЧАЕ НЕ
-НЕСЁТ ОТВЕТСТВЕННОСТИ, ВКЛЮЧАЯ ЛЮБЫЕ ОБЩИЕ, СЛУЧАЙНЫЕ, СПЕЦИАЛЬНЫЕ ИЛИ
-ПОСЛЕДОВАВШИЕ УБЫТКИ, СВЯЗАННЫЕ С ИСПОЛЬЗОВАНИЕМ ИЛИ ПОНЕСЕННЫЕ ВСЛЕДСТВИЕ
-НЕВОЗМОЖНОСТИ ИСПОЛЬЗОВАНИЯ ПРОГРАММЫ (ВКЛЮЧАЯ ПОТЕРИ ДАННЫХ, ИЛИ ДАННЫЕ,
-СТАВШИЕ НЕГОДНЫМИ, ИЛИ УБЫТКИ И/ИЛИ ПОТЕРИ ДОХОДОВ, ПОНЕСЕННЫЕ ИЗ-ЗА ДЕЙСТВИЙ
-ТРЕТЬИХ ЛИЦ И/ИЛИ ОТКАЗА ПРОГРАММЫ РАБОТАТЬ СОВМЕСТНО С ДРУГИМИ ПРОГРАММАМИ,
-НО НЕ ОГРАНИЧИВАЯСЬ ЭТИМИ СЛУЧАЯМИ), НО НЕ ОГРАНИЧИВАЯСЬ ИМИ, ДАЖЕ ЕСЛИ ТАКОЙ
-ВЛАДЕЛЕЦ ИЛИ ДРУГОЕ ЛИЦО БЫЛИ ИЗВЕЩЕНЫ О ВОЗМОЖНОСТИ ТАКИХ УБЫТКОВ И ПОТЕРЬ.
+Р­РўРђ РџР РћР“Р РђРњРњРђ РџР Р•Р”РћРЎРўРђР’Р›Р•РќРђ Р’Р›РђР”Р•Р›Р¬Р¦РђРњР РђР’РўРћР РЎРљРРҐ РџР РђР’ Р/РР›Р Р”Р РЈР“РРњР Р›РР¦РђРњР "РљРђРљ
+РћРќРђ Р•РЎРўР¬" Р‘Р•Р— РљРђРљРћР“Рћ-Р›РР‘Рћ Р’РР”Рђ Р“РђР РђРќРўРР™, Р’Р«Р РђР–Р•РќРќР«РҐ РЇР’РќРћ РР›Р РџРћР”Р РђР—РЈРњР•Р’РђР•РњР«РҐ,
+Р’РљР›Р®Р§РђРЇ Р“РђР РђРќРўРР РљРћРњРњР•Р Р§Р•РЎРљРћР™ Р¦Р•РќРќРћРЎРўР Р РџР РР“РћР”РќРћРЎРўР Р”Р›РЇ РљРћРќРљР Р•РўРќРћР™ Р¦Р•Р›Р, РќРћ РќР•
+РћР“Р РђРќРР§РР’РђРЇРЎР¬ РРњР. РќР Р’Р›РђР”Р•Р›Р•Р¦ РђР’РўРћР РЎРљРРҐ РџР РђР’ Р РќР РћР”РќРћ Р”Р РЈР“РћР• Р›РР¦Рћ, РљРћРўРћР РћР•
+РњРћР–Р•Рў РР—РњР•РќРЇРўР¬ Р/РР›Р РџРћР’РўРћР РќРћ Р РђРЎРџР РћРЎРўР РђРќРЇРўР¬ РџР РћР“Р РђРњРњРЈ, РќР Р’ РљРћР•Рњ РЎР›РЈР§РђР• РќР•
+РќР•РЎРЃРў РћРўР’Р•РўРЎРўР’Р•РќРќРћРЎРўР, Р’РљР›Р®Р§РђРЇ Р›Р®Р‘Р«Р• РћР‘Р©РР•, РЎР›РЈР§РђР™РќР«Р•, РЎРџР•Р¦РРђР›Р¬РќР«Р• РР›Р
+РџРћРЎР›Р•Р”РћР’РђР’РЁРР• РЈР‘Р«РўРљР, РЎР’РЇР—РђРќРќР«Р• РЎ РРЎРџРћР›Р¬Р—РћР’РђРќРР•Рњ РР›Р РџРћРќР•РЎР•РќРќР«Р• Р’РЎР›Р•Р”РЎРўР’РР•
+РќР•Р’РћР—РњРћР–РќРћРЎРўР РРЎРџРћР›Р¬Р—РћР’РђРќРРЇ РџР РћР“Р РђРњРњР« (Р’РљР›Р®Р§РђРЇ РџРћРўР•Р Р Р”РђРќРќР«РҐ, РР›Р Р”РђРќРќР«Р•,
+РЎРўРђР’РЁРР• РќР•Р“РћР”РќР«РњР, РР›Р РЈР‘Р«РўРљР Р/РР›Р РџРћРўР•Р Р Р”РћРҐРћР”РћР’, РџРћРќР•РЎР•РќРќР«Р• РР—-Р—Рђ Р”Р•Р™РЎРўР’РР™
+РўР Р•РўР¬РРҐ Р›РР¦ Р/РР›Р РћРўРљРђР—Рђ РџР РћР“Р РђРњРњР« Р РђР‘РћРўРђРўР¬ РЎРћР’РњР•РЎРўРќРћ РЎ Р”Р РЈР“РРњР РџР РћР“Р РђРњРњРђРњР,
+РќРћ РќР• РћР“Р РђРќРР§РР’РђРЇРЎР¬ Р­РўРРњР РЎР›РЈР§РђРЇРњР), РќРћ РќР• РћР“Р РђРќРР§РР’РђРЇРЎР¬ РРњР, Р”РђР–Р• Р•РЎР›Р РўРђРљРћР™
+Р’Р›РђР”Р•Р›Р•Р¦ РР›Р Р”Р РЈР“РћР• Р›РР¦Рћ Р‘Р«Р›Р РР—Р’Р•Р©Р•РќР« Рћ Р’РћР—РњРћР–РќРћРЎРўР РўРђРљРРҐ РЈР‘Р«РўРљРћР’ Р РџРћРўР•Р Р¬.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
@@ -78,7 +78,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 /*----------------------------------------------------------------------------*/
 
-//Настройки
+//РќР°СЃС‚СЂРѕР№РєРё
 
 int inf_neg_h;
 int inf_neg_w;
@@ -92,7 +92,7 @@ int min_let_w;
 int inf_betw_str_h;
 int sup_square;
 /*----------------------------------------------------------------------------*/
-//Параметры
+//РџР°СЂР°РјРµС‚СЂС‹
 
 int	DPIX;
 int	DPIY;
@@ -116,7 +116,7 @@ RNEG_FUNC(void) RNEG_RecogNeg(CCOM_handle hCCOM, Handle hCPage,Word8* pImageName
 {
 
  MainWindowD=NULL;
- MainWindowD=LDPUMA_GetWindowHandle ("Изображение после разворота");
+ MainWindowD=LDPUMA_GetWindowHandle ("РР·РѕР±СЂР°Р¶РµРЅРёРµ РїРѕСЃР»Рµ СЂР°Р·РІРѕСЂРѕС‚Р°");
  if(!MainWindowD)
     MainWindowD=LDPUMA_GetWindowHandle ("Main");
 
@@ -128,17 +128,17 @@ RNEG_FUNC(void) RNEG_RecogNeg(CCOM_handle hCCOM, Handle hCPage,Word8* pImageName
 
 // LDPUMA_ConsoleN("");
  if(dpTime)
-     LDPUMA_ConsoleN("Активизируется функция поиска и разпознования негативов");
+     LDPUMA_ConsoleN("РђРєС‚РёРІРёР·РёСЂСѓРµС‚СЃСЏ С„СѓРЅРєС†РёСЏ РїРѕРёСЃРєР° Рё СЂР°Р·РїРѕР·РЅРѕРІР°РЅРёСЏ РЅРµРіР°С‚РёРІРѕРІ");
  int time=clock();
  if(!(LDPUMA_Skip (NegSearch)) )
 	 return;
 
- Word32 code_sersized=(512<<16);
- Word32 code_normd=(512<<17);
- Word32 code_colord=(512<<17)+(512<<16);
- Word32 code_cutd=(512<<18);
- Word32 code_cutstrd=(512<<18)+(512<<16);
- Word32 code_sized=(512<<18)+(512<<17);
+ uint32_t code_sersized=(512<<16);
+ uint32_t code_normd=(512<<17);
+ uint32_t code_colord=(512<<17)+(512<<16);
+ uint32_t code_cutd=(512<<18);
+ uint32_t code_cutstrd=(512<<18)+(512<<16);
+ uint32_t code_sized=(512<<18)+(512<<17);
 
  #define NEGA   1<<14
  #define VERTICA 1<<13
@@ -204,13 +204,13 @@ RNEG_FUNC(void) RNEG_RecogNeg(CCOM_handle hCCOM, Handle hCPage,Word8* pImageName
 	time=clock();
  }
 
-/* Осуществляется поиск кандидатов в негативы по размеру*/
+/* РћСЃСѓС‰РµСЃС‚РІР»СЏРµС‚СЃСЏ РїРѕРёСЃРє РєР°РЅРґРёРґР°С‚РѕРІ РІ РЅРµРіР°С‚РёРІС‹ РїРѕ СЂР°Р·РјРµСЂСѓ*/
 
  if(LDPUMA_Skip (NegSearchSize) )
  {
   fl_del_mas_neg=SearchNegBySize(hCCOM,hCPage,&root,nRC);
 
-  /*Прорисовка найденных кандидатов в негативы по размерам*/
+  /*РџСЂРѕСЂРёСЃРѕРІРєР° РЅР°Р№РґРµРЅРЅС‹С… РєР°РЅРґРёРґР°С‚РѕРІ РІ РЅРµРіР°С‚РёРІС‹ РїРѕ СЂР°Р·РјРµСЂР°Рј*/
 
   if(nRC>0)
   {
@@ -222,7 +222,7 @@ RNEG_FUNC(void) RNEG_RecogNeg(CCOM_handle hCCOM, Handle hCPage,Word8* pImageName
      NegDrawRect(MainWindowD,code_sersized,RGB(0,0,255),(now->neg).pRc[0]);
      now=now->next;
 	}
-	LDPUMA_ConsoleN("По размерам");
+	LDPUMA_ConsoleN("РџРѕ СЂР°Р·РјРµСЂР°Рј");
     LDPUMA_WaitUserInput (NegSearchSizeD,MainWindowD);
     if(LDPUMA_Skip (NegSearchSizeDC) )
       LDPUMA_DeleteRects (MainWindowD,code_sersized);
@@ -252,13 +252,13 @@ RNEG_FUNC(void) RNEG_RecogNeg(CCOM_handle hCCOM, Handle hCPage,Word8* pImageName
 	  now=now->next;
  }
 
-/* Осуществляется удаление(если повезёт) грязи, т.е. приведение
-          негатива к каноническому виду*/
+/* РћСЃСѓС‰РµСЃС‚РІР»СЏРµС‚СЃСЏ СѓРґР°Р»РµРЅРёРµ(РµСЃР»Рё РїРѕРІРµР·С‘С‚) РіСЂСЏР·Рё, С‚.Рµ. РїСЂРёРІРµРґРµРЅРёРµ
+          РЅРµРіР°С‚РёРІР° Рє РєР°РЅРѕРЅРёС‡РµСЃРєРѕРјСѓ РІРёРґСѓ*/
 
  if(LDPUMA_Skip (NegNorm) )
  {
 
-/* Поворот (если необходим) негативов*/
+/* РџРѕРІРѕСЂРѕС‚ (РµСЃР»Рё РЅРµРѕР±С…РѕРґРёРј) РЅРµРіР°С‚РёРІРѕРІ*/
 
   flag_rotate=NegRotate(hCPage,root,nRC,skew);
 
@@ -275,7 +275,7 @@ RNEG_FUNC(void) RNEG_RecogNeg(CCOM_handle hCCOM, Handle hCPage,Word8* pImageName
    }
 
 
-/*Обратное преобразование*/
+/*РћР±СЂР°С‚РЅРѕРµ РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёРµ*/
    if(flag_rotate)
    {
 	  now=root;
@@ -292,7 +292,7 @@ RNEG_FUNC(void) RNEG_RecogNeg(CCOM_handle hCCOM, Handle hCPage,Word8* pImageName
    }
 
 
-  /* Прорисовка нормализованных кандидатов в негативы*/
+  /* РџСЂРѕСЂРёСЃРѕРІРєР° РЅРѕСЂРјР°Р»РёР·РѕРІР°РЅРЅС‹С… РєР°РЅРґРёРґР°С‚РѕРІ РІ РЅРµРіР°С‚РёРІС‹*/
 
   if(nRC>0)
   {
@@ -304,7 +304,7 @@ RNEG_FUNC(void) RNEG_RecogNeg(CCOM_handle hCCOM, Handle hCPage,Word8* pImageName
      NegDrawRect(MainWindowD,code_normd,RGB(0,255,0),(now->neg).pRc[0]);
      now=now->next;
 	}
-	LDPUMA_ConsoleN("Нормализованные");
+	LDPUMA_ConsoleN("РќРѕСЂРјР°Р»РёР·РѕРІР°РЅРЅС‹Рµ");
     LDPUMA_WaitUserInput (NegNormD,MainWindowD);
     if(LDPUMA_Skip (NegNormDC) )
       LDPUMA_DeleteRects (MainWindowD,code_normd);
@@ -314,19 +314,19 @@ RNEG_FUNC(void) RNEG_RecogNeg(CCOM_handle hCCOM, Handle hCPage,Word8* pImageName
 
 
 
-/* Резка сложных негативов*/
+/* Р РµР·РєР° СЃР»РѕР¶РЅС‹С… РЅРµРіР°С‚РёРІРѕРІ*/
 
  if(LDPUMA_Skip (NegCut) )
  {
 
-/* Поворот (если необходим) негативов*/
+/* РџРѕРІРѕСЂРѕС‚ (РµСЃР»Рё РЅРµРѕР±С…РѕРґРёРј) РЅРµРіР°С‚РёРІРѕРІ*/
  flag_rotate=NegRotate(hCPage,root,nRC,skew);
 
 
   CutNeg(hCPage,&root,nRC,skew);
 
 
-   /* Поворот (если необходим) негативов*/
+   /* РџРѕРІРѕСЂРѕС‚ (РµСЃР»Рё РЅРµРѕР±С…РѕРґРёРј) РЅРµРіР°С‚РёРІРѕРІ*/
   flag_rotate=NegRotate(hCPage,root,nRC,skew);
 
 
@@ -342,7 +342,7 @@ RNEG_FUNC(void) RNEG_RecogNeg(CCOM_handle hCCOM, Handle hCPage,Word8* pImageName
 	now=temp;
    }
 
-   /*Обратное преобразование*/
+   /*РћР±СЂР°С‚РЅРѕРµ РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёРµ*/
    if(flag_rotate)
    {
 	   now=root;
@@ -359,7 +359,7 @@ RNEG_FUNC(void) RNEG_RecogNeg(CCOM_handle hCCOM, Handle hCPage,Word8* pImageName
    }
 
 
-  /* Прорисовка разрезанных негативов*/
+  /* РџСЂРѕСЂРёСЃРѕРІРєР° СЂР°Р·СЂРµР·Р°РЅРЅС‹С… РЅРµРіР°С‚РёРІРѕРІ*/
 
   if(nRC>0)
   {
@@ -371,7 +371,7 @@ RNEG_FUNC(void) RNEG_RecogNeg(CCOM_handle hCCOM, Handle hCPage,Word8* pImageName
      NegDrawRect(MainWindowD,code_cutd,RGB(255,0,0),(now->neg).pRc[0]);
      now=now->next;
 	}
-	LDPUMA_ConsoleN("Разрезанные");
+	LDPUMA_ConsoleN("Р Р°Р·СЂРµР·Р°РЅРЅС‹Рµ");
     LDPUMA_WaitUserInput (NegCutD,MainWindowD);
     if(LDPUMA_Skip (NegCutDC) )
       LDPUMA_DeleteRects (MainWindowD,code_cutd);
@@ -389,7 +389,7 @@ RNEG_FUNC(void) RNEG_RecogNeg(CCOM_handle hCCOM, Handle hCPage,Word8* pImageName
  int w;
  Rect16 Rc;
 
- /*Отсев по размеру*/
+ /*РћС‚СЃРµРІ РїРѕ СЂР°Р·РјРµСЂСѓ*/
  if(LDPUMA_Skip (NegSize) )
  {
   while(now)
@@ -409,7 +409,7 @@ RNEG_FUNC(void) RNEG_RecogNeg(CCOM_handle hCCOM, Handle hCPage,Word8* pImageName
 		  now=now->prev;
   }
 
-  /* Прорисовка отсеянных по размеру*/
+  /* РџСЂРѕСЂРёСЃРѕРІРєР° РѕС‚СЃРµСЏРЅРЅС‹С… РїРѕ СЂР°Р·РјРµСЂСѓ*/
 
   if(nRC>0)
   {
@@ -425,7 +425,7 @@ RNEG_FUNC(void) RNEG_RecogNeg(CCOM_handle hCCOM, Handle hCPage,Word8* pImageName
      NegDrawRect(MainWindowD,code_sized,RGB(255,255,0),Rc);
      now=now->next;
 	}
-	LDPUMA_ConsoleN("Окончательная прорисовка");
+	LDPUMA_ConsoleN("РћРєРѕРЅС‡Р°С‚РµР»СЊРЅР°СЏ РїСЂРѕСЂРёСЃРѕРІРєР°");
     LDPUMA_WaitUserInput (NegSizeD,MainWindowD);
     if(LDPUMA_Skip (NegSizeDC) )
       LDPUMA_DeleteRects (MainWindowD,code_sized);
@@ -434,18 +434,18 @@ RNEG_FUNC(void) RNEG_RecogNeg(CCOM_handle hCCOM, Handle hCPage,Word8* pImageName
 
  }
 
-/* Поворот (если необходим) негативов*/
+/* РџРѕРІРѕСЂРѕС‚ (РµСЃР»Рё РЅРµРѕР±С…РѕРґРёРј) РЅРµРіР°С‚РёРІРѕРІ*/
  flag_rotate=NegRotate(hCPage,root,nRC,skew);
 
 
-/* Осуществляется отсев кандидатов в негативы по насыщенности
-            чёрного цвета*/
+/* РћСЃСѓС‰РµСЃС‚РІР»СЏРµС‚СЃСЏ РѕС‚СЃРµРІ РєР°РЅРґРёРґР°С‚РѕРІ РІ РЅРµРіР°С‚РёРІС‹ РїРѕ РЅР°СЃС‹С‰РµРЅРЅРѕСЃС‚Рё
+            С‡С‘СЂРЅРѕРіРѕ С†РІРµС‚Р°*/
 
  if(LDPUMA_Skip (NegColor) )
  {
   SearchNegByBlack(hCPage,&root,nRC);
 
-  /*Прорисовка кандидатов в негативы после отсева по цветовой гамме*/
+  /*РџСЂРѕСЂРёСЃРѕРІРєР° РєР°РЅРґРёРґР°С‚РѕРІ РІ РЅРµРіР°С‚РёРІС‹ РїРѕСЃР»Рµ РѕС‚СЃРµРІР° РїРѕ С†РІРµС‚РѕРІРѕР№ РіР°РјРјРµ*/
 
   if(nRC>0)
   {
@@ -457,7 +457,7 @@ RNEG_FUNC(void) RNEG_RecogNeg(CCOM_handle hCCOM, Handle hCPage,Word8* pImageName
      NegDrawRect(MainWindowD,code_colord,RGB(0,255,255),(now->neg).pRc[0]);
      now=now->next;
 	}
-	LDPUMA_ConsoleN("Отсеянные по цветовой гамме");
+	LDPUMA_ConsoleN("РћС‚СЃРµСЏРЅРЅС‹Рµ РїРѕ С†РІРµС‚РѕРІРѕР№ РіР°РјРјРµ");
     LDPUMA_WaitUserInput (NegColorD,MainWindowD);
     if(LDPUMA_Skip (NegColorDC) )
       LDPUMA_DeleteRects (MainWindowD,code_colord);
@@ -465,7 +465,7 @@ RNEG_FUNC(void) RNEG_RecogNeg(CCOM_handle hCCOM, Handle hCPage,Word8* pImageName
   }
  }
 
- /* Резка многострочных негативов*/
+ /* Р РµР·РєР° РјРЅРѕРіРѕСЃС‚СЂРѕС‡РЅС‹С… РЅРµРіР°С‚РёРІРѕРІ*/
 
 
  if(LDPUMA_Skip (NegCutStr) )
@@ -473,7 +473,7 @@ RNEG_FUNC(void) RNEG_RecogNeg(CCOM_handle hCCOM, Handle hCPage,Word8* pImageName
   CutNegStr(hCPage,&root,nRC,skew);
 
 
-  /* Прорисовка разрезанных негативов*/
+  /* РџСЂРѕСЂРёСЃРѕРІРєР° СЂР°Р·СЂРµР·Р°РЅРЅС‹С… РЅРµРіР°С‚РёРІРѕРІ*/
 
   if(nRC>0)
   {
@@ -486,7 +486,7 @@ RNEG_FUNC(void) RNEG_RecogNeg(CCOM_handle hCCOM, Handle hCPage,Word8* pImageName
       NegDrawRect(MainWindowD,code_cutstrd,RGB(255,0,255),(now->neg).pRc[i]);
      now=now->next;
 	}
-	LDPUMA_ConsoleN("Разрезанные на строки");
+	LDPUMA_ConsoleN("Р Р°Р·СЂРµР·Р°РЅРЅС‹Рµ РЅР° СЃС‚СЂРѕРєРё");
     LDPUMA_WaitUserInput (NegCutStrD,MainWindowD);
     if(LDPUMA_Skip (NegCutStrDC) )
       LDPUMA_DeleteRects (MainWindowD,code_cutstrd);
@@ -497,7 +497,7 @@ RNEG_FUNC(void) RNEG_RecogNeg(CCOM_handle hCCOM, Handle hCPage,Word8* pImageName
 
 
 
-/*Отсев пересекающихся*/
+/*РћС‚СЃРµРІ РїРµСЂРµСЃРµРєР°СЋС‰РёС…СЃСЏ*/
 
  DelIn(hCPage,&root,nRC);
 
@@ -505,7 +505,7 @@ RNEG_FUNC(void) RNEG_RecogNeg(CCOM_handle hCCOM, Handle hCPage,Word8* pImageName
  if(dpTime)
    LDPUMA_ConsoleN("Time stuff=%d",time_stuff-time);
 
-/* Осуществляется распознование из массива кандидатов*/
+/* РћСЃСѓС‰РµСЃС‚РІР»СЏРµС‚СЃСЏ СЂР°СЃРїРѕР·РЅРѕРІР°РЅРёРµ РёР· РјР°СЃСЃРёРІР° РєР°РЅРґРёРґР°С‚РѕРІ*/
  if(flag_rimage_rotate)
  {
 	 UnRotateNeg(root,skew);
@@ -539,7 +539,7 @@ RNEG_FUNC(void) RNEG_RecogNeg(CCOM_handle hCCOM, Handle hCPage,Word8* pImageName
   }
  }
 
- /* Отпись в CPage*/
+ /* РћС‚РїРёСЃСЊ РІ CPage*/
 
 
 
@@ -547,7 +547,7 @@ RNEG_FUNC(void) RNEG_RecogNeg(CCOM_handle hCCOM, Handle hCPage,Word8* pImageName
  if(1/*!(LDPUMA_Skip (PutToCPage) )*/)
  {
  POLY_ block={0};
- Word32 size_poly=sizeof(POLY_);
+ uint32_t size_poly=sizeof(POLY_);
   while(now)
   {
    if((now->neg).p>inf_prob)
@@ -557,7 +557,7 @@ RNEG_FUNC(void) RNEG_RecogNeg(CCOM_handle hCCOM, Handle hCPage,Word8* pImageName
     Rc.right=(now->neg).pRc[0].right;
     Rc.top=(now->neg).pRc[(now->neg).nRc-1].top;
     Rc.bottom=(now->neg).pRc[0].bottom;
-            block.com.type = TYPE_TEXT; //Текст, Картинка, Таблица;
+            block.com.type = TYPE_TEXT; //РўРµРєСЃС‚, РљР°СЂС‚РёРЅРєР°, РўР°Р±Р»РёС†Р°;
 			block.com.count = 4;
 			block.negative=TYPE_NEGATIVE;
 			block.com.Flags=NEGA;
@@ -879,7 +879,7 @@ BOOL IfNeedGlobalRotate(NegList* root,int& skew)
  nIncline=skew;
  while(now)
  {
-//Andrey 06.03.2003 - по-моему тут глюки: не может left уменьшиться при довороте на небольшой положительный угол
+//Andrey 06.03.2003 - РїРѕ-РјРѕРµРјСѓ С‚СѓС‚ РіР»СЋРєРё: РЅРµ РјРѕР¶РµС‚ left СѓРјРµРЅСЊС€РёС‚СЊСЃСЏ РїСЂРё РґРѕРІРѕСЂРѕС‚Рµ РЅР° РЅРµР±РѕР»СЊС€РѕР№ РїРѕР»РѕР¶РёС‚РµР»СЊРЅС‹Р№ СѓРіРѕР»
 /*  if(nIncline>=0)
   {
 	  now->neg.pRc->left-=pNegImage->rotate.begx[now->neg.pRc->top];
@@ -961,7 +961,7 @@ void UnRotateNeg(NegList* root,int& skew)
  now=root;
  while(now)
  {
-//Andrey 06.03.2003 - по-моему тут глюки: не может left уменьшиться при отвороте от небольшого положительного угола
+//Andrey 06.03.2003 - РїРѕ-РјРѕРµРјСѓ С‚СѓС‚ РіР»СЋРєРё: РЅРµ РјРѕР¶РµС‚ left СѓРјРµРЅСЊС€РёС‚СЊСЃСЏ РїСЂРё РѕС‚РІРѕСЂРѕС‚Рµ РѕС‚ РЅРµР±РѕР»СЊС€РѕРіРѕ РїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕРіРѕ СѓРіРѕР»Р°
 /*  if(nIncline>=0)
   {
 	  for(int i=0;i<now->neg.nRc;i++)

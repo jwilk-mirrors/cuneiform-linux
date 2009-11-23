@@ -2,33 +2,33 @@
 Copyright (c) 1993-2008, Cognitive Technologies
 All rights reserved.
 
-Разрешается повторное распространение и использование как в виде исходного кода,
-так и в двоичной форме, с изменениями или без, при соблюдении следующих условий:
+Р Р°Р·СЂРµС€Р°РµС‚СЃСЏ РїРѕРІС‚РѕСЂРЅРѕРµ СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРµ Рё РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ РєР°Рє РІ РІРёРґРµ РёСЃС…РѕРґРЅРѕРіРѕ РєРѕРґР°,
+С‚Р°Рє Рё РІ РґРІРѕРёС‡РЅРѕР№ С„РѕСЂРјРµ, СЃ РёР·РјРµРЅРµРЅРёСЏРјРё РёР»Рё Р±РµР·, РїСЂРё СЃРѕР±Р»СЋРґРµРЅРёРё СЃР»РµРґСѓСЋС‰РёС… СѓСЃР»РѕРІРёР№:
 
-      * При повторном распространении исходного кода должны оставаться указанное
-        выше уведомление об авторском праве, этот список условий и последующий
-        отказ от гарантий.
-      * При повторном распространении двоичного кода в документации и/или в
-        других материалах, поставляемых при распространении, должны сохраняться
-        указанная выше информация об авторском праве, этот список условий и
-        последующий отказ от гарантий.
-      * Ни название Cognitive Technologies, ни имена ее сотрудников не могут
-        быть использованы в качестве средства поддержки и/или продвижения
-        продуктов, основанных на этом ПО, без предварительного письменного
-        разрешения.
+      * РџСЂРё РїРѕРІС‚РѕСЂРЅРѕРј СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё РёСЃС…РѕРґРЅРѕРіРѕ РєРѕРґР° РґРѕР»Р¶РЅС‹ РѕСЃС‚Р°РІР°С‚СЊСЃСЏ СѓРєР°Р·Р°РЅРЅРѕРµ
+        РІС‹С€Рµ СѓРІРµРґРѕРјР»РµРЅРёРµ РѕР± Р°РІС‚РѕСЂСЃРєРѕРј РїСЂР°РІРµ, СЌС‚РѕС‚ СЃРїРёСЃРѕРє СѓСЃР»РѕРІРёР№ Рё РїРѕСЃР»РµРґСѓСЋС‰РёР№
+        РѕС‚РєР°Р· РѕС‚ РіР°СЂР°РЅС‚РёР№.
+      * РџСЂРё РїРѕРІС‚РѕСЂРЅРѕРј СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё РґРІРѕРёС‡РЅРѕРіРѕ РєРѕРґР° РІ РґРѕРєСѓРјРµРЅС‚Р°С†РёРё Рё/РёР»Рё РІ
+        РґСЂСѓРіРёС… РјР°С‚РµСЂРёР°Р»Р°С…, РїРѕСЃС‚Р°РІР»СЏРµРјС‹С… РїСЂРё СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё, РґРѕР»Р¶РЅС‹ СЃРѕС…СЂР°РЅСЏС‚СЊСЃСЏ
+        СѓРєР°Р·Р°РЅРЅР°СЏ РІС‹С€Рµ РёРЅС„РѕСЂРјР°С†РёСЏ РѕР± Р°РІС‚РѕСЂСЃРєРѕРј РїСЂР°РІРµ, СЌС‚РѕС‚ СЃРїРёСЃРѕРє СѓСЃР»РѕРІРёР№ Рё
+        РїРѕСЃР»РµРґСѓСЋС‰РёР№ РѕС‚РєР°Р· РѕС‚ РіР°СЂР°РЅС‚РёР№.
+      * РќРё РЅР°Р·РІР°РЅРёРµ Cognitive Technologies, РЅРё РёРјРµРЅР° РµРµ СЃРѕС‚СЂСѓРґРЅРёРєРѕРІ РЅРµ РјРѕРіСѓС‚
+        Р±С‹С‚СЊ РёСЃРїРѕР»СЊР·РѕРІР°РЅС‹ РІ РєР°С‡РµСЃС‚РІРµ СЃСЂРµРґСЃС‚РІР° РїРѕРґРґРµСЂР¶РєРё Рё/РёР»Рё РїСЂРѕРґРІРёР¶РµРЅРёСЏ
+        РїСЂРѕРґСѓРєС‚РѕРІ, РѕСЃРЅРѕРІР°РЅРЅС‹С… РЅР° СЌС‚РѕРј РџРћ, Р±РµР· РїСЂРµРґРІР°СЂРёС‚РµР»СЊРЅРѕРіРѕ РїРёСЃСЊРјРµРЅРЅРѕРіРѕ
+        СЂР°Р·СЂРµС€РµРЅРёСЏ.
 
-ЭТА ПРОГРАММА ПРЕДОСТАВЛЕНА ВЛАДЕЛЬЦАМИ АВТОРСКИХ ПРАВ И/ИЛИ ДРУГИМИ ЛИЦАМИ "КАК
-ОНА ЕСТЬ" БЕЗ КАКОГО-ЛИБО ВИДА ГАРАНТИЙ, ВЫРАЖЕННЫХ ЯВНО ИЛИ ПОДРАЗУМЕВАЕМЫХ,
-ВКЛЮЧАЯ ГАРАНТИИ КОММЕРЧЕСКОЙ ЦЕННОСТИ И ПРИГОДНОСТИ ДЛЯ КОНКРЕТНОЙ ЦЕЛИ, НО НЕ
-ОГРАНИЧИВАЯСЬ ИМИ. НИ ВЛАДЕЛЕЦ АВТОРСКИХ ПРАВ И НИ ОДНО ДРУГОЕ ЛИЦО, КОТОРОЕ
-МОЖЕТ ИЗМЕНЯТЬ И/ИЛИ ПОВТОРНО РАСПРОСТРАНЯТЬ ПРОГРАММУ, НИ В КОЕМ СЛУЧАЕ НЕ
-НЕСЁТ ОТВЕТСТВЕННОСТИ, ВКЛЮЧАЯ ЛЮБЫЕ ОБЩИЕ, СЛУЧАЙНЫЕ, СПЕЦИАЛЬНЫЕ ИЛИ
-ПОСЛЕДОВАВШИЕ УБЫТКИ, СВЯЗАННЫЕ С ИСПОЛЬЗОВАНИЕМ ИЛИ ПОНЕСЕННЫЕ ВСЛЕДСТВИЕ
-НЕВОЗМОЖНОСТИ ИСПОЛЬЗОВАНИЯ ПРОГРАММЫ (ВКЛЮЧАЯ ПОТЕРИ ДАННЫХ, ИЛИ ДАННЫЕ,
-СТАВШИЕ НЕГОДНЫМИ, ИЛИ УБЫТКИ И/ИЛИ ПОТЕРИ ДОХОДОВ, ПОНЕСЕННЫЕ ИЗ-ЗА ДЕЙСТВИЙ
-ТРЕТЬИХ ЛИЦ И/ИЛИ ОТКАЗА ПРОГРАММЫ РАБОТАТЬ СОВМЕСТНО С ДРУГИМИ ПРОГРАММАМИ,
-НО НЕ ОГРАНИЧИВАЯСЬ ЭТИМИ СЛУЧАЯМИ), НО НЕ ОГРАНИЧИВАЯСЬ ИМИ, ДАЖЕ ЕСЛИ ТАКОЙ
-ВЛАДЕЛЕЦ ИЛИ ДРУГОЕ ЛИЦО БЫЛИ ИЗВЕЩЕНЫ О ВОЗМОЖНОСТИ ТАКИХ УБЫТКОВ И ПОТЕРЬ.
+Р­РўРђ РџР РћР“Р РђРњРњРђ РџР Р•Р”РћРЎРўРђР’Р›Р•РќРђ Р’Р›РђР”Р•Р›Р¬Р¦РђРњР РђР’РўРћР РЎРљРРҐ РџР РђР’ Р/РР›Р Р”Р РЈР“РРњР Р›РР¦РђРњР "РљРђРљ
+РћРќРђ Р•РЎРўР¬" Р‘Р•Р— РљРђРљРћР“Рћ-Р›РР‘Рћ Р’РР”Рђ Р“РђР РђРќРўРР™, Р’Р«Р РђР–Р•РќРќР«РҐ РЇР’РќРћ РР›Р РџРћР”Р РђР—РЈРњР•Р’РђР•РњР«РҐ,
+Р’РљР›Р®Р§РђРЇ Р“РђР РђРќРўРР РљРћРњРњР•Р Р§Р•РЎРљРћР™ Р¦Р•РќРќРћРЎРўР Р РџР РР“РћР”РќРћРЎРўР Р”Р›РЇ РљРћРќРљР Р•РўРќРћР™ Р¦Р•Р›Р, РќРћ РќР•
+РћР“Р РђРќРР§РР’РђРЇРЎР¬ РРњР. РќР Р’Р›РђР”Р•Р›Р•Р¦ РђР’РўРћР РЎРљРРҐ РџР РђР’ Р РќР РћР”РќРћ Р”Р РЈР“РћР• Р›РР¦Рћ, РљРћРўРћР РћР•
+РњРћР–Р•Рў РР—РњР•РќРЇРўР¬ Р/РР›Р РџРћР’РўРћР РќРћ Р РђРЎРџР РћРЎРўР РђРќРЇРўР¬ РџР РћР“Р РђРњРњРЈ, РќР Р’ РљРћР•Рњ РЎР›РЈР§РђР• РќР•
+РќР•РЎРЃРў РћРўР’Р•РўРЎРўР’Р•РќРќРћРЎРўР, Р’РљР›Р®Р§РђРЇ Р›Р®Р‘Р«Р• РћР‘Р©РР•, РЎР›РЈР§РђР™РќР«Р•, РЎРџР•Р¦РРђР›Р¬РќР«Р• РР›Р
+РџРћРЎР›Р•Р”РћР’РђР’РЁРР• РЈР‘Р«РўРљР, РЎР’РЇР—РђРќРќР«Р• РЎ РРЎРџРћР›Р¬Р—РћР’РђРќРР•Рњ РР›Р РџРћРќР•РЎР•РќРќР«Р• Р’РЎР›Р•Р”РЎРўР’РР•
+РќР•Р’РћР—РњРћР–РќРћРЎРўР РРЎРџРћР›Р¬Р—РћР’РђРќРРЇ РџР РћР“Р РђРњРњР« (Р’РљР›Р®Р§РђРЇ РџРћРўР•Р Р Р”РђРќРќР«РҐ, РР›Р Р”РђРќРќР«Р•,
+РЎРўРђР’РЁРР• РќР•Р“РћР”РќР«РњР, РР›Р РЈР‘Р«РўРљР Р/РР›Р РџРћРўР•Р Р Р”РћРҐРћР”РћР’, РџРћРќР•РЎР•РќРќР«Р• РР—-Р—Рђ Р”Р•Р™РЎРўР’РР™
+РўР Р•РўР¬РРҐ Р›РР¦ Р/РР›Р РћРўРљРђР—Рђ РџР РћР“Р РђРњРњР« Р РђР‘РћРўРђРўР¬ РЎРћР’РњР•РЎРўРќРћ РЎ Р”Р РЈР“РРњР РџР РћР“Р РђРњРњРђРњР,
+РќРћ РќР• РћР“Р РђРќРР§РР’РђРЇРЎР¬ Р­РўРРњР РЎР›РЈР§РђРЇРњР), РќРћ РќР• РћР“Р РђРќРР§РР’РђРЇРЎР¬ РРњР, Р”РђР–Р• Р•РЎР›Р РўРђРљРћР™
+Р’Р›РђР”Р•Р›Р•Р¦ РР›Р Р”Р РЈР“РћР• Р›РР¦Рћ Р‘Р«Р›Р РР—Р’Р•Р©Р•РќР« Рћ Р’РћР—РњРћР–РќРћРЎРўР РўРђРљРРҐ РЈР‘Р«РўРљРћР’ Р РџРћРўР•Р Р¬.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
@@ -107,12 +107,12 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     	#define VAL4(a,b,c,d)
     #endif
 
-    #define NOSAVEBACKUP	//не сохранять предысторию ручной фрагментации - Paul 29-12-2000
+    #define NOSAVEBACKUP	//РЅРµ СЃРѕС…СЂР°РЅСЏС‚СЊ РїСЂРµРґС‹СЃС‚РѕСЂРёСЋ СЂСѓС‡РЅРѕР№ С„СЂР°РіРјРµРЅС‚Р°С†РёРё - Paul 29-12-2000
 
 
     // global variables
-    // Исходные данные, передаваемые пользователем
-    EXTERN Word32 gnLanguage			VAL(7);
+    // РСЃС…РѕРґРЅС‹Рµ РґР°РЅРЅС‹Рµ, РїРµСЂРµРґР°РІР°РµРјС‹Рµ РїРѕР»СЊР·РѕРІР°С‚РµР»РµРј
+    EXTERN uint32_t gnLanguage			VAL(7);
     EXTERN Bool32 gbSpeller				VAL(TRUE);
     EXTERN Bool32 gbOneColumn			VAL(FALSE);
     EXTERN Bool32 gbFax100				VAL(FALSE);
@@ -120,14 +120,14 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     EXTERN Bool32 gbBold				VAL(TRUE);
     EXTERN Bool32 gbItalic				VAL(TRUE);
     EXTERN Bool32 gbSize				VAL(TRUE);
-    EXTERN Bool32 gbFormat				VAL(TRUE); // устарела см. gnFormat
-    EXTERN Word32 gnFormat				VAL(1);
+    EXTERN Bool32 gbFormat				VAL(TRUE); // СѓСЃС‚Р°СЂРµР»Р° СЃРј. gnFormat
+    EXTERN uint32_t gnFormat				VAL(1);
     EXTERN Bool32 gnPreserveLineBreaks  VAL(FALSE);
 
     EXTERN Word8  gnUnrecogChar			VAL('~');
 
-    EXTERN Word32 gnPictures			VAL(1);
-    EXTERN Word32 gnTables				VAL(1);
+    EXTERN uint32_t gnPictures			VAL(1);
+    EXTERN uint32_t gnTables				VAL(1);
 
     EXTERN const char * gpUserDictName		VAL("");
     EXTERN const char * gpSerifName			VAL("Times New Roman");
@@ -138,22 +138,22 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     EXTERN PWord8 gpInputDIB			VAL(NULL);
     EXTERN PWord8 gpRecogDIB			VAL(NULL);
     EXTERN Bool32 gbAutoRotate			VAL(FALSE);
-    EXTERN Point32 gPageSize			VAL2(209,295); // формат А4 в миллиметрах
+    EXTERN Point32 gPageSize			VAL2(209,295); // С„РѕСЂРјР°С‚ Рђ4 РІ РјРёР»Р»РёРјРµС‚СЂР°С…
     EXTERN Rect32 gRectTemplate			VAL4(-1,-1,-1,-1);
 
-    // Данные образуемые в результате работы.
+    // Р”Р°РЅРЅС‹Рµ РѕР±СЂР°Р·СѓРµРјС‹Рµ РІ СЂРµР·СѓР»СЊС‚Р°С‚Рµ СЂР°Р±РѕС‚С‹.
     EXTERN char szFormatStorageName[]	VAL("%sstorage.tmp");
     EXTERN char szFormatTbl1[]			VAL("%stbl1%s.dat");
 
-    EXTERN Int32 gnNumberTables			VAL(0);
+    EXTERN int32_t gnNumberTables			VAL(0);
 
     EXTERN Handle       hCCOM			      VAL(NULL);
     EXTERN Handle       hCPAGE				  VAL(NULL);
     EXTERN CLINE_handle hCLINE                VAL(0);
-    EXTERN Handle       hLinesCCOM            VAL(NULL); // компоненты с линиями
+    EXTERN Handle       hLinesCCOM            VAL(NULL); // РєРѕРјРїРѕРЅРµРЅС‚С‹ СЃ Р»РёРЅРёСЏРјРё
     EXTERN Handle       ghEdPage			  VAL(NULL);
 
-    // 1. Отладочная информаци
+    // 1. РћС‚Р»Р°РґРѕС‡РЅР°СЏ РёРЅС„РѕСЂРјР°С†Рё
     EXTERN Handle hDebugRoot		          VAL(NULL);
     EXTERN Handle hDebugCancelStrings         VAL(NULL);
     EXTERN Handle hDebugCancelRecognition     VAL(NULL);
@@ -239,9 +239,9 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     EXTERN FNPUMA_ProgressFinish	fnProgressFinish				VAL(NULL);
     EXTERN FNPUMA_ProgressStep		fnProgressStep					VAL(NULL);
 
-    EXTERN Word32					g_prgStep						VAL(0);
-    //Allex  при разделении бинаризации и обработки сырь
-    //имя картинки 'lpRecogName' сделано глабольной переменной
+    EXTERN uint32_t					g_prgStep						VAL(0);
+    //Allex  РїСЂРё СЂР°Р·РґРµР»РµРЅРёРё Р±РёРЅР°СЂРёР·Р°С†РёРё Рё РѕР±СЂР°Р±РѕС‚РєРё СЃС‹СЂСЊ
+    //РёРјСЏ РєР°СЂС‚РёРЅРєРё 'lpRecogName' СЃРґРµР»Р°РЅРѕ РіР»Р°Р±РѕР»СЊРЅРѕР№ РїРµСЂРµРјРµРЅРЅРѕР№
     EXTERN const char *					glpRecogName					VAL(NULL);
     EXTERN Bool32                   grc_line                        VAL(TRUE);
     EXTERN Bool32                   gneed_clean_line                VAL(FALSE);
@@ -257,32 +257,32 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
     #endif
 
-    // Флаги обновления контейнеров
-    // перехали в mpumatime.h
+    // Р¤Р»Р°РіРё РѕР±РЅРѕРІР»РµРЅРёСЏ РєРѕРЅС‚РµР№РЅРµСЂРѕРІ
+    // РїРµСЂРµС…Р°Р»Рё РІ mpumatime.h
     //#define FLG_UPDATE_NO		0
-    //#define FLG_UPDATE			(Word32)-1
+    //#define FLG_UPDATE			(uint32_t)-1
     //#define FLG_UPDATE_CCOM		0x1
     //#define FLG_UPDATE_CPAGE	0x2
 
-    EXTERN Word32 g_flgUpdate			VAL(0);
+    EXTERN uint32_t g_flgUpdate			VAL(0);
 
-    Bool32 IsUpdate(Word32 flg);
-    void   SetUpdate(Word32 flgAdd,Word32 flgRemove);
+    Bool32 IsUpdate(uint32_t flg);
+    void   SetUpdate(uint32_t flgAdd,uint32_t flgRemove);
 
     //typedef struct
     //	{
-    //	Word32 dwBeg;   // Начало текущего диапозона
-    //	Word32 dwEnd;	// Конец
+    //	uint32_t dwBeg;   // РќР°С‡Р°Р»Рѕ С‚РµРєСѓС‰РµРіРѕ РґРёР°РїРѕР·РѕРЅР°
+    //	uint32_t dwEnd;	// РљРѕРЅРµС†
     //
-    //	Word32 dwStep;  // текущий номер шага
-    //	char * name;	// текущее название шага
+    //	uint32_t dwStep;  // С‚РµРєСѓС‰РёР№ РЅРѕРјРµСЂ С€Р°РіР°
+    //	char * name;	// С‚РµРєСѓС‰РµРµ РЅР°Р·РІР°РЅРёРµ С€Р°РіР°
     //	} PRGTIME;
 
     EXTERN PRGTIME g_PrgTime;
 
     //////////////////////////////////////////////////////////////////
     // 07.07,2000 Allex
-    // Вынес Бинаризацию наверх из PreProcessImage
+    // Р’С‹РЅРµСЃ Р‘РёРЅР°СЂРёР·Р°С†РёСЋ РЅР°РІРµСЂС… РёР· PreProcessImage
     //////////////////////////////////////////////////////////Allex
     EXTERN CIMAGEBITMAPINFOHEADER info;
     //EXTERN PUMALinesBuffer        gSVLBuffer            VALM(0);
@@ -293,11 +293,11 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     /////////////////////////////////////////////////////////////////////////////////////////////////////
     //
     //functions
-    void	SetReturnCode_puma(Word32 rc);
-    Word32	GetReturnCode_puma();
+    void	SetReturnCode_puma(uint32_t rc);
+    uint32_t	GetReturnCode_puma();
     char *	GetModulePath();
     char *	GetModuleTempPath();
-    char *  GetResourceString(Word32 id);
+    char *  GetResourceString(uint32_t id);
 
     Bool32 InitMem(void);
     void   DoneMem(void);
@@ -322,7 +322,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
     Bool32 ModulesInit(Handle  ghStorage);
     Bool32 ModulesDone(Handle  ghStorage);
-    char * GetModulesString(Word32 dwError);
+    char * GetModulesString(uint32_t dwError);
 
     Bool32 Layout(PWord8 lpdata);
     Bool32 Recognize();
@@ -346,55 +346,55 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
     // common.cpp
     void	ClearAll( void );
-    Bool32  rexcProgressStep  (Word32);
+    Bool32  rexcProgressStep  (uint32_t);
     Bool32  ExtractComponents(Bool32 bIsRotate, Handle * prev_ccom , PWord8 name);
     Bool32  RemoveLines(Handle hccom,Handle hcpage,PWord8 * pDIB);
     void    SetOptionsToFRMT( void );
     Bool32  SaveToText(char * lpOutFileName,int code);
-//    Bool32  HL_TableExtract( Handle hPAGE, Word32 type, Rect32 rect );
-//    Bool32  HL_TableExtractEx( Handle hPAGE, Word32 perc, Rect32 rect );
-    // Функции прогресс индикатора.
-    // 1. Для инициализации внутреннего счетчика надо вызвать InitPRGTIME. Возвращает TRUE, если выполняется впервые
-    // 2. Внутри одной функции разбиение идет всегда от 0 до 100 процентов
-    // 3. Перед вызовом функции надо установить диапозон прогресса для этой функции в масштабе 0 - 100
-    //		Для этого надо выполнить StorePRGTIME(Word32 beg, Word32 end);
-    // 4. После возврата из этой функции надо восстановить счетчик функцией RestorePRGTIME(PRGTIME prev)
-    //		Параметром этой функции должно быть возвращаемое значение функции StorePRGTIME
-    // 5. В конце функции вызвать DonePRGTIME
+//    Bool32  HL_TableExtract( Handle hPAGE, uint32_t type, Rect32 rect );
+//    Bool32  HL_TableExtractEx( Handle hPAGE, uint32_t perc, Rect32 rect );
+    // Р¤СѓРЅРєС†РёРё РїСЂРѕРіСЂРµСЃСЃ РёРЅРґРёРєР°С‚РѕСЂР°.
+    // 1. Р”Р»СЏ РёРЅРёС†РёР°Р»РёР·Р°С†РёРё РІРЅСѓС‚СЂРµРЅРЅРµРіРѕ СЃС‡РµС‚С‡РёРєР° РЅР°РґРѕ РІС‹Р·РІР°С‚СЊ InitPRGTIME. Р’РѕР·РІСЂР°С‰Р°РµС‚ TRUE, РµСЃР»Рё РІС‹РїРѕР»РЅСЏРµС‚СЃСЏ РІРїРµСЂРІС‹Рµ
+    // 2. Р’РЅСѓС‚СЂРё РѕРґРЅРѕР№ С„СѓРЅРєС†РёРё СЂР°Р·Р±РёРµРЅРёРµ РёРґРµС‚ РІСЃРµРіРґР° РѕС‚ 0 РґРѕ 100 РїСЂРѕС†РµРЅС‚РѕРІ
+    // 3. РџРµСЂРµРґ РІС‹Р·РѕРІРѕРј С„СѓРЅРєС†РёРё РЅР°РґРѕ СѓСЃС‚Р°РЅРѕРІРёС‚СЊ РґРёР°РїРѕР·РѕРЅ РїСЂРѕРіСЂРµСЃСЃР° РґР»СЏ СЌС‚РѕР№ С„СѓРЅРєС†РёРё РІ РјР°СЃС€С‚Р°Р±Рµ 0 - 100
+    //		Р”Р»СЏ СЌС‚РѕРіРѕ РЅР°РґРѕ РІС‹РїРѕР»РЅРёС‚СЊ StorePRGTIME(uint32_t beg, uint32_t end);
+    // 4. РџРѕСЃР»Рµ РІРѕР·РІСЂР°С‚Р° РёР· СЌС‚РѕР№ С„СѓРЅРєС†РёРё РЅР°РґРѕ РІРѕСЃСЃС‚Р°РЅРѕРІРёС‚СЊ СЃС‡РµС‚С‡РёРє С„СѓРЅРєС†РёРµР№ RestorePRGTIME(PRGTIME prev)
+    //		РџР°СЂР°РјРµС‚СЂРѕРј СЌС‚РѕР№ С„СѓРЅРєС†РёРё РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РІРѕР·РІСЂР°С‰Р°РµРјРѕРµ Р·РЅР°С‡РµРЅРёРµ С„СѓРЅРєС†РёРё StorePRGTIME
+    // 5. Р’ РєРѕРЅС†Рµ С„СѓРЅРєС†РёРё РІС‹Р·РІР°С‚СЊ DonePRGTIME
     void    ResetPRGTIME();
     Bool32	InitPRGTIME();
     Bool32	DonePRGTIME();
-    PRGTIME	StorePRGTIME(Word32 beg, Word32 end);// Устанавливает дапозон изменений, который учитывается в  ProgressStep
-    void 	RestorePRGTIME(PRGTIME prev);// Устанавливает дапозон изменений, который учитывается в  ProgressStep
+    PRGTIME	StorePRGTIME(uint32_t beg, uint32_t end);// РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ РґР°РїРѕР·РѕРЅ РёР·РјРµРЅРµРЅРёР№, РєРѕС‚РѕСЂС‹Р№ СѓС‡РёС‚С‹РІР°РµС‚СЃСЏ РІ  ProgressStep
+    void 	RestorePRGTIME(PRGTIME prev);// РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ РґР°РїРѕР·РѕРЅ РёР·РјРµРЅРµРЅРёР№, РєРѕС‚РѕСЂС‹Р№ СѓС‡РёС‚С‹РІР°РµС‚СЃСЏ РІ  ProgressStep
 
     void	ProgressStart();
     void	ProgressFinish();
-    Bool32	ProgressStep(Word32 step,char*name,Word32 percent);
-    Bool32  ProgressStepLayout(Word32 step,Word32 percent);
-    Bool32  ProgressStepLines(Word32 step,Word32 percent);
-    Bool32  ProgressStepTables(Word32 step,Word32 percent);
-    Bool32  ProgressStepSearchTables(Word32 step,Word32 percent);
-    Bool32  ProgressStepAutoLayout(Word32 step,Word32 percent);
+    Bool32	ProgressStep(uint32_t step,char*name,uint32_t percent);
+    Bool32  ProgressStepLayout(uint32_t step,uint32_t percent);
+    Bool32  ProgressStepLines(uint32_t step,uint32_t percent);
+    Bool32  ProgressStepTables(uint32_t step,uint32_t percent);
+    Bool32  ProgressStepSearchTables(uint32_t step,uint32_t percent);
+    Bool32  ProgressStepAutoLayout(uint32_t step,uint32_t percent);
     /////////////////////////////////////////////////////////////////////////////////////////////////////
-    // Allex (перенесено в pumadef.h
-    //#define NAME_IMAGE_INPUT		"Исходное изображение"
-    //#define NAME_IMAGE_BINARIZE    "Бинаризованное изображение"
-    //#define NAME_IMAGE_DELLINE		"Изображение со снятыми линиями"
+    // Allex (РїРµСЂРµРЅРµСЃРµРЅРѕ РІ pumadef.h
+    //#define NAME_IMAGE_INPUT		"РСЃС…РѕРґРЅРѕРµ РёР·РѕР±СЂР°Р¶РµРЅРёРµ"
+    //#define NAME_IMAGE_BINARIZE    "Р‘РёРЅР°СЂРёР·РѕРІР°РЅРЅРѕРµ РёР·РѕР±СЂР°Р¶РµРЅРёРµ"
+    //#define NAME_IMAGE_DELLINE		"РР·РѕР±СЂР°Р¶РµРЅРёРµ СЃРѕ СЃРЅСЏС‚С‹РјРё Р»РёРЅРёСЏРјРё"
     /////////////////////////////////////////////////////////////////////////////////////////////////////
     //
     Bool32 PreProcessImage();
     Bool32 BinariseImage();
 
     Bool32 PrintResult(int num,CSTR_line lout,Handle hCPAGE);
-    Bool32 ConverROUT(char * lpOutFileName, Int32 lnFormat, Int32 lnCode,Bool32 bAppend);
-    Word32 ConverROUTtoMemory(Handle hEd, Int32 lnFormat, Int32 lnCode, Byte * lpMem, Word32 size);
+    Bool32 ConverROUT(char * lpOutFileName, int32_t lnFormat, int32_t lnCode,Bool32 bAppend);
+    uint32_t ConverROUTtoMemory(Handle hEd, int32_t lnFormat, int32_t lnCode, Byte * lpMem, uint32_t size);
     /*
     Bool32 ReadSVLFromPageContainer ( LinesTotalInfo * );
-    Bool32 ShortVerticalLinesProcess ( Word32 );
+    Bool32 ShortVerticalLinesProcess ( uint32_t );
     Bool32 SVLFilter(LinesTotalInfo *, LinesTotalInfo *);
     Bool32 SVLComponentFilter(LineInfo *);
     Bool32 IsRectIntersect(Rect16 *, Rect16 *);
-    Bool32 CompIsGood (CCOM_comp *, Int32 );
+    Bool32 CompIsGood (CCOM_comp *, int32_t );
     */
     //////////////////////////////////////////////////////////////////////////////////
 

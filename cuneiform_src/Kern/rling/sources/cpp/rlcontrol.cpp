@@ -2,33 +2,33 @@
 Copyright (c) 1993-2008, Cognitive Technologies
 All rights reserved.
 
-–‡ÁÂ¯‡ÂÚÒˇ ÔÓ‚ÚÓÌÓÂ ‡ÒÔÓÒÚ‡ÌÂÌËÂ Ë ËÒÔÓÎ¸ÁÓ‚‡ÌËÂ Í‡Í ‚ ‚Ë‰Â ËÒıÓ‰ÌÓ„Ó ÍÓ‰‡,
-Ú‡Í Ë ‚ ‰‚ÓË˜ÌÓÈ ÙÓÏÂ, Ò ËÁÏÂÌÂÌËˇÏË ËÎË ·ÂÁ, ÔË ÒÓ·Î˛‰ÂÌËË ÒÎÂ‰Û˛˘Ëı ÛÒÎÓ‚ËÈ:
+–†–∞–∑—Ä–µ—à–∞–µ—Ç—Å—è –ø–æ–≤—Ç–æ—Ä–Ω–æ–µ —Ä–∞—Å–ø—Ä–æ—Å—Ç—Ä–∞–Ω–µ–Ω–∏–µ –∏ –∏—Å–ø–æ–ª—å–∑–æ–≤–∞–Ω–∏–µ –∫–∞–∫ –≤ –≤–∏–¥–µ –∏—Å—Ö–æ–¥–Ω–æ–≥–æ –∫–æ–¥–∞,
+—Ç–∞–∫ –∏ –≤ –¥–≤–æ–∏—á–Ω–æ–π —Ñ–æ—Ä–º–µ, —Å –∏–∑–º–µ–Ω–µ–Ω–∏—è–º–∏ –∏–ª–∏ –±–µ–∑, –ø—Ä–∏ —Å–æ–±–ª—é–¥–µ–Ω–∏–∏ —Å–ª–µ–¥—É—é—â–∏—Ö —É—Å–ª–æ–≤–∏–π:
 
-      * œË ÔÓ‚ÚÓÌÓÏ ‡ÒÔÓÒÚ‡ÌÂÌËË ËÒıÓ‰ÌÓ„Ó ÍÓ‰‡ ‰ÓÎÊÌ˚ ÓÒÚ‡‚‡Ú¸Òˇ ÛÍ‡Á‡ÌÌÓÂ
-        ‚˚¯Â Û‚Â‰ÓÏÎÂÌËÂ Ó· ‡‚ÚÓÒÍÓÏ Ô‡‚Â, ˝ÚÓÚ ÒÔËÒÓÍ ÛÒÎÓ‚ËÈ Ë ÔÓÒÎÂ‰Û˛˘ËÈ
-        ÓÚÍ‡Á ÓÚ „‡‡ÌÚËÈ.
-      * œË ÔÓ‚ÚÓÌÓÏ ‡ÒÔÓÒÚ‡ÌÂÌËË ‰‚ÓË˜ÌÓ„Ó ÍÓ‰‡ ‚ ‰ÓÍÛÏÂÌÚ‡ˆËË Ë/ËÎË ‚
-        ‰Û„Ëı Ï‡ÚÂË‡Î‡ı, ÔÓÒÚ‡‚ÎˇÂÏ˚ı ÔË ‡ÒÔÓÒÚ‡ÌÂÌËË, ‰ÓÎÊÌ˚ ÒÓı‡ÌˇÚ¸Òˇ
-        ÛÍ‡Á‡ÌÌ‡ˇ ‚˚¯Â ËÌÙÓÏ‡ˆËˇ Ó· ‡‚ÚÓÒÍÓÏ Ô‡‚Â, ˝ÚÓÚ ÒÔËÒÓÍ ÛÒÎÓ‚ËÈ Ë
-        ÔÓÒÎÂ‰Û˛˘ËÈ ÓÚÍ‡Á ÓÚ „‡‡ÌÚËÈ.
-      * ÕË Ì‡Á‚‡ÌËÂ Cognitive Technologies, ÌË ËÏÂÌ‡ ÂÂ ÒÓÚÛ‰ÌËÍÓ‚ ÌÂ ÏÓ„ÛÚ
-        ·˚Ú¸ ËÒÔÓÎ¸ÁÓ‚‡Ì˚ ‚ Í‡˜ÂÒÚ‚Â ÒÂ‰ÒÚ‚‡ ÔÓ‰‰ÂÊÍË Ë/ËÎË ÔÓ‰‚ËÊÂÌËˇ
-        ÔÓ‰ÛÍÚÓ‚, ÓÒÌÓ‚‡ÌÌ˚ı Ì‡ ˝ÚÓÏ œŒ, ·ÂÁ ÔÂ‰‚‡ËÚÂÎ¸ÌÓ„Ó ÔËÒ¸ÏÂÌÌÓ„Ó
-        ‡ÁÂ¯ÂÌËˇ.
+      * –ü—Ä–∏ –ø–æ–≤—Ç–æ—Ä–Ω–æ–º —Ä–∞—Å–ø—Ä–æ—Å—Ç—Ä–∞–Ω–µ–Ω–∏–∏ –∏—Å—Ö–æ–¥–Ω–æ–≥–æ –∫–æ–¥–∞ –¥–æ–ª–∂–Ω—ã –æ—Å—Ç–∞–≤–∞—Ç—å—Å—è —É–∫–∞–∑–∞–Ω–Ω–æ–µ
+        –≤—ã—à–µ —É–≤–µ–¥–æ–º–ª–µ–Ω–∏–µ –æ–± –∞–≤—Ç–æ—Ä—Å–∫–æ–º –ø—Ä–∞–≤–µ, —ç—Ç–æ—Ç —Å–ø–∏—Å–æ–∫ —É—Å–ª–æ–≤–∏–π –∏ –ø–æ—Å–ª–µ–¥—É—é—â–∏–π
+        –æ—Ç–∫–∞–∑ –æ—Ç –≥–∞—Ä–∞–Ω—Ç–∏–π.
+      * –ü—Ä–∏ –ø–æ–≤—Ç–æ—Ä–Ω–æ–º —Ä–∞—Å–ø—Ä–æ—Å—Ç—Ä–∞–Ω–µ–Ω–∏–∏ –¥–≤–æ–∏—á–Ω–æ–≥–æ –∫–æ–¥–∞ –≤ –¥–æ–∫—É–º–µ–Ω—Ç–∞—Ü–∏–∏ –∏/–∏–ª–∏ –≤
+        –¥—Ä—É–≥–∏—Ö –º–∞—Ç–µ—Ä–∏–∞–ª–∞—Ö, –ø–æ—Å—Ç–∞–≤–ª—è–µ–º—ã—Ö –ø—Ä–∏ —Ä–∞—Å–ø—Ä–æ—Å—Ç—Ä–∞–Ω–µ–Ω–∏–∏, –¥–æ–ª–∂–Ω—ã —Å–æ—Ö—Ä–∞–Ω—è—Ç—å—Å—è
+        —É–∫–∞–∑–∞–Ω–Ω–∞—è –≤—ã—à–µ –∏–Ω—Ñ–æ—Ä–º–∞—Ü–∏—è –æ–± –∞–≤—Ç–æ—Ä—Å–∫–æ–º –ø—Ä–∞–≤–µ, —ç—Ç–æ—Ç —Å–ø–∏—Å–æ–∫ —É—Å–ª–æ–≤–∏–π –∏
+        –ø–æ—Å–ª–µ–¥—É—é—â–∏–π –æ—Ç–∫–∞–∑ –æ—Ç –≥–∞—Ä–∞–Ω—Ç–∏–π.
+      * –ù–∏ –Ω–∞–∑–≤–∞–Ω–∏–µ Cognitive Technologies, –Ω–∏ –∏–º–µ–Ω–∞ –µ–µ —Å–æ—Ç—Ä—É–¥–Ω–∏–∫–æ–≤ –Ω–µ –º–æ–≥—É—Ç
+        –±—ã—Ç—å –∏—Å–ø–æ–ª—å–∑–æ–≤–∞–Ω—ã –≤ –∫–∞—á–µ—Å—Ç–≤–µ —Å—Ä–µ–¥—Å—Ç–≤–∞ –ø–æ–¥–¥–µ—Ä–∂–∫–∏ –∏/–∏–ª–∏ –ø—Ä–æ–¥–≤–∏–∂–µ–Ω–∏—è
+        –ø—Ä–æ–¥—É–∫—Ç–æ–≤, –æ—Å–Ω–æ–≤–∞–Ω–Ω—ã—Ö –Ω–∞ —ç—Ç–æ–º –ü–û, –±–µ–∑ –ø—Ä–µ–¥–≤–∞—Ä–∏—Ç–µ–ª—å–Ω–æ–≥–æ –ø–∏—Å—å–º–µ–Ω–Ω–æ–≥–æ
+        —Ä–∞–∑—Ä–µ—à–µ–Ω–∏—è.
 
-›“¿ œ–Œ√–¿ÃÃ¿ œ–≈ƒŒ—“¿¬À≈Õ¿ ¬À¿ƒ≈À‹÷¿Ã» ¿¬“Œ–— »’ œ–¿¬ »/»À» ƒ–”√»Ã» À»÷¿Ã» " ¿ 
-ŒÕ¿ ≈—“‹" ¡≈«  ¿ Œ√Œ-À»¡Œ ¬»ƒ¿ √¿–¿Õ“»…, ¬€–¿∆≈ÕÕ€’ ﬂ¬ÕŒ »À» œŒƒ–¿«”Ã≈¬¿≈Ã€’,
-¬ Àﬁ◊¿ﬂ √¿–¿Õ“»»  ŒÃÃ≈–◊≈— Œ… ÷≈ÕÕŒ—“» » œ–»√ŒƒÕŒ—“» ƒÀﬂ  ŒÕ –≈“ÕŒ… ÷≈À», ÕŒ Õ≈
-Œ√–¿Õ»◊»¬¿ﬂ—‹ »Ã». Õ» ¬À¿ƒ≈À≈÷ ¿¬“Œ–— »’ œ–¿¬ » Õ» ŒƒÕŒ ƒ–”√Œ≈ À»÷Œ,  Œ“Œ–Œ≈
-ÃŒ∆≈“ »«Ã≈Õﬂ“‹ »/»À» œŒ¬“Œ–ÕŒ –¿—œ–Œ—“–¿Õﬂ“‹ œ–Œ√–¿ÃÃ”, Õ» ¬  Œ≈Ã —À”◊¿≈ Õ≈
-Õ≈—®“ Œ“¬≈“—“¬≈ÕÕŒ—“», ¬ Àﬁ◊¿ﬂ Àﬁ¡€≈ Œ¡Ÿ»≈, —À”◊¿…Õ€≈, —œ≈÷»¿À‹Õ€≈ »À»
-œŒ—À≈ƒŒ¬¿¬ÿ»≈ ”¡€“ », —¬ﬂ«¿ÕÕ€≈ — »—œŒÀ‹«Œ¬¿Õ»≈Ã »À» œŒÕ≈—≈ÕÕ€≈ ¬—À≈ƒ—“¬»≈
-Õ≈¬Œ«ÃŒ∆ÕŒ—“» »—œŒÀ‹«Œ¬¿Õ»ﬂ œ–Œ√–¿ÃÃ€ (¬ Àﬁ◊¿ﬂ œŒ“≈–» ƒ¿ÕÕ€’, »À» ƒ¿ÕÕ€≈,
-—“¿¬ÿ»≈ Õ≈√ŒƒÕ€Ã», »À» ”¡€“ » »/»À» œŒ“≈–» ƒŒ’ŒƒŒ¬, œŒÕ≈—≈ÕÕ€≈ »«-«¿ ƒ≈…—“¬»…
-“–≈“‹»’ À»÷ »/»À» Œ“ ¿«¿ œ–Œ√–¿ÃÃ€ –¿¡Œ“¿“‹ —Œ¬Ã≈—“ÕŒ — ƒ–”√»Ã» œ–Œ√–¿ÃÃ¿Ã»,
-ÕŒ Õ≈ Œ√–¿Õ»◊»¬¿ﬂ—‹ ›“»Ã» —À”◊¿ﬂÃ»), ÕŒ Õ≈ Œ√–¿Õ»◊»¬¿ﬂ—‹ »Ã», ƒ¿∆≈ ≈—À» “¿ Œ…
-¬À¿ƒ≈À≈÷ »À» ƒ–”√Œ≈ À»÷Œ ¡€À» »«¬≈Ÿ≈Õ€ Œ ¬Œ«ÃŒ∆ÕŒ—“» “¿ »’ ”¡€“ Œ¬ » œŒ“≈–‹.
+–≠–¢–ê –ü–†–û–ì–†–ê–ú–ú–ê –ü–†–ï–î–û–°–¢–ê–í–õ–ï–ù–ê –í–õ–ê–î–ï–õ–¨–¶–ê–ú–ò –ê–í–¢–û–†–°–ö–ò–• –ü–†–ê–í –ò/–ò–õ–ò –î–†–£–ì–ò–ú–ò –õ–ò–¶–ê–ú–ò "–ö–ê–ö
+–û–ù–ê –ï–°–¢–¨" –ë–ï–ó –ö–ê–ö–û–ì–û-–õ–ò–ë–û –í–ò–î–ê –ì–ê–†–ê–ù–¢–ò–ô, –í–´–†–ê–ñ–ï–ù–ù–´–• –Ø–í–ù–û –ò–õ–ò –ü–û–î–†–ê–ó–£–ú–ï–í–ê–ï–ú–´–•,
+–í–ö–õ–Æ–ß–ê–Ø –ì–ê–†–ê–ù–¢–ò–ò –ö–û–ú–ú–ï–†–ß–ï–°–ö–û–ô –¶–ï–ù–ù–û–°–¢–ò –ò –ü–†–ò–ì–û–î–ù–û–°–¢–ò –î–õ–Ø –ö–û–ù–ö–†–ï–¢–ù–û–ô –¶–ï–õ–ò, –ù–û –ù–ï
+–û–ì–†–ê–ù–ò–ß–ò–í–ê–Ø–°–¨ –ò–ú–ò. –ù–ò –í–õ–ê–î–ï–õ–ï–¶ –ê–í–¢–û–†–°–ö–ò–• –ü–†–ê–í –ò –ù–ò –û–î–ù–û –î–†–£–ì–û–ï –õ–ò–¶–û, –ö–û–¢–û–†–û–ï
+–ú–û–ñ–ï–¢ –ò–ó–ú–ï–ù–Ø–¢–¨ –ò/–ò–õ–ò –ü–û–í–¢–û–†–ù–û –†–ê–°–ü–†–û–°–¢–†–ê–ù–Ø–¢–¨ –ü–†–û–ì–†–ê–ú–ú–£, –ù–ò –í –ö–û–ï–ú –°–õ–£–ß–ê–ï –ù–ï
+–ù–ï–°–Å–¢ –û–¢–í–ï–¢–°–¢–í–ï–ù–ù–û–°–¢–ò, –í–ö–õ–Æ–ß–ê–Ø –õ–Æ–ë–´–ï –û–ë–©–ò–ï, –°–õ–£–ß–ê–ô–ù–´–ï, –°–ü–ï–¶–ò–ê–õ–¨–ù–´–ï –ò–õ–ò
+–ü–û–°–õ–ï–î–û–í–ê–í–®–ò–ï –£–ë–´–¢–ö–ò, –°–í–Ø–ó–ê–ù–ù–´–ï –° –ò–°–ü–û–õ–¨–ó–û–í–ê–ù–ò–ï–ú –ò–õ–ò –ü–û–ù–ï–°–ï–ù–ù–´–ï –í–°–õ–ï–î–°–¢–í–ò–ï
+–ù–ï–í–û–ó–ú–û–ñ–ù–û–°–¢–ò –ò–°–ü–û–õ–¨–ó–û–í–ê–ù–ò–Ø –ü–†–û–ì–†–ê–ú–ú–´ (–í–ö–õ–Æ–ß–ê–Ø –ü–û–¢–ï–†–ò –î–ê–ù–ù–´–•, –ò–õ–ò –î–ê–ù–ù–´–ï,
+–°–¢–ê–í–®–ò–ï –ù–ï–ì–û–î–ù–´–ú–ò, –ò–õ–ò –£–ë–´–¢–ö–ò –ò/–ò–õ–ò –ü–û–¢–ï–†–ò –î–û–•–û–î–û–í, –ü–û–ù–ï–°–ï–ù–ù–´–ï –ò–ó-–ó–ê –î–ï–ô–°–¢–í–ò–ô
+–¢–†–ï–¢–¨–ò–• –õ–ò–¶ –ò/–ò–õ–ò –û–¢–ö–ê–ó–ê –ü–†–û–ì–†–ê–ú–ú–´ –†–ê–ë–û–¢–ê–¢–¨ –°–û–í–ú–ï–°–¢–ù–û –° –î–†–£–ì–ò–ú–ò –ü–†–û–ì–†–ê–ú–ú–ê–ú–ò,
+–ù–û –ù–ï –û–ì–†–ê–ù–ò–ß–ò–í–ê–Ø–°–¨ –≠–¢–ò–ú–ò –°–õ–£–ß–ê–Ø–ú–ò), –ù–û –ù–ï –û–ì–†–ê–ù–ò–ß–ò–í–ê–Ø–°–¨ –ò–ú–ò, –î–ê–ñ–ï –ï–°–õ–ò –¢–ê–ö–û–ô
+–í–õ–ê–î–ï–õ–ï–¶ –ò–õ–ò –î–†–£–ì–û–ï –õ–ò–¶–û –ë–´–õ–ò –ò–ó–í–ï–©–ï–ù–´ –û –í–û–ó–ú–û–ñ–ù–û–°–¢–ò –¢–ê–ö–ò–• –£–ë–´–¢–ö–û–í –ò –ü–û–¢–ï–†–¨.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
@@ -62,14 +62,14 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "rlcontrol.h"
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-// ıË‰Â ‰Îˇ ‚ÚÓÓÈ ÍÓÔËË (ÚÓÎ¸ÍÓ ‰Îˇ ÔÂ‚ÓÈ)
+// —Ö–∏–¥–µ—Ä –¥–ª—è –≤—Ç–æ—Ä–æ–π –∫–æ–ø–∏–∏ (—Ç–æ–ª—å–∫–æ –¥–ª—è –ø–µ—Ä–≤–æ–π)
 #if !defined ( RLING_SECONDARY ) //& defined (RLING_MASTER)
   #define RLING_SECONDARY
   #include "crling.h"
   #undef RLING_SECONDARY
 #endif
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-// ‰Îˇ ÒÍË‰˚‚‡ÌËˇ Ò ÏÓÁ„Ó‚ ‚ Ù‡ÈÎ
+// –¥–ª—è —Å–∫–∏–¥—ã–≤–∞–Ω–∏—è —Å –º–æ–∑–≥–æ–≤ –≤ —Ñ–∞–π–ª
 //#define RLING_DUMP
 #ifdef RLING_DUMP
   #include "PumaMemoryToFileDumper.h"
@@ -81,7 +81,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //////////////////////////////////////////////////////////////////////////////////
 // exit by catch
 ///////////////////////////////////////////////////////////////////////////////////
-typedef void(*pExitByCatchFunc)(Int32);
+typedef void(*pExitByCatchFunc)(int32_t);
 //////////////////////////////////////////////////////////////////////////////////
 // defined at "Rling_Ma.c"
 extern "C"
@@ -102,7 +102,7 @@ extern "C"
 	Int16     TE_close(Int16);
 	void      trees_load_rling(void);
 	Int16     text_findstat_rling(PChar8);
-	Int16     spelling(PWord8, Int32);
+	Int16     spelling(PWord8, int32_t);
 	void      load_user_dicts (PChar8, PChar8);
 	void      unload_user_dicts(void);
 }
@@ -136,12 +136,12 @@ CRLControl::~CRLControl()
 }
 ///////////////////////////////////////////////////////////////////////////////////
 //
-Int32  CRLControl::IsDictonaryAvailable(Word32 wLang, PChar8 pDictPath)
+int32_t  CRLControl::IsDictonaryAvailable(uint32_t wLang, PChar8 pDictPath)
 {
 	// -1 - invalid languge code,
 	// 0  - tables not found,
 	// >0 - tables available
-	Int32 iRet = -1;
+	int32_t iRet = -1;
 	Int16 TempFile;
 
 	if ( pDictPath != NULL )
@@ -172,7 +172,7 @@ Int32  CRLControl::IsDictonaryAvailable(Word32 wLang, PChar8 pDictPath)
 
 				if ( TempFile == -1 )
 				{
-					throw (Int32)RLING_ERROR_CANT_OPEN_TABLE;
+					throw (int32_t)RLING_ERROR_CANT_OPEN_TABLE;
 				}
 
 				TE_close(TempFile);
@@ -181,7 +181,7 @@ Int32  CRLControl::IsDictonaryAvailable(Word32 wLang, PChar8 pDictPath)
 			iRet = 1;
 		}
 
-		catch( Int32 PumaExceptCode )
+		catch( int32_t PumaExceptCode )
 		{
 			SetCodeWhenExit(PumaExceptCode);
 		}
@@ -192,13 +192,13 @@ Int32  CRLControl::IsDictonaryAvailable(Word32 wLang, PChar8 pDictPath)
 }
 ///////////////////////////////////////////////////////////////////////////////////
 //
-Bool32 CRLControl::LoadDictonary(Word32 wLang, PChar8 pDictPath)
+Bool32 CRLControl::LoadDictonary(uint32_t wLang, PChar8 pDictPath)
 {
 	Bool32 bRet = FALSE;
 
 	if ( m_Language > 0 )
     {
-        if ( wLang == (Word32)m_Language )
+        if ( wLang == (uint32_t)m_Language )
             return TRUE;
 
         UnLoadDictonary();
@@ -241,7 +241,7 @@ Bool32 CRLControl::LoadDictonary(Word32 wLang, PChar8 pDictPath)
 			trees_load_rling();
 		}
 
-		catch( Int32 PumaExceptCode )
+		catch( int32_t PumaExceptCode )
 		{
 			SetCodeWhenExit(PumaExceptCode);
 			UnLoadDictonary();
@@ -254,7 +254,7 @@ Bool32 CRLControl::LoadDictonary(Word32 wLang, PChar8 pDictPath)
 }
 ///////////////////////////////////////////////////////////////////////////////////
 //
-Bool32 CRLControl::LoadSecDictonary(Word32 wLang, PChar8 pDictPath)
+Bool32 CRLControl::LoadSecDictonary(uint32_t wLang, PChar8 pDictPath)
 {
 	Bool32 bRet = FALSE;
 
@@ -298,7 +298,7 @@ Bool32 CRLControl::UnLoadSecDictonary()
 	return bRet;
 }
 //////////////////////////////////////////////////////////////////////////////////
-Bool32 CRLControl::CheckWord(PChar8 cWord, PInt32 pOutCheck)
+Bool32 CRLControl::CheckWord(PChar8 cWord, int32_t * pOutCheck)
 {
 	Bool32     bRet = FALSE;
 
@@ -325,7 +325,7 @@ Bool32 CRLControl::CheckWord(PChar8 cWord, PInt32 pOutCheck)
 				m_LastCheck = text_findstat_rling(m_LastWord);
 			}
 			/////////////////////////////////////////////////////////////////
-			catch( Int32 PumaExceptCode )
+			catch( int32_t PumaExceptCode )
 			{
 				SetCodeWhenExit(PumaExceptCode);
 				bRet = FALSE;
@@ -339,10 +339,10 @@ Bool32 CRLControl::CheckWord(PChar8 cWord, PInt32 pOutCheck)
 	return bRet;
 }
 //////////////////////////////////////////////////////////////////////////////////
-Bool32 CRLControl::CheckED(void *pEDPool, void * pEDOutPool, Word32 wEDPoolSize, PWord32 pwEDOutPoolSize, PInt32 pOut)
+Bool32 CRLControl::CheckED(void *pEDPool, void * pEDOutPool, uint32_t wEDPoolSize, uint32_t * pwEDOutPoolSize, int32_t * pOut)
 {
 	Bool32     bRet = FALSE;
-	Word32     wHexSize = RLING_ED_BUFFER_SIZE / RLING_ED_DECREATOR;
+	uint32_t     wHexSize = RLING_ED_BUFFER_SIZE / RLING_ED_DECREATOR;
 
 	m_LastCheck = 0;
 
@@ -394,7 +394,7 @@ Bool32 CRLControl::CheckED(void *pEDPool, void * pEDOutPool, Word32 wEDPoolSize,
 			memcpy(pEDOutPool, m_LastEDOutPool, m_LastEDOutPoolSize);
 		}
 		/////////////////////////////////////////////////////////////////
-		catch( Int32 PumaExceptCode )
+		catch( int32_t PumaExceptCode )
 		{
 			SetCodeWhenExit(PumaExceptCode);
 			bRet = FALSE;
@@ -406,7 +406,7 @@ Bool32 CRLControl::CheckED(void *pEDPool, void * pEDOutPool, Word32 wEDPoolSize,
 	return bRet;
 }
 //////////////////////////////////////////////////////////////////////////////////
-Bool32 CRLControl::CheckSecWord(PChar8 cWord, PInt32 pOutCheck)
+Bool32 CRLControl::CheckSecWord(PChar8 cWord, int32_t * pOutCheck)
 {
 	Bool32     bRet = FALSE;
 
@@ -417,7 +417,7 @@ Bool32 CRLControl::CheckSecWord(PChar8 cWord, PInt32 pOutCheck)
 	return bRet;
 }
 //////////////////////////////////////////////////////////////////////////////////
-Bool32 CRLControl::CheckFile(PChar8 pFile, PInt32 pCheck)
+Bool32 CRLControl::CheckFile(PChar8 pFile, int32_t * pCheck)
 {
 	Bool32     bRet = FALSE;
 	m_LastCheck = 0;
@@ -435,7 +435,7 @@ Bool32 CRLControl::CheckFile(PChar8 pFile, PInt32 pCheck)
 	return bRet;
 }
 //////////////////////////////////////////////////////////////////////////////////
-void CRLControl::ExitByCatch(Int32 ExitCode)
+void CRLControl::ExitByCatch(int32_t ExitCode)
 {
 	throw ExitCode;
 }
@@ -506,7 +506,7 @@ void CRLControl::FreeEDBuffer()
 	}
 }
 
-Bool32 CRLControl::CheckSecED(void *pEDPool, void *pEDOutPool, Word32 wEDPoolSize, PWord32 pwEDOutPoolSize, PInt32 pOut)
+Bool32 CRLControl::CheckSecED(void *pEDPool, void *pEDOutPool, uint32_t wEDPoolSize, uint32_t * pwEDOutPoolSize, int32_t * pOut)
 {
 	Bool32     bRet = FALSE;
 
@@ -527,7 +527,7 @@ Bool32 CRLControl::LoadUserDictonary(PChar8 pUserDictonaryList, PChar8 pPoint)
 		bRet = TRUE;
 	}
 	/////////////////////////////////////////////////////////////////
-	catch( Int32 PumaExceptCode )
+	catch( int32_t PumaExceptCode )
 	{
 		SetCodeWhenExit(PumaExceptCode);
 		bRet = FALSE;
@@ -547,7 +547,7 @@ Bool32 CRLControl::LoadSecUserDictonary(PChar8 pUserDictonaryList, PChar8 pPoint
 	return bRet;
 }
 
-void CRLControl::SetCodeWhenExit(Int32 Code)
+void CRLControl::SetCodeWhenExit(int32_t Code)
 {
 	switch (Code)
 	{
@@ -587,7 +587,7 @@ Bool32 CRLControl::UnLoadUserDictonary()
 		bRet = TRUE;
 	}
 	/////////////////////////////////////////////////////////////////
-	catch( Int32 PumaExceptCode )
+	catch( int32_t PumaExceptCode )
 	{
 		SetCodeWhenExit(PumaExceptCode);
 		bRet = FALSE;
@@ -607,11 +607,11 @@ Bool32 CRLControl::UnLoadSecUserDictonary()
 	return bRet;
 }
 
-Bool32 CRLControl::CorrectWord(CSTR_rast Beg, CSTR_rast End, PWord32 pLanguage, PChar8 CorrWord)
+Bool32 CRLControl::CorrectWord(CSTR_rast Beg, CSTR_rast End, uint32_t * pLanguage, PChar8 CorrWord)
 {
 	Bool32 bRet = FALSE;
-	Word32 wSizeOut;
-	Int32  iOut;
+	uint32_t wSizeOut;
+	int32_t  iOut;
 
 	mcEderator.Init();
 
@@ -625,7 +625,7 @@ Bool32 CRLControl::CorrectWord(CSTR_rast Beg, CSTR_rast End, PWord32 pLanguage, 
 	return bRet;
 }
 
-Bool32 CRLControl::CorrectSecWord(CSTR_rast Beg, CSTR_rast End, PWord32 pLanguage, PChar8 CorrWord)
+Bool32 CRLControl::CorrectSecWord(CSTR_rast Beg, CSTR_rast End, uint32_t * pLanguage, PChar8 CorrWord)
 {
 	Bool32     bRet = FALSE;
 
@@ -636,18 +636,18 @@ Bool32 CRLControl::CorrectSecWord(CSTR_rast Beg, CSTR_rast End, PWord32 pLanguag
 	return bRet;
 }
 
-Bool32 CRLControl::CorrectHypWord(CSTR_rast BegF, CSTR_rast EndF, PWord32 pLanguageF, CSTR_rast BegS, CSTR_rast EndS, PWord32 pLanguageS, PChar8 CorrWord)
+Bool32 CRLControl::CorrectHypWord(CSTR_rast BegF, CSTR_rast EndF, uint32_t * pLanguageF, CSTR_rast BegS, CSTR_rast EndS, uint32_t * pLanguageS, PChar8 CorrWord)
 {
 	Bool32 bRet = FALSE;
-	Word32 wSizeOut;
-	Int32  iOut;
+	uint32_t wSizeOut;
+	int32_t  iOut;
 
 	mcEderator.Init();
 
 	if ( mcEderator.MakeWord(BegF, EndF, (PWord8)pLanguageF) &&
 		 mcEderator.AddWord(BegS, EndS, (PWord8)pLanguageS)    )
 	{
-		// ›ÚÓ ÛÊÂ ‰ÂÎ‡ÂÚÒˇ ‚ CheckED
+		// –≠—Ç–æ —É–∂–µ –¥–µ–ª–∞–µ—Ç—Å—è –≤ CheckED
 		//PumaMemoryToFileDumper Dmp(mcEderator.GetEdPool(), mcEderator.GetEdPoolSize(), "RLingMakeHypWord.ed");
 
 		if ( CheckED(mcEderator.GetEdPool(), mcEderator.GetEdOutPool(), mcEderator.GetEdPoolSize(), &wSizeOut, &iOut) )
@@ -658,7 +658,7 @@ Bool32 CRLControl::CorrectHypWord(CSTR_rast BegF, CSTR_rast EndF, PWord32 pLangu
 	return bRet;
 }
 
-Bool32 CRLControl::CorrectSecHypWord(CSTR_rast BegF, CSTR_rast EndF, PWord32 pLanguageF, CSTR_rast BegS, CSTR_rast EndS, PWord32 pLanguageS, PChar8 CorrWord)
+Bool32 CRLControl::CorrectSecHypWord(CSTR_rast BegF, CSTR_rast EndF, uint32_t * pLanguageF, CSTR_rast BegS, CSTR_rast EndS, uint32_t * pLanguageS, PChar8 CorrWord)
 {
 	Bool32     bRet = FALSE;
 
@@ -669,12 +669,12 @@ Bool32 CRLControl::CorrectSecHypWord(CSTR_rast BegF, CSTR_rast EndF, PWord32 pLa
 	return bRet;
 }
 
-Rect16 CRLControl::GetCorrectedRectElement(Word32 i)
+Rect16 CRLControl::GetCorrectedRectElement(uint32_t i)
 {
 	return mcEderator.GetRectElement(i);
 }
 
-Rect16 CRLControl::GetSecCorrectedRectElement(Word32 i)
+Rect16 CRLControl::GetSecCorrectedRectElement(uint32_t i)
 {
 #ifndef RLING_SECONDARY
 	return RLINGS_GetCorrectedRectElement(i);
@@ -684,12 +684,12 @@ Rect16 CRLControl::GetSecCorrectedRectElement(Word32 i)
 	return Empt;
 }
 
-RecVersions CRLControl::GetCorrectedVersElemet(Word32 i, PWord32 pNVers)
+RecVersions CRLControl::GetCorrectedVersElemet(uint32_t i, uint32_t * pNVers)
 {
 	return mcEderator.GetVersElement(i, pNVers);
 }
 
-RecVersions CRLControl::GetSecCorrectedVersElement(Word32 i, PWord32 pNVers)
+RecVersions CRLControl::GetSecCorrectedVersElement(uint32_t i, uint32_t * pNVers)
 {
 #ifndef RLING_SECONDARY
 	return RLINGS_GetCorrectedVersElement(i, pNVers);

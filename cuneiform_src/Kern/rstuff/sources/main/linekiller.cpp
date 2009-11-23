@@ -2,33 +2,33 @@
 Copyright (c) 1993-2008, Cognitive Technologies
 All rights reserved.
 
-–‡ÁÂ¯‡ÂÚÒˇ ÔÓ‚ÚÓÌÓÂ ‡ÒÔÓÒÚ‡ÌÂÌËÂ Ë ËÒÔÓÎ¸ÁÓ‚‡ÌËÂ Í‡Í ‚ ‚Ë‰Â ËÒıÓ‰ÌÓ„Ó ÍÓ‰‡,
-Ú‡Í Ë ‚ ‰‚ÓË˜ÌÓÈ ÙÓÏÂ, Ò ËÁÏÂÌÂÌËˇÏË ËÎË ·ÂÁ, ÔË ÒÓ·Î˛‰ÂÌËË ÒÎÂ‰Û˛˘Ëı ÛÒÎÓ‚ËÈ:
+–†–∞–∑—Ä–µ—à–∞–µ—Ç—Å—è –ø–æ–≤—Ç–æ—Ä–Ω–æ–µ —Ä–∞—Å–ø—Ä–æ—Å—Ç—Ä–∞–Ω–µ–Ω–∏–µ –∏ –∏—Å–ø–æ–ª—å–∑–æ–≤–∞–Ω–∏–µ –∫–∞–∫ –≤ –≤–∏–¥–µ –∏—Å—Ö–æ–¥–Ω–æ–≥–æ –∫–æ–¥–∞,
+—Ç–∞–∫ –∏ –≤ –¥–≤–æ–∏—á–Ω–æ–π —Ñ–æ—Ä–º–µ, —Å –∏–∑–º–µ–Ω–µ–Ω–∏—è–º–∏ –∏–ª–∏ –±–µ–∑, –ø—Ä–∏ —Å–æ–±–ª—é–¥–µ–Ω–∏–∏ —Å–ª–µ–¥—É—é—â–∏—Ö —É—Å–ª–æ–≤–∏–π:
 
-      * œË ÔÓ‚ÚÓÌÓÏ ‡ÒÔÓÒÚ‡ÌÂÌËË ËÒıÓ‰ÌÓ„Ó ÍÓ‰‡ ‰ÓÎÊÌ˚ ÓÒÚ‡‚‡Ú¸Òˇ ÛÍ‡Á‡ÌÌÓÂ
-        ‚˚¯Â Û‚Â‰ÓÏÎÂÌËÂ Ó· ‡‚ÚÓÒÍÓÏ Ô‡‚Â, ˝ÚÓÚ ÒÔËÒÓÍ ÛÒÎÓ‚ËÈ Ë ÔÓÒÎÂ‰Û˛˘ËÈ
-        ÓÚÍ‡Á ÓÚ „‡‡ÌÚËÈ.
-      * œË ÔÓ‚ÚÓÌÓÏ ‡ÒÔÓÒÚ‡ÌÂÌËË ‰‚ÓË˜ÌÓ„Ó ÍÓ‰‡ ‚ ‰ÓÍÛÏÂÌÚ‡ˆËË Ë/ËÎË ‚
-        ‰Û„Ëı Ï‡ÚÂË‡Î‡ı, ÔÓÒÚ‡‚ÎˇÂÏ˚ı ÔË ‡ÒÔÓÒÚ‡ÌÂÌËË, ‰ÓÎÊÌ˚ ÒÓı‡ÌˇÚ¸Òˇ
-        ÛÍ‡Á‡ÌÌ‡ˇ ‚˚¯Â ËÌÙÓÏ‡ˆËˇ Ó· ‡‚ÚÓÒÍÓÏ Ô‡‚Â, ˝ÚÓÚ ÒÔËÒÓÍ ÛÒÎÓ‚ËÈ Ë
-        ÔÓÒÎÂ‰Û˛˘ËÈ ÓÚÍ‡Á ÓÚ „‡‡ÌÚËÈ.
-      * ÕË Ì‡Á‚‡ÌËÂ Cognitive Technologies, ÌË ËÏÂÌ‡ ÂÂ ÒÓÚÛ‰ÌËÍÓ‚ ÌÂ ÏÓ„ÛÚ
-        ·˚Ú¸ ËÒÔÓÎ¸ÁÓ‚‡Ì˚ ‚ Í‡˜ÂÒÚ‚Â ÒÂ‰ÒÚ‚‡ ÔÓ‰‰ÂÊÍË Ë/ËÎË ÔÓ‰‚ËÊÂÌËˇ
-        ÔÓ‰ÛÍÚÓ‚, ÓÒÌÓ‚‡ÌÌ˚ı Ì‡ ˝ÚÓÏ œŒ, ·ÂÁ ÔÂ‰‚‡ËÚÂÎ¸ÌÓ„Ó ÔËÒ¸ÏÂÌÌÓ„Ó
-        ‡ÁÂ¯ÂÌËˇ.
+      * –ü—Ä–∏ –ø–æ–≤—Ç–æ—Ä–Ω–æ–º —Ä–∞—Å–ø—Ä–æ—Å—Ç—Ä–∞–Ω–µ–Ω–∏–∏ –∏—Å—Ö–æ–¥–Ω–æ–≥–æ –∫–æ–¥–∞ –¥–æ–ª–∂–Ω—ã –æ—Å—Ç–∞–≤–∞—Ç—å—Å—è —É–∫–∞–∑–∞–Ω–Ω–æ–µ
+        –≤—ã—à–µ —É–≤–µ–¥–æ–º–ª–µ–Ω–∏–µ –æ–± –∞–≤—Ç–æ—Ä—Å–∫–æ–º –ø—Ä–∞–≤–µ, —ç—Ç–æ—Ç —Å–ø–∏—Å–æ–∫ —É—Å–ª–æ–≤–∏–π –∏ –ø–æ—Å–ª–µ–¥—É—é—â–∏–π
+        –æ—Ç–∫–∞–∑ –æ—Ç –≥–∞—Ä–∞–Ω—Ç–∏–π.
+      * –ü—Ä–∏ –ø–æ–≤—Ç–æ—Ä–Ω–æ–º —Ä–∞—Å–ø—Ä–æ—Å—Ç—Ä–∞–Ω–µ–Ω–∏–∏ –¥–≤–æ–∏—á–Ω–æ–≥–æ –∫–æ–¥–∞ –≤ –¥–æ–∫—É–º–µ–Ω—Ç–∞—Ü–∏–∏ –∏/–∏–ª–∏ –≤
+        –¥—Ä—É–≥–∏—Ö –º–∞—Ç–µ—Ä–∏–∞–ª–∞—Ö, –ø–æ—Å—Ç–∞–≤–ª—è–µ–º—ã—Ö –ø—Ä–∏ —Ä–∞—Å–ø—Ä–æ—Å—Ç—Ä–∞–Ω–µ–Ω–∏–∏, –¥–æ–ª–∂–Ω—ã —Å–æ—Ö—Ä–∞–Ω—è—Ç—å—Å—è
+        —É–∫–∞–∑–∞–Ω–Ω–∞—è –≤—ã—à–µ –∏–Ω—Ñ–æ—Ä–º–∞—Ü–∏—è –æ–± –∞–≤—Ç–æ—Ä—Å–∫–æ–º –ø—Ä–∞–≤–µ, —ç—Ç–æ—Ç —Å–ø–∏—Å–æ–∫ —É—Å–ª–æ–≤–∏–π –∏
+        –ø–æ—Å–ª–µ–¥—É—é—â–∏–π –æ—Ç–∫–∞–∑ –æ—Ç –≥–∞—Ä–∞–Ω—Ç–∏–π.
+      * –ù–∏ –Ω–∞–∑–≤–∞–Ω–∏–µ Cognitive Technologies, –Ω–∏ –∏–º–µ–Ω–∞ –µ–µ —Å–æ—Ç—Ä—É–¥–Ω–∏–∫–æ–≤ –Ω–µ –º–æ–≥—É—Ç
+        –±—ã—Ç—å –∏—Å–ø–æ–ª—å–∑–æ–≤–∞–Ω—ã –≤ –∫–∞—á–µ—Å—Ç–≤–µ —Å—Ä–µ–¥—Å—Ç–≤–∞ –ø–æ–¥–¥–µ—Ä–∂–∫–∏ –∏/–∏–ª–∏ –ø—Ä–æ–¥–≤–∏–∂–µ–Ω–∏—è
+        –ø—Ä–æ–¥—É–∫—Ç–æ–≤, –æ—Å–Ω–æ–≤–∞–Ω–Ω—ã—Ö –Ω–∞ —ç—Ç–æ–º –ü–û, –±–µ–∑ –ø—Ä–µ–¥–≤–∞—Ä–∏—Ç–µ–ª—å–Ω–æ–≥–æ –ø–∏—Å—å–º–µ–Ω–Ω–æ–≥–æ
+        —Ä–∞–∑—Ä–µ—à–µ–Ω–∏—è.
 
-›“¿ œ–Œ√–¿ÃÃ¿ œ–≈ƒŒ—“¿¬À≈Õ¿ ¬À¿ƒ≈À‹÷¿Ã» ¿¬“Œ–— »’ œ–¿¬ »/»À» ƒ–”√»Ã» À»÷¿Ã» " ¿ 
-ŒÕ¿ ≈—“‹" ¡≈«  ¿ Œ√Œ-À»¡Œ ¬»ƒ¿ √¿–¿Õ“»…, ¬€–¿∆≈ÕÕ€’ ﬂ¬ÕŒ »À» œŒƒ–¿«”Ã≈¬¿≈Ã€’,
-¬ Àﬁ◊¿ﬂ √¿–¿Õ“»»  ŒÃÃ≈–◊≈— Œ… ÷≈ÕÕŒ—“» » œ–»√ŒƒÕŒ—“» ƒÀﬂ  ŒÕ –≈“ÕŒ… ÷≈À», ÕŒ Õ≈
-Œ√–¿Õ»◊»¬¿ﬂ—‹ »Ã». Õ» ¬À¿ƒ≈À≈÷ ¿¬“Œ–— »’ œ–¿¬ » Õ» ŒƒÕŒ ƒ–”√Œ≈ À»÷Œ,  Œ“Œ–Œ≈
-ÃŒ∆≈“ »«Ã≈Õﬂ“‹ »/»À» œŒ¬“Œ–ÕŒ –¿—œ–Œ—“–¿Õﬂ“‹ œ–Œ√–¿ÃÃ”, Õ» ¬  Œ≈Ã —À”◊¿≈ Õ≈
-Õ≈—®“ Œ“¬≈“—“¬≈ÕÕŒ—“», ¬ Àﬁ◊¿ﬂ Àﬁ¡€≈ Œ¡Ÿ»≈, —À”◊¿…Õ€≈, —œ≈÷»¿À‹Õ€≈ »À»
-œŒ—À≈ƒŒ¬¿¬ÿ»≈ ”¡€“ », —¬ﬂ«¿ÕÕ€≈ — »—œŒÀ‹«Œ¬¿Õ»≈Ã »À» œŒÕ≈—≈ÕÕ€≈ ¬—À≈ƒ—“¬»≈
-Õ≈¬Œ«ÃŒ∆ÕŒ—“» »—œŒÀ‹«Œ¬¿Õ»ﬂ œ–Œ√–¿ÃÃ€ (¬ Àﬁ◊¿ﬂ œŒ“≈–» ƒ¿ÕÕ€’, »À» ƒ¿ÕÕ€≈,
-—“¿¬ÿ»≈ Õ≈√ŒƒÕ€Ã», »À» ”¡€“ » »/»À» œŒ“≈–» ƒŒ’ŒƒŒ¬, œŒÕ≈—≈ÕÕ€≈ »«-«¿ ƒ≈…—“¬»…
-“–≈“‹»’ À»÷ »/»À» Œ“ ¿«¿ œ–Œ√–¿ÃÃ€ –¿¡Œ“¿“‹ —Œ¬Ã≈—“ÕŒ — ƒ–”√»Ã» œ–Œ√–¿ÃÃ¿Ã»,
-ÕŒ Õ≈ Œ√–¿Õ»◊»¬¿ﬂ—‹ ›“»Ã» —À”◊¿ﬂÃ»), ÕŒ Õ≈ Œ√–¿Õ»◊»¬¿ﬂ—‹ »Ã», ƒ¿∆≈ ≈—À» “¿ Œ…
-¬À¿ƒ≈À≈÷ »À» ƒ–”√Œ≈ À»÷Œ ¡€À» »«¬≈Ÿ≈Õ€ Œ ¬Œ«ÃŒ∆ÕŒ—“» “¿ »’ ”¡€“ Œ¬ » œŒ“≈–‹.
+–≠–¢–ê –ü–†–û–ì–†–ê–ú–ú–ê –ü–†–ï–î–û–°–¢–ê–í–õ–ï–ù–ê –í–õ–ê–î–ï–õ–¨–¶–ê–ú–ò –ê–í–¢–û–†–°–ö–ò–• –ü–†–ê–í –ò/–ò–õ–ò –î–†–£–ì–ò–ú–ò –õ–ò–¶–ê–ú–ò "–ö–ê–ö
+–û–ù–ê –ï–°–¢–¨" –ë–ï–ó –ö–ê–ö–û–ì–û-–õ–ò–ë–û –í–ò–î–ê –ì–ê–†–ê–ù–¢–ò–ô, –í–´–†–ê–ñ–ï–ù–ù–´–• –Ø–í–ù–û –ò–õ–ò –ü–û–î–†–ê–ó–£–ú–ï–í–ê–ï–ú–´–•,
+–í–ö–õ–Æ–ß–ê–Ø –ì–ê–†–ê–ù–¢–ò–ò –ö–û–ú–ú–ï–†–ß–ï–°–ö–û–ô –¶–ï–ù–ù–û–°–¢–ò –ò –ü–†–ò–ì–û–î–ù–û–°–¢–ò –î–õ–Ø –ö–û–ù–ö–†–ï–¢–ù–û–ô –¶–ï–õ–ò, –ù–û –ù–ï
+–û–ì–†–ê–ù–ò–ß–ò–í–ê–Ø–°–¨ –ò–ú–ò. –ù–ò –í–õ–ê–î–ï–õ–ï–¶ –ê–í–¢–û–†–°–ö–ò–• –ü–†–ê–í –ò –ù–ò –û–î–ù–û –î–†–£–ì–û–ï –õ–ò–¶–û, –ö–û–¢–û–†–û–ï
+–ú–û–ñ–ï–¢ –ò–ó–ú–ï–ù–Ø–¢–¨ –ò/–ò–õ–ò –ü–û–í–¢–û–†–ù–û –†–ê–°–ü–†–û–°–¢–†–ê–ù–Ø–¢–¨ –ü–†–û–ì–†–ê–ú–ú–£, –ù–ò –í –ö–û–ï–ú –°–õ–£–ß–ê–ï –ù–ï
+–ù–ï–°–Å–¢ –û–¢–í–ï–¢–°–¢–í–ï–ù–ù–û–°–¢–ò, –í–ö–õ–Æ–ß–ê–Ø –õ–Æ–ë–´–ï –û–ë–©–ò–ï, –°–õ–£–ß–ê–ô–ù–´–ï, –°–ü–ï–¶–ò–ê–õ–¨–ù–´–ï –ò–õ–ò
+–ü–û–°–õ–ï–î–û–í–ê–í–®–ò–ï –£–ë–´–¢–ö–ò, –°–í–Ø–ó–ê–ù–ù–´–ï –° –ò–°–ü–û–õ–¨–ó–û–í–ê–ù–ò–ï–ú –ò–õ–ò –ü–û–ù–ï–°–ï–ù–ù–´–ï –í–°–õ–ï–î–°–¢–í–ò–ï
+–ù–ï–í–û–ó–ú–û–ñ–ù–û–°–¢–ò –ò–°–ü–û–õ–¨–ó–û–í–ê–ù–ò–Ø –ü–†–û–ì–†–ê–ú–ú–´ (–í–ö–õ–Æ–ß–ê–Ø –ü–û–¢–ï–†–ò –î–ê–ù–ù–´–•, –ò–õ–ò –î–ê–ù–ù–´–ï,
+–°–¢–ê–í–®–ò–ï –ù–ï–ì–û–î–ù–´–ú–ò, –ò–õ–ò –£–ë–´–¢–ö–ò –ò/–ò–õ–ò –ü–û–¢–ï–†–ò –î–û–•–û–î–û–í, –ü–û–ù–ï–°–ï–ù–ù–´–ï –ò–ó-–ó–ê –î–ï–ô–°–¢–í–ò–ô
+–¢–†–ï–¢–¨–ò–• –õ–ò–¶ –ò/–ò–õ–ò –û–¢–ö–ê–ó–ê –ü–†–û–ì–†–ê–ú–ú–´ –†–ê–ë–û–¢–ê–¢–¨ –°–û–í–ú–ï–°–¢–ù–û –° –î–†–£–ì–ò–ú–ò –ü–†–û–ì–†–ê–ú–ú–ê–ú–ò,
+–ù–û –ù–ï –û–ì–†–ê–ù–ò–ß–ò–í–ê–Ø–°–¨ –≠–¢–ò–ú–ò –°–õ–£–ß–ê–Ø–ú–ò), –ù–û –ù–ï –û–ì–†–ê–ù–ò–ß–ò–í–ê–Ø–°–¨ –ò–ú–ò, –î–ê–ñ–ï –ï–°–õ–ò –¢–ê–ö–û–ô
+–í–õ–ê–î–ï–õ–ï–¶ –ò–õ–ò –î–†–£–ì–û–ï –õ–ò–¶–û –ë–´–õ–ò –ò–ó–í–ï–©–ï–ù–´ –û –í–û–ó–ú–û–ñ–ù–û–°–¢–ò –¢–ê–ö–ò–• –£–ë–´–¢–ö–û–í –ò –ü–û–¢–ï–†–¨.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
@@ -54,15 +54,15 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-/**********  «‡„ÓÎÓ‚ÓÍ  ****************************************************************************/
-/*  ¿‚ÚÓ,                                                                                         */
-/*  ÍÓÏÏÂÌÚ‡ËË                                                                                    */
-/*  Ô‡‚Í‡     : ¿ÎÂÍÒÂÈ  ÓÌÓÔÎ∏‚                                                                  */
-/*  –Â‰‡ÍˆËˇ   :  15.11.00                                                                         */
-/*  ‘‡ÈÎ       :  'LineKiller.cpp'                                                                 */
-/*  —Ó‰ÂÊ‡ÌËÂ :  ”‰‡ÎÂÌËÂ ÓÒÚ‡ÚÍÓ‚ ÎËÌËÈ                                                          */
-/*  Õ‡ÁÌ‡˜ÂÌËÂ :  ”‰‡ÎÂÌËÂ ÓÒÚ‡ÚÍÓ‚ ÎËÌËÈ ÔÓÒÎÂ ÒÌˇÚËˇ ÎËÌËÈ                                       */
-/*   ÓÏÏÂÌÚ‡ËÈ:                                                                                   */
+/**********  –ó–∞–≥–æ–ª–æ–≤–æ–∫  ****************************************************************************/
+/*  –ê–≤—Ç–æ—Ä,                                                                                         */
+/*  –∫–æ–º–º–µ–Ω—Ç–∞—Ä–∏–∏                                                                                    */
+/*  –ø—Ä–∞–≤–∫–∞     : –ê–ª–µ–∫—Å–µ–π –ö–æ–Ω–æ–ø–ª—ë–≤                                                                  */
+/*  –†–µ–¥–∞–∫—Ü–∏—è   :  15.11.00                                                                         */
+/*  –§–∞–π–ª       :  'LineKiller.cpp'                                                                 */
+/*  –°–æ–¥–µ—Ä–∂–∞–Ω–∏–µ :  –£–¥–∞–ª–µ–Ω–∏–µ –æ—Å—Ç–∞—Ç–∫–æ–≤ –ª–∏–Ω–∏–π                                                          */
+/*  –ù–∞–∑–Ω–∞—á–µ–Ω–∏–µ :  –£–¥–∞–ª–µ–Ω–∏–µ –æ—Å—Ç–∞—Ç–∫–æ–≤ –ª–∏–Ω–∏–π –ø–æ—Å–ª–µ —Å–Ω—è—Ç–∏—è –ª–∏–Ω–∏–π                                       */
+/*  –ö–æ–º–º–µ–Ω—Ç–∞—Ä–∏–π:                                                                                   */
 /*                                                                                                 */
 /*-------------------------------------------------------------------------------------------------*/
 
@@ -100,19 +100,19 @@ Bool32 LineKiller(PRSPreProcessImage Image)
 Bool32 SearchAndKill ( PRSPreProcessImage Image, LinesTotalInfo *LTInfo )
 {
 	Bool32         bRet = TRUE;
-	Word32         nTagSize;
-	Int32          j;
+	uint32_t         nTagSize;
+	int32_t          j;
 	char           str[255];
 	Rect16         ZoomRect;
-	Int32          LineCount;
+	int32_t          LineCount;
 	Point16        LinePoints[4];
 	Point16        KillPoints[4];
-	Int32          HalfThickness;
-	Int32          HalfThicknessB;
+	int32_t          HalfThickness;
+	int32_t          HalfThicknessB;
 
 	nTagSize = sizeof (LinesTotalInfo);
 
-	Word32 size_line_com=sizeof(LINE_COM);
+	uint32_t size_line_com=sizeof(LINE_COM);
 	Handle hCPage=Image->hCPAGE;
 	LineInfo linfo;
 	CLINE_handle* pCLINE=(CLINE_handle*)(Image->phCLINE);
@@ -143,7 +143,7 @@ Bool32 SearchAndKill ( PRSPreProcessImage Image, LinesTotalInfo *LTInfo )
 	 if ( !LDPUMA_Skip(hDebugKillLinesShowComponentsBefore) )
 	 {
 		DebugDPumaShowComponents( Image, hLineKillerWindow,0xfefe00, 1, 314);
-		LDPUMA_Console("¬ÓÚ, ÚÓ ˜ÚÓ ·˚ÎÓ ÒÌ‡˜‡Î‡.. ÚÂÔÂ¸ Ì‡ÊÏË ˜ÚÓ ÌË·Û‰¸ Ë ÔÓ¯ÎË ‰‡Î¸¯Â...\n");
+		LDPUMA_Console("–í–æ—Ç, —Ç–æ —á—Ç–æ –±—ã–ª–æ —Å–Ω–∞—á–∞–ª–∞.. —Ç–µ–ø–µ—Ä—å –Ω–∞–∂–º–∏ —á—Ç–æ –Ω–∏–±—É–¥—å –∏ –ø–æ—à–ª–∏ –¥–∞–ª—å—à–µ...\n");
 		LDPUMA_WaitUserInput( NULL, hLineKillerWindow );
 		LDPUMA_DeleteRects(hLineKillerWindow, 314);
 	 }
@@ -196,7 +196,7 @@ Bool32 SearchAndKill ( PRSPreProcessImage Image, LinesTotalInfo *LTInfo )
 					LinePoints[3].x = (Int16)(cpdata->Line.Beg_X);
 					LinePoints[3].y = (Int16)(cpdata->Line.Beg_Y) + (Int16)HalfThicknessB;
 
-					j = sprintf( str, "LineKiller: - ÀËÌËˇ:< %4.4i, %4.4i > < %4.4i, %4.4i > x %3.3i",
+					j = sprintf( str, "LineKiller: - –õ–∏–Ω–∏—è:< %4.4i, %4.4i > < %4.4i, %4.4i > x %3.3i",
 								 cpdata->Line.Beg_X,
 								 cpdata->Line.Beg_Y,
 								 cpdata->Line.End_X,
@@ -276,7 +276,7 @@ Bool32 SearchAndKill ( PRSPreProcessImage Image, LinesTotalInfo *LTInfo )
 					LinePoints[3].x = (Int16)(cpdata->Line.Beg_X) - (Int16)HalfThickness;
 					LinePoints[3].y = (Int16)(cpdata->Line.Beg_Y);
 
-					j = sprintf( str, "LineKiller: | ÀËÌËˇ: < %4.4i, %4.4i > < %4.4i, %4.4i > x %3.3i",
+					j = sprintf( str, "LineKiller: | –õ–∏–Ω–∏—è: < %4.4i, %4.4i > < %4.4i, %4.4i > x %3.3i",
 								 cpdata->Line.Beg_X,
 								 cpdata->Line.Beg_Y,
 								 cpdata->Line.End_X,
@@ -322,7 +322,7 @@ Bool32 SearchAndKill ( PRSPreProcessImage Image, LinesTotalInfo *LTInfo )
 	 {
 		if ( bShowStepLineDebug )
 		{
-			LDPUMA_Console("LineKiller: Õ‡ÊÏË Ì‡ ˜ÚÓ ÌË·Û‰¸ Ë ÔÓÈ‰ÂÏ ‰‡Î¸¯Â...\n");
+			LDPUMA_Console("LineKiller: –ù–∞–∂–º–∏ –Ω–∞ —á—Ç–æ –Ω–∏–±—É–¥—å –∏ –ø–æ–π–¥–µ–º –¥–∞–ª—å—à–µ...\n");
 			LDPUMA_WaitUserInput( NULL, hLineKillerWindow );
 		}
 
@@ -337,7 +337,7 @@ Bool32 SearchAndKill ( PRSPreProcessImage Image, LinesTotalInfo *LTInfo )
 	 if ( !LDPUMA_Skip(hDebugKillLinesShowComponentsAfter) )
 	 {
 		DebugDPumaShowComponents( Image, hLineKillerWindow,0xfefe00, -100, 314);
-		LDPUMA_Console("¬ÓÚ, ÚÓ ˜ÚÓ ÒÚ‡ÎÓ ÔÓÒÎÂ.. ÚÂÔÂ¸ Ì‡ÊÏË ˜ÚÓ ÌË·Û‰¸ Ë ÔÓ¯ÎË ‰‡Î¸¯Â...\n");
+		LDPUMA_Console("–í–æ—Ç, —Ç–æ —á—Ç–æ —Å—Ç–∞–ª–æ –ø–æ—Å–ª–µ.. —Ç–µ–ø–µ—Ä—å –Ω–∞–∂–º–∏ —á—Ç–æ –Ω–∏–±—É–¥—å –∏ –ø–æ—à–ª–∏ –¥–∞–ª—å—à–µ...\n");
 		LDPUMA_WaitUserInput( NULL, hLineKillerWindow );
 		LDPUMA_DeleteRects(hLineKillerWindow, 314);
 	 }
@@ -352,9 +352,9 @@ Bool32 ComponentFilter( PRSPreProcessImage Image, LineInfo *Line)
 	Bool32 GoodComp;
 	Rect16 Rc;
 	Rect16 Rl;
-	Int32 nRc = 0;
-	Int32 Filter = 0;
-	Int32 j = 0;
+	int32_t nRc = 0;
+	int32_t Filter = 0;
+	int32_t j = 0;
 	char str[255];
 	Int16 Thick = ( Line->Thickness / 2 ) + (Int16)gKillZone;
 	Bool32 bDieComponent = FALSE;
@@ -416,7 +416,7 @@ Bool32 ComponentFilter( PRSPreProcessImage Image, LineInfo *Line)
 
 					if ( bShowLineDebug || bShowStepLineDebug )
 					{
-						j = sprintf( str, "LineKiller: ÍÓÏÔÓÌÂÌÚÛ ÔÓ‰ ÌÂÈ Ì‡¯ÎË: < %4.4i, %4.4i > < %4.4i, %4.4i >", Rc.left, Rc.top, Rc.right, Rc.bottom );
+						j = sprintf( str, "LineKiller: –∫–æ–º–ø–æ–Ω–µ–Ω—Ç—É –ø–æ–¥ –Ω–µ–π –Ω–∞—à–ª–∏: < %4.4i, %4.4i > < %4.4i, %4.4i >", Rc.left, Rc.top, Rc.right, Rc.bottom );
 
 						if ( bDieComponent )
 							j += sprintf( str + j, " +dead+" );
@@ -446,14 +446,14 @@ Bool32 IsRectIntersect(Rect16 *A, Rect16 *B)
 {
 	Bool32 rc = FALSE;
 
-	Int32 M1 = A->bottom >= A->top  ? A->bottom : A->top;
-	Int32 M2 = A->right  >= A->left ? A->right  : A->left;
-	Int32 m1 = A->bottom >= A->top  ? A->top    : A->bottom;
-	Int32 m2 = A->right  >= A->left ? A->left   : A->right;
-	Int32 M3 = B->bottom >= B->top  ? B->bottom : B->top;
-	Int32 M4 = B->right  >= B->left ? B->right  : B->left;
-	Int32 m3 = B->bottom >= B->top  ? B->top    : B->bottom;
-	Int32 m4 = B->right  >= B->left ? B->left   : B->right;
+	int32_t M1 = A->bottom >= A->top  ? A->bottom : A->top;
+	int32_t M2 = A->right  >= A->left ? A->right  : A->left;
+	int32_t m1 = A->bottom >= A->top  ? A->top    : A->bottom;
+	int32_t m2 = A->right  >= A->left ? A->left   : A->right;
+	int32_t M3 = B->bottom >= B->top  ? B->bottom : B->top;
+	int32_t M4 = B->right  >= B->left ? B->right  : B->left;
+	int32_t m3 = B->bottom >= B->top  ? B->top    : B->bottom;
+	int32_t m4 = B->right  >= B->left ? B->left   : B->right;
 
 	if ( ( ( ( B->top >= m1 ) && ( B->top <= M1 ) ) || ( ( B->bottom >= m1 ) && ( B->bottom <= M1 ) ) ) &&
 		 ( ( ( B->left >= m2 ) && ( B->left <= M2 ) ) || ( ( B->right >= m2 ) && ( B->right <= M2 ) ) ) )
@@ -471,7 +471,7 @@ Bool32 IsRectIntersect(Rect16 *A, Rect16 *B)
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-Bool32 TuneFilter(LineInfo *Line, Rect16 *Rect, Word32 KillZone, Word32 Rate)
+Bool32 TuneFilter(LineInfo *Line, Rect16 *Rect, uint32_t KillZone, uint32_t Rate)
 {
 	Bool32 bRet;
 
@@ -484,15 +484,15 @@ Bool32 TuneFilter(LineInfo *Line, Rect16 *Rect, Word32 KillZone, Word32 Rate)
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-Bool32 ChekComponentAndLine(LineInfo *Line, Rect16 *Rect, Word32 KillZone)
+Bool32 ChekComponentAndLine(LineInfo *Line, Rect16 *Rect, uint32_t KillZone)
 {
-	Int32 A0, B0, A1, B1;              // Ì‡˜‡ÎÓ Ë ÍÓÌÂˆ ÎËÌËË
-	Int32 LineType;                    // √ÓËÁÓÌÚ‡Î¸Ì‡ˇ = 1 ( || > 1 ) ËÎË ‚ÂÚËÍ‡Î¸Ì‡ˇ = -1 ( || < 1 )
-	Int32 As, Bs, C;
+	int32_t A0, B0, A1, B1;              // –Ω–∞—á–∞–ª–æ –∏ –∫–æ–Ω–µ—Ü –ª–∏–Ω–∏–∏
+	int32_t LineType;                    // –ì–æ—Ä–∏–∑–æ–Ω—Ç–∞–ª—å–Ω–∞—è = 1 ( || > 1 ) –∏–ª–∏ –≤–µ—Ä—Ç–∏–∫–∞–ª—å–Ω–∞—è = -1 ( || < 1 )
+	int32_t As, Bs, C;
 	Bool32 bRet = FALSE;
-	Word32 wN, wP, wZ;
+	uint32_t wN, wP, wZ;
 	Point16  pPoints[4];
-	Int32 Zone = KillZone;
+	int32_t Zone = KillZone;
 
 	if ( Line->A.x == Line->B.x || Line->A.y == Line->B.y )
 	{
@@ -502,8 +502,8 @@ Bool32 ChekComponentAndLine(LineInfo *Line, Rect16 *Rect, Word32 KillZone)
 	if ( ! bRet )
 	{
 		Float32 temp = (Float32)(Line->A.x - Line->B.x) / (Float32)(Line->A.y - Line->B.y);
-		Int32 iTemp;
-		Word32 SecondHand = 1;
+		int32_t iTemp;
+		uint32_t SecondHand = 1;
 
 		LineType = (temp > -1) && (temp < 1 ) ? -1 : 1;
 
@@ -520,10 +520,10 @@ Bool32 ChekComponentAndLine(LineInfo *Line, Rect16 *Rect, Word32 KillZone)
 			switch ( SecondHand )
 			{
 			case 1:
-				Zone = - ( ( (Line->Thickness + 1) / 2 ) + (Int32)KillZone );
+				Zone = - ( ( (Line->Thickness + 1) / 2 ) + (int32_t)KillZone );
 				break;
 			case 0:
-				Zone = ( ( (Line->Thickness + 1) / 2 ) + (Int32)KillZone );
+				Zone = ( ( (Line->Thickness + 1) / 2 ) + (int32_t)KillZone );
 				break;
 			default:
 				Zone = 0;
@@ -538,7 +538,7 @@ Bool32 ChekComponentAndLine(LineInfo *Line, Rect16 *Rect, Word32 KillZone)
 			Bs = B0 - B1;
 			C  = (B0 * As) - (A0 * Bs);
 
-			for ( Int32 i = 0; i < 4; i++ )
+			for ( int32_t i = 0; i < 4; i++ )
 			{
 				iTemp = ( pPoints[i].x * Bs ) - ( pPoints[i].y * As ) + C;
 
@@ -570,23 +570,23 @@ Bool32 ChekComponentAndLine(LineInfo *Line, Rect16 *Rect, Word32 KillZone)
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-Bool32 CheckSquare(LineInfo *Line, Rect16 *Rect, Word32 KillZone, Word32 Rate)
+Bool32 CheckSquare(LineInfo *Line, Rect16 *Rect, uint32_t KillZone, uint32_t Rate)
 {
 	Bool32 bRet = FALSE;
 
 	Float32 temp;
 	Float32 Halfs = 1.0;
-	Int32 LineType;
+	int32_t LineType;
 	Rect32 S;
-	Word32 SRect;
-	Word32 SLine;
-	Int32  iTemp;
-	Int32 A0 = Line->A.x;
-//	Int32 B0 = Line->B.y;
-	Int32 B0 = Line->A.y; //Almi 30.11.00
-	Int32 As = A0 - Line->B.x;
-	Int32 Bs = B0 - Line->B.y;
-	Int32 Thick = ((Line->Thickness + 1) / 2 ) + KillZone;
+	uint32_t SRect;
+	uint32_t SLine;
+	int32_t  iTemp;
+	int32_t A0 = Line->A.x;
+//	int32_t B0 = Line->B.y;
+	int32_t B0 = Line->A.y; //Almi 30.11.00
+	int32_t As = A0 - Line->B.x;
+	int32_t Bs = B0 - Line->B.y;
+	int32_t Thick = ((Line->Thickness + 1) / 2 ) + KillZone;
 
 	if (Rate > 255)
 		Rate = 255;
@@ -605,7 +605,7 @@ Bool32 CheckSquare(LineInfo *Line, Rect16 *Rect, Word32 KillZone, Word32 Rate)
 
 	if ( LineType > 0 )
 	{
-		// „ÓËÁÓÌÚ‡Î¸Ì˚Â ÎËÌËË
+		// –≥–æ—Ä–∏–∑–æ–Ω—Ç–∞–ª—å–Ω—ã–µ –ª–∏–Ω–∏–∏
 
 		S.left = Line->A.x - KillZone;
 		S.right = Line->B.x + KillZone;
@@ -623,7 +623,7 @@ Bool32 CheckSquare(LineInfo *Line, Rect16 *Rect, Word32 KillZone, Word32 Rate)
 			S.bottom = Line->B.y + Thick; //Almi 01.12.00
 		}
 
-		//ÒÏÓÚËÏ ÚÓ˜ÍË ÔÂÂÒÂ˜ÂÌËˇ ÍÓÏÔÓÌÂÌÚ˚ Ò ÎËÌËÂÈ
+		//—Å–º–æ—Ç—Ä–∏–º —Ç–æ—á–∫–∏ –ø–µ—Ä–µ—Å–µ—á–µ–Ω–∏—è –∫–æ–º–ø–æ–Ω–µ–Ω—Ç—ã —Å –ª–∏–Ω–∏–µ–π
 /*		if ( !(Rect->left < S.left && Rect->right > S.left) )
 		{
 			S.left = Rect->left;
@@ -632,7 +632,7 @@ Bool32 CheckSquare(LineInfo *Line, Rect16 *Rect, Word32 KillZone, Word32 Rate)
 		if ( !(Rect->left < S.right && Rect->right > S.right) )
 		{
 			S.right = Rect->right;
-		}*/ //¬Ò∏ ÌÂÔ‡‚ËÎ¸ÌÓ! Almi 01.12.00
+		}*/ //–í—Å—ë –Ω–µ–ø—Ä–∞–≤–∏–ª—å–Ω–æ! Almi 01.12.00
 		if (S.left <= Rect->left)
 			S.left = Rect->left;
 		if (S.right >= Rect->right)
@@ -641,8 +641,8 @@ Bool32 CheckSquare(LineInfo *Line, Rect16 *Rect, Word32 KillZone, Word32 Rate)
 			S.right  = S.left; //End Almi
 
 
-		S.bottom = S.top = B0 - (Int32)( ( (Float32)Bs / (Float32)As ) * (Float32)(A0 - S.left) );
-		iTemp = B0 - (Int32)( ( (Float32)Bs / (Float32)As ) * (Float32)(A0 - S.right) );
+		S.bottom = S.top = B0 - (int32_t)( ( (Float32)Bs / (Float32)As ) * (Float32)(A0 - S.left) );
+		iTemp = B0 - (int32_t)( ( (Float32)Bs / (Float32)As ) * (Float32)(A0 - S.right) );
 
 		S.top = S.top < iTemp ? S.top - Thick : iTemp - Thick;
 		S.bottom = S.bottom > iTemp ? S.bottom + Thick : iTemp + Thick;
@@ -657,7 +657,7 @@ Bool32 CheckSquare(LineInfo *Line, Rect16 *Rect, Word32 KillZone, Word32 Rate)
 		{
 			S.bottom = Rect->bottom;
 			Halfs = (Float32)(Halfs < 1.0 ? 0 : 0.5);
-		}*/ //¬Ò∏ ÌÂÔ‡‚ËÎ¸ÌÓ! Almi 01.12.00
+		}*/ //–í—Å—ë –Ω–µ–ø—Ä–∞–≤–∏–ª—å–Ω–æ! Almi 01.12.00
 		if (S.top <= Rect->top)
 			S.top = Rect->top;
 		if (S.bottom >= Rect->bottom)
@@ -665,7 +665,7 @@ Bool32 CheckSquare(LineInfo *Line, Rect16 *Rect, Word32 KillZone, Word32 Rate)
 		if (S.bottom <= S.top)
 			S.bottom  = S.top; //End Almi
 
-		//Ò˜ËÚ‡ÂÏ ÔÎÓ˘‡‰Ë
+		//—Å—á–∏—Ç–∞–µ–º –ø–ª–æ—â–∞–¥–∏
 		iTemp = Rect->bottom - Rect->top;
 		SRect = 1 + (iTemp < 0 ? -iTemp : iTemp);
 		iTemp = Rect->right - Rect->left;
@@ -675,22 +675,22 @@ Bool32 CheckSquare(LineInfo *Line, Rect16 *Rect, Word32 KillZone, Word32 Rate)
 		SLine = 1 + (iTemp < 0 ? -iTemp : iTemp);
 		iTemp = S.right - S.left;
 		SLine *= 1 + (iTemp < 0 ? -iTemp : iTemp);
-/*		iTemp = (Int32)(Halfs * (Float32)iTemp / temp);
+/*		iTemp = (int32_t)(Halfs * (Float32)iTemp / temp);
 		SLine -= iTemp < 0 ? -iTemp : iTemp;*/
 
-		// ÓÚÌÓ¯ÂÌËÂ
+		// –æ—Ç–Ω–æ—à–µ–Ω–∏–µ
 		if ( SLine != 0 )
 		{
 			temp = (Float32) SLine / (Float32) SRect;
 			temp *= (Float32)255;
 
-			if ( (Word32)temp >= Rate )
+			if ( (uint32_t)temp >= Rate )
 				bRet = TRUE;
 		}
 	}
 	else
 	{
-		// ‚ÂÚËÍ‡Î¸Ì˚Â ÎËÌËË
+		// –≤–µ—Ä—Ç–∏–∫–∞–ª—å–Ω—ã–µ –ª–∏–Ω–∏–∏
 		S.top = Line->A.y - KillZone;
 		S.bottom = Line->B.y + KillZone;
 
@@ -707,7 +707,7 @@ Bool32 CheckSquare(LineInfo *Line, Rect16 *Rect, Word32 KillZone, Word32 Rate)
 			S.right = Line->B.x + Thick; //Almi 01.12.00
 		}
 
-		//ÒÏÓÚËÏ ÚÓ˜ÍË ÔÂÂÒÂ˜ÂÌËˇ ÍÓÏÔÓÌÂÌÚ˚ Ò ÎËÌËÂÈ
+		//—Å–º–æ—Ç—Ä–∏–º —Ç–æ—á–∫–∏ –ø–µ—Ä–µ—Å–µ—á–µ–Ω–∏—è –∫–æ–º–ø–æ–Ω–µ–Ω—Ç—ã —Å –ª–∏–Ω–∏–µ–π
 /*		if ( !(Rect->top <= S.top && Rect->bottom >= S.top) )
 		{
 			S.top = Rect->top;
@@ -716,7 +716,7 @@ Bool32 CheckSquare(LineInfo *Line, Rect16 *Rect, Word32 KillZone, Word32 Rate)
 		if ( !(Rect->top <= S.bottom && Rect->bottom >= S.bottom) )
 		{
 			S.bottom = Rect->bottom;
-		}*/ //¬Ò∏ ÌÂÔ‡‚ËÎ¸ÌÓ! Almi 01.12.00
+		}*/ //–í—Å—ë –Ω–µ–ø—Ä–∞–≤–∏–ª—å–Ω–æ! Almi 01.12.00
 		if (S.top <= Rect->top)
 			S.top = Rect->top;
 		if (S.bottom >= Rect->bottom)
@@ -724,8 +724,8 @@ Bool32 CheckSquare(LineInfo *Line, Rect16 *Rect, Word32 KillZone, Word32 Rate)
 		if (S.bottom <= S.top)
 			S.bottom  = S.top; //End Almi
 
-		S.left = S.right = A0 - (Int32)( ( (Float32)As / (Float32)Bs ) * (Float32)(B0 - S.top) );
-		iTemp = A0 - (Int32)( ( (Float32)As / (Float32)Bs ) * (Float32)(B0 - S.bottom) );
+		S.left = S.right = A0 - (int32_t)( ( (Float32)As / (Float32)Bs ) * (Float32)(B0 - S.top) );
+		iTemp = A0 - (int32_t)( ( (Float32)As / (Float32)Bs ) * (Float32)(B0 - S.bottom) );
 
 		S.left = S.left < iTemp ? S.left - Thick : iTemp - Thick;
 		S.right = S.right > iTemp ? S.right + Thick : iTemp + Thick;
@@ -740,7 +740,7 @@ Bool32 CheckSquare(LineInfo *Line, Rect16 *Rect, Word32 KillZone, Word32 Rate)
 		{
 			S.right = Rect->right;
 			Halfs = (Float32)(Halfs < 1.0 ? 0 : 0.5);
-		}*/ //¬Ò∏ ÌÂÔ‡‚ËÎ¸ÌÓ! Almi 01.12.00
+		}*/ //–í—Å—ë –Ω–µ–ø—Ä–∞–≤–∏–ª—å–Ω–æ! Almi 01.12.00
 		if (S.left <= Rect->left)
 			S.left = Rect->left;
 		if (S.right >= Rect->right)
@@ -748,7 +748,7 @@ Bool32 CheckSquare(LineInfo *Line, Rect16 *Rect, Word32 KillZone, Word32 Rate)
 		if (S.right <= S.left)
 			S.right  = S.left; //End Almi
 
-		//Ò˜ËÚ‡ÂÏ ÔÎÓ˘‡‰Ë
+		//—Å—á–∏—Ç–∞–µ–º –ø–ª–æ—â–∞–¥–∏
 		iTemp = Rect->right - Rect->left;
 		SRect = 1 + ( iTemp < 0 ? -iTemp : iTemp );
 		iTemp = Rect->bottom - Rect->top;
@@ -758,16 +758,16 @@ Bool32 CheckSquare(LineInfo *Line, Rect16 *Rect, Word32 KillZone, Word32 Rate)
 		SLine = 1 + iTemp < 0 ? -iTemp : iTemp;
 		iTemp = 1 + S.bottom - S.top;
 		SLine *= iTemp < 0 ? -iTemp : iTemp;
-/*		iTemp = (Int32)(Halfs * (Float32)iTemp / temp);
+/*		iTemp = (int32_t)(Halfs * (Float32)iTemp / temp);
 		SLine -= iTemp < 0 ? -iTemp : iTemp;*/ //Almi
 
-		// ÓÚÌÓ¯ÂÌËÂ
+		// –æ—Ç–Ω–æ—à–µ–Ω–∏–µ
 		if ( SLine != 0 )
 		{
 			temp = (Float32) SLine / (Float32) SRect;
 			temp *= (Float32)255;
 
-			if ( (Word32)temp >= Rate )
+			if ( (uint32_t)temp >= Rate )
 				bRet = TRUE;
 		}
 	}
@@ -776,7 +776,7 @@ Bool32 CheckSquare(LineInfo *Line, Rect16 *Rect, Word32 KillZone, Word32 Rate)
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-void DebugDPumaDrawRect(Handle hWindow, Point16 * Points, Word32 Color, Int32 Thickness, Word32 Group)
+void DebugDPumaDrawRect(Handle hWindow, Point16 * Points, uint32_t Color, int32_t Thickness, uint32_t Group)
 {
 	LDPUMA_DrawLine(hWindow, &Points[0], &Points[1], 0, Color, (Int16)Thickness, Group );
 	LDPUMA_DrawLine(hWindow, &Points[1], &Points[2], 0, Color, (Int16)Thickness, Group );
@@ -785,7 +785,7 @@ void DebugDPumaDrawRect(Handle hWindow, Point16 * Points, Word32 Color, Int32 Th
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-void DebugDPumaShowComponents(PRSPreProcessImage Image, Handle hWindow, Word32 Color, Int32 Thickness, Word32 Group)
+void DebugDPumaShowComponents(PRSPreProcessImage Image, Handle hWindow, uint32_t Color, int32_t Thickness, uint32_t Group)
 {
 	CCOM_comp * pcomp;
 	Rect16 Rc;

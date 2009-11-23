@@ -2,33 +2,33 @@
 Copyright (c) 1993-2008, Cognitive Technologies
 All rights reserved.
 
-Разрешается повторное распространение и использование как в виде исходного кода,
-так и в двоичной форме, с изменениями или без, при соблюдении следующих условий:
+Р Р°Р·СЂРµС€Р°РµС‚СЃСЏ РїРѕРІС‚РѕСЂРЅРѕРµ СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРµ Рё РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ РєР°Рє РІ РІРёРґРµ РёСЃС…РѕРґРЅРѕРіРѕ РєРѕРґР°,
+С‚Р°Рє Рё РІ РґРІРѕРёС‡РЅРѕР№ С„РѕСЂРјРµ, СЃ РёР·РјРµРЅРµРЅРёСЏРјРё РёР»Рё Р±РµР·, РїСЂРё СЃРѕР±Р»СЋРґРµРЅРёРё СЃР»РµРґСѓСЋС‰РёС… СѓСЃР»РѕРІРёР№:
 
-      * При повторном распространении исходного кода должны оставаться указанное
-        выше уведомление об авторском праве, этот список условий и последующий
-        отказ от гарантий.
-      * При повторном распространении двоичного кода в документации и/или в
-        других материалах, поставляемых при распространении, должны сохраняться
-        указанная выше информация об авторском праве, этот список условий и
-        последующий отказ от гарантий.
-      * Ни название Cognitive Technologies, ни имена ее сотрудников не могут
-        быть использованы в качестве средства поддержки и/или продвижения
-        продуктов, основанных на этом ПО, без предварительного письменного
-        разрешения.
+      * РџСЂРё РїРѕРІС‚РѕСЂРЅРѕРј СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё РёСЃС…РѕРґРЅРѕРіРѕ РєРѕРґР° РґРѕР»Р¶РЅС‹ РѕСЃС‚Р°РІР°С‚СЊСЃСЏ СѓРєР°Р·Р°РЅРЅРѕРµ
+        РІС‹С€Рµ СѓРІРµРґРѕРјР»РµРЅРёРµ РѕР± Р°РІС‚РѕСЂСЃРєРѕРј РїСЂР°РІРµ, СЌС‚РѕС‚ СЃРїРёСЃРѕРє СѓСЃР»РѕРІРёР№ Рё РїРѕСЃР»РµРґСѓСЋС‰РёР№
+        РѕС‚РєР°Р· РѕС‚ РіР°СЂР°РЅС‚РёР№.
+      * РџСЂРё РїРѕРІС‚РѕСЂРЅРѕРј СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё РґРІРѕРёС‡РЅРѕРіРѕ РєРѕРґР° РІ РґРѕРєСѓРјРµРЅС‚Р°С†РёРё Рё/РёР»Рё РІ
+        РґСЂСѓРіРёС… РјР°С‚РµСЂРёР°Р»Р°С…, РїРѕСЃС‚Р°РІР»СЏРµРјС‹С… РїСЂРё СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё, РґРѕР»Р¶РЅС‹ СЃРѕС…СЂР°РЅСЏС‚СЊСЃСЏ
+        СѓРєР°Р·Р°РЅРЅР°СЏ РІС‹С€Рµ РёРЅС„РѕСЂРјР°С†РёСЏ РѕР± Р°РІС‚РѕСЂСЃРєРѕРј РїСЂР°РІРµ, СЌС‚РѕС‚ СЃРїРёСЃРѕРє СѓСЃР»РѕРІРёР№ Рё
+        РїРѕСЃР»РµРґСѓСЋС‰РёР№ РѕС‚РєР°Р· РѕС‚ РіР°СЂР°РЅС‚РёР№.
+      * РќРё РЅР°Р·РІР°РЅРёРµ Cognitive Technologies, РЅРё РёРјРµРЅР° РµРµ СЃРѕС‚СЂСѓРґРЅРёРєРѕРІ РЅРµ РјРѕРіСѓС‚
+        Р±С‹С‚СЊ РёСЃРїРѕР»СЊР·РѕРІР°РЅС‹ РІ РєР°С‡РµСЃС‚РІРµ СЃСЂРµРґСЃС‚РІР° РїРѕРґРґРµСЂР¶РєРё Рё/РёР»Рё РїСЂРѕРґРІРёР¶РµРЅРёСЏ
+        РїСЂРѕРґСѓРєС‚РѕРІ, РѕСЃРЅРѕРІР°РЅРЅС‹С… РЅР° СЌС‚РѕРј РџРћ, Р±РµР· РїСЂРµРґРІР°СЂРёС‚РµР»СЊРЅРѕРіРѕ РїРёСЃСЊРјРµРЅРЅРѕРіРѕ
+        СЂР°Р·СЂРµС€РµРЅРёСЏ.
 
-ЭТА ПРОГРАММА ПРЕДОСТАВЛЕНА ВЛАДЕЛЬЦАМИ АВТОРСКИХ ПРАВ И/ИЛИ ДРУГИМИ ЛИЦАМИ "КАК
-ОНА ЕСТЬ" БЕЗ КАКОГО-ЛИБО ВИДА ГАРАНТИЙ, ВЫРАЖЕННЫХ ЯВНО ИЛИ ПОДРАЗУМЕВАЕМЫХ,
-ВКЛЮЧАЯ ГАРАНТИИ КОММЕРЧЕСКОЙ ЦЕННОСТИ И ПРИГОДНОСТИ ДЛЯ КОНКРЕТНОЙ ЦЕЛИ, НО НЕ
-ОГРАНИЧИВАЯСЬ ИМИ. НИ ВЛАДЕЛЕЦ АВТОРСКИХ ПРАВ И НИ ОДНО ДРУГОЕ ЛИЦО, КОТОРОЕ
-МОЖЕТ ИЗМЕНЯТЬ И/ИЛИ ПОВТОРНО РАСПРОСТРАНЯТЬ ПРОГРАММУ, НИ В КОЕМ СЛУЧАЕ НЕ
-НЕСЁТ ОТВЕТСТВЕННОСТИ, ВКЛЮЧАЯ ЛЮБЫЕ ОБЩИЕ, СЛУЧАЙНЫЕ, СПЕЦИАЛЬНЫЕ ИЛИ
-ПОСЛЕДОВАВШИЕ УБЫТКИ, СВЯЗАННЫЕ С ИСПОЛЬЗОВАНИЕМ ИЛИ ПОНЕСЕННЫЕ ВСЛЕДСТВИЕ
-НЕВОЗМОЖНОСТИ ИСПОЛЬЗОВАНИЯ ПРОГРАММЫ (ВКЛЮЧАЯ ПОТЕРИ ДАННЫХ, ИЛИ ДАННЫЕ,
-СТАВШИЕ НЕГОДНЫМИ, ИЛИ УБЫТКИ И/ИЛИ ПОТЕРИ ДОХОДОВ, ПОНЕСЕННЫЕ ИЗ-ЗА ДЕЙСТВИЙ
-ТРЕТЬИХ ЛИЦ И/ИЛИ ОТКАЗА ПРОГРАММЫ РАБОТАТЬ СОВМЕСТНО С ДРУГИМИ ПРОГРАММАМИ,
-НО НЕ ОГРАНИЧИВАЯСЬ ЭТИМИ СЛУЧАЯМИ), НО НЕ ОГРАНИЧИВАЯСЬ ИМИ, ДАЖЕ ЕСЛИ ТАКОЙ
-ВЛАДЕЛЕЦ ИЛИ ДРУГОЕ ЛИЦО БЫЛИ ИЗВЕЩЕНЫ О ВОЗМОЖНОСТИ ТАКИХ УБЫТКОВ И ПОТЕРЬ.
+Р­РўРђ РџР РћР“Р РђРњРњРђ РџР Р•Р”РћРЎРўРђР’Р›Р•РќРђ Р’Р›РђР”Р•Р›Р¬Р¦РђРњР РђР’РўРћР РЎРљРРҐ РџР РђР’ Р/РР›Р Р”Р РЈР“РРњР Р›РР¦РђРњР "РљРђРљ
+РћРќРђ Р•РЎРўР¬" Р‘Р•Р— РљРђРљРћР“Рћ-Р›РР‘Рћ Р’РР”Рђ Р“РђР РђРќРўРР™, Р’Р«Р РђР–Р•РќРќР«РҐ РЇР’РќРћ РР›Р РџРћР”Р РђР—РЈРњР•Р’РђР•РњР«РҐ,
+Р’РљР›Р®Р§РђРЇ Р“РђР РђРќРўРР РљРћРњРњР•Р Р§Р•РЎРљРћР™ Р¦Р•РќРќРћРЎРўР Р РџР РР“РћР”РќРћРЎРўР Р”Р›РЇ РљРћРќРљР Р•РўРќРћР™ Р¦Р•Р›Р, РќРћ РќР•
+РћР“Р РђРќРР§РР’РђРЇРЎР¬ РРњР. РќР Р’Р›РђР”Р•Р›Р•Р¦ РђР’РўРћР РЎРљРРҐ РџР РђР’ Р РќР РћР”РќРћ Р”Р РЈР“РћР• Р›РР¦Рћ, РљРћРўРћР РћР•
+РњРћР–Р•Рў РР—РњР•РќРЇРўР¬ Р/РР›Р РџРћР’РўРћР РќРћ Р РђРЎРџР РћРЎРўР РђРќРЇРўР¬ РџР РћР“Р РђРњРњРЈ, РќР Р’ РљРћР•Рњ РЎР›РЈР§РђР• РќР•
+РќР•РЎРЃРў РћРўР’Р•РўРЎРўР’Р•РќРќРћРЎРўР, Р’РљР›Р®Р§РђРЇ Р›Р®Р‘Р«Р• РћР‘Р©РР•, РЎР›РЈР§РђР™РќР«Р•, РЎРџР•Р¦РРђР›Р¬РќР«Р• РР›Р
+РџРћРЎР›Р•Р”РћР’РђР’РЁРР• РЈР‘Р«РўРљР, РЎР’РЇР—РђРќРќР«Р• РЎ РРЎРџРћР›Р¬Р—РћР’РђРќРР•Рњ РР›Р РџРћРќР•РЎР•РќРќР«Р• Р’РЎР›Р•Р”РЎРўР’РР•
+РќР•Р’РћР—РњРћР–РќРћРЎРўР РРЎРџРћР›Р¬Р—РћР’РђРќРРЇ РџР РћР“Р РђРњРњР« (Р’РљР›Р®Р§РђРЇ РџРћРўР•Р Р Р”РђРќРќР«РҐ, РР›Р Р”РђРќРќР«Р•,
+РЎРўРђР’РЁРР• РќР•Р“РћР”РќР«РњР, РР›Р РЈР‘Р«РўРљР Р/РР›Р РџРћРўР•Р Р Р”РћРҐРћР”РћР’, РџРћРќР•РЎР•РќРќР«Р• РР—-Р—Рђ Р”Р•Р™РЎРўР’РР™
+РўР Р•РўР¬РРҐ Р›РР¦ Р/РР›Р РћРўРљРђР—Рђ РџР РћР“Р РђРњРњР« Р РђР‘РћРўРђРўР¬ РЎРћР’РњР•РЎРўРќРћ РЎ Р”Р РЈР“РРњР РџР РћР“Р РђРњРњРђРњР,
+РќРћ РќР• РћР“Р РђРќРР§РР’РђРЇРЎР¬ Р­РўРРњР РЎР›РЈР§РђРЇРњР), РќРћ РќР• РћР“Р РђРќРР§РР’РђРЇРЎР¬ РРњР, Р”РђР–Р• Р•РЎР›Р РўРђРљРћР™
+Р’Р›РђР”Р•Р›Р•Р¦ РР›Р Р”Р РЈР“РћР• Р›РР¦Рћ Р‘Р«Р›Р РР—Р’Р•Р©Р•РќР« Рћ Р’РћР—РњРћР–РќРћРЎРўР РўРђРљРРҐ РЈР‘Р«РўРљРћР’ Р РџРћРўР•Р Р¬.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
@@ -81,12 +81,12 @@ static Word16            wHeightRC =                         0;
 static Word16            wLowRC =                            0;
 static Handle            hInst =                             NULL;
 CTCControl *      Control_ctc =                           NULL;
-static Int32             InitCount =                         0;
+static int32_t             InitCount =                         0;
 static Bool32            InitDone =                          FALSE;
 //////////////////////////////////////////////////////////////////////////////////
 //
 BOOL APIENTRY DllMain( Handle hModule,
-                        DWORD ul_reason_for_call,
+                        uint32_t ul_reason_for_call,
                         LPVOID lpReserved )
 {
     switch( ul_reason_for_call )
@@ -151,13 +151,13 @@ CFIO_FUNC(Bool32) CFIO_Done()
 }
 //////////////////////////////////////////////////////////////////////////////////
 //
-CFIO_FUNC(Word32) CFIO_GetReturnCode()
+CFIO_FUNC(uint32_t) CFIO_GetReturnCode()
 {
 	return (wHeightRC<<16)|(wLowRC - IDS_ERR_MIN);
 }
 //////////////////////////////////////////////////////////////////////////////////
 //
-CFIO_FUNC(Int8 *) CFIO_GetReturnString(Word32 dwError)
+CFIO_FUNC(Int8 *) CFIO_GetReturnString(uint32_t dwError)
 {
 	Word16 rc = (Word16)(dwError & 0xFFFF) + IDS_ERR_MIN;
 	static Int8 szBuffer[512];
@@ -190,7 +190,7 @@ Word16 GetReturnCode_cfio()
 #define CASE_FUNCTION(a)	case CFIO_FN##a:	*(FNCFIO##a *)pData = CFIO_##a; break
 //////////////////////////////////////////////////////////////////////////////////
 //
-CFIO_FUNC(Bool32) CFIO_GetExportData(Word32 dwType, void * pData)
+CFIO_FUNC(Bool32) CFIO_GetExportData(uint32_t dwType, void * pData)
 {
 	Bool32 rc = TRUE;
 
@@ -242,9 +242,9 @@ return rc;
 }
 //////////////////////////////////////////////////////////////////////////////////
 //
-CFIO_FUNC(Bool32) CFIO_SetImportData(Word32 dwType, void * pData)
+CFIO_FUNC(Bool32) CFIO_SetImportData(uint32_t dwType, void * pData)
 {
-	Word32      Folder;
+	uint32_t      Folder;
 
 	SetReturnCode_cfio(IDS_CFIO_ERR_NO);
 
@@ -271,7 +271,7 @@ return Control_ctc->SetFolder(Folder, (char *)pData);
 }
 //////////////////////////////////////////////////////////////////////////////////
 //
-CFIO_FUNC(Handle) CFIO_OpenStorage(PInt8 lpName, Word32 dwTypes)
+CFIO_FUNC(Handle) CFIO_OpenStorage(PInt8 lpName, uint32_t dwTypes)
 {
 	SetReturnCode_cfio(IDS_CFIO_ERR_NO);
 
@@ -288,7 +288,7 @@ CFIO_FUNC(Handle) CFIO_OpenStorage(PInt8 lpName, Word32 dwTypes)
 }
 //////////////////////////////////////////////////////////////////////////////////
 //
-CFIO_FUNC(Bool32) CFIO_CloseStorage(Handle  hStorage, Word32  dwFlag)
+CFIO_FUNC(Bool32) CFIO_CloseStorage(Handle  hStorage, uint32_t  dwFlag)
 {
 	SetReturnCode_cfio(IDS_CFIO_ERR_NO);
 
@@ -322,7 +322,7 @@ CFIO_FUNC(Bool32) CFIO_DeleteStorage (PInt8 lpName)
 }
 //////////////////////////////////////////////////////////////////////////////////
 //
-CFIO_FUNC(Word32) CFIO_WriteFileToStorage (Handle hStorage, Handle hFile, PInt8 lpNameInStorage)
+CFIO_FUNC(uint32_t) CFIO_WriteFileToStorage (Handle hStorage, Handle hFile, PInt8 lpNameInStorage)
 {
 	SetReturnCode_cfio(IDS_CFIO_ERR_NO);
 
@@ -356,7 +356,7 @@ CFIO_FUNC(Handle) CFIO_ReadFileFromStorage (Handle hStorage, PInt8 lpName)
 }
 //////////////////////////////////////////////////////////////////////////////////
 //
-CFIO_FUNC(Handle) CFIO_OpenFreeFile(Handle hStorage, PInt8 lpName, Word32 dwFlag)
+CFIO_FUNC(Handle) CFIO_OpenFreeFile(Handle hStorage, PInt8 lpName, uint32_t dwFlag)
 {
 	SetReturnCode_cfio(IDS_CFIO_ERR_NO);
 
@@ -373,7 +373,7 @@ CFIO_FUNC(Handle) CFIO_OpenFreeFile(Handle hStorage, PInt8 lpName, Word32 dwFlag
 }
 //////////////////////////////////////////////////////////////////////////////////
 //
-CFIO_FUNC(Bool32) CFIO_CloseFreeFile(Handle hFile, Word32 dwFlag)
+CFIO_FUNC(Bool32) CFIO_CloseFreeFile(Handle hFile, uint32_t dwFlag)
 {
 	SetReturnCode_cfio(IDS_CFIO_ERR_NO);
 
@@ -390,7 +390,7 @@ CFIO_FUNC(Bool32) CFIO_CloseFreeFile(Handle hFile, Word32 dwFlag)
 }
 //////////////////////////////////////////////////////////////////////////////////
 //
-CFIO_FUNC(Word32) CFIO_WriteToFile (Handle hFile, PInt8 lpData, Word32 dwSize)
+CFIO_FUNC(uint32_t) CFIO_WriteToFile (Handle hFile, PInt8 lpData, uint32_t dwSize)
 {
 	SetReturnCode_cfio(IDS_CFIO_ERR_NO);
 
@@ -407,7 +407,7 @@ CFIO_FUNC(Word32) CFIO_WriteToFile (Handle hFile, PInt8 lpData, Word32 dwSize)
 }
 //////////////////////////////////////////////////////////////////////////////////
 //
-CFIO_FUNC(Word32) CFIO_ReadFromFile (Handle hFile, PInt8 lpData, Word32 dwSize)
+CFIO_FUNC(uint32_t) CFIO_ReadFromFile (Handle hFile, PInt8 lpData, uint32_t dwSize)
 {
 	SetReturnCode_cfio(IDS_CFIO_ERR_NO);
 
@@ -424,7 +424,7 @@ CFIO_FUNC(Word32) CFIO_ReadFromFile (Handle hFile, PInt8 lpData, Word32 dwSize)
 }
 //////////////////////////////////////////////////////////////////////////////////
 //
-CFIO_FUNC(Word32) CFIO_SeekFilePointer (Handle hFile, Word32 dwBytes, Word32 dwFrom)
+CFIO_FUNC(uint32_t) CFIO_SeekFilePointer (Handle hFile, uint32_t dwBytes, uint32_t dwFrom)
 {
 	SetReturnCode_cfio(IDS_CFIO_ERR_NO);
 
@@ -441,7 +441,7 @@ CFIO_FUNC(Word32) CFIO_SeekFilePointer (Handle hFile, Word32 dwBytes, Word32 dwF
 }
 //////////////////////////////////////////////////////////////////////////////////
 //
-CFIO_FUNC(Word32) CFIO_TellFilePointer (Handle hFile)
+CFIO_FUNC(uint32_t) CFIO_TellFilePointer (Handle hFile)
 {
 	SetReturnCode_cfio(IDS_CFIO_ERR_NO);
 
@@ -475,7 +475,7 @@ CFIO_FUNC(Bool32) CFIO_FlushFile(Handle hFile)
 }
 //////////////////////////////////////////////////////////////////////////////////
 //
-CFIO_FUNC(Handle) CFIO_AllocMemory (Word32 dwSize, Word32 dwFlag)
+CFIO_FUNC(Handle) CFIO_AllocMemory (uint32_t dwSize, uint32_t dwFlag)
 {
 	SetReturnCode_cfio(IDS_CFIO_ERR_NO);
 
@@ -492,7 +492,7 @@ CFIO_FUNC(Handle) CFIO_AllocMemory (Word32 dwSize, Word32 dwFlag)
 }
 //////////////////////////////////////////////////////////////////////////////////
 //
-CFIO_FUNC(Handle) CFIO_DAllocMemory (Word32 dwSize, Word32 dwFlag, Int8* cOwner, Int8* Comment)
+CFIO_FUNC(Handle) CFIO_DAllocMemory (uint32_t dwSize, uint32_t dwFlag, Int8* cOwner, Int8* Comment)
 {
 	SetReturnCode_cfio(IDS_CFIO_ERR_NO);
 
@@ -509,7 +509,7 @@ CFIO_FUNC(Handle) CFIO_DAllocMemory (Word32 dwSize, Word32 dwFlag, Int8* cOwner,
 }
 //////////////////////////////////////////////////////////////////////////////////
 //
-CFIO_FUNC(Handle) CFIO_ReAllocMemory (Handle hMemory, Word32 dwSize, Word32 dwFlag)
+CFIO_FUNC(Handle) CFIO_ReAllocMemory (Handle hMemory, uint32_t dwSize, uint32_t dwFlag)
 {
 	SetReturnCode_cfio(IDS_CFIO_ERR_NO);
 
@@ -577,7 +577,7 @@ CFIO_FUNC(Bool32) CFIO_UnlockMemory(Handle hMem)
 }
 //////////////////////////////////////////////////////////////////////////////////
 //
-CFIO_FUNC(Word32) CFIO_WriteMemoryToFile(Handle hMem, PInt8 lpName)
+CFIO_FUNC(uint32_t) CFIO_WriteMemoryToFile(Handle hMem, PInt8 lpName)
 {
 	SetReturnCode_cfio(IDS_CFIO_ERR_NO);
 
@@ -594,7 +594,7 @@ CFIO_FUNC(Word32) CFIO_WriteMemoryToFile(Handle hMem, PInt8 lpName)
 }
 //////////////////////////////////////////////////////////////////////////////////
 //
-CFIO_FUNC(Word32) CFIO_ReadMemoryFromFile(PInt8 lpName, Handle * phMem)
+CFIO_FUNC(uint32_t) CFIO_ReadMemoryFromFile(PInt8 lpName, Handle * phMem)
 {
 	SetReturnCode_cfio(IDS_CFIO_ERR_NO);
 
@@ -611,7 +611,7 @@ CFIO_FUNC(Word32) CFIO_ReadMemoryFromFile(PInt8 lpName, Handle * phMem)
 }
 //////////////////////////////////////////////////////////////////////////////////
 //
-CFIO_FUNC(Word32) CFIO_WriteMemoryToStorage(Handle hMem, Handle hStorage, PInt8 lpName)
+CFIO_FUNC(uint32_t) CFIO_WriteMemoryToStorage(Handle hMem, Handle hStorage, PInt8 lpName)
 {
 	SetReturnCode_cfio(IDS_CFIO_ERR_NO);
 
@@ -628,7 +628,7 @@ CFIO_FUNC(Word32) CFIO_WriteMemoryToStorage(Handle hMem, Handle hStorage, PInt8 
 }
 //////////////////////////////////////////////////////////////////////////////////
 //
-CFIO_FUNC(Word32) CFIO_ReadMemoryFromStorage(Handle hStorage, PInt8 lpName, Handle * phMem)
+CFIO_FUNC(uint32_t) CFIO_ReadMemoryFromStorage(Handle hStorage, PInt8 lpName, Handle * phMem)
 {
 	SetReturnCode_cfio(IDS_CFIO_ERR_NO);
 

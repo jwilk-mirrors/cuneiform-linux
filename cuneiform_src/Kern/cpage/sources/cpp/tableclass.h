@@ -2,33 +2,33 @@
 Copyright (c) 1993-2008, Cognitive Technologies
 All rights reserved.
 
-Разрешается повторное распространение и использование как в виде исходного кода,
-так и в двоичной форме, с изменениями или без, при соблюдении следующих условий:
+Р Р°Р·СЂРµС€Р°РµС‚СЃСЏ РїРѕРІС‚РѕСЂРЅРѕРµ СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРµ Рё РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ РєР°Рє РІ РІРёРґРµ РёСЃС…РѕРґРЅРѕРіРѕ РєРѕРґР°,
+С‚Р°Рє Рё РІ РґРІРѕРёС‡РЅРѕР№ С„РѕСЂРјРµ, СЃ РёР·РјРµРЅРµРЅРёСЏРјРё РёР»Рё Р±РµР·, РїСЂРё СЃРѕР±Р»СЋРґРµРЅРёРё СЃР»РµРґСѓСЋС‰РёС… СѓСЃР»РѕРІРёР№:
 
-      * При повторном распространении исходного кода должны оставаться указанное
-        выше уведомление об авторском праве, этот список условий и последующий
-        отказ от гарантий.
-      * При повторном распространении двоичного кода в документации и/или в
-        других материалах, поставляемых при распространении, должны сохраняться
-        указанная выше информация об авторском праве, этот список условий и
-        последующий отказ от гарантий.
-      * Ни название Cognitive Technologies, ни имена ее сотрудников не могут
-        быть использованы в качестве средства поддержки и/или продвижения
-        продуктов, основанных на этом ПО, без предварительного письменного
-        разрешения.
+      * РџСЂРё РїРѕРІС‚РѕСЂРЅРѕРј СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё РёСЃС…РѕРґРЅРѕРіРѕ РєРѕРґР° РґРѕР»Р¶РЅС‹ РѕСЃС‚Р°РІР°С‚СЊСЃСЏ СѓРєР°Р·Р°РЅРЅРѕРµ
+        РІС‹С€Рµ СѓРІРµРґРѕРјР»РµРЅРёРµ РѕР± Р°РІС‚РѕСЂСЃРєРѕРј РїСЂР°РІРµ, СЌС‚РѕС‚ СЃРїРёСЃРѕРє СѓСЃР»РѕРІРёР№ Рё РїРѕСЃР»РµРґСѓСЋС‰РёР№
+        РѕС‚РєР°Р· РѕС‚ РіР°СЂР°РЅС‚РёР№.
+      * РџСЂРё РїРѕРІС‚РѕСЂРЅРѕРј СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё РґРІРѕРёС‡РЅРѕРіРѕ РєРѕРґР° РІ РґРѕРєСѓРјРµРЅС‚Р°С†РёРё Рё/РёР»Рё РІ
+        РґСЂСѓРіРёС… РјР°С‚РµСЂРёР°Р»Р°С…, РїРѕСЃС‚Р°РІР»СЏРµРјС‹С… РїСЂРё СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё, РґРѕР»Р¶РЅС‹ СЃРѕС…СЂР°РЅСЏС‚СЊСЃСЏ
+        СѓРєР°Р·Р°РЅРЅР°СЏ РІС‹С€Рµ РёРЅС„РѕСЂРјР°С†РёСЏ РѕР± Р°РІС‚РѕСЂСЃРєРѕРј РїСЂР°РІРµ, СЌС‚РѕС‚ СЃРїРёСЃРѕРє СѓСЃР»РѕРІРёР№ Рё
+        РїРѕСЃР»РµРґСѓСЋС‰РёР№ РѕС‚РєР°Р· РѕС‚ РіР°СЂР°РЅС‚РёР№.
+      * РќРё РЅР°Р·РІР°РЅРёРµ Cognitive Technologies, РЅРё РёРјРµРЅР° РµРµ СЃРѕС‚СЂСѓРґРЅРёРєРѕРІ РЅРµ РјРѕРіСѓС‚
+        Р±С‹С‚СЊ РёСЃРїРѕР»СЊР·РѕРІР°РЅС‹ РІ РєР°С‡РµСЃС‚РІРµ СЃСЂРµРґСЃС‚РІР° РїРѕРґРґРµСЂР¶РєРё Рё/РёР»Рё РїСЂРѕРґРІРёР¶РµРЅРёСЏ
+        РїСЂРѕРґСѓРєС‚РѕРІ, РѕСЃРЅРѕРІР°РЅРЅС‹С… РЅР° СЌС‚РѕРј РџРћ, Р±РµР· РїСЂРµРґРІР°СЂРёС‚РµР»СЊРЅРѕРіРѕ РїРёСЃСЊРјРµРЅРЅРѕРіРѕ
+        СЂР°Р·СЂРµС€РµРЅРёСЏ.
 
-ЭТА ПРОГРАММА ПРЕДОСТАВЛЕНА ВЛАДЕЛЬЦАМИ АВТОРСКИХ ПРАВ И/ИЛИ ДРУГИМИ ЛИЦАМИ "КАК
-ОНА ЕСТЬ" БЕЗ КАКОГО-ЛИБО ВИДА ГАРАНТИЙ, ВЫРАЖЕННЫХ ЯВНО ИЛИ ПОДРАЗУМЕВАЕМЫХ,
-ВКЛЮЧАЯ ГАРАНТИИ КОММЕРЧЕСКОЙ ЦЕННОСТИ И ПРИГОДНОСТИ ДЛЯ КОНКРЕТНОЙ ЦЕЛИ, НО НЕ
-ОГРАНИЧИВАЯСЬ ИМИ. НИ ВЛАДЕЛЕЦ АВТОРСКИХ ПРАВ И НИ ОДНО ДРУГОЕ ЛИЦО, КОТОРОЕ
-МОЖЕТ ИЗМЕНЯТЬ И/ИЛИ ПОВТОРНО РАСПРОСТРАНЯТЬ ПРОГРАММУ, НИ В КОЕМ СЛУЧАЕ НЕ
-НЕСЁТ ОТВЕТСТВЕННОСТИ, ВКЛЮЧАЯ ЛЮБЫЕ ОБЩИЕ, СЛУЧАЙНЫЕ, СПЕЦИАЛЬНЫЕ ИЛИ
-ПОСЛЕДОВАВШИЕ УБЫТКИ, СВЯЗАННЫЕ С ИСПОЛЬЗОВАНИЕМ ИЛИ ПОНЕСЕННЫЕ ВСЛЕДСТВИЕ
-НЕВОЗМОЖНОСТИ ИСПОЛЬЗОВАНИЯ ПРОГРАММЫ (ВКЛЮЧАЯ ПОТЕРИ ДАННЫХ, ИЛИ ДАННЫЕ,
-СТАВШИЕ НЕГОДНЫМИ, ИЛИ УБЫТКИ И/ИЛИ ПОТЕРИ ДОХОДОВ, ПОНЕСЕННЫЕ ИЗ-ЗА ДЕЙСТВИЙ
-ТРЕТЬИХ ЛИЦ И/ИЛИ ОТКАЗА ПРОГРАММЫ РАБОТАТЬ СОВМЕСТНО С ДРУГИМИ ПРОГРАММАМИ,
-НО НЕ ОГРАНИЧИВАЯСЬ ЭТИМИ СЛУЧАЯМИ), НО НЕ ОГРАНИЧИВАЯСЬ ИМИ, ДАЖЕ ЕСЛИ ТАКОЙ
-ВЛАДЕЛЕЦ ИЛИ ДРУГОЕ ЛИЦО БЫЛИ ИЗВЕЩЕНЫ О ВОЗМОЖНОСТИ ТАКИХ УБЫТКОВ И ПОТЕРЬ.
+Р­РўРђ РџР РћР“Р РђРњРњРђ РџР Р•Р”РћРЎРўРђР’Р›Р•РќРђ Р’Р›РђР”Р•Р›Р¬Р¦РђРњР РђР’РўРћР РЎРљРРҐ РџР РђР’ Р/РР›Р Р”Р РЈР“РРњР Р›РР¦РђРњР "РљРђРљ
+РћРќРђ Р•РЎРўР¬" Р‘Р•Р— РљРђРљРћР“Рћ-Р›РР‘Рћ Р’РР”Рђ Р“РђР РђРќРўРР™, Р’Р«Р РђР–Р•РќРќР«РҐ РЇР’РќРћ РР›Р РџРћР”Р РђР—РЈРњР•Р’РђР•РњР«РҐ,
+Р’РљР›Р®Р§РђРЇ Р“РђР РђРќРўРР РљРћРњРњР•Р Р§Р•РЎРљРћР™ Р¦Р•РќРќРћРЎРўР Р РџР РР“РћР”РќРћРЎРўР Р”Р›РЇ РљРћРќРљР Р•РўРќРћР™ Р¦Р•Р›Р, РќРћ РќР•
+РћР“Р РђРќРР§РР’РђРЇРЎР¬ РРњР. РќР Р’Р›РђР”Р•Р›Р•Р¦ РђР’РўРћР РЎРљРРҐ РџР РђР’ Р РќР РћР”РќРћ Р”Р РЈР“РћР• Р›РР¦Рћ, РљРћРўРћР РћР•
+РњРћР–Р•Рў РР—РњР•РќРЇРўР¬ Р/РР›Р РџРћР’РўРћР РќРћ Р РђРЎРџР РћРЎРўР РђРќРЇРўР¬ РџР РћР“Р РђРњРњРЈ, РќР Р’ РљРћР•Рњ РЎР›РЈР§РђР• РќР•
+РќР•РЎРЃРў РћРўР’Р•РўРЎРўР’Р•РќРќРћРЎРўР, Р’РљР›Р®Р§РђРЇ Р›Р®Р‘Р«Р• РћР‘Р©РР•, РЎР›РЈР§РђР™РќР«Р•, РЎРџР•Р¦РРђР›Р¬РќР«Р• РР›Р
+РџРћРЎР›Р•Р”РћР’РђР’РЁРР• РЈР‘Р«РўРљР, РЎР’РЇР—РђРќРќР«Р• РЎ РРЎРџРћР›Р¬Р—РћР’РђРќРР•Рњ РР›Р РџРћРќР•РЎР•РќРќР«Р• Р’РЎР›Р•Р”РЎРўР’РР•
+РќР•Р’РћР—РњРћР–РќРћРЎРўР РРЎРџРћР›Р¬Р—РћР’РђРќРРЇ РџР РћР“Р РђРњРњР« (Р’РљР›Р®Р§РђРЇ РџРћРўР•Р Р Р”РђРќРќР«РҐ, РР›Р Р”РђРќРќР«Р•,
+РЎРўРђР’РЁРР• РќР•Р“РћР”РќР«РњР, РР›Р РЈР‘Р«РўРљР Р/РР›Р РџРћРўР•Р Р Р”РћРҐРћР”РћР’, РџРћРќР•РЎР•РќРќР«Р• РР—-Р—Рђ Р”Р•Р™РЎРўР’РР™
+РўР Р•РўР¬РРҐ Р›РР¦ Р/РР›Р РћРўРљРђР—Рђ РџР РћР“Р РђРњРњР« Р РђР‘РћРўРђРўР¬ РЎРћР’РњР•РЎРўРќРћ РЎ Р”Р РЈР“РРњР РџР РћР“Р РђРњРњРђРњР,
+РќРћ РќР• РћР“Р РђРќРР§РР’РђРЇРЎР¬ Р­РўРРњР РЎР›РЈР§РђРЇРњР), РќРћ РќР• РћР“Р РђРќРР§РР’РђРЇРЎР¬ РРњР, Р”РђР–Р• Р•РЎР›Р РўРђРљРћР™
+Р’Р›РђР”Р•Р›Р•Р¦ РР›Р Р”Р РЈР“РћР• Р›РР¦Рћ Р‘Р«Р›Р РР—Р’Р•Р©Р•РќР« Рћ Р’РћР—РњРћР–РќРћРЎРўР РўРђРљРРҐ РЈР‘Р«РўРљРћР’ Р РџРћРўР•Р Р¬.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
@@ -71,53 +71,53 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ///////////////////////////////////////////////////////
 class TableCell
 {
-	Int32	m_nNumber;	// Номер ячейки физической таблицы ( начиная с 1 )
-	Point32 m_PhCoord;	// Координаты привязки к физической ячейке
-	Int32   m_nBlock;	// Номер фрагмента
-	Int32	m_nGeCount;	// число геометрических ячеек, входящих в физическую
+	int32_t	m_nNumber;	// РќРѕРјРµСЂ СЏС‡РµР№РєРё С„РёР·РёС‡РµСЃРєРѕР№ С‚Р°Р±Р»РёС†С‹ ( РЅР°С‡РёРЅР°СЏ СЃ 1 )
+	Point32 m_PhCoord;	// РљРѕРѕСЂРґРёРЅР°С‚С‹ РїСЂРёРІСЏР·РєРё Рє С„РёР·РёС‡РµСЃРєРѕР№ СЏС‡РµР№РєРµ
+	int32_t   m_nBlock;	// РќРѕРјРµСЂ С„СЂР°РіРјРµРЅС‚Р°
+	int32_t	m_nGeCount;	// С‡РёСЃР»Рѕ РіРµРѕРјРµС‚СЂРёС‡РµСЃРєРёС… СЏС‡РµРµРє, РІС…РѕРґСЏС‰РёС… РІ С„РёР·РёС‡РµСЃРєСѓСЋ
 
 public:
 	TableCell();
 	~TableCell();
 	inline operator Point32(){ return m_PhCoord;};
-	inline operator Int32()  { return m_nBlock;};
-	inline Int32 GetGeCount(){ return m_nGeCount;};
+	inline operator int32_t()  { return m_nBlock;};
+	inline int32_t GetGeCount(){ return m_nGeCount;};
 	inline Bool32 IsPhysic() { return m_nGeCount > 1;};
 	inline Point32 operator=(Point32 p){ m_PhCoord = p; return p;};
-	inline Int32 operator=(Int32   n){ m_nNumber = n; return n;};
-	inline Int32 & Fragment(){ return m_nBlock;};
-	inline Int32 & GeCount() { return m_nGeCount;};
+	inline int32_t operator=(int32_t   n){ m_nNumber = n; return n;};
+	inline int32_t & Fragment(){ return m_nBlock;};
+	inline int32_t & GeCount() { return m_nGeCount;};
 };
 ///////////////////////////////////////////////////////
 class TableLine
 {
 private:
-	Int32 m_nCoord; // координата X - для вертикальных Y - для горизонтальных
-	//Int32 m_nItems;	// число элементов линии
+	int32_t m_nCoord; // РєРѕРѕСЂРґРёРЅР°С‚Р° X - РґР»СЏ РІРµСЂС‚РёРєР°Р»СЊРЅС‹С… Y - РґР»СЏ РіРѕСЂРёР·РѕРЅС‚Р°Р»СЊРЅС‹С…
+	//int32_t m_nItems;	// С‡РёСЃР»Рѕ СЌР»РµРјРµРЅС‚РѕРІ Р»РёРЅРёРё
 
-#define LINE_REALY	0x00000001 // Реальный элемент линии
-#define LINE_VISUAL	0x00000003 // Видимый элемент линии ( всегда реальный !!)
+#define LINE_REALY	0x00000001 // Р РµР°Р»СЊРЅС‹Р№ СЌР»РµРјРµРЅС‚ Р»РёРЅРёРё
+#define LINE_VISUAL	0x00000003 // Р’РёРґРёРјС‹Р№ СЌР»РµРјРµРЅС‚ Р»РёРЅРёРё ( РІСЃРµРіРґР° СЂРµР°Р»СЊРЅС‹Р№ !!)
 
-	PtrName<Word32> m_lpProperty; // свойства элементов линии
+	PtrName<uint32_t> m_lpProperty; // СЃРІРѕР№СЃС‚РІР° СЌР»РµРјРµРЅС‚РѕРІ Р»РёРЅРёРё
 
 public:
 	TableLine();
 	~TableLine();
 
-	Bool32	Create(Int32 nCoord,Word32 nItems);
+	Bool32	Create(int32_t nCoord,uint32_t nItems);
 	void	Delete();
 
 	Bool32	Attach(Handle hPage);
 	Bool32	Store(Handle hPage);
 	void    Remove(Handle hPage);
 
-	inline void   SetRealy(Word32 nItem,Bool32 b){
+	inline void   SetRealy(uint32_t nItem,Bool32 b){
 		if(b)
 			m_lpProperty[nItem] |= LINE_REALY;
 		else
 			m_lpProperty[nItem] &= ~LINE_REALY;
 		}
-	inline void   SetVisual(Word32 nItem,Bool32 b){
+	inline void   SetVisual(uint32_t nItem,Bool32 b){
 		if(b)
 			m_lpProperty[nItem] |= LINE_VISUAL;
 		else {
@@ -126,61 +126,61 @@ public:
 			}
 		}
 
-	inline Bool32 IsRealy(Word32 nItem){ return m_lpProperty[nItem] & LINE_REALY; };
-	inline Bool32 IsVisual(Word32 nItem){ return m_lpProperty[nItem] & LINE_VISUAL; };
-	inline operator Int32(){ return m_nCoord;};
+	inline Bool32 IsRealy(uint32_t nItem){ return m_lpProperty[nItem] & LINE_REALY; };
+	inline Bool32 IsVisual(uint32_t nItem){ return m_lpProperty[nItem] & LINE_VISUAL; };
+	inline operator int32_t(){ return m_nCoord;};
 };
 ///////////////////////////////////////////////////////
 class TableClass
 {
 private:
-	//Word32		m_nVer;			// число вертикальных линий
-	//Word32		m_nHor;			// число горизонтальных линий
-	Int32		m_nSkew2048;	// наклон таблицы
+	//uint32_t		m_nVer;			// С‡РёСЃР»Рѕ РІРµСЂС‚РёРєР°Р»СЊРЅС‹С… Р»РёРЅРёР№
+	//uint32_t		m_nHor;			// С‡РёСЃР»Рѕ РіРѕСЂРёР·РѕРЅС‚Р°Р»СЊРЅС‹С… Р»РёРЅРёР№
+	int32_t		m_nSkew2048;	// РЅР°РєР»РѕРЅ С‚Р°Р±Р»РёС†С‹
 	Handle		m_hBlock;
 	Handle      m_hPage;
-	Word32      m_nPhNumber;    // число физических ячеек
+	uint32_t      m_nPhNumber;    // С‡РёСЃР»Рѕ С„РёР·РёС‡РµСЃРєРёС… СЏС‡РµРµРє
 
-	PtrName<TableLine> m_lpVerLines;// горизонтальные координаты вертикальных линий
-	PtrName<TableLine> m_lpHorLines;// вертикальные координаты горизонтальных линий
-	PtrName<TableCell> m_lpCell;    // Ячейки таблицы
+	PtrName<TableLine> m_lpVerLines;// РіРѕСЂРёР·РѕРЅС‚Р°Р»СЊРЅС‹Рµ РєРѕРѕСЂРґРёРЅР°С‚С‹ РІРµСЂС‚РёРєР°Р»СЊРЅС‹С… Р»РёРЅРёР№
+	PtrName<TableLine> m_lpHorLines;// РІРµСЂС‚РёРєР°Р»СЊРЅС‹Рµ РєРѕРѕСЂРґРёРЅР°С‚С‹ РіРѕСЂРёР·РѕРЅС‚Р°Р»СЊРЅС‹С… Р»РёРЅРёР№
+	PtrName<TableCell> m_lpCell;    // РЇС‡РµР№РєРё С‚Р°Р±Р»РёС†С‹
 
 public:
 	TableClass();
 	~TableClass();
 
-	Bool32			Create(Int32 Skew2048, Word32 nVer,Int32 * lpVCor, Word32 nHor,Int32 * lpHCor);// Создать таблицу
-	void			Delete();// Освободить занимаемую память.
-	void			Update();// Создать внутренние связи.
+	Bool32			Create(int32_t Skew2048, uint32_t nVer,int32_t * lpVCor, uint32_t nHor,int32_t * lpHCor);// РЎРѕР·РґР°С‚СЊ С‚Р°Р±Р»РёС†Сѓ
+	void			Delete();// РћСЃРІРѕР±РѕРґРёС‚СЊ Р·Р°РЅРёРјР°РµРјСѓСЋ РїР°РјСЏС‚СЊ.
+	void			Update();// РЎРѕР·РґР°С‚СЊ РІРЅСѓС‚СЂРµРЅРЅРёРµ СЃРІСЏР·Рё.
 
-	static TableClass * Attach(Handle hPage,Handle hBlock);// Связать указатель со структурой хранящейчя в CPAGE
-	Handle			Store(Handle hPage); // Сохранить таблицу в заданной странице. Возвращает дескриптор структуры
-	void			Remove(); // Удалить из CPAGE
-	TableClass *	GetNext();// Получить следующую таблицу
+	static TableClass * Attach(Handle hPage,Handle hBlock);// РЎРІСЏР·Р°С‚СЊ СѓРєР°Р·Р°С‚РµР»СЊ СЃРѕ СЃС‚СЂСѓРєС‚СѓСЂРѕР№ С…СЂР°РЅСЏС‰РµР№С‡СЏ РІ CPAGE
+	Handle			Store(Handle hPage); // РЎРѕС…СЂР°РЅРёС‚СЊ С‚Р°Р±Р»РёС†Сѓ РІ Р·Р°РґР°РЅРЅРѕР№ СЃС‚СЂР°РЅРёС†Рµ. Р’РѕР·РІСЂР°С‰Р°РµС‚ РґРµСЃРєСЂРёРїС‚РѕСЂ СЃС‚СЂСѓРєС‚СѓСЂС‹
+	void			Remove(); // РЈРґР°Р»РёС‚СЊ РёР· CPAGE
+	TableClass *	GetNext();// РџРѕР»СѓС‡РёС‚СЊ СЃР»РµРґСѓСЋС‰СѓСЋ С‚Р°Р±Р»РёС†Сѓ
 
 
 
-	inline Word32 GetNumberGeCell(){ return GetNumberColumn()*GetNumberRow();};
-	inline Word32 GetNumberPhCell(){ return GetNumberGeCell();};
+	inline uint32_t GetNumberGeCell(){ return GetNumberColumn()*GetNumberRow();};
+	inline uint32_t GetNumberPhCell(){ return GetNumberGeCell();};
 
-	inline Int32 GetSkew2048(){ return m_nSkew2048;};
-	inline void  SetSkew2048(Int32 nSkew){ m_nSkew2048 = nSkew ;};
+	inline int32_t GetSkew2048(){ return m_nSkew2048;};
+	inline void  SetSkew2048(int32_t nSkew){ m_nSkew2048 = nSkew ;};
 
-	inline Word32 GetNumberColumn() { return m_lpVerLines.GetSize() - 1;};
-	inline Word32 GetNumberRow()	{ return m_lpHorLines.GetSize() - 1;};
+	inline uint32_t GetNumberColumn() { return m_lpVerLines.GetSize() - 1;};
+	inline uint32_t GetNumberRow()	{ return m_lpHorLines.GetSize() - 1;};
 
-	inline TableLine & GetHLine(Word32 nLine)	{
+	inline TableLine & GetHLine(uint32_t nLine)	{
 		_ASSERT(nLine>=0 && nLine<m_lpHorLines.GetSize());
 		return m_lpHorLines[nLine];
 		}
 
-	inline TableLine & GetVLine(Word32 nLine)	{
+	inline TableLine & GetVLine(uint32_t nLine)	{
 		_ASSERT(nLine>=0 && nLine<m_lpVerLines.GetSize());
 		return m_lpVerLines[nLine];
 		}
 	inline TableCell & GetCell(Point32 pt){
-		_ASSERT(GetNumberRow()>(Word32)pt.y &&
-				GetNumberColumn()>(Word32)pt.x &&
+		_ASSERT(GetNumberRow()>(uint32_t)pt.y &&
+				GetNumberColumn()>(uint32_t)pt.x &&
 				pt.y>=0 &&
 				pt.x>=0);
 		return m_lpCell[pt.y*GetNumberColumn() + pt.x];

@@ -2,33 +2,33 @@
 Copyright (c) 1993-2008, Cognitive Technologies
 All rights reserved.
 
-Ðàçðåøàåòñÿ ïîâòîðíîå ðàñïðîñòðàíåíèå è èñïîëüçîâàíèå êàê â âèäå èñõîäíîãî êîäà,
-òàê è â äâîè÷íîé ôîðìå, ñ èçìåíåíèÿìè èëè áåç, ïðè ñîáëþäåíèè ñëåäóþùèõ óñëîâèé:
+Ð Ð°Ð·Ñ€ÐµÑˆÐ°ÐµÑ‚ÑÑ Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€Ð½Ð¾Ðµ Ñ€Ð°ÑÐ¿Ñ€Ð¾ÑÑ‚Ñ€Ð°Ð½ÐµÐ½Ð¸Ðµ Ð¸ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð² Ð²Ð¸Ð´Ðµ Ð¸ÑÑ…Ð¾Ð´Ð½Ð¾Ð³Ð¾ ÐºÐ¾Ð´Ð°,
+Ñ‚Ð°Ðº Ð¸ Ð² Ð´Ð²Ð¾Ð¸Ñ‡Ð½Ð¾Ð¹ Ñ„Ð¾Ñ€Ð¼Ðµ, Ñ Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸ÑÐ¼Ð¸ Ð¸Ð»Ð¸ Ð±ÐµÐ·, Ð¿Ñ€Ð¸ ÑÐ¾Ð±Ð»ÑŽÐ´ÐµÐ½Ð¸Ð¸ ÑÐ»ÐµÐ´ÑƒÑŽÑ‰Ð¸Ñ… ÑƒÑÐ»Ð¾Ð²Ð¸Ð¹:
 
-      * Ïðè ïîâòîðíîì ðàñïðîñòðàíåíèè èñõîäíîãî êîäà äîëæíû îñòàâàòüñÿ óêàçàííîå
-        âûøå óâåäîìëåíèå îá àâòîðñêîì ïðàâå, ýòîò ñïèñîê óñëîâèé è ïîñëåäóþùèé
-        îòêàç îò ãàðàíòèé.
-      * Ïðè ïîâòîðíîì ðàñïðîñòðàíåíèè äâîè÷íîãî êîäà â äîêóìåíòàöèè è/èëè â
-        äðóãèõ ìàòåðèàëàõ, ïîñòàâëÿåìûõ ïðè ðàñïðîñòðàíåíèè, äîëæíû ñîõðàíÿòüñÿ
-        óêàçàííàÿ âûøå èíôîðìàöèÿ îá àâòîðñêîì ïðàâå, ýòîò ñïèñîê óñëîâèé è
-        ïîñëåäóþùèé îòêàç îò ãàðàíòèé.
-      * Íè íàçâàíèå Cognitive Technologies, íè èìåíà åå ñîòðóäíèêîâ íå ìîãóò
-        áûòü èñïîëüçîâàíû â êà÷åñòâå ñðåäñòâà ïîääåðæêè è/èëè ïðîäâèæåíèÿ
-        ïðîäóêòîâ, îñíîâàííûõ íà ýòîì ÏÎ, áåç ïðåäâàðèòåëüíîãî ïèñüìåííîãî
-        ðàçðåøåíèÿ.
+      * ÐŸÑ€Ð¸ Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€Ð½Ð¾Ð¼ Ñ€Ð°ÑÐ¿Ñ€Ð¾ÑÑ‚Ñ€Ð°Ð½ÐµÐ½Ð¸Ð¸ Ð¸ÑÑ…Ð¾Ð´Ð½Ð¾Ð³Ð¾ ÐºÐ¾Ð´Ð° Ð´Ð¾Ð»Ð¶Ð½Ñ‹ Ð¾ÑÑ‚Ð°Ð²Ð°Ñ‚ÑŒÑÑ ÑƒÐºÐ°Ð·Ð°Ð½Ð½Ð¾Ðµ
+        Ð²Ñ‹ÑˆÐµ ÑƒÐ²ÐµÐ´Ð¾Ð¼Ð»ÐµÐ½Ð¸Ðµ Ð¾Ð± Ð°Ð²Ñ‚Ð¾Ñ€ÑÐºÐ¾Ð¼ Ð¿Ñ€Ð°Ð²Ðµ, ÑÑ‚Ð¾Ñ‚ ÑÐ¿Ð¸ÑÐ¾Ðº ÑƒÑÐ»Ð¾Ð²Ð¸Ð¹ Ð¸ Ð¿Ð¾ÑÐ»ÐµÐ´ÑƒÑŽÑ‰Ð¸Ð¹
+        Ð¾Ñ‚ÐºÐ°Ð· Ð¾Ñ‚ Ð³Ð°Ñ€Ð°Ð½Ñ‚Ð¸Ð¹.
+      * ÐŸÑ€Ð¸ Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€Ð½Ð¾Ð¼ Ñ€Ð°ÑÐ¿Ñ€Ð¾ÑÑ‚Ñ€Ð°Ð½ÐµÐ½Ð¸Ð¸ Ð´Ð²Ð¾Ð¸Ñ‡Ð½Ð¾Ð³Ð¾ ÐºÐ¾Ð´Ð° Ð² Ð´Ð¾ÐºÑƒÐ¼ÐµÐ½Ñ‚Ð°Ñ†Ð¸Ð¸ Ð¸/Ð¸Ð»Ð¸ Ð²
+        Ð´Ñ€ÑƒÐ³Ð¸Ñ… Ð¼Ð°Ñ‚ÐµÑ€Ð¸Ð°Ð»Ð°Ñ…, Ð¿Ð¾ÑÑ‚Ð°Ð²Ð»ÑÐµÐ¼Ñ‹Ñ… Ð¿Ñ€Ð¸ Ñ€Ð°ÑÐ¿Ñ€Ð¾ÑÑ‚Ñ€Ð°Ð½ÐµÐ½Ð¸Ð¸, Ð´Ð¾Ð»Ð¶Ð½Ñ‹ ÑÐ¾Ñ…Ñ€Ð°Ð½ÑÑ‚ÑŒÑÑ
+        ÑƒÐºÐ°Ð·Ð°Ð½Ð½Ð°Ñ Ð²Ñ‹ÑˆÐµ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð¾Ð± Ð°Ð²Ñ‚Ð¾Ñ€ÑÐºÐ¾Ð¼ Ð¿Ñ€Ð°Ð²Ðµ, ÑÑ‚Ð¾Ñ‚ ÑÐ¿Ð¸ÑÐ¾Ðº ÑƒÑÐ»Ð¾Ð²Ð¸Ð¹ Ð¸
+        Ð¿Ð¾ÑÐ»ÐµÐ´ÑƒÑŽÑ‰Ð¸Ð¹ Ð¾Ñ‚ÐºÐ°Ð· Ð¾Ñ‚ Ð³Ð°Ñ€Ð°Ð½Ñ‚Ð¸Ð¹.
+      * ÐÐ¸ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ðµ Cognitive Technologies, Ð½Ð¸ Ð¸Ð¼ÐµÐ½Ð° ÐµÐµ ÑÐ¾Ñ‚Ñ€ÑƒÐ´Ð½Ð¸ÐºÐ¾Ð² Ð½Ðµ Ð¼Ð¾Ð³ÑƒÑ‚
+        Ð±Ñ‹Ñ‚ÑŒ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ñ‹ Ð² ÐºÐ°Ñ‡ÐµÑÑ‚Ð²Ðµ ÑÑ€ÐµÐ´ÑÑ‚Ð²Ð° Ð¿Ð¾Ð´Ð´ÐµÑ€Ð¶ÐºÐ¸ Ð¸/Ð¸Ð»Ð¸ Ð¿Ñ€Ð¾Ð´Ð²Ð¸Ð¶ÐµÐ½Ð¸Ñ
+        Ð¿Ñ€Ð¾Ð´ÑƒÐºÑ‚Ð¾Ð², Ð¾ÑÐ½Ð¾Ð²Ð°Ð½Ð½Ñ‹Ñ… Ð½Ð° ÑÑ‚Ð¾Ð¼ ÐŸÐž, Ð±ÐµÐ· Ð¿Ñ€ÐµÐ´Ð²Ð°Ñ€Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾Ð³Ð¾ Ð¿Ð¸ÑÑŒÐ¼ÐµÐ½Ð½Ð¾Ð³Ð¾
+        Ñ€Ð°Ð·Ñ€ÐµÑˆÐµÐ½Ð¸Ñ.
 
-ÝÒÀ ÏÐÎÃÐÀÌÌÀ ÏÐÅÄÎÑÒÀÂËÅÍÀ ÂËÀÄÅËÜÖÀÌÈ ÀÂÒÎÐÑÊÈÕ ÏÐÀÂ È/ÈËÈ ÄÐÓÃÈÌÈ ËÈÖÀÌÈ "ÊÀÊ
-ÎÍÀ ÅÑÒÜ" ÁÅÇ ÊÀÊÎÃÎ-ËÈÁÎ ÂÈÄÀ ÃÀÐÀÍÒÈÉ, ÂÛÐÀÆÅÍÍÛÕ ßÂÍÎ ÈËÈ ÏÎÄÐÀÇÓÌÅÂÀÅÌÛÕ,
-ÂÊËÞ×Àß ÃÀÐÀÍÒÈÈ ÊÎÌÌÅÐ×ÅÑÊÎÉ ÖÅÍÍÎÑÒÈ È ÏÐÈÃÎÄÍÎÑÒÈ ÄËß ÊÎÍÊÐÅÒÍÎÉ ÖÅËÈ, ÍÎ ÍÅ
-ÎÃÐÀÍÈ×ÈÂÀßÑÜ ÈÌÈ. ÍÈ ÂËÀÄÅËÅÖ ÀÂÒÎÐÑÊÈÕ ÏÐÀÂ È ÍÈ ÎÄÍÎ ÄÐÓÃÎÅ ËÈÖÎ, ÊÎÒÎÐÎÅ
-ÌÎÆÅÒ ÈÇÌÅÍßÒÜ È/ÈËÈ ÏÎÂÒÎÐÍÎ ÐÀÑÏÐÎÑÒÐÀÍßÒÜ ÏÐÎÃÐÀÌÌÓ, ÍÈ Â ÊÎÅÌ ÑËÓ×ÀÅ ÍÅ
-ÍÅÑ¨Ò ÎÒÂÅÒÑÒÂÅÍÍÎÑÒÈ, ÂÊËÞ×Àß ËÞÁÛÅ ÎÁÙÈÅ, ÑËÓ×ÀÉÍÛÅ, ÑÏÅÖÈÀËÜÍÛÅ ÈËÈ
-ÏÎÑËÅÄÎÂÀÂØÈÅ ÓÁÛÒÊÈ, ÑÂßÇÀÍÍÛÅ Ñ ÈÑÏÎËÜÇÎÂÀÍÈÅÌ ÈËÈ ÏÎÍÅÑÅÍÍÛÅ ÂÑËÅÄÑÒÂÈÅ
-ÍÅÂÎÇÌÎÆÍÎÑÒÈ ÈÑÏÎËÜÇÎÂÀÍÈß ÏÐÎÃÐÀÌÌÛ (ÂÊËÞ×Àß ÏÎÒÅÐÈ ÄÀÍÍÛÕ, ÈËÈ ÄÀÍÍÛÅ,
-ÑÒÀÂØÈÅ ÍÅÃÎÄÍÛÌÈ, ÈËÈ ÓÁÛÒÊÈ È/ÈËÈ ÏÎÒÅÐÈ ÄÎÕÎÄÎÂ, ÏÎÍÅÑÅÍÍÛÅ ÈÇ-ÇÀ ÄÅÉÑÒÂÈÉ
-ÒÐÅÒÜÈÕ ËÈÖ È/ÈËÈ ÎÒÊÀÇÀ ÏÐÎÃÐÀÌÌÛ ÐÀÁÎÒÀÒÜ ÑÎÂÌÅÑÒÍÎ Ñ ÄÐÓÃÈÌÈ ÏÐÎÃÐÀÌÌÀÌÈ,
-ÍÎ ÍÅ ÎÃÐÀÍÈ×ÈÂÀßÑÜ ÝÒÈÌÈ ÑËÓ×ÀßÌÈ), ÍÎ ÍÅ ÎÃÐÀÍÈ×ÈÂÀßÑÜ ÈÌÈ, ÄÀÆÅ ÅÑËÈ ÒÀÊÎÉ
-ÂËÀÄÅËÅÖ ÈËÈ ÄÐÓÃÎÅ ËÈÖÎ ÁÛËÈ ÈÇÂÅÙÅÍÛ Î ÂÎÇÌÎÆÍÎÑÒÈ ÒÀÊÈÕ ÓÁÛÒÊÎÂ È ÏÎÒÅÐÜ.
+Ð­Ð¢Ð ÐŸÐ ÐžÐ“Ð ÐÐœÐœÐ ÐŸÐ Ð•Ð”ÐžÐ¡Ð¢ÐÐ’Ð›Ð•ÐÐ Ð’Ð›ÐÐ”Ð•Ð›Ð¬Ð¦ÐÐœÐ˜ ÐÐ’Ð¢ÐžÐ Ð¡ÐšÐ˜Ð¥ ÐŸÐ ÐÐ’ Ð˜/Ð˜Ð›Ð˜ Ð”Ð Ð£Ð“Ð˜ÐœÐ˜ Ð›Ð˜Ð¦ÐÐœÐ˜ "ÐšÐÐš
+ÐžÐÐ Ð•Ð¡Ð¢Ð¬" Ð‘Ð•Ð— ÐšÐÐšÐžÐ“Ðž-Ð›Ð˜Ð‘Ðž Ð’Ð˜Ð”Ð Ð“ÐÐ ÐÐÐ¢Ð˜Ð™, Ð’Ð«Ð ÐÐ–Ð•ÐÐÐ«Ð¥ Ð¯Ð’ÐÐž Ð˜Ð›Ð˜ ÐŸÐžÐ”Ð ÐÐ—Ð£ÐœÐ•Ð’ÐÐ•ÐœÐ«Ð¥,
+Ð’ÐšÐ›Ð®Ð§ÐÐ¯ Ð“ÐÐ ÐÐÐ¢Ð˜Ð˜ ÐšÐžÐœÐœÐ•Ð Ð§Ð•Ð¡ÐšÐžÐ™ Ð¦Ð•ÐÐÐžÐ¡Ð¢Ð˜ Ð˜ ÐŸÐ Ð˜Ð“ÐžÐ”ÐÐžÐ¡Ð¢Ð˜ Ð”Ð›Ð¯ ÐšÐžÐÐšÐ Ð•Ð¢ÐÐžÐ™ Ð¦Ð•Ð›Ð˜, ÐÐž ÐÐ•
+ÐžÐ“Ð ÐÐÐ˜Ð§Ð˜Ð’ÐÐ¯Ð¡Ð¬ Ð˜ÐœÐ˜. ÐÐ˜ Ð’Ð›ÐÐ”Ð•Ð›Ð•Ð¦ ÐÐ’Ð¢ÐžÐ Ð¡ÐšÐ˜Ð¥ ÐŸÐ ÐÐ’ Ð˜ ÐÐ˜ ÐžÐ”ÐÐž Ð”Ð Ð£Ð“ÐžÐ• Ð›Ð˜Ð¦Ðž, ÐšÐžÐ¢ÐžÐ ÐžÐ•
+ÐœÐžÐ–Ð•Ð¢ Ð˜Ð—ÐœÐ•ÐÐ¯Ð¢Ð¬ Ð˜/Ð˜Ð›Ð˜ ÐŸÐžÐ’Ð¢ÐžÐ ÐÐž Ð ÐÐ¡ÐŸÐ ÐžÐ¡Ð¢Ð ÐÐÐ¯Ð¢Ð¬ ÐŸÐ ÐžÐ“Ð ÐÐœÐœÐ£, ÐÐ˜ Ð’ ÐšÐžÐ•Ðœ Ð¡Ð›Ð£Ð§ÐÐ• ÐÐ•
+ÐÐ•Ð¡ÐÐ¢ ÐžÐ¢Ð’Ð•Ð¢Ð¡Ð¢Ð’Ð•ÐÐÐžÐ¡Ð¢Ð˜, Ð’ÐšÐ›Ð®Ð§ÐÐ¯ Ð›Ð®Ð‘Ð«Ð• ÐžÐ‘Ð©Ð˜Ð•, Ð¡Ð›Ð£Ð§ÐÐ™ÐÐ«Ð•, Ð¡ÐŸÐ•Ð¦Ð˜ÐÐ›Ð¬ÐÐ«Ð• Ð˜Ð›Ð˜
+ÐŸÐžÐ¡Ð›Ð•Ð”ÐžÐ’ÐÐ’Ð¨Ð˜Ð• Ð£Ð‘Ð«Ð¢ÐšÐ˜, Ð¡Ð’Ð¯Ð—ÐÐÐÐ«Ð• Ð¡ Ð˜Ð¡ÐŸÐžÐ›Ð¬Ð—ÐžÐ’ÐÐÐ˜Ð•Ðœ Ð˜Ð›Ð˜ ÐŸÐžÐÐ•Ð¡Ð•ÐÐÐ«Ð• Ð’Ð¡Ð›Ð•Ð”Ð¡Ð¢Ð’Ð˜Ð•
+ÐÐ•Ð’ÐžÐ—ÐœÐžÐ–ÐÐžÐ¡Ð¢Ð˜ Ð˜Ð¡ÐŸÐžÐ›Ð¬Ð—ÐžÐ’ÐÐÐ˜Ð¯ ÐŸÐ ÐžÐ“Ð ÐÐœÐœÐ« (Ð’ÐšÐ›Ð®Ð§ÐÐ¯ ÐŸÐžÐ¢Ð•Ð Ð˜ Ð”ÐÐÐÐ«Ð¥, Ð˜Ð›Ð˜ Ð”ÐÐÐÐ«Ð•,
+Ð¡Ð¢ÐÐ’Ð¨Ð˜Ð• ÐÐ•Ð“ÐžÐ”ÐÐ«ÐœÐ˜, Ð˜Ð›Ð˜ Ð£Ð‘Ð«Ð¢ÐšÐ˜ Ð˜/Ð˜Ð›Ð˜ ÐŸÐžÐ¢Ð•Ð Ð˜ Ð”ÐžÐ¥ÐžÐ”ÐžÐ’, ÐŸÐžÐÐ•Ð¡Ð•ÐÐÐ«Ð• Ð˜Ð—-Ð—Ð Ð”Ð•Ð™Ð¡Ð¢Ð’Ð˜Ð™
+Ð¢Ð Ð•Ð¢Ð¬Ð˜Ð¥ Ð›Ð˜Ð¦ Ð˜/Ð˜Ð›Ð˜ ÐžÐ¢ÐšÐÐ—Ð ÐŸÐ ÐžÐ“Ð ÐÐœÐœÐ« Ð ÐÐ‘ÐžÐ¢ÐÐ¢Ð¬ Ð¡ÐžÐ’ÐœÐ•Ð¡Ð¢ÐÐž Ð¡ Ð”Ð Ð£Ð“Ð˜ÐœÐ˜ ÐŸÐ ÐžÐ“Ð ÐÐœÐœÐÐœÐ˜,
+ÐÐž ÐÐ• ÐžÐ“Ð ÐÐÐ˜Ð§Ð˜Ð’ÐÐ¯Ð¡Ð¬ Ð­Ð¢Ð˜ÐœÐ˜ Ð¡Ð›Ð£Ð§ÐÐ¯ÐœÐ˜), ÐÐž ÐÐ• ÐžÐ“Ð ÐÐÐ˜Ð§Ð˜Ð’ÐÐ¯Ð¡Ð¬ Ð˜ÐœÐ˜, Ð”ÐÐ–Ð• Ð•Ð¡Ð›Ð˜ Ð¢ÐÐšÐžÐ™
+Ð’Ð›ÐÐ”Ð•Ð›Ð•Ð¦ Ð˜Ð›Ð˜ Ð”Ð Ð£Ð“ÐžÐ• Ð›Ð˜Ð¦Ðž Ð‘Ð«Ð›Ð˜ Ð˜Ð—Ð’Ð•Ð©Ð•ÐÐ« Ðž Ð’ÐžÐ—ÐœÐžÐ–ÐÐžÐ¡Ð¢Ð˜ Ð¢ÐÐšÐ˜Ð¥ Ð£Ð‘Ð«Ð¢ÐšÐžÐ’ Ð˜ ÐŸÐžÐ¢Ð•Ð Ð¬.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
@@ -77,15 +77,15 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 typedef unsigned char BYTE;
 
-static Int32 _stdOpenCounter=0;
-static Int32 _stdCloseCounter=0;
-static Int32 _stdReadCounter=0;
-static Int32 _stdWriteCounter=0;
-static Int32 _stdSeekCounter=0;
-static Int32 _stdTellCounter=0;
-static Int32 _stdFileLengthCounter=0;
+static int32_t _stdOpenCounter=0;
+static int32_t _stdCloseCounter=0;
+static int32_t _stdReadCounter=0;
+static int32_t _stdWriteCounter=0;
+static int32_t _stdSeekCounter=0;
+static int32_t _stdTellCounter=0;
+static int32_t _stdFileLengthCounter=0;
 
-STD_FUNC( Int32 ) stdOpen( const char *filename, Int32 oflag, Int32 pmode )
+STD_FUNC( int32_t ) stdOpen( const char *filename, int32_t oflag, int32_t pmode )
 {
       _stdOpenCounter++;
       assert(filename);
@@ -93,7 +93,7 @@ STD_FUNC( Int32 ) stdOpen( const char *filename, Int32 oflag, Int32 pmode )
       if (pmode == 0)
          pmode = S_IREAD | S_IWRITE;
 
-      Int32 hnd  = open( filename, oflag, pmode );
+      int32_t hnd  = open( filename, oflag, pmode );
       if (hnd == -1)
       {
          CONSOLE("stdOpen('%s') failed {%ld}", filename, _stdOpenCounter);
@@ -101,7 +101,7 @@ STD_FUNC( Int32 ) stdOpen( const char *filename, Int32 oflag, Int32 pmode )
       return hnd;
 }
 
-STD_FUNC( Int32 ) stdClose( Int32 handle ) // ret: 0 -success, -1 -failed
+STD_FUNC( int32_t ) stdClose( int32_t handle ) // ret: 0 -success, -1 -failed
 {
       _stdCloseCounter++;
       if (handle == -1)
@@ -119,7 +119,7 @@ STD_FUNC( Int32 ) stdClose( Int32 handle ) // ret: 0 -success, -1 -failed
       return res;
 }
 
-STD_FUNC( Int32 ) stdRead( Int32 handle, void *buffer, Int32 count )
+STD_FUNC( int32_t ) stdRead( int32_t handle, void *buffer, int32_t count )
 {
    _stdReadCounter++;
 
@@ -129,7 +129,7 @@ STD_FUNC( Int32 ) stdRead( Int32 handle, void *buffer, Int32 count )
       return -1;
    };
 
-   Int32 res=0;
+   int32_t res=0;
 
    if (count>0)
    {  res = read(handle, (char*)buffer, count); // char* - for Macintosh
@@ -142,7 +142,7 @@ STD_FUNC( Int32 ) stdRead( Int32 handle, void *buffer, Int32 count )
    return res;
 }
 
-STD_FUNC( Int32 ) stdWrite( Int32 handle, void *buffer, Int32 count )
+STD_FUNC( int32_t ) stdWrite( int32_t handle, void *buffer, int32_t count )
 {
    _stdWriteCounter++;
 
@@ -152,7 +152,7 @@ STD_FUNC( Int32 ) stdWrite( Int32 handle, void *buffer, Int32 count )
       return -1;
    };
 
-   Int32 res=0;
+   int32_t res=0;
    if (count>0)
       res = write(handle, (char*)buffer, count);  // char* - for Macintosh
 
@@ -164,7 +164,7 @@ STD_FUNC( Int32 ) stdWrite( Int32 handle, void *buffer, Int32 count )
 }
 
 
-STD_FUNC( Int32 ) stdTell( Int32 handle )
+STD_FUNC( int32_t ) stdTell( int32_t handle )
 {
    _stdTellCounter++;
 
@@ -175,7 +175,7 @@ STD_FUNC( Int32 ) stdTell( Int32 handle )
       return -1;
    };
 
-   Int32 res = _tell(handle);
+   int32_t res = _tell(handle);
    if (res == -1L)
    {
       stdConsole("stdTell(%ld)=>%ld {%ld}", handle, res, _stdTellCounter);
@@ -183,7 +183,7 @@ STD_FUNC( Int32 ) stdTell( Int32 handle )
    return res;
 }
 
-STD_FUNC( Int32 ) stdSeek( Int32 handle, Int32 offset, Int32 origin  )
+STD_FUNC( int32_t ) stdSeek( int32_t handle, int32_t offset, int32_t origin  )
 {
    _stdSeekCounter++;
 
@@ -193,7 +193,7 @@ STD_FUNC( Int32 ) stdSeek( Int32 handle, Int32 offset, Int32 origin  )
       return -1;
    };
 
-   Int32 res = lseek(handle, offset, origin);
+   int32_t res = lseek(handle, offset, origin);
 
    if (res == -1L)
    {
@@ -202,7 +202,7 @@ STD_FUNC( Int32 ) stdSeek( Int32 handle, Int32 offset, Int32 origin  )
    return res;
 }
 
-STD_FUNC( Int32 ) stdFileLength( Int32 hnd )
+STD_FUNC( int32_t ) stdFileLength( int32_t hnd )
 {
    _stdFileLengthCounter++;
    if (hnd==-1)
@@ -211,10 +211,10 @@ STD_FUNC( Int32 ) stdFileLength( Int32 hnd )
       return -1;
    }
 #ifndef WIN32
-   Int32 cur = stdSeek(hnd, 0, SEEK_CUR);
+   int32_t cur = stdSeek(hnd, 0, SEEK_CUR);
    if (cur==-1)
       return -1;
-   Int32 ret = stdSeek(hnd,  0, SEEK_END);
+   int32_t ret = stdSeek(hnd,  0, SEEK_END);
    if (ret==-1)
       return -1;
    cur=stdSeek(hnd, cur, SEEK_SET);
@@ -222,7 +222,7 @@ STD_FUNC( Int32 ) stdFileLength( Int32 hnd )
       return -1;
    return ret;
 #else
-   Int32 ret = ::filelength(hnd);
+   int32_t ret = ::filelength(hnd);
 #endif
    if (ret == -1)
    {
@@ -231,7 +231,7 @@ STD_FUNC( Int32 ) stdFileLength( Int32 hnd )
    return ret;
 }
 
-STD_FUNC( Int32 ) stdAccess( const char *path, Int32 mode)
+STD_FUNC( int32_t ) stdAccess( const char *path, int32_t mode)
 {
 /*
 	mode: 00 - existence only
@@ -258,7 +258,7 @@ STD_FUNC( Bool32 ) stdCheckDirectory( const char* name, Bool32 bCreateIfNone )
 {
 #ifdef WIN32
    if (_access(name, 0)==0)
-   {  DWORD attr = GetFileAttributes( name );
+   {  uint32_t attr = GetFileAttributes( name );
       if ((attr != 0xFFFFFFFF) && (attr & FILE_ATTRIBUTE_DIRECTORY))
          return TRUE;
       else
@@ -415,8 +415,8 @@ STD_FUNC( Bool32 ) stdCopyDirectory(
 #endif
 }
 
-STD_FUNC( Word32 ) stdGetCurrentDirectory(
-   Word32 nBufferLength,	// size, in characters, of directory buffer
+STD_FUNC( uint32_t ) stdGetCurrentDirectory(
+   uint32_t nBufferLength,	// size, in characters, of directory buffer
    char * lpBuffer 	// address of buffer for current directory
    )
 {
@@ -480,18 +480,18 @@ STD_FUNC( void ) stdGoToHomeDirectory(void)
 #endif
 }
 
-STD_FUNC( Int32 ) stdGetDirectoryInfo(const char * lpBuffer,
-              Int32 nFlags, void* pExtParm)
+STD_FUNC( int32_t ) stdGetDirectoryInfo(const char * lpBuffer,
+              int32_t nFlags, void* pExtParm)
 {
-    Int32 nResult=0;
+    int32_t nResult=0;
 #ifdef WIN32
     if(nFlags==STD_DIRINFO_FL_DRVTYPE)
     {
         char szRootDir[256]={0};
         char szComputerNameThis[256]={0};
         char szComputerName[256]={0};
-        DWORD wBuffSize=256;
-        Int32 nLen=strlen(lpBuffer);
+uint32_t wBuffSize=256;
+        int32_t nLen=strlen(lpBuffer);
         if(nLen<2)
             return 0;
         Bool32 bMapped=FALSE;
@@ -501,7 +501,7 @@ STD_FUNC( Int32 ) stdGetDirectoryInfo(const char * lpBuffer,
         {
             strncpy(szRootDir,lpBuffer,2);
             szRootDir[2]=0;
-            Word32 wDrvType=GetDriveType(szRootDir);
+            uint32_t wDrvType=GetDriveType(szRootDir);
             if(wDrvType==DRIVE_REMOTE)
                 nResult|=STD_DIRINFO_DRV_NET;
             else if(wDrvType!=0 && wDrvType!=1)
@@ -533,11 +533,11 @@ STD_FUNC( Int32 ) stdGetDirectoryInfo(const char * lpBuffer,
 #endif
 }
 
-STD_FUNC( Int32 ) stdCmpFileTime(
+STD_FUNC( int32_t ) stdCmpFileTime(
        const char * lpFileName1,const char * lpFileName2,
-      Int32 nFlags)
+      int32_t nFlags)
 {
-    Int32 nResult=STD_CMPFILETIME_ERR;
+    int32_t nResult=STD_CMPFILETIME_ERR;
 #ifdef WIN32
     SECURITY_ATTRIBUTES stSecurityAttributes=
         {sizeof(SECURITY_ATTRIBUTES),0,TRUE};
@@ -559,7 +559,7 @@ STD_FUNC( Int32 ) stdCmpFileTime(
     FILETIME ftTime1={0}; FILETIME ftTime2={0};
     GetFileTime(hFile1,NULL,NULL,&ftTime1);
     GetFileTime(hFile2,NULL,NULL,&ftTime2);
-    Int32 nCmpRes=CompareFileTime(&ftTime1,&ftTime2);
+    int32_t nCmpRes=CompareFileTime(&ftTime1,&ftTime2);
     if(nCmpRes==-1)
         nResult=STD_CMPFILETIME_LESS;
     if(nCmpRes==1)
@@ -587,7 +587,7 @@ STD_FUNC( Bool32 ) stdCheckFile(const char * lpFileName )
 
 STD_FUNC( Bool32 ) stdMoveFile(
       const char * lpFileNameDst,const char * lpFileNameSrc,
-      Int32 nFlags)
+      int32_t nFlags)
 {
 #ifdef WIN32
     return MoveFile(lpFileNameSrc,lpFileNameDst);
@@ -626,7 +626,7 @@ STD_FUNC( Bool32 ) stdDeleteFile(
 
 #if WIN32
 
-Bool32 stdNetPathFromLocal(char* pszNetPath,Int32 nNetPathSize,const char* pszLocalPath)
+Bool32 stdNetPathFromLocal(char* pszNetPath,int32_t nNetPathSize,const char* pszLocalPath)
 {
     if(strlen(pszLocalPath)>=2 && !strncmp(pszLocalPath,"\\\\",2))
 	{
@@ -647,14 +647,14 @@ Bool32 stdNetPathFromLocal(char* pszNetPath,Int32 nNetPathSize,const char* pszLo
        xpLocPath=xpLocalDir;
        return stdNetPathFromLocal(pszNetPath,nNetPathSize,xpLocPath.buf);
     }
-    Word32 nDrvType=GetDriveType(szDrv);
+    uint32_t nDrvType=GetDriveType(szDrv);
     szDrv[0]=(char)stdUpperAscii((char)szDrv[0]);
     XPath xpPathWoDrv(pszLocalPath);
     xpPathWoDrv.EraseDrive();
-    DWORD nValType=0; BYTE szValData[256]={0}; DWORD nDataLen=sizeof(szValData);
+uint32_t nValType=0; BYTE szValData[256]={0}; uint32_t nDataLen=sizeof(szValData);
     if(nDrvType==DRIVE_FIXED)
     {
-        char szComputer[128]={0}; ULONG nSize=sizeof(szComputer);
+        char szComputer[128]={0}; ulong nSize=sizeof(szComputer);
         ::GetComputerName(szComputer,&nSize);
         sprintf((char*)szValData,"//%s/%c",szComputer,szDrv[0]);
     }

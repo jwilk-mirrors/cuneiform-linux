@@ -2,33 +2,33 @@
 Copyright (c) 1993-2008, Cognitive Technologies
 All rights reserved.
 
-Разрешается повторное распространение и использование как в виде исходного кода,
-так и в двоичной форме, с изменениями или без, при соблюдении следующих условий:
+Р Р°Р·СЂРµС€Р°РµС‚СЃСЏ РїРѕРІС‚РѕСЂРЅРѕРµ СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРµ Рё РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ РєР°Рє РІ РІРёРґРµ РёСЃС…РѕРґРЅРѕРіРѕ РєРѕРґР°,
+С‚Р°Рє Рё РІ РґРІРѕРёС‡РЅРѕР№ С„РѕСЂРјРµ, СЃ РёР·РјРµРЅРµРЅРёСЏРјРё РёР»Рё Р±РµР·, РїСЂРё СЃРѕР±Р»СЋРґРµРЅРёРё СЃР»РµРґСѓСЋС‰РёС… СѓСЃР»РѕРІРёР№:
 
-      * При повторном распространении исходного кода должны оставаться указанное
-        выше уведомление об авторском праве, этот список условий и последующий
-        отказ от гарантий.
-      * При повторном распространении двоичного кода в документации и/или в
-        других материалах, поставляемых при распространении, должны сохраняться
-        указанная выше информация об авторском праве, этот список условий и
-        последующий отказ от гарантий.
-      * Ни название Cognitive Technologies, ни имена ее сотрудников не могут
-        быть использованы в качестве средства поддержки и/или продвижения
-        продуктов, основанных на этом ПО, без предварительного письменного
-        разрешения.
+      * РџСЂРё РїРѕРІС‚РѕСЂРЅРѕРј СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё РёСЃС…РѕРґРЅРѕРіРѕ РєРѕРґР° РґРѕР»Р¶РЅС‹ РѕСЃС‚Р°РІР°С‚СЊСЃСЏ СѓРєР°Р·Р°РЅРЅРѕРµ
+        РІС‹С€Рµ СѓРІРµРґРѕРјР»РµРЅРёРµ РѕР± Р°РІС‚РѕСЂСЃРєРѕРј РїСЂР°РІРµ, СЌС‚РѕС‚ СЃРїРёСЃРѕРє СѓСЃР»РѕРІРёР№ Рё РїРѕСЃР»РµРґСѓСЋС‰РёР№
+        РѕС‚РєР°Р· РѕС‚ РіР°СЂР°РЅС‚РёР№.
+      * РџСЂРё РїРѕРІС‚РѕСЂРЅРѕРј СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё РґРІРѕРёС‡РЅРѕРіРѕ РєРѕРґР° РІ РґРѕРєСѓРјРµРЅС‚Р°С†РёРё Рё/РёР»Рё РІ
+        РґСЂСѓРіРёС… РјР°С‚РµСЂРёР°Р»Р°С…, РїРѕСЃС‚Р°РІР»СЏРµРјС‹С… РїСЂРё СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё, РґРѕР»Р¶РЅС‹ СЃРѕС…СЂР°РЅСЏС‚СЊСЃСЏ
+        СѓРєР°Р·Р°РЅРЅР°СЏ РІС‹С€Рµ РёРЅС„РѕСЂРјР°С†РёСЏ РѕР± Р°РІС‚РѕСЂСЃРєРѕРј РїСЂР°РІРµ, СЌС‚РѕС‚ СЃРїРёСЃРѕРє СѓСЃР»РѕРІРёР№ Рё
+        РїРѕСЃР»РµРґСѓСЋС‰РёР№ РѕС‚РєР°Р· РѕС‚ РіР°СЂР°РЅС‚РёР№.
+      * РќРё РЅР°Р·РІР°РЅРёРµ Cognitive Technologies, РЅРё РёРјРµРЅР° РµРµ СЃРѕС‚СЂСѓРґРЅРёРєРѕРІ РЅРµ РјРѕРіСѓС‚
+        Р±С‹С‚СЊ РёСЃРїРѕР»СЊР·РѕРІР°РЅС‹ РІ РєР°С‡РµСЃС‚РІРµ СЃСЂРµРґСЃС‚РІР° РїРѕРґРґРµСЂР¶РєРё Рё/РёР»Рё РїСЂРѕРґРІРёР¶РµРЅРёСЏ
+        РїСЂРѕРґСѓРєС‚РѕРІ, РѕСЃРЅРѕРІР°РЅРЅС‹С… РЅР° СЌС‚РѕРј РџРћ, Р±РµР· РїСЂРµРґРІР°СЂРёС‚РµР»СЊРЅРѕРіРѕ РїРёСЃСЊРјРµРЅРЅРѕРіРѕ
+        СЂР°Р·СЂРµС€РµРЅРёСЏ.
 
-ЭТА ПРОГРАММА ПРЕДОСТАВЛЕНА ВЛАДЕЛЬЦАМИ АВТОРСКИХ ПРАВ И/ИЛИ ДРУГИМИ ЛИЦАМИ "КАК
-ОНА ЕСТЬ" БЕЗ КАКОГО-ЛИБО ВИДА ГАРАНТИЙ, ВЫРАЖЕННЫХ ЯВНО ИЛИ ПОДРАЗУМЕВАЕМЫХ,
-ВКЛЮЧАЯ ГАРАНТИИ КОММЕРЧЕСКОЙ ЦЕННОСТИ И ПРИГОДНОСТИ ДЛЯ КОНКРЕТНОЙ ЦЕЛИ, НО НЕ
-ОГРАНИЧИВАЯСЬ ИМИ. НИ ВЛАДЕЛЕЦ АВТОРСКИХ ПРАВ И НИ ОДНО ДРУГОЕ ЛИЦО, КОТОРОЕ
-МОЖЕТ ИЗМЕНЯТЬ И/ИЛИ ПОВТОРНО РАСПРОСТРАНЯТЬ ПРОГРАММУ, НИ В КОЕМ СЛУЧАЕ НЕ
-НЕСЁТ ОТВЕТСТВЕННОСТИ, ВКЛЮЧАЯ ЛЮБЫЕ ОБЩИЕ, СЛУЧАЙНЫЕ, СПЕЦИАЛЬНЫЕ ИЛИ
-ПОСЛЕДОВАВШИЕ УБЫТКИ, СВЯЗАННЫЕ С ИСПОЛЬЗОВАНИЕМ ИЛИ ПОНЕСЕННЫЕ ВСЛЕДСТВИЕ
-НЕВОЗМОЖНОСТИ ИСПОЛЬЗОВАНИЯ ПРОГРАММЫ (ВКЛЮЧАЯ ПОТЕРИ ДАННЫХ, ИЛИ ДАННЫЕ,
-СТАВШИЕ НЕГОДНЫМИ, ИЛИ УБЫТКИ И/ИЛИ ПОТЕРИ ДОХОДОВ, ПОНЕСЕННЫЕ ИЗ-ЗА ДЕЙСТВИЙ
-ТРЕТЬИХ ЛИЦ И/ИЛИ ОТКАЗА ПРОГРАММЫ РАБОТАТЬ СОВМЕСТНО С ДРУГИМИ ПРОГРАММАМИ,
-НО НЕ ОГРАНИЧИВАЯСЬ ЭТИМИ СЛУЧАЯМИ), НО НЕ ОГРАНИЧИВАЯСЬ ИМИ, ДАЖЕ ЕСЛИ ТАКОЙ
-ВЛАДЕЛЕЦ ИЛИ ДРУГОЕ ЛИЦО БЫЛИ ИЗВЕЩЕНЫ О ВОЗМОЖНОСТИ ТАКИХ УБЫТКОВ И ПОТЕРЬ.
+Р­РўРђ РџР РћР“Р РђРњРњРђ РџР Р•Р”РћРЎРўРђР’Р›Р•РќРђ Р’Р›РђР”Р•Р›Р¬Р¦РђРњР РђР’РўРћР РЎРљРРҐ РџР РђР’ Р/РР›Р Р”Р РЈР“РРњР Р›РР¦РђРњР "РљРђРљ
+РћРќРђ Р•РЎРўР¬" Р‘Р•Р— РљРђРљРћР“Рћ-Р›РР‘Рћ Р’РР”Рђ Р“РђР РђРќРўРР™, Р’Р«Р РђР–Р•РќРќР«РҐ РЇР’РќРћ РР›Р РџРћР”Р РђР—РЈРњР•Р’РђР•РњР«РҐ,
+Р’РљР›Р®Р§РђРЇ Р“РђР РђРќРўРР РљРћРњРњР•Р Р§Р•РЎРљРћР™ Р¦Р•РќРќРћРЎРўР Р РџР РР“РћР”РќРћРЎРўР Р”Р›РЇ РљРћРќРљР Р•РўРќРћР™ Р¦Р•Р›Р, РќРћ РќР•
+РћР“Р РђРќРР§РР’РђРЇРЎР¬ РРњР. РќР Р’Р›РђР”Р•Р›Р•Р¦ РђР’РўРћР РЎРљРРҐ РџР РђР’ Р РќР РћР”РќРћ Р”Р РЈР“РћР• Р›РР¦Рћ, РљРћРўРћР РћР•
+РњРћР–Р•Рў РР—РњР•РќРЇРўР¬ Р/РР›Р РџРћР’РўРћР РќРћ Р РђРЎРџР РћРЎРўР РђРќРЇРўР¬ РџР РћР“Р РђРњРњРЈ, РќР Р’ РљРћР•Рњ РЎР›РЈР§РђР• РќР•
+РќР•РЎРЃРў РћРўР’Р•РўРЎРўР’Р•РќРќРћРЎРўР, Р’РљР›Р®Р§РђРЇ Р›Р®Р‘Р«Р• РћР‘Р©РР•, РЎР›РЈР§РђР™РќР«Р•, РЎРџР•Р¦РРђР›Р¬РќР«Р• РР›Р
+РџРћРЎР›Р•Р”РћР’РђР’РЁРР• РЈР‘Р«РўРљР, РЎР’РЇР—РђРќРќР«Р• РЎ РРЎРџРћР›Р¬Р—РћР’РђРќРР•Рњ РР›Р РџРћРќР•РЎР•РќРќР«Р• Р’РЎР›Р•Р”РЎРўР’РР•
+РќР•Р’РћР—РњРћР–РќРћРЎРўР РРЎРџРћР›Р¬Р—РћР’РђРќРРЇ РџР РћР“Р РђРњРњР« (Р’РљР›Р®Р§РђРЇ РџРћРўР•Р Р Р”РђРќРќР«РҐ, РР›Р Р”РђРќРќР«Р•,
+РЎРўРђР’РЁРР• РќР•Р“РћР”РќР«РњР, РР›Р РЈР‘Р«РўРљР Р/РР›Р РџРћРўР•Р Р Р”РћРҐРћР”РћР’, РџРћРќР•РЎР•РќРќР«Р• РР—-Р—Рђ Р”Р•Р™РЎРўР’РР™
+РўР Р•РўР¬РРҐ Р›РР¦ Р/РР›Р РћРўРљРђР—Рђ РџР РћР“Р РђРњРњР« Р РђР‘РћРўРђРўР¬ РЎРћР’РњР•РЎРўРќРћ РЎ Р”Р РЈР“РРњР РџР РћР“Р РђРњРњРђРњР,
+РќРћ РќР• РћР“Р РђРќРР§РР’РђРЇРЎР¬ Р­РўРРњР РЎР›РЈР§РђРЇРњР), РќРћ РќР• РћР“Р РђРќРР§РР’РђРЇРЎР¬ РРњР, Р”РђР–Р• Р•РЎР›Р РўРђРљРћР™
+Р’Р›РђР”Р•Р›Р•Р¦ РР›Р Р”Р РЈР“РћР• Р›РР¦Рћ Р‘Р«Р›Р РР—Р’Р•Р©Р•РќР« Рћ Р’РћР—РњРћР–РќРћРЎРўР РўРђРљРРҐ РЈР‘Р«РўРљРћР’ Р РџРћРўР•Р Р¬.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
@@ -90,10 +90,10 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 static  Rect16  merge_frame;
 static  Bool32  is_merge_frame=FALSE;
 static  CCOM_handle NumContainer =0;
-static  Int32   curr_line=0, original_density;
+static  int32_t   curr_line=0, original_density;
 static  Word8   original_begends;
 static  Word8 * rasterDIB4=NULL;
-static  Int32   DIB_Hei,    DIB_Wid,
+static  int32_t   DIB_Hei,    DIB_Wid,
                 DIB_HRes,   DIB_VRes,
                 DIB_TCol,   DIB_TRow,
                 DIB_BW,     DIB_FM=1,
@@ -107,8 +107,8 @@ static FNREXC_ProgressStart  fnProgressStart_exc =NULL;
 static FNREXC_ProgressStep   fnProgressStep_exc  =NULL;
 static FNREXC_ProgressFinish fnProgressFinish_exc=NULL;
 //=========== Progress Monitor
-static  Word32 progress_vol=0, progress_rel=0;
-void    progress_start (Word32 volume)
+static  uint32_t progress_vol=0, progress_rel=0;
+void    progress_start (uint32_t volume)
 {
 progress_vol=volume;
 if( fnProgressStart_exc )
@@ -125,9 +125,9 @@ if( fnProgressFinish_exc )
 return ;
 }
 
-Word32  progress_set_percent (Word32 step)
+uint32_t  progress_set_percent (uint32_t step)
 {
-Word32  rel = (step/progress_vol)*100;
+uint32_t  rel = (step/progress_vol)*100;
 if( !progress_vol || rel<progress_rel+10 )
     return step;
 progress_rel = rel;
@@ -172,8 +172,8 @@ extern Int16   MN_to_line(MN * mn);
 extern Bool16   rexc_set_alpha(Word8 language, Word8 *alphabet);
 extern Bool16   rexc_load_tables(Word8 language);
 extern Bool16   rexc_is_language(Word8 language);
-extern Int32    rexc_gra_type_ori(Word8 lang);
-extern Int32    rexc_gra_type_rec(Word8 lang);
+extern int32_t    rexc_gra_type_ori(Word8 lang);
+extern int32_t    rexc_gra_type_rec(Word8 lang);
 extern void     exc_ori_recog(RecVersions *v);
 -*/
 // from MATRIX.C
@@ -183,11 +183,11 @@ extern void matrix_close();
 extern void matrix_reset();
 //========== Local func ==========
 static void save_gcomp(ExtComponent *c);
-static Bool process_comp(void * pool,Word32 size);
+static Bool process_comp(void * pool,uint32_t size);
 static Bool flush_cache(void);
 static void reset_cache(void);
 static Bool init_dump_file(void);
-static Bool write_dump(void * pool,Int32 size);
+static Bool write_dump(void * pool,int32_t size);
 static Bool extrcomp_setup_memory(void);
 
 //========== Import data
@@ -196,23 +196,23 @@ extern ExtComponent wcomp;
 extern Word16 lpool_lth;
 extern Word8 lpool[];
 extern Word8 work_raster[];
-extern Int32 sz_work_raster, sz_work_raster_1;
+extern int32_t sz_work_raster, sz_work_raster_1;
 extern BOX *dl_last_in_chain;
 //========== Global data
 Word8       language=-1;
-Int32       gra_type_ori =-1;
-Int32       gra_type_rec =-1;
+int32_t       gra_type_ori =-1;
+int32_t       gra_type_rec =-1;
 TImageOpen  Tiger_ImageOpen;
 TImageRead  Tiger_ImageRead;
 TImageClose Tiger_ImageClose;
 Tiger_ProcComp    Tiger_ProcessComp;
-Int32   box_number=BOX_NUMBER;
+int32_t   box_number=BOX_NUMBER;
 Word8   fax1x2=0,matrix=0;
 Word16  actual_resolution;
 Word16  comp_max_h, comp_max_w, comp_min_h, comp_min_w;
 Word8   alphabet[256];
 Int16   nBlack,nAll,nWid;
-Int32 ExControl;
+int32_t ExControl;
 //========== Local data
 
 #define CACHESIZE       (64*1024)
@@ -229,7 +229,7 @@ static Word16            wLowRC =                            REXC_ERR_NO;;
 EXC_FUNC(Bool32)  ExtrcompInit( void )
 {
 FNCCOM_MakeLP      MLP=(FNCCOM_MakeLP)REXCMakeLP;
-Int32                ccom_vers, vers=REXC_VERSION_CODE;
+int32_t                ccom_vers, vers=REXC_VERSION_CODE;
 
 if( Q.boxstart )
     {
@@ -269,7 +269,7 @@ return;
 
 
 
-EXC_FUNC(Int32)  Extracomp(ExcControl ExCW,TImageOpen tio,
+EXC_FUNC(int32_t)  Extracomp(ExcControl ExCW,TImageOpen tio,
                                 TImageClose tic, TImageRead tir,
                                 Tiger_ProcComp tipc)
 {
@@ -349,7 +349,7 @@ EXC_FUNC(Bool32)  REXCExtracomp(ExcControl ExCW,TImageOpen tio,
                                 TImageClose tic, TImageRead tir,
                                 Tiger_ProcComp tipc)
 {
-Int32 ret;
+int32_t ret;
 ret = Extracomp(ExCW,tio,tic,tir,tipc);
 
 switch (ret)
@@ -516,7 +516,7 @@ CCOM_New(NumContainer ,g->row, g->col, g->w, g->h);
 return 1;
 }
 
-Bool    AcceptBoxes(void * pool, Word32 size)
+Bool    AcceptBoxes(void * pool, uint32_t size)
 {
 ExcBox* g , *ge;
 
@@ -607,7 +607,7 @@ if( curr_comp  )
 return lth ;
 }
 
-Bool    AcceptComps(void * pool, Word32 size)
+Bool    AcceptComps(void * pool, uint32_t size)
 {
 ExtComponent *  g , *ge;
 Word16          lth;
@@ -624,12 +624,12 @@ return TRUE;
 
 
 Bool32  REXCExtra(ExcControl ExCW,
-    Word8 *lpRaster, Int32 BWid, Bool32 ReverseOrder,
-    Int32 Wid, Int32 Hei, Int32 HRes, Int32 VRes,
-    Int32 TemplCol, Int32 TemplRow, Int32 TemplWid, Int32 TemplHei, Bool32 FotoMetr )
+    Word8 *lpRaster, int32_t BWid, Bool32 ReverseOrder,
+    int32_t Wid, int32_t Hei, int32_t HRes, int32_t VRes,
+    int32_t TemplCol, int32_t TemplRow, int32_t TemplWid, int32_t TemplHei, Bool32 FotoMetr )
 
 {
-Int32 ret;
+int32_t ret;
 if( Wid<=0 || BWid<=0 || Hei<=0 ||
     HRes<WORLD_MIN_RESOLUTION || VRes<WORLD_MIN_RESOLUTION  )
     {
@@ -734,7 +734,7 @@ return FALSE;
 Bool32  REXCExtracomp3CB(ExcControl ExCW,TImageOpen tio,
                                 TImageClose tic, TImageRead tir)
 {
-Int32 ret;
+int32_t ret;
   if( !(ExControl & Ex_NoContainer) )
     {
     NumContainer = CCOM_CreateContainer();
@@ -794,7 +794,7 @@ return FALSE;
 
 Bool32  REXCExtraDIB(ExcControl ExCW,
      Word8 *lp_DIB,
-     Int32 TemplCol, Int32 TemplRow, Int32 TemplWid, Int32 TemplHei)
+     int32_t TemplCol, int32_t TemplRow, int32_t TemplWid, int32_t TemplHei)
 
 {
 REXC_DIB        *lpDIB = (REXC_DIB *)lp_DIB;
@@ -871,8 +871,8 @@ Bool image_file_open (void)
  fax1x2 = 0; //(p.wResolutionX == 200 && p.wResolutionY == 100);
  if ((actual_resolution < WORLD_MIN_RESOLUTION) || (actual_resolution > WORLD_MAX_RESOLUTION))
  {
-	 //Никитин А. 11.12.2002
-	 //если разрешение не в пределах нормы локально выставим 300
+	 //РќРёРєРёС‚РёРЅ Рђ. 11.12.2002
+	 //РµСЃР»Рё СЂР°Р·СЂРµС€РµРЅРёРµ РЅРµ РІ РїСЂРµРґРµР»Р°С… РЅРѕСЂРјС‹ Р»РѕРєР°Р»СЊРЅРѕ РІС‹СЃС‚Р°РІРёРј 300
 	 actual_resolution = 300;
 //        error_exit (ERR_image,ExRc_IncorrectParam);
  }
@@ -1054,7 +1054,7 @@ if( ExControl & Ex_NoContainer )
  process_comp(&g,sizeof(gcomp));
 }
 
-Bool process_comp(void * pool,Word32 size)
+Bool process_comp(void * pool,uint32_t size)
 {
  assert(size < CACHESIZE);
  assert(pool && cache);
@@ -1082,7 +1082,7 @@ void reset_cache(void)
 Bool init_dump_file(void)
 { return remove(dumpfile) == 0; }
 
-Bool write_dump(void * pool,Int32 size)
+Bool write_dump(void * pool,int32_t size)
 {
 int h;
 
@@ -1133,7 +1133,7 @@ if( !ori )
 if (*ori == 5)
 {
 	const double formatA4 = 1.4;
-	Word32 PageNumber = CPAGE_GetCurrentPage();
+	uint32_t PageNumber = CPAGE_GetCurrentPage();
 	Handle h_Page = CPAGE_GetHandlePage(PageNumber);
 	PAGEINFO page_info = {0};
     if(GetPageInfo(h_Page,&page_info))
@@ -1173,7 +1173,7 @@ else
 return TRUE;
 }
 
-EXC_FUNC(Bool32) REXC_GetExportData(Word32 dwType, void * pData)
+EXC_FUNC(Bool32) REXC_GetExportData(uint32_t dwType, void * pData)
 {
 #define CASE_DATA(a,b,c)        case a: *(b *)pData = c; break
         Bool32 rc = TRUE;
@@ -1187,60 +1187,60 @@ EXC_FUNC(Bool32) REXC_GetExportData(Word32 dwType, void * pData)
 /*-Andrey: moved to RRecCom (recognition) and RNorm (autorotate)
 //--------------------------------------------------------------
         case REXC_FNEVNPROPERT:
-            *(Word32*)pData =          (Word32)REXC_SetEVNProperties;
+            *(uint32_t*)pData =          (uint32_t)REXC_SetEVNProperties;
             break;
 -*/
         case REXC_FNEXTRACOMP :
-            *(Word32*)pData =          (Word32)REXCExtracomp;
+            *(uint32_t*)pData =          (uint32_t)REXCExtracomp;
             break;
         case REXC_FNEXTRA :
-            *(Word32*)pData =          (Word32)REXCExtra;
+            *(uint32_t*)pData =          (uint32_t)REXCExtra;
             break;
         case REXC_FNEXTRADIB:
-            *(Word32*)pData =          (Word32)REXCExtraDIB;
+            *(uint32_t*)pData =          (uint32_t)REXCExtraDIB;
             break;
 
         case    REXC_FNGETCONTAINER:
-            *(Word32*)pData =          (Word32)REXCGetContainer;
+            *(uint32_t*)pData =          (uint32_t)REXCGetContainer;
             break;
 
         case    REXC_FNGETLENEREP:
-            *(Word32*)pData =          (Word32)REXCMakeLP;
+            *(uint32_t*)pData =          (uint32_t)REXCMakeLP;
             break;
         case    REXC_FNVERSION:
-            *(Word32*)pData =          (Word32)REXC_VERSION_CODE;
+            *(uint32_t*)pData =          (uint32_t)REXC_VERSION_CODE;
             break;
 /*-Andrey: moved to RRecCom (recognition) and RNorm (autorotate)
 //--------------------------------------------------------------
         case    REXC_FNREX_ISLANGUAGE:
-            *(Word32*)pData =          (Word32)REXC_IsLanguage;
+            *(uint32_t*)pData =          (uint32_t)REXC_IsLanguage;
             break;
         case    REXC_FNGETORIENT:
-            *(Word32*)pData =          (Word32)REXC_GetOrient;
+            *(uint32_t*)pData =          (uint32_t)REXC_GetOrient;
             break;
 -*/
         case    REXC_FNMN2CCOM:
-            *(Word32*)pData =          (Word32)REXC_MN2CCOM;
+            *(uint32_t*)pData =          (uint32_t)REXC_MN2CCOM;
             break;
         case    REXC_FNGETINVERTION:
-            *(Word32*)pData =          (Word32)REXC_GetInvertion;
+            *(uint32_t*)pData =          (uint32_t)REXC_GetInvertion;
             break;
 /*-Andrey: moved to RRecCom (recognition) and RNorm (autorotate)
 //--------------------------------------------------------------
-        case    REXC_FNEVNALPHABET:     // установка алфавита для евент
-            *(Word32*)pData =          (Word32)REXC_SetEVNAlphabet;
+        case    REXC_FNEVNALPHABET:     // СѓСЃС‚Р°РЅРѕРІРєР° Р°Р»С„Р°РІРёС‚Р° РґР»СЏ РµРІРµРЅС‚
+            *(uint32_t*)pData =          (uint32_t)REXC_SetEVNAlphabet;
             break;
 -*/
-        case    REXC_FNEXTRACOMP3CB:    // 3 коллбэка
-            *(Word32*)pData =          (Word32)REXCExtracomp3CB;
+        case    REXC_FNEXTRACOMP3CB:    // 3 РєРѕР»Р»Р±СЌРєР°
+            *(uint32_t*)pData =          (uint32_t)REXCExtracomp3CB;
             break;
 /*-Andrey: moved to RRecCom (recognition) and RNorm (autorotate)
 //--------------------------------------------------------------
-        case    REXC_FNEXTGETRECRASTERORIENT: // ориентация рабочего растра
-            *(Word32*)pData =          (Word32)exc_get_rec_raster_orient;
+        case    REXC_FNEXTGETRECRASTERORIENT: // РѕСЂРёРµРЅС‚Р°С†РёСЏ СЂР°Р±РѕС‡РµРіРѕ СЂР°СЃС‚СЂР°
+            *(uint32_t*)pData =          (uint32_t)exc_get_rec_raster_orient;
             break;
-        case    REXC_FNSETALLALPHAGRA: // алфавит нейронной сети
-            *(Word32*)pData =          (Word32)exc_set_all_alphabet_gra;
+        case    REXC_FNSETALLALPHAGRA: // Р°Р»С„Р°РІРёС‚ РЅРµР№СЂРѕРЅРЅРѕР№ СЃРµС‚Рё
+            *(uint32_t*)pData =          (uint32_t)exc_set_all_alphabet_gra;
             break;
 -*/
         default:
@@ -1251,7 +1251,7 @@ EXC_FUNC(Bool32) REXC_GetExportData(Word32 dwType, void * pData)
 return rc;
 }
 
-EXC_FUNC(Bool32) REXC_SetImportData(Word32 dwType, void * pData)
+EXC_FUNC(Bool32) REXC_SetImportData(uint32_t dwType, void * pData)
 {
 #define CASE_DATA(a,b,c)        case a: c = *(b *)pData; break
 #define CASE_PDATA(a,b,c)       case a: c = (b)pData;    break
@@ -1274,14 +1274,14 @@ switch(dwType)
 return TRUE;
 }
 
-EXC_FUNC(Word32)   REXC_GetReturnCode(void)
+EXC_FUNC(uint32_t)   REXC_GetReturnCode(void)
 {
 if( wLowRC == REXC_ERR_NO )
   return 0;
 return (wHeightRC<<16)|(wLowRC-REXC_ERR_MIN);
 }
 
-EXC_FUNC(char*)   REXC_GetReturnString(Word32 dwError)
+EXC_FUNC(char*)   REXC_GetReturnString(uint32_t dwError)
 {
         Word16 rc = (Word16)((dwError & 0xFFFF) );
         static char szBuffer[512];
@@ -1349,7 +1349,7 @@ Word8* frame_cut_MN(Int16, Int16);
 static Bool32 frame_cut_points();
 static void frame_select();
 static Bool16 frame_check();
-static Int32 frame_cut(MN *mn);
+static int32_t frame_cut(MN *mn);
 static Bool16 save_picture_scale (MN *mn);
 
 static Int16 big_merge(MN *mn)
@@ -1357,7 +1357,7 @@ static Int16 big_merge(MN *mn)
 
  if ((wcomp.h > comp_max_h) || (wcomp.w >= sizeof (W.eh)))
     return 0;
-//Andrey: определение точек разрезания вынесено в модуль RCutP - откат
+//Andrey: РѕРїСЂРµРґРµР»РµРЅРёРµ С‚РѕС‡РµРє СЂР°Р·СЂРµР·Р°РЅРёСЏ РІС‹РЅРµСЃРµРЅРѕ РІ РјРѕРґСѓР»СЊ RCutP - РѕС‚РєР°С‚
 
  frame_hist (mn);
  if (!frame_check())
@@ -1658,7 +1658,7 @@ return FALSE;
 #endif
 }
 
-static Int32 frame_cut(MN *mn)
+static int32_t frame_cut(MN *mn)
 {
  Int16 xl, xr, ncp,cutn;
  Int16 x0 = wcomp.left, y0=wcomp.upper, xmax = wcomp.w, h=wcomp.h;
@@ -1943,9 +1943,9 @@ for (pBox = (BOX *) mn -> mnfirstbox, nBox = 0;
 return FALSE;
 }
 
-Int32 sizeMN(MN *mn)
+int32_t sizeMN(MN *mn)
 {
-Int32    s;
+int32_t    s;
 BOX    *pBox;
 int    nBox;
 LNSTRT *pLine;
@@ -2004,7 +2004,7 @@ BOXINT *pInts;
 BOXINT *pAfterInts;
 BOXINT *pInt;
 int             xEnd, xBeg, y;
-Int32   size;
+int32_t   size;
 int             hh, y0, start=1;
 CCOM_lnhead *lnh={0};
 CCOM_comp   *cmp;
@@ -2079,7 +2079,7 @@ return TRUE;
 }
 
 
-static Int32 mn_sum(  MN *mn )
+static int32_t mn_sum(  MN *mn )
 {
 BOX    *pBox;
 int    nBox;
@@ -2087,7 +2087,7 @@ LNSTRT *pLine;
 BOXINT *pInts;
 BOXINT *pAfterInts;
 BOXINT *pInt;
-Int32     sum;
+int32_t     sum;
 
 sum=0;
 for (pBox = (BOX *) mn -> mnfirstbox, nBox = 0;
@@ -2121,7 +2121,7 @@ return sum;
 
 Bool16 save_picture_scale (MN *mn)
 {
-Int32     scale_2, scale;
+int32_t     scale_2, scale;
 Int16     sv_upper, sv_left, sv_w, sv_h;
 MN      *locmn;
 

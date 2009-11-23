@@ -2,33 +2,33 @@
 Copyright (c) 1993-2008, Cognitive Technologies
 All rights reserved.
 
-–‡ÁÂ¯‡ÂÚÒˇ ÔÓ‚ÚÓÌÓÂ ‡ÒÔÓÒÚ‡ÌÂÌËÂ Ë ËÒÔÓÎ¸ÁÓ‚‡ÌËÂ Í‡Í ‚ ‚Ë‰Â ËÒıÓ‰ÌÓ„Ó ÍÓ‰‡,
-Ú‡Í Ë ‚ ‰‚ÓË˜ÌÓÈ ÙÓÏÂ, Ò ËÁÏÂÌÂÌËˇÏË ËÎË ·ÂÁ, ÔË ÒÓ·Î˛‰ÂÌËË ÒÎÂ‰Û˛˘Ëı ÛÒÎÓ‚ËÈ:
+–†–∞–∑—Ä–µ—à–∞–µ—Ç—Å—è –ø–æ–≤—Ç–æ—Ä–Ω–æ–µ —Ä–∞—Å–ø—Ä–æ—Å—Ç—Ä–∞–Ω–µ–Ω–∏–µ –∏ –∏—Å–ø–æ–ª—å–∑–æ–≤–∞–Ω–∏–µ –∫–∞–∫ –≤ –≤–∏–¥–µ –∏—Å—Ö–æ–¥–Ω–æ–≥–æ –∫–æ–¥–∞,
+—Ç–∞–∫ –∏ –≤ –¥–≤–æ–∏—á–Ω–æ–π —Ñ–æ—Ä–º–µ, —Å –∏–∑–º–µ–Ω–µ–Ω–∏—è–º–∏ –∏–ª–∏ –±–µ–∑, –ø—Ä–∏ —Å–æ–±–ª—é–¥–µ–Ω–∏–∏ —Å–ª–µ–¥—É—é—â–∏—Ö —É—Å–ª–æ–≤–∏–π:
 
-      * œË ÔÓ‚ÚÓÌÓÏ ‡ÒÔÓÒÚ‡ÌÂÌËË ËÒıÓ‰ÌÓ„Ó ÍÓ‰‡ ‰ÓÎÊÌ˚ ÓÒÚ‡‚‡Ú¸Òˇ ÛÍ‡Á‡ÌÌÓÂ
-        ‚˚¯Â Û‚Â‰ÓÏÎÂÌËÂ Ó· ‡‚ÚÓÒÍÓÏ Ô‡‚Â, ˝ÚÓÚ ÒÔËÒÓÍ ÛÒÎÓ‚ËÈ Ë ÔÓÒÎÂ‰Û˛˘ËÈ
-        ÓÚÍ‡Á ÓÚ „‡‡ÌÚËÈ.
-      * œË ÔÓ‚ÚÓÌÓÏ ‡ÒÔÓÒÚ‡ÌÂÌËË ‰‚ÓË˜ÌÓ„Ó ÍÓ‰‡ ‚ ‰ÓÍÛÏÂÌÚ‡ˆËË Ë/ËÎË ‚
-        ‰Û„Ëı Ï‡ÚÂË‡Î‡ı, ÔÓÒÚ‡‚ÎˇÂÏ˚ı ÔË ‡ÒÔÓÒÚ‡ÌÂÌËË, ‰ÓÎÊÌ˚ ÒÓı‡ÌˇÚ¸Òˇ
-        ÛÍ‡Á‡ÌÌ‡ˇ ‚˚¯Â ËÌÙÓÏ‡ˆËˇ Ó· ‡‚ÚÓÒÍÓÏ Ô‡‚Â, ˝ÚÓÚ ÒÔËÒÓÍ ÛÒÎÓ‚ËÈ Ë
-        ÔÓÒÎÂ‰Û˛˘ËÈ ÓÚÍ‡Á ÓÚ „‡‡ÌÚËÈ.
-      * ÕË Ì‡Á‚‡ÌËÂ Cognitive Technologies, ÌË ËÏÂÌ‡ ÂÂ ÒÓÚÛ‰ÌËÍÓ‚ ÌÂ ÏÓ„ÛÚ
-        ·˚Ú¸ ËÒÔÓÎ¸ÁÓ‚‡Ì˚ ‚ Í‡˜ÂÒÚ‚Â ÒÂ‰ÒÚ‚‡ ÔÓ‰‰ÂÊÍË Ë/ËÎË ÔÓ‰‚ËÊÂÌËˇ
-        ÔÓ‰ÛÍÚÓ‚, ÓÒÌÓ‚‡ÌÌ˚ı Ì‡ ˝ÚÓÏ œŒ, ·ÂÁ ÔÂ‰‚‡ËÚÂÎ¸ÌÓ„Ó ÔËÒ¸ÏÂÌÌÓ„Ó
-        ‡ÁÂ¯ÂÌËˇ.
+      * –ü—Ä–∏ –ø–æ–≤—Ç–æ—Ä–Ω–æ–º —Ä–∞—Å–ø—Ä–æ—Å—Ç—Ä–∞–Ω–µ–Ω–∏–∏ –∏—Å—Ö–æ–¥–Ω–æ–≥–æ –∫–æ–¥–∞ –¥–æ–ª–∂–Ω—ã –æ—Å—Ç–∞–≤–∞—Ç—å—Å—è —É–∫–∞–∑–∞–Ω–Ω–æ–µ
+        –≤—ã—à–µ —É–≤–µ–¥–æ–º–ª–µ–Ω–∏–µ –æ–± –∞–≤—Ç–æ—Ä—Å–∫–æ–º –ø—Ä–∞–≤–µ, —ç—Ç–æ—Ç —Å–ø–∏—Å–æ–∫ —É—Å–ª–æ–≤–∏–π –∏ –ø–æ—Å–ª–µ–¥—É—é—â–∏–π
+        –æ—Ç–∫–∞–∑ –æ—Ç –≥–∞—Ä–∞–Ω—Ç–∏–π.
+      * –ü—Ä–∏ –ø–æ–≤—Ç–æ—Ä–Ω–æ–º —Ä–∞—Å–ø—Ä–æ—Å—Ç—Ä–∞–Ω–µ–Ω–∏–∏ –¥–≤–æ–∏—á–Ω–æ–≥–æ –∫–æ–¥–∞ –≤ –¥–æ–∫—É–º–µ–Ω—Ç–∞—Ü–∏–∏ –∏/–∏–ª–∏ –≤
+        –¥—Ä—É–≥–∏—Ö –º–∞—Ç–µ—Ä–∏–∞–ª–∞—Ö, –ø–æ—Å—Ç–∞–≤–ª—è–µ–º—ã—Ö –ø—Ä–∏ —Ä–∞—Å–ø—Ä–æ—Å—Ç—Ä–∞–Ω–µ–Ω–∏–∏, –¥–æ–ª–∂–Ω—ã —Å–æ—Ö—Ä–∞–Ω—è—Ç—å—Å—è
+        —É–∫–∞–∑–∞–Ω–Ω–∞—è –≤—ã—à–µ –∏–Ω—Ñ–æ—Ä–º–∞—Ü–∏—è –æ–± –∞–≤—Ç–æ—Ä—Å–∫–æ–º –ø—Ä–∞–≤–µ, —ç—Ç–æ—Ç —Å–ø–∏—Å–æ–∫ —É—Å–ª–æ–≤–∏–π –∏
+        –ø–æ—Å–ª–µ–¥—É—é—â–∏–π –æ—Ç–∫–∞–∑ –æ—Ç –≥–∞—Ä–∞–Ω—Ç–∏–π.
+      * –ù–∏ –Ω–∞–∑–≤–∞–Ω–∏–µ Cognitive Technologies, –Ω–∏ –∏–º–µ–Ω–∞ –µ–µ —Å–æ—Ç—Ä—É–¥–Ω–∏–∫–æ–≤ –Ω–µ –º–æ–≥—É—Ç
+        –±—ã—Ç—å –∏—Å–ø–æ–ª—å–∑–æ–≤–∞–Ω—ã –≤ –∫–∞—á–µ—Å—Ç–≤–µ —Å—Ä–µ–¥—Å—Ç–≤–∞ –ø–æ–¥–¥–µ—Ä–∂–∫–∏ –∏/–∏–ª–∏ –ø—Ä–æ–¥–≤–∏–∂–µ–Ω–∏—è
+        –ø—Ä–æ–¥—É–∫—Ç–æ–≤, –æ—Å–Ω–æ–≤–∞–Ω–Ω—ã—Ö –Ω–∞ —ç—Ç–æ–º –ü–û, –±–µ–∑ –ø—Ä–µ–¥–≤–∞—Ä–∏—Ç–µ–ª—å–Ω–æ–≥–æ –ø–∏—Å—å–º–µ–Ω–Ω–æ–≥–æ
+        —Ä–∞–∑—Ä–µ—à–µ–Ω–∏—è.
 
-›“¿ œ–Œ√–¿ÃÃ¿ œ–≈ƒŒ—“¿¬À≈Õ¿ ¬À¿ƒ≈À‹÷¿Ã» ¿¬“Œ–— »’ œ–¿¬ »/»À» ƒ–”√»Ã» À»÷¿Ã» " ¿ 
-ŒÕ¿ ≈—“‹" ¡≈«  ¿ Œ√Œ-À»¡Œ ¬»ƒ¿ √¿–¿Õ“»…, ¬€–¿∆≈ÕÕ€’ ﬂ¬ÕŒ »À» œŒƒ–¿«”Ã≈¬¿≈Ã€’,
-¬ Àﬁ◊¿ﬂ √¿–¿Õ“»»  ŒÃÃ≈–◊≈— Œ… ÷≈ÕÕŒ—“» » œ–»√ŒƒÕŒ—“» ƒÀﬂ  ŒÕ –≈“ÕŒ… ÷≈À», ÕŒ Õ≈
-Œ√–¿Õ»◊»¬¿ﬂ—‹ »Ã». Õ» ¬À¿ƒ≈À≈÷ ¿¬“Œ–— »’ œ–¿¬ » Õ» ŒƒÕŒ ƒ–”√Œ≈ À»÷Œ,  Œ“Œ–Œ≈
-ÃŒ∆≈“ »«Ã≈Õﬂ“‹ »/»À» œŒ¬“Œ–ÕŒ –¿—œ–Œ—“–¿Õﬂ“‹ œ–Œ√–¿ÃÃ”, Õ» ¬  Œ≈Ã —À”◊¿≈ Õ≈
-Õ≈—®“ Œ“¬≈“—“¬≈ÕÕŒ—“», ¬ Àﬁ◊¿ﬂ Àﬁ¡€≈ Œ¡Ÿ»≈, —À”◊¿…Õ€≈, —œ≈÷»¿À‹Õ€≈ »À»
-œŒ—À≈ƒŒ¬¿¬ÿ»≈ ”¡€“ », —¬ﬂ«¿ÕÕ€≈ — »—œŒÀ‹«Œ¬¿Õ»≈Ã »À» œŒÕ≈—≈ÕÕ€≈ ¬—À≈ƒ—“¬»≈
-Õ≈¬Œ«ÃŒ∆ÕŒ—“» »—œŒÀ‹«Œ¬¿Õ»ﬂ œ–Œ√–¿ÃÃ€ (¬ Àﬁ◊¿ﬂ œŒ“≈–» ƒ¿ÕÕ€’, »À» ƒ¿ÕÕ€≈,
-—“¿¬ÿ»≈ Õ≈√ŒƒÕ€Ã», »À» ”¡€“ » »/»À» œŒ“≈–» ƒŒ’ŒƒŒ¬, œŒÕ≈—≈ÕÕ€≈ »«-«¿ ƒ≈…—“¬»…
-“–≈“‹»’ À»÷ »/»À» Œ“ ¿«¿ œ–Œ√–¿ÃÃ€ –¿¡Œ“¿“‹ —Œ¬Ã≈—“ÕŒ — ƒ–”√»Ã» œ–Œ√–¿ÃÃ¿Ã»,
-ÕŒ Õ≈ Œ√–¿Õ»◊»¬¿ﬂ—‹ ›“»Ã» —À”◊¿ﬂÃ»), ÕŒ Õ≈ Œ√–¿Õ»◊»¬¿ﬂ—‹ »Ã», ƒ¿∆≈ ≈—À» “¿ Œ…
-¬À¿ƒ≈À≈÷ »À» ƒ–”√Œ≈ À»÷Œ ¡€À» »«¬≈Ÿ≈Õ€ Œ ¬Œ«ÃŒ∆ÕŒ—“» “¿ »’ ”¡€“ Œ¬ » œŒ“≈–‹.
+–≠–¢–ê –ü–†–û–ì–†–ê–ú–ú–ê –ü–†–ï–î–û–°–¢–ê–í–õ–ï–ù–ê –í–õ–ê–î–ï–õ–¨–¶–ê–ú–ò –ê–í–¢–û–†–°–ö–ò–• –ü–†–ê–í –ò/–ò–õ–ò –î–†–£–ì–ò–ú–ò –õ–ò–¶–ê–ú–ò "–ö–ê–ö
+–û–ù–ê –ï–°–¢–¨" –ë–ï–ó –ö–ê–ö–û–ì–û-–õ–ò–ë–û –í–ò–î–ê –ì–ê–†–ê–ù–¢–ò–ô, –í–´–†–ê–ñ–ï–ù–ù–´–• –Ø–í–ù–û –ò–õ–ò –ü–û–î–†–ê–ó–£–ú–ï–í–ê–ï–ú–´–•,
+–í–ö–õ–Æ–ß–ê–Ø –ì–ê–†–ê–ù–¢–ò–ò –ö–û–ú–ú–ï–†–ß–ï–°–ö–û–ô –¶–ï–ù–ù–û–°–¢–ò –ò –ü–†–ò–ì–û–î–ù–û–°–¢–ò –î–õ–Ø –ö–û–ù–ö–†–ï–¢–ù–û–ô –¶–ï–õ–ò, –ù–û –ù–ï
+–û–ì–†–ê–ù–ò–ß–ò–í–ê–Ø–°–¨ –ò–ú–ò. –ù–ò –í–õ–ê–î–ï–õ–ï–¶ –ê–í–¢–û–†–°–ö–ò–• –ü–†–ê–í –ò –ù–ò –û–î–ù–û –î–†–£–ì–û–ï –õ–ò–¶–û, –ö–û–¢–û–†–û–ï
+–ú–û–ñ–ï–¢ –ò–ó–ú–ï–ù–Ø–¢–¨ –ò/–ò–õ–ò –ü–û–í–¢–û–†–ù–û –†–ê–°–ü–†–û–°–¢–†–ê–ù–Ø–¢–¨ –ü–†–û–ì–†–ê–ú–ú–£, –ù–ò –í –ö–û–ï–ú –°–õ–£–ß–ê–ï –ù–ï
+–ù–ï–°–Å–¢ –û–¢–í–ï–¢–°–¢–í–ï–ù–ù–û–°–¢–ò, –í–ö–õ–Æ–ß–ê–Ø –õ–Æ–ë–´–ï –û–ë–©–ò–ï, –°–õ–£–ß–ê–ô–ù–´–ï, –°–ü–ï–¶–ò–ê–õ–¨–ù–´–ï –ò–õ–ò
+–ü–û–°–õ–ï–î–û–í–ê–í–®–ò–ï –£–ë–´–¢–ö–ò, –°–í–Ø–ó–ê–ù–ù–´–ï –° –ò–°–ü–û–õ–¨–ó–û–í–ê–ù–ò–ï–ú –ò–õ–ò –ü–û–ù–ï–°–ï–ù–ù–´–ï –í–°–õ–ï–î–°–¢–í–ò–ï
+–ù–ï–í–û–ó–ú–û–ñ–ù–û–°–¢–ò –ò–°–ü–û–õ–¨–ó–û–í–ê–ù–ò–Ø –ü–†–û–ì–†–ê–ú–ú–´ (–í–ö–õ–Æ–ß–ê–Ø –ü–û–¢–ï–†–ò –î–ê–ù–ù–´–•, –ò–õ–ò –î–ê–ù–ù–´–ï,
+–°–¢–ê–í–®–ò–ï –ù–ï–ì–û–î–ù–´–ú–ò, –ò–õ–ò –£–ë–´–¢–ö–ò –ò/–ò–õ–ò –ü–û–¢–ï–†–ò –î–û–•–û–î–û–í, –ü–û–ù–ï–°–ï–ù–ù–´–ï –ò–ó-–ó–ê –î–ï–ô–°–¢–í–ò–ô
+–¢–†–ï–¢–¨–ò–• –õ–ò–¶ –ò/–ò–õ–ò –û–¢–ö–ê–ó–ê –ü–†–û–ì–†–ê–ú–ú–´ –†–ê–ë–û–¢–ê–¢–¨ –°–û–í–ú–ï–°–¢–ù–û –° –î–†–£–ì–ò–ú–ò –ü–†–û–ì–†–ê–ú–ú–ê–ú–ò,
+–ù–û –ù–ï –û–ì–†–ê–ù–ò–ß–ò–í–ê–Ø–°–¨ –≠–¢–ò–ú–ò –°–õ–£–ß–ê–Ø–ú–ò), –ù–û –ù–ï –û–ì–†–ê–ù–ò–ß–ò–í–ê–Ø–°–¨ –ò–ú–ò, –î–ê–ñ–ï –ï–°–õ–ò –¢–ê–ö–û–ô
+–í–õ–ê–î–ï–õ–ï–¶ –ò–õ–ò –î–†–£–ì–û–ï –õ–ò–¶–û –ë–´–õ–ò –ò–ó–í–ï–©–ï–ù–´ –û –í–û–ó–ú–û–ñ–ù–û–°–¢–ò –¢–ê–ö–ò–• –£–ë–´–¢–ö–û–í –ò –ü–û–¢–ï–†–¨.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
@@ -65,7 +65,7 @@ void ClearAll( void )
 {
 	PAGEINFO           PInfo = {0};
 //
-// —Óı‡ÌËÏ ÔÓÒÎÂ‰ÂÌÌÂ ÒÓÒÚÓˇÌËÂ Ë Ó˜ËÒÚËÏ ÍÓÌÚÂÈÌÂ
+// –°–æ—Ö—Ä–∞–Ω–∏–º –ø–æ—Å–ª–µ–¥–µ–Ω–Ω–µ —Å–æ—Å—Ç–æ—è–Ω–∏–µ –∏ –æ—á–∏—Å—Ç–∏–º –∫–æ–Ω—Ç–µ–π–Ω–µ—Ä
 //
 	if(ghEdPage)
 	{
@@ -88,10 +88,10 @@ void ClearAll( void )
 	CCOM_DeleteAll();  hCCOM = NULL;
 	CIMAGE_DeleteImage((PWord8)PUMA_IMAGE_BINARIZE );
 	CIMAGE_DeleteImage((PWord8)PUMA_IMAGE_DELLINE	);
-//  œÓ‚ÂÌÛÚÓÂ ËÁÓ·‡ÊÂÌËÂ ( PUMA_IMAGE_ROTATE) Û‰‡ÎˇÚ¸ ÌÂÎ¸Áˇ, Í‡Í Ë ËÒıÓ‰ÌÓÂ,
-//  ÔÓÒÍÓÎ¸ÍÛ ÓÌÓ ÓÚÓ·‡Ê‡ÂÚÒˇ ‚ ËÌÚÂÙÂÈÒÂ. ≈„Ó ÌÛÊÌÓ Û‰‡ÎˇÚ¸
-//  ÎË·Ó ÔË ÔÓÎÛ˜ÂÌËË ÌÓ‚Ó„Ó ‰Ó‚ÂÌÛÚÓ„Ó ËÁÓ·‡ÊÂÌËˇ, ÎË·Ó ÔË
-//  Á‡Í˚ÚËË Ù‡ÈÎ‡
+//  –ü–æ–≤–µ—Ä–Ω—É—Ç–æ–µ –∏–∑–æ–±—Ä–∞–∂–µ–Ω–∏–µ ( PUMA_IMAGE_ROTATE) —É–¥–∞–ª—è—Ç—å –Ω–µ–ª—å–∑—è, –∫–∞–∫ –∏ –∏—Å—Ö–æ–¥–Ω–æ–µ,
+//  –ø–æ—Å–∫–æ–ª—å–∫—É –æ–Ω–æ –æ—Ç–æ–±—Ä–∞–∂–∞–µ—Ç—Å—è –≤ –∏–Ω—Ç–µ—Ä—Ñ–µ–π—Å–µ. –ï–≥–æ –Ω—É–∂–Ω–æ —É–¥–∞–ª—è—Ç—å
+//  –ª–∏–±–æ –ø—Ä–∏ –ø–æ–ª—É—á–µ–Ω–∏–∏ –Ω–æ–≤–æ–≥–æ –¥–æ–≤–µ—Ä–Ω—É—Ç–æ–≥–æ –∏–∑–æ–±—Ä–∞–∂–µ–Ω–∏—è, –ª–∏–±–æ –ø—Ä–∏
+//  –∑–∞–∫—Ä—ã—Ç–∏–∏ —Ñ–∞–π–ª–∞
 	CIMAGE_DeleteImage((PWord8)PUMA_IMAGE_TURN		);
 	/*
 	if(hCPAGE && CPAGE_GetCountBlock(hCPAGE))
@@ -107,8 +107,8 @@ void ClearAll( void )
 	*/
 }
 ///////////////////////////////////////////////////////
-// ‘ÛÌÍˆËË ÔÓ„ÂÒÒ ËÌ‰ËÍ‡ÚÓ‡
-Bool32 rexcProgressStep  (Word32 step)
+// –§—É–Ω–∫—Ü–∏–∏ –ø—Ä–æ–≥—Ä–µ—Å—Å –∏–Ω–¥–∏–∫–∞—Ç–æ—Ä–∞
+Bool32 rexcProgressStep  (uint32_t step)
 {
 	return ProgressStep(2,NULL,step);
 }
@@ -135,7 +135,7 @@ Bool32  ExtractComponents( Bool32 bIsRotate, Handle * prev_ccom, PWord8 name)
 		return FALSE;
 	}
 
-	// ·Û‰ÂÚ ‡ÒÔÓÁÌ‡‚‡ÌËˇ ˝‚ÂÌÚ‡ÏË
+	// –±—É–¥–µ—Ç —Ä–∞—Å–ø–æ–∑–Ω–∞–≤–∞–Ω–∏—è —ç–≤–µ–Ω—Ç–∞–º–∏
 	exc.Control  = Ex_ExtraComp|/*Ex_EvnRecog|*/Ex_Picture;
     //exc.Control |= Ex_NetRecog;
 
@@ -145,7 +145,7 @@ Bool32  ExtractComponents( Bool32 bIsRotate, Handle * prev_ccom, PWord8 name)
         exc.Control |= Ex_PictureLarge;
 /*
 	if(rc && !REXC_SetEVNProperties(exc, GetModulePath(),(Word8)gnLanguage) )
-	{ // ËÌËˆË‡ÎËÁËÓ‚‡Ú¸ ‡ÒÔÓÁÌ‡‚‡ÌËÂ ÔÓ ˝‚ÂÌÚ‡Ï Ë Á‡‰‡Ú¸ ‡ÎÙ‡‚ËÚ
+	{ // –∏–Ω–∏—Ü–∏–∞–ª–∏–∑–∏—Ä–æ–≤–∞—Ç—å —Ä–∞—Å–ø–æ–∑–Ω–∞–≤–∞–Ω–∏–µ –ø–æ —ç–≤–µ–Ω—Ç–∞–º –∏ –∑–∞–¥–∞—Ç—å –∞–ª—Ñ–∞–≤–∏—Ç
 		SetReturnCode_puma(REXC_GetReturnCode());
 		rc = FALSE;
 	}
@@ -159,7 +159,7 @@ Bool32  ExtractComponents( Bool32 bIsRotate, Handle * prev_ccom, PWord8 name)
 			REXC_SetImportData(REXC_Word8_Fax1x2,&w8);
 	}
 /*
-	if(rc && !REXCExtraDIB( exc, lpdata,0,0,0,0) ) // ÔÓËÒÍ ÍÓÏÔÓÌÂÌÚ ‚ DIB-e
+	if(rc && !REXCExtraDIB( exc, lpdata,0,0,0,0) ) // –ø–æ–∏—Å–∫ –∫–æ–º–ø–æ–Ω–µ–Ω—Ç –≤ DIB-e
 */
     CIMAGEIMAGECALLBACK clbk;
     if(rc && !CIMAGE_GetCallbackImage(name, &clbk))
@@ -167,7 +167,7 @@ Bool32  ExtractComponents( Bool32 bIsRotate, Handle * prev_ccom, PWord8 name)
 		SetReturnCode_puma(CIMAGE_GetReturnCode());
         rc = FALSE;
     }
-    if( rc && !REXCExtracomp3CB(exc, // ÔÓËÒÍ ÍÓÏÔÓÌÂÌÚ by 3CallBacks
+    if( rc && !REXCExtracomp3CB(exc, // –ø–æ–∏—Å–∫ –∫–æ–º–ø–æ–Ω–µ–Ω—Ç by 3CallBacks
         (TImageOpen)clbk.CIMAGE_ImageOpen,
         (TImageClose)clbk.CIMAGE_ImageClose,
         (TImageRead)clbk.CIMAGE_ImageRead)
@@ -201,10 +201,10 @@ Bool32  ExtractComponents( Bool32 bIsRotate, Handle * prev_ccom, PWord8 name)
 	return rc ;
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////
-// ¡Û‰ÂÚ ÔÂÂÌÂÒÂÌÓ ‚ RSource.dll
+// –ë—É–¥–µ—Ç –ø–µ—Ä–µ–Ω–µ—Å–µ–Ω–æ –≤ RSource.dll
 Bool32  comp_over(CCOM_comp *sour,CCOM_comp *cur)
 {
-	Int32   le,ri,up,dn,w,h;
+	int32_t   le,ri,up,dn,w,h;
 
 	if( sour->left+sour->w<=cur->left || cur->left+cur->w<=sour->left )
 		return FALSE;
@@ -238,11 +238,11 @@ Bool32  comp_over(CCOM_comp *sour,CCOM_comp *cur)
 	return FALSE;
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////
-// ·Û‰ÂÚ ÔÂÂÌÂÒÂÌÓ ‚ RSource.dll
+// –±—É–¥–µ—Ç –ø–µ—Ä–µ–Ω–µ—Å–µ–Ω–æ –≤ RSource.dll
 Bool32  remove_overlayed(CCOM_comp *sour,CCOM_handle haCCOM)
 {
 CCOM_comp   *cur=CCOM_GetFirst(haCCOM,NULL), *curn;
-Int32       over=0;
+int32_t       over=0;
 
 do  {
     curn=CCOM_GetNext(cur,NULL);
@@ -263,11 +263,11 @@ do  {
 return (over>0);
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////
-// ·Û‰ÂÚ ÔÂÂÌÂÒÂÌÓ ‚ RSource.dll
-// ‡‚ÚÓÒÚ‚Ó ÔËÌ‡‰ÎÂÊËÚ AlMi
-Bool32 MyGetZher (void **vvZher, Int32 *nZher, Int32 MaxZher, Handle hCPage)
+// –±—É–¥–µ—Ç –ø–µ—Ä–µ–Ω–µ—Å–µ–Ω–æ –≤ RSource.dll
+// –∞–≤—Ç–æ—Ä—Å—Ç–≤–æ –ø—Ä–∏–Ω–∞–¥–ª–µ–∂–∏—Ç AlMi
+Bool32 MyGetZher (void **vvZher, int32_t *nZher, int32_t MaxZher, Handle hCPage)
 {
-	Word32 err32, nTeor, nReal;
+	uint32_t err32, nTeor, nReal;
 	Handle hBlockZher;
 	Handle hBlockPrev;
 	int i;
@@ -306,17 +306,17 @@ Bool32 MyGetZher (void **vvZher, Int32 *nZher, Int32 MaxZher, Handle hCPage)
 	return TRUE;
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////
-// ·Û‰ÂÚ ÔÂÂÌÂÒÂÌÓ ‚ RSource.dll
+// –±—É–¥–µ—Ç –ø–µ—Ä–µ–Ω–µ—Å–µ–Ω–æ –≤ RSource.dll
 Bool32 RemoveLines(Handle hccom,Handle hcpage,PWord8 * lppDIB)
 {
 	PWord8 hDIB = NULL;
 	Bool32 rc = TRUE;
     hLinesCCOM = NULL;
     CCOM_comp   *victim[100];
-    Int32       nvict,i;
+    int32_t       nvict,i;
     Bool32      yes_victim = FALSE;
 //
-//	 ”‰‡ÎËÏ ÎËÌËË
+//	 –£–¥–∞–ª–∏–º –ª–∏–Ω–∏–∏
 //
 	if(rc && !RLINE_DeleteLines(hcpage,PUMA_IMAGE_DELLINE))
 	{
@@ -324,7 +324,7 @@ Bool32 RemoveLines(Handle hccom,Handle hcpage,PWord8 * lppDIB)
 		rc = FALSE;
 	}
 //
-//	 œÓÎÛ˜ËÏ ËÁÓ·‡ÊÂÌËÂ Ò Û‰‡ÎÂÌÌ˚ÏË ÎËÌËˇÏË
+//	 –ü–æ–ª—É—á–∏–º –∏–∑–æ–±—Ä–∞–∂–µ–Ω–∏–µ —Å —É–¥–∞–ª–µ–Ω–Ω—ã–º–∏ –ª–∏–Ω–∏—è–º–∏
 //
 	if(rc && !CIMAGE_ReadDIB((PWord8)PUMA_IMAGE_DELLINE,(Handle*)&hDIB,TRUE))
 	{
@@ -334,7 +334,7 @@ Bool32 RemoveLines(Handle hccom,Handle hcpage,PWord8 * lppDIB)
 	if(hDIB)
 	{
 //
-//		 ”‰‡ÎËÏ ÍÓÏÔÓÌÂÌÚ˚ Ë ‚˚‰ÂÎËÏ Ëı Á‡ÌÓ‚Ó.
+//		 –£–¥–∞–ª–∏–º –∫–æ–º–ø–æ–Ω–µ–Ω—Ç—ã –∏ –≤—ã–¥–µ–ª–∏–º –∏—Ö –∑–∞–Ω–æ–≤–æ.
 //
 		*lppDIB = (PWord8)hDIB;
 		if(rc)
@@ -382,7 +382,7 @@ Bool32 RemoveLines(Handle hccom,Handle hcpage,PWord8 * lppDIB)
                 {
                 /*
                 Rect16 rect1;
-	            Word32 key = 111;
+	            uint32_t key = 111;
                 for(i=0;i<nvict;i++)
                     {
                     exa = victim[i];
@@ -395,7 +395,7 @@ Bool32 RemoveLines(Handle hccom,Handle hcpage,PWord8 * lppDIB)
 
                 if(!LDPUMA_Skip(hShowCheckLetters))
 	                {
-		                LDPUMA_Console("Puma_ ÓÓ·ÍË ÊÂÚ‚  \n");
+		                LDPUMA_Console("Puma_–ö–æ—Ä–æ–±–∫–∏ –∂–µ—Ä—Ç–≤  \n");
 		                LDPUMA_WaitUserInput(NULL, NULL);
 		                LDPUMA_DeleteRects(NULL, key);
 	                }
@@ -424,7 +424,7 @@ Bool32 RemoveLines(Handle hccom,Handle hcpage,PWord8 * lppDIB)
                 }
 			}
 			else
-				LDPUMA_Console("œÓÔÛ˘ÂÌ ˝Ú‡Ô ‚˚‰ÂÎÂÌËˇ ÍÓÏÔÓÌÂÌÚ ÔÓÒÎÂ Û‰‡ÎÂÌËˇ ÎËÌËÈ.\n");
+				LDPUMA_Console("–ü—Ä–æ–ø—É—â–µ–Ω —ç—Ç–∞–ø –≤—ã–¥–µ–ª–µ–Ω–∏—è –∫–æ–º–ø–æ–Ω–µ–Ω—Ç –ø–æ—Å–ª–µ —É–¥–∞–ª–µ–Ω–∏—è –ª–∏–Ω–∏–π.\n");
 		}
 	}
 return rc;
@@ -516,15 +516,15 @@ void ProgressFinish()
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-Bool32 ProgressStep(Word32 step,char*name,Word32 percent)
+Bool32 ProgressStep(uint32_t step,char*name,uint32_t percent)
 {
 	Bool32 rc = TRUE;
-	static Word32 old = 0;
+	static uint32_t old = 0;
 
 	g_PrgTime.dwStep = step;
 	g_PrgTime.name = name ? name : g_PrgTime.name;
 
-	Word32 perc = g_PrgTime.dwBeg + percent*(g_PrgTime.dwEnd - g_PrgTime.dwBeg)/100;
+	uint32_t perc = g_PrgTime.dwBeg + percent*(g_PrgTime.dwEnd - g_PrgTime.dwBeg)/100;
 	rc = LDPUMA_ProgressStep(step,g_PrgTime.name,perc);
 //	_ASSERT(perc>=old);
 	if(fnProgressStep)
@@ -535,34 +535,34 @@ Bool32 ProgressStep(Word32 step,char*name,Word32 percent)
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-Bool32 ProgressStepLayout(Word32 step,Word32 percent)
+Bool32 ProgressStepLayout(uint32_t step,uint32_t percent)
 {
 	return ProgressStep(step, GetResourceString(IDS_PRG_OPEN), percent);
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-Bool32 ProgressStepLines(Word32 step,Word32 percent)
+Bool32 ProgressStepLines(uint32_t step,uint32_t percent)
 {
 	return ProgressStep(step, GetResourceString(IDS_REMOVELINE), percent);
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-Bool32 ProgressStepTables(Word32 step,Word32 percent)
+Bool32 ProgressStepTables(uint32_t step,uint32_t percent)
 {
 	return ProgressStep(step, GetResourceString(IDS_REMOVELINE), percent);
 }
 //////////////////////////////////////////////////////
-Bool32 ProgressStepSearchTables(Word32 step,Word32 percent)
+Bool32 ProgressStepSearchTables(uint32_t step,uint32_t percent)
 {
 	return ProgressStep(step, GetResourceString(IDS_SEARCHTABLE), percent);
 }
 //////////////////////////////////////////////////////
-Bool32 ProgressStepAutoLayout(Word32 step,Word32 percent)
+Bool32 ProgressStepAutoLayout(uint32_t step,uint32_t percent)
 {
 	return ProgressStep(step, GetResourceString(IDS_AUTOLAYOUT), percent);
 }
 
-static Word32 bInitPrgTime = 0;
+static uint32_t bInitPrgTime = 0;
 void ResetPRGTIME()
 {
 	bInitPrgTime = 0;
@@ -596,12 +596,12 @@ Bool32  InitPRGTIME()
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-PRGTIME	 StorePRGTIME(Word32 beg, Word32 end)
+PRGTIME	 StorePRGTIME(uint32_t beg, uint32_t end)
 {
 	PRGTIME rc = g_PrgTime;
 
-	Word32 newBeg = g_PrgTime.dwBeg + (g_PrgTime.dwEnd - g_PrgTime.dwBeg)*beg/100;
-	Word32 newEnd = g_PrgTime.dwBeg + (g_PrgTime.dwEnd - g_PrgTime.dwBeg)*end/100;
+	uint32_t newBeg = g_PrgTime.dwBeg + (g_PrgTime.dwEnd - g_PrgTime.dwBeg)*beg/100;
+	uint32_t newEnd = g_PrgTime.dwBeg + (g_PrgTime.dwEnd - g_PrgTime.dwBeg)*end/100;
 
 	g_PrgTime.dwBeg = newBeg;
 	g_PrgTime.dwEnd = newEnd;
@@ -628,13 +628,13 @@ Bool32 PrintResult(int num,CSTR_line lout,Handle hCPAGE)
 	Bool32 italic = 0;
 	Bool32 strikeout = 0;
 	Bool32 underline = 0;
-	Int32 height = 0;
-	Int32 offset = 0;
-	Word32 textcolor = 0;
+	int32_t height = 0;
+	int32_t offset = 0;
+	uint32_t textcolor = 0;
 	int charset = RUSSIAN_CHARSET;
 	const char * name = NULL;
-	static Int32  nFragment = -1;
-	static Word32 deftextcolor = 0;
+	static int32_t  nFragment = -1;
+	static uint32_t deftextcolor = 0;
 	Bool32 bOutputKegl = TRUE;
 
 	CSTR_GetLineAttr (lout,&line_attr);
@@ -646,7 +646,7 @@ Bool32 PrintResult(int num,CSTR_line lout,Handle hCPAGE)
 		Handle hBlock = CPAGE_GetBlockFirst(hCPAGE,0);
 		while(hBlock)
 		{
-			if(CPAGE_GetBlockInterNum(hCPAGE,hBlock) == (Word32)line_attr.fragment)
+			if(CPAGE_GetBlockInterNum(hCPAGE,hBlock) == (uint32_t)line_attr.fragment)
 			{
 				nFragment = line_attr.fragment;
 				goto lNext;
@@ -660,7 +660,7 @@ lNext:
 
 
 	LDPUMA_SetConsoleProperty(0,0,0,0,0,0,deftextcolor,RUSSIAN_CHARSET,"Courier New");
-	LDPUMA_Console("‘.%2i —Ú.%3i: <",line_attr.fragment,num);
+	LDPUMA_Console("–§—Ä.%2i –°—Ç—Ä.%3i: <",line_attr.fragment,num);
 
 	if( start && stop )
 	{
@@ -753,18 +753,18 @@ lNext:
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-Bool32  HL_TableExtractEx( Handle hPAGE, Word32 perc, Rect32 rect )
+Bool32  HL_TableExtractEx( Handle hPAGE, uint32_t perc, Rect32 rect )
 {
 	return RMARKER_SearchTableInZone(hPAGE,hCCOM,perc,rect);
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-Bool32 IsUpdate(Word32 flg)
+Bool32 IsUpdate(uint32_t flg)
 {
 	return (g_flgUpdate & flg) > 0;
 }
 
-void   SetUpdate(Word32 flgAdd,Word32 flgRemove)
+void   SetUpdate(uint32_t flgAdd,uint32_t flgRemove)
 {
 	g_flgUpdate = (g_flgUpdate | flgAdd) & ~flgRemove;
 }

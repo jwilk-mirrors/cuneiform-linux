@@ -2,33 +2,33 @@
 Copyright (c) 1993-2008, Cognitive Technologies
 All rights reserved.
 
-Разрешается повторное распространение и использование как в виде исходного кода,
-так и в двоичной форме, с изменениями или без, при соблюдении следующих условий:
+Р Р°Р·СЂРµС€Р°РµС‚СЃСЏ РїРѕРІС‚РѕСЂРЅРѕРµ СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРµ Рё РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ РєР°Рє РІ РІРёРґРµ РёСЃС…РѕРґРЅРѕРіРѕ РєРѕРґР°,
+С‚Р°Рє Рё РІ РґРІРѕРёС‡РЅРѕР№ С„РѕСЂРјРµ, СЃ РёР·РјРµРЅРµРЅРёСЏРјРё РёР»Рё Р±РµР·, РїСЂРё СЃРѕР±Р»СЋРґРµРЅРёРё СЃР»РµРґСѓСЋС‰РёС… СѓСЃР»РѕРІРёР№:
 
-      * При повторном распространении исходного кода должны оставаться указанное
-        выше уведомление об авторском праве, этот список условий и последующий
-        отказ от гарантий.
-      * При повторном распространении двоичного кода в документации и/или в
-        других материалах, поставляемых при распространении, должны сохраняться
-        указанная выше информация об авторском праве, этот список условий и
-        последующий отказ от гарантий.
-      * Ни название Cognitive Technologies, ни имена ее сотрудников не могут
-        быть использованы в качестве средства поддержки и/или продвижения
-        продуктов, основанных на этом ПО, без предварительного письменного
-        разрешения.
+      * РџСЂРё РїРѕРІС‚РѕСЂРЅРѕРј СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё РёСЃС…РѕРґРЅРѕРіРѕ РєРѕРґР° РґРѕР»Р¶РЅС‹ РѕСЃС‚Р°РІР°С‚СЊСЃСЏ СѓРєР°Р·Р°РЅРЅРѕРµ
+        РІС‹С€Рµ СѓРІРµРґРѕРјР»РµРЅРёРµ РѕР± Р°РІС‚РѕСЂСЃРєРѕРј РїСЂР°РІРµ, СЌС‚РѕС‚ СЃРїРёСЃРѕРє СѓСЃР»РѕРІРёР№ Рё РїРѕСЃР»РµРґСѓСЋС‰РёР№
+        РѕС‚РєР°Р· РѕС‚ РіР°СЂР°РЅС‚РёР№.
+      * РџСЂРё РїРѕРІС‚РѕСЂРЅРѕРј СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё РґРІРѕРёС‡РЅРѕРіРѕ РєРѕРґР° РІ РґРѕРєСѓРјРµРЅС‚Р°С†РёРё Рё/РёР»Рё РІ
+        РґСЂСѓРіРёС… РјР°С‚РµСЂРёР°Р»Р°С…, РїРѕСЃС‚Р°РІР»СЏРµРјС‹С… РїСЂРё СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё, РґРѕР»Р¶РЅС‹ СЃРѕС…СЂР°РЅСЏС‚СЊСЃСЏ
+        СѓРєР°Р·Р°РЅРЅР°СЏ РІС‹С€Рµ РёРЅС„РѕСЂРјР°С†РёСЏ РѕР± Р°РІС‚РѕСЂСЃРєРѕРј РїСЂР°РІРµ, СЌС‚РѕС‚ СЃРїРёСЃРѕРє СѓСЃР»РѕРІРёР№ Рё
+        РїРѕСЃР»РµРґСѓСЋС‰РёР№ РѕС‚РєР°Р· РѕС‚ РіР°СЂР°РЅС‚РёР№.
+      * РќРё РЅР°Р·РІР°РЅРёРµ Cognitive Technologies, РЅРё РёРјРµРЅР° РµРµ СЃРѕС‚СЂСѓРґРЅРёРєРѕРІ РЅРµ РјРѕРіСѓС‚
+        Р±С‹С‚СЊ РёСЃРїРѕР»СЊР·РѕРІР°РЅС‹ РІ РєР°С‡РµСЃС‚РІРµ СЃСЂРµРґСЃС‚РІР° РїРѕРґРґРµСЂР¶РєРё Рё/РёР»Рё РїСЂРѕРґРІРёР¶РµРЅРёСЏ
+        РїСЂРѕРґСѓРєС‚РѕРІ, РѕСЃРЅРѕРІР°РЅРЅС‹С… РЅР° СЌС‚РѕРј РџРћ, Р±РµР· РїСЂРµРґРІР°СЂРёС‚РµР»СЊРЅРѕРіРѕ РїРёСЃСЊРјРµРЅРЅРѕРіРѕ
+        СЂР°Р·СЂРµС€РµРЅРёСЏ.
 
-ЭТА ПРОГРАММА ПРЕДОСТАВЛЕНА ВЛАДЕЛЬЦАМИ АВТОРСКИХ ПРАВ И/ИЛИ ДРУГИМИ ЛИЦАМИ "КАК
-ОНА ЕСТЬ" БЕЗ КАКОГО-ЛИБО ВИДА ГАРАНТИЙ, ВЫРАЖЕННЫХ ЯВНО ИЛИ ПОДРАЗУМЕВАЕМЫХ,
-ВКЛЮЧАЯ ГАРАНТИИ КОММЕРЧЕСКОЙ ЦЕННОСТИ И ПРИГОДНОСТИ ДЛЯ КОНКРЕТНОЙ ЦЕЛИ, НО НЕ
-ОГРАНИЧИВАЯСЬ ИМИ. НИ ВЛАДЕЛЕЦ АВТОРСКИХ ПРАВ И НИ ОДНО ДРУГОЕ ЛИЦО, КОТОРОЕ
-МОЖЕТ ИЗМЕНЯТЬ И/ИЛИ ПОВТОРНО РАСПРОСТРАНЯТЬ ПРОГРАММУ, НИ В КОЕМ СЛУЧАЕ НЕ
-НЕСЁТ ОТВЕТСТВЕННОСТИ, ВКЛЮЧАЯ ЛЮБЫЕ ОБЩИЕ, СЛУЧАЙНЫЕ, СПЕЦИАЛЬНЫЕ ИЛИ
-ПОСЛЕДОВАВШИЕ УБЫТКИ, СВЯЗАННЫЕ С ИСПОЛЬЗОВАНИЕМ ИЛИ ПОНЕСЕННЫЕ ВСЛЕДСТВИЕ
-НЕВОЗМОЖНОСТИ ИСПОЛЬЗОВАНИЯ ПРОГРАММЫ (ВКЛЮЧАЯ ПОТЕРИ ДАННЫХ, ИЛИ ДАННЫЕ,
-СТАВШИЕ НЕГОДНЫМИ, ИЛИ УБЫТКИ И/ИЛИ ПОТЕРИ ДОХОДОВ, ПОНЕСЕННЫЕ ИЗ-ЗА ДЕЙСТВИЙ
-ТРЕТЬИХ ЛИЦ И/ИЛИ ОТКАЗА ПРОГРАММЫ РАБОТАТЬ СОВМЕСТНО С ДРУГИМИ ПРОГРАММАМИ,
-НО НЕ ОГРАНИЧИВАЯСЬ ЭТИМИ СЛУЧАЯМИ), НО НЕ ОГРАНИЧИВАЯСЬ ИМИ, ДАЖЕ ЕСЛИ ТАКОЙ
-ВЛАДЕЛЕЦ ИЛИ ДРУГОЕ ЛИЦО БЫЛИ ИЗВЕЩЕНЫ О ВОЗМОЖНОСТИ ТАКИХ УБЫТКОВ И ПОТЕРЬ.
+Р­РўРђ РџР РћР“Р РђРњРњРђ РџР Р•Р”РћРЎРўРђР’Р›Р•РќРђ Р’Р›РђР”Р•Р›Р¬Р¦РђРњР РђР’РўРћР РЎРљРРҐ РџР РђР’ Р/РР›Р Р”Р РЈР“РРњР Р›РР¦РђРњР "РљРђРљ
+РћРќРђ Р•РЎРўР¬" Р‘Р•Р— РљРђРљРћР“Рћ-Р›РР‘Рћ Р’РР”Рђ Р“РђР РђРќРўРР™, Р’Р«Р РђР–Р•РќРќР«РҐ РЇР’РќРћ РР›Р РџРћР”Р РђР—РЈРњР•Р’РђР•РњР«РҐ,
+Р’РљР›Р®Р§РђРЇ Р“РђР РђРќРўРР РљРћРњРњР•Р Р§Р•РЎРљРћР™ Р¦Р•РќРќРћРЎРўР Р РџР РР“РћР”РќРћРЎРўР Р”Р›РЇ РљРћРќРљР Р•РўРќРћР™ Р¦Р•Р›Р, РќРћ РќР•
+РћР“Р РђРќРР§РР’РђРЇРЎР¬ РРњР. РќР Р’Р›РђР”Р•Р›Р•Р¦ РђР’РўРћР РЎРљРРҐ РџР РђР’ Р РќР РћР”РќРћ Р”Р РЈР“РћР• Р›РР¦Рћ, РљРћРўРћР РћР•
+РњРћР–Р•Рў РР—РњР•РќРЇРўР¬ Р/РР›Р РџРћР’РўРћР РќРћ Р РђРЎРџР РћРЎРўР РђРќРЇРўР¬ РџР РћР“Р РђРњРњРЈ, РќР Р’ РљРћР•Рњ РЎР›РЈР§РђР• РќР•
+РќР•РЎРЃРў РћРўР’Р•РўРЎРўР’Р•РќРќРћРЎРўР, Р’РљР›Р®Р§РђРЇ Р›Р®Р‘Р«Р• РћР‘Р©РР•, РЎР›РЈР§РђР™РќР«Р•, РЎРџР•Р¦РРђР›Р¬РќР«Р• РР›Р
+РџРћРЎР›Р•Р”РћР’РђР’РЁРР• РЈР‘Р«РўРљР, РЎР’РЇР—РђРќРќР«Р• РЎ РРЎРџРћР›Р¬Р—РћР’РђРќРР•Рњ РР›Р РџРћРќР•РЎР•РќРќР«Р• Р’РЎР›Р•Р”РЎРўР’РР•
+РќР•Р’РћР—РњРћР–РќРћРЎРўР РРЎРџРћР›Р¬Р—РћР’РђРќРРЇ РџР РћР“Р РђРњРњР« (Р’РљР›Р®Р§РђРЇ РџРћРўР•Р Р Р”РђРќРќР«РҐ, РР›Р Р”РђРќРќР«Р•,
+РЎРўРђР’РЁРР• РќР•Р“РћР”РќР«РњР, РР›Р РЈР‘Р«РўРљР Р/РР›Р РџРћРўР•Р Р Р”РћРҐРћР”РћР’, РџРћРќР•РЎР•РќРќР«Р• РР—-Р—Рђ Р”Р•Р™РЎРўР’РР™
+РўР Р•РўР¬РРҐ Р›РР¦ Р/РР›Р РћРўРљРђР—Рђ РџР РћР“Р РђРњРњР« Р РђР‘РћРўРђРўР¬ РЎРћР’РњР•РЎРўРќРћ РЎ Р”Р РЈР“РРњР РџР РћР“Р РђРњРњРђРњР,
+РќРћ РќР• РћР“Р РђРќРР§РР’РђРЇРЎР¬ Р­РўРРњР РЎР›РЈР§РђРЇРњР), РќРћ РќР• РћР“Р РђРќРР§РР’РђРЇРЎР¬ РРњР, Р”РђР–Р• Р•РЎР›Р РўРђРљРћР™
+Р’Р›РђР”Р•Р›Р•Р¦ РР›Р Р”Р РЈР“РћР• Р›РР¦Рћ Р‘Р«Р›Р РР—Р’Р•Р©Р•РќР« Рћ Р’РћР—РњРћР–РќРћРЎРўР РўРђРљРРҐ РЈР‘Р«РўРљРћР’ Р РџРћРўР•Р Р¬.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
@@ -111,13 +111,13 @@ struct CLineImage
 */
 struct DOT_STRUCT
  {
-  Int32 left;
-  Int32 right;
-  Int32 top;
-  Int32 bottom;
-  Int32 i_left;
-  Int32 i_top;
-  Int32 i_right;
+  int32_t left;
+  int32_t right;
+  int32_t top;
+  int32_t bottom;
+  int32_t i_left;
+  int32_t i_top;
+  int32_t i_right;
   BOOL  flag;
  };
 /*
@@ -138,13 +138,13 @@ typedef struct group_lines_mass
     CLINE_handle* hLinesMass;
     int           numder_of_lines;
     int           number_of_cp;
-    Int32*        m_arCutPointsL;
-    Int32*        m_arCutPointsR;
-    Int32*        m_arFrequency;
-    Int32         m_top;
-    Int32         m_bottom;
-    Int32         GroupOffset;
-    Int32         GroupVerOffset;
+    int32_t*        m_arCutPointsL;
+    int32_t*        m_arCutPointsR;
+    int32_t*        m_arFrequency;
+    int32_t         m_top;
+    int32_t         m_bottom;
+    int32_t         GroupOffset;
+    int32_t         GroupVerOffset;
 } GLM;
 
 /////////////////////////////////////////////////////////////////////////////
@@ -155,8 +155,8 @@ public:
   CInterval(){}
  ~CInterval(){}
 
-  Int32  Pos;
-  Int32  Lent;
+  int32_t  Pos;
+  int32_t  Lent;
 };
 */
 /////////////////////////////////////////////////////////////////////////////
@@ -180,11 +180,11 @@ public:
   CEvent();
  ~CEvent();
 
-  Bool            Hori;                    //гориз.(1) или вертик.(0)
-  Bool            Increase;                //наращивать или уменьшать уровень
-  Int32           Lev_0;                   //уровень первого интервала
+  Bool            Hori;                    //РіРѕСЂРёР·.(1) РёР»Рё РІРµСЂС‚РёРє.(0)
+  Bool            Increase;                //РЅР°СЂР°С‰РёРІР°С‚СЊ РёР»Рё СѓРјРµРЅСЊС€Р°С‚СЊ СѓСЂРѕРІРµРЅСЊ
+  int32_t           Lev_0;                   //СѓСЂРѕРІРµРЅСЊ РїРµСЂРІРѕРіРѕ РёРЅС‚РµСЂРІР°Р»Р°
   int             Width;
-  Int32           EventLength;
+  int32_t           EventLength;
 
   CObArray        m_arIntervals;
 
@@ -192,7 +192,7 @@ public:
   CInterval*      GetInterval(int i);
   CInterval*      GetNewInterval(void);
 */
-  void            SetEventWidth(CLINE_handle hEvent, DEvent* pEvent, Word32* LineHist, Word32 RectBegin, Word32 LineLength); //
+  void            SetEventWidth(CLINE_handle hEvent, DEvent* pEvent, uint32_t* LineHist, uint32_t RectBegin, uint32_t LineLength); //
 /*};
 */
 /////////////////////////////////////////////////////////////////////////////
@@ -203,7 +203,7 @@ public:
   CStripe();
  ~CStripe();
 
-  Int32           Level;                   //уровень полосы
+  int32_t           Level;                   //СѓСЂРѕРІРµРЅСЊ РїРѕР»РѕСЃС‹
 
   CObArray        m_arIntervals;
 
@@ -226,7 +226,7 @@ public:
  ~CCutPoint();
 
   int    Direction;
-  Int32  Level;                            //уровень полосы
+  int32_t  Level;                            //СѓСЂРѕРІРµРЅСЊ РїРѕР»РѕСЃС‹
 
   CObArray        m_arIntervals;
 
@@ -249,27 +249,27 @@ public:
  ~CComponent();
 
   int    CrossPointFlag;
-  Int32  BeginPoint;
-  Int32  EndPoint;
+  int32_t  BeginPoint;
+  int32_t  EndPoint;
 };
 */
 /////////////////////////////////////////////////////////////////////////////
-// СDotLines's class
+// РЎDotLines's class
 /*class RSHELLLINES_API CDotLine:public CObject
 {
 public:
   CDotLine();
  ~CDotLine();
 
-  CPRect32        m_LeftDot;       // левая точка
-  CPRect32        m_RightDot;      // правая точка
-  BOOL            m_LeftDotState;  //FALSE-линия не имеет лев. продольжение
-  BOOL            m_RightDotState; //FALSE-линия не имеет прав.продольжение
+  CPRect32        m_LeftDot;       // Р»РµРІР°СЏ С‚РѕС‡РєР°
+  CPRect32        m_RightDot;      // РїСЂР°РІР°СЏ С‚РѕС‡РєР°
+  BOOL            m_LeftDotState;  //FALSE-Р»РёРЅРёСЏ РЅРµ РёРјРµРµС‚ Р»РµРІ. РїСЂРѕРґРѕР»СЊР¶РµРЅРёРµ
+  BOOL            m_RightDotState; //FALSE-Р»РёРЅРёСЏ РЅРµ РёРјРµРµС‚ РїСЂР°РІ.РїСЂРѕРґРѕР»СЊР¶РµРЅРёРµ
 
-  CObArray        m_arDots;        // все точки без сортировки
-  CWordArray      m_dist;          // все расстояния между точками
+  CObArray        m_arDots;        // РІСЃРµ С‚РѕС‡РєРё Р±РµР· СЃРѕСЂС‚РёСЂРѕРІРєРё
+  CWordArray      m_dist;          // РІСЃРµ СЂР°СЃСЃС‚РѕСЏРЅРёСЏ РјРµР¶РґСѓ С‚РѕС‡РєР°РјРё
 
-  BOOL            m_Flag;          //Если == FALSE то плохая точечная линия
+  BOOL            m_Flag;          //Р•СЃР»Рё == FALSE С‚Рѕ РїР»РѕС…Р°СЏ С‚РѕС‡РµС‡РЅР°СЏ Р»РёРЅРёСЏ
 
   int             GetCountOfDots(void);
   CPRect32*       GetDot(int i);
@@ -279,9 +279,9 @@ public:
 };
 */
 // For Flags
-//#define LI_IsTrue       0x00000040 			// правильно выделенная линия
-//#define LI_IsFalse      0x00000080			// не линия
-//#define LI_Pointed      0x00001000          // точечная
+//#define LI_IsTrue       0x00000040 			// РїСЂР°РІРёР»СЊРЅРѕ РІС‹РґРµР»РµРЅРЅР°СЏ Р»РёРЅРёСЏ
+//#define LI_IsFalse      0x00000080			// РЅРµ Р»РёРЅРёСЏ
+//#define LI_Pointed      0x00001000          // С‚РѕС‡РµС‡РЅР°СЏ
 
 // For Status
 #define ST_Unknown      0x00000000 			//
@@ -300,26 +300,26 @@ public:
  ~CLine();
 */
 RSHELLLINES_FUNC(void)            InitLine(DLine* linedata);  //
-/*  Word32          Flags;                   // common use info
-  Word32          Tail;                    // остаток линии за таблицой
+/*  uint32_t          Flags;                   // common use info
+  uint32_t          Tail;                    // РѕСЃС‚Р°С‚РѕРє Р»РёРЅРёРё Р·Р° С‚Р°Р±Р»РёС†РѕР№
   Point32         BeginPoint;
   Point32         EndPoint;
-  Rect32          rect;                    // прямоугольник линии
-  BOOL            ProcessingType;          // тип обработки линии(гор. или верт.)
+  Rect32          rect;                    // РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРє Р»РёРЅРёРё
+  BOOL            ProcessingType;          // С‚РёРї РѕР±СЂР°Р±РѕС‚РєРё Р»РёРЅРёРё(РіРѕСЂ. РёР»Рё РІРµСЂС‚.)
   int             Width;
-  Int32           LineEventsLength;        // сумма черных точек линии
+  int32_t           LineEventsLength;        // СЃСѓРјРјР° С‡РµСЂРЅС‹С… С‚РѕС‡РµРє Р»РёРЅРёРё
   double          Degree;
-  int             RelationshipIndex;       // индекс коробки компонент
+  int             RelationshipIndex;       // РёРЅРґРµРєСЃ РєРѕСЂРѕР±РєРё РєРѕРјРїРѕРЅРµРЅС‚
   BOOL            FlagCalculatedWidth;
   BOOL            FlagExtensible;
-  BOOL            FlagDot;                 // устанавливается когда линия точечная
+  BOOL            FlagDot;                 // СѓСЃС‚Р°РЅР°РІР»РёРІР°РµС‚СЃСЏ РєРѕРіРґР° Р»РёРЅРёСЏ С‚РѕС‡РµС‡РЅР°СЏ
   BOOL            FlagBad;
   BOOL            FlagLongStrip;
-  int             PathNumber;              // номер прохода
+  int             PathNumber;              // РЅРѕРјРµСЂ РїСЂРѕС…РѕРґР°
 
-  NR_SimpLine     Line;                    // простейшее описание линии
-  NR_SimpLine     LineMid;                 // Средние точки линии
-  Int32           Status;                  // история линии в программе
+  NR_SimpLine     Line;                    // РїСЂРѕСЃС‚РµР№С€РµРµ РѕРїРёСЃР°РЅРёРµ Р»РёРЅРёРё
+  NR_SimpLine     LineMid;                 // РЎСЂРµРґРЅРёРµ С‚РѕС‡РєРё Р»РёРЅРёРё
+  int32_t           Status;                  // РёСЃС‚РѕСЂРёСЏ Р»РёРЅРёРё РІ РїСЂРѕРіСЂР°РјРјРµ
   NORM_DATATYPES  Type;                    // *Unknown, *Simple, *Defis, *Pointed
   LINE_DIR        Dir;
   char            Qual;                    // quality (or estimation) at percents
@@ -327,14 +327,14 @@ RSHELLLINES_FUNC(void)            InitLine(DLine* linedata);  //
   void            *Specline;               // (NR_DefiLine), (NR_PoinLine)
   CSL_POLY        poly;
 
-  CObArray        m_arStripes;             // все полосы и интервалы
-  CObArray        m_arStripesVerticalLine; // все полосы и интервалы для вертикальной линии
-//  CObArray        m_arCorrectedStripes;    // полосы и интервалы после коррекции
-  CObArray        m_arEvents;              // фрагменты
-  CObArray        m_arCutPoints;           // точки пересечения с ортогональными линиями
-  CObArray        m_arComponents;          // компоненты линии с признаками точек пересечения
-//take'em away!  CWordArray      m_arSeparationPoints;    // точки деления линии на подлинии(компоненты)
-  CWordArray      m_arFriendsIndex;        // индексы дружественных линий
+  CObArray        m_arStripes;             // РІСЃРµ РїРѕР»РѕСЃС‹ Рё РёРЅС‚РµСЂРІР°Р»С‹
+  CObArray        m_arStripesVerticalLine; // РІСЃРµ РїРѕР»РѕСЃС‹ Рё РёРЅС‚РµСЂРІР°Р»С‹ РґР»СЏ РІРµСЂС‚РёРєР°Р»СЊРЅРѕР№ Р»РёРЅРёРё
+//  CObArray        m_arCorrectedStripes;    // РїРѕР»РѕСЃС‹ Рё РёРЅС‚РµСЂРІР°Р»С‹ РїРѕСЃР»Рµ РєРѕСЂСЂРµРєС†РёРё
+  CObArray        m_arEvents;              // С„СЂР°РіРјРµРЅС‚С‹
+  CObArray        m_arCutPoints;           // С‚РѕС‡РєРё РїРµСЂРµСЃРµС‡РµРЅРёСЏ СЃ РѕСЂС‚РѕРіРѕРЅР°Р»СЊРЅС‹РјРё Р»РёРЅРёСЏРјРё
+  CObArray        m_arComponents;          // РєРѕРјРїРѕРЅРµРЅС‚С‹ Р»РёРЅРёРё СЃ РїСЂРёР·РЅР°РєР°РјРё С‚РѕС‡РµРє РїРµСЂРµСЃРµС‡РµРЅРёСЏ
+//take'em away!  CWordArray      m_arSeparationPoints;    // С‚РѕС‡РєРё РґРµР»РµРЅРёСЏ Р»РёРЅРёРё РЅР° РїРѕРґР»РёРЅРёРё(РєРѕРјРїРѕРЅРµРЅС‚С‹)
+  CWordArray      m_arFriendsIndex;        // РёРЅРґРµРєСЃС‹ РґСЂСѓР¶РµСЃС‚РІРµРЅРЅС‹С… Р»РёРЅРёР№
 
 */
   BOOL            SetLineNormDataTypes(NORM_DATATYPES, DLine* line); //
@@ -373,14 +373,14 @@ RSHELLLINES_FUNC(Bool32)          CheckSeparationPoints(CLINE_handle hLine, CLIN
 
   void            SetSeparationPoints(CLINE_handle hContainer, CLINE_handle hLine, DLine* pCLine, Bool32 PLines); //
   void            SetCutPoints(CLINE_handle line, DLine* pCLine); //
-  void            SetNewLine(CLINE_handle hContainer, CPDLine pCLine, Int32 IntervalBeg, Int32 IntervalEnd, CLINE_handle hLineOld, Bool32 PossibleSymbolAboveLine); //
+  void            SetNewLine(CLINE_handle hContainer, CPDLine pCLine, int32_t IntervalBeg, int32_t IntervalEnd, CLINE_handle hLineOld, Bool32 PossibleSymbolAboveLine); //
   void            SetDegree(DLine* line); //
   BOOL            CheckPoint(CLINE_handle line, int CurPoint); //
 //  void            CheckShortVerticalLines(CPageLines* PLines);
-  void            ConvertStructs(CLINE_handle line, DLine* pCLine, Int32 nIncline); //
+  void            ConvertStructs(CLINE_handle line, DLine* pCLine, int32_t nIncline); //
   void            FindTailComponent(CLINE_handle line, DLine* pCLine); //
   void            GetCorrectLine_End_X(CLINE_handle line, DLine* pCLine); //
-  void            GetComponentBeg_Y_End_Y(Int32 Beg, Int32 End, Int32* Beg_X, Int32* End_X, Int32* Beg_Y, Int32* End_Y, CLINE_handle hLine, Bool32 ProcessingType); //
+  void            GetComponentBeg_Y_End_Y(int32_t Beg, int32_t End, int32_t* Beg_X, int32_t* End_X, int32_t* Beg_Y, int32_t* End_Y, CLINE_handle hLine, Bool32 ProcessingType); //
   Bool32          IfExistCutLine(CLINE_handle hContainer, DLine* pCLine, int left,int right); //
 /*  int             SetVStripeMasMaxSize(int size);
 };
@@ -393,14 +393,14 @@ public:
   CGroupOfFriendLines();
  ~CGroupOfFriendLines();
 
-  CWordArray      m_arFriendsIndex;        // индексы дружественных линий (m_arLines)
-  CWordArray      m_arCutPointsL;           // точки пересечения (left for interval)
-  CWordArray      m_arCutPointsR;           // точки пересечения (right for interval)
-  CWordArray      m_arFrequency;           // и частота
+  CWordArray      m_arFriendsIndex;        // РёРЅРґРµРєСЃС‹ РґСЂСѓР¶РµСЃС‚РІРµРЅРЅС‹С… Р»РёРЅРёР№ (m_arLines)
+  CWordArray      m_arCutPointsL;           // С‚РѕС‡РєРё РїРµСЂРµСЃРµС‡РµРЅРёСЏ (left for interval)
+  CWordArray      m_arCutPointsR;           // С‚РѕС‡РєРё РїРµСЂРµСЃРµС‡РµРЅРёСЏ (right for interval)
+  CWordArray      m_arFrequency;           // Рё С‡Р°СЃС‚РѕС‚Р°
 
   double          Degree;                  // +- 0.05
-  BOOL            ProcessingType;          // тип обработки линий(гор. или верт.)
-  int             RelationshipIndex;       // индекс коробки компонент
+  BOOL            ProcessingType;          // С‚РёРї РѕР±СЂР°Р±РѕС‚РєРё Р»РёРЅРёР№(РіРѕСЂ. РёР»Рё РІРµСЂС‚.)
+  int             RelationshipIndex;       // РёРЅРґРµРєСЃ РєРѕСЂРѕР±РєРё РєРѕРјРїРѕРЅРµРЅС‚
   WORD            m_top;
   WORD            m_bottom;
 
@@ -416,8 +416,8 @@ public:
  ~CGroupOfExtensibleLines();
 
   double          Degree;                  // +- 0.05
-  BOOL            ProcessingType;          // тип обработки линий(гор. или верт.)
-  CWordArray      m_arFriendsIndex;        // индексы дружественных линий (m_arLines)
+  BOOL            ProcessingType;          // С‚РёРї РѕР±СЂР°Р±РѕС‚РєРё Р»РёРЅРёР№(РіРѕСЂ. РёР»Рё РІРµСЂС‚.)
+  CWordArray      m_arFriendsIndex;        // РёРЅРґРµРєСЃС‹ РґСЂСѓР¶РµСЃС‚РІРµРЅРЅС‹С… Р»РёРЅРёР№ (m_arLines)
 
   int             GetCountOfExtensibleLines(void);
 };
@@ -430,10 +430,10 @@ public:
   CPageLines();
  ~CPageLines();
 
-  BOOL                     FlagDot;  //Если == TRUE то проверяется точечные линии
+  BOOL                     FlagDot;  //Р•СЃР»Рё == TRUE С‚Рѕ РїСЂРѕРІРµСЂСЏРµС‚СЃСЏ С‚РѕС‡РµС‡РЅС‹Рµ Р»РёРЅРёРё
 
   CObArray                 m_arLines;
-  CObArray                 m_arNewDotLines;  // точечные линии собранные из коробок компонент
+  CObArray                 m_arNewDotLines;  // С‚РѕС‡РµС‡РЅС‹Рµ Р»РёРЅРёРё СЃРѕР±СЂР°РЅРЅС‹Рµ РёР· РєРѕСЂРѕР±РѕРє РєРѕРјРїРѕРЅРµРЅС‚
   CObArray                 m_arGroupOfFriendLines;
   CObArray                 m_arGroupOfExtensibleLines;
   CObArray                 m_arComps;
@@ -466,7 +466,7 @@ public:
   CPRect32*                GetDotComp(int i);
   void                     DrowRectForDotComp(void);
 */
-  BOOL                     IsItNewLine(CLINE_handle hContainer, DLine* pLineCP, Int32 GroupVerOffset, Bool32 IfDrawResult); //
+  BOOL                     IsItNewLine(CLINE_handle hContainer, DLine* pLineCP, int32_t GroupVerOffset, Bool32 IfDrawResult); //
   BOOL                     CheckLinesForExtensible(CLINE_handle hLine, GLM* hGroupEx); //
   BOOL                     CheckLinesImpositionForExtensible(CLINE_handle hLine, GLM* hGroupEx); //
   BOOL                     CheckLinesDegreeForExtensible(CLINE_handle hLine, GLM* hGroupEx); //
@@ -485,10 +485,10 @@ RSHELLLINES_FUNC(void)       DrawLosedVerticalLines(GLM* friendlinesmass, int Co
 RSHELLLINES_FUNC(void)       DrawBigComps(CLINE_handle hContainer); //
 
 RSHELLLINES_FUNC(void)       FindDotLines(Handle hCCOM,Handle hCPAGE, CLINE_handle hContainer); //
-  BOOL                     GetDotComps(Handle hCCOM,Handle hCPAGE, HANDLE &hbuf,LPSTR &pDotBuffer, Int32 *CountDotComps); //
-  void                     FindChains(Handle hCCOM, LPSTR &pDotBuffer, Int32 CountDotComps, CLINE_handle hContainer); //
-  void                     CheckChains(Handle hCCOM, LPSTR &pDotBuffer, Int32 BegIndex,Int32 CountDots, CLINE_handle hContainer); //
-  void                     AddNewDotLines(Handle hCCOM, LPSTR &pDotBuffer, Int32 CountDots, CLINE_handle hContainer); //
+  BOOL                     GetDotComps(Handle hCCOM,Handle hCPAGE, HANDLE &hbuf,LPSTR &pDotBuffer, int32_t *CountDotComps); //
+  void                     FindChains(Handle hCCOM, LPSTR &pDotBuffer, int32_t CountDotComps, CLINE_handle hContainer); //
+  void                     CheckChains(Handle hCCOM, LPSTR &pDotBuffer, int32_t BegIndex,int32_t CountDots, CLINE_handle hContainer); //
+  void                     AddNewDotLines(Handle hCCOM, LPSTR &pDotBuffer, int32_t CountDots, CLINE_handle hContainer); //
   void                     UnionBreakup(CLINE_handle hContainer); //
 
 RSHELLLINES_FUNC(void)       SetLinesAndCompsRelationship(CLINE_handle hContainer, CLINE_handle hFictContainer); //
@@ -504,8 +504,8 @@ RSHELLLINES_FUNC(Bool32) GetNextPartOfLine(CLINE_handle hContainer, CLINE_handle
 void                       AddLine2Group(GLM* hGroup, CLINE_handle hLine);
 RSHELLLINES_FUNC(void)      DeleteGroup(GLM* hGroup, int CountLines);
 RSHELLLINES_FUNC(void)      DrawFragsForAllLines(CLINE_handle hContainer, Handle hDebugDrawAllLineFragments);
-RSHELLLINES_FUNC(Int32)     CountBlackRaster(CPDLine pLine, CPDLine pLineExt, Bool32 IsHor, Int32 delta, Handle hDrawRaster);
-RSHELLLINES_FUNC(Bool32)    SetExtLines(CLINE_handle hExtContainer, CLINE_handle hContainer, CLINE_handle* hLinesMass, Int32 CountLines);
+RSHELLLINES_FUNC(int32_t)     CountBlackRaster(CPDLine pLine, CPDLine pLineExt, Bool32 IsHor, int32_t delta, Handle hDrawRaster);
+RSHELLLINES_FUNC(Bool32)    SetExtLines(CLINE_handle hExtContainer, CLINE_handle hContainer, CLINE_handle* hLinesMass, int32_t CountLines);
 RSHELLLINES_FUNC(Bool32)    RSL_CorrectDoubleLines(CLINE_handle hLine1, CLINE_handle hLine2);
 RSHELLLINES_FUNC(Bool32)    RSL_SplitLine(CLINE_handle hLine, CLINE_handle hContainer);
 
@@ -518,7 +518,7 @@ RSHELLLINES_FUNC(Bool32)    RSL_SplitLine(CLINE_handle hLine, CLINE_handle hCont
 
 #define MAX_CROSS_POINTS 4
 
-RSHELLLINES_FUNC(Int32)    RSL_VerifyShortLine(CPDLine pLine, Handle hCCOM, PAGEINFO* page_info, Word8 lang, Word8 debug_flags, Int32 *cross_point = NULL);
+RSHELLLINES_FUNC(int32_t)    RSL_VerifyShortLine(CPDLine pLine, Handle hCCOM, PAGEINFO* page_info, Word8 lang, Word8 debug_flags, int32_t *cross_point = NULL);
 RSHELLLINES_FUNC(Bool)  SL_GetRaster(Rect32* rect, Word8** ppData, PAGEINFO* page_info/*, CIMAGEBITMAPINFOHEADER* image_info*/); //
 
 

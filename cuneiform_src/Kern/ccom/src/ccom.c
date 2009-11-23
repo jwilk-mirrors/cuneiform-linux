@@ -2,33 +2,33 @@
 Copyright (c) 1993-2008, Cognitive Technologies
 All rights reserved.
 
-Ðàçðåøàåòñÿ ïîâòîðíîå ðàñïðîñòðàíåíèå è èñïîëüçîâàíèå êàê â âèäå èñõîäíîãî êîäà,
-òàê è â äâîè÷íîé ôîðìå, ñ èçìåíåíèÿìè èëè áåç, ïðè ñîáëþäåíèè ñëåäóþùèõ óñëîâèé:
+Ð Ð°Ð·Ñ€ÐµÑˆÐ°ÐµÑ‚ÑÑ Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€Ð½Ð¾Ðµ Ñ€Ð°ÑÐ¿Ñ€Ð¾ÑÑ‚Ñ€Ð°Ð½ÐµÐ½Ð¸Ðµ Ð¸ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð² Ð²Ð¸Ð´Ðµ Ð¸ÑÑ…Ð¾Ð´Ð½Ð¾Ð³Ð¾ ÐºÐ¾Ð´Ð°,
+Ñ‚Ð°Ðº Ð¸ Ð² Ð´Ð²Ð¾Ð¸Ñ‡Ð½Ð¾Ð¹ Ñ„Ð¾Ñ€Ð¼Ðµ, Ñ Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸ÑÐ¼Ð¸ Ð¸Ð»Ð¸ Ð±ÐµÐ·, Ð¿Ñ€Ð¸ ÑÐ¾Ð±Ð»ÑŽÐ´ÐµÐ½Ð¸Ð¸ ÑÐ»ÐµÐ´ÑƒÑŽÑ‰Ð¸Ñ… ÑƒÑÐ»Ð¾Ð²Ð¸Ð¹:
 
-      * Ïðè ïîâòîðíîì ðàñïðîñòðàíåíèè èñõîäíîãî êîäà äîëæíû îñòàâàòüñÿ óêàçàííîå
-        âûøå óâåäîìëåíèå îá àâòîðñêîì ïðàâå, ýòîò ñïèñîê óñëîâèé è ïîñëåäóþùèé
-        îòêàç îò ãàðàíòèé.
-      * Ïðè ïîâòîðíîì ðàñïðîñòðàíåíèè äâîè÷íîãî êîäà â äîêóìåíòàöèè è/èëè â
-        äðóãèõ ìàòåðèàëàõ, ïîñòàâëÿåìûõ ïðè ðàñïðîñòðàíåíèè, äîëæíû ñîõðàíÿòüñÿ
-        óêàçàííàÿ âûøå èíôîðìàöèÿ îá àâòîðñêîì ïðàâå, ýòîò ñïèñîê óñëîâèé è
-        ïîñëåäóþùèé îòêàç îò ãàðàíòèé.
-      * Íè íàçâàíèå Cognitive Technologies, íè èìåíà åå ñîòðóäíèêîâ íå ìîãóò
-        áûòü èñïîëüçîâàíû â êà÷åñòâå ñðåäñòâà ïîääåðæêè è/èëè ïðîäâèæåíèÿ
-        ïðîäóêòîâ, îñíîâàííûõ íà ýòîì ÏÎ, áåç ïðåäâàðèòåëüíîãî ïèñüìåííîãî
-        ðàçðåøåíèÿ.
+      * ÐŸÑ€Ð¸ Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€Ð½Ð¾Ð¼ Ñ€Ð°ÑÐ¿Ñ€Ð¾ÑÑ‚Ñ€Ð°Ð½ÐµÐ½Ð¸Ð¸ Ð¸ÑÑ…Ð¾Ð´Ð½Ð¾Ð³Ð¾ ÐºÐ¾Ð´Ð° Ð´Ð¾Ð»Ð¶Ð½Ñ‹ Ð¾ÑÑ‚Ð°Ð²Ð°Ñ‚ÑŒÑÑ ÑƒÐºÐ°Ð·Ð°Ð½Ð½Ð¾Ðµ
+        Ð²Ñ‹ÑˆÐµ ÑƒÐ²ÐµÐ´Ð¾Ð¼Ð»ÐµÐ½Ð¸Ðµ Ð¾Ð± Ð°Ð²Ñ‚Ð¾Ñ€ÑÐºÐ¾Ð¼ Ð¿Ñ€Ð°Ð²Ðµ, ÑÑ‚Ð¾Ñ‚ ÑÐ¿Ð¸ÑÐ¾Ðº ÑƒÑÐ»Ð¾Ð²Ð¸Ð¹ Ð¸ Ð¿Ð¾ÑÐ»ÐµÐ´ÑƒÑŽÑ‰Ð¸Ð¹
+        Ð¾Ñ‚ÐºÐ°Ð· Ð¾Ñ‚ Ð³Ð°Ñ€Ð°Ð½Ñ‚Ð¸Ð¹.
+      * ÐŸÑ€Ð¸ Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€Ð½Ð¾Ð¼ Ñ€Ð°ÑÐ¿Ñ€Ð¾ÑÑ‚Ñ€Ð°Ð½ÐµÐ½Ð¸Ð¸ Ð´Ð²Ð¾Ð¸Ñ‡Ð½Ð¾Ð³Ð¾ ÐºÐ¾Ð´Ð° Ð² Ð´Ð¾ÐºÑƒÐ¼ÐµÐ½Ñ‚Ð°Ñ†Ð¸Ð¸ Ð¸/Ð¸Ð»Ð¸ Ð²
+        Ð´Ñ€ÑƒÐ³Ð¸Ñ… Ð¼Ð°Ñ‚ÐµÑ€Ð¸Ð°Ð»Ð°Ñ…, Ð¿Ð¾ÑÑ‚Ð°Ð²Ð»ÑÐµÐ¼Ñ‹Ñ… Ð¿Ñ€Ð¸ Ñ€Ð°ÑÐ¿Ñ€Ð¾ÑÑ‚Ñ€Ð°Ð½ÐµÐ½Ð¸Ð¸, Ð´Ð¾Ð»Ð¶Ð½Ñ‹ ÑÐ¾Ñ…Ñ€Ð°Ð½ÑÑ‚ÑŒÑÑ
+        ÑƒÐºÐ°Ð·Ð°Ð½Ð½Ð°Ñ Ð²Ñ‹ÑˆÐµ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð¾Ð± Ð°Ð²Ñ‚Ð¾Ñ€ÑÐºÐ¾Ð¼ Ð¿Ñ€Ð°Ð²Ðµ, ÑÑ‚Ð¾Ñ‚ ÑÐ¿Ð¸ÑÐ¾Ðº ÑƒÑÐ»Ð¾Ð²Ð¸Ð¹ Ð¸
+        Ð¿Ð¾ÑÐ»ÐµÐ´ÑƒÑŽÑ‰Ð¸Ð¹ Ð¾Ñ‚ÐºÐ°Ð· Ð¾Ñ‚ Ð³Ð°Ñ€Ð°Ð½Ñ‚Ð¸Ð¹.
+      * ÐÐ¸ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ðµ Cognitive Technologies, Ð½Ð¸ Ð¸Ð¼ÐµÐ½Ð° ÐµÐµ ÑÐ¾Ñ‚Ñ€ÑƒÐ´Ð½Ð¸ÐºÐ¾Ð² Ð½Ðµ Ð¼Ð¾Ð³ÑƒÑ‚
+        Ð±Ñ‹Ñ‚ÑŒ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ñ‹ Ð² ÐºÐ°Ñ‡ÐµÑÑ‚Ð²Ðµ ÑÑ€ÐµÐ´ÑÑ‚Ð²Ð° Ð¿Ð¾Ð´Ð´ÐµÑ€Ð¶ÐºÐ¸ Ð¸/Ð¸Ð»Ð¸ Ð¿Ñ€Ð¾Ð´Ð²Ð¸Ð¶ÐµÐ½Ð¸Ñ
+        Ð¿Ñ€Ð¾Ð´ÑƒÐºÑ‚Ð¾Ð², Ð¾ÑÐ½Ð¾Ð²Ð°Ð½Ð½Ñ‹Ñ… Ð½Ð° ÑÑ‚Ð¾Ð¼ ÐŸÐž, Ð±ÐµÐ· Ð¿Ñ€ÐµÐ´Ð²Ð°Ñ€Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾Ð³Ð¾ Ð¿Ð¸ÑÑŒÐ¼ÐµÐ½Ð½Ð¾Ð³Ð¾
+        Ñ€Ð°Ð·Ñ€ÐµÑˆÐµÐ½Ð¸Ñ.
 
-ÝÒÀ ÏÐÎÃÐÀÌÌÀ ÏÐÅÄÎÑÒÀÂËÅÍÀ ÂËÀÄÅËÜÖÀÌÈ ÀÂÒÎÐÑÊÈÕ ÏÐÀÂ È/ÈËÈ ÄÐÓÃÈÌÈ ËÈÖÀÌÈ "ÊÀÊ
-ÎÍÀ ÅÑÒÜ" ÁÅÇ ÊÀÊÎÃÎ-ËÈÁÎ ÂÈÄÀ ÃÀÐÀÍÒÈÉ, ÂÛÐÀÆÅÍÍÛÕ ßÂÍÎ ÈËÈ ÏÎÄÐÀÇÓÌÅÂÀÅÌÛÕ,
-ÂÊËÞ×Àß ÃÀÐÀÍÒÈÈ ÊÎÌÌÅÐ×ÅÑÊÎÉ ÖÅÍÍÎÑÒÈ È ÏÐÈÃÎÄÍÎÑÒÈ ÄËß ÊÎÍÊÐÅÒÍÎÉ ÖÅËÈ, ÍÎ ÍÅ
-ÎÃÐÀÍÈ×ÈÂÀßÑÜ ÈÌÈ. ÍÈ ÂËÀÄÅËÅÖ ÀÂÒÎÐÑÊÈÕ ÏÐÀÂ È ÍÈ ÎÄÍÎ ÄÐÓÃÎÅ ËÈÖÎ, ÊÎÒÎÐÎÅ
-ÌÎÆÅÒ ÈÇÌÅÍßÒÜ È/ÈËÈ ÏÎÂÒÎÐÍÎ ÐÀÑÏÐÎÑÒÐÀÍßÒÜ ÏÐÎÃÐÀÌÌÓ, ÍÈ Â ÊÎÅÌ ÑËÓ×ÀÅ ÍÅ
-ÍÅÑ¨Ò ÎÒÂÅÒÑÒÂÅÍÍÎÑÒÈ, ÂÊËÞ×Àß ËÞÁÛÅ ÎÁÙÈÅ, ÑËÓ×ÀÉÍÛÅ, ÑÏÅÖÈÀËÜÍÛÅ ÈËÈ
-ÏÎÑËÅÄÎÂÀÂØÈÅ ÓÁÛÒÊÈ, ÑÂßÇÀÍÍÛÅ Ñ ÈÑÏÎËÜÇÎÂÀÍÈÅÌ ÈËÈ ÏÎÍÅÑÅÍÍÛÅ ÂÑËÅÄÑÒÂÈÅ
-ÍÅÂÎÇÌÎÆÍÎÑÒÈ ÈÑÏÎËÜÇÎÂÀÍÈß ÏÐÎÃÐÀÌÌÛ (ÂÊËÞ×Àß ÏÎÒÅÐÈ ÄÀÍÍÛÕ, ÈËÈ ÄÀÍÍÛÅ,
-ÑÒÀÂØÈÅ ÍÅÃÎÄÍÛÌÈ, ÈËÈ ÓÁÛÒÊÈ È/ÈËÈ ÏÎÒÅÐÈ ÄÎÕÎÄÎÂ, ÏÎÍÅÑÅÍÍÛÅ ÈÇ-ÇÀ ÄÅÉÑÒÂÈÉ
-ÒÐÅÒÜÈÕ ËÈÖ È/ÈËÈ ÎÒÊÀÇÀ ÏÐÎÃÐÀÌÌÛ ÐÀÁÎÒÀÒÜ ÑÎÂÌÅÑÒÍÎ Ñ ÄÐÓÃÈÌÈ ÏÐÎÃÐÀÌÌÀÌÈ,
-ÍÎ ÍÅ ÎÃÐÀÍÈ×ÈÂÀßÑÜ ÝÒÈÌÈ ÑËÓ×ÀßÌÈ), ÍÎ ÍÅ ÎÃÐÀÍÈ×ÈÂÀßÑÜ ÈÌÈ, ÄÀÆÅ ÅÑËÈ ÒÀÊÎÉ
-ÂËÀÄÅËÅÖ ÈËÈ ÄÐÓÃÎÅ ËÈÖÎ ÁÛËÈ ÈÇÂÅÙÅÍÛ Î ÂÎÇÌÎÆÍÎÑÒÈ ÒÀÊÈÕ ÓÁÛÒÊÎÂ È ÏÎÒÅÐÜ.
+Ð­Ð¢Ð ÐŸÐ ÐžÐ“Ð ÐÐœÐœÐ ÐŸÐ Ð•Ð”ÐžÐ¡Ð¢ÐÐ’Ð›Ð•ÐÐ Ð’Ð›ÐÐ”Ð•Ð›Ð¬Ð¦ÐÐœÐ˜ ÐÐ’Ð¢ÐžÐ Ð¡ÐšÐ˜Ð¥ ÐŸÐ ÐÐ’ Ð˜/Ð˜Ð›Ð˜ Ð”Ð Ð£Ð“Ð˜ÐœÐ˜ Ð›Ð˜Ð¦ÐÐœÐ˜ "ÐšÐÐš
+ÐžÐÐ Ð•Ð¡Ð¢Ð¬" Ð‘Ð•Ð— ÐšÐÐšÐžÐ“Ðž-Ð›Ð˜Ð‘Ðž Ð’Ð˜Ð”Ð Ð“ÐÐ ÐÐÐ¢Ð˜Ð™, Ð’Ð«Ð ÐÐ–Ð•ÐÐÐ«Ð¥ Ð¯Ð’ÐÐž Ð˜Ð›Ð˜ ÐŸÐžÐ”Ð ÐÐ—Ð£ÐœÐ•Ð’ÐÐ•ÐœÐ«Ð¥,
+Ð’ÐšÐ›Ð®Ð§ÐÐ¯ Ð“ÐÐ ÐÐÐ¢Ð˜Ð˜ ÐšÐžÐœÐœÐ•Ð Ð§Ð•Ð¡ÐšÐžÐ™ Ð¦Ð•ÐÐÐžÐ¡Ð¢Ð˜ Ð˜ ÐŸÐ Ð˜Ð“ÐžÐ”ÐÐžÐ¡Ð¢Ð˜ Ð”Ð›Ð¯ ÐšÐžÐÐšÐ Ð•Ð¢ÐÐžÐ™ Ð¦Ð•Ð›Ð˜, ÐÐž ÐÐ•
+ÐžÐ“Ð ÐÐÐ˜Ð§Ð˜Ð’ÐÐ¯Ð¡Ð¬ Ð˜ÐœÐ˜. ÐÐ˜ Ð’Ð›ÐÐ”Ð•Ð›Ð•Ð¦ ÐÐ’Ð¢ÐžÐ Ð¡ÐšÐ˜Ð¥ ÐŸÐ ÐÐ’ Ð˜ ÐÐ˜ ÐžÐ”ÐÐž Ð”Ð Ð£Ð“ÐžÐ• Ð›Ð˜Ð¦Ðž, ÐšÐžÐ¢ÐžÐ ÐžÐ•
+ÐœÐžÐ–Ð•Ð¢ Ð˜Ð—ÐœÐ•ÐÐ¯Ð¢Ð¬ Ð˜/Ð˜Ð›Ð˜ ÐŸÐžÐ’Ð¢ÐžÐ ÐÐž Ð ÐÐ¡ÐŸÐ ÐžÐ¡Ð¢Ð ÐÐÐ¯Ð¢Ð¬ ÐŸÐ ÐžÐ“Ð ÐÐœÐœÐ£, ÐÐ˜ Ð’ ÐšÐžÐ•Ðœ Ð¡Ð›Ð£Ð§ÐÐ• ÐÐ•
+ÐÐ•Ð¡ÐÐ¢ ÐžÐ¢Ð’Ð•Ð¢Ð¡Ð¢Ð’Ð•ÐÐÐžÐ¡Ð¢Ð˜, Ð’ÐšÐ›Ð®Ð§ÐÐ¯ Ð›Ð®Ð‘Ð«Ð• ÐžÐ‘Ð©Ð˜Ð•, Ð¡Ð›Ð£Ð§ÐÐ™ÐÐ«Ð•, Ð¡ÐŸÐ•Ð¦Ð˜ÐÐ›Ð¬ÐÐ«Ð• Ð˜Ð›Ð˜
+ÐŸÐžÐ¡Ð›Ð•Ð”ÐžÐ’ÐÐ’Ð¨Ð˜Ð• Ð£Ð‘Ð«Ð¢ÐšÐ˜, Ð¡Ð’Ð¯Ð—ÐÐÐÐ«Ð• Ð¡ Ð˜Ð¡ÐŸÐžÐ›Ð¬Ð—ÐžÐ’ÐÐÐ˜Ð•Ðœ Ð˜Ð›Ð˜ ÐŸÐžÐÐ•Ð¡Ð•ÐÐÐ«Ð• Ð’Ð¡Ð›Ð•Ð”Ð¡Ð¢Ð’Ð˜Ð•
+ÐÐ•Ð’ÐžÐ—ÐœÐžÐ–ÐÐžÐ¡Ð¢Ð˜ Ð˜Ð¡ÐŸÐžÐ›Ð¬Ð—ÐžÐ’ÐÐÐ˜Ð¯ ÐŸÐ ÐžÐ“Ð ÐÐœÐœÐ« (Ð’ÐšÐ›Ð®Ð§ÐÐ¯ ÐŸÐžÐ¢Ð•Ð Ð˜ Ð”ÐÐÐÐ«Ð¥, Ð˜Ð›Ð˜ Ð”ÐÐÐÐ«Ð•,
+Ð¡Ð¢ÐÐ’Ð¨Ð˜Ð• ÐÐ•Ð“ÐžÐ”ÐÐ«ÐœÐ˜, Ð˜Ð›Ð˜ Ð£Ð‘Ð«Ð¢ÐšÐ˜ Ð˜/Ð˜Ð›Ð˜ ÐŸÐžÐ¢Ð•Ð Ð˜ Ð”ÐžÐ¥ÐžÐ”ÐžÐ’, ÐŸÐžÐÐ•Ð¡Ð•ÐÐÐ«Ð• Ð˜Ð—-Ð—Ð Ð”Ð•Ð™Ð¡Ð¢Ð’Ð˜Ð™
+Ð¢Ð Ð•Ð¢Ð¬Ð˜Ð¥ Ð›Ð˜Ð¦ Ð˜/Ð˜Ð›Ð˜ ÐžÐ¢ÐšÐÐ—Ð ÐŸÐ ÐžÐ“Ð ÐÐœÐœÐ« Ð ÐÐ‘ÐžÐ¢ÐÐ¢Ð¬ Ð¡ÐžÐ’ÐœÐ•Ð¡Ð¢ÐÐž Ð¡ Ð”Ð Ð£Ð“Ð˜ÐœÐ˜ ÐŸÐ ÐžÐ“Ð ÐÐœÐœÐÐœÐ˜,
+ÐÐž ÐÐ• ÐžÐ“Ð ÐÐÐ˜Ð§Ð˜Ð’ÐÐ¯Ð¡Ð¬ Ð­Ð¢Ð˜ÐœÐ˜ Ð¡Ð›Ð£Ð§ÐÐ¯ÐœÐ˜), ÐÐž ÐÐ• ÐžÐ“Ð ÐÐÐ˜Ð§Ð˜Ð’ÐÐ¯Ð¡Ð¬ Ð˜ÐœÐ˜, Ð”ÐÐ–Ð• Ð•Ð¡Ð›Ð˜ Ð¢ÐÐšÐžÐ™
+Ð’Ð›ÐÐ”Ð•Ð›Ð•Ð¦ Ð˜Ð›Ð˜ Ð”Ð Ð£Ð“ÐžÐ• Ð›Ð˜Ð¦Ðž Ð‘Ð«Ð›Ð˜ Ð˜Ð—Ð’Ð•Ð©Ð•ÐÐ« Ðž Ð’ÐžÐ—ÐœÐžÐ–ÐÐžÐ¡Ð¢Ð˜ Ð¢ÐÐšÐ˜Ð¥ Ð£Ð‘Ð«Ð¢ÐšÐžÐ’ Ð˜ ÐŸÐžÐ¢Ð•Ð Ð¬.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
@@ -63,8 +63,8 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "resource.h"
 // static dates
 static  CCOM_cont   top, tail;
-static  Int32       num_containers = 0;
-static  Int32       user_number    = 0xFFFF+1;
+static  int32_t       num_containers = 0;
+static  int32_t       user_number    = 0xFFFF+1;
 static  Bool32      ccom_init=FALSE;
 static  Bool32      ccom_show_kill_mode=FALSE;
 Word16              wHeightRC      = 0;
@@ -72,7 +72,7 @@ Word16              wLowRC         = CCOM_ERR_NO;
 #define     CCOM_DAT    "ccom.dat"
 
 // memory funct
-static void *   ccom_alloc(Word32 len)   {
+static void *   ccom_alloc(uint32_t len)   {
 //return malloc(len);
 void *ma = malloc(len);
     if( !ma )
@@ -80,14 +80,14 @@ void *ma = malloc(len);
     memset(ma,0,len);
     return ma;
 }
-static void     ccom_free(void *ptr,Word32 len) { free(ptr);};
+static void     ccom_free(void *ptr,uint32_t len) { free(ptr);};
 static FILE *   ccom_fopen(char *name,char *type) { return fopen(name,type);};
 static void     ccom_fclose(FILE *file) { fclose(file);};
 static int      ccom_fread(void *dst, int len , int num,FILE *file) { return fread(dst,len,num,file);};
 static int      ccom_fwrite(void *dst, int len, int num,FILE *file) { return fwrite(dst,len,num,file);};
 
-static void * (*my_alloc)(Word32 len)                 = ccom_alloc;
-static void   (*my_free )(void *,Word32 len)          = ccom_free;
+static void * (*my_alloc)(uint32_t len)                 = ccom_alloc;
+static void   (*my_free )(void *,uint32_t len)          = ccom_free;
 static FILE * (*my_fopen)(char *name,char *type) = ccom_fopen;
 static void   (*my_fclose)(FILE *file)           = ccom_fclose;
 static int    (*my_fread) (void *dst, int len, int num,FILE *file) = ccom_fread;
@@ -140,7 +140,7 @@ new_cont->last  = new_cont->first;
 num_containers++;
 
 {
-Int32 i;
+int32_t i;
 new_cont->nall=0;
 for(i=0;i<8;i++)
     new_cont->nsmall[i]=0;
@@ -215,14 +215,14 @@ ccom_init=FALSE;
 return;
 }
 
-CCOM_FUNC(Word32)   CCOM_GetReturnCode(void)
+CCOM_FUNC(uint32_t)   CCOM_GetReturnCode(void)
 {
 if( wLowRC==CCOM_ERR_NO)
   return 0;
 return (wHeightRC<<16)|(wLowRC-CCOM_ERR_MIN);
 }
 
-CCOM_FUNC(char*)   CCOM_GetReturnString(Word32 dwError)
+CCOM_FUNC(char*)   CCOM_GetReturnString(uint32_t dwError)
 {
 	Word16 rc = (Word16)(dwError & 0xFFFF + CCOM_ERR_MIN);
 	static char szBuffer[512];
@@ -254,14 +254,14 @@ return !cont->kill_dust_mode &&
 static Bool32  ccom_small_dust(CCOM_comp * comp,CCOM_handle hcont)
 {
 CCOM_cont * cont=(CCOM_cont *)hcont;
-Int32 sz=(comp->w>comp->h?comp->w:comp->h);
+int32_t sz=(comp->w>comp->h?comp->w:comp->h);
 if( cont->nsmall[2]>(cont->nall-cont->nsmall[1]-cont->nsmall[2])*3 &&
         cont->nall-cont->nsmall[1]>3000 )
         return sz<3;
 return sz<2;
 }
 
-CCOM_FUNC(CCOM_comp     *) CCOM_New(CCOM_handle hcont, Int32 upper, Int32 left, Int32 w, Int32 h)
+CCOM_FUNC(CCOM_comp     *) CCOM_New(CCOM_handle hcont, int32_t upper, int32_t left, int32_t w, int32_t h)
 {
   CCOM_comp * new_comp;
   CCOM_cont * cont=(CCOM_cont *)hcont;
@@ -296,7 +296,7 @@ else
   }
 
 {
-Int32 sz=(new_comp->w>new_comp->h)?new_comp->w:new_comp->h;
+int32_t sz=(new_comp->w>new_comp->h)?new_comp->w:new_comp->h;
 CCOM_comp * comp;
 cont->nall++;
 if( sz<8 )
@@ -320,14 +320,14 @@ return new_comp;
 }
 
 CCOM_FUNC(Bool32)   CCOM_StoreLarge(CCOM_comp * comp, Int16 numcomp,
-                        Int32 size_lrep, Word8 *lines, Int16 nl,
+                        int32_t size_lrep, Word8 *lines, Int16 nl,
                         Word8 free_beg, Word8 free_end,
                         RecVersions *vers,
                         CCOM_USER_BLOCK  *ub)
 {
 CCOM_lnhead* ln;
 Word8   comptype;
-Int32   size;
+int32_t   size;
 if( !comp  )
     {
     wLowRC=CCOM_ERR_NULL;
@@ -411,7 +411,7 @@ CCOM_FUNC(Bool32)   CCOM_Copy(CCOM_comp* to, CCOM_comp* from)
  to->scale=from->scale;
  if(from->scale&CCOM_LONGLINES)
  {
-    Int32   size = from->size_linerep;
+    int32_t   size = from->size_linerep;
     if( size==-1 )
     {
         CCOM_USER_BLOCK ublock;
@@ -419,7 +419,7 @@ CCOM_FUNC(Bool32)   CCOM_Copy(CCOM_comp* to, CCOM_comp* from)
         ublock.data = (Word8*)&size;
         ublock.size = 4;
         CCOM_GetUserBlock(from, &ublock);
-        size = *(Int32*)ublock.data;
+        size = *(int32_t*)ublock.data;
     }
     return CCOM_StoreLarge(to,from->numcomp,size,from->linerep,
 	               from->nl,from->begs,from->ends,from->vers,from->user_block);
@@ -430,14 +430,14 @@ CCOM_FUNC(Bool32)   CCOM_Copy(CCOM_comp* to, CCOM_comp* from)
 }
 
 CCOM_FUNC(Bool32)   CCOM_Store(CCOM_comp * comp, Int16 numcomp,
-                        Int32 size_lrep, Word8 *lines, Int16 nl,
+                        int32_t size_lrep, Word8 *lines, Int16 nl,
                         Word8 free_beg, Word8 free_end,
                         RecVersions *vers,
                         CCOM_USER_BLOCK  *ub)
 {
 CCOM_lnhead* ln;
 Word8   comptype;
-Int32   size;
+int32_t   size;
 if( !comp  )
     {
     wLowRC=CCOM_ERR_NULL;
@@ -524,7 +524,7 @@ CCOM_cont   * cont=(CCOM_cont *)hcont;
 CCOM_USER_BLOCK  * ub, * ubc;
 
 {
-Int32 sz=(comp->w>comp->h)?comp->w:comp->h;
+int32_t sz=(comp->w>comp->h)?comp->w:comp->h;
 cont->nall--;
 if( sz<8 )
     cont->nsmall[sz]--;
@@ -583,7 +583,7 @@ else
     }
 /*
 {
-Int32 sz=(comp->w>comp->h)?comp->w:comp->h;
+int32_t sz=(comp->w>comp->h)?comp->w:comp->h;
 cont->nall--;
 if( sz<8 )
     cont->nsmall[sz]--;
@@ -625,7 +625,7 @@ else
     return TRUE;
 }
 
-CCOM_FUNC(CCOM_comp      *) CCOM_GetNext(CCOM_comp * comp, Bool32 (*filtrate)(Int32 upper, Int32 left, Int32 w, Int32 h))
+CCOM_FUNC(CCOM_comp      *) CCOM_GetNext(CCOM_comp * comp, Bool32 (*filtrate)(int32_t upper, int32_t left, int32_t w, int32_t h))
 {
 CCOM_comp * curr;
 if( !comp )
@@ -654,7 +654,7 @@ else
 return NULL;
 }
 
-CCOM_FUNC(CCOM_comp     *) CCOM_GetFirst(CCOM_handle hcont, Bool32 (*filtrate)(Int32 upper, Int32 left, Int32 w, Int32 h) )
+CCOM_FUNC(CCOM_comp     *) CCOM_GetFirst(CCOM_handle hcont, Bool32 (*filtrate)(int32_t upper, int32_t left, int32_t w, int32_t h) )
 {
 CCOM_cont * cont=(CCOM_cont*)hcont;
 CCOM_comp * curr;
@@ -814,7 +814,7 @@ lt = (Int16*)lp;
 return Linerep2ExtRaster((CCOM_lnhead*)&comp->linerep[2],(Int16)((*lt)-2), w, h, 0,0,rec);
 }
 
-CCOM_FUNC(Bool32) CCOM_GetScaleRaster(CCOM_comp * comp, RecRaster *rec,Int32 scale)
+CCOM_FUNC(Bool32) CCOM_GetScaleRaster(CCOM_comp * comp, RecRaster *rec,int32_t scale)
 {
 Int16 w, h;
 Word8 * lp;
@@ -1096,7 +1096,7 @@ if( !my_MakeLP )
 return my_MakeLP( rRaster , lp, lp_size, numcomp);
 }
 
-CCOM_FUNC(Int32)     CCOM_NewUserCode (void)
+CCOM_FUNC(int32_t)     CCOM_NewUserCode (void)
 {
 user_number++;
 return user_number;
@@ -1115,7 +1115,7 @@ Bool32 ccom_save_comp( CCOM_comp *cur)
 {
 FILE *fp=my_fopen(CCOM_DAT,"wb+");
 CCOM_USER_BLOCK *ub = cur->user_block;
-Word32 zub={0};
+uint32_t zub={0};
 
 if( !fp )
     return FALSE;
@@ -1168,7 +1168,7 @@ FILE            *fp;
 CCOM_comp        cur, *real_comp;
 CCOM_handle      hnd;
 CCOM_USER_BLOCK *ub ;
-Int32            zub;
+int32_t            zub;
 
 hnd=CCOM_CreateContainer();
 if( hnd==(CCOM_handle)NULL )
@@ -1239,7 +1239,7 @@ return hnd;
 }
 
 
-CCOM_FUNC(CCOM_comp)   *CCOM_LargeNew(CCOM_handle hcont,Int32 upper, Int32 left, Int32 w, Int32 h, Int32 size)
+CCOM_FUNC(CCOM_comp)   *CCOM_LargeNew(CCOM_handle hcont,int32_t upper, int32_t left, int32_t w, int32_t h, int32_t size)
 {
 CCOM_comp   *comp=CCOM_New( hcont, upper, left, w, h);
 if( !comp )
@@ -1375,12 +1375,12 @@ if( !hcont )
 return TRUE;
 }
 
-CCOM_FUNC(Bool32) CCOM_GetExportData(Word32 dwType, void * pData)
+CCOM_FUNC(Bool32) CCOM_GetExportData(uint32_t dwType, void * pData)
 {
 	Bool32 rc = TRUE;
-    Int32  vers=CCOM_VERSION_CODE;
+    int32_t  vers=CCOM_VERSION_CODE;
 
-#define EXPORT(a) *(Word32*)(pData)=          (Word32)a;
+#define EXPORT(a) *(uint32_t*)(pData)=          (uint32_t)a;
   wLowRC = CCOM_ERR_NO;
 	switch(dwType)
 	{
@@ -1501,7 +1501,7 @@ CCOM_FUNC(Bool32) CCOM_GetExportData(Word32 dwType, void * pData)
 return rc;
 }
 
-CCOM_FUNC(Bool32) CCOM_SetImportData(Word32 dwType, void * pData)
+CCOM_FUNC(Bool32) CCOM_SetImportData(uint32_t dwType, void * pData)
 {
 
   wLowRC = CCOM_ERR_NO;

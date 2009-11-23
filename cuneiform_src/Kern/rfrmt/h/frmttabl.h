@@ -2,33 +2,33 @@
 Copyright (c) 1993-2008, Cognitive Technologies
 All rights reserved.
 
-Разрешается повторное распространение и использование как в виде исходного кода,
-так и в двоичной форме, с изменениями или без, при соблюдении следующих условий:
+Р Р°Р·СЂРµС€Р°РµС‚СЃСЏ РїРѕРІС‚РѕСЂРЅРѕРµ СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРµ Рё РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ РєР°Рє РІ РІРёРґРµ РёСЃС…РѕРґРЅРѕРіРѕ РєРѕРґР°,
+С‚Р°Рє Рё РІ РґРІРѕРёС‡РЅРѕР№ С„РѕСЂРјРµ, СЃ РёР·РјРµРЅРµРЅРёСЏРјРё РёР»Рё Р±РµР·, РїСЂРё СЃРѕР±Р»СЋРґРµРЅРёРё СЃР»РµРґСѓСЋС‰РёС… СѓСЃР»РѕРІРёР№:
 
-      * При повторном распространении исходного кода должны оставаться указанное
-        выше уведомление об авторском праве, этот список условий и последующий
-        отказ от гарантий.
-      * При повторном распространении двоичного кода в документации и/или в
-        других материалах, поставляемых при распространении, должны сохраняться
-        указанная выше информация об авторском праве, этот список условий и
-        последующий отказ от гарантий.
-      * Ни название Cognitive Technologies, ни имена ее сотрудников не могут
-        быть использованы в качестве средства поддержки и/или продвижения
-        продуктов, основанных на этом ПО, без предварительного письменного
-        разрешения.
+      * РџСЂРё РїРѕРІС‚РѕСЂРЅРѕРј СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё РёСЃС…РѕРґРЅРѕРіРѕ РєРѕРґР° РґРѕР»Р¶РЅС‹ РѕСЃС‚Р°РІР°С‚СЊСЃСЏ СѓРєР°Р·Р°РЅРЅРѕРµ
+        РІС‹С€Рµ СѓРІРµРґРѕРјР»РµРЅРёРµ РѕР± Р°РІС‚РѕСЂСЃРєРѕРј РїСЂР°РІРµ, СЌС‚РѕС‚ СЃРїРёСЃРѕРє СѓСЃР»РѕРІРёР№ Рё РїРѕСЃР»РµРґСѓСЋС‰РёР№
+        РѕС‚РєР°Р· РѕС‚ РіР°СЂР°РЅС‚РёР№.
+      * РџСЂРё РїРѕРІС‚РѕСЂРЅРѕРј СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё РґРІРѕРёС‡РЅРѕРіРѕ РєРѕРґР° РІ РґРѕРєСѓРјРµРЅС‚Р°С†РёРё Рё/РёР»Рё РІ
+        РґСЂСѓРіРёС… РјР°С‚РµСЂРёР°Р»Р°С…, РїРѕСЃС‚Р°РІР»СЏРµРјС‹С… РїСЂРё СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё, РґРѕР»Р¶РЅС‹ СЃРѕС…СЂР°РЅСЏС‚СЊСЃСЏ
+        СѓРєР°Р·Р°РЅРЅР°СЏ РІС‹С€Рµ РёРЅС„РѕСЂРјР°С†РёСЏ РѕР± Р°РІС‚РѕСЂСЃРєРѕРј РїСЂР°РІРµ, СЌС‚РѕС‚ СЃРїРёСЃРѕРє СѓСЃР»РѕРІРёР№ Рё
+        РїРѕСЃР»РµРґСѓСЋС‰РёР№ РѕС‚РєР°Р· РѕС‚ РіР°СЂР°РЅС‚РёР№.
+      * РќРё РЅР°Р·РІР°РЅРёРµ Cognitive Technologies, РЅРё РёРјРµРЅР° РµРµ СЃРѕС‚СЂСѓРґРЅРёРєРѕРІ РЅРµ РјРѕРіСѓС‚
+        Р±С‹С‚СЊ РёСЃРїРѕР»СЊР·РѕРІР°РЅС‹ РІ РєР°С‡РµСЃС‚РІРµ СЃСЂРµРґСЃС‚РІР° РїРѕРґРґРµСЂР¶РєРё Рё/РёР»Рё РїСЂРѕРґРІРёР¶РµРЅРёСЏ
+        РїСЂРѕРґСѓРєС‚РѕРІ, РѕСЃРЅРѕРІР°РЅРЅС‹С… РЅР° СЌС‚РѕРј РџРћ, Р±РµР· РїСЂРµРґРІР°СЂРёС‚РµР»СЊРЅРѕРіРѕ РїРёСЃСЊРјРµРЅРЅРѕРіРѕ
+        СЂР°Р·СЂРµС€РµРЅРёСЏ.
 
-ЭТА ПРОГРАММА ПРЕДОСТАВЛЕНА ВЛАДЕЛЬЦАМИ АВТОРСКИХ ПРАВ И/ИЛИ ДРУГИМИ ЛИЦАМИ "КАК
-ОНА ЕСТЬ" БЕЗ КАКОГО-ЛИБО ВИДА ГАРАНТИЙ, ВЫРАЖЕННЫХ ЯВНО ИЛИ ПОДРАЗУМЕВАЕМЫХ,
-ВКЛЮЧАЯ ГАРАНТИИ КОММЕРЧЕСКОЙ ЦЕННОСТИ И ПРИГОДНОСТИ ДЛЯ КОНКРЕТНОЙ ЦЕЛИ, НО НЕ
-ОГРАНИЧИВАЯСЬ ИМИ. НИ ВЛАДЕЛЕЦ АВТОРСКИХ ПРАВ И НИ ОДНО ДРУГОЕ ЛИЦО, КОТОРОЕ
-МОЖЕТ ИЗМЕНЯТЬ И/ИЛИ ПОВТОРНО РАСПРОСТРАНЯТЬ ПРОГРАММУ, НИ В КОЕМ СЛУЧАЕ НЕ
-НЕСЁТ ОТВЕТСТВЕННОСТИ, ВКЛЮЧАЯ ЛЮБЫЕ ОБЩИЕ, СЛУЧАЙНЫЕ, СПЕЦИАЛЬНЫЕ ИЛИ
-ПОСЛЕДОВАВШИЕ УБЫТКИ, СВЯЗАННЫЕ С ИСПОЛЬЗОВАНИЕМ ИЛИ ПОНЕСЕННЫЕ ВСЛЕДСТВИЕ
-НЕВОЗМОЖНОСТИ ИСПОЛЬЗОВАНИЯ ПРОГРАММЫ (ВКЛЮЧАЯ ПОТЕРИ ДАННЫХ, ИЛИ ДАННЫЕ,
-СТАВШИЕ НЕГОДНЫМИ, ИЛИ УБЫТКИ И/ИЛИ ПОТЕРИ ДОХОДОВ, ПОНЕСЕННЫЕ ИЗ-ЗА ДЕЙСТВИЙ
-ТРЕТЬИХ ЛИЦ И/ИЛИ ОТКАЗА ПРОГРАММЫ РАБОТАТЬ СОВМЕСТНО С ДРУГИМИ ПРОГРАММАМИ,
-НО НЕ ОГРАНИЧИВАЯСЬ ЭТИМИ СЛУЧАЯМИ), НО НЕ ОГРАНИЧИВАЯСЬ ИМИ, ДАЖЕ ЕСЛИ ТАКОЙ
-ВЛАДЕЛЕЦ ИЛИ ДРУГОЕ ЛИЦО БЫЛИ ИЗВЕЩЕНЫ О ВОЗМОЖНОСТИ ТАКИХ УБЫТКОВ И ПОТЕРЬ.
+Р­РўРђ РџР РћР“Р РђРњРњРђ РџР Р•Р”РћРЎРўРђР’Р›Р•РќРђ Р’Р›РђР”Р•Р›Р¬Р¦РђРњР РђР’РўРћР РЎРљРРҐ РџР РђР’ Р/РР›Р Р”Р РЈР“РРњР Р›РР¦РђРњР "РљРђРљ
+РћРќРђ Р•РЎРўР¬" Р‘Р•Р— РљРђРљРћР“Рћ-Р›РР‘Рћ Р’РР”Рђ Р“РђР РђРќРўРР™, Р’Р«Р РђР–Р•РќРќР«РҐ РЇР’РќРћ РР›Р РџРћР”Р РђР—РЈРњР•Р’РђР•РњР«РҐ,
+Р’РљР›Р®Р§РђРЇ Р“РђР РђРќРўРР РљРћРњРњР•Р Р§Р•РЎРљРћР™ Р¦Р•РќРќРћРЎРўР Р РџР РР“РћР”РќРћРЎРўР Р”Р›РЇ РљРћРќРљР Р•РўРќРћР™ Р¦Р•Р›Р, РќРћ РќР•
+РћР“Р РђРќРР§РР’РђРЇРЎР¬ РРњР. РќР Р’Р›РђР”Р•Р›Р•Р¦ РђР’РўРћР РЎРљРРҐ РџР РђР’ Р РќР РћР”РќРћ Р”Р РЈР“РћР• Р›РР¦Рћ, РљРћРўРћР РћР•
+РњРћР–Р•Рў РР—РњР•РќРЇРўР¬ Р/РР›Р РџРћР’РўРћР РќРћ Р РђРЎРџР РћРЎРўР РђРќРЇРўР¬ РџР РћР“Р РђРњРњРЈ, РќР Р’ РљРћР•Рњ РЎР›РЈР§РђР• РќР•
+РќР•РЎРЃРў РћРўР’Р•РўРЎРўР’Р•РќРќРћРЎРўР, Р’РљР›Р®Р§РђРЇ Р›Р®Р‘Р«Р• РћР‘Р©РР•, РЎР›РЈР§РђР™РќР«Р•, РЎРџР•Р¦РРђР›Р¬РќР«Р• РР›Р
+РџРћРЎР›Р•Р”РћР’РђР’РЁРР• РЈР‘Р«РўРљР, РЎР’РЇР—РђРќРќР«Р• РЎ РРЎРџРћР›Р¬Р—РћР’РђРќРР•Рњ РР›Р РџРћРќР•РЎР•РќРќР«Р• Р’РЎР›Р•Р”РЎРўР’РР•
+РќР•Р’РћР—РњРћР–РќРћРЎРўР РРЎРџРћР›Р¬Р—РћР’РђРќРРЇ РџР РћР“Р РђРњРњР« (Р’РљР›Р®Р§РђРЇ РџРћРўР•Р Р Р”РђРќРќР«РҐ, РР›Р Р”РђРќРќР«Р•,
+РЎРўРђР’РЁРР• РќР•Р“РћР”РќР«РњР, РР›Р РЈР‘Р«РўРљР Р/РР›Р РџРћРўР•Р Р Р”РћРҐРћР”РћР’, РџРћРќР•РЎР•РќРќР«Р• РР—-Р—Рђ Р”Р•Р™РЎРўР’РР™
+РўР Р•РўР¬РРҐ Р›РР¦ Р/РР›Р РћРўРљРђР—Рђ РџР РћР“Р РђРњРњР« Р РђР‘РћРўРђРўР¬ РЎРћР’РњР•РЎРўРќРћ РЎ Р”Р РЈР“РРњР РџР РћР“Р РђРњРњРђРњР,
+РќРћ РќР• РћР“Р РђРќРР§РР’РђРЇРЎР¬ Р­РўРРњР РЎР›РЈР§РђРЇРњР), РќРћ РќР• РћР“Р РђРќРР§РР’РђРЇРЎР¬ РРњР, Р”РђР–Р• Р•РЎР›Р РўРђРљРћР™
+Р’Р›РђР”Р•Р›Р•Р¦ РР›Р Р”Р РЈР“РћР• Р›РР¦Рћ Р‘Р«Р›Р РР—Р’Р•Р©Р•РќР« Рћ Р’РћР—РњРћР–РќРћРЎРўР РўРђРљРРҐ РЈР‘Р«РўРљРћР’ Р РџРћРўР•Р Р¬.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
@@ -75,14 +75,14 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 //       wFont bits
 #define  TG_EDW_SERIF         1
-#define  TG_EDW_GELV          2      //без сериф.
+#define  TG_EDW_GELV          2      //Р±РµР· СЃРµСЂРёС„.
 #define  TG_EDW_BOLD          4
 #define  TG_EDW_ITALIC        16
 #define  TG_EDW_UNDERLINE     64
 #define  TG_EDW_NARROW        128     // user defined
 
 extern   float      Twips;
-extern   Word32     FlagMode;
+extern   uint32_t     FlagMode;
 extern   CHAR       lpMyNameSerif[MAX_PATH];
 extern   CHAR       lpMyNameNonSerif[MAX_PATH];
 extern   CHAR       lpMyNameMono[MAX_PATH];
@@ -92,10 +92,10 @@ extern   Int16      get_font_name(Int16 FontNumber);
 	extern "C" {
 #endif
 
-Word32 GetTablCount(void);
+uint32_t GetTablCount(void);
 void   ViewTable(void);
-void   GetTableRect( Word32 NumberTable , Rect16* RectTable,Word32* UserNumber );
-BOOL   WriteTable( Word32 IndexTable, RtfSectorInfo* SectorInfo/*, CString* TableString*/ ,BOOL OutPutMode );
+void   GetTableRect( uint32_t NumberTable , Rect16* RectTable,uint32_t* UserNumber );
+BOOL   WriteTable( uint32_t IndexTable, RtfSectorInfo* SectorInfo/*, CString* TableString*/ ,BOOL OutPutMode );
 //void   TablePutChar( CString* TableString, BYTE sym );
 
 #ifdef __cplusplus
@@ -108,13 +108,13 @@ class CTableString;
 class CTableWord;
 class CTableChar;
 
-void  GetFragmLines( Int32 m_NumberFragm , Point32* m_point );
+void  GetFragmLines( int32_t m_NumberFragm , Point32* m_point );
 BOOL  CheckLine( CSTR_line* Comingline );
 void  AddLetter( CSTR_rast* rast , Word8*  m_ucCode , Word8* m_ucFontNumber );
 void  Write_SetPhCellParam( Handle h_Page, Handle h_Table, CTableRow* rTableRow, Point32 m_TempPhPoint,
-																										 Int32 CountStrCellInPn, Int32 FlagPhisicalGroup , Int32 NumberPhysicalGroup );
+																										 int32_t CountStrCellInPn, int32_t FlagPhisicalGroup , int32_t NumberPhysicalGroup );
 /////////////////////////////////////////////////////////////////////////////
-//Класс для таблицы
+//РљР»Р°СЃСЃ РґР»СЏ С‚Р°Р±Р»РёС†С‹
 class CMyTable //: public CObject
 {
 public:
@@ -127,12 +127,12 @@ public:
   Rect32        RectTable;
   std::vector<CTableRow*>/*CObArray*/	    m_arTableRows;
   WORD          m_wIndex;
-  Int32         m_CountRows;
-  Int32         m_CountColumns;
+  int32_t         m_CountRows;
+  int32_t         m_CountColumns;
 };
 
 /////////////////////////////////////////////////////////////////////////////
-//Класс для строки таблицы
+//РљР»Р°СЃСЃ РґР»СЏ СЃС‚СЂРѕРєРё С‚Р°Р±Р»РёС†С‹
 class CTableRow// : public CObject
 {
 public:
@@ -152,7 +152,7 @@ public:
 };
 
 /////////////////////////////////////////////////////////////////////////////
-//Класс для ячейки таблицы
+//РљР»Р°СЃСЃ РґР»СЏ СЏС‡РµР№РєРё С‚Р°Р±Р»РёС†С‹
 class CTablePhCell// : public CObject
 {
 public:
@@ -160,9 +160,9 @@ public:
  ~CTablePhCell();
 
   CTableString* GetCurrentString( void );
-  void          SetPhCellParam(Bool32 FlagTerminalPhCell, Int32   NumberPhysicalGroup ,
+  void          SetPhCellParam(Bool32 FlagTerminalPhCell, int32_t   NumberPhysicalGroup ,
   Bool32        FlagPhisicalGroup , Point32 m_TempPhPoint      );
-  void          FillPhCell(Int32 m_FragmentNumber);
+  void          FillPhCell(int32_t m_FragmentNumber);
   void          Write_Header(/*CString* TableString,*/ RtfSectorInfo* SectorInfo);
   void          Write(/*CString* TableString,*/ RtfSectorInfo* SectorInfo);
   void          SetPhCellFragmentFormattingAndAlignment();
@@ -171,31 +171,31 @@ public:
   std::vector<CTableString*>/*CObArray*/	    m_arStrings;
   std::vector <RECT> RectFragmentInPhCell;
 
-  Rect32        RectPhCell;//Здесь хранятся координаты прямоугольника - ГРАНИЦ ячейки (кажется в пикселях)
+  Rect32        RectPhCell;//Р—РґРµСЃСЊ С…СЂР°РЅСЏС‚СЃСЏ РєРѕРѕСЂРґРёРЅР°С‚С‹ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР° - Р“Р РђРќРР¦ СЏС‡РµР№РєРё (РєР°Р¶РµС‚СЃСЏ РІ РїРёРєСЃРµР»СЏС…)
   Rect32        RectTable;
   Point32       m_PhCellPoint;
 
   WORD	        m_wIndex;
   Bool32	    m_FlagTerminalPhCell;
   Bool32        m_FlagPhisicalGroup;
-  Int32         m_NumberPhysicalGroup;
-  Int32         m_FragmentNumber;
-  Int32         m_LeftIndent;
+  int32_t         m_NumberPhysicalGroup;
+  int32_t         m_FragmentNumber;
+  int32_t         m_LeftIndent;
   WORD     	    m_wCountStrings;
   Bool32        m_PhCellFragmentFormatting;       //Hor. formatting
   Bool32        m_PhCellFragmentAlignment;        //Ver. formatting
   Handle        m_hEdTableCell;
-  DWORD         m_Flags;
+uint32_t         m_Flags;
 
   union
   {
-	Word8		m_u8BoundsType[4];//Информация о типе границ ячейки:L,R,T,B !!!Art
-	Word32		m_u32BoundsType;
+	Word8		m_u8BoundsType[4];//РРЅС„РѕСЂРјР°С†РёСЏ Рѕ С‚РёРїРµ РіСЂР°РЅРёС† СЏС‡РµР№РєРё:L,R,T,B !!!Art
+	uint32_t		m_u32BoundsType;
   };
 };
 
 /////////////////////////////////////////////////////////////////////////////
-// Класс для строки ячейки таблицы
+// РљР»Р°СЃСЃ РґР»СЏ СЃС‚СЂРѕРєРё СЏС‡РµР№РєРё С‚Р°Р±Р»РёС†С‹
 class CTableString//: public CObject
 {
 public:
@@ -213,7 +213,7 @@ public:
 
   WORD	        m_wIndex;
   WORD          m_wCountWords;
-  DWORD         m_Flags;
+uint32_t         m_Flags;
 };
 
 /////////////////////////////////////////////////////////////////////////////
@@ -243,7 +243,7 @@ public:
   WORD          m_wItalic;
   WORD          m_wProb;
   BYTE          m_bSpell;
-  DWORD         m_Flags;
+uint32_t         m_Flags;
 };
 
 /////////////////////////////////////////////////////////////////////////////
@@ -268,7 +268,7 @@ public:
   WORD          m_wCountAlt;
   WORD          m_wFontNumber;
   WORD	        m_wIndex;
-  DWORD         m_Flags;
+uint32_t         m_Flags;
  };
 
 #endif

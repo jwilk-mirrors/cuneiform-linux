@@ -2,33 +2,33 @@
 Copyright (c) 1993-2008, Cognitive Technologies
 All rights reserved.
 
-Разрешается повторное распространение и использование как в виде исходного кода,
-так и в двоичной форме, с изменениями или без, при соблюдении следующих условий:
+Р Р°Р·СЂРµС€Р°РµС‚СЃСЏ РїРѕРІС‚РѕСЂРЅРѕРµ СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРµ Рё РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ РєР°Рє РІ РІРёРґРµ РёСЃС…РѕРґРЅРѕРіРѕ РєРѕРґР°,
+С‚Р°Рє Рё РІ РґРІРѕРёС‡РЅРѕР№ С„РѕСЂРјРµ, СЃ РёР·РјРµРЅРµРЅРёСЏРјРё РёР»Рё Р±РµР·, РїСЂРё СЃРѕР±Р»СЋРґРµРЅРёРё СЃР»РµРґСѓСЋС‰РёС… СѓСЃР»РѕРІРёР№:
 
-      * При повторном распространении исходного кода должны оставаться указанное
-        выше уведомление об авторском праве, этот список условий и последующий
-        отказ от гарантий.
-      * При повторном распространении двоичного кода в документации и/или в
-        других материалах, поставляемых при распространении, должны сохраняться
-        указанная выше информация об авторском праве, этот список условий и
-        последующий отказ от гарантий.
-      * Ни название Cognitive Technologies, ни имена ее сотрудников не могут
-        быть использованы в качестве средства поддержки и/или продвижения
-        продуктов, основанных на этом ПО, без предварительного письменного
-        разрешения.
+      * РџСЂРё РїРѕРІС‚РѕСЂРЅРѕРј СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё РёСЃС…РѕРґРЅРѕРіРѕ РєРѕРґР° РґРѕР»Р¶РЅС‹ РѕСЃС‚Р°РІР°С‚СЊСЃСЏ СѓРєР°Р·Р°РЅРЅРѕРµ
+        РІС‹С€Рµ СѓРІРµРґРѕРјР»РµРЅРёРµ РѕР± Р°РІС‚РѕСЂСЃРєРѕРј РїСЂР°РІРµ, СЌС‚РѕС‚ СЃРїРёСЃРѕРє СѓСЃР»РѕРІРёР№ Рё РїРѕСЃР»РµРґСѓСЋС‰РёР№
+        РѕС‚РєР°Р· РѕС‚ РіР°СЂР°РЅС‚РёР№.
+      * РџСЂРё РїРѕРІС‚РѕСЂРЅРѕРј СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё РґРІРѕРёС‡РЅРѕРіРѕ РєРѕРґР° РІ РґРѕРєСѓРјРµРЅС‚Р°С†РёРё Рё/РёР»Рё РІ
+        РґСЂСѓРіРёС… РјР°С‚РµСЂРёР°Р»Р°С…, РїРѕСЃС‚Р°РІР»СЏРµРјС‹С… РїСЂРё СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё, РґРѕР»Р¶РЅС‹ СЃРѕС…СЂР°РЅСЏС‚СЊСЃСЏ
+        СѓРєР°Р·Р°РЅРЅР°СЏ РІС‹С€Рµ РёРЅС„РѕСЂРјР°С†РёСЏ РѕР± Р°РІС‚РѕСЂСЃРєРѕРј РїСЂР°РІРµ, СЌС‚РѕС‚ СЃРїРёСЃРѕРє СѓСЃР»РѕРІРёР№ Рё
+        РїРѕСЃР»РµРґСѓСЋС‰РёР№ РѕС‚РєР°Р· РѕС‚ РіР°СЂР°РЅС‚РёР№.
+      * РќРё РЅР°Р·РІР°РЅРёРµ Cognitive Technologies, РЅРё РёРјРµРЅР° РµРµ СЃРѕС‚СЂСѓРґРЅРёРєРѕРІ РЅРµ РјРѕРіСѓС‚
+        Р±С‹С‚СЊ РёСЃРїРѕР»СЊР·РѕРІР°РЅС‹ РІ РєР°С‡РµСЃС‚РІРµ СЃСЂРµРґСЃС‚РІР° РїРѕРґРґРµСЂР¶РєРё Рё/РёР»Рё РїСЂРѕРґРІРёР¶РµРЅРёСЏ
+        РїСЂРѕРґСѓРєС‚РѕРІ, РѕСЃРЅРѕРІР°РЅРЅС‹С… РЅР° СЌС‚РѕРј РџРћ, Р±РµР· РїСЂРµРґРІР°СЂРёС‚РµР»СЊРЅРѕРіРѕ РїРёСЃСЊРјРµРЅРЅРѕРіРѕ
+        СЂР°Р·СЂРµС€РµРЅРёСЏ.
 
-ЭТА ПРОГРАММА ПРЕДОСТАВЛЕНА ВЛАДЕЛЬЦАМИ АВТОРСКИХ ПРАВ И/ИЛИ ДРУГИМИ ЛИЦАМИ "КАК
-ОНА ЕСТЬ" БЕЗ КАКОГО-ЛИБО ВИДА ГАРАНТИЙ, ВЫРАЖЕННЫХ ЯВНО ИЛИ ПОДРАЗУМЕВАЕМЫХ,
-ВКЛЮЧАЯ ГАРАНТИИ КОММЕРЧЕСКОЙ ЦЕННОСТИ И ПРИГОДНОСТИ ДЛЯ КОНКРЕТНОЙ ЦЕЛИ, НО НЕ
-ОГРАНИЧИВАЯСЬ ИМИ. НИ ВЛАДЕЛЕЦ АВТОРСКИХ ПРАВ И НИ ОДНО ДРУГОЕ ЛИЦО, КОТОРОЕ
-МОЖЕТ ИЗМЕНЯТЬ И/ИЛИ ПОВТОРНО РАСПРОСТРАНЯТЬ ПРОГРАММУ, НИ В КОЕМ СЛУЧАЕ НЕ
-НЕСЁТ ОТВЕТСТВЕННОСТИ, ВКЛЮЧАЯ ЛЮБЫЕ ОБЩИЕ, СЛУЧАЙНЫЕ, СПЕЦИАЛЬНЫЕ ИЛИ
-ПОСЛЕДОВАВШИЕ УБЫТКИ, СВЯЗАННЫЕ С ИСПОЛЬЗОВАНИЕМ ИЛИ ПОНЕСЕННЫЕ ВСЛЕДСТВИЕ
-НЕВОЗМОЖНОСТИ ИСПОЛЬЗОВАНИЯ ПРОГРАММЫ (ВКЛЮЧАЯ ПОТЕРИ ДАННЫХ, ИЛИ ДАННЫЕ,
-СТАВШИЕ НЕГОДНЫМИ, ИЛИ УБЫТКИ И/ИЛИ ПОТЕРИ ДОХОДОВ, ПОНЕСЕННЫЕ ИЗ-ЗА ДЕЙСТВИЙ
-ТРЕТЬИХ ЛИЦ И/ИЛИ ОТКАЗА ПРОГРАММЫ РАБОТАТЬ СОВМЕСТНО С ДРУГИМИ ПРОГРАММАМИ,
-НО НЕ ОГРАНИЧИВАЯСЬ ЭТИМИ СЛУЧАЯМИ), НО НЕ ОГРАНИЧИВАЯСЬ ИМИ, ДАЖЕ ЕСЛИ ТАКОЙ
-ВЛАДЕЛЕЦ ИЛИ ДРУГОЕ ЛИЦО БЫЛИ ИЗВЕЩЕНЫ О ВОЗМОЖНОСТИ ТАКИХ УБЫТКОВ И ПОТЕРЬ.
+Р­РўРђ РџР РћР“Р РђРњРњРђ РџР Р•Р”РћРЎРўРђР’Р›Р•РќРђ Р’Р›РђР”Р•Р›Р¬Р¦РђРњР РђР’РўРћР РЎРљРРҐ РџР РђР’ Р/РР›Р Р”Р РЈР“РРњР Р›РР¦РђРњР "РљРђРљ
+РћРќРђ Р•РЎРўР¬" Р‘Р•Р— РљРђРљРћР“Рћ-Р›РР‘Рћ Р’РР”Рђ Р“РђР РђРќРўРР™, Р’Р«Р РђР–Р•РќРќР«РҐ РЇР’РќРћ РР›Р РџРћР”Р РђР—РЈРњР•Р’РђР•РњР«РҐ,
+Р’РљР›Р®Р§РђРЇ Р“РђР РђРќРўРР РљРћРњРњР•Р Р§Р•РЎРљРћР™ Р¦Р•РќРќРћРЎРўР Р РџР РР“РћР”РќРћРЎРўР Р”Р›РЇ РљРћРќРљР Р•РўРќРћР™ Р¦Р•Р›Р, РќРћ РќР•
+РћР“Р РђРќРР§РР’РђРЇРЎР¬ РРњР. РќР Р’Р›РђР”Р•Р›Р•Р¦ РђР’РўРћР РЎРљРРҐ РџР РђР’ Р РќР РћР”РќРћ Р”Р РЈР“РћР• Р›РР¦Рћ, РљРћРўРћР РћР•
+РњРћР–Р•Рў РР—РњР•РќРЇРўР¬ Р/РР›Р РџРћР’РўРћР РќРћ Р РђРЎРџР РћРЎРўР РђРќРЇРўР¬ РџР РћР“Р РђРњРњРЈ, РќР Р’ РљРћР•Рњ РЎР›РЈР§РђР• РќР•
+РќР•РЎРЃРў РћРўР’Р•РўРЎРўР’Р•РќРќРћРЎРўР, Р’РљР›Р®Р§РђРЇ Р›Р®Р‘Р«Р• РћР‘Р©РР•, РЎР›РЈР§РђР™РќР«Р•, РЎРџР•Р¦РРђР›Р¬РќР«Р• РР›Р
+РџРћРЎР›Р•Р”РћР’РђР’РЁРР• РЈР‘Р«РўРљР, РЎР’РЇР—РђРќРќР«Р• РЎ РРЎРџРћР›Р¬Р—РћР’РђРќРР•Рњ РР›Р РџРћРќР•РЎР•РќРќР«Р• Р’РЎР›Р•Р”РЎРўР’РР•
+РќР•Р’РћР—РњРћР–РќРћРЎРўР РРЎРџРћР›Р¬Р—РћР’РђРќРРЇ РџР РћР“Р РђРњРњР« (Р’РљР›Р®Р§РђРЇ РџРћРўР•Р Р Р”РђРќРќР«РҐ, РР›Р Р”РђРќРќР«Р•,
+РЎРўРђР’РЁРР• РќР•Р“РћР”РќР«РњР, РР›Р РЈР‘Р«РўРљР Р/РР›Р РџРћРўР•Р Р Р”РћРҐРћР”РћР’, РџРћРќР•РЎР•РќРќР«Р• РР—-Р—Рђ Р”Р•Р™РЎРўР’РР™
+РўР Р•РўР¬РРҐ Р›РР¦ Р/РР›Р РћРўРљРђР—Рђ РџР РћР“Р РђРњРњР« Р РђР‘РћРўРђРўР¬ РЎРћР’РњР•РЎРўРќРћ РЎ Р”Р РЈР“РРњР РџР РћР“Р РђРњРњРђРњР,
+РќРћ РќР• РћР“Р РђРќРР§РР’РђРЇРЎР¬ Р­РўРРњР РЎР›РЈР§РђРЇРњР), РќРћ РќР• РћР“Р РђРќРР§РР’РђРЇРЎР¬ РРњР, Р”РђР–Р• Р•РЎР›Р РўРђРљРћР™
+Р’Р›РђР”Р•Р›Р•Р¦ РР›Р Р”Р РЈР“РћР• Р›РР¦Рћ Р‘Р«Р›Р РР—Р’Р•Р©Р•РќР« Рћ Р’РћР—РњРћР–РќРћРЎРўР РўРђРљРРҐ РЈР‘Р«РўРљРћР’ Р РџРћРўР•Р Р¬.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
@@ -70,12 +70,12 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 extern Handle hDebugAutoTemplate;
 
-static Word32 key=2;                  //для snap'а
+static uint32_t key=2;                  //РґР»СЏ snap'Р°
 static Word8 buffer[256];
 static char *message = (char *)buffer;
 
 
-//============ Функции для интервалов =================//
+//============ Р¤СѓРЅРєС†РёРё РґР»СЏ РёРЅС‚РµСЂРІР°Р»РѕРІ =================//
 
 static Bool32 	intersect  (CCOM_interval16 *f, CCOM_interval16 *s)
 {
@@ -116,13 +116,13 @@ static CCOM_interval16 join(CCOM_interval16 *f, CCOM_interval16 *s)
 	return res;
 }
 
-static void reorder(CCOM_interval16 set[], Int32 n)
+static void reorder(CCOM_interval16 set[], int32_t n)
 {
 	if (n<=1)
 		return;
 
 	Bool32 changed;
-	Int32 i;
+	int32_t i;
 	CCOM_interval16 *sc,*sp;
 	do
 	{
@@ -146,9 +146,9 @@ DoubleInterval::DoubleInterval(Ocomp *comp)
 	memset(right,0,sizeof(right));
 }
 *-/
-Int32 DoubleInterval::Number()
+int32_t DoubleInterval::Number()
 {
-	Int32 n=0;
+	int32_t n=0;
 	if (left.l)	n++;
 	if (right.l)	n++;
 	return n;
@@ -156,7 +156,7 @@ Int32 DoubleInterval::Number()
 
 void DoubleInterval::SetOne(CCOM_interval16 *add)
 {
-	Int32 mid=add->e-add->l/2;
+	int32_t mid=add->e-add->l/2;
 	if (mid > pComp->nWidth/2)
 	{
 		right=*add;
@@ -198,10 +198,10 @@ void DoubleInterval::Add(CCOM_interval16 *add)
 		return;
 	}
 
-	//не пересекается ни с одним
+	//РЅРµ РїРµСЂРµСЃРµРєР°РµС‚СЃСЏ РЅРё СЃ РѕРґРЅРёРј
 	CCOM_interval16	 set[3],*l=set,*m=set+1,*r=set+2;
 	set[0]=left; set[1]=*add; set[2]=right;
-	reorder(set,3);	  // в порядке возрастания концов
+	reorder(set,3);	  // РІ РїРѕСЂСЏРґРєРµ РІРѕР·СЂР°СЃС‚Р°РЅРёСЏ РєРѕРЅС†РѕРІ
 	if (Number()==1)
 	{
 		left=*m;  right=*r;
@@ -260,7 +260,7 @@ void Ocomp::SetComp(CCOM_comp *comp)
 	nCavBeg=-1;	 nCavWidth=nCavEnd=0;
 	rCavRect=SmRect32();
 	memset(ints,0,(nHeight+1)*sizeof(DoubleInterval));
-	for (Int32 i=0; i<=nHeight && i<=MAXHEIGHT; i++)
+	for (int32_t i=0; i<=nHeight && i<=MAXHEIGHT; i++)
 		ints[i].pComp=this;
 }
 
@@ -276,7 +276,7 @@ Bool32 Ocomp::FindCavity(SmRect32 *rect)
 		if (inter.l != 0)
 		{
 			memset(ints,0,(nHeight+1)*sizeof(DoubleInterval));
-			for (Int32 i=0; i<=nHeight && i<=MAXHEIGHT; i++)
+			for (int32_t i=0; i<=nHeight && i<=MAXHEIGHT; i++)
 			{
 				ints[i].pComp=this;
 				if (i>=rect->top && i<=rect->bottom)
@@ -290,10 +290,10 @@ Bool32 Ocomp::FindCavity(SmRect32 *rect)
 
 	rCavRect=SmRect32();
 	nCavBeg=-1;	 nCavWidth=nCavEnd=0;
-	Int32 i,cLeft=0,cUp=0,cRight=0;
+	int32_t i,cLeft=0,cUp=0,cRight=0;
 	Bool32 found=FALSE;
 	CCOM_interval16 prev={0,0};
-	for (i=0; i<=nHeight; i++)	//последний интервал - фиктивный
+	for (i=0; i<=nHeight; i++)	//РїРѕСЃР»РµРґРЅРёР№ РёРЅС‚РµСЂРІР°Р» - С„РёРєС‚РёРІРЅС‹Р№
 	{
 		CCOM_interval16 curr=ints[i].Cavity();
 		Bool32 notcross = !intersect(&curr,&prev);
@@ -301,18 +301,18 @@ Bool32 Ocomp::FindCavity(SmRect32 *rect)
 		Bool32 end = prev.l>0 && (notcross || curr.l==0);
 		if (end)
 		{
-			Int32 h=i-cUp;
+			int32_t h=i-cUp;
 			cLeft=DIV_ROUND(cLeft,h);
 			cRight=DIV_ROUND(cRight,h);
 			if (h>=nHeight/2 && cRight-cLeft>=nWidth/2)
-			   if (involve(&(ints[i].left),&prev) || involve(&(ints[i].right),&prev))  //есть дно
+			   if (involve(&(ints[i].left),&prev) || involve(&(ints[i].right),&prev))  //РµСЃС‚СЊ РґРЅРѕ
 			   {
 					found=TRUE;
 					rCavRect=SmRect32(cLeft,cUp,cRight,i-1);
 					break;
 			   }
 
-			//ищем дальше
+			//РёС‰РµРј РґР°Р»СЊС€Рµ
 		}
 		if (beg)
 		{
@@ -335,11 +335,11 @@ Bool32 Ocomp::FillIntervals()
 	{
 		CCOM_lnhead  *lnhead;
 		lnhead = (CCOM_lnhead*)(pComp->linerep + sizeof(Word16));
-		while( lnhead->lth )						// по линиям
+		while( lnhead->lth )						// РїРѕ Р»РёРЅРёСЏРј
 		{
 			Int16 cInter = lnhead->row;
 			CCOM_interval16 *inter = (CCOM_interval16*)(lnhead+1);
-			while( inter->l && cInter<MAXHEIGHT )	// по интервалам линии
+			while( inter->l && cInter<MAXHEIGHT )	// РїРѕ РёРЅС‚РµСЂРІР°Р»Р°Рј Р»РёРЅРёРё
 			{
 				if (cInter>=nHeight)
 					return FALSE;
@@ -354,11 +354,11 @@ Bool32 Ocomp::FillIntervals()
 	{
 		CCOM_lnhead  *lnhead;
 		lnhead = (CCOM_lnhead*)(pComp->linerep + sizeof(Word16));
-		while( lnhead->lth )						// по линиям
+		while( lnhead->lth )						// РїРѕ Р»РёРЅРёСЏРј
 		{
 			Int16 cInter = lnhead->row;
 			CCOM_interval *inter = (CCOM_interval*)(lnhead+1);
-			while( inter->l && cInter<MAXHEIGHT )	// по интервалам линии
+			while( inter->l && cInter<MAXHEIGHT )	// РїРѕ РёРЅС‚РµСЂРІР°Р»Р°Рј Р»РёРЅРёРё
 			{
 				if (cInter>=nHeight)
 					return FALSE;
@@ -377,7 +377,7 @@ Bool32 Ocomp::FillIntervals()
 
 void Ocomp::ShowCavity()
 {
-	for (Int32 i=nCavBeg; i<nCavEnd; i++)
+	for (int32_t i=nCavBeg; i<nCavEnd; i++)
 	{
 		Int16 h=(Int16)(pComp->upper+i);
 		Point16 beg1={pComp->left+ints[i].left.e,h},end1={beg1.x+1,h};
@@ -389,9 +389,9 @@ void Ocomp::ShowCavity()
 	LDPUMA_DeleteLines(hWndTurn,key);
 }
 
-Int32 TripleInterval::Number()
+int32_t TripleInterval::Number()
 {
-	Int32 n=0;
+	int32_t n=0;
 	if (left.l)	n++;
 	if (middle.l)	n++;
 	if (right.l)	n++;
@@ -400,8 +400,8 @@ Int32 TripleInterval::Number()
 
 void TripleInterval::SetOne(CCOM_interval16 *add)
 {
-	Int32 Ithird=pComp->nWidth/3,IIthird=2*Ithird;
-	Int32 mid=add->e-add->l/2;
+	int32_t Ithird=pComp->nWidth/3,IIthird=2*Ithird;
+	int32_t mid=add->e-add->l/2;
 	if (mid >= IIthird)
 	{
 		right=*add;
@@ -430,27 +430,27 @@ void TripleInterval::Add(CCOM_interval16 *toAdd)
 		SetOne(toAdd);  return;
 	}
 
-	Int32 i,Ithird=pComp->nWidth/3,IIthird=2*Ithird;
+	int32_t i,Ithird=pComp->nWidth/3,IIthird=2*Ithird;
 	CCOM_interval16	 set[4];
 	set[0]=left; set[1]=middle; set[2]=right; set[3]=*toAdd;
 	CCOM_interval16	*curr,*next;
 	CCOM_interval16 *first=set,*sec=set+1,*third=set+2,*add=set+3;
 
-	reorder(set,4);		// в порядке возрастания концов
-	if (set[0].l)		// всего 4 интервала - пару надо объединить
+	reorder(set,4);		// РІ РїРѕСЂСЏРґРєРµ РІРѕР·СЂР°СЃС‚Р°РЅРёСЏ РєРѕРЅС†РѕРІ
+	if (set[0].l)		// РІСЃРµРіРѕ 4 РёРЅС‚РµСЂРІР°Р»Р° - РїР°СЂСѓ РЅР°РґРѕ РѕР±СЉРµРґРёРЅРёС‚СЊ
 	{
-		Int32 distmin=MAXWIDTH,imin;
+		int32_t distmin=MAXWIDTH,imin;
 		for (i=0,curr=set+i,next=curr+1; i<3; i++,curr++,next++)
 		{
 			Int16 dist=distance(curr,next);
 			if (dist<distmin) { distmin=dist; imin=i; };
 		}
 		set[imin+1]=join(set+imin,set+imin+1);
-		memmove(set+1,set,imin*sizeof(CCOM_interval16));	//поджимаем вправо
+		memmove(set+1,set,imin*sizeof(CCOM_interval16));	//РїРѕРґР¶РёРјР°РµРј РІРїСЂР°РІРѕ
 		memset(set,0,sizeof(CCOM_interval16));
 	}
 
-	//осталось <= 3 интервала - объединяем, если нужно
+	//РѕСЃС‚Р°Р»РѕСЃСЊ <= 3 РёРЅС‚РµСЂРІР°Р»Р° - РѕР±СЉРµРґРёРЅСЏРµРј, РµСЃР»Рё РЅСѓР¶РЅРѕ
 	Bool32 joined;
 	do
 	{
@@ -462,20 +462,20 @@ void TripleInterval::Add(CCOM_interval16 *toAdd)
 			{
 				joined=TRUE;
 				*next=join(curr,next);
-				memmove(set+1,set,i*sizeof(CCOM_interval16));	//поджимаем вправо
+				memmove(set+1,set,i*sizeof(CCOM_interval16));	//РїРѕРґР¶РёРјР°РµРј РІРїСЂР°РІРѕ
 			}
 		}
 	}
 	while(joined);
 
-	//распределяем по местам
-	if (set[1].l)		// 3 интервала - кладем слева направо
+	//СЂР°СЃРїСЂРµРґРµР»СЏРµРј РїРѕ РјРµСЃС‚Р°Рј
+	if (set[1].l)		// 3 РёРЅС‚РµСЂРІР°Р»Р° - РєР»Р°РґРµРј СЃР»РµРІР° РЅР°РїСЂР°РІРѕ
 	{
 		left=set[1];  middle=set[2];  right=set[3];
 	}
-	else if (set[2].l)	// 2 интервала - распределяем по трем вакансиям
+	else if (set[2].l)	// 2 РёРЅС‚РµСЂРІР°Р»Р° - СЂР°СЃРїСЂРµРґРµР»СЏРµРј РїРѕ С‚СЂРµРј РІР°РєР°РЅСЃРёСЏРј
 	{
-		Int32 mid=set[3].e-set[3].l/2;
+		int32_t mid=set[3].e-set[3].l/2;
 		if (mid<IIthird)
 		{
 			left=set[2];  middle=set[3];  memset(&right,0,sizeof(right));
@@ -488,13 +488,13 @@ void TripleInterval::Add(CCOM_interval16 *toAdd)
 			else			  {	memset(&left,0,sizeof(left));  middle=set[2];     }
 		}
 	}
-	else if (set[3].l)	//один интервал
+	else if (set[3].l)	//РѕРґРёРЅ РёРЅС‚РµСЂРІР°Р»
 		SetOne(set+3);
 	else
 		assert(0);
 }
 
-void OOcomp::SetComp(CCOM_comp *comp, Int32 pageWidth, Int32 pageHeight)
+void OOcomp::SetComp(CCOM_comp *comp, int32_t pageWidth, int32_t pageHeight)
 {
 	if (comp==NULL)
 		return;
@@ -506,7 +506,7 @@ void OOcomp::SetComp(CCOM_comp *comp, Int32 pageWidth, Int32 pageHeight)
 	nDens=0;
 	rCavRect=SmRect32();
 	memset(ints,0,(nHeight+1)*sizeof(TripleInterval));
-	for (Int32 i=0; i<=nHeight && i<=MAXHEIGHT; i++)
+	for (int32_t i=0; i<=nHeight && i<=MAXHEIGHT; i++)
 		ints[i].pComp=this;
 }
 
@@ -516,11 +516,11 @@ Bool32 OOcomp::FillIntervals()
 	{
 		CCOM_lnhead  *lnhead;
 		lnhead = (CCOM_lnhead*)(pComp->linerep + sizeof(Word16));
-		while( lnhead->lth )						// по линиям
+		while( lnhead->lth )						// РїРѕ Р»РёРЅРёСЏРј
 		{
 			Int16 cInter = lnhead->row;
 			CCOM_interval16 *inter = (CCOM_interval16*)(lnhead+1);
-			while( inter->l && cInter<MAXHEIGHT )	// по интервалам линии
+			while( inter->l && cInter<MAXHEIGHT )	// РїРѕ РёРЅС‚РµСЂРІР°Р»Р°Рј Р»РёРЅРёРё
 			{
 				if (cInter>=nHeight)
 					return FALSE;
@@ -536,11 +536,11 @@ Bool32 OOcomp::FillIntervals()
 	{
 		CCOM_lnhead  *lnhead;
 		lnhead = (CCOM_lnhead*)(pComp->linerep + sizeof(Word16));
-		while( lnhead->lth )						// по линиям
+		while( lnhead->lth )						// РїРѕ Р»РёРЅРёСЏРј
 		{
 			Int16 cInter = lnhead->row;
 			CCOM_interval *inter = (CCOM_interval*)(lnhead+1);
-			while( inter->l && cInter<MAXHEIGHT )	// по интервалам линии
+			while( inter->l && cInter<MAXHEIGHT )	// РїРѕ РёРЅС‚РµСЂРІР°Р»Р°Рј Р»РёРЅРёРё
 			{
 				if (cInter>=nHeight)
 					return FALSE;
@@ -568,14 +568,14 @@ Bool32 OOcomp::Test(SmRect32 *rect)
 		return FALSE;
 
 
-	Int32 i,dens=0;
-	Int32 lm=0,lc=0,rm=0,rc=0;
+	int32_t i,dens=0;
+	int32_t lm=0,lc=0,rm=0,rc=0;
 	Int16 um=pComp->upper,bm=nPageHeight-(um+pComp->h);
 	for (i=0; i<nHeight; i++)
 	{
 		TripleInterval *intv=ints+i;
 #ifdef DRAWTPIPLEINT
-				Int32 color=wRGB(0,0,255);
+				int32_t color=wRGB(0,0,255);
 				Int16 h=(Int16)(pComp->upper+i);
 				{
 				Point16 beg={pComp->left+intv->left.e-intv->left.l,h},end={pComp->left+intv->left.e,h};
@@ -616,7 +616,7 @@ Bool32 OOcomp::Test(SmRect32 *rect)
 			return TRUE;
 
 	Int16 wm=(Int16)nPageWidth/128,hm=(Int16)nPageHeight/128;
-	Int32 boundh=0,boundv=0;
+	int32_t boundh=0,boundv=0;
 	if (pComp->left<=wm)  boundv++;
 	if (pComp->upper<=hm) boundh++;
 	if (pComp->left+pComp->w>=nPageWidth-wm)	boundv++;

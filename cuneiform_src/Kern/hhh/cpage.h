@@ -2,33 +2,33 @@
 Copyright (c) 1993-2008, Cognitive Technologies
 All rights reserved.
 
-Разрешается повторное распространение и использование как в виде исходного кода,
-так и в двоичной форме, с изменениями или без, при соблюдении следующих условий:
+Р Р°Р·СЂРµС€Р°РµС‚СЃСЏ РїРѕРІС‚РѕСЂРЅРѕРµ СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРµ Рё РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ РєР°Рє РІ РІРёРґРµ РёСЃС…РѕРґРЅРѕРіРѕ РєРѕРґР°,
+С‚Р°Рє Рё РІ РґРІРѕРёС‡РЅРѕР№ С„РѕСЂРјРµ, СЃ РёР·РјРµРЅРµРЅРёСЏРјРё РёР»Рё Р±РµР·, РїСЂРё СЃРѕР±Р»СЋРґРµРЅРёРё СЃР»РµРґСѓСЋС‰РёС… СѓСЃР»РѕРІРёР№:
 
-      * При повторном распространении исходного кода должны оставаться указанное
-        выше уведомление об авторском праве, этот список условий и последующий
-        отказ от гарантий.
-      * При повторном распространении двоичного кода в документации и/или в
-        других материалах, поставляемых при распространении, должны сохраняться
-        указанная выше информация об авторском праве, этот список условий и
-        последующий отказ от гарантий.
-      * Ни название Cognitive Technologies, ни имена ее сотрудников не могут
-        быть использованы в качестве средства поддержки и/или продвижения
-        продуктов, основанных на этом ПО, без предварительного письменного
-        разрешения.
+      * РџСЂРё РїРѕРІС‚РѕСЂРЅРѕРј СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё РёСЃС…РѕРґРЅРѕРіРѕ РєРѕРґР° РґРѕР»Р¶РЅС‹ РѕСЃС‚Р°РІР°С‚СЊСЃСЏ СѓРєР°Р·Р°РЅРЅРѕРµ
+        РІС‹С€Рµ СѓРІРµРґРѕРјР»РµРЅРёРµ РѕР± Р°РІС‚РѕСЂСЃРєРѕРј РїСЂР°РІРµ, СЌС‚РѕС‚ СЃРїРёСЃРѕРє СѓСЃР»РѕРІРёР№ Рё РїРѕСЃР»РµРґСѓСЋС‰РёР№
+        РѕС‚РєР°Р· РѕС‚ РіР°СЂР°РЅС‚РёР№.
+      * РџСЂРё РїРѕРІС‚РѕСЂРЅРѕРј СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё РґРІРѕРёС‡РЅРѕРіРѕ РєРѕРґР° РІ РґРѕРєСѓРјРµРЅС‚Р°С†РёРё Рё/РёР»Рё РІ
+        РґСЂСѓРіРёС… РјР°С‚РµСЂРёР°Р»Р°С…, РїРѕСЃС‚Р°РІР»СЏРµРјС‹С… РїСЂРё СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё, РґРѕР»Р¶РЅС‹ СЃРѕС…СЂР°РЅСЏС‚СЊСЃСЏ
+        СѓРєР°Р·Р°РЅРЅР°СЏ РІС‹С€Рµ РёРЅС„РѕСЂРјР°С†РёСЏ РѕР± Р°РІС‚РѕСЂСЃРєРѕРј РїСЂР°РІРµ, СЌС‚РѕС‚ СЃРїРёСЃРѕРє СѓСЃР»РѕРІРёР№ Рё
+        РїРѕСЃР»РµРґСѓСЋС‰РёР№ РѕС‚РєР°Р· РѕС‚ РіР°СЂР°РЅС‚РёР№.
+      * РќРё РЅР°Р·РІР°РЅРёРµ Cognitive Technologies, РЅРё РёРјРµРЅР° РµРµ СЃРѕС‚СЂСѓРґРЅРёРєРѕРІ РЅРµ РјРѕРіСѓС‚
+        Р±С‹С‚СЊ РёСЃРїРѕР»СЊР·РѕРІР°РЅС‹ РІ РєР°С‡РµСЃС‚РІРµ СЃСЂРµРґСЃС‚РІР° РїРѕРґРґРµСЂР¶РєРё Рё/РёР»Рё РїСЂРѕРґРІРёР¶РµРЅРёСЏ
+        РїСЂРѕРґСѓРєС‚РѕРІ, РѕСЃРЅРѕРІР°РЅРЅС‹С… РЅР° СЌС‚РѕРј РџРћ, Р±РµР· РїСЂРµРґРІР°СЂРёС‚РµР»СЊРЅРѕРіРѕ РїРёСЃСЊРјРµРЅРЅРѕРіРѕ
+        СЂР°Р·СЂРµС€РµРЅРёСЏ.
 
-ЭТА ПРОГРАММА ПРЕДОСТАВЛЕНА ВЛАДЕЛЬЦАМИ АВТОРСКИХ ПРАВ И/ИЛИ ДРУГИМИ ЛИЦАМИ "КАК
-ОНА ЕСТЬ" БЕЗ КАКОГО-ЛИБО ВИДА ГАРАНТИЙ, ВЫРАЖЕННЫХ ЯВНО ИЛИ ПОДРАЗУМЕВАЕМЫХ,
-ВКЛЮЧАЯ ГАРАНТИИ КОММЕРЧЕСКОЙ ЦЕННОСТИ И ПРИГОДНОСТИ ДЛЯ КОНКРЕТНОЙ ЦЕЛИ, НО НЕ
-ОГРАНИЧИВАЯСЬ ИМИ. НИ ВЛАДЕЛЕЦ АВТОРСКИХ ПРАВ И НИ ОДНО ДРУГОЕ ЛИЦО, КОТОРОЕ
-МОЖЕТ ИЗМЕНЯТЬ И/ИЛИ ПОВТОРНО РАСПРОСТРАНЯТЬ ПРОГРАММУ, НИ В КОЕМ СЛУЧАЕ НЕ
-НЕСЁТ ОТВЕТСТВЕННОСТИ, ВКЛЮЧАЯ ЛЮБЫЕ ОБЩИЕ, СЛУЧАЙНЫЕ, СПЕЦИАЛЬНЫЕ ИЛИ
-ПОСЛЕДОВАВШИЕ УБЫТКИ, СВЯЗАННЫЕ С ИСПОЛЬЗОВАНИЕМ ИЛИ ПОНЕСЕННЫЕ ВСЛЕДСТВИЕ
-НЕВОЗМОЖНОСТИ ИСПОЛЬЗОВАНИЯ ПРОГРАММЫ (ВКЛЮЧАЯ ПОТЕРИ ДАННЫХ, ИЛИ ДАННЫЕ,
-СТАВШИЕ НЕГОДНЫМИ, ИЛИ УБЫТКИ И/ИЛИ ПОТЕРИ ДОХОДОВ, ПОНЕСЕННЫЕ ИЗ-ЗА ДЕЙСТВИЙ
-ТРЕТЬИХ ЛИЦ И/ИЛИ ОТКАЗА ПРОГРАММЫ РАБОТАТЬ СОВМЕСТНО С ДРУГИМИ ПРОГРАММАМИ,
-НО НЕ ОГРАНИЧИВАЯСЬ ЭТИМИ СЛУЧАЯМИ), НО НЕ ОГРАНИЧИВАЯСЬ ИМИ, ДАЖЕ ЕСЛИ ТАКОЙ
-ВЛАДЕЛЕЦ ИЛИ ДРУГОЕ ЛИЦО БЫЛИ ИЗВЕЩЕНЫ О ВОЗМОЖНОСТИ ТАКИХ УБЫТКОВ И ПОТЕРЬ.
+Р­РўРђ РџР РћР“Р РђРњРњРђ РџР Р•Р”РћРЎРўРђР’Р›Р•РќРђ Р’Р›РђР”Р•Р›Р¬Р¦РђРњР РђР’РўРћР РЎРљРРҐ РџР РђР’ Р/РР›Р Р”Р РЈР“РРњР Р›РР¦РђРњР "РљРђРљ
+РћРќРђ Р•РЎРўР¬" Р‘Р•Р— РљРђРљРћР“Рћ-Р›РР‘Рћ Р’РР”Рђ Р“РђР РђРќРўРР™, Р’Р«Р РђР–Р•РќРќР«РҐ РЇР’РќРћ РР›Р РџРћР”Р РђР—РЈРњР•Р’РђР•РњР«РҐ,
+Р’РљР›Р®Р§РђРЇ Р“РђР РђРќРўРР РљРћРњРњР•Р Р§Р•РЎРљРћР™ Р¦Р•РќРќРћРЎРўР Р РџР РР“РћР”РќРћРЎРўР Р”Р›РЇ РљРћРќРљР Р•РўРќРћР™ Р¦Р•Р›Р, РќРћ РќР•
+РћР“Р РђРќРР§РР’РђРЇРЎР¬ РРњР. РќР Р’Р›РђР”Р•Р›Р•Р¦ РђР’РўРћР РЎРљРРҐ РџР РђР’ Р РќР РћР”РќРћ Р”Р РЈР“РћР• Р›РР¦Рћ, РљРћРўРћР РћР•
+РњРћР–Р•Рў РР—РњР•РќРЇРўР¬ Р/РР›Р РџРћР’РўРћР РќРћ Р РђРЎРџР РћРЎРўР РђРќРЇРўР¬ РџР РћР“Р РђРњРњРЈ, РќР Р’ РљРћР•Рњ РЎР›РЈР§РђР• РќР•
+РќР•РЎРЃРў РћРўР’Р•РўРЎРўР’Р•РќРќРћРЎРўР, Р’РљР›Р®Р§РђРЇ Р›Р®Р‘Р«Р• РћР‘Р©РР•, РЎР›РЈР§РђР™РќР«Р•, РЎРџР•Р¦РРђР›Р¬РќР«Р• РР›Р
+РџРћРЎР›Р•Р”РћР’РђР’РЁРР• РЈР‘Р«РўРљР, РЎР’РЇР—РђРќРќР«Р• РЎ РРЎРџРћР›Р¬Р—РћР’РђРќРР•Рњ РР›Р РџРћРќР•РЎР•РќРќР«Р• Р’РЎР›Р•Р”РЎРўР’РР•
+РќР•Р’РћР—РњРћР–РќРћРЎРўР РРЎРџРћР›Р¬Р—РћР’РђРќРРЇ РџР РћР“Р РђРњРњР« (Р’РљР›Р®Р§РђРЇ РџРћРўР•Р Р Р”РђРќРќР«РҐ, РР›Р Р”РђРќРќР«Р•,
+РЎРўРђР’РЁРР• РќР•Р“РћР”РќР«РњР, РР›Р РЈР‘Р«РўРљР Р/РР›Р РџРћРўР•Р Р Р”РћРҐРћР”РћР’, РџРћРќР•РЎР•РќРќР«Р• РР—-Р—Рђ Р”Р•Р™РЎРўР’РР™
+РўР Р•РўР¬РРҐ Р›РР¦ Р/РР›Р РћРўРљРђР—Рђ РџР РћР“Р РђРњРњР« Р РђР‘РћРўРђРўР¬ РЎРћР’РњР•РЎРўРќРћ РЎ Р”Р РЈР“РРњР РџР РћР“Р РђРњРњРђРњР,
+РќРћ РќР• РћР“Р РђРќРР§РР’РђРЇРЎР¬ Р­РўРРњР РЎР›РЈР§РђРЇРњР), РќРћ РќР• РћР“Р РђРќРР§РР’РђРЇРЎР¬ РРњР, Р”РђР–Р• Р•РЎР›Р РўРђРљРћР™
+Р’Р›РђР”Р•Р›Р•Р¦ РР›Р Р”Р РЈР“РћР• Р›РР¦Рћ Р‘Р«Р›Р РР—Р’Р•Р©Р•РќР« Рћ Р’РћР—РњРћР–РќРћРЎРўР РўРђРљРРҐ РЈР‘Р«РўРљРћР’ Р РџРћРўР•Р Р¬.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
@@ -87,18 +87,18 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 CPAGE_FUNC(Bool32) CPAGE_Init(Word16 wHeightCode,Handle hStorage);
 CPAGE_FUNC(Bool32) CPAGE_Done();
-CPAGE_FUNC(Word32) CPAGE_GetReturnCode();
-CPAGE_FUNC(Int8 *) CPAGE_GetReturnString(Word32 dwError);
-CPAGE_FUNC(Bool32) CPAGE_GetExportData(Word32 dwType, void * pData);
-CPAGE_FUNC(Bool32) CPAGE_SetImportData(Word32 dwType, void * pData);
+CPAGE_FUNC(uint32_t) CPAGE_GetReturnCode();
+CPAGE_FUNC(Int8 *) CPAGE_GetReturnString(uint32_t dwError);
+CPAGE_FUNC(Bool32) CPAGE_GetExportData(uint32_t dwType, void * pData);
+CPAGE_FUNC(Bool32) CPAGE_SetImportData(uint32_t dwType, void * pData);
 /////////////////////////////////////////////////////////////
 
-typedef Word32 (*CPAGE_ExtConvert)(Word32 dwContext,
-								   Handle TypeIn ,void * lpDataIn,Word32 SizeIn,
-								   Handle TypeOut,void * LpDataOut, Word32 SizeOut);
+typedef uint32_t (*CPAGE_ExtConvert)(uint32_t dwContext,
+								   Handle TypeIn ,void * lpDataIn,uint32_t SizeIn,
+								   Handle TypeOut,void * LpDataOut, uint32_t SizeOut);
 typedef struct {
-	Word32				dwContext;		// Контекст конвертора
-	CPAGE_ExtConvert	fnConvertor;	// Функция конвертировани
+	uint32_t				dwContext;		// РљРѕРЅС‚РµРєСЃС‚ РєРѕРЅРІРµСЂС‚РѕСЂР°
+	CPAGE_ExtConvert	fnConvertor;	// Р¤СѓРЅРєС†РёСЏ РєРѕРЅРІРµСЂС‚РёСЂРѕРІР°РЅРё
 }	CPAGE_CONVERTOR;
 
 enum CPAGE_EXPORT_ENTRIES
@@ -200,54 +200,54 @@ enum CPAGE_EXPORT_ENTRIES
 
 #define DEC_FUN(a,b,c) typedef a (*FN##b)c; CPAGE_FUNC(a) b c
 
-DEC_FUN(Handle,  CPAGE_CreatePage,(Handle Type, void * lpData, Word32 Size));
+DEC_FUN(Handle,  CPAGE_CreatePage,(Handle Type, void * lpData, uint32_t Size));
 DEC_FUN(void,    CPAGE_DeletePage,(Handle hPage));
-DEC_FUN(Word32,  CPAGE_GetCountPage,());
-DEC_FUN(Handle,  CPAGE_GetHandlePage,(Word32 number));
-DEC_FUN(Word32,  CPAGE_GetCurrentPage,( ));
-DEC_FUN(Bool32,  CPAGE_SetCurrentPage,(Word32 page));
-DEC_FUN(Word32,  CPAGE_GetNumberPage,( Handle hPage ));
+DEC_FUN(uint32_t,  CPAGE_GetCountPage,());
+DEC_FUN(Handle,  CPAGE_GetHandlePage,(uint32_t number));
+DEC_FUN(uint32_t,  CPAGE_GetCurrentPage,( ));
+DEC_FUN(Bool32,  CPAGE_SetCurrentPage,(uint32_t page));
+DEC_FUN(uint32_t,  CPAGE_GetNumberPage,( Handle hPage ));
 
 DEC_FUN(Bool32,  CPAGE_SavePage,(Handle page,Int8 * lpName));
 DEC_FUN(Handle,  CPAGE_RestorePage,(Bool32 remove,Int8 * lpName));
 
 
 DEC_FUN(Handle,  CPAGE_GetPageType,(Handle hPage));
-DEC_FUN(Bool32,  CPAGE_SetPageData,(Handle page, Handle Type, void * lpData, Word32 Size));
-DEC_FUN(Word32,  CPAGE_GetPageData,(Handle page, Handle Type, void * lpData, Word32 Size));
+DEC_FUN(Bool32,  CPAGE_SetPageData,(Handle page, Handle Type, void * lpData, uint32_t Size));
+DEC_FUN(uint32_t,  CPAGE_GetPageData,(Handle page, Handle Type, void * lpData, uint32_t Size));
 
 DEC_FUN(void,    CPAGE_ClearBackUp,(Handle page));   //Paul 19-01-2001
 DEC_FUN(Handle,  CPAGE_BackUp,(Handle page));
 DEC_FUN(Bool32,  CPAGE_Undo,(Handle page,Handle backup));
 DEC_FUN(Bool32,  CPAGE_Redo,(Handle page,Handle backup));
 
-DEC_FUN(Handle,   CPAGE_CreateBlock,(Handle page, Handle Type, Word32 UserNum , Word32 Flags,void * lpData, Word32 Size));
+DEC_FUN(Handle,   CPAGE_CreateBlock,(Handle page, Handle Type, uint32_t UserNum , uint32_t Flags,void * lpData, uint32_t Size));
 DEC_FUN(void  ,  CPAGE_DeleteBlock,(Handle page,Handle block));
 
-DEC_FUN(Word32,  CPAGE_GetCountBlock,(Handle page));
-DEC_FUN(Handle,  CPAGE_GetHandleBlock,(Handle page, Word32 number));
+DEC_FUN(uint32_t,  CPAGE_GetCountBlock,(Handle page));
+DEC_FUN(Handle,  CPAGE_GetHandleBlock,(Handle page, uint32_t number));
 
 DEC_FUN(Handle,  CPAGE_GetBlockType,(Handle page,Handle block));
-DEC_FUN(Word32,  CPAGE_GetBlockUserNum,(Handle page,Handle block));
-DEC_FUN(void  ,  CPAGE_SetBlockUserNum,(Handle page,Handle block,Word32 user));
+DEC_FUN(uint32_t,  CPAGE_GetBlockUserNum,(Handle page,Handle block));
+DEC_FUN(void  ,  CPAGE_SetBlockUserNum,(Handle page,Handle block,uint32_t user));
 
-DEC_FUN(Word32,  CPAGE_GetBlockFlags,(Handle page,Handle block));
-DEC_FUN(void  ,  CPAGE_SetBlockFlags,(Handle page,Handle block,Word32 flags));
+DEC_FUN(uint32_t,  CPAGE_GetBlockFlags,(Handle page,Handle block));
+DEC_FUN(void  ,  CPAGE_SetBlockFlags,(Handle page,Handle block,uint32_t flags));
 //Paul 09-08-99
-#define CPAGE_BLOCK_USER       0x1  //выделен пользователем
-#define CPAGE_BLOCK_UNCERTAIN  0x2  //грязь или нет ?
+#define CPAGE_BLOCK_USER       0x1  //РІС‹РґРµР»РµРЅ РїРѕР»СЊР·РѕРІР°С‚РµР»РµРј
+#define CPAGE_BLOCK_UNCERTAIN  0x2  //РіСЂСЏР·СЊ РёР»Рё РЅРµС‚ ?
 //
-DEC_FUN(Bool32,  CPAGE_SetBlockData,(Handle page,Handle block, Handle Type, void * lpData, Word32 Size));
-DEC_FUN(Word32,  CPAGE_GetBlockData,(Handle page,Handle block, Handle Type, void * lpData, Word32 Size));
+DEC_FUN(Bool32,  CPAGE_SetBlockData,(Handle page,Handle block, Handle Type, void * lpData, uint32_t Size));
+DEC_FUN(uint32_t,  CPAGE_GetBlockData,(Handle page,Handle block, Handle Type, void * lpData, uint32_t Size));
 
 DEC_FUN(CPAGE_CONVERTOR,  CPAGE_SetConvertorPages,(CPAGE_CONVERTOR func));
 DEC_FUN(CPAGE_CONVERTOR,  CPAGE_SetConvertorBlocks,(Handle page,CPAGE_CONVERTOR func));
 
 DEC_FUN(Handle,  CPAGE_GetUserPageType,());
 DEC_FUN(Handle,  CPAGE_GetUserBlockType,());
-DEC_FUN(Word32, CPAGE_GetBuckUpCount,(Handle page));
-DEC_FUN(Handle, CPAGE_GetBuckUpHandle,(Handle page,Word32 number));
-DEC_FUN(Word32, CPAGE_GetBuckUpCurPos,(Handle page));
+DEC_FUN(uint32_t, CPAGE_GetBuckUpCount,(Handle page));
+DEC_FUN(Handle, CPAGE_GetBuckUpHandle,(Handle page,uint32_t number));
+DEC_FUN(uint32_t, CPAGE_GetBuckUpCurPos,(Handle page));
 
 DEC_FUN(Handle,  CPAGE_GetPageFirst,(Handle type));
 DEC_FUN(Handle,  CPAGE_GetPageNext,(Handle page, Handle type));
@@ -259,11 +259,11 @@ DEC_FUN(Bool32,  CPAGE_UpdateBlocks,( Handle hPage, Handle type ));
 
 DEC_FUN(Handle,  CPAGE_PictureGetFirst,		(Handle hPage));
 DEC_FUN(Handle,  CPAGE_PictureGetNext,		(Handle hPage,Handle hPicture));
-DEC_FUN(Bool32,  CPAGE_PictureGetPlace,		(Handle hPage,Handle hPicture,Int32 Skew2048, Point32 * lpLr,Point32 * lpWh));
-DEC_FUN(Bool32,  CPAGE_PictureGetMask,			(Handle hPage,Handle hPicture,Int32 Skew2048,Char8 * lpData,Word32 * lpSize));
+DEC_FUN(Bool32,  CPAGE_PictureGetPlace,		(Handle hPage,Handle hPicture,int32_t Skew2048, Point32 * lpLr,Point32 * lpWh));
+DEC_FUN(Bool32,  CPAGE_PictureGetMask,			(Handle hPage,Handle hPicture,int32_t Skew2048,Char8 * lpData,uint32_t * lpSize));
 
-DEC_FUN(Word32,  CPAGE_GetBlockInterNum,	(Handle page,Handle block));
-DEC_FUN(void,    CPAGE_SetBlockInterNum,	(Handle page,Handle block,Word32 inter));
+DEC_FUN(uint32_t,  CPAGE_GetBlockInterNum,	(Handle page,Handle block));
+DEC_FUN(void,    CPAGE_SetBlockInterNum,	(Handle page,Handle block,uint32_t inter));
 DEC_FUN(Bool32,  CPAGE_GetBlockDataPtr,		(Handle page, Handle block, Handle Type, void ** lpData));
 
 DEC_FUN(Handle,  CPAGE_GetInternalType,		(const char * name));
@@ -275,19 +275,19 @@ DEC_FUN();
 DEC_FUN();
 */
 
-// Виртуальные функции:
-// Они доступны только через непосредственный вызов функций
-// CPAGE_GetExportData и CPAGE_SetImportData
-// HL означает ручной фрагментатор
+// Р’РёСЂС‚СѓР°Р»СЊРЅС‹Рµ С„СѓРЅРєС†РёРё:
+// РћРЅРё РґРѕСЃС‚СѓРїРЅС‹ С‚РѕР»СЊРєРѕ С‡РµСЂРµР· РЅРµРїРѕСЃСЂРµРґСЃС‚РІРµРЅРЅС‹Р№ РІС‹Р·РѕРІ С„СѓРЅРєС†РёР№
+// CPAGE_GetExportData Рё CPAGE_SetImportData
+// HL РѕР·РЅР°С‡Р°РµС‚ СЂСѓС‡РЅРѕР№ С„СЂР°РіРјРµРЅС‚Р°С‚РѕСЂ
 #define VRT_FUN(a,b,c) typedef a (*FN##b)c;
 //
-// Битовые флаги.
+// Р‘РёС‚РѕРІС‹Рµ С„Р»Р°РіРё.
 //
 #define CPAGE_TABLE_DEFAULT	0x0
 #define CPAGE_TABLE_LINE	0x1
 #define CPAGE_TABLE_TEXT	0x2
 
-VRT_FUN(Bool32,  CPAGE_HL_TableExtract,(  Handle hPAGE, Word32 type, Rect32 rect ))
+VRT_FUN(Bool32,  CPAGE_HL_TableExtract,(  Handle hPAGE, uint32_t type, Rect32 rect ))
 
 #undef DEC_FUN
 

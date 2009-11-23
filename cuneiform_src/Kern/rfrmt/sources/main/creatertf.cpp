@@ -2,33 +2,33 @@
 Copyright (c) 1993-2008, Cognitive Technologies
 All rights reserved.
 
-Разрешается повторное распространение и использование как в виде исходного кода,
-так и в двоичной форме, с изменениями или без, при соблюдении следующих условий:
+Р Р°Р·СЂРµС€Р°РµС‚СЃСЏ РїРѕРІС‚РѕСЂРЅРѕРµ СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРµ Рё РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ РєР°Рє РІ РІРёРґРµ РёСЃС…РѕРґРЅРѕРіРѕ РєРѕРґР°,
+С‚Р°Рє Рё РІ РґРІРѕРёС‡РЅРѕР№ С„РѕСЂРјРµ, СЃ РёР·РјРµРЅРµРЅРёСЏРјРё РёР»Рё Р±РµР·, РїСЂРё СЃРѕР±Р»СЋРґРµРЅРёРё СЃР»РµРґСѓСЋС‰РёС… СѓСЃР»РѕРІРёР№:
 
-      * При повторном распространении исходного кода должны оставаться указанное
-        выше уведомление об авторском праве, этот список условий и последующий
-        отказ от гарантий.
-      * При повторном распространении двоичного кода в документации и/или в
-        других материалах, поставляемых при распространении, должны сохраняться
-        указанная выше информация об авторском праве, этот список условий и
-        последующий отказ от гарантий.
-      * Ни название Cognitive Technologies, ни имена ее сотрудников не могут
-        быть использованы в качестве средства поддержки и/или продвижения
-        продуктов, основанных на этом ПО, без предварительного письменного
-        разрешения.
+      * РџСЂРё РїРѕРІС‚РѕСЂРЅРѕРј СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё РёСЃС…РѕРґРЅРѕРіРѕ РєРѕРґР° РґРѕР»Р¶РЅС‹ РѕСЃС‚Р°РІР°С‚СЊСЃСЏ СѓРєР°Р·Р°РЅРЅРѕРµ
+        РІС‹С€Рµ СѓРІРµРґРѕРјР»РµРЅРёРµ РѕР± Р°РІС‚РѕСЂСЃРєРѕРј РїСЂР°РІРµ, СЌС‚РѕС‚ СЃРїРёСЃРѕРє СѓСЃР»РѕРІРёР№ Рё РїРѕСЃР»РµРґСѓСЋС‰РёР№
+        РѕС‚РєР°Р· РѕС‚ РіР°СЂР°РЅС‚РёР№.
+      * РџСЂРё РїРѕРІС‚РѕСЂРЅРѕРј СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё РґРІРѕРёС‡РЅРѕРіРѕ РєРѕРґР° РІ РґРѕРєСѓРјРµРЅС‚Р°С†РёРё Рё/РёР»Рё РІ
+        РґСЂСѓРіРёС… РјР°С‚РµСЂРёР°Р»Р°С…, РїРѕСЃС‚Р°РІР»СЏРµРјС‹С… РїСЂРё СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё, РґРѕР»Р¶РЅС‹ СЃРѕС…СЂР°РЅСЏС‚СЊСЃСЏ
+        СѓРєР°Р·Р°РЅРЅР°СЏ РІС‹С€Рµ РёРЅС„РѕСЂРјР°С†РёСЏ РѕР± Р°РІС‚РѕСЂСЃРєРѕРј РїСЂР°РІРµ, СЌС‚РѕС‚ СЃРїРёСЃРѕРє СѓСЃР»РѕРІРёР№ Рё
+        РїРѕСЃР»РµРґСѓСЋС‰РёР№ РѕС‚РєР°Р· РѕС‚ РіР°СЂР°РЅС‚РёР№.
+      * РќРё РЅР°Р·РІР°РЅРёРµ Cognitive Technologies, РЅРё РёРјРµРЅР° РµРµ СЃРѕС‚СЂСѓРґРЅРёРєРѕРІ РЅРµ РјРѕРіСѓС‚
+        Р±С‹С‚СЊ РёСЃРїРѕР»СЊР·РѕРІР°РЅС‹ РІ РєР°С‡РµСЃС‚РІРµ СЃСЂРµРґСЃС‚РІР° РїРѕРґРґРµСЂР¶РєРё Рё/РёР»Рё РїСЂРѕРґРІРёР¶РµРЅРёСЏ
+        РїСЂРѕРґСѓРєС‚РѕРІ, РѕСЃРЅРѕРІР°РЅРЅС‹С… РЅР° СЌС‚РѕРј РџРћ, Р±РµР· РїСЂРµРґРІР°СЂРёС‚РµР»СЊРЅРѕРіРѕ РїРёСЃСЊРјРµРЅРЅРѕРіРѕ
+        СЂР°Р·СЂРµС€РµРЅРёСЏ.
 
-ЭТА ПРОГРАММА ПРЕДОСТАВЛЕНА ВЛАДЕЛЬЦАМИ АВТОРСКИХ ПРАВ И/ИЛИ ДРУГИМИ ЛИЦАМИ "КАК
-ОНА ЕСТЬ" БЕЗ КАКОГО-ЛИБО ВИДА ГАРАНТИЙ, ВЫРАЖЕННЫХ ЯВНО ИЛИ ПОДРАЗУМЕВАЕМЫХ,
-ВКЛЮЧАЯ ГАРАНТИИ КОММЕРЧЕСКОЙ ЦЕННОСТИ И ПРИГОДНОСТИ ДЛЯ КОНКРЕТНОЙ ЦЕЛИ, НО НЕ
-ОГРАНИЧИВАЯСЬ ИМИ. НИ ВЛАДЕЛЕЦ АВТОРСКИХ ПРАВ И НИ ОДНО ДРУГОЕ ЛИЦО, КОТОРОЕ
-МОЖЕТ ИЗМЕНЯТЬ И/ИЛИ ПОВТОРНО РАСПРОСТРАНЯТЬ ПРОГРАММУ, НИ В КОЕМ СЛУЧАЕ НЕ
-НЕСЁТ ОТВЕТСТВЕННОСТИ, ВКЛЮЧАЯ ЛЮБЫЕ ОБЩИЕ, СЛУЧАЙНЫЕ, СПЕЦИАЛЬНЫЕ ИЛИ
-ПОСЛЕДОВАВШИЕ УБЫТКИ, СВЯЗАННЫЕ С ИСПОЛЬЗОВАНИЕМ ИЛИ ПОНЕСЕННЫЕ ВСЛЕДСТВИЕ
-НЕВОЗМОЖНОСТИ ИСПОЛЬЗОВАНИЯ ПРОГРАММЫ (ВКЛЮЧАЯ ПОТЕРИ ДАННЫХ, ИЛИ ДАННЫЕ,
-СТАВШИЕ НЕГОДНЫМИ, ИЛИ УБЫТКИ И/ИЛИ ПОТЕРИ ДОХОДОВ, ПОНЕСЕННЫЕ ИЗ-ЗА ДЕЙСТВИЙ
-ТРЕТЬИХ ЛИЦ И/ИЛИ ОТКАЗА ПРОГРАММЫ РАБОТАТЬ СОВМЕСТНО С ДРУГИМИ ПРОГРАММАМИ,
-НО НЕ ОГРАНИЧИВАЯСЬ ЭТИМИ СЛУЧАЯМИ), НО НЕ ОГРАНИЧИВАЯСЬ ИМИ, ДАЖЕ ЕСЛИ ТАКОЙ
-ВЛАДЕЛЕЦ ИЛИ ДРУГОЕ ЛИЦО БЫЛИ ИЗВЕЩЕНЫ О ВОЗМОЖНОСТИ ТАКИХ УБЫТКОВ И ПОТЕРЬ.
+Р­РўРђ РџР РћР“Р РђРњРњРђ РџР Р•Р”РћРЎРўРђР’Р›Р•РќРђ Р’Р›РђР”Р•Р›Р¬Р¦РђРњР РђР’РўРћР РЎРљРРҐ РџР РђР’ Р/РР›Р Р”Р РЈР“РРњР Р›РР¦РђРњР "РљРђРљ
+РћРќРђ Р•РЎРўР¬" Р‘Р•Р— РљРђРљРћР“Рћ-Р›РР‘Рћ Р’РР”Рђ Р“РђР РђРќРўРР™, Р’Р«Р РђР–Р•РќРќР«РҐ РЇР’РќРћ РР›Р РџРћР”Р РђР—РЈРњР•Р’РђР•РњР«РҐ,
+Р’РљР›Р®Р§РђРЇ Р“РђР РђРќРўРР РљРћРњРњР•Р Р§Р•РЎРљРћР™ Р¦Р•РќРќРћРЎРўР Р РџР РР“РћР”РќРћРЎРўР Р”Р›РЇ РљРћРќРљР Р•РўРќРћР™ Р¦Р•Р›Р, РќРћ РќР•
+РћР“Р РђРќРР§РР’РђРЇРЎР¬ РРњР. РќР Р’Р›РђР”Р•Р›Р•Р¦ РђР’РўРћР РЎРљРРҐ РџР РђР’ Р РќР РћР”РќРћ Р”Р РЈР“РћР• Р›РР¦Рћ, РљРћРўРћР РћР•
+РњРћР–Р•Рў РР—РњР•РќРЇРўР¬ Р/РР›Р РџРћР’РўРћР РќРћ Р РђРЎРџР РћРЎРўР РђРќРЇРўР¬ РџР РћР“Р РђРњРњРЈ, РќР Р’ РљРћР•Рњ РЎР›РЈР§РђР• РќР•
+РќР•РЎРЃРў РћРўР’Р•РўРЎРўР’Р•РќРќРћРЎРўР, Р’РљР›Р®Р§РђРЇ Р›Р®Р‘Р«Р• РћР‘Р©РР•, РЎР›РЈР§РђР™РќР«Р•, РЎРџР•Р¦РРђР›Р¬РќР«Р• РР›Р
+РџРћРЎР›Р•Р”РћР’РђР’РЁРР• РЈР‘Р«РўРљР, РЎР’РЇР—РђРќРќР«Р• РЎ РРЎРџРћР›Р¬Р—РћР’РђРќРР•Рњ РР›Р РџРћРќР•РЎР•РќРќР«Р• Р’РЎР›Р•Р”РЎРўР’РР•
+РќР•Р’РћР—РњРћР–РќРћРЎРўР РРЎРџРћР›Р¬Р—РћР’РђРќРРЇ РџР РћР“Р РђРњРњР« (Р’РљР›Р®Р§РђРЇ РџРћРўР•Р Р Р”РђРќРќР«РҐ, РР›Р Р”РђРќРќР«Р•,
+РЎРўРђР’РЁРР• РќР•Р“РћР”РќР«РњР, РР›Р РЈР‘Р«РўРљР Р/РР›Р РџРћРўР•Р Р Р”РћРҐРћР”РћР’, РџРћРќР•РЎР•РќРќР«Р• РР—-Р—Рђ Р”Р•Р™РЎРўР’РР™
+РўР Р•РўР¬РРҐ Р›РР¦ Р/РР›Р РћРўРљРђР—Рђ РџР РћР“Р РђРњРњР« Р РђР‘РћРўРђРўР¬ РЎРћР’РњР•РЎРўРќРћ РЎ Р”Р РЈР“РРњР РџР РћР“Р РђРњРњРђРњР,
+РќРћ РќР• РћР“Р РђРќРР§РР’РђРЇРЎР¬ Р­РўРРњР РЎР›РЈР§РђРЇРњР), РќРћ РќР• РћР“Р РђРќРР§РР’РђРЇРЎР¬ РРњР, Р”РђР–Р• Р•РЎР›Р РўРђРљРћР™
+Р’Р›РђР”Р•Р›Р•Р¦ РР›Р Р”Р РЈР“РћР• Р›РР¦Рћ Р‘Р«Р›Р РР—Р’Р•Р©Р•РќР« Рћ Р’РћР—РњРћР–РќРћРЎРўР РўРђРљРРҐ РЈР‘Р«РўРљРћР’ Р РџРћРўР•Р Р¬.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
@@ -86,10 +86,10 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 extern "C" BOOL  FullRtf( FILE *fpFileNameIn, const char *FileNameOut ,Handle* hEdTree);
 extern "C" BOOL  PageTree(FILE *fpFileNameIn, CRtfPage* RtfPage, const char *FileNameOut);
-extern "C" BOOL	 WriteTable( Word32 IndexTable, RtfSectorInfo* SectorInfo, /*CString* TableString ,*/BOOL OutPutMode);
-extern "C" BOOL	 WritePict( Word32 IndexPict, RtfSectorInfo* SectorInfo/*, CString* PictString*/, BOOL OutPutTypeFrame);
-extern "C" { void GetTableRect( Word32 NumberTable , Rect16* RectTable,Word32* UserNumber ); }
-extern "C" { BYTE GetPictRect ( Word32 NumberPict  , Rect16* RectPict ,Word32* UserNumber ); }
+extern "C" BOOL	 WriteTable( uint32_t IndexTable, RtfSectorInfo* SectorInfo, /*CString* TableString ,*/BOOL OutPutMode);
+extern "C" BOOL	 WritePict( uint32_t IndexPict, RtfSectorInfo* SectorInfo/*, CString* PictString*/, BOOL OutPutTypeFrame);
+extern "C" { void GetTableRect( uint32_t NumberTable , Rect16* RectTable,uint32_t* UserNumber ); }
+extern "C" { BYTE GetPictRect ( uint32_t NumberPict  , Rect16* RectPict ,uint32_t* UserNumber ); }
 extern  void RtfAssignRect_CRect_Rect16(RECT *s1,Rect16 *s2);
 extern  void	RtfCalcRectSizeInTwips(RECT *s1, float Twips);
 extern  void RtfUnionRect_CRect_CRect(RECT *s1,RECT *s2);
@@ -97,7 +97,7 @@ extern  void RtfAssignRect_CRect_CRect(RECT *s1,RECT *s2);
 
 Int16   CreateEmptyRtfFile(void);
 void    PutC(char sym);
-void    PutCom(const char *Command, Int32 value, Int16 space);
+void    PutCom(const char *Command, int32_t value, Int16 space);
 void    Put(const char *Data);
 void    PutChar(BYTE sym);
 Int16   get_font_name(Int16 FontNumber);
@@ -117,18 +117,18 @@ WORD    FlagWriteRtfCoordinates =1 ;
 CHAR    WriteRtfPageNumber[MAX_PATH]="1";
 Word8   Frmt_CharSet = (Word8)204;
 
-extern  Word32 FlagMode;
+extern  uint32_t FlagMode;
 extern  char   UnRecogSymbol;
-extern  Word32   gnLanguage;
+extern  uint32_t   gnLanguage;
 
 extern  CHAR   lpMyNameSerif[MAX_PATH];
 extern  CHAR   lpMyNameNonSerif[MAX_PATH];
 extern  CHAR   lpMyNameMono[MAX_PATH];
 extern	 CHAR   WriteRtfImageName[MAX_PATH];
 extern	 CHAR   RtfFileName[MAX_PATH];
-extern  Word32 CountPict;
-extern  Word32 CountTable;
-extern  Word32 RtfWriteMode;
+extern  uint32_t CountPict;
+extern  uint32_t CountTable;
+extern  uint32_t RtfWriteMode;
 extern  POINT  TemplateOffset;
 
 #define  TwipsToEMU_Koef (360000 * 2.54)/1440
@@ -142,8 +142,8 @@ BOOL FullRtf(FILE *fpFileNameIn, const char* FileNameOut, Handle* hEdTree)
 {
 	CRtfPage RtfPage;
 
-	if(RtfWriteMode) // is activated ONLY in debug mode (нажать ??? в LDPUMA)
-		Cleaning_LI_FRMT_Used_Flag(); //обнуление флажков, что линии между колонок
+	if(RtfWriteMode) // is activated ONLY in debug mode (РЅР°Р¶Р°С‚СЊ ??? РІ LDPUMA)
+		Cleaning_LI_FRMT_Used_Flag(); //РѕР±РЅСѓР»РµРЅРёРµ С„Р»Р°Р¶РєРѕРІ, С‡С‚Рѕ Р»РёРЅРёРё РјРµР¶РґСѓ РєРѕР»РѕРЅРѕРє
 
 	if(FlagMode & USE_FRAME_AND_COLUMN)
 	{
@@ -166,7 +166,7 @@ BOOL FullRtf(FILE *fpFileNameIn, const char* FileNameOut, Handle* hEdTree)
 	RtfPage.AddPictures();
 
 	if(FlagMode & USE_NONE)
-        RtfPage.SortUserNumber();//в ручном layout user can establish own order of the fragments
+        RtfPage.SortUserNumber();//РІ СЂСѓС‡РЅРѕРј layout user can establish own order of the fragments
 
 
 #ifndef EdWrite
@@ -209,7 +209,7 @@ CRtfPage::~CRtfPage()
 {
 /* CRtfFragment* cFrag;
  CRtfSector*   cSector;
- Word32 wCount, i;
+ uint32_t wCount, i;
 
 	wCount = m_arSectors.GetSize();
 	for( i=0; i<wCount; i++)
@@ -250,12 +250,12 @@ void CRtfPage::Rtf_CED_CreatePage(void)
 	Handle hCPAGE = CPAGE_GetHandlePage( CPAGE_GetCurrentPage());
 	GetPageInfo(hCPAGE,&PageInfo);
 	PageNumber     = atoi((char*)WriteRtfPageNumber);
-	sizeOfImage.cx = (Int32)PageInfo.Width;
-	sizeOfImage.cy = (Int32)PageInfo.Height;
+	sizeOfImage.cx = (int32_t)PageInfo.Width;
+	sizeOfImage.cy = (int32_t)PageInfo.Height;
 	sizeInTwips.cx = PaperW;
 	sizeInTwips.cy = PaperH;
-	dpi.cx         = (Int32)PageInfo.DPIX;
-	dpi.cy         = (Int32)PageInfo.DPIY;
+	dpi.cx         = (int32_t)PageInfo.DPIX;
+	dpi.cy         = (int32_t)PageInfo.DPIY;
 
 	pageBordersInTwips.left   = MargL;
 	pageBordersInTwips.top    = MargT;
@@ -309,7 +309,7 @@ CHAR lpEdTestFileName[MAX_PATH];
 void CRtfPage::CRtfPageDelFragments(void)
 {
 /* CRtfFragment* cFrag;
- Word32 wCount, i;
+ uint32_t wCount, i;
 
 	wCount = m_arFragments.GetSize();
 	for( i=0; i<wCount; i++)
@@ -371,16 +371,16 @@ void CRtfPage::CloseOutputFile(void)
  fclose(out);
 }
 
-//********* Чтение internal.vit
-//*********  Частичное запольнения Page.
-//*********  В Page записываютя:
-//*********    текстовые фрагменты с содержимым
-//*********    -- фреймы  ( врезки ),
-//*********    -- обычные ( кандидаты на колонки )
+//********* Р§С‚РµРЅРёРµ internal.vit
+//*********  Р§Р°СЃС‚РёС‡РЅРѕРµ Р·Р°РїРѕР»СЊРЅРµРЅРёСЏ Page.
+//*********  Р’ Page Р·Р°РїРёСЃС‹РІР°СЋС‚СЏ:
+//*********    С‚РµРєСЃС‚РѕРІС‹Рµ С„СЂР°РіРјРµРЅС‚С‹ СЃ СЃРѕРґРµСЂР¶РёРјС‹Рј
+//*********    -- С„СЂРµР№РјС‹  ( РІСЂРµР·РєРё ),
+//*********    -- РѕР±С‹С‡РЅС‹Рµ ( РєР°РЅРґРёРґР°С‚С‹ РЅР° РєРѕР»РѕРЅРєРё )
 //---------------------------------------
-//*********    без содержимого
-//*********    -- таблицы
-//*********    -- картинки
+//*********    Р±РµР· СЃРѕРґРµСЂР¶РёРјРѕРіРѕ
+//*********    -- С‚Р°Р±Р»РёС†С‹
+//*********    -- РєР°СЂС‚РёРЅРєРё
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 //                                 ReadInternalFile                                               //
@@ -404,7 +404,7 @@ BOOL ReadInternalFileRelease(FILE *in, CRtfPage* RtfPage)
 
 	Int16  nc,ns,nw,nz,i;
 	Int16  tmp;
-	Word32 wtmp;
+	uint32_t wtmp;
 	Rect16 RectFragm;
 	Rect16  SRect;
 
@@ -433,10 +433,10 @@ BOOL ReadInternalFileRelease(FILE *in, CRtfPage* RtfPage)
 		pRtfFragment->m_wType = FT_TEXT;
 
 		fread(&RectFragm,1,sizeof(Rect16),in);
-		pRtfFragment->m_rect.left  = (Int32)(RectFragm.left*Twips);
-		pRtfFragment->m_rect.top   = (Int32)(RectFragm.top*Twips);
-		pRtfFragment->m_rect.right = (Int32)(RectFragm.right*Twips);
-		pRtfFragment->m_rect.bottom= (Int32)(RectFragm.bottom*Twips);
+		pRtfFragment->m_rect.left  = (int32_t)(RectFragm.left*Twips);
+		pRtfFragment->m_rect.top   = (int32_t)(RectFragm.top*Twips);
+		pRtfFragment->m_rect.right = (int32_t)(RectFragm.right*Twips);
+		pRtfFragment->m_rect.bottom= (int32_t)(RectFragm.bottom*Twips);
 		fread(&tmp,2,1,in);
 		pRtfFragment->m_wStringsCount = tmp;
 		fread(&wtmp,4,1,in);
@@ -447,12 +447,12 @@ BOOL ReadInternalFileRelease(FILE *in, CRtfPage* RtfPage)
 		{
 			pRtfString = pRtfFragment->GetNextString();
 			fread(&SRect,sizeof(Rect16),1,in);
-			//Реальные коор. строки!
+			//Р РµР°Р»СЊРЅС‹Рµ РєРѕРѕСЂ. СЃС‚СЂРѕРєРё!
 			fread(&SRect,sizeof(Rect16),1,in);
 			fread(&tmp,2,1,in);
 			pRtfString->m_wWordsCount = tmp;
 
-			fread(&tmp,sizeof(Word32),1,in);//NEGA_STR
+			fread(&tmp,sizeof(uint32_t),1,in);//NEGA_STR
  			for(nw=0; nw < pRtfString->m_wWordsCount; ++nw)
 			{
 				pRtfWord = pRtfString->GetNextWord();
@@ -528,10 +528,10 @@ void CRtfPage::SetTwips(void)
  Rect16  RectPict;
 
 	Count.RtfTableFragments = (WORD)CountTable;
- for(Word32 i=0; i < (int)CountTable; i++ )
+ for(uint32_t i=0; i < (int)CountTable; i++ )
 	{
   pRtfFragment = GetNextFragment();
-  GetTableRect( i, &RectPict, (Word32*)&pRtfFragment->m_wUserNumber );
+  GetTableRect( i, &RectPict, (uint32_t*)&pRtfFragment->m_wUserNumber );
   RtfAssignRect_CRect_Rect16(&pRtfFragment->m_rect, &RectPict);
 		RtfCalcRectSizeInTwips(&pRtfFragment->m_rect, Twips);
   pRtfFragment->m_wType = FT_TABLE;
@@ -555,7 +555,7 @@ void CRtfPage::AddPictures(void)
  for(int i=0; i < (int)CountPict; i++ )
 	{
   pRtfFragment = GetNextFragment();
-  GetPictRect( i, &RectPict, (Word32*)&pRtfFragment->m_wUserNumber );
+  GetPictRect( i, &RectPict, (uint32_t*)&pRtfFragment->m_wUserNumber );
   RtfAssignRect_CRect_Rect16(&pRtfFragment->m_rect, &RectPict);
 		RtfCalcRectSizeInTwips(&pRtfFragment->m_rect, Twips);
   pRtfFragment->m_wType = FT_PICTURE;
@@ -566,7 +566,7 @@ void CRtfPage::AddPictures(void)
 		}
 	}
 }
-//~ поиск межсекторных H_lines & межколонных V-Lines
+//~ РїРѕРёСЃРє РјРµР¶СЃРµРєС‚РѕСЂРЅС‹С… H_lines & РјРµР¶РєРѕР»РѕРЅРЅС‹С… V-Lines
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 //                                 AddLines                                                      //
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -627,7 +627,7 @@ void	CRtfPage::SortUserNumber(void)
 {
 	CRtfFragment* pRtfFragment;
 	BYTE FlagChange;
- Word32 mas[500],MinUserNumber=32000;
+ uint32_t mas[500],MinUserNumber=32000;
  int indexMinUserNumber,i,j;
  Int16 CountFragments;
 
@@ -662,11 +662,11 @@ void	CRtfPage::SortUserNumber(void)
 	}
 }
 
-//Режим работы: USE_FRAME_AND_COLUMN
-//Разбиение страницы на сектора
-//Секторы на горизантальные колонки
-//Горизантальные колонки на вертикальные колонки
-//Определение терминальности вертикальных колонок
+//Р РµР¶РёРј СЂР°Р±РѕС‚С‹: USE_FRAME_AND_COLUMN
+//Р Р°Р·Р±РёРµРЅРёРµ СЃС‚СЂР°РЅРёС†С‹ РЅР° СЃРµРєС‚РѕСЂР°
+//РЎРµРєС‚РѕСЂС‹ РЅР° РіРѕСЂРёР·Р°РЅС‚Р°Р»СЊРЅС‹Рµ РєРѕР»РѕРЅРєРё
+//Р“РѕСЂРёР·Р°РЅС‚Р°Р»СЊРЅС‹Рµ РєРѕР»РѕРЅРєРё РЅР° РІРµСЂС‚РёРєР°Р»СЊРЅС‹Рµ РєРѕР»РѕРЅРєРё
+//РћРїСЂРµРґРµР»РµРЅРёРµ С‚РµСЂРјРёРЅР°Р»СЊРЅРѕСЃС‚Рё РІРµСЂС‚РёРєР°Р»СЊРЅС‹С… РєРѕР»РѕРЅРѕРє
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 //                                 FindPageTree                                                   //
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -676,27 +676,27 @@ BOOL CRtfPage::FindPageTree(FILE *fpFileNameIn, const char* FileNameOut)
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////
-//           Вычисления ширены и высоты листа                                           //
+//           Р’С‹С‡РёСЃР»РµРЅРёСЏ С€РёСЂРµРЅС‹ Рё РІС‹СЃРѕС‚С‹ Р»РёСЃС‚Р°                                           //
 //////////////////////////////////////////////////////////////////////////////////////////
 void CRtfPage::ReCalcPageWidthAndHeight(void)
 {
-	Int32 LeftPos = 32000, TopPos=32000, RightPos =-32000, BottomPos=-32000, Height=-32000, Width=0;
+	int32_t LeftPos = 32000, TopPos=32000, RightPos =-32000, BottomPos=-32000, Height=-32000, Width=0;
 	CRtfSector*           pRtfSector;
 
 	if( FlagMode & USE_NONE )
-	{// Фрагменты отписываются по пользовательским номерам
+	{// Р¤СЂР°РіРјРµРЅС‚С‹ РѕС‚РїРёСЃС‹РІР°СЋС‚СЃСЏ РїРѕ РїРѕР»СЊР·РѕРІР°С‚РµР»СЊСЃРєРёРј РЅРѕРјРµСЂР°Рј
 		MargL = DefMargL;   MargR = DefMargR;
 		MargT = DefMargT;   MargB = DefMargB;
 		for(std::vector<CRtfFragment*>::iterator ppRtfFragment=m_arFragments.begin(); ppRtfFragment<m_arFragments.end(); ppRtfFragment++ )
 		{
 			Width = MAX( Width, (*ppRtfFragment)->m_rect.right - (*ppRtfFragment)->m_rect.left );
 		}
-		PaperW = MAX( DefaultWidthPage, (Int32)(Width/** Twips*/) + MargL + MargR );
+		PaperW = MAX( DefaultWidthPage, (int32_t)(Width/** Twips*/) + MargL + MargR );
 		PaperH = DefaultHeightPage;
 	}
 	else
 	if( (FlagMode & USE_FRAME) || FlagBadColumn )
-	{// Все фрагменты фреймы
+	{// Р’СЃРµ С„СЂР°РіРјРµРЅС‚С‹ С„СЂРµР№РјС‹
 
 		m_arSectors.push_back( new CRtfSector());
   		pRtfSector = m_arSectors.back();
@@ -718,7 +718,7 @@ void CRtfPage::ReCalcPageWidthAndHeight(void)
 			InitMargL=MargL; InitMargR=MargR; InitMargT=MargT; InitMargB=MargB;
 	}
 	else
-	{// Фрагменты отписываются после изучения структуры страницы
+	{// Р¤СЂР°РіРјРµРЅС‚С‹ РѕС‚РїРёСЃС‹РІР°СЋС‚СЃСЏ РїРѕСЃР»Рµ РёР·СѓС‡РµРЅРёСЏ СЃС‚СЂСѓРєС‚СѓСЂС‹ СЃС‚СЂР°РЅРёС†С‹
 
 		for(std::vector<CRtfFragment*>::iterator ppRtfFragment=m_arFragments.begin(); ppRtfFragment<m_arFragments.end(); ppRtfFragment++ )
 		{
@@ -734,26 +734,26 @@ void CRtfPage::ReCalcPageWidthAndHeight(void)
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////
-//           Вычисления ширены и высоты листа                                           //
+//           Р’С‹С‡РёСЃР»РµРЅРёСЏ С€РёСЂРµРЅС‹ Рё РІС‹СЃРѕС‚С‹ Р»РёСЃС‚Р°                                           //
 //////////////////////////////////////////////////////////////////////////////////////////
-void CRtfPage::SetPaperSize(Int32  LeftPos, Int32 RightPos, Int32 TopPos, Int32 BottomPos,
-																												Int32* PaperW , Int32* PaperH ,
-																												Int32* MargL  , Int32* MargR  , Int32* MargT, Int32* MargB)
+void CRtfPage::SetPaperSize(int32_t  LeftPos, int32_t RightPos, int32_t TopPos, int32_t BottomPos,
+																												int32_t* PaperW , int32_t* PaperH ,
+																												int32_t* MargL  , int32_t* MargR  , int32_t* MargT, int32_t* MargB)
 {
 	int i,j;
 
- Int32  MargL2 = DefMargL/2,   MargL10 = DefMargL/10,   MargL0  = 0;
- Int32  MargR2 = DefMargR/2,   MargR10 = DefMargR/10,   MargR0  = 0;
- Int32  MargT2 = DefMargT/2,   MargT10 = DefMargT/10,   MargT0  = 0;
- Int32  MargB2 = DefMargB/2,   MargB10 = DefMargB/10,   MargB0  = 0;
+ int32_t  MargL2 = DefMargL/2,   MargL10 = DefMargL/10,   MargL0  = 0;
+ int32_t  MargR2 = DefMargR/2,   MargR10 = DefMargR/10,   MargR0  = 0;
+ int32_t  MargT2 = DefMargT/2,   MargT10 = DefMargT/10,   MargT0  = 0;
+ int32_t  MargB2 = DefMargB/2,   MargB10 = DefMargB/10,   MargB0  = 0;
 
- Int32  MasMargL[]={DefMargL,MargL2,MargL10,MargL0};
- Int32  MasMargR[]={DefMargR,MargR2,MargR10,MargR0};
- Int32  MasMargT[]={DefMargT,MargT2,MargT10,MargT0};
- Int32  MasMargB[]={DefMargB,MargB2,MargB10,MargB0};
+ int32_t  MasMargL[]={DefMargL,MargL2,MargL10,MargL0};
+ int32_t  MasMargR[]={DefMargR,MargR2,MargR10,MargR0};
+ int32_t  MasMargT[]={DefMargT,MargT2,MargT10,MargT0};
+ int32_t  MasMargB[]={DefMargB,MargB2,MargB10,MargB0};
 
-	Int32  WidthPage[]={11906,20163,23812,23812};   // A4,Legal,A3,A2
- Int32  HeightPage[]={16838,12242,16838,33676};  // A4,Legal,A3,A2
+	int32_t  WidthPage[]={11906,20163,23812,23812};   // A4,Legal,A3,A2
+ int32_t  HeightPage[]={16838,12242,16838,33676};  // A4,Legal,A3,A2
  for(j=0;j<3;j++)
 	{
 
@@ -799,7 +799,7 @@ void CRtfPage::SetPaperSize(Int32  LeftPos, Int32 RightPos, Int32 TopPos, Int32 
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////
-//            Моя коррекция кегля с учетом размера строки и заданного фонта             //
+//            РњРѕСЏ РєРѕСЂСЂРµРєС†РёСЏ РєРµРіР»СЏ СЃ СѓС‡РµС‚РѕРј СЂР°Р·РјРµСЂР° СЃС‚СЂРѕРєРё Рё Р·Р°РґР°РЅРЅРѕРіРѕ С„РѕРЅС‚Р°             //
 //////////////////////////////////////////////////////////////////////////////////////////
 void CRtfPage::CorrectKegl(void)
 {
@@ -826,15 +826,15 @@ void CRtfPage::CorrectKegl(void)
 			pRtfString = pRtfFragment->m_arStrings[ns];
 			CountWords = pRtfString->m_wWordsCount;
 
-			//Считаем длину получившейся строки
+			//РЎС‡РёС‚Р°РµРј РґР»РёРЅСѓ РїРѕР»СѓС‡РёРІС€РµР№СЃСЏ СЃС‚СЂРѕРєРё
 			int len=0;
 			for( int w=0; w < CountWords; w++ )
 				len+=pRtfString->m_arWords[w]->m_wCharsCount+1;
-			//Выделяем буфер под неё
+			//Р’С‹РґРµР»СЏРµРј Р±СѓС„РµСЂ РїРѕРґ РЅРµС‘
 			char* TmpString=new char[len+1];
 			TmpString[0]=0;
 
-			//Формируем полную строку
+			//Р¤РѕСЂРјРёСЂСѓРµРј РїРѕР»РЅСѓСЋ СЃС‚СЂРѕРєСѓ
 			for(int nw=0; nw<CountWords; nw++)
 			{
 			    int nz;
@@ -883,7 +883,7 @@ void CRtfPage::ChangeKegl(void)
 	WORD  CountWords;
 
 	CountTextFragments = Count.RtfTextFragments + Count.RtfFrameTextFragments;
-// по частоте встречаемости выбираем преобразование из реал. в идеал. кегль
+// РїРѕ С‡Р°СЃС‚РѕС‚Рµ РІСЃС‚СЂРµС‡Р°РµРјРѕСЃС‚Рё РІС‹Р±РёСЂР°РµРј РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёРµ РёР· СЂРµР°Р». РІ РёРґРµР°Р». РєРµРіР»СЊ
  for(int i=0; i<CountTextFragments; i++)
 	{
   pRtfFragment = (CRtfFragment*)m_arFragments[i];
@@ -1013,7 +1013,7 @@ BOOL CRtfPage::Write(const char *FileNameOut)
 			return FALSE;
 	}
 
-	if( FlagMode & USE_NONE )                      // Фрагменты отписываются по пользовательским номерам
+	if( FlagMode & USE_NONE )                      // Р¤СЂР°РіРјРµРЅС‚С‹ РѕС‚РїРёСЃС‹РІР°СЋС‚СЃСЏ РїРѕ РїРѕР»СЊР·РѕРІР°С‚РµР»СЊСЃРєРёРј РЅРѕРјРµСЂР°Рј
 	{
 		ReCalcPageWidthAndHeight();
 #ifdef EdWrite
@@ -1025,7 +1025,7 @@ BOOL CRtfPage::Write(const char *FileNameOut)
 		Write_USE_NONE();
 	}
 	else
-	if( (FlagMode & USE_FRAME) || FlagBadColumn  ) // Все фрагменты фреймы
+	if( (FlagMode & USE_FRAME) || FlagBadColumn  ) // Р’СЃРµ С„СЂР°РіРјРµРЅС‚С‹ С„СЂРµР№РјС‹
 	{
 		ReCalcPageWidthAndHeight();
 #ifdef EdWrite
@@ -1050,7 +1050,7 @@ BOOL CRtfPage::Write(const char *FileNameOut)
 			return FALSE;
 
 		AddLines();
-		Write_USE_FRAME_AND_COLUMN();   // Фрагменты отписываются после изучения структуры страницы
+		Write_USE_FRAME_AND_COLUMN();   // Р¤СЂР°РіРјРµРЅС‚С‹ РѕС‚РїРёСЃС‹РІР°СЋС‚СЃСЏ РїРѕСЃР»Рµ РёР·СѓС‡РµРЅРёСЏ СЃС‚СЂСѓРєС‚СѓСЂС‹ СЃС‚СЂР°РЅРёС†С‹
 	}
 
 	if(RtfWriteMode)
@@ -1059,7 +1059,7 @@ BOOL CRtfPage::Write(const char *FileNameOut)
 	return TRUE;
 }
 
-// Фрагменты отписываются по пользовательским номерам
+// Р¤СЂР°РіРјРµРЅС‚С‹ РѕС‚РїРёСЃС‹РІР°СЋС‚СЃСЏ РїРѕ РїРѕР»СЊР·РѕРІР°С‚РµР»СЊСЃРєРёРј РЅРѕРјРµСЂР°Рј
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 //                                 Write_USE_NONE                                                 //
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1105,7 +1105,7 @@ BOOL CRtfPage::Write_USE_NONE()
 	return TRUE;
 }
 
-// Все фрагменты фреймы
+// Р’СЃРµ С„СЂР°РіРјРµРЅС‚С‹ С„СЂРµР№РјС‹
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 //                                 Write_USE_FRAME                                                //
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1115,7 +1115,7 @@ BOOL CRtfPage::Write_USE_FRAME()
  CRtfFragment*  pRtfFragment;
  RtfSectorInfo* SectorInfo;
 	CRtfSector *pRtfSector;
-	Int32 shpleft,shptop,shpright,shpbottom,shpwr=0;
+	int32_t shpleft,shptop,shpright,shpbottom,shpwr=0;
 
 #ifdef EdWrite
  EDBOX       EdFragmRect;
@@ -1210,7 +1210,7 @@ BOOL CRtfPage::Write_USE_FRAME()
  return TRUE;
 
 }
-//табл. помещаются в существующие сектора как frame (м.б.изменение размера колонки) или создаются для них новые сектора(терминал.колонка)
+//С‚Р°Р±Р». РїРѕРјРµС‰Р°СЋС‚СЃСЏ РІ СЃСѓС‰РµСЃС‚РІСѓСЋС‰РёРµ СЃРµРєС‚РѕСЂР° РєР°Рє frame (Рј.Р±.РёР·РјРµРЅРµРЅРёРµ СЂР°Р·РјРµСЂР° РєРѕР»РѕРЅРєРё) РёР»Рё СЃРѕР·РґР°СЋС‚СЃСЏ РґР»СЏ РЅРёС… РЅРѕРІС‹Рµ СЃРµРєС‚РѕСЂР°(С‚РµСЂРјРёРЅР°Р».РєРѕР»РѕРЅРєР°)
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 //                                 ToPlacePicturesAndTables                                       //
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1225,7 +1225,7 @@ void CRtfPage::ToPlacePicturesAndTables(void)
 		if((*ppRtfFragment)->m_wType==FT_PICTURE || (*ppRtfFragment)->m_wType==FT_TABLE)
 		{
 			CountSectors = m_arSectors.size();
-   //страница пустая:создается новый сектор для них
+   //СЃС‚СЂР°РЅРёС†Р° РїСѓСЃС‚Р°СЏ:СЃРѕР·РґР°РµС‚СЃСЏ РЅРѕРІС‹Р№ СЃРµРєС‚РѕСЂ РґР»СЏ РЅРёС…
 			if(CountSectors == 0)
 			{
 				m_arSectors.push_back(new CRtfSector());
@@ -1235,7 +1235,7 @@ void CRtfPage::ToPlacePicturesAndTables(void)
 				pRtfSector->ToPlacePicturesAndTables((*ppRtfFragment));
 				continue;
 			}
-   //картина или таблица ниже последного сектора:создается новый сектор для них
+   //РєР°СЂС‚РёРЅР° РёР»Рё С‚Р°Р±Р»РёС†Р° РЅРёР¶Рµ РїРѕСЃР»РµРґРЅРѕРіРѕ СЃРµРєС‚РѕСЂР°:СЃРѕР·РґР°РµС‚СЃСЏ РЅРѕРІС‹Р№ СЃРµРєС‚РѕСЂ РґР»СЏ РЅРёС…
 			pRtfSector = m_arSectors.back();
 			if( (*ppRtfFragment)->m_rect.top >= pRtfSector->m_rectReal.bottom )
 			{
@@ -1248,7 +1248,7 @@ void CRtfPage::ToPlacePicturesAndTables(void)
 			}
 
 			for( j=0; j<CountSectors; j++ )
-			{//картина или таблица между секторами:создается новый сектор для них
+			{//РєР°СЂС‚РёРЅР° РёР»Рё С‚Р°Р±Р»РёС†Р° РјРµР¶РґСѓ СЃРµРєС‚РѕСЂР°РјРё:СЃРѕР·РґР°РµС‚СЃСЏ РЅРѕРІС‹Р№ СЃРµРєС‚РѕСЂ РґР»СЏ РЅРёС…
 				pRtfSector = m_arSectors[j];
 				if( (*ppRtfFragment)->m_rect.bottom <= pRtfSector->m_rectReal.top )
 				{
@@ -1259,7 +1259,7 @@ void CRtfPage::ToPlacePicturesAndTables(void)
 					break;
 				}
 				else
-				{//картина или таблица внутри сектора: добавляетс
+				{//РєР°СЂС‚РёРЅР° РёР»Рё С‚Р°Р±Р»РёС†Р° РІРЅСѓС‚СЂРё СЃРµРєС‚РѕСЂР°: РґРѕР±Р°РІР»СЏРµС‚СЃ
 					if(
 					   ( (*ppRtfFragment)->m_rect.top    <   pRtfSector->m_rectReal.top &&
 						    (*ppRtfFragment)->m_rect.bottom >   pRtfSector->m_rectReal.top) ||
@@ -1278,7 +1278,7 @@ void CRtfPage::ToPlacePicturesAndTables(void)
 	}
 }
 
-// Фрагменты отписываются после изучения структуры страницы
+// Р¤СЂР°РіРјРµРЅС‚С‹ РѕС‚РїРёСЃС‹РІР°СЋС‚СЃСЏ РїРѕСЃР»Рµ РёР·СѓС‡РµРЅРёСЏ СЃС‚СЂСѓРєС‚СѓСЂС‹ СЃС‚СЂР°РЅРёС†С‹
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 //                                 Write_USE_FRAME_AND_COLUMN                                     //
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1290,7 +1290,7 @@ BOOL CRtfPage::Write_USE_FRAME_AND_COLUMN()
 
 	Int16 CountSectors = m_arSectors.size();
 
-	//Считаем расстояния между секциями (кроме последней)
+	//РЎС‡РёС‚Р°РµРј СЂР°СЃСЃС‚РѕСЏРЅРёСЏ РјРµР¶РґСѓ СЃРµРєС†РёСЏРјРё (РєСЂРѕРјРµ РїРѕСЃР»РµРґРЅРµР№)
 	for(i=0; i<CountSectors-1; i++ )
 	{
 		pRtfSector = m_arSectors[i];
@@ -1298,7 +1298,7 @@ BOOL CRtfPage::Write_USE_FRAME_AND_COLUMN()
 		pRtfSector->SectorInfo.InterSectorDist = GetFreeSpaceBetweenSectors( pRtfSector, pRtfNextSector);
 	}
 
-	//Отписываем каждую секцию
+	//РћС‚РїРёСЃС‹РІР°РµРј РєР°Р¶РґСѓСЋ СЃРµРєС†РёСЋ
 	for( i=0; i<CountSectors; i++ )
 	{
 		m_nCurSectorNumber=i;
@@ -1316,7 +1316,7 @@ BOOL CRtfPage::Write_USE_FRAME_AND_COLUMN()
 }
 
 
-// чтобы дать больший, чем default, вертикальный offset of the section
+// С‡С‚РѕР±С‹ РґР°С‚СЊ Р±РѕР»СЊС€РёР№, С‡РµРј default, РІРµСЂС‚РёРєР°Р»СЊРЅС‹Р№ offset of the section
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 //                       GetFreeSpaceBetweenSectors                                               //
@@ -1326,7 +1326,7 @@ WORD CRtfPage::GetFreeSpaceBetweenSectors(CRtfSector* pRtfSector, CRtfSector* pR
 	CRtfFragment       *pRtfFragment;
 	RECT              FreePlace;
 	int                i,CountFragments;
-	Int32              FreePlaceHeight;
+	int32_t              FreePlaceHeight;
 
 	FreePlace.left     = pRtfSector->m_rect.left;
 	FreePlace.right    = pRtfSector->m_rect.right;
@@ -1335,7 +1335,7 @@ WORD CRtfPage::GetFreeSpaceBetweenSectors(CRtfSector* pRtfSector, CRtfSector* pR
 	if(FreePlace.top  >= FreePlace.bottom)
 		return 0;
 
-	CountFragments = m_arFragments.size(); //это множество фрагментов pRtfNextSector
+	CountFragments = m_arFragments.size(); //СЌС‚Рѕ РјРЅРѕР¶РµСЃС‚РІРѕ С„СЂР°РіРјРµРЅС‚РѕРІ pRtfNextSector
  	for( i=0; i<CountFragments; i++ )
 	{
 		pRtfFragment = m_arFragments[i];
@@ -1506,7 +1506,7 @@ void CRtfPage::WriteSectorsHeader(Int16 i)
 	pRtfSector->SectorInfo.PaperW = PaperW;
 	pRtfSector->SectorInfo.PaperH = PaperH;
 
-    // m_bFlagLine (есть линии) => не пытаться сдвигать margL для красоты
+    // m_bFlagLine (РµСЃС‚СЊ Р»РёРЅРёРё) => РЅРµ РїС‹С‚Р°С‚СЊСЃСЏ СЃРґРІРёРіР°С‚СЊ margL РґР»СЏ РєСЂР°СЃРѕС‚С‹
 	if( FlagMode & USE_FRAME_AND_COLUMN && pRtfSector->m_bFlagLine == FALSE)
 	{
 		pRtfSector->GetCountAndRightBoundVTerminalColumns();
@@ -1613,7 +1613,7 @@ void CRtfPage::WriteSectorsHeader(Int16 i)
 
 }
 
-//Ишется следуюший фрагмент по пользовательскому номеру
+//РС€РµС‚СЃСЏ СЃР»РµРґСѓСЋС€РёР№ С„СЂР°РіРјРµРЅС‚ РїРѕ РїРѕР»СЊР·РѕРІР°С‚РµР»СЊСЃРєРѕРјСѓ РЅРѕРјРµСЂСѓ
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 //                                 GetFlagAndNumberFragment                                       //
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1632,7 +1632,7 @@ Int16 CRtfPage::GetFlagAndNumberFragment( BYTE* FragmentType, Int16* InGroupNumb
   for(j=0; j<CountTTP; j++ )
 		{
    pRtfFragment = (CRtfFragment*)m_arFragments[j];
-   if((Word32)(i+1) == pRtfFragment->m_wUserNumber)
+   if((uint32_t)(i+1) == pRtfFragment->m_wUserNumber)
 			{
 				i=j;
 				break;
@@ -1725,9 +1725,9 @@ BOOL CRtfSector::Write(void)
 	if(m_bFlagLine==FALSE)
 	{
 		FillingSectorInfo();
-		WriteNonTerminalColumns(); //FRAMES привязанные к началу сектора (это работает только когда сектор целиком состоит из frames)
-		WriteTerminalColumnsTablesAndPictures(); // каждая таблица может иметь leftOffs & topOffset
-		WriteTerminalColumns(); //это настоящие (не Frames) колонки - каждая колонки может иметь leftOffs & topOffset of section
+		WriteNonTerminalColumns(); //FRAMES РїСЂРёРІСЏР·Р°РЅРЅС‹Рµ Рє РЅР°С‡Р°Р»Сѓ СЃРµРєС‚РѕСЂР° (СЌС‚Рѕ СЂР°Р±РѕС‚Р°РµС‚ С‚РѕР»СЊРєРѕ РєРѕРіРґР° СЃРµРєС‚РѕСЂ С†РµР»РёРєРѕРј СЃРѕСЃС‚РѕРёС‚ РёР· frames)
+		WriteTerminalColumnsTablesAndPictures(); // РєР°Р¶РґР°СЏ С‚Р°Р±Р»РёС†Р° РјРѕР¶РµС‚ РёРјРµС‚СЊ leftOffs & topOffset
+		WriteTerminalColumns(); //СЌС‚Рѕ РЅР°СЃС‚РѕСЏС‰РёРµ (РЅРµ Frames) РєРѕР»РѕРЅРєРё - РєР°Р¶РґР°СЏ РєРѕР»РѕРЅРєРё РјРѕР¶РµС‚ РёРјРµС‚СЊ leftOffs & topOffset of section
 		Put("{\\pard\\fs6");
 		PutCom("\\sa",SectorInfo.InterSectorDist,0);
 		Put("\\par}");
@@ -1772,7 +1772,7 @@ BOOL CRtfSector::Write(void)
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 void CRtfSector::WriteTerminalColumnsTablesAndPictures(void)
 {
-	Int32 CountHTerminalColumns,TerminalColumnNumber;
+	int32_t CountHTerminalColumns,TerminalColumnNumber;
 	CRtfHorizontalColumn *pRtfHorizontalColumn;
 
  	CountHTerminalColumns  = m_arHTerminalColumnsIndex.size();
@@ -1791,7 +1791,7 @@ void CRtfSector::WriteTerminalColumnsTablesAndPictures(void)
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 void CRtfSector::WriteTerminalColumns(void)
 {
-	Int32 CountHTerminalColumns,CountVTerminalColumns,TerminalColumnNumber;
+	int32_t CountHTerminalColumns,CountVTerminalColumns,TerminalColumnNumber;
 	CRtfHorizontalColumn *pRtfHorizontalColumn;
 
 	CountHTerminalColumns  = m_arHTerminalColumnsIndex.size();
@@ -1803,7 +1803,7 @@ void CRtfSector::WriteTerminalColumns(void)
 	{
 		CountVTerminalColumns = GetCountAndRightBoundVTerminalColumns();
 		PutCom("\\cols",CountVTerminalColumns,0);
-		Int32 len_colsx = 709;
+		int32_t len_colsx = 709;
 		PutCom("\\colsx",len_colsx,1);
 		Put("\\endnhere");
 
@@ -1822,9 +1822,9 @@ void CRtfSector::WriteTerminalColumns(void)
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 //                                 GetCountAndRightBoundVTerminalColumns                          //
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-Int32 CRtfSector::GetCountAndRightBoundVTerminalColumns(void)
+int32_t CRtfSector::GetCountAndRightBoundVTerminalColumns(void)
 {
-	Int32 CountHTerminalColumns,CountVTerminalColumns,TerminalColumnNumber;
+	int32_t CountHTerminalColumns,CountVTerminalColumns,TerminalColumnNumber;
 	CRtfHorizontalColumn *pRtfHorizontalColumn;
 
 	CountVTerminalColumns=0;
@@ -1905,12 +1905,12 @@ void CRtfSector::ToPlacePicturesAndTables(CRtfFragment* pRtfFragment)
 	}
 
 }
-//~ расчет размеров сектора
+//~ СЂР°СЃС‡РµС‚ СЂР°Р·РјРµСЂРѕРІ СЃРµРєС‚РѕСЂР°
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 //                                 FillingSectorInfo                                              //
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 void CRtfSector::FillingSectorInfo()
-{ //~ тут происходит работа си старой (vmk) структурой колонок
+{ //~ С‚СѓС‚ РїСЂРѕРёСЃС…РѕРґРёС‚ СЂР°Р±РѕС‚Р° СЃРё СЃС‚Р°СЂРѕР№ (vmk) СЃС‚СЂСѓРєС‚СѓСЂРѕР№ РєРѕР»РѕРЅРѕРє
 	CRtfHorizontalColumn *pRtfHorizontalColumn;
 	CRtfVerticalColumn   *pRtfVerticalColumn;
 	CRtfFragment         *pRtfFragment;
@@ -1995,7 +1995,7 @@ CRtfHorizontalColumn::~CRtfHorizontalColumn()
 // m_arVTerminalColumnsIndex.RemoveAll();
 // m_arOrderingNumber.RemoveAll();
 }
-//~ здесь попытка деления на колонки
+//~ Р·РґРµСЃСЊ РїРѕРїС‹С‚РєР° РґРµР»РµРЅРёСЏ РЅР° РєРѕР»РѕРЅРєРё
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 //                                 CalcHorizontalColumn                                           //
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -2004,17 +2004,17 @@ void CRtfHorizontalColumn::CalcHorizontalColumn(void)
 
 	if( m_wType == HC_FrameAndColumn || m_wType == HC_AllFrame )
 	{
-		if(CheckTermColumn() == FALSE) //~проверка вертикал. затенения колонок ("жертва" будет frame)
+		if(CheckTermColumn() == FALSE) //~РїСЂРѕРІРµСЂРєР° РІРµСЂС‚РёРєР°Р». Р·Р°С‚РµРЅРµРЅРёСЏ РєРѕР»РѕРЅРѕРє ("Р¶РµСЂС‚РІР°" Р±СѓРґРµС‚ frame)
 		{
-   FindHeadingAndSetFrameFlag(); //это проверка, что после удаления жертвы все стало лучше
-   DefineTerminalProperty(); //присвоение признака терминальности колонкам
+   FindHeadingAndSetFrameFlag(); //СЌС‚Рѕ РїСЂРѕРІРµСЂРєР°, С‡С‚Рѕ РїРѕСЃР»Рµ СѓРґР°Р»РµРЅРёСЏ Р¶РµСЂС‚РІС‹ РІСЃРµ СЃС‚Р°Р»Рѕ Р»СѓС‡С€Рµ
+   DefineTerminalProperty(); //РїСЂРёСЃРІРѕРµРЅРёРµ РїСЂРёР·РЅР°РєР° С‚РµСЂРјРёРЅР°Р»СЊРЅРѕСЃС‚Рё РєРѕР»РѕРЅРєР°Рј
 		}
   else
    m_wType = HC_AllTerminal;
 	}
 
 	if(m_wType <= HC_FrameAndColumn)
-        FillingVTerminalColumnsIndex(); //есть хорошие колонки
+        FillingVTerminalColumnsIndex(); //РµСЃС‚СЊ С…РѕСЂРѕС€РёРµ РєРѕР»РѕРЅРєРё
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -2040,8 +2040,8 @@ BOOL CRtfHorizontalColumn::CheckTermColumn(void)
 return TRUE;
 }
 
-//после удаления жертвы по гистограммам проверяем разделимость остальных колонок и если да,
-// все они будут терминал.
+//РїРѕСЃР»Рµ СѓРґР°Р»РµРЅРёСЏ Р¶РµСЂС‚РІС‹ РїРѕ РіРёСЃС‚РѕРіСЂР°РјРјР°Рј РїСЂРѕРІРµСЂСЏРµРј СЂР°Р·РґРµР»РёРјРѕСЃС‚СЊ РѕСЃС‚Р°Р»СЊРЅС‹С… РєРѕР»РѕРЅРѕРє Рё РµСЃР»Рё РґР°,
+// РІСЃРµ РѕРЅРё Р±СѓРґСѓС‚ С‚РµСЂРјРёРЅР°Р».
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 //                                 FindHeadingAndSetFrameFlag                                     //
@@ -2049,11 +2049,11 @@ return TRUE;
 void CRtfHorizontalColumn::FindHeadingAndSetFrameFlag(void)
 {
 	CRtfVerticalColumn* pRtfVerticalColumn;
-	Int32               TmpBottom = 32000;
+	int32_t               TmpBottom = 32000;
 	std::vector<BYTE>          Hist;
-	Int32               Left=32000,Right=0,Length,Left1,Right1;
+	int32_t               Left=32000,Right=0,Length,Left1,Right1;
 	int                 i,j,FlagLeft,FlagRight,tmp;
-	Int32                MaxWidth=1,MaxHeight=1;
+	int32_t                MaxWidth=1,MaxHeight=1;
 
 //	Hist.RemoveAll();
 	m_wVerticalColumnsCount = m_arVerticalColumns.size();
@@ -2065,7 +2065,7 @@ void CRtfHorizontalColumn::FindHeadingAndSetFrameFlag(void)
 		{
 			MaxWidth  = MAX(MaxWidth,  pRtfVerticalColumn->m_rectReal.right  - pRtfVerticalColumn->m_rectReal.left);
 			MaxHeight = MAX(MaxHeight, pRtfVerticalColumn->m_rectReal.bottom - pRtfVerticalColumn->m_rectReal.top );
-			pRtfVerticalColumn->m_bFlagSmall = FALSE; //в первую очередь жертвы ищутся среди малых
+			pRtfVerticalColumn->m_bFlagSmall = FALSE; //РІ РїРµСЂРІСѓСЋ РѕС‡РµСЂРµРґСЊ Р¶РµСЂС‚РІС‹ РёС‰СѓС‚СЃСЏ СЃСЂРµРґРё РјР°Р»С‹С…
 		}
 	}
 
@@ -2095,7 +2095,7 @@ void CRtfHorizontalColumn::FindHeadingAndSetFrameFlag(void)
 	for(i=0; i<Length; i++)
 		Hist.push_back(0);
 
-	for(i=0; i<m_wVerticalColumnsCount; i++)//~накопление гистограммы
+	for(i=0; i<m_wVerticalColumnsCount; i++)//~РЅР°РєРѕРїР»РµРЅРёРµ РіРёСЃС‚РѕРіСЂР°РјРјС‹
 	{
 		pRtfVerticalColumn = (CRtfVerticalColumn*)m_arVerticalColumns[i];
 		if((pRtfVerticalColumn->m_wType == FT_TEXT || pRtfVerticalColumn->m_wType == FT_FRAME) &&
@@ -2170,7 +2170,7 @@ void CRtfHorizontalColumn::DefineTerminalProperty(void)
 	std::vector<BYTE>    Hist;
 	vectorWord*   pGroup;
 	CRtfVerticalColumn* pRtfVerticalColumn;
-	Int32 Left=32000,Right=0,Length,Left1,Right1;
+	int32_t Left=32000,Right=0,Length,Left1,Right1;
 	int i,j,FlagSpace=0,CountColumn,MinLeft,MaxRight;
 
 	m_wVerticalColumnsCount = m_arVerticalColumns.size();
@@ -2250,7 +2250,7 @@ void CRtfHorizontalColumn::DefineTerminalProperty(void)
 				if(pRtfVerticalColumn->m_wType == FT_TEXT && pRtfVerticalColumn->m_rectReal.left >= Left &&
 							pRtfVerticalColumn->m_rectReal.right <= Right)
  				{
-   					pGroup->push_back(j); //~слияние секторов в одну колонку по вертикали
+   					pGroup->push_back(j); //~СЃР»РёСЏРЅРёРµ СЃРµРєС‚РѕСЂРѕРІ РІ РѕРґРЅСѓ РєРѕР»РѕРЅРєСѓ РїРѕ РІРµСЂС‚РёРєР°Р»Рё
 				}
 			}
 		}
@@ -2263,7 +2263,7 @@ void CRtfHorizontalColumn::DefineTerminalProperty(void)
 		m_wType = HC_FrameAndColumn;
 			return;
 	}
-//~неудача деления => all columns become frames
+//~РЅРµСѓРґР°С‡Р° РґРµР»РµРЅРёСЏ => all columns become frames
 	for(i=0; i<m_wVerticalColumnsCount; i++)
 	{
 	 pRtfVerticalColumn = (CRtfVerticalColumn*)m_arVerticalColumns[i];
@@ -2304,7 +2304,7 @@ void CRtfHorizontalColumn::FillingVTerminalColumnsIndex(void)
 {
 	int                 i,j,FlagChange;
 	WORD		              index,Number;
-	Int32               Top;
+	int32_t               Top;
 	CRtfVerticalColumn *pRtfVerticalColumn;
 	vectorWord         *pGroup,*pGroupNew;
 
@@ -2388,10 +2388,10 @@ void CRtfHorizontalColumn::FillingVTerminalColumnsIndex(void)
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 //                                 GetCountAndRightBoundVTerminalColumns                          //
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-Int32 CRtfHorizontalColumn::GetCountAndRightBoundVTerminalColumns(vectorWord* arRightBoundTerminalColumns,
+int32_t CRtfHorizontalColumn::GetCountAndRightBoundVTerminalColumns(vectorWord* arRightBoundTerminalColumns,
 														vectorWord* arWidthTerminalColumns)
 {
-	Int32               CountVTerminalColumns=0;
+	int32_t               CountVTerminalColumns=0;
 	CRtfVerticalColumn *pRtfVerticalColumn;
 	WORD                RightBound,index,WidthColumn,tmp;
 	vectorWord         *pGroup;
@@ -2487,22 +2487,22 @@ void CRtfHorizontalColumn::SetFlagObjectInColumnForPageFragment( CRtfFragment* C
 //                                 WriteTerminalColumns                                           //
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 void CRtfHorizontalColumn::WriteTerminalColumns(vectorWord* arRightBoundTerminalColumns,
-													Int32* VTerminalColumnNumber,
-													Int32  CountVTerminalColumns,
+													int32_t* VTerminalColumnNumber,
+													int32_t  CountVTerminalColumns,
 													RtfSectorInfo *SectorInfo)
 {
 	int                 colsr(0),i(0),j(0),colw(0),CountInGroup(0);
-	Int32               CountTerminalColumns,NextColumnsLeft,CountFrameInTerminalColumn,Left,Right;
+	int32_t               CountTerminalColumns,NextColumnsLeft,CountFrameInTerminalColumn,Left,Right;
 	CRtfVerticalColumn *pRtfVerticalColumn;
 	CRtfFragment       *pRtfFragment;
 	vectorWord         *pGroup;
 	WORD                FreeSpace;
 	int                 number;
 	BOOL                FlagFirstTerminalFragment = FALSE;
-	Int32               TopPositionFirstTerminalFragment;
+	int32_t               TopPositionFirstTerminalFragment;
 	RECT               Rect;
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//***********************        Tерминальная колонка из одного или нескольких фрагментов  ******************************************
+//***********************        TРµСЂРјРёРЅР°Р»СЊРЅР°СЏ РєРѕР»РѕРЅРєР° РёР· РѕРґРЅРѕРіРѕ РёР»Рё РЅРµСЃРєРѕР»СЊРєРёС… С„СЂР°РіРјРµРЅС‚РѕРІ  ******************************************
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	if(m_wType==HC_SingleTerminal || m_wType==HC_AllTerminal)
 	{
@@ -2607,7 +2607,7 @@ void CRtfHorizontalColumn::WriteTerminalColumns(vectorWord* arRightBoundTerminal
 		Put("\\column");
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//***********************************                    Фреймы и колонки            ************************************************
+//***********************************                    Р¤СЂРµР№РјС‹ Рё РєРѕР»РѕРЅРєРё            ************************************************
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	else
 	{
@@ -2657,7 +2657,7 @@ void CRtfHorizontalColumn::WriteTerminalColumns(vectorWord* arRightBoundTerminal
 	}
 #endif
 
-	if(!i) //noisy fragment or picture are made as frame,frames привязаны к первой терминал. колонке сектора
+	if(!i) //noisy fragment or picture are made as frame,frames РїСЂРёРІСЏР·Р°РЅС‹ Рє РїРµСЂРІРѕР№ С‚РµСЂРјРёРЅР°Р». РєРѕР»РѕРЅРєРµ СЃРµРєС‚РѕСЂР°
  	  WriteFramesInTerminalColumn(SectorInfo, FlagFirstTerminalFragment, TopPositionFirstTerminalFragment);
 
 	for(j=0; j<CountInGroup; j++ )
@@ -2690,7 +2690,7 @@ WORD CRtfHorizontalColumn::GetFreeSpaceBetweenPrevAndCurrentFragments(int TopPos
 	CRtfFragment       *pRtfFragment;
 	RECT              FreePlace;
 	int                i,CountFragments;
-	Int32              FreePlaceHeight;
+	int32_t              FreePlaceHeight;
 
 	FreePlace.left     = m_rect.left;
 	FreePlace.right    = m_rect.right;
@@ -2772,7 +2772,7 @@ BOOL CRtfHorizontalColumn::GetOverLayedFlag(int CurFragmentNumber)
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 void CRtfHorizontalColumn::SortFragments()
 {
-	Int32               CountFrameInTerminalColumn;
+	int32_t               CountFrameInTerminalColumn;
 	CRtfVerticalColumn *pRtfVerticalColumn;
 	CRtfFragment       *pRtfFragment,*pRtfFragmentFirst;
 	int                 /*NextTop=-32000,*/size,number;
@@ -2797,7 +2797,7 @@ void CRtfHorizontalColumn::SortFragments()
 				pRtfVerticalColumn = m_arVerticalColumns[number];
 				pRtfFragmentFirst   = pRtfVerticalColumn->m_arFragments[0];
 
-				//Если фрагмент выше другого
+				//Р•СЃР»Рё С„СЂР°РіРјРµРЅС‚ РІС‹С€Рµ РґСЂСѓРіРѕРіРѕ
 				if( pRtfFragment->m_rect.top < pRtfFragmentFirst->m_rect.top )
 				{
   					m_arOrderingNumber.insert( m_arOrderingNumber.begin()+m, i );
@@ -2808,7 +2808,7 @@ void CRtfHorizontalColumn::SortFragments()
 						break;
 				}
 				else
-					//Если таблица/картинка покрывается текстовым фрагментом
+					//Р•СЃР»Рё С‚Р°Р±Р»РёС†Р°/РєР°СЂС‚РёРЅРєР° РїРѕРєСЂС‹РІР°РµС‚СЃСЏ С‚РµРєСЃС‚РѕРІС‹Рј С„СЂР°РіРјРµРЅС‚РѕРј
 				 if( (pRtfFragment->m_wType==FT_TABLE || pRtfFragment->m_wType==FT_PICTURE) &&
 								 pRtfFragmentFirst->m_wType==FT_TEXT                         &&
 					pRtfFragment->m_rect.top >= pRtfFragmentFirst->m_rect.top               &&
@@ -2826,9 +2826,9 @@ void CRtfHorizontalColumn::SortFragments()
 			}
 		}
 	}
-	//Надо оттестировать
-/*	//Выставляем расстояние для картинок и таблиц, которые пойдут
-	//во фреймы после последнго текстового фрагмента
+	//РќР°РґРѕ РѕС‚С‚РµСЃС‚РёСЂРѕРІР°С‚СЊ
+/*	//Р’С‹СЃС‚Р°РІР»СЏРµРј СЂР°СЃСЃС‚РѕСЏРЅРёРµ РґР»СЏ РєР°СЂС‚РёРЅРѕРє Рё С‚Р°Р±Р»РёС†, РєРѕС‚РѕСЂС‹Рµ РїРѕР№РґСѓС‚
+	//РІРѕ С„СЂРµР№РјС‹ РїРѕСЃР»Рµ РїРѕСЃР»РµРґРЅРіРѕ С‚РµРєСЃС‚РѕРІРѕРіРѕ С„СЂР°РіРјРµРЅС‚Р°
 	for( int m=m_arOrderingNumber.size()-1; m>=0; m-- )
 	{
 		pRtfVerticalColumn = m_arVerticalColumns[m_arOrderingNumber[m]];
@@ -2838,9 +2838,9 @@ void CRtfHorizontalColumn::SortFragments()
 	}
 	if (m<0)
 		return;
-	//нашли последний текстовый фрагмент - выставляем до него расстояние
+	//РЅР°С€Р»Рё РїРѕСЃР»РµРґРЅРёР№ С‚РµРєСЃС‚РѕРІС‹Р№ С„СЂР°РіРјРµРЅС‚ - РІС‹СЃС‚Р°РІР»СЏРµРј РґРѕ РЅРµРіРѕ СЂР°СЃСЃС‚РѕСЏРЅРёРµ
 	int lastTxtNum=m;
-	//Ищем высоту фиктивного абзаца+разрыва колонки/раздела
+	//РС‰РµРј РІС‹СЃРѕС‚Сѓ С„РёРєС‚РёРІРЅРѕРіРѕ Р°Р±Р·Р°С†Р°+СЂР°Р·СЂС‹РІР° РєРѕР»РѕРЅРєРё/СЂР°Р·РґРµР»Р°
 	Int16 parHeight=0,brkHeight=0;
 	GetRealSize("A",0,6,0,&parHeight);
 	GetRealSize("A",0,24,0,&brkHeight);
@@ -2852,8 +2852,8 @@ void CRtfHorizontalColumn::SortFragments()
 		pRtfFragment   = pRtfVerticalColumn->m_arFragments[0];
 		if( (pRtfFragment->m_wType==FT_TABLE || pRtfFragment->m_wType==FT_PICTURE))
 		{
-			//вычитаем 2 высоты - фикт. абзаца и разрыва
-			//если меньше, чем высота разрава, то чтобы он не упрыгнул вниз
+			//РІС‹С‡РёС‚Р°РµРј 2 РІС‹СЃРѕС‚С‹ - С„РёРєС‚. Р°Р±Р·Р°С†Р° Рё СЂР°Р·СЂС‹РІР°
+			//РµСЃР»Рё РјРµРЅСЊС€Рµ, С‡РµРј РІС‹СЃРѕС‚Р° СЂР°Р·СЂР°РІР°, С‚Рѕ С‡С‚РѕР±С‹ РѕРЅ РЅРµ СѓРїСЂС‹РіРЅСѓР» РІРЅРёР·
 			pRtfFragment->m_wOffsetFromPrevTextFragment = (WORD)MAX(brkHeight,pRtfFragment->m_rect.top - pRtfFragmentFirst->m_rect.bottom-brkHeight-parHeight);
 		}
 	}
@@ -2861,7 +2861,7 @@ void CRtfHorizontalColumn::SortFragments()
 
 WORD CRtfHorizontalColumn::GetOffsetFromPrevTextFragment(CRtfFragment *pRtfFragment)
 {
-	Int32               CountFrameInTerminalColumn;
+	int32_t               CountFrameInTerminalColumn;
 	CRtfVerticalColumn *pRtfVerticalColumn;
 	CRtfFragment       *pRtfFragmentNext;
 	WORD                VerOffset=0;
@@ -2881,10 +2881,10 @@ WORD CRtfHorizontalColumn::GetOffsetFromPrevTextFragment(CRtfFragment *pRtfFragm
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 //                                 WriteFramesInTerminalColumn                                    //
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-void CRtfHorizontalColumn::WriteFramesInTerminalColumn(RtfSectorInfo* SectorInfo,BOOL FlagFirstTerminalFragment,Int32 TopPositionFirstTerminalFragment)
+void CRtfHorizontalColumn::WriteFramesInTerminalColumn(RtfSectorInfo* SectorInfo,BOOL FlagFirstTerminalFragment,int32_t TopPositionFirstTerminalFragment)
 {
 	CRtfVerticalColumn* pRtfVerticalColumn;
-	Int32 shpleft,shptop,shpright,shpbottom,shpwr=0,fri=0;
+	int32_t shpleft,shptop,shpright,shpbottom,shpwr=0,fri=0;
 
 #ifdef EdWrite
  EDBOX EdFragmRect;
@@ -3023,7 +3023,7 @@ CRtfVerticalColumn::~CRtfVerticalColumn()
 	CRtfFragment* cFrag;
 
 	m_wFragmentsCount = m_arFragments.size();
-	for(Word32 i=0; i<m_wFragmentsCount; i++)
+	for(uint32_t i=0; i<m_wFragmentsCount; i++)
 	{
 		cFrag = m_arFragments[i];
 		delete cFrag;
@@ -3083,7 +3083,7 @@ void CRtfVerticalColumn::SetSpaceRect(CRtfFragment* CurrentFragment, RtfSectorIn
 	CRtfFragment*    pRtfFragment;
 	RECT            LeftFreePlace,RightFreePlace,TopFreePlace,BottomFreePlace,CurrentFragmentRect,RectInter;
 	int              i,CountFragments;
-	Int32            LeftFree,RightFree,TopFree,BottomFree;
+	int32_t            LeftFree,RightFree,TopFree,BottomFree;
 
 
 	LeftFree  = CurrentFragment->m_rect.left;
@@ -3136,10 +3136,10 @@ void CRtfVerticalColumn::SetSpaceRect(CRtfFragment* CurrentFragment, RtfSectorIn
 			BottomFree = MIN(BottomFree, CurrentFragmentRect.top - BottomFreePlace.top);
 	}
 
-  SectorInfo->m_rectFree.left   = CurrentFragment->m_rectFree.left   = (Int32)(MAX(0,LeftFree)   * TwipsToEMU_Koef);
-  SectorInfo->m_rectFree.right  = CurrentFragment->m_rectFree.right  = (Int32)(MAX(0,RightFree)  * TwipsToEMU_Koef);
-  SectorInfo->m_rectFree.top    = CurrentFragment->m_rectFree.top    = (Int32)(MAX(0,TopFree)    * TwipsToEMU_Koef);
-  SectorInfo->m_rectFree.bottom = CurrentFragment->m_rectFree.bottom = (Int32)(MAX(0,BottomFree) * TwipsToEMU_Koef);
+  SectorInfo->m_rectFree.left   = CurrentFragment->m_rectFree.left   = (int32_t)(MAX(0,LeftFree)   * TwipsToEMU_Koef);
+  SectorInfo->m_rectFree.right  = CurrentFragment->m_rectFree.right  = (int32_t)(MAX(0,RightFree)  * TwipsToEMU_Koef);
+  SectorInfo->m_rectFree.top    = CurrentFragment->m_rectFree.top    = (int32_t)(MAX(0,TopFree)    * TwipsToEMU_Koef);
+  SectorInfo->m_rectFree.bottom = CurrentFragment->m_rectFree.bottom = (int32_t)(MAX(0,BottomFree) * TwipsToEMU_Koef);
 
 }
 
@@ -3213,14 +3213,14 @@ BOOL CRtfFragment::FWriteText(Int16 NumberCurrentFragment,RtfSectorInfo *SectorI
 
 	InitFragment(SectorInfo);
 
-//--- Цикл по строкам
+//--- Р¦РёРєР» РїРѕ СЃС‚СЂРѕРєР°Рј
  boPrevNega = false; //NEGA_STR
  for( int ns=0; ns < m_wStringsCount; ns++ )
  {
   pRtfString = (CRtfString*)m_arStrings[ns];
   pRtfWord   = (CRtfWord*)pRtfString->m_arWords[0];
   pRtfChar   = (CRtfChar*)pRtfWord->m_arChars[0];
-  if(pRtfChar->m_bFlg_cup_drop==TRUE) //заносим буквицы во frame
+  if(pRtfChar->m_bFlg_cup_drop==TRUE) //Р·Р°РЅРѕСЃРёРј Р±СѓРєРІРёС†С‹ РІРѕ frame
   {
    if((FlagMode & USE_FRAME) || OutPutType)
     pRtfChar->m_bFlg_cup_drop=FALSE;
@@ -3228,8 +3228,8 @@ BOOL CRtfFragment::FWriteText(Int16 NumberCurrentFragment,RtfSectorInfo *SectorI
     pRtfString->m_wFlagBeginParagraph = TRUE;
   }
 
-  // чтобы не смешивать в одном абзаце негатив. и позитив. строки, при смене
-  // цвета стартуем новый абзац
+  // С‡С‚РѕР±С‹ РЅРµ СЃРјРµС€РёРІР°С‚СЊ РІ РѕРґРЅРѕРј Р°Р±Р·Р°С†Рµ РЅРµРіР°С‚РёРІ. Рё РїРѕР·РёС‚РёРІ. СЃС‚СЂРѕРєРё, РїСЂРё СЃРјРµРЅРµ
+  // С†РІРµС‚Р° СЃС‚Р°СЂС‚СѓРµРј РЅРѕРІС‹Р№ Р°Р±Р·Р°С†
   boNega = pRtfString->S_Flags & CSTR_STR_NEGATIVE; //NEGA_STR
 
   if (boNega != boPrevNega)
@@ -3284,17 +3284,17 @@ BOOL CRtfFragment::FWriteText(Int16 NumberCurrentFragment,RtfSectorInfo *SectorI
 		{
 			CRtfSector*  curSect=(CRtfSector* )pRtfParent->m_arSectors[pRtfParent->m_nCurSectorNumber];
 
-			//Если пишем с форматированием и однострочная колонка
+			//Р•СЃР»Рё РїРёС€РµРј СЃ С„РѕСЂРјР°С‚РёСЂРѕРІР°РЅРёРµРј Рё РѕРґРЅРѕСЃС‚СЂРѕС‡РЅР°СЏ РєРѕР»РѕРЅРєР°
 			if( FlagMode & USE_FRAME_AND_COLUMN && curSect->SectorInfo.FlagOneString == TRUE )
  				colWidth = SectorInfo->PaperW - (SectorInfo->MargL + SectorInfo->MargR);
-			//Если пишем в колонку
+			//Р•СЃР»Рё РїРёС€РµРј РІ РєРѕР»РѕРЅРєСѓ
 			else if (SectorInfo->hColumn==SectorInfo->hObject)
 			{
 				colWidth=curSect->m_arWidthTerminalColumns[curSect->m_VTerminalColumnNumber-1];
 			}
 
 		}
-		//Если ничего не помогло
+		//Р•СЃР»Рё РЅРёС‡РµРіРѕ РЅРµ РїРѕРјРѕРіР»Рѕ
 		if (!colWidth)
 			colWidth=m_rectReal.right - m_rectReal.left;
 
@@ -3318,7 +3318,7 @@ BOOL CRtfFragment::FWriteText(Int16 NumberCurrentFragment,RtfSectorInfo *SectorI
 #endif
 #endif
 
-//--- Цикл по словам
+//--- Р¦РёРєР» РїРѕ СЃР»РѕРІР°Рј
 	CountWords = pRtfString->m_wWordsCount;
 	for(int nw=0; nw<CountWords; nw++)
 	{
@@ -3392,7 +3392,7 @@ BOOL CRtfFragment::FWriteText(Int16 NumberCurrentFragment,RtfSectorInfo *SectorI
 		if(!pRtfWord->m_wcs)
 			Put("\\wcs");
 		Put("{");
-  //--- Цикл по буквам
+  //--- Р¦РёРєР» РїРѕ Р±СѓРєРІР°Рј
 
 		CountChars = pRtfWord->m_wCharsCount;
 		for(int nz=0; nz<CountChars; nz++)
@@ -3539,7 +3539,7 @@ BOOL CRtfFragment::FWriteText(Int16 NumberCurrentFragment,RtfSectorInfo *SectorI
 				}
 	}
   }
-//--- Конец цикла по буквам
+//--- РљРѕРЅРµС† С†РёРєР»Р° РїРѕ Р±СѓРєРІР°Рј
   if(nw < CountWords-1)
   {
 #ifdef EdWrite
@@ -3589,13 +3589,13 @@ BOOL CRtfFragment::FWriteText(Int16 NumberCurrentFragment,RtfSectorInfo *SectorI
   Put("}");
   Put("}");
 }
-//--- Конец цикла по словам
+//--- РљРѕРЅРµС† С†РёРєР»Р° РїРѕ СЃР»РѕРІР°Рј
   if( pRtfString->m_bLineTransfer == TRUE )
    Put("\\line ");
 
   boPrevNega = boNega; //NEGA_STR
 }
-//--- Конец цикла по строкам
+//--- РљРѕРЅРµС† С†РёРєР»Р° РїРѕ СЃС‚СЂРѕРєР°Рј
   if( OutPutType )
 	  Put("}");
   PutCom("\\fs",m_wprev_font_size*2,1);
@@ -3666,11 +3666,11 @@ void CRtfFragment::InitFragment(RtfSectorInfo* SectorInfo)
 BOOL CRtfFragment::FWriteTable(Int16 NumberCurrentFragment,RtfSectorInfo *SectorInfo, BOOL OutPutType)
 {
 // CString  TableString;
-//	Word32   CountTableElem;
-//	Word32   Tindex;
+//	uint32_t   CountTableElem;
+//	uint32_t   Tindex;
 //	char     Tsym;
 
-//	WriteTable((Word32)NumberCurrentFragment, SectorInfo/*, &TableString */, OutPutType);
+//	WriteTable((uint32_t)NumberCurrentFragment, SectorInfo/*, &TableString */, OutPutType);
 /*	if(RtfWriteMode)
 	{
 		CountTableElem = TableString.GetLength();
@@ -3690,11 +3690,11 @@ BOOL CRtfFragment::FWriteTable(Int16 NumberCurrentFragment,RtfSectorInfo *Sector
 BOOL CRtfFragment::FWritePicture(Int16 NumberCurrentFragment,RtfSectorInfo *SectorInfo, BOOL OutPutType)
 {
 //	CString  PictString;
-//	Word32   Pindex;
-//	Word32  CountPictElem;
+//	uint32_t   Pindex;
+//	uint32_t  CountPictElem;
 //	char     Psym;
 
-	WritePict( (Word32)NumberCurrentFragment, SectorInfo,/* &PictString,*/ OutPutType );
+	WritePict( (uint32_t)NumberCurrentFragment, SectorInfo,/* &PictString,*/ OutPutType );
 /*	if(RtfWriteMode)
 	{
 		CountPictElem = PictString.GetLength();
@@ -4007,7 +4007,7 @@ Int16 GetRealSizeKegl( /*CString**/const char* str, Int16 width, Int16 FontPoint
 	float koef=1.;
 
 	int len=strlen(str);
-	if(FontPointSize>30) //~ в больших кеглях большая ошибка в Microsoft function
+	if(FontPointSize>30) //~ РІ Р±РѕР»СЊС€РёС… РєРµРіР»СЏС… Р±РѕР»СЊС€Р°СЏ РѕС€РёР±РєР° РІ Microsoft function
 //		*str +="     ";
 		len+=5;
 	else
@@ -4023,7 +4023,7 @@ Int16 GetRealSizeKegl( /*CString**/const char* str, Int16 width, Int16 FontPoint
 	strcpy(sz, str);
 //	else
 //		return FALSE;
-	//Заполняем хвост строки пробелами
+	//Р—Р°РїРѕР»РЅСЏРµРј С…РІРѕСЃС‚ СЃС‚СЂРѕРєРё РїСЂРѕР±РµР»Р°РјРё
 	memset(sz+strlen(str),' ',len-strlen(str));
 	sz[len]=0;
 
@@ -4033,7 +4033,7 @@ Int16 GetRealSizeKegl( /*CString**/const char* str, Int16 width, Int16 FontPoint
 		for( int i=0; i<Count; i++ )
 		{
 			Int16 RealSize=GetRealSize(sz, strlen(sz), FontPointSize, FontNumber, &strHeight);
-			if( RealSize > (Int16)(width*Twips*koef) ) //криретий окончания итераций- чтобы все символы влезли в строку по ширине
+			if( RealSize > (Int16)(width*Twips*koef) ) //РєСЂРёСЂРµС‚РёР№ РѕРєРѕРЅС‡Р°РЅРёСЏ РёС‚РµСЂР°С†РёР№- С‡С‚РѕР±С‹ РІСЃРµ СЃРёРјРІРѕР»С‹ РІР»РµР·Р»Рё РІ СЃС‚СЂРѕРєСѓ РїРѕ С€РёСЂРёРЅРµ
 			{
 				PenaltyKeglForString++;
 				FontPointSize--;
@@ -4046,8 +4046,8 @@ Int16 GetRealSizeKegl( /*CString**/const char* str, Int16 width, Int16 FontPoint
 	return FontPointSize;
 }
 
-//==Command - сама команда, value - числовой аргумент (-1 - нет)
-void PutCom(const char *Command,Int32 value,Int16 space)
+//==Command - СЃР°РјР° РєРѕРјР°РЅРґР°, value - С‡РёСЃР»РѕРІРѕР№ Р°СЂРіСѓРјРµРЅС‚ (-1 - РЅРµС‚)
+void PutCom(const char *Command,int32_t value,Int16 space)
 //==
 { char Num[10]; Int16 i,len;
 	if(RtfWriteMode == FALSE)
@@ -4091,7 +4091,7 @@ void PutChar(BYTE sym)
 }
 
 #define SIZE_BLOC 1024
-//==Return: >0 - код символа, 0 - END_OF_FILE
+//==Return: >0 - РєРѕРґ СЃРёРјРІРѕР»Р°, 0 - END_OF_FILE
 void PutC(char sym)
 //==
 { static char *b; static Int16 len=-1,pos=-1;
@@ -4099,7 +4099,7 @@ void PutC(char sym)
   return;
   if(sym==0)
     {b=(char*)malloc(SIZE_BLOC);pos=-1;return;} //Init
-  if(sym==1) //Вывод буферов
+  if(sym==1) //Р’С‹РІРѕРґ Р±СѓС„РµСЂРѕРІ
     {if(pos>=0) fwrite(b,pos+1,1,out); free(b); return;}
   if(pos == SIZE_BLOC-1)
     {fwrite(b,SIZE_BLOC,1,out);pos=-1;}
@@ -4333,12 +4333,12 @@ BOOL CheckLines(RECT* Rect, BOOL FlagVer, RtfSectorInfo *SectorInfo)
 // LinesTotalInfo     lti;
 // Handle             hVH;
 // Handle             hBlock;
-// Word32             size;
+// uint32_t             size;
 // LineInfo           lineinfo;
  Handle             hPage;
- Int32              VCentre,HCentre;
+ int32_t              VCentre,HCentre;
 // extern Handle hUseCLine;
- Word32 size_line_com=sizeof(LINE_COM);
+ uint32_t size_line_com=sizeof(LINE_COM);
 
 	 if(FlagVer==TRUE && Rect->bottom-Rect->top<LMin/2)
    return FALSE;
@@ -4384,13 +4384,13 @@ BOOL CheckLines(RECT* Rect, BOOL FlagVer, RtfSectorInfo *SectorInfo)
 					 {
 					  if(cpdata->Line.Beg_Y*Twips > Rect->top   && cpdata->Line.Beg_Y*Twips < Rect->bottom)
 					  {
-					   Rect->top = (Int32)(cpdata->Line.Beg_Y*Twips);
-					   Rect->bottom = (Int32)(cpdata->Line.Beg_Y*Twips+10);
+					   Rect->top = (int32_t)(cpdata->Line.Beg_Y*Twips);
+					   Rect->bottom = (int32_t)(cpdata->Line.Beg_Y*Twips+10);
 					  }
 					  else
 					  {
-					   Rect->top = (Int32)(cpdata->Line.End_Y*Twips);
-					   Rect->bottom = (Int32)(cpdata->Line.End_Y*Twips+10);
+					   Rect->top = (int32_t)(cpdata->Line.End_Y*Twips);
+					   Rect->bottom = (int32_t)(cpdata->Line.End_Y*Twips+10);
 					  }
 					  CLINE_CopyData(&data,cpdata,sizeof(DLine));
 					  data.Flags |= LI_FRMT_Used;
@@ -4413,16 +4413,16 @@ BOOL CheckLines(RECT* Rect, BOOL FlagVer, RtfSectorInfo *SectorInfo)
 			{ return FALSE; }
 
 			if(FlagVer)
-    hVH = CPAGE_GetBlockFirst ( hPage, (Word32)lti.Ver.Lns );
+    hVH = CPAGE_GetBlockFirst ( hPage, (uint32_t)lti.Ver.Lns );
 			else
-    hVH = CPAGE_GetBlockFirst ( hPage, (Word32)lti.Hor.Lns );
+    hVH = CPAGE_GetBlockFirst ( hPage, (uint32_t)lti.Hor.Lns );
 
     while(hVH)
 			{
  			if(FlagVer)
-     size = CPAGE_GetBlockData( hPage, hVH, (Word32)lti.Ver.Lns, &lineinfo, sizeof(lineinfo));
+     size = CPAGE_GetBlockData( hPage, hVH, (uint32_t)lti.Ver.Lns, &lineinfo, sizeof(lineinfo));
 				else
-     size = CPAGE_GetBlockData( hPage, hVH, (Word32)lti.Hor.Lns, &lineinfo, sizeof(lineinfo));
+     size = CPAGE_GetBlockData( hPage, hVH, (uint32_t)lti.Hor.Lns, &lineinfo, sizeof(lineinfo));
 
     if ( size!=sizeof(lineinfo) )
 				{ return FALSE;	}
@@ -4449,17 +4449,17 @@ BOOL CheckLines(RECT* Rect, BOOL FlagVer, RtfSectorInfo *SectorInfo)
 						{
 						 if(lineinfo.A.y*Twips > Rect->top   && lineinfo.A.y*Twips < Rect->bottom)
 							{
-					   Rect->top = (Int32)(lineinfo.A.y*Twips);
-								Rect->bottom = (Int32)(lineinfo.A.y*Twips+10);
+					   Rect->top = (int32_t)(lineinfo.A.y*Twips);
+								Rect->bottom = (int32_t)(lineinfo.A.y*Twips+10);
 								lineinfo.Flags |= LI_FRMT_Used;
-        CPAGE_SetBlockData( hPage, hVH, (Word32)lti.Hor.Lns, &lineinfo, sizeof(lineinfo));
+        CPAGE_SetBlockData( hPage, hVH, (uint32_t)lti.Hor.Lns, &lineinfo, sizeof(lineinfo));
 							}
 							else
        {
-					   Rect->top = (Int32)(lineinfo.B.y*Twips);
-								Rect->bottom = (Int32)(lineinfo.B.y*Twips+10);
+					   Rect->top = (int32_t)(lineinfo.B.y*Twips);
+								Rect->bottom = (int32_t)(lineinfo.B.y*Twips+10);
         lineinfo.Flags |= LI_FRMT_Used;
-        CPAGE_SetBlockData( hPage, hVH, (Word32)lti.Hor.Lns, &lineinfo, sizeof(lineinfo));
+        CPAGE_SetBlockData( hPage, hVH, (uint32_t)lti.Hor.Lns, &lineinfo, sizeof(lineinfo));
 							}
        return TRUE;
 						}
@@ -4467,9 +4467,9 @@ BOOL CheckLines(RECT* Rect, BOOL FlagVer, RtfSectorInfo *SectorInfo)
 				}
 
  			if(FlagVer)
-     hVH = CPAGE_GetBlockNext ( hPage,hVH, (Word32)lti.Ver.Lns );
+     hVH = CPAGE_GetBlockNext ( hPage,hVH, (uint32_t)lti.Ver.Lns );
 				else
-     hVH = CPAGE_GetBlockNext ( hPage,hVH, (Word32)lti.Hor.Lns );
+     hVH = CPAGE_GetBlockNext ( hPage,hVH, (uint32_t)lti.Hor.Lns );
 			}
    hBlock = CPAGE_GetBlockNext( hPage, hBlock, RLINE_BLOCK_TYPE );
 		}
@@ -4486,11 +4486,11 @@ void Cleaning_LI_FRMT_Used_Flag(void)
 // LinesTotalInfo     lti;
 // Handle             hVH;
 // Handle             hBlock;
-// Word32             size;
+// uint32_t             size;
 // LineInfo           lineinfo;
  Handle             hPage;
 // extern Handle hUseCLine;
- Word32 size_line_com=sizeof(LINE_COM);
+ uint32_t size_line_com=sizeof(LINE_COM);
 
  hPage  = CPAGE_GetHandlePage ( CPAGE_GetCurrentPage()  );
  CLINE_handle hCLINE=CLINE_GetMainContainer();
@@ -4530,20 +4530,20 @@ void Cleaning_LI_FRMT_Used_Flag(void)
    if ( size!=sizeof(LinesTotalInfo) )
 			{ return; }
 
-    hVH = CPAGE_GetBlockFirst ( hPage, (Word32)lti.Hor.Lns );
+    hVH = CPAGE_GetBlockFirst ( hPage, (uint32_t)lti.Hor.Lns );
 
     while(hVH)
 			 {
-     size = CPAGE_GetBlockData( hPage, hVH, (Word32)lti.Hor.Lns, &lineinfo, sizeof(lineinfo));
+     size = CPAGE_GetBlockData( hPage, hVH, (uint32_t)lti.Hor.Lns, &lineinfo, sizeof(lineinfo));
      if ( size!=sizeof(lineinfo) )
 				  return;
 
      if(lineinfo.Flags & LI_FRMT_Used)
 				 {
       lineinfo.Flags &= 0xffff7fff;
-      CPAGE_SetBlockData( hPage, hVH, (Word32)lti.Hor.Lns, &lineinfo, sizeof(lineinfo));
+      CPAGE_SetBlockData( hPage, hVH, (uint32_t)lti.Hor.Lns, &lineinfo, sizeof(lineinfo));
 				 }
-     hVH = CPAGE_GetBlockNext ( hPage,hVH, (Word32)lti.Hor.Lns );
+     hVH = CPAGE_GetBlockNext ( hPage,hVH, (uint32_t)lti.Hor.Lns );
 				}
 	   hBlock = CPAGE_GetBlockNext( hPage, hBlock, RLINE_BLOCK_TYPE );
 		}

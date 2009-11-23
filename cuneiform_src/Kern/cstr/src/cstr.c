@@ -2,33 +2,33 @@
 Copyright (c) 1993-2008, Cognitive Technologies
 All rights reserved.
 
-Разрешается повторное распространение и использование как в виде исходного кода,
-так и в двоичной форме, с изменениями или без, при соблюдении следующих условий:
+Р Р°Р·СЂРµС€Р°РµС‚СЃСЏ РїРѕРІС‚РѕСЂРЅРѕРµ СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРµ Рё РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ РєР°Рє РІ РІРёРґРµ РёСЃС…РѕРґРЅРѕРіРѕ РєРѕРґР°,
+С‚Р°Рє Рё РІ РґРІРѕРёС‡РЅРѕР№ С„РѕСЂРјРµ, СЃ РёР·РјРµРЅРµРЅРёСЏРјРё РёР»Рё Р±РµР·, РїСЂРё СЃРѕР±Р»СЋРґРµРЅРёРё СЃР»РµРґСѓСЋС‰РёС… СѓСЃР»РѕРІРёР№:
 
-      * При повторном распространении исходного кода должны оставаться указанное
-        выше уведомление об авторском праве, этот список условий и последующий
-        отказ от гарантий.
-      * При повторном распространении двоичного кода в документации и/или в
-        других материалах, поставляемых при распространении, должны сохраняться
-        указанная выше информация об авторском праве, этот список условий и
-        последующий отказ от гарантий.
-      * Ни название Cognitive Technologies, ни имена ее сотрудников не могут
-        быть использованы в качестве средства поддержки и/или продвижения
-        продуктов, основанных на этом ПО, без предварительного письменного
-        разрешения.
+      * РџСЂРё РїРѕРІС‚РѕСЂРЅРѕРј СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё РёСЃС…РѕРґРЅРѕРіРѕ РєРѕРґР° РґРѕР»Р¶РЅС‹ РѕСЃС‚Р°РІР°С‚СЊСЃСЏ СѓРєР°Р·Р°РЅРЅРѕРµ
+        РІС‹С€Рµ СѓРІРµРґРѕРјР»РµРЅРёРµ РѕР± Р°РІС‚РѕСЂСЃРєРѕРј РїСЂР°РІРµ, СЌС‚РѕС‚ СЃРїРёСЃРѕРє СѓСЃР»РѕРІРёР№ Рё РїРѕСЃР»РµРґСѓСЋС‰РёР№
+        РѕС‚РєР°Р· РѕС‚ РіР°СЂР°РЅС‚РёР№.
+      * РџСЂРё РїРѕРІС‚РѕСЂРЅРѕРј СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё РґРІРѕРёС‡РЅРѕРіРѕ РєРѕРґР° РІ РґРѕРєСѓРјРµРЅС‚Р°С†РёРё Рё/РёР»Рё РІ
+        РґСЂСѓРіРёС… РјР°С‚РµСЂРёР°Р»Р°С…, РїРѕСЃС‚Р°РІР»СЏРµРјС‹С… РїСЂРё СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё, РґРѕР»Р¶РЅС‹ СЃРѕС…СЂР°РЅСЏС‚СЊСЃСЏ
+        СѓРєР°Р·Р°РЅРЅР°СЏ РІС‹С€Рµ РёРЅС„РѕСЂРјР°С†РёСЏ РѕР± Р°РІС‚РѕСЂСЃРєРѕРј РїСЂР°РІРµ, СЌС‚РѕС‚ СЃРїРёСЃРѕРє СѓСЃР»РѕРІРёР№ Рё
+        РїРѕСЃР»РµРґСѓСЋС‰РёР№ РѕС‚РєР°Р· РѕС‚ РіР°СЂР°РЅС‚РёР№.
+      * РќРё РЅР°Р·РІР°РЅРёРµ Cognitive Technologies, РЅРё РёРјРµРЅР° РµРµ СЃРѕС‚СЂСѓРґРЅРёРєРѕРІ РЅРµ РјРѕРіСѓС‚
+        Р±С‹С‚СЊ РёСЃРїРѕР»СЊР·РѕРІР°РЅС‹ РІ РєР°С‡РµСЃС‚РІРµ СЃСЂРµРґСЃС‚РІР° РїРѕРґРґРµСЂР¶РєРё Рё/РёР»Рё РїСЂРѕРґРІРёР¶РµРЅРёСЏ
+        РїСЂРѕРґСѓРєС‚РѕРІ, РѕСЃРЅРѕРІР°РЅРЅС‹С… РЅР° СЌС‚РѕРј РџРћ, Р±РµР· РїСЂРµРґРІР°СЂРёС‚РµР»СЊРЅРѕРіРѕ РїРёСЃСЊРјРµРЅРЅРѕРіРѕ
+        СЂР°Р·СЂРµС€РµРЅРёСЏ.
 
-ЭТА ПРОГРАММА ПРЕДОСТАВЛЕНА ВЛАДЕЛЬЦАМИ АВТОРСКИХ ПРАВ И/ИЛИ ДРУГИМИ ЛИЦАМИ "КАК
-ОНА ЕСТЬ" БЕЗ КАКОГО-ЛИБО ВИДА ГАРАНТИЙ, ВЫРАЖЕННЫХ ЯВНО ИЛИ ПОДРАЗУМЕВАЕМЫХ,
-ВКЛЮЧАЯ ГАРАНТИИ КОММЕРЧЕСКОЙ ЦЕННОСТИ И ПРИГОДНОСТИ ДЛЯ КОНКРЕТНОЙ ЦЕЛИ, НО НЕ
-ОГРАНИЧИВАЯСЬ ИМИ. НИ ВЛАДЕЛЕЦ АВТОРСКИХ ПРАВ И НИ ОДНО ДРУГОЕ ЛИЦО, КОТОРОЕ
-МОЖЕТ ИЗМЕНЯТЬ И/ИЛИ ПОВТОРНО РАСПРОСТРАНЯТЬ ПРОГРАММУ, НИ В КОЕМ СЛУЧАЕ НЕ
-НЕСЁТ ОТВЕТСТВЕННОСТИ, ВКЛЮЧАЯ ЛЮБЫЕ ОБЩИЕ, СЛУЧАЙНЫЕ, СПЕЦИАЛЬНЫЕ ИЛИ
-ПОСЛЕДОВАВШИЕ УБЫТКИ, СВЯЗАННЫЕ С ИСПОЛЬЗОВАНИЕМ ИЛИ ПОНЕСЕННЫЕ ВСЛЕДСТВИЕ
-НЕВОЗМОЖНОСТИ ИСПОЛЬЗОВАНИЯ ПРОГРАММЫ (ВКЛЮЧАЯ ПОТЕРИ ДАННЫХ, ИЛИ ДАННЫЕ,
-СТАВШИЕ НЕГОДНЫМИ, ИЛИ УБЫТКИ И/ИЛИ ПОТЕРИ ДОХОДОВ, ПОНЕСЕННЫЕ ИЗ-ЗА ДЕЙСТВИЙ
-ТРЕТЬИХ ЛИЦ И/ИЛИ ОТКАЗА ПРОГРАММЫ РАБОТАТЬ СОВМЕСТНО С ДРУГИМИ ПРОГРАММАМИ,
-НО НЕ ОГРАНИЧИВАЯСЬ ЭТИМИ СЛУЧАЯМИ), НО НЕ ОГРАНИЧИВАЯСЬ ИМИ, ДАЖЕ ЕСЛИ ТАКОЙ
-ВЛАДЕЛЕЦ ИЛИ ДРУГОЕ ЛИЦО БЫЛИ ИЗВЕЩЕНЫ О ВОЗМОЖНОСТИ ТАКИХ УБЫТКОВ И ПОТЕРЬ.
+Р­РўРђ РџР РћР“Р РђРњРњРђ РџР Р•Р”РћРЎРўРђР’Р›Р•РќРђ Р’Р›РђР”Р•Р›Р¬Р¦РђРњР РђР’РўРћР РЎРљРРҐ РџР РђР’ Р/РР›Р Р”Р РЈР“РРњР Р›РР¦РђРњР "РљРђРљ
+РћРќРђ Р•РЎРўР¬" Р‘Р•Р— РљРђРљРћР“Рћ-Р›РР‘Рћ Р’РР”Рђ Р“РђР РђРќРўРР™, Р’Р«Р РђР–Р•РќРќР«РҐ РЇР’РќРћ РР›Р РџРћР”Р РђР—РЈРњР•Р’РђР•РњР«РҐ,
+Р’РљР›Р®Р§РђРЇ Р“РђР РђРќРўРР РљРћРњРњР•Р Р§Р•РЎРљРћР™ Р¦Р•РќРќРћРЎРўР Р РџР РР“РћР”РќРћРЎРўР Р”Р›РЇ РљРћРќРљР Р•РўРќРћР™ Р¦Р•Р›Р, РќРћ РќР•
+РћР“Р РђРќРР§РР’РђРЇРЎР¬ РРњР. РќР Р’Р›РђР”Р•Р›Р•Р¦ РђР’РўРћР РЎРљРРҐ РџР РђР’ Р РќР РћР”РќРћ Р”Р РЈР“РћР• Р›РР¦Рћ, РљРћРўРћР РћР•
+РњРћР–Р•Рў РР—РњР•РќРЇРўР¬ Р/РР›Р РџРћР’РўРћР РќРћ Р РђРЎРџР РћРЎРўР РђРќРЇРўР¬ РџР РћР“Р РђРњРњРЈ, РќР Р’ РљРћР•Рњ РЎР›РЈР§РђР• РќР•
+РќР•РЎРЃРў РћРўР’Р•РўРЎРўР’Р•РќРќРћРЎРўР, Р’РљР›Р®Р§РђРЇ Р›Р®Р‘Р«Р• РћР‘Р©РР•, РЎР›РЈР§РђР™РќР«Р•, РЎРџР•Р¦РРђР›Р¬РќР«Р• РР›Р
+РџРћРЎР›Р•Р”РћР’РђР’РЁРР• РЈР‘Р«РўРљР, РЎР’РЇР—РђРќРќР«Р• РЎ РРЎРџРћР›Р¬Р—РћР’РђРќРР•Рњ РР›Р РџРћРќР•РЎР•РќРќР«Р• Р’РЎР›Р•Р”РЎРўР’РР•
+РќР•Р’РћР—РњРћР–РќРћРЎРўР РРЎРџРћР›Р¬Р—РћР’РђРќРРЇ РџР РћР“Р РђРњРњР« (Р’РљР›Р®Р§РђРЇ РџРћРўР•Р Р Р”РђРќРќР«РҐ, РР›Р Р”РђРќРќР«Р•,
+РЎРўРђР’РЁРР• РќР•Р“РћР”РќР«РњР, РР›Р РЈР‘Р«РўРљР Р/РР›Р РџРћРўР•Р Р Р”РћРҐРћР”РћР’, РџРћРќР•РЎР•РќРќР«Р• РР—-Р—Рђ Р”Р•Р™РЎРўР’РР™
+РўР Р•РўР¬РРҐ Р›РР¦ Р/РР›Р РћРўРљРђР—Рђ РџР РћР“Р РђРњРњР« Р РђР‘РћРўРђРўР¬ РЎРћР’РњР•РЎРўРќРћ РЎ Р”Р РЈР“РРњР РџР РћР“Р РђРњРњРђРњР,
+РќРћ РќР• РћР“Р РђРќРР§РР’РђРЇРЎР¬ Р­РўРРњР РЎР›РЈР§РђРЇРњР), РќРћ РќР• РћР“Р РђРќРР§РР’РђРЇРЎР¬ РРњР, Р”РђР–Р• Р•РЎР›Р РўРђРљРћР™
+Р’Р›РђР”Р•Р›Р•Р¦ РР›Р Р”Р РЈР“РћР• Р›РР¦Рћ Р‘Р«Р›Р РР—Р’Р•Р©Р•РќР« Рћ Р’РћР—РњРћР–РќРћРЎРўР РўРђРљРРҐ РЈР‘Р«РўРљРћР’ Р РџРћРўР•Р Р¬.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
@@ -64,16 +64,16 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "resource.h"
 
 static  CSTR_head head, tail;
-static  Int32     num_lines      = 0,num_fragments0=0,num_fragments1 = 0;
-static  Int32     user_number = 0xFFFFFF+1;
+static  int32_t     num_lines      = 0,num_fragments0=0,num_fragments1 = 0;
+static  int32_t     user_number = 0xFFFFFF+1;
 Word16           wHeightRC      = 0;
 Word16           wLowRC         = CSTR_ERR_NO;
 static  CSTR_line *FragmFirst0=NULL, *FragmLast0=NULL;
 static  CSTR_line *FragmFirst1=NULL, *FragmLast1=NULL;
-static  Int32 FragmMin[2], FragmMax[2];
+static  int32_t FragmMin[2], FragmMax[2];
 //int     mem=0;
 // memory funct
-static void *   cstr_alloc(Word32 len)
+static void *   cstr_alloc(uint32_t len)
     {
     void *ma = malloc(len);
     if( !ma )
@@ -82,11 +82,11 @@ static void *   cstr_alloc(Word32 len)
     //mem+=len;
     return ma;
     }
-static void     cstr_free(void *ptr,Word32 len) { free(ptr);};
-static void *   cstr_realloc(void *ptr,Word32 len) { return realloc(ptr,len);};
-static void * (*my_alloc)(Word32 len)=cstr_alloc;
-static void   (*my_free)(void *,Word32 len)=cstr_free;
-static void * (*my_realloc)(void *,Word32 len)=cstr_realloc;
+static void     cstr_free(void *ptr,uint32_t len) { free(ptr);};
+static void *   cstr_realloc(void *ptr,uint32_t len) { return realloc(ptr,len);};
+static void * (*my_alloc)(uint32_t len)=cstr_alloc;
+static void   (*my_free)(void *,uint32_t len)=cstr_free;
+static void * (*my_realloc)(void *,uint32_t len)=cstr_realloc;
 static Bool32 RecRaster2rst(RecRaster *recr,CSTR_cell  *cell);
 /////////////////////
 // common functions
@@ -157,14 +157,14 @@ return;
 }
 
 
-CSTR_FUNC(Word32)   CSTR_GetReturnCode(void)
+CSTR_FUNC(uint32_t)   CSTR_GetReturnCode(void)
 {
 if( wLowRC == CSTR_ERR_NO )
     return 0;
 return (wHeightRC<<16)|(wLowRC-CSTR_ERR_MIN);
 }
 
-CSTR_FUNC(char*)   CSTR_GetReturnString(Word32 dwError)
+CSTR_FUNC(char*)   CSTR_GetReturnString(uint32_t dwError)
 {
   Word16 rc = (Word16)(dwError & 0xFFFF + CSTR_ERR_MIN);
         static char szBuffer[512];
@@ -183,8 +183,8 @@ CSTR_FUNC(char*)   CSTR_GetReturnString(Word32 dwError)
 //////////////////////////////////
 // alloc / free & access lines to
 //////////////////////////////////
-CSTR_FUNC(CSTR_line)    CSTR_NewLine(Int32  lineno, Int32 version,
-    Int32 container)
+CSTR_FUNC(CSTR_line)    CSTR_NewLine(int32_t  lineno, int32_t version,
+    int32_t container)
 {
 CSTR_head       *line=head.next, *lineins=0, *prev, *next;
 // scan all heads
@@ -252,7 +252,7 @@ return (CSTR_line)line;
 
 
 
-CSTR_FUNC(CSTR_line)    CSTR_NextLine(CSTR_line start, Int32 version)
+CSTR_FUNC(CSTR_line)    CSTR_NextLine(CSTR_line start, int32_t version)
 {
 CSTR_head       *line=(CSTR_head        *)start;
 
@@ -261,7 +261,7 @@ for(line=line->next; line!=&tail && line->version!=version; line=line->next);
 return line!=&tail?(CSTR_line)line:0;
 }
 
-CSTR_FUNC(CSTR_line)    CSTR_FirstLine( Int32 version)
+CSTR_FUNC(CSTR_line)    CSTR_FirstLine( int32_t version)
 {
 return CSTR_NextLine((CSTR_line)&head, version);
 }
@@ -481,7 +481,7 @@ return TRUE;
 
 static Bool32 cstr_CCOM2raster(CCOM_comp *comp, CSTR_cell *cell)
 {
-Int32       len;
+int32_t       len;
 RecRaster   rs;
 
 rs.lnPixWidth   = comp->w;
@@ -512,7 +512,7 @@ if( cell->recRaster )
 return TRUE;
 }
 
-CSTR_FUNC(CSTR_line )   CSTR_GetLineHandle ( Int32 line_no, Int32 version)
+CSTR_FUNC(CSTR_line )   CSTR_GetLineHandle ( int32_t line_no, int32_t version)
 {
 CSTR_head *line = head.next;
 
@@ -526,7 +526,7 @@ for(; line!=&tail; line=line->next)
 return (CSTR_line)0;
 }
 
-CSTR_FUNC(CSTR_line )   CSTR_GetLineFirst ( Int32 fragment_no, Int32 version)
+CSTR_FUNC(CSTR_line )   CSTR_GetLineFirst ( int32_t fragment_no, int32_t version)
 {
 CSTR_head *line;
 
@@ -540,7 +540,7 @@ for(line = head.next; line!=&tail; line=line->next)
 return (CSTR_line)0;
 }
 
-CSTR_FUNC(CSTR_line )   CSTR_GetLineNext (CSTR_line lin, Int32 fragment_no, Int32 version)
+CSTR_FUNC(CSTR_line )   CSTR_GetLineNext (CSTR_line lin, int32_t fragment_no, int32_t version)
 {
 CSTR_head *line;
 
@@ -560,7 +560,7 @@ for(line=line->next; line!=&tail; line=line->next)
 return (CSTR_line)0;
 }
 
-CSTR_FUNC(Int32)    CSTR_GetMaxNumber(void)
+CSTR_FUNC(int32_t)    CSTR_GetMaxNumber(void)
 {
 return num_lines;
 }
@@ -591,7 +591,7 @@ return (CSTR_rast)(&line->last);
 }
 
 
-CSTR_FUNC(CSTR_rast)    CSTR_GetNextRaster (CSTR_rast  curr_raster, Word32 type_raster)
+CSTR_FUNC(CSTR_rast)    CSTR_GetNextRaster (CSTR_rast  curr_raster, uint32_t type_raster)
 {
 CSTR_cell *cell=(CSTR_cell *)curr_raster;
 if( cell==(CSTR_cell *)0 )
@@ -606,7 +606,7 @@ return ( cell->attr.flg&type_raster ) ?
     (CSTR_rast)cell : (CSTR_rast)0;
 }
 
-CSTR_FUNC(CSTR_rast)    CSTR_GetPrevRaster (CSTR_rast  curr_raster, Word32 type_raster)
+CSTR_FUNC(CSTR_rast)    CSTR_GetPrevRaster (CSTR_rast  curr_raster, uint32_t type_raster)
 {
 CSTR_cell *cell=(CSTR_cell *)curr_raster;
 if( cell==(CSTR_cell *)0 )
@@ -621,7 +621,7 @@ return ( cell->attr.flg&type_raster ) ?
     (CSTR_rast)cell : (CSTR_rast)0;
 }
 
-CSTR_FUNC(CSTR_rast)    CSTR_NewRaster (CSTR_line linel, Int32 col, Int32 row, Int32 w)
+CSTR_FUNC(CSTR_rast)    CSTR_NewRaster (CSTR_line linel, int32_t col, int32_t row, int32_t w)
 {
 CSTR_cell *cell, *start, *stop;
 CSTR_head *line = (CSTR_head *)linel;
@@ -852,9 +852,9 @@ return TRUE;
 CSTR_FUNC(Bool32)               CSTR_SetUserAttr (CSTR_rast raster, CCOM_USER_BLOCK  *ubl)
 {
 CCOM_USER_BLOCK  *ub;
-Word32      UserCode = ubl->code;
+uint32_t      UserCode = ubl->code;
 Word8   *   UserData = ubl->data;
-Int32       UserSize = ubl->size;
+int32_t       UserSize = ubl->size;
 CSTR_cell *cell  ;
 if( raster==(CSTR_rast)0 )
     {
@@ -1154,7 +1154,7 @@ comp->scale = scale;
 return TRUE;
 }
 
-CSTR_FUNC(Bool32)               CSTR_GetImage (CSTR_rast  curr_raster, Word8 *out_res, Word32 type_image)
+CSTR_FUNC(Bool32)               CSTR_GetImage (CSTR_rast  curr_raster, Word8 *out_res, uint32_t type_image)
 {
 CSTR_cell   * cell = (CSTR_cell*)curr_raster;
 if( curr_raster==(CSTR_rast)0 )
@@ -1433,7 +1433,7 @@ if( curr_raster==(CSTR_rast)0 )
 return cell->env;
 }
 
-CSTR_FUNC(Int32)     CSTR_NewUserCode (void)
+CSTR_FUNC(int32_t)     CSTR_NewUserCode (void)
 {
 user_number++;
 return user_number;
@@ -1469,7 +1469,7 @@ for(*txt='\0'; c && c!=stop; c=CSTR_GetNextRaster (c,CSTR_f_all))
 return TRUE;
 }
 
-CSTR_FUNC(Bool32)                   CSTR_LineToTxt_Coord (CSTR_line   lin, char *txt, Int32 len)
+CSTR_FUNC(Bool32)                   CSTR_LineToTxt_Coord (CSTR_line   lin, char *txt, int32_t len)
 {
 CSTR_rast       start = CSTR_GetFirstRaster (lin),
                 stop = CSTR_GetLastRaster (lin), c;
@@ -1497,7 +1497,7 @@ for(; c && c!=stop; c=CSTR_GetNextRaster (c,CSTR_f_all))
             strcpy(buf,"~");
         else
             strcpy(buf,vers.Alt[0].Code);
-        if( (Int32)(strlen(txt)+strlen(buf))<len )
+        if( (int32_t)(strlen(txt)+strlen(buf))<len )
             strcat(txt,buf);
         else
             return FALSE;
@@ -1507,10 +1507,10 @@ for(; c && c!=stop; c=CSTR_GetNextRaster (c,CSTR_f_all))
 return TRUE;
 }
 
-CSTR_FUNC(Int32)                   CSTR_GetLength (CSTR_line   lin)
+CSTR_FUNC(int32_t)                   CSTR_GetLength (CSTR_line   lin)
 {
 CSTR_rast       c;
-Int32           len;
+int32_t           len;
 UniVersions     vers;
 CSTR_rast_attr  attr;
 
@@ -1793,14 +1793,14 @@ c->complist = (CSTR_cell*)complist;
 return TRUE;
 }
 
-CSTR_FUNC(CSTR_rast) CSTR_compose_Cell(Int32 n,CSTR_rast *clist, Int32 nIncline, Bool32 NeedDel)
+CSTR_FUNC(CSTR_rast) CSTR_compose_Cell(int32_t n,CSTR_rast *clist, int32_t nIncline, Bool32 NeedDel)
 {
 CSTR_rast_attr attr;
 Int16   minrow, mincol, maxcol, maxrow;
 RecRaster   rst;
 CCOM_comp   *comp;
 CSTR_cell   *cell;
-Int32      i;
+int32_t      i;
 CSTR_line line_no;
 CSTR_rast   c;
 
@@ -2056,7 +2056,7 @@ return TRUE;
 }
 
 
-CSTR_FUNC(Bool32)       CSTR_SortFragm( Int32 version)
+CSTR_FUNC(Bool32)       CSTR_SortFragm( int32_t version)
 {
 CSTR_head       *line;
 
@@ -2122,12 +2122,12 @@ else
 return TRUE;
 }
 
-CSTR_FUNC(Int32)    CSTR_GetMaxFragment(Int32 version)
+CSTR_FUNC(int32_t)    CSTR_GetMaxFragment(int32_t version)
 {
 return                version ? num_fragments1 : num_fragments0   ;
 }
 
-CSTR_FUNC(CSTR_line)    CSTR_FirstLineFragm( Int32 fragm, Int32 version )
+CSTR_FUNC(CSTR_line)    CSTR_FirstLineFragm( int32_t fragm, int32_t version )
 {
 if( version!=1 && version!=0 )
     {
@@ -2187,143 +2187,143 @@ return TRUE;
 }
 
 
-CSTR_FUNC(Bool32) CSTR_GetExportData(Word32 dwType, void * pData)
+CSTR_FUNC(Bool32) CSTR_GetExportData(uint32_t dwType, void * pData)
 {
         Bool32 rc = TRUE;
-    Int32  vers = CSTR_VERSION_CODE;
-#define EXPORT(name) *(Word32*)(pData)=(Word32)name;
+    int32_t  vers = CSTR_VERSION_CODE;
+#define EXPORT(name) *(uint32_t*)(pData)=(uint32_t)name;
         wLowRC = CSTR_ERR_NO;
         switch(dwType)
         {
-    case    CSTR_FNNEWLINE: //      Образовать новую строку
+    case    CSTR_FNNEWLINE: //      РћР±СЂР°Р·РѕРІР°С‚СЊ РЅРѕРІСѓСЋ СЃС‚СЂРѕРєСѓ
         EXPORT(CSTR_NewLine );
         break;
-    case    CSTR_FNCLEARLINE: // Удалить все растры из строки
+    case    CSTR_FNCLEARLINE: // РЈРґР°Р»РёС‚СЊ РІСЃРµ СЂР°СЃС‚СЂС‹ РёР· СЃС‚СЂРѕРєРё
         EXPORT(CSTR_ClearLine);
         break;
-    case    CSTR_FNDELLINE: //      Удалить строку
+    case    CSTR_FNDELLINE: //      РЈРґР°Р»РёС‚СЊ СЃС‚СЂРѕРєСѓ
         EXPORT(CSTR_DeleteLine );
         break;
-    case    CSTR_FNSETSTRATTR: //   установить атрибуты текущей строки
+    case    CSTR_FNSETSTRATTR: //   СѓСЃС‚Р°РЅРѕРІРёС‚СЊ Р°С‚СЂРёР±СѓС‚С‹ С‚РµРєСѓС‰РµР№ СЃС‚СЂРѕРєРё
         EXPORT(CSTR_SetLineAttr);
         break;
-    case    CSTR_FNGETSTRATTR: //   получить атрибуты текущей строки
+    case    CSTR_FNGETSTRATTR: //   РїРѕР»СѓС‡РёС‚СЊ Р°С‚СЂРёР±СѓС‚С‹ С‚РµРєСѓС‰РµР№ СЃС‚СЂРѕРєРё
         EXPORT(CSTR_GetLineAttr);
         break;
-    case    CSTR_FNGETFIRST: //     дать хэндл первого (фиктивного) растра в строке
+    case    CSTR_FNGETFIRST: //     РґР°С‚СЊ С…СЌРЅРґР» РїРµСЂРІРѕРіРѕ (С„РёРєС‚РёРІРЅРѕРіРѕ) СЂР°СЃС‚СЂР° РІ СЃС‚СЂРѕРєРµ
         EXPORT(CSTR_GetFirstRaster );
         break;
-    case    CSTR_FNGETLAST: //      дать хэндл последнего (фиктивного) растра в строке
+    case    CSTR_FNGETLAST: //      РґР°С‚СЊ С…СЌРЅРґР» РїРѕСЃР»РµРґРЅРµРіРѕ (С„РёРєС‚РёРІРЅРѕРіРѕ) СЂР°СЃС‚СЂР° РІ СЃС‚СЂРѕРєРµ
         EXPORT(CSTR_GetLastRaster);
         break;
-    case    CSTR_FNGETNEXT: //      дать хэндл следующего растра
+    case    CSTR_FNGETNEXT: //      РґР°С‚СЊ С…СЌРЅРґР» СЃР»РµРґСѓСЋС‰РµРіРѕ СЂР°СЃС‚СЂР°
         EXPORT(CSTR_GetNextRaster);
         break;
-    case    CSTR_FNGETPREV: //      дать хэндл предыдущего растра
+    case    CSTR_FNGETPREV: //      РґР°С‚СЊ С…СЌРЅРґР» РїСЂРµРґС‹РґСѓС‰РµРіРѕ СЂР°СЃС‚СЂР°
         EXPORT(CSTR_GetPrevRaster);
         break;
-    case    CSTR_FNGETLINE: //      дать хэндл строки, сопряжённой с растром
+    case    CSTR_FNGETLINE: //      РґР°С‚СЊ С…СЌРЅРґР» СЃС‚СЂРѕРєРё, СЃРѕРїСЂСЏР¶С‘РЅРЅРѕР№ СЃ СЂР°СЃС‚СЂРѕРј
         wLowRC = CSTR_ERR_NOTIMPLEMENT;
                 rc = FALSE;
         break;
-    case    CSTR_FNSTORELINE: //    придать растру строку
+    case    CSTR_FNSTORELINE: //    РїСЂРёРґР°С‚СЊ СЂР°СЃС‚СЂСѓ СЃС‚СЂРѕРєСѓ
         wLowRC = CSTR_ERR_NOTIMPLEMENT;
                 rc = FALSE;
         break;
-    case    CSTR_FNNEWRASTER: //    создать новый растр в текущей строке
+    case    CSTR_FNNEWRASTER: //    СЃРѕР·РґР°С‚СЊ РЅРѕРІС‹Р№ СЂР°СЃС‚СЂ РІ С‚РµРєСѓС‰РµР№ СЃС‚СЂРѕРєРµ
         EXPORT(CSTR_NewRaster );
         break;
-    case    CSTR_FNSTORERASTER: //  запомнить растр как изображение
+    case    CSTR_FNSTORERASTER: //  Р·Р°РїРѕРјРЅРёС‚СЊ СЂР°СЃС‚СЂ РєР°Рє РёР·РѕР±СЂР°Р¶РµРЅРёРµ
         EXPORT(CSTR_StoreRaster );
         break;
-    case    CSTR_FNSTORECOMP: // запомнить растр как компоненту с интервальным представлением
+    case    CSTR_FNSTORECOMP: // Р·Р°РїРѕРјРЅРёС‚СЊ СЂР°СЃС‚СЂ РєР°Рє РєРѕРјРїРѕРЅРµРЅС‚Сѓ СЃ РёРЅС‚РµСЂРІР°Р»СЊРЅС‹Рј РїСЂРµРґСЃС‚Р°РІР»РµРЅРёРµРј
         EXPORT(CSTR_StoreComp  );
         break;
-    case    CSTR_FNSTORECOLLECTION: // запомнить коллекцию
+    case    CSTR_FNSTORECOLLECTION: // Р·Р°РїРѕРјРЅРёС‚СЊ РєРѕР»Р»РµРєС†РёСЋ
         EXPORT(CSTR_StoreCollection );
         break;
-    case    CSTR_FNDELRASTER: //    удалить растр
+    case    CSTR_FNDELRASTER: //    СѓРґР°Р»РёС‚СЊ СЂР°СЃС‚СЂ
         EXPORT(CSTR_DelRaster );
         break;
-    case    CSTR_FNVERIFY: //       отсортировать список строки
+    case    CSTR_FNVERIFY: //       РѕС‚СЃРѕСЂС‚РёСЂРѕРІР°С‚СЊ СЃРїРёСЃРѕРє СЃС‚СЂРѕРєРё
         EXPORT(CSTR_VerifyLine );
         break;
-    case    CSTR_FNGETRASTER: //    получить изображение (растр или интервалы)
+    case    CSTR_FNGETRASTER: //    РїРѕР»СѓС‡РёС‚СЊ РёР·РѕР±СЂР°Р¶РµРЅРёРµ (СЂР°СЃС‚СЂ РёР»Рё РёРЅС‚РµСЂРІР°Р»С‹)
         EXPORT(CSTR_GetImage );
         break;
-    case    CSTR_FNGETATTR: //      получить атрибуты растра
+    case    CSTR_FNGETATTR: //      РїРѕР»СѓС‡РёС‚СЊ Р°С‚СЂРёР±СѓС‚С‹ СЂР°СЃС‚СЂР°
         EXPORT(CSTR_GetAttr );
         break;
-    case    CSTR_FNGETCOLLECT: //   получить коллекцию
+    case    CSTR_FNGETCOLLECT: //   РїРѕР»СѓС‡РёС‚СЊ РєРѕР»Р»РµРєС†РёСЋ
         EXPORT(CSTR_GetCollection );
         break;
-    case    CSTR_FNSETUSER: //      записать в растр пользовательские данные
+    case    CSTR_FNSETUSER: //      Р·Р°РїРёСЃР°С‚СЊ РІ СЂР°СЃС‚СЂ РїРѕР»СЊР·РѕРІР°С‚РµР»СЊСЃРєРёРµ РґР°РЅРЅС‹Рµ
         EXPORT(CSTR_SetUserAttr );
         break;
-    case    CSTR_FNGETUSER: //      прочитать из растра пользовательские данные
+    case    CSTR_FNGETUSER: //      РїСЂРѕС‡РёС‚Р°С‚СЊ РёР· СЂР°СЃС‚СЂР° РїРѕР»СЊР·РѕРІР°С‚РµР»СЊСЃРєРёРµ РґР°РЅРЅС‹Рµ
         EXPORT(CSTR_GetUserAttr );
         break;
-    case    CSTR_FNSETATTR: //      записать атрибуты растра
+    case    CSTR_FNSETATTR: //      Р·Р°РїРёСЃР°С‚СЊ Р°С‚СЂРёР±СѓС‚С‹ СЂР°СЃС‚СЂР°
         EXPORT(CSTR_SetAttr );
         break;
-    case    CSTR_FNCOPYLINE: //     скопировать содержимое строки
+    case    CSTR_FNCOPYLINE: //     СЃРєРѕРїРёСЂРѕРІР°С‚СЊ СЃРѕРґРµСЂР¶РёРјРѕРµ СЃС‚СЂРѕРєРё
         EXPORT(CSTR_CopyLine );
         break;
-    case    CSTR_FNGETLNHND: //     дать хендл строки по номеру и версии
+    case    CSTR_FNGETLNHND: //     РґР°С‚СЊ С…РµРЅРґР» СЃС‚СЂРѕРєРё РїРѕ РЅРѕРјРµСЂСѓ Рё РІРµСЂСЃРёРё
         EXPORT(CSTR_GetLineHandle );
         break;
-    case    CSTR_FNNEWUSERCODE: //  дать свободный код для USER cod-a
+    case    CSTR_FNNEWUSERCODE: //  РґР°С‚СЊ СЃРІРѕР±РѕРґРЅС‹Р№ РєРѕРґ РґР»СЏ USER cod-a
         EXPORT(CSTR_NewUserCode);
         break;
-    case    CSTR_FNVERSION:     //      дать версию библиотеки
+    case    CSTR_FNVERSION:     //      РґР°С‚СЊ РІРµСЂСЃРёСЋ Р±РёР±Р»РёРѕС‚РµРєРё
         EXPORT(vers);
         break;
-    case    CSTR_FNTOTXT:       //  получить текстовый обрах строки
+    case    CSTR_FNTOTXT:       //  РїРѕР»СѓС‡РёС‚СЊ С‚РµРєСЃС‚РѕРІС‹Р№ РѕР±СЂР°С… СЃС‚СЂРѕРєРё
         EXPORT(CSTR_LineToTxt );
         break;
-    case    CSTR_FNINSRST:      //  вставить растр после текущего
+    case    CSTR_FNINSRST:      //  РІСЃС‚Р°РІРёС‚СЊ СЂР°СЃС‚СЂ РїРѕСЃР»Рµ С‚РµРєСѓС‰РµРіРѕ
         EXPORT(CSTR_InsertRaster  );
         break;
-    case    CSTR_FNMAXNUM:      //  наибольший номер строки в контейнере
+    case    CSTR_FNMAXNUM:      //  РЅР°РёР±РѕР»СЊС€РёР№ РЅРѕРјРµСЂ СЃС‚СЂРѕРєРё РІ РєРѕРЅС‚РµР№РЅРµСЂРµ
         EXPORT(CSTR_GetMaxNumber );
         break;
-    case    CSTR_FNFIRSTLN:     //   первая строка указанной версии
+    case    CSTR_FNFIRSTLN:     //   РїРµСЂРІР°СЏ СЃС‚СЂРѕРєР° СѓРєР°Р·Р°РЅРЅРѕР№ РІРµСЂСЃРёРё
         EXPORT(CSTR_FirstLine );
         break;
-    case    CSTR_FNNEXTTLN:     //   следующая строка указанной версии
+    case    CSTR_FNNEXTTLN:     //   СЃР»РµРґСѓСЋС‰Р°СЏ СЃС‚СЂРѕРєР° СѓРєР°Р·Р°РЅРЅРѕР№ РІРµСЂСЃРёРё
         EXPORT(CSTR_NextLine );
         break;
-    case    CSTR_FNDELALL:      //  удалить все строки
+    case    CSTR_FNDELALL:      //  СѓРґР°Р»РёС‚СЊ РІСЃРµ СЃС‚СЂРѕРєРё
         EXPORT(CSTR_DeleteAll);
         break;
-    case    CSTR_FNNEXT:        // следующий нефиктивный растр
+    case    CSTR_FNNEXT:        // СЃР»РµРґСѓСЋС‰РёР№ РЅРµС„РёРєС‚РёРІРЅС‹Р№ СЂР°СЃС‚СЂ
         EXPORT(CSTR_GetNext);
         break;
-    case    CSTR_FNPREV:        // предыдущий нефиктивный растр
+    case    CSTR_FNPREV:        // РїСЂРµРґС‹РґСѓС‰РёР№ РЅРµС„РёРєС‚РёРІРЅС‹Р№ СЂР°СЃС‚СЂ
         EXPORT(CSTR_GetPrev);
         break;
-    case    CSTR_FNSWAP :       // обменять местами 2 растра
+    case    CSTR_FNSWAP :       // РѕР±РјРµРЅСЏС‚СЊ РјРµСЃС‚Р°РјРё 2 СЂР°СЃС‚СЂР°
         EXPORT(CSTR_SwapRasters);
         break;
-    case    CSTR_FNDELSAVE:     // удалить с сохранением
+    case    CSTR_FNDELSAVE:     // СѓРґР°Р»РёС‚СЊ СЃ СЃРѕС…СЂР°РЅРµРЅРёРµРј
         EXPORT(CSTR_DelSaveRaster);
         break;
-    case    CSTR_FNRESTRAST:    // восстановить
+    case    CSTR_FNRESTRAST:    // РІРѕСЃСЃС‚Р°РЅРѕРІРёС‚СЊ
         EXPORT(CSTR_RestoreRaster);
         break;
-    case    CSTR_FNCOMPOSE  :   // склеить массив растров
+    case    CSTR_FNCOMPOSE  :   // СЃРєР»РµРёС‚СЊ РјР°СЃСЃРёРІ СЂР°СЃС‚СЂРѕРІ
         EXPORT(CSTR_compose_Cell);
         break;
-    case    CSTR_KILLIM :       // убить образ в растре
+    case    CSTR_KILLIM :       // СѓР±РёС‚СЊ РѕР±СЂР°Р· РІ СЂР°СЃС‚СЂРµ
         EXPORT(CSTR_KillImage);
         break;
-    case      CSTR_FNGETCOMP:  // дать компоненту
+    case      CSTR_FNGETCOMP:  // РґР°С‚СЊ РєРѕРјРїРѕРЅРµРЅС‚Сѓ
         EXPORT(CSTR_GetComp );
         break;
-	case    CSTR_FNTOTXT_COORD: //  получить текстовый обрах строки с координатами
+	case    CSTR_FNTOTXT_COORD: //  РїРѕР»СѓС‡РёС‚СЊ С‚РµРєСЃС‚РѕРІС‹Р№ РѕР±СЂР°С… СЃС‚СЂРѕРєРё СЃ РєРѕРѕСЂРґРёРЅР°С‚Р°РјРё
         EXPORT(CSTR_LineToTxt_Coord );
         break;
-    case    CSTR_GETLENGTH:                        // длина нужного текстового буфера
+    case    CSTR_GETLENGTH:                        // РґР»РёРЅР° РЅСѓР¶РЅРѕРіРѕ С‚РµРєСЃС‚РѕРІРѕРіРѕ Р±СѓС„РµСЂР°
         EXPORT(CSTR_GetLength);
         break;
     case    CSTR_FNSAVE:       //
@@ -2335,76 +2335,76 @@ CSTR_FUNC(Bool32) CSTR_GetExportData(Word32 dwType, void * pData)
     case    CSTR_FNSETLIST :       //
         EXPORT(CSTR_SetComplist);
         break;
-        case    CSTR_FNGETCOLLECTIONUNI :       // убить образ в растре
+        case    CSTR_FNGETCOLLECTIONUNI :       // СѓР±РёС‚СЊ РѕР±СЂР°Р· РІ СЂР°СЃС‚СЂРµ
         EXPORT(CSTR_GetCollectionUni );
         break;
-        case    CSTR_FNSTORECOLLECTIONUNI:       // убить образ в растре
+        case    CSTR_FNSTORECOLLECTIONUNI:       // СѓР±РёС‚СЊ РѕР±СЂР°Р· РІ СЂР°СЃС‚СЂРµ
         EXPORT(CSTR_StoreCollectionUni);
         break;
-    case    CSTR_FNGETCONTAINER:    // дать хэндл контейнера строки
+    case    CSTR_FNGETCONTAINER:    // РґР°С‚СЊ С…СЌРЅРґР» РєРѕРЅС‚РµР№РЅРµСЂР° СЃС‚СЂРѕРєРё
         EXPORT(CSTR_GetContainer);
         break;
-    case     CSTR_FNSTORESCALE:     // запомнить код масштабирования
+    case     CSTR_FNSTORESCALE:     // Р·Р°РїРѕРјРЅРёС‚СЊ РєРѕРґ РјР°СЃС€С‚Р°Р±РёСЂРѕРІР°РЅРёСЏ
         EXPORT(CSTR_StoreScale);
         break;
-    case     CSTR_FNGETLINEFIRST:     // дать хэндл первой строки данных фрагмента и версии
+    case     CSTR_FNGETLINEFIRST:     // РґР°С‚СЊ С…СЌРЅРґР» РїРµСЂРІРѕР№ СЃС‚СЂРѕРєРё РґР°РЅРЅС‹С… С„СЂР°РіРјРµРЅС‚Р° Рё РІРµСЂСЃРёРё
         EXPORT(CSTR_GetLineFirst);
         break;
-    case     CSTR_FNGETLINENEXT:      // дать хэндл следующей строки данных фрагмента и версии
+    case     CSTR_FNGETLINENEXT:      // РґР°С‚СЊ С…СЌРЅРґР» СЃР»РµРґСѓСЋС‰РµР№ СЃС‚СЂРѕРєРё РґР°РЅРЅС‹С… С„СЂР°РіРјРµРЅС‚Р° Рё РІРµСЂСЃРёРё
         EXPORT(CSTR_GetLineNext);
         break;
-    case    CSTR_FNGETRASTERLINE:     // дать хэндл строки растра
+    case    CSTR_FNGETRASTERLINE:     // РґР°С‚СЊ С…СЌРЅРґР» СЃС‚СЂРѕРєРё СЂР°СЃС‚СЂР°
         EXPORT(CSTR_GetRasterLine );
         break;
-    case    CSTR_FNSETDUP:            // запомнить хэндл сопряжённого растра
+    case    CSTR_FNSETDUP:            // Р·Р°РїРѕРјРЅРёС‚СЊ С…СЌРЅРґР» СЃРѕРїСЂСЏР¶С‘РЅРЅРѕРіРѕ СЂР°СЃС‚СЂР°
         EXPORT(CSTR_SetDup );
         break;
-    case    CSTR_FNSETDUPEND:         // запомнить хэндл дополнительного сопряжённого растра
+    case    CSTR_FNSETDUPEND:         // Р·Р°РїРѕРјРЅРёС‚СЊ С…СЌРЅРґР» РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕРіРѕ СЃРѕРїСЂСЏР¶С‘РЅРЅРѕРіРѕ СЂР°СЃС‚СЂР°
         EXPORT(CSTR_SetDupEnd );
         break;
-    case    CSTR_FNGETDUP:            // дать хэндл сопряжённого растра
+    case    CSTR_FNGETDUP:            // РґР°С‚СЊ С…СЌРЅРґР» СЃРѕРїСЂСЏР¶С‘РЅРЅРѕРіРѕ СЂР°СЃС‚СЂР°
         EXPORT(CSTR_GetDup );
         break;
-    case    CSTR_FNGETDUPEND:         // дать хэндл дополнительного сопряжённого растра
+    case    CSTR_FNGETDUPEND:         // РґР°С‚СЊ С…СЌРЅРґР» РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕРіРѕ СЃРѕРїСЂСЏР¶С‘РЅРЅРѕРіРѕ СЂР°СЃС‚СЂР°
         EXPORT(CSTR_GetDupEnd );
         break;
-    case    CSTR_FNPACK:              // удалить дублирующую информацию
+    case    CSTR_FNPACK:              // СѓРґР°Р»РёС‚СЊ РґСѓР±Р»РёСЂСѓСЋС‰СѓСЋ РёРЅС„РѕСЂРјР°С†РёСЋ
         EXPORT(CSTR_PackLine);
         break;
-    case    CSTR_FNUNPACK:            // восстановить дублирующую информацию
+    case    CSTR_FNUNPACK:            // РІРѕСЃСЃС‚Р°РЅРѕРІРёС‚СЊ РґСѓР±Р»РёСЂСѓСЋС‰СѓСЋ РёРЅС„РѕСЂРјР°С†РёСЋ
         EXPORT(CSTR_UnpackLine);
         break;
-    case      CSTR_FNSORTFRAGM:  // отсортировать по фрагментам
+    case      CSTR_FNSORTFRAGM:  // РѕС‚СЃРѕСЂС‚РёСЂРѕРІР°С‚СЊ РїРѕ С„СЂР°РіРјРµРЅС‚Р°Рј
         EXPORT(CSTR_SortFragm);
         break;
-    case      CSTR_FNFIRSTLINEFRAGM:  // первая во фрагменте
+    case      CSTR_FNFIRSTLINEFRAGM:  // РїРµСЂРІР°СЏ РІРѕ С„СЂР°РіРјРµРЅС‚Рµ
         EXPORT(CSTR_FirstLineFragm);
         break;
-    case      CSTR_FNNEXTLINEFRAGM:  // следующая по фрагменту
+    case      CSTR_FNNEXTLINEFRAGM:  // СЃР»РµРґСѓСЋС‰Р°СЏ РїРѕ С„СЂР°РіРјРµРЅС‚Сѓ
         EXPORT(CSTR_NextLineFragm);
         break;
-    case    CSTR_FNSTORECOMPORIGINAL: // запомнить компоненту (для оригинального контейнера)
+    case    CSTR_FNSTORECOMPORIGINAL: // Р·Р°РїРѕРјРЅРёС‚СЊ РєРѕРјРїРѕРЅРµРЅС‚Сѓ (РґР»СЏ РѕСЂРёРіРёРЅР°Р»СЊРЅРѕРіРѕ РєРѕРЅС‚РµР№РЅРµСЂР°)
         EXPORT(CSTR_StoreCompOriginal);
         break;
-    case    CSTR_INSERTRASTERDOWN:     // вставить ссылку вниз
+    case    CSTR_INSERTRASTERDOWN:     // РІСЃС‚Р°РІРёС‚СЊ СЃСЃС‹Р»РєСѓ РІРЅРёР·
         EXPORT(CSTR_InsertRasterDown);
         break;
-        case    CSTR_COPYRASTER:                        // скопировать содержимое растра
+        case    CSTR_COPYRASTER:                        // СЃРєРѕРїРёСЂРѕРІР°С‚СЊ СЃРѕРґРµСЂР¶РёРјРѕРµ СЂР°СЃС‚СЂР°
         EXPORT(CSTR_CopyRaster);
         break;
-        case    CSTR_DELETELOOPS:                       // удалить обходные пути
+        case    CSTR_DELETELOOPS:                       // СѓРґР°Р»РёС‚СЊ РѕР±С…РѕРґРЅС‹Рµ РїСѓС‚Рё
         EXPORT(CSTR_DeleteLoops);
         break;
-        case    CSTR_GETNEXTDOWN:                       // ссылка на петлю вперёд
+        case    CSTR_GETNEXTDOWN:                       // СЃСЃС‹Р»РєР° РЅР° РїРµС‚Р»СЋ РІРїРµСЂС‘Рґ
         EXPORT(CSTR_GetNextDown);
         break;
-        case    CSTR_GETPREVDOWN:                       // ссылка на петлю назад
+        case    CSTR_GETPREVDOWN:                       // СЃСЃС‹Р»РєР° РЅР° РїРµС‚Р»СЋ РЅР°Р·Р°Рґ
         EXPORT(CSTR_GetPrevDown);
         break;
-        case    CSTR_GETNEXTUP:                        // ссылка из петли вперёд
+        case    CSTR_GETNEXTUP:                        // СЃСЃС‹Р»РєР° РёР· РїРµС‚Р»Рё РІРїРµСЂС‘Рґ
         EXPORT(CSTR_GetNextUp);
         break;
-        case    CSTR_GETPREVUP:                        // ссылка из петли назад
+        case    CSTR_GETPREVUP:                        // СЃСЃС‹Р»РєР° РёР· РїРµС‚Р»Рё РЅР°Р·Р°Рґ
         EXPORT(CSTR_GetPrevUp);
         break;
     default:
@@ -2416,7 +2416,7 @@ CSTR_FUNC(Bool32) CSTR_GetExportData(Word32 dwType, void * pData)
 return rc;
 }
 
-CSTR_FUNC(Bool32) CSTR_SetImportData(Word32 dwType, void * pData)
+CSTR_FUNC(Bool32) CSTR_SetImportData(uint32_t dwType, void * pData)
 {
 
         wLowRC = CSTR_ERR_NO;

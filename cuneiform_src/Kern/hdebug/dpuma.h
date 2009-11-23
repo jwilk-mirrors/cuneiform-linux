@@ -2,33 +2,33 @@
 Copyright (c) 1993-2008, Cognitive Technologies
 All rights reserved.
 
-Разрешается повторное распространение и использование как в виде исходного кода,
-так и в двоичной форме, с изменениями или без, при соблюдении следующих условий:
+Р Р°Р·СЂРµС€Р°РµС‚СЃСЏ РїРѕРІС‚РѕСЂРЅРѕРµ СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРµ Рё РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ РєР°Рє РІ РІРёРґРµ РёСЃС…РѕРґРЅРѕРіРѕ РєРѕРґР°,
+С‚Р°Рє Рё РІ РґРІРѕРёС‡РЅРѕР№ С„РѕСЂРјРµ, СЃ РёР·РјРµРЅРµРЅРёСЏРјРё РёР»Рё Р±РµР·, РїСЂРё СЃРѕР±Р»СЋРґРµРЅРёРё СЃР»РµРґСѓСЋС‰РёС… СѓСЃР»РѕРІРёР№:
 
-      * При повторном распространении исходного кода должны оставаться указанное
-        выше уведомление об авторском праве, этот список условий и последующий
-        отказ от гарантий.
-      * При повторном распространении двоичного кода в документации и/или в
-        других материалах, поставляемых при распространении, должны сохраняться
-        указанная выше информация об авторском праве, этот список условий и
-        последующий отказ от гарантий.
-      * Ни название Cognitive Technologies, ни имена ее сотрудников не могут
-        быть использованы в качестве средства поддержки и/или продвижения
-        продуктов, основанных на этом ПО, без предварительного письменного
-        разрешения.
+      * РџСЂРё РїРѕРІС‚РѕСЂРЅРѕРј СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё РёСЃС…РѕРґРЅРѕРіРѕ РєРѕРґР° РґРѕР»Р¶РЅС‹ РѕСЃС‚Р°РІР°С‚СЊСЃСЏ СѓРєР°Р·Р°РЅРЅРѕРµ
+        РІС‹С€Рµ СѓРІРµРґРѕРјР»РµРЅРёРµ РѕР± Р°РІС‚РѕСЂСЃРєРѕРј РїСЂР°РІРµ, СЌС‚РѕС‚ СЃРїРёСЃРѕРє СѓСЃР»РѕРІРёР№ Рё РїРѕСЃР»РµРґСѓСЋС‰РёР№
+        РѕС‚РєР°Р· РѕС‚ РіР°СЂР°РЅС‚РёР№.
+      * РџСЂРё РїРѕРІС‚РѕСЂРЅРѕРј СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё РґРІРѕРёС‡РЅРѕРіРѕ РєРѕРґР° РІ РґРѕРєСѓРјРµРЅС‚Р°С†РёРё Рё/РёР»Рё РІ
+        РґСЂСѓРіРёС… РјР°С‚РµСЂРёР°Р»Р°С…, РїРѕСЃС‚Р°РІР»СЏРµРјС‹С… РїСЂРё СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё, РґРѕР»Р¶РЅС‹ СЃРѕС…СЂР°РЅСЏС‚СЊСЃСЏ
+        СѓРєР°Р·Р°РЅРЅР°СЏ РІС‹С€Рµ РёРЅС„РѕСЂРјР°С†РёСЏ РѕР± Р°РІС‚РѕСЂСЃРєРѕРј РїСЂР°РІРµ, СЌС‚РѕС‚ СЃРїРёСЃРѕРє СѓСЃР»РѕРІРёР№ Рё
+        РїРѕСЃР»РµРґСѓСЋС‰РёР№ РѕС‚РєР°Р· РѕС‚ РіР°СЂР°РЅС‚РёР№.
+      * РќРё РЅР°Р·РІР°РЅРёРµ Cognitive Technologies, РЅРё РёРјРµРЅР° РµРµ СЃРѕС‚СЂСѓРґРЅРёРєРѕРІ РЅРµ РјРѕРіСѓС‚
+        Р±С‹С‚СЊ РёСЃРїРѕР»СЊР·РѕРІР°РЅС‹ РІ РєР°С‡РµСЃС‚РІРµ СЃСЂРµРґСЃС‚РІР° РїРѕРґРґРµСЂР¶РєРё Рё/РёР»Рё РїСЂРѕРґРІРёР¶РµРЅРёСЏ
+        РїСЂРѕРґСѓРєС‚РѕРІ, РѕСЃРЅРѕРІР°РЅРЅС‹С… РЅР° СЌС‚РѕРј РџРћ, Р±РµР· РїСЂРµРґРІР°СЂРёС‚РµР»СЊРЅРѕРіРѕ РїРёСЃСЊРјРµРЅРЅРѕРіРѕ
+        СЂР°Р·СЂРµС€РµРЅРёСЏ.
 
-ЭТА ПРОГРАММА ПРЕДОСТАВЛЕНА ВЛАДЕЛЬЦАМИ АВТОРСКИХ ПРАВ И/ИЛИ ДРУГИМИ ЛИЦАМИ "КАК
-ОНА ЕСТЬ" БЕЗ КАКОГО-ЛИБО ВИДА ГАРАНТИЙ, ВЫРАЖЕННЫХ ЯВНО ИЛИ ПОДРАЗУМЕВАЕМЫХ,
-ВКЛЮЧАЯ ГАРАНТИИ КОММЕРЧЕСКОЙ ЦЕННОСТИ И ПРИГОДНОСТИ ДЛЯ КОНКРЕТНОЙ ЦЕЛИ, НО НЕ
-ОГРАНИЧИВАЯСЬ ИМИ. НИ ВЛАДЕЛЕЦ АВТОРСКИХ ПРАВ И НИ ОДНО ДРУГОЕ ЛИЦО, КОТОРОЕ
-МОЖЕТ ИЗМЕНЯТЬ И/ИЛИ ПОВТОРНО РАСПРОСТРАНЯТЬ ПРОГРАММУ, НИ В КОЕМ СЛУЧАЕ НЕ
-НЕСЁТ ОТВЕТСТВЕННОСТИ, ВКЛЮЧАЯ ЛЮБЫЕ ОБЩИЕ, СЛУЧАЙНЫЕ, СПЕЦИАЛЬНЫЕ ИЛИ
-ПОСЛЕДОВАВШИЕ УБЫТКИ, СВЯЗАННЫЕ С ИСПОЛЬЗОВАНИЕМ ИЛИ ПОНЕСЕННЫЕ ВСЛЕДСТВИЕ
-НЕВОЗМОЖНОСТИ ИСПОЛЬЗОВАНИЯ ПРОГРАММЫ (ВКЛЮЧАЯ ПОТЕРИ ДАННЫХ, ИЛИ ДАННЫЕ,
-СТАВШИЕ НЕГОДНЫМИ, ИЛИ УБЫТКИ И/ИЛИ ПОТЕРИ ДОХОДОВ, ПОНЕСЕННЫЕ ИЗ-ЗА ДЕЙСТВИЙ
-ТРЕТЬИХ ЛИЦ И/ИЛИ ОТКАЗА ПРОГРАММЫ РАБОТАТЬ СОВМЕСТНО С ДРУГИМИ ПРОГРАММАМИ,
-НО НЕ ОГРАНИЧИВАЯСЬ ЭТИМИ СЛУЧАЯМИ), НО НЕ ОГРАНИЧИВАЯСЬ ИМИ, ДАЖЕ ЕСЛИ ТАКОЙ
-ВЛАДЕЛЕЦ ИЛИ ДРУГОЕ ЛИЦО БЫЛИ ИЗВЕЩЕНЫ О ВОЗМОЖНОСТИ ТАКИХ УБЫТКОВ И ПОТЕРЬ.
+Р­РўРђ РџР РћР“Р РђРњРњРђ РџР Р•Р”РћРЎРўРђР’Р›Р•РќРђ Р’Р›РђР”Р•Р›Р¬Р¦РђРњР РђР’РўРћР РЎРљРРҐ РџР РђР’ Р/РР›Р Р”Р РЈР“РРњР Р›РР¦РђРњР "РљРђРљ
+РћРќРђ Р•РЎРўР¬" Р‘Р•Р— РљРђРљРћР“Рћ-Р›РР‘Рћ Р’РР”Рђ Р“РђР РђРќРўРР™, Р’Р«Р РђР–Р•РќРќР«РҐ РЇР’РќРћ РР›Р РџРћР”Р РђР—РЈРњР•Р’РђР•РњР«РҐ,
+Р’РљР›Р®Р§РђРЇ Р“РђР РђРќРўРР РљРћРњРњР•Р Р§Р•РЎРљРћР™ Р¦Р•РќРќРћРЎРўР Р РџР РР“РћР”РќРћРЎРўР Р”Р›РЇ РљРћРќРљР Р•РўРќРћР™ Р¦Р•Р›Р, РќРћ РќР•
+РћР“Р РђРќРР§РР’РђРЇРЎР¬ РРњР. РќР Р’Р›РђР”Р•Р›Р•Р¦ РђР’РўРћР РЎРљРРҐ РџР РђР’ Р РќР РћР”РќРћ Р”Р РЈР“РћР• Р›РР¦Рћ, РљРћРўРћР РћР•
+РњРћР–Р•Рў РР—РњР•РќРЇРўР¬ Р/РР›Р РџРћР’РўРћР РќРћ Р РђРЎРџР РћРЎРўР РђРќРЇРўР¬ РџР РћР“Р РђРњРњРЈ, РќР Р’ РљРћР•Рњ РЎР›РЈР§РђР• РќР•
+РќР•РЎРЃРў РћРўР’Р•РўРЎРўР’Р•РќРќРћРЎРўР, Р’РљР›Р®Р§РђРЇ Р›Р®Р‘Р«Р• РћР‘Р©РР•, РЎР›РЈР§РђР™РќР«Р•, РЎРџР•Р¦РРђР›Р¬РќР«Р• РР›Р
+РџРћРЎР›Р•Р”РћР’РђР’РЁРР• РЈР‘Р«РўРљР, РЎР’РЇР—РђРќРќР«Р• РЎ РРЎРџРћР›Р¬Р—РћР’РђРќРР•Рњ РР›Р РџРћРќР•РЎР•РќРќР«Р• Р’РЎР›Р•Р”РЎРўР’РР•
+РќР•Р’РћР—РњРћР–РќРћРЎРўР РРЎРџРћР›Р¬Р—РћР’РђРќРРЇ РџР РћР“Р РђРњРњР« (Р’РљР›Р®Р§РђРЇ РџРћРўР•Р Р Р”РђРќРќР«РҐ, РР›Р Р”РђРќРќР«Р•,
+РЎРўРђР’РЁРР• РќР•Р“РћР”РќР«РњР, РР›Р РЈР‘Р«РўРљР Р/РР›Р РџРћРўР•Р Р Р”РћРҐРћР”РћР’, РџРћРќР•РЎР•РќРќР«Р• РР—-Р—Рђ Р”Р•Р™РЎРўР’РР™
+РўР Р•РўР¬РРҐ Р›РР¦ Р/РР›Р РћРўРљРђР—Рђ РџР РћР“Р РђРњРњР« Р РђР‘РћРўРђРўР¬ РЎРћР’РњР•РЎРўРќРћ РЎ Р”Р РЈР“РРњР РџР РћР“Р РђРњРњРђРњР,
+РќРћ РќР• РћР“Р РђРќРР§РР’РђРЇРЎР¬ Р­РўРРњР РЎР›РЈР§РђРЇРњР), РќРћ РќР• РћР“Р РђРќРР§РР’РђРЇРЎР¬ РРњР, Р”РђР–Р• Р•РЎР›Р РўРђРљРћР™
+Р’Р›РђР”Р•Р›Р•Р¦ РР›Р Р”Р РЈР“РћР• Р›РР¦Рћ Р‘Р«Р›Р РР—Р’Р•Р©Р•РќР« Рћ Р’РћР—РњРћР–РќРћРЎРўР РўРђРљРРҐ РЈР‘Р«РўРљРћР’ Р РџРћРўР•Р Р¬.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
@@ -83,9 +83,9 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #define  DPUMA_REC_MAX_RASTER_SIZE   4*1024  // 256*128
 typedef struct DPUMA_tagRecRaster
    {
-      Int32    lnPixWidth;
-      Int32    lnPixHeight;
-      Int32    lnRasterBufSize;				// maximum of raster length
+      int32_t    lnPixWidth;
+      int32_t    lnPixHeight;
+      int32_t    lnRasterBufSize;				// maximum of raster length
       Word8    Raster[DPUMA_REC_MAX_RASTER_SIZE];	// image
    }  DPUMA_RecRaster;
 
@@ -178,110 +178,110 @@ DPUMA_FNDPUMA_DrawRectTip
 
 DEC_FUNC(Bool32,  DPUMA_Init,(Word16 wHightCode, Handle hStorage));
 DEC_FUNC(Bool32,  DPUMA_Done,());
-DEC_FUNC(Word32,  DPUMA_GetErrorCode,(void));
-DEC_FUNC(Int8 *,  DPUMA_GetErrorString,(Word32 wError));
-DEC_FUNC(Bool32,  DPUMA_SetImportData,(Word32 wType, void * pData));
-DEC_FUNC(Bool32,  DPUMA_GetExportData,(Word32 wType, void * pData));
+DEC_FUNC(uint32_t,  DPUMA_GetErrorCode,(void));
+DEC_FUNC(Int8 *,  DPUMA_GetErrorString,(uint32_t wError));
+DEC_FUNC(Bool32,  DPUMA_SetImportData,(uint32_t wType, void * pData));
+DEC_FUNC(Bool32,  DPUMA_GetExportData,(uint32_t wType, void * pData));
 
-DEC_FUNC(Word32, DPUMA_CreateSnap,());
+DEC_FUNC(uint32_t, DPUMA_CreateSnap,());
 DEC_FUNC(void, DPUMA_DestroySnap,());
 DEC_FUNC(void, DPUMA_Stop,());
 DEC_FUNC(Bool32, DPUMA_IsActive,());
-DEC_FUNC(Word32, DPUMA_FN,());
+DEC_FUNC(uint32_t, DPUMA_FN,());
 DEC_FUNC(void, DPUMA_Registry,(Handle owner, const char * lpName, Handle parent));
 DEC_FUNC(Bool16, DPUMA_Skip,(Handle owner));
-DEC_FUNC(void, DPUMA_StartLoop,(Handle owner,Word32 inter_total));
+DEC_FUNC(void, DPUMA_StartLoop,(Handle owner,uint32_t inter_total));
 DEC_FUNC(void, DPUMA_LoopNext,(Handle owner));
 DEC_FUNC(Handle, DPUMA_CreateWindow,(const char * lpTitle, void * lpDib));
 DEC_FUNC(void,  DPUMA_DestroyWindow,(Handle wnd));
-DEC_FUNC(Word32,  DPUMA_WaitUserInput,(Handle owner,Handle wnd));
-DEC_FUNC(void,  DPUMA_DrawLine,(Handle wnd,Point16 * start, Point16 * end, Int32 skew, Word32 rgb, Int16 pen, Word32 key));
-DEC_FUNC(void,  DPUMA_DrawRect,(Handle wnd,Rect16 * rect, Int32 skew, Word32 rgb, Int16 pen, Word32 key));
-DEC_FUNC(void,  DPUMA_DeleteRects,(Handle wnd, Word32 key));
-DEC_FUNC(void,  DPUMA_DeleteLines,(Handle wnd, Word32 key));
+DEC_FUNC(uint32_t,  DPUMA_WaitUserInput,(Handle owner,Handle wnd));
+DEC_FUNC(void,  DPUMA_DrawLine,(Handle wnd,Point16 * start, Point16 * end, int32_t skew, uint32_t rgb, Int16 pen, uint32_t key));
+DEC_FUNC(void,  DPUMA_DrawRect,(Handle wnd,Rect16 * rect, int32_t skew, uint32_t rgb, Int16 pen, uint32_t key));
+DEC_FUNC(void,  DPUMA_DeleteRects,(Handle wnd, uint32_t key));
+DEC_FUNC(void,  DPUMA_DeleteLines,(Handle wnd, uint32_t key));
 DEC_FUNC(Bool16,  DPUMA_GetUserPoint,(Handle wnd,Point16 * point));
 DEC_FUNC(Bool16,  DPUMA_GetUserRect,(Handle wnd,Rect16 * rect));
 DEC_FUNC(void,  DPUMA_UpdateView,(Handle wnd));
 DEC_FUNC(void,  DPUMA_DrawRaster,(DPUMA_RecRaster * lpRaster));
 DEC_FUNC(void,  DPUMA_RasterText,(char * lpText));
 DEC_FUNC(void,  DPUMA_ZoomToRect,(Handle wnd,Rect16 * rect));
-DEC_FUNC(void,  DPUMA_RasterHeader,(char * lpText,Word32 num));
+DEC_FUNC(void,  DPUMA_RasterHeader,(char * lpText,uint32_t num));
 DEC_FUNC(void,  DPUMA_DrawFocusRect,(Handle wnd,Rect16 * lpRect));
 DEC_FUNC(Bool32,  DPUMA_RegVariable,(Handle owner, const char * lpName,void * lpData, const char * lpType));
 DEC_FUNC(void,  DPUMA_UnregVariable,(void * lpData));
 DEC_FUNC(void *,DPUMA_GetDIBptr,(Handle wnd));
-DEC_FUNC(void,  DPUMA_DrawString,(Handle wnd, Point16 * start, const char * string, Int32 align, Word32 rgb, Int16 size, Word32 key));
-DEC_FUNC(void,  DPUMA_DeleteStrings,(Handle wnd, Word32 key));
-DEC_FUNC(void,  DPUMA_DrawLineTip,(Handle wnd,Point16 * start, Point16 * end, Int32 skew, Word32 rgb, Int16 pen, Word32 key, const char *pTip));
-DEC_FUNC(void,  DPUMA_DrawRectTip,(Handle wnd,Rect16 * rect, Int32 skew, Word32 rgb, Int16 pen, Word32 key, const char *pTip));
+DEC_FUNC(void,  DPUMA_DrawString,(Handle wnd, Point16 * start, const char * string, int32_t align, uint32_t rgb, Int16 size, uint32_t key));
+DEC_FUNC(void,  DPUMA_DeleteStrings,(Handle wnd, uint32_t key));
+DEC_FUNC(void,  DPUMA_DrawLineTip,(Handle wnd,Point16 * start, Point16 * end, int32_t skew, uint32_t rgb, Int16 pen, uint32_t key, const char *pTip));
+DEC_FUNC(void,  DPUMA_DrawRectTip,(Handle wnd,Rect16 * rect, int32_t skew, uint32_t rgb, Int16 pen, uint32_t key, const char *pTip));
 
 DEC_VARG(void,		DPUMA_MessageBoxOk);
 DEC_VARG(void,		DPUMA_StatusLine);
 DEC_VARG(Bool16,	DPUMA_MessageBoxYesNo);
-DEC_VARG(Int32,		DPUMA_Console);
-DEC_VARG(Int32,		DPUMA_ConsoleN);
+DEC_VARG(int32_t,		DPUMA_Console);
+DEC_VARG(int32_t,		DPUMA_ConsoleN);
 
 /* callback functions */
-typedef Word32 (*DPUMA_Callback_WindowProc)(Handle wnd,Handle hWnd,Word32 message,Word32 wParam,Word32 lParam);
+typedef uint32_t (*DPUMA_Callback_WindowProc)(Handle wnd,Handle hWnd,uint32_t message,uint32_t wParam,uint32_t lParam);
 
 DEC_FUNC(DPUMA_Callback_WindowProc,  DPUMA_SetCallbackWindowProc,(Handle wnd, DPUMA_Callback_WindowProc func));
-DEC_FUNC(void,  DPUMA_DeviceToImage,(Handle wnd, Point32 * p, Word32 number));
-DEC_FUNC(void,  DPUMA_ImageToDevice,(Handle wnd, Point32 * p, Word32 number));
+DEC_FUNC(void,  DPUMA_DeviceToImage,(Handle wnd, Point32 * p, uint32_t number));
+DEC_FUNC(void,  DPUMA_ImageToDevice,(Handle wnd, Point32 * p, uint32_t number));
 DEC_FUNC(DPUMA_Callback_WindowProc,  DPUMA_SetCallbackMainFrameWindowProc,(DPUMA_Callback_WindowProc func));
 
 #define WM_DPUMA 0x0500 // WM_USER + 0x100
 
-DEC_FUNC(Word32,  DPUMA_SendWindow,(Handle wnd,Word32 message, Word32 wParam, Word32 lParam));
-DEC_FUNC(Word32,  DPUMA_SendMainWnd,(Word32 message, Word32 wParam, Word32 lParam));
+DEC_FUNC(uint32_t,  DPUMA_SendWindow,(Handle wnd,uint32_t message, uint32_t wParam, uint32_t lParam));
+DEC_FUNC(uint32_t,  DPUMA_SendMainWnd,(uint32_t message, uint32_t wParam, uint32_t lParam));
 
-DEC_FUNC(Word32,  DPUMA_CSTR_Monitor,(Handle owner, Word32 cstr_line, Word32 pos,
+DEC_FUNC(uint32_t,  DPUMA_CSTR_Monitor,(Handle owner, uint32_t cstr_line, uint32_t pos,
 									  DPUMA_Callback_WindowProc lpproc));
 
-DEC_FUNC(Word32, DPUMA_CSTR_GetPosition,( Word32 * cstr_rester ));
-DEC_FUNC(void,   DPUMA_CSTR_SetPosition,(Word32 pos));
+DEC_FUNC(uint32_t, DPUMA_CSTR_GetPosition,( uint32_t * cstr_rester ));
+DEC_FUNC(void,   DPUMA_CSTR_SetPosition,(uint32_t pos));
 DEC_FUNC(void,   DPUMA_DestroyRasterWnd,( void ));
-DEC_FUNC(Word32, DPUMA_CSTR_GetLength,( void ));
-DEC_FUNC(void,   DPUMA_ShowCutPoint,(Word32 lpcount, Point32 * lppoints ));
+DEC_FUNC(uint32_t, DPUMA_CSTR_GetLength,( void ));
+DEC_FUNC(void,   DPUMA_ShowCutPoint,(uint32_t lpcount, Point32 * lppoints ));
 DEC_FUNC(Point32,DPUMA_GetRasterPixel,(Handle wnd, Point32 point ));
 DEC_FUNC(void,   DPUMA_CSTR_Update,( void ));
-DEC_FUNC(Bool32, DPUMA_SkipEx,(Handle owner,Bool32 bIter,Bool32 bParent,Int32 nSign));
+DEC_FUNC(Bool32, DPUMA_SkipEx,(Handle owner,Bool32 bIter,Bool32 bParent,int32_t nSign));
 
 DEC_FUNC(Bool32, DPUMA_OpenFile,(Handle wnd, char * lpFileName));
 DEC_FUNC(char *, DPUMA_GetFileName,(Handle wnd));
-DEC_FUNC(void *, DPUMA_HandLayout,( void * pDIB, Word32 flags ,Point32 * p));
+DEC_FUNC(void *, DPUMA_HandLayout,( void * pDIB, uint32_t flags ,Point32 * p));
 DEC_FUNC(Bool32, DPUMA_LockImage,(Handle wnd,Bool32 bLock));
 
 DEC_FUNC(void,   DPUMA_RegistryHelp,(Handle owner, const char * lpName, Bool32 bAppend));
-DEC_FUNC(Bool32, DPUMA_SaveFile,(void * lpDIB,char * lpFileName,Word32 nFormat));
+DEC_FUNC(Bool32, DPUMA_SaveFile,(void * lpDIB,char * lpFileName,uint32_t nFormat));
 // Image Gear constants
 #define PUMA_SAVE_BMP_UNCOMP       (2)
 #define PUMA_SAVE_TIF_UNCOMP       (40)
 #define PUMA_SAVE_TIF_G4           (40|(4L << 16))
 DEC_FUNC(void,	 DPUMA_ProgressStart	,( void ));
 DEC_FUNC(void,	 DPUMA_ProgressFinish	,( void ));
-DEC_FUNC(Bool32, DPUMA_ProgressStep		,(Word32 step, const char * name, Word32 percent));
+DEC_FUNC(Bool32, DPUMA_ProgressStep		,(uint32_t step, const char * name, uint32_t percent));
 DEC_FUNC(Bool32, DPUMA_SetConsoleProperty,(	Bool32 bold,Bool32 italic,
-	Bool32 strikeout,Bool32 underline,Int32 height,	Int32 offset,	Word32 textcolor,
-	Int32 charset,	const char * name ));
-DEC_FUNC(Handle, DPUMA_CreateHistogramm,(const char *, Word32 size, PInt32 lpVal));
-DEC_FUNC(void,	 DPUMA_AddPointToHistogramm,(Handle hDlg, Word32 point));
-DEC_FUNC(Bool32, DPUMA_DoHistogramm,(Handle hDlg, PWord32 lpCurpos));
+	Bool32 strikeout,Bool32 underline,int32_t height,	int32_t offset,	uint32_t textcolor,
+	int32_t charset,	const char * name ));
+DEC_FUNC(Handle, DPUMA_CreateHistogramm,(const char *, uint32_t size, int32_t * lpVal));
+DEC_FUNC(void,	 DPUMA_AddPointToHistogramm,(Handle hDlg, uint32_t point));
+DEC_FUNC(Bool32, DPUMA_DoHistogramm,(Handle hDlg, uint32_t * lpCurpos));
 DEC_FUNC(void,	 DPUMA_DestroyHistogramm,(Handle hDlg));
 DEC_FUNC(Handle, DPUMA_TimeStamp,(const char * name,Handle hTimer));
 DEC_FUNC(Handle, DPUMA_GetWindowHandle,(const char * name));
 DEC_FUNC(Handle, DPUMA_GetPrevSkipOwner,());
-DEC_FUNC(Int32,  DPUMA_AllocHook,( Int32 allocType, Handle userData, Word32 size, Word32 prevSize,
-		 Int32 blockType, Int32 requestNumber, PWord8 filename, Int32 lineNumber));
-DEC_FUNC(void,	 DPUMA_ConsoleClear,(Int32 fromline));
-DEC_FUNC(Int32,  DPUMA_ConsoleGetCurLine,());
+DEC_FUNC(int32_t,  DPUMA_AllocHook,( int32_t allocType, Handle userData, uint32_t size, uint32_t prevSize,
+		 int32_t blockType, int32_t requestNumber, PWord8 filename, int32_t lineNumber));
+DEC_FUNC(void,	 DPUMA_ConsoleClear,(int32_t fromline));
+DEC_FUNC(int32_t,  DPUMA_ConsoleGetCurLine,());
 
-DEC_FUNC(Bool32, DPUMA_SetFileName,(Handle wnd,char * lpName));
+DEC_FUNC(Bool32, DPUMA_SetFileName,(Handle wnd, const char * lpName));
 DEC_FUNC(Handle,  DPUMA_FOpen,(const char * lpName,const char * lpMode));
 DEC_FUNC(void,  DPUMA_FClose,(Handle hFile));
 
-DEC_VARGP(Int32,  DPUMA_FPrintf1024,Handle hFile);
+DEC_VARGP(int32_t,  DPUMA_FPrintf1024,Handle hFile);
 
-DEC_FUNC(Int32,  DPUMA_FPuts,(Handle hFile,const char * lpString));
+DEC_FUNC(int32_t,  DPUMA_FPuts,(Handle hFile,const char * lpString));
 
 
 
@@ -328,7 +328,7 @@ DEC_FUNC(Int32,  DPUMA_FPuts,(Handle hFile,const char * lpString));
 	#define BALTIC_CHARSET          186
 #endif
 
-#if !defined(VK_RETURN) // Если не определен WINUSER.H
+#if !defined(VK_RETURN) // Р•СЃР»Рё РЅРµ РѕРїСЂРµРґРµР»РµРЅ WINUSER.H
 
 	#define WM_KEYFIRST                     0x0100
 	#define WM_KEYDOWN                      0x0100

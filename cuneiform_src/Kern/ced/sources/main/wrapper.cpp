@@ -2,33 +2,33 @@
 Copyright (c) 1993-2008, Cognitive Technologies
 All rights reserved.
 
-Ðàçðåøàåòñÿ ïîâòîðíîå ðàñïðîñòðàíåíèå è èñïîëüçîâàíèå êàê â âèäå èñõîäíîãî êîäà,
-òàê è â äâîè÷íîé ôîðìå, ñ èçìåíåíèÿìè èëè áåç, ïðè ñîáëþäåíèè ñëåäóþùèõ óñëîâèé:
+Ð Ð°Ð·Ñ€ÐµÑˆÐ°ÐµÑ‚ÑÑ Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€Ð½Ð¾Ðµ Ñ€Ð°ÑÐ¿Ñ€Ð¾ÑÑ‚Ñ€Ð°Ð½ÐµÐ½Ð¸Ðµ Ð¸ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð² Ð²Ð¸Ð´Ðµ Ð¸ÑÑ…Ð¾Ð´Ð½Ð¾Ð³Ð¾ ÐºÐ¾Ð´Ð°,
+Ñ‚Ð°Ðº Ð¸ Ð² Ð´Ð²Ð¾Ð¸Ñ‡Ð½Ð¾Ð¹ Ñ„Ð¾Ñ€Ð¼Ðµ, Ñ Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸ÑÐ¼Ð¸ Ð¸Ð»Ð¸ Ð±ÐµÐ·, Ð¿Ñ€Ð¸ ÑÐ¾Ð±Ð»ÑŽÐ´ÐµÐ½Ð¸Ð¸ ÑÐ»ÐµÐ´ÑƒÑŽÑ‰Ð¸Ñ… ÑƒÑÐ»Ð¾Ð²Ð¸Ð¹:
 
-      * Ïðè ïîâòîðíîì ðàñïðîñòðàíåíèè èñõîäíîãî êîäà äîëæíû îñòàâàòüñÿ óêàçàííîå
-        âûøå óâåäîìëåíèå îá àâòîðñêîì ïðàâå, ýòîò ñïèñîê óñëîâèé è ïîñëåäóþùèé
-        îòêàç îò ãàðàíòèé.
-      * Ïðè ïîâòîðíîì ðàñïðîñòðàíåíèè äâîè÷íîãî êîäà â äîêóìåíòàöèè è/èëè â
-        äðóãèõ ìàòåðèàëàõ, ïîñòàâëÿåìûõ ïðè ðàñïðîñòðàíåíèè, äîëæíû ñîõðàíÿòüñÿ
-        óêàçàííàÿ âûøå èíôîðìàöèÿ îá àâòîðñêîì ïðàâå, ýòîò ñïèñîê óñëîâèé è
-        ïîñëåäóþùèé îòêàç îò ãàðàíòèé.
-      * Íè íàçâàíèå Cognitive Technologies, íè èìåíà åå ñîòðóäíèêîâ íå ìîãóò
-        áûòü èñïîëüçîâàíû â êà÷åñòâå ñðåäñòâà ïîääåðæêè è/èëè ïðîäâèæåíèÿ
-        ïðîäóêòîâ, îñíîâàííûõ íà ýòîì ÏÎ, áåç ïðåäâàðèòåëüíîãî ïèñüìåííîãî
-        ðàçðåøåíèÿ.
+      * ÐŸÑ€Ð¸ Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€Ð½Ð¾Ð¼ Ñ€Ð°ÑÐ¿Ñ€Ð¾ÑÑ‚Ñ€Ð°Ð½ÐµÐ½Ð¸Ð¸ Ð¸ÑÑ…Ð¾Ð´Ð½Ð¾Ð³Ð¾ ÐºÐ¾Ð´Ð° Ð´Ð¾Ð»Ð¶Ð½Ñ‹ Ð¾ÑÑ‚Ð°Ð²Ð°Ñ‚ÑŒÑÑ ÑƒÐºÐ°Ð·Ð°Ð½Ð½Ð¾Ðµ
+        Ð²Ñ‹ÑˆÐµ ÑƒÐ²ÐµÐ´Ð¾Ð¼Ð»ÐµÐ½Ð¸Ðµ Ð¾Ð± Ð°Ð²Ñ‚Ð¾Ñ€ÑÐºÐ¾Ð¼ Ð¿Ñ€Ð°Ð²Ðµ, ÑÑ‚Ð¾Ñ‚ ÑÐ¿Ð¸ÑÐ¾Ðº ÑƒÑÐ»Ð¾Ð²Ð¸Ð¹ Ð¸ Ð¿Ð¾ÑÐ»ÐµÐ´ÑƒÑŽÑ‰Ð¸Ð¹
+        Ð¾Ñ‚ÐºÐ°Ð· Ð¾Ñ‚ Ð³Ð°Ñ€Ð°Ð½Ñ‚Ð¸Ð¹.
+      * ÐŸÑ€Ð¸ Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€Ð½Ð¾Ð¼ Ñ€Ð°ÑÐ¿Ñ€Ð¾ÑÑ‚Ñ€Ð°Ð½ÐµÐ½Ð¸Ð¸ Ð´Ð²Ð¾Ð¸Ñ‡Ð½Ð¾Ð³Ð¾ ÐºÐ¾Ð´Ð° Ð² Ð´Ð¾ÐºÑƒÐ¼ÐµÐ½Ñ‚Ð°Ñ†Ð¸Ð¸ Ð¸/Ð¸Ð»Ð¸ Ð²
+        Ð´Ñ€ÑƒÐ³Ð¸Ñ… Ð¼Ð°Ñ‚ÐµÑ€Ð¸Ð°Ð»Ð°Ñ…, Ð¿Ð¾ÑÑ‚Ð°Ð²Ð»ÑÐµÐ¼Ñ‹Ñ… Ð¿Ñ€Ð¸ Ñ€Ð°ÑÐ¿Ñ€Ð¾ÑÑ‚Ñ€Ð°Ð½ÐµÐ½Ð¸Ð¸, Ð´Ð¾Ð»Ð¶Ð½Ñ‹ ÑÐ¾Ñ…Ñ€Ð°Ð½ÑÑ‚ÑŒÑÑ
+        ÑƒÐºÐ°Ð·Ð°Ð½Ð½Ð°Ñ Ð²Ñ‹ÑˆÐµ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð¾Ð± Ð°Ð²Ñ‚Ð¾Ñ€ÑÐºÐ¾Ð¼ Ð¿Ñ€Ð°Ð²Ðµ, ÑÑ‚Ð¾Ñ‚ ÑÐ¿Ð¸ÑÐ¾Ðº ÑƒÑÐ»Ð¾Ð²Ð¸Ð¹ Ð¸
+        Ð¿Ð¾ÑÐ»ÐµÐ´ÑƒÑŽÑ‰Ð¸Ð¹ Ð¾Ñ‚ÐºÐ°Ð· Ð¾Ñ‚ Ð³Ð°Ñ€Ð°Ð½Ñ‚Ð¸Ð¹.
+      * ÐÐ¸ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ðµ Cognitive Technologies, Ð½Ð¸ Ð¸Ð¼ÐµÐ½Ð° ÐµÐµ ÑÐ¾Ñ‚Ñ€ÑƒÐ´Ð½Ð¸ÐºÐ¾Ð² Ð½Ðµ Ð¼Ð¾Ð³ÑƒÑ‚
+        Ð±Ñ‹Ñ‚ÑŒ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ñ‹ Ð² ÐºÐ°Ñ‡ÐµÑÑ‚Ð²Ðµ ÑÑ€ÐµÐ´ÑÑ‚Ð²Ð° Ð¿Ð¾Ð´Ð´ÐµÑ€Ð¶ÐºÐ¸ Ð¸/Ð¸Ð»Ð¸ Ð¿Ñ€Ð¾Ð´Ð²Ð¸Ð¶ÐµÐ½Ð¸Ñ
+        Ð¿Ñ€Ð¾Ð´ÑƒÐºÑ‚Ð¾Ð², Ð¾ÑÐ½Ð¾Ð²Ð°Ð½Ð½Ñ‹Ñ… Ð½Ð° ÑÑ‚Ð¾Ð¼ ÐŸÐž, Ð±ÐµÐ· Ð¿Ñ€ÐµÐ´Ð²Ð°Ñ€Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾Ð³Ð¾ Ð¿Ð¸ÑÑŒÐ¼ÐµÐ½Ð½Ð¾Ð³Ð¾
+        Ñ€Ð°Ð·Ñ€ÐµÑˆÐµÐ½Ð¸Ñ.
 
-ÝÒÀ ÏÐÎÃÐÀÌÌÀ ÏÐÅÄÎÑÒÀÂËÅÍÀ ÂËÀÄÅËÜÖÀÌÈ ÀÂÒÎÐÑÊÈÕ ÏÐÀÂ È/ÈËÈ ÄÐÓÃÈÌÈ ËÈÖÀÌÈ "ÊÀÊ
-ÎÍÀ ÅÑÒÜ" ÁÅÇ ÊÀÊÎÃÎ-ËÈÁÎ ÂÈÄÀ ÃÀÐÀÍÒÈÉ, ÂÛÐÀÆÅÍÍÛÕ ßÂÍÎ ÈËÈ ÏÎÄÐÀÇÓÌÅÂÀÅÌÛÕ,
-ÂÊËÞ×Àß ÃÀÐÀÍÒÈÈ ÊÎÌÌÅÐ×ÅÑÊÎÉ ÖÅÍÍÎÑÒÈ È ÏÐÈÃÎÄÍÎÑÒÈ ÄËß ÊÎÍÊÐÅÒÍÎÉ ÖÅËÈ, ÍÎ ÍÅ
-ÎÃÐÀÍÈ×ÈÂÀßÑÜ ÈÌÈ. ÍÈ ÂËÀÄÅËÅÖ ÀÂÒÎÐÑÊÈÕ ÏÐÀÂ È ÍÈ ÎÄÍÎ ÄÐÓÃÎÅ ËÈÖÎ, ÊÎÒÎÐÎÅ
-ÌÎÆÅÒ ÈÇÌÅÍßÒÜ È/ÈËÈ ÏÎÂÒÎÐÍÎ ÐÀÑÏÐÎÑÒÐÀÍßÒÜ ÏÐÎÃÐÀÌÌÓ, ÍÈ Â ÊÎÅÌ ÑËÓ×ÀÅ ÍÅ
-ÍÅÑ¨Ò ÎÒÂÅÒÑÒÂÅÍÍÎÑÒÈ, ÂÊËÞ×Àß ËÞÁÛÅ ÎÁÙÈÅ, ÑËÓ×ÀÉÍÛÅ, ÑÏÅÖÈÀËÜÍÛÅ ÈËÈ
-ÏÎÑËÅÄÎÂÀÂØÈÅ ÓÁÛÒÊÈ, ÑÂßÇÀÍÍÛÅ Ñ ÈÑÏÎËÜÇÎÂÀÍÈÅÌ ÈËÈ ÏÎÍÅÑÅÍÍÛÅ ÂÑËÅÄÑÒÂÈÅ
-ÍÅÂÎÇÌÎÆÍÎÑÒÈ ÈÑÏÎËÜÇÎÂÀÍÈß ÏÐÎÃÐÀÌÌÛ (ÂÊËÞ×Àß ÏÎÒÅÐÈ ÄÀÍÍÛÕ, ÈËÈ ÄÀÍÍÛÅ,
-ÑÒÀÂØÈÅ ÍÅÃÎÄÍÛÌÈ, ÈËÈ ÓÁÛÒÊÈ È/ÈËÈ ÏÎÒÅÐÈ ÄÎÕÎÄÎÂ, ÏÎÍÅÑÅÍÍÛÅ ÈÇ-ÇÀ ÄÅÉÑÒÂÈÉ
-ÒÐÅÒÜÈÕ ËÈÖ È/ÈËÈ ÎÒÊÀÇÀ ÏÐÎÃÐÀÌÌÛ ÐÀÁÎÒÀÒÜ ÑÎÂÌÅÑÒÍÎ Ñ ÄÐÓÃÈÌÈ ÏÐÎÃÐÀÌÌÀÌÈ,
-ÍÎ ÍÅ ÎÃÐÀÍÈ×ÈÂÀßÑÜ ÝÒÈÌÈ ÑËÓ×ÀßÌÈ), ÍÎ ÍÅ ÎÃÐÀÍÈ×ÈÂÀßÑÜ ÈÌÈ, ÄÀÆÅ ÅÑËÈ ÒÀÊÎÉ
-ÂËÀÄÅËÅÖ ÈËÈ ÄÐÓÃÎÅ ËÈÖÎ ÁÛËÈ ÈÇÂÅÙÅÍÛ Î ÂÎÇÌÎÆÍÎÑÒÈ ÒÀÊÈÕ ÓÁÛÒÊÎÂ È ÏÎÒÅÐÜ.
+Ð­Ð¢Ð ÐŸÐ ÐžÐ“Ð ÐÐœÐœÐ ÐŸÐ Ð•Ð”ÐžÐ¡Ð¢ÐÐ’Ð›Ð•ÐÐ Ð’Ð›ÐÐ”Ð•Ð›Ð¬Ð¦ÐÐœÐ˜ ÐÐ’Ð¢ÐžÐ Ð¡ÐšÐ˜Ð¥ ÐŸÐ ÐÐ’ Ð˜/Ð˜Ð›Ð˜ Ð”Ð Ð£Ð“Ð˜ÐœÐ˜ Ð›Ð˜Ð¦ÐÐœÐ˜ "ÐšÐÐš
+ÐžÐÐ Ð•Ð¡Ð¢Ð¬" Ð‘Ð•Ð— ÐšÐÐšÐžÐ“Ðž-Ð›Ð˜Ð‘Ðž Ð’Ð˜Ð”Ð Ð“ÐÐ ÐÐÐ¢Ð˜Ð™, Ð’Ð«Ð ÐÐ–Ð•ÐÐÐ«Ð¥ Ð¯Ð’ÐÐž Ð˜Ð›Ð˜ ÐŸÐžÐ”Ð ÐÐ—Ð£ÐœÐ•Ð’ÐÐ•ÐœÐ«Ð¥,
+Ð’ÐšÐ›Ð®Ð§ÐÐ¯ Ð“ÐÐ ÐÐÐ¢Ð˜Ð˜ ÐšÐžÐœÐœÐ•Ð Ð§Ð•Ð¡ÐšÐžÐ™ Ð¦Ð•ÐÐÐžÐ¡Ð¢Ð˜ Ð˜ ÐŸÐ Ð˜Ð“ÐžÐ”ÐÐžÐ¡Ð¢Ð˜ Ð”Ð›Ð¯ ÐšÐžÐÐšÐ Ð•Ð¢ÐÐžÐ™ Ð¦Ð•Ð›Ð˜, ÐÐž ÐÐ•
+ÐžÐ“Ð ÐÐÐ˜Ð§Ð˜Ð’ÐÐ¯Ð¡Ð¬ Ð˜ÐœÐ˜. ÐÐ˜ Ð’Ð›ÐÐ”Ð•Ð›Ð•Ð¦ ÐÐ’Ð¢ÐžÐ Ð¡ÐšÐ˜Ð¥ ÐŸÐ ÐÐ’ Ð˜ ÐÐ˜ ÐžÐ”ÐÐž Ð”Ð Ð£Ð“ÐžÐ• Ð›Ð˜Ð¦Ðž, ÐšÐžÐ¢ÐžÐ ÐžÐ•
+ÐœÐžÐ–Ð•Ð¢ Ð˜Ð—ÐœÐ•ÐÐ¯Ð¢Ð¬ Ð˜/Ð˜Ð›Ð˜ ÐŸÐžÐ’Ð¢ÐžÐ ÐÐž Ð ÐÐ¡ÐŸÐ ÐžÐ¡Ð¢Ð ÐÐÐ¯Ð¢Ð¬ ÐŸÐ ÐžÐ“Ð ÐÐœÐœÐ£, ÐÐ˜ Ð’ ÐšÐžÐ•Ðœ Ð¡Ð›Ð£Ð§ÐÐ• ÐÐ•
+ÐÐ•Ð¡ÐÐ¢ ÐžÐ¢Ð’Ð•Ð¢Ð¡Ð¢Ð’Ð•ÐÐÐžÐ¡Ð¢Ð˜, Ð’ÐšÐ›Ð®Ð§ÐÐ¯ Ð›Ð®Ð‘Ð«Ð• ÐžÐ‘Ð©Ð˜Ð•, Ð¡Ð›Ð£Ð§ÐÐ™ÐÐ«Ð•, Ð¡ÐŸÐ•Ð¦Ð˜ÐÐ›Ð¬ÐÐ«Ð• Ð˜Ð›Ð˜
+ÐŸÐžÐ¡Ð›Ð•Ð”ÐžÐ’ÐÐ’Ð¨Ð˜Ð• Ð£Ð‘Ð«Ð¢ÐšÐ˜, Ð¡Ð’Ð¯Ð—ÐÐÐÐ«Ð• Ð¡ Ð˜Ð¡ÐŸÐžÐ›Ð¬Ð—ÐžÐ’ÐÐÐ˜Ð•Ðœ Ð˜Ð›Ð˜ ÐŸÐžÐÐ•Ð¡Ð•ÐÐÐ«Ð• Ð’Ð¡Ð›Ð•Ð”Ð¡Ð¢Ð’Ð˜Ð•
+ÐÐ•Ð’ÐžÐ—ÐœÐžÐ–ÐÐžÐ¡Ð¢Ð˜ Ð˜Ð¡ÐŸÐžÐ›Ð¬Ð—ÐžÐ’ÐÐÐ˜Ð¯ ÐŸÐ ÐžÐ“Ð ÐÐœÐœÐ« (Ð’ÐšÐ›Ð®Ð§ÐÐ¯ ÐŸÐžÐ¢Ð•Ð Ð˜ Ð”ÐÐÐÐ«Ð¥, Ð˜Ð›Ð˜ Ð”ÐÐÐÐ«Ð•,
+Ð¡Ð¢ÐÐ’Ð¨Ð˜Ð• ÐÐ•Ð“ÐžÐ”ÐÐ«ÐœÐ˜, Ð˜Ð›Ð˜ Ð£Ð‘Ð«Ð¢ÐšÐ˜ Ð˜/Ð˜Ð›Ð˜ ÐŸÐžÐ¢Ð•Ð Ð˜ Ð”ÐžÐ¥ÐžÐ”ÐžÐ’, ÐŸÐžÐÐ•Ð¡Ð•ÐÐÐ«Ð• Ð˜Ð—-Ð—Ð Ð”Ð•Ð™Ð¡Ð¢Ð’Ð˜Ð™
+Ð¢Ð Ð•Ð¢Ð¬Ð˜Ð¥ Ð›Ð˜Ð¦ Ð˜/Ð˜Ð›Ð˜ ÐžÐ¢ÐšÐÐ—Ð ÐŸÐ ÐžÐ“Ð ÐÐœÐœÐ« Ð ÐÐ‘ÐžÐ¢ÐÐ¢Ð¬ Ð¡ÐžÐ’ÐœÐ•Ð¡Ð¢ÐÐž Ð¡ Ð”Ð Ð£Ð“Ð˜ÐœÐ˜ ÐŸÐ ÐžÐ“Ð ÐÐœÐœÐÐœÐ˜,
+ÐÐž ÐÐ• ÐžÐ“Ð ÐÐÐ˜Ð§Ð˜Ð’ÐÐ¯Ð¡Ð¬ Ð­Ð¢Ð˜ÐœÐ˜ Ð¡Ð›Ð£Ð§ÐÐ¯ÐœÐ˜), ÐÐž ÐÐ• ÐžÐ“Ð ÐÐÐ˜Ð§Ð˜Ð’ÐÐ¯Ð¡Ð¬ Ð˜ÐœÐ˜, Ð”ÐÐ–Ð• Ð•Ð¡Ð›Ð˜ Ð¢ÐÐšÐžÐ™
+Ð’Ð›ÐÐ”Ð•Ð›Ð•Ð¦ Ð˜Ð›Ð˜ Ð”Ð Ð£Ð“ÐžÐ• Ð›Ð˜Ð¦Ðž Ð‘Ð«Ð›Ð˜ Ð˜Ð—Ð’Ð•Ð©Ð•ÐÐ« Ðž Ð’ÐžÐ—ÐœÐžÐ–ÐÐžÐ¡Ð¢Ð˜ Ð¢ÐÐšÐ˜Ð¥ Ð£Ð‘Ð«Ð¢ÐšÐžÐ’ Ð˜ ÐŸÐžÐ¢Ð•Ð Ð¬.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
@@ -479,7 +479,7 @@ CED_FUNC(void) CED_DeletePage(Handle hEdPage)
 
 //get description of page
 
-CED_FUNC(Handle) CED_ReadFormattedEd(char * lpEdFile,Bool32 readFromFile, Word32 bufLen)
+CED_FUNC(Handle) CED_ReadFormattedEd(char * lpEdFile,Bool32 readFromFile, uint32_t bufLen)
 {
 	return (Handle)CED_FormattedLoad(lpEdFile, readFromFile,bufLen);
 }
@@ -515,7 +515,7 @@ CED_FUNC(EDSIZE) CED_GetPageDpi(Handle hEdPage)
 return ((CEDPage*)hEdPage)->dpi;
 }
 
-CED_FUNC(Word32) CED_GetPageTurn(Handle hEdPage)
+CED_FUNC(uint32_t) CED_GetPageTurn(Handle hEdPage)
 {
 return ((CEDPage*)hEdPage)->turn;
 }
@@ -525,7 +525,7 @@ CED_FUNC(EDSIZE) CED_GetPageSize(Handle hEdPage)
 return ((CEDPage*)hEdPage)->pageSizeInTwips;
 }
 
-CED_FUNC(Word32) CED_GetPageNumber(Handle hEdPage)
+CED_FUNC(uint32_t) CED_GetPageNumber(Handle hEdPage)
 {
 return ((CEDPage*)hEdPage)->pageNumber;
 }
@@ -553,7 +553,7 @@ CED_FUNC(Bool32) CED_GetPageResize(Handle hEdPage)
 return ((CEDPage*)hEdPage)->resizeToFit;
 }
 
-CED_FUNC(Word32) CED_GetNumberOfParagraphs(Handle hEdPage)
+CED_FUNC(uint32_t) CED_GetNumberOfParagraphs(Handle hEdPage)
 {
 return ((CEDPage*)hEdPage)->GetNumberOfParagraphs();
 }
@@ -569,7 +569,7 @@ CED_FUNC(Bool32) CED_GetFont(Handle hEdPage,int number, BYTE* fontNumber, BYTE* 
 {
 	return ((CEDPage*)hEdPage)->GetFont(number,fontNumber,fontPitchAndFamily,fontCharset,fontName);
 }
-CED_FUNC(Word32) CED_GetNumOfFonts(Handle hEdPage)
+CED_FUNC(uint32_t) CED_GetNumOfFonts(Handle hEdPage)
 {
 	return ((CEDPage*)hEdPage)->fontsUsed;
 }
@@ -596,17 +596,17 @@ CED_FUNC(Bool32) CED_GetPicture(Handle hEdPage,int number, int* pictNumber, EDSI
 		*len=tmp->len;
 	return TRUE;
 }
-CED_FUNC(Word32) CED_GetNumOfPics(Handle hEdPage)
+CED_FUNC(uint32_t) CED_GetNumOfPics(Handle hEdPage)
 {
 	return ((CEDPage*)hEdPage)->picsUsed;
 }
 ////////////////////////////////////////////////////////////////////////////////////////
-CED_FUNC(Word32) CED_GetCountSection(Handle hEdPage)
+CED_FUNC(uint32_t) CED_GetCountSection(Handle hEdPage)
 {
 	return ((CEDPage*)hEdPage)->GetNumberOfSections();
 }
 
-CED_FUNC(Handle) CED_GetSection(Handle hEdPage, Word32 number)
+CED_FUNC(Handle) CED_GetSection(Handle hEdPage, uint32_t number)
 {
 	return (Handle)((CEDPage*)hEdPage)->GetSection(number);
 }
@@ -650,12 +650,12 @@ CED_FUNC(Bool32) CED_GetSectLineBetCol( Handle hEdSection)
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////
-CED_FUNC(Word32) CED_GetCountColumn(Handle hEdSection)
+CED_FUNC(uint32_t) CED_GetCountColumn(Handle hEdSection)
 {
 	return ((CEDSection*)hEdSection)->numberOfColumns;
 }
 
-CED_FUNC(Word32) CED_GetNumSnakeCols(Handle hEdSection)
+CED_FUNC(uint32_t) CED_GetNumSnakeCols(Handle hEdSection)
 {
 	return ((CEDSection*)hEdSection)->numSnakeCols;
 }
@@ -665,18 +665,18 @@ CED_FUNC(Handle) CED_GetColumn(Handle hEdSection,int number)
 	return (Handle)(((CEDSection*)hEdSection)->GetColumn(number));
 }
 
-CED_FUNC(Int32) CED_GetSnakeColumnWidth(Handle hEdSection,int number)
+CED_FUNC(int32_t) CED_GetSnakeColumnWidth(Handle hEdSection,int number)
 {
 	return ((CEDSection*)hEdSection)->colInfo[number].width;
 }
 
-CED_FUNC(Int32) CED_GetSnakeColumnSpacing(Handle hEdSection,int number)
+CED_FUNC(int32_t) CED_GetSnakeColumnSpacing(Handle hEdSection,int number)
 {
 	return ((CEDSection*)hEdSection)->colInfo[number].space;
 }
 ///////////////////////////////////////////////////////////
 
-/*Word32 CED_GetCountFrame(Handle hEdSection)
+/*uint32_t CED_GetCountFrame(Handle hEdSection)
 {
 	return ((CEDSection*)hEdSection)->numberOfFrames;
 }
@@ -691,27 +691,27 @@ CED_FUNC(edBox) CED_GetFrameRect(Handle hEdFrame)
 	return ((EDFRAMEDESCR*)(((CEDParagraph*)hEdFrame)->descriptor))->rec;
 }
 
-CED_FUNC(Int32) CED_GetFramePosition(Handle hEdFrame)
+CED_FUNC(int32_t) CED_GetFramePosition(Handle hEdFrame)
 {
 	return ((EDFRAMEDESCR*)(((CEDParagraph*)hEdFrame)->descriptor))->position;
 }
 
-CED_FUNC(Int32) CED_GetFrameBorderSpace(Handle hEdFrame)
+CED_FUNC(int32_t) CED_GetFrameBorderSpace(Handle hEdFrame)
 {
 	return ((EDFRAMEDESCR*)(((CEDParagraph*)hEdFrame)->descriptor))->borderSpace;
 }
 
-CED_FUNC(Int32) CED_GetFrameDxfrtextx (Handle hEdFrame)
+CED_FUNC(int32_t) CED_GetFrameDxfrtextx (Handle hEdFrame)
 {
 	return ((EDFRAMEDESCR*)(((CEDParagraph*)hEdFrame)->descriptor))->dxfrtextx;
 }
 
-CED_FUNC(Int32) CED_GetFrameDxfrtexty (Handle hEdFrame)
+CED_FUNC(int32_t) CED_GetFrameDxfrtexty (Handle hEdFrame)
 {
 	return ((EDFRAMEDESCR*)(((CEDParagraph*)hEdFrame)->descriptor))->dxfrtexty;
 }
 
-CED_FUNC(Int32) CED_GetFrameFlag (Handle hEdFrame)
+CED_FUNC(int32_t) CED_GetFrameFlag (Handle hEdFrame)
 {
 	return ((EDFRAMEDESCR*)(((CEDParagraph*)hEdFrame)->descriptor))->flag;
 }
@@ -751,7 +751,7 @@ CED_FUNC(Bool32) CED_IsFictive(Handle hEdParagraph)
 	return ((CEDParagraph*)hEdParagraph)->type&FICTIVE?TRUE:FALSE;
 }
 
-CED_FUNC(Word32) CED_GetCountRow(Handle hEdTable)
+CED_FUNC(uint32_t) CED_GetCountRow(Handle hEdTable)
 {
 	return ((EDTABDESCR*)((CEDParagraph*)hEdTable)->descriptor)->numOfRows;
 }
@@ -800,7 +800,7 @@ CED_FUNC(Bool32) CED_GetTableRowParams(Handle hEdRow,
 	return TRUE;
 }
 
-Word32 CED_GetCountCell(Handle hEdRow)
+uint32_t CED_GetCountCell(Handle hEdRow)
 {
 	return ((EDROWDESCR*)((CEDParagraph*)hEdRow)->descriptor)->numOfCells;
 }
@@ -846,53 +846,53 @@ CED_FUNC(Bool32) CED_GetCellParams(Handle hEdCell, int* cellX, int* merging, int
 	return TRUE;
 }
 
-CED_FUNC(Int32) CED_GetCellFlag (Handle hEdCell)
+CED_FUNC(int32_t) CED_GetCellFlag (Handle hEdCell)
 {
 	return ((EDCELLDESCR*)(((CEDParagraph*)hEdCell)->descriptor))->flag;
 }
 
-CED_FUNC(Word32 *) CED_GetTableOfCells(Handle hEdTable)
+CED_FUNC(uint32_t *) CED_GetTableOfCells(Handle hEdTable)
 {
-	if ((Word32*)((EDTABDESCR*)((CEDParagraph*)hEdTable)->descriptor)->table==0)
+	if ((uint32_t*)((EDTABDESCR*)((CEDParagraph*)hEdTable)->descriptor)->table==0)
 		((CEDParagraph*)hEdTable)->CreateTableOfCells();
-	return (Word32*)((EDTABDESCR*)((CEDParagraph*)hEdTable)->descriptor)->table;
+	return (uint32_t*)((EDTABDESCR*)((CEDParagraph*)hEdTable)->descriptor)->table;
 }
 
 
-CED_FUNC(Int32 *)CED_GetLinesX(Handle hEdTable)
+CED_FUNC(int32_t *)CED_GetLinesX(Handle hEdTable)
 {
-	if ((Word32*)((EDTABDESCR*)((CEDParagraph*)hEdTable)->descriptor)->table==0)
+	if ((uint32_t*)((EDTABDESCR*)((CEDParagraph*)hEdTable)->descriptor)->table==0)
 		((CEDParagraph*)hEdTable)->CreateTableOfCells();
-	return (Int32*)((EDTABDESCR*)((CEDParagraph*)hEdTable)->descriptor)->linesX;
+	return (int32_t*)((EDTABDESCR*)((CEDParagraph*)hEdTable)->descriptor)->linesX;
 }
 
-CED_FUNC(Int32 *)CED_GetRowsHeights(Handle hEdTable)
+CED_FUNC(int32_t *)CED_GetRowsHeights(Handle hEdTable)
 {
-	if ((Word32*)((EDTABDESCR*)((CEDParagraph*)hEdTable)->descriptor)->table==0)
+	if ((uint32_t*)((EDTABDESCR*)((CEDParagraph*)hEdTable)->descriptor)->table==0)
 		((CEDParagraph*)hEdTable)->CreateTableOfCells();
-	return (Int32*)((EDTABDESCR*)((CEDParagraph*)hEdTable)->descriptor)->linesY;
+	return (int32_t*)((EDTABDESCR*)((CEDParagraph*)hEdTable)->descriptor)->linesY;
 }
 
 CED_FUNC(edSize) CED_GetSize(Handle hEdTable)
 {
-	if ((Word32*)((EDTABDESCR*)((CEDParagraph*)hEdTable)->descriptor)->table==0)
+	if ((uint32_t*)((EDTABDESCR*)((CEDParagraph*)hEdTable)->descriptor)->table==0)
 		((CEDParagraph*)hEdTable)->CreateTableOfCells();
 	return (edSize)((EDTABDESCR*)((CEDParagraph*)hEdTable)->descriptor)->size;
 }
 CED_FUNC(Handle) CED_GetLogicalCell(Handle hEdTable, int number)
 {
-	if ((Word32*)((EDTABDESCR*)((CEDParagraph*)hEdTable)->descriptor)->table==0)
+	if ((uint32_t*)((EDTABDESCR*)((CEDParagraph*)hEdTable)->descriptor)->table==0)
 		((CEDParagraph*)hEdTable)->CreateTableOfCells();
 	return (Handle)((CEDParagraph*)hEdTable)->GetLogicalCell(number);
 }
 CED_FUNC(int) CED_GetCountLogicalCell(Handle hEdTable)
 {
-	if ((Word32*)((EDTABDESCR*)((CEDParagraph*)hEdTable)->descriptor)->table==0)
+	if ((uint32_t*)((EDTABDESCR*)((CEDParagraph*)hEdTable)->descriptor)->table==0)
 		((CEDParagraph*)hEdTable)->CreateTableOfCells();
 	return ((CEDParagraph*)hEdTable)->GetCountLogicalCell();
 }
 /////////////////////////////////////////////////////////////////
-CED_FUNC(Word32) CED_GetCountLine(Handle hEdParagraph)
+CED_FUNC(uint32_t) CED_GetCountLine(Handle hEdParagraph)
 {
 	return ((CEDParagraph*)hEdParagraph)->GetCountLine();
 }
@@ -907,7 +907,7 @@ CED_FUNC(EDRECT) CED_GetIndent(Handle hEdParagraph)
 	return ((CEDParagraph*)hEdParagraph)->indent;
 }
 
-CED_FUNC(Word32) CED_GetAlignment(Handle hEdParagraph)
+CED_FUNC(uint32_t) CED_GetAlignment(Handle hEdParagraph)
 {
 	return ((CEDParagraph*)hEdParagraph)->alignment;
 }
@@ -917,7 +917,7 @@ CED_FUNC(edBox) CED_GetLayout(Handle hEdParagraph)
 	return ((CEDParagraph*)hEdParagraph)->layout;
 }
 
-CED_FUNC(Word32) CED_GetUserNumber(Handle hEdParagraph)
+CED_FUNC(uint32_t) CED_GetUserNumber(Handle hEdParagraph)
 {
 	return ((CEDParagraph*)hEdParagraph)->userNumber;
 }
@@ -976,11 +976,11 @@ CED_FUNC(Bool32) CED_GetLineHardBreak (Handle hEdLine)
 	return ((CEDLine*)hEdLine)->hardBreak;
 }
 
-CED_FUNC(Int32) CED_GetLineDefChrFontHeight(Handle hEdLine)
+CED_FUNC(int32_t) CED_GetLineDefChrFontHeight(Handle hEdLine)
 {
 	return ((CEDLine*)hEdLine)->defChrFontHeight;
 }
-CED_FUNC(Word32) CED_GetCountChar(Handle hEdLine)
+CED_FUNC(uint32_t) CED_GetCountChar(Handle hEdLine)
 {
 	return ((CEDLine*)hEdLine)->GetCountChar();
 }
@@ -1002,17 +1002,17 @@ CED_FUNC(struct) letterEx* CED_GetAlternatives(Handle hEdChar)
 	return ((CEDChar*)hEdChar)->alternatives;
 }
 
-CED_FUNC(Int32) CED_GetCharFontHeight(Handle hEdChar)
+CED_FUNC(int32_t) CED_GetCharFontHeight(Handle hEdChar)
 {
 	return ((CEDChar*)hEdChar)->fontHeight;
 }
 
-CED_FUNC(Int32) CED_GetCharFontAttribs(Handle hEdChar)
+CED_FUNC(int32_t) CED_GetCharFontAttribs(Handle hEdChar)
 {
 	return ((CEDChar*)hEdChar)->fontAttribs;
 }
 
-CED_FUNC(Int32) CED_GetCharFontNum(Handle hEdChar)
+CED_FUNC(int32_t) CED_GetCharFontNum(Handle hEdChar)
 {
 	return ((CEDChar*)hEdChar)->fontNum;
 }
@@ -1021,16 +1021,16 @@ CED_FUNC(EDRECT) CED_GetCharLayout(Handle hEdChar)
 {
 	return ((CEDChar*)hEdChar)->layout;
 }
-CED_FUNC(Int32) CED_GetCharForegroundColor(Handle hEdChar)
+CED_FUNC(int32_t) CED_GetCharForegroundColor(Handle hEdChar)
 {
 	return ((CEDChar*)hEdChar)->foregroundColor;
 }
 
-CED_FUNC(Int32) CED_GetCharBackgroundColor(Handle hEdChar)
+CED_FUNC(int32_t) CED_GetCharBackgroundColor(Handle hEdChar)
 {
 	return ((CEDChar*)hEdChar)->backgroundColor;
 }
-CED_FUNC(Int32) CED_GetCharFontLang(Handle hEdChar)
+CED_FUNC(int32_t) CED_GetCharFontLang(Handle hEdChar)
 {
 	return ((CEDChar*)hEdChar)->fontLang;
 }

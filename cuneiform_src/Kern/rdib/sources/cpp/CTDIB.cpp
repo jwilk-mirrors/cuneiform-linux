@@ -2,33 +2,33 @@
 Copyright (c) 1993-2008, Cognitive Technologies
 All rights reserved.
 
-Ðàçðåøàåòñÿ ïîâòîðíîå ðàñïðîñòðàíåíèå è èñïîëüçîâàíèå êàê â âèäå èñõîäíîãî êîäà,
-òàê è â äâîè÷íîé ôîðìå, ñ èçìåíåíèÿìè èëè áåç, ïðè ñîáëþäåíèè ñëåäóþùèõ óñëîâèé:
+Ð Ð°Ð·Ñ€ÐµÑˆÐ°ÐµÑ‚ÑÑ Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€Ð½Ð¾Ðµ Ñ€Ð°ÑÐ¿Ñ€Ð¾ÑÑ‚Ñ€Ð°Ð½ÐµÐ½Ð¸Ðµ Ð¸ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸Ðµ ÐºÐ°Ðº Ð² Ð²Ð¸Ð´Ðµ Ð¸ÑÑ…Ð¾Ð´Ð½Ð¾Ð³Ð¾ ÐºÐ¾Ð´Ð°,
+Ñ‚Ð°Ðº Ð¸ Ð² Ð´Ð²Ð¾Ð¸Ñ‡Ð½Ð¾Ð¹ Ñ„Ð¾Ñ€Ð¼Ðµ, Ñ Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸ÑÐ¼Ð¸ Ð¸Ð»Ð¸ Ð±ÐµÐ·, Ð¿Ñ€Ð¸ ÑÐ¾Ð±Ð»ÑŽÐ´ÐµÐ½Ð¸Ð¸ ÑÐ»ÐµÐ´ÑƒÑŽÑ‰Ð¸Ñ… ÑƒÑÐ»Ð¾Ð²Ð¸Ð¹:
 
-      * Ïðè ïîâòîðíîì ðàñïðîñòðàíåíèè èñõîäíîãî êîäà äîëæíû îñòàâàòüñÿ óêàçàííîå
-        âûøå óâåäîìëåíèå îá àâòîðñêîì ïðàâå, ýòîò ñïèñîê óñëîâèé è ïîñëåäóþùèé
-        îòêàç îò ãàðàíòèé.
-      * Ïðè ïîâòîðíîì ðàñïðîñòðàíåíèè äâîè÷íîãî êîäà â äîêóìåíòàöèè è/èëè â
-        äðóãèõ ìàòåðèàëàõ, ïîñòàâëÿåìûõ ïðè ðàñïðîñòðàíåíèè, äîëæíû ñîõðàíÿòüñÿ
-        óêàçàííàÿ âûøå èíôîðìàöèÿ îá àâòîðñêîì ïðàâå, ýòîò ñïèñîê óñëîâèé è
-        ïîñëåäóþùèé îòêàç îò ãàðàíòèé.
-      * Íè íàçâàíèå Cognitive Technologies, íè èìåíà åå ñîòðóäíèêîâ íå ìîãóò
-        áûòü èñïîëüçîâàíû â êà÷åñòâå ñðåäñòâà ïîääåðæêè è/èëè ïðîäâèæåíèÿ
-        ïðîäóêòîâ, îñíîâàííûõ íà ýòîì ÏÎ, áåç ïðåäâàðèòåëüíîãî ïèñüìåííîãî
-        ðàçðåøåíèÿ.
+      * ÐŸÑ€Ð¸ Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€Ð½Ð¾Ð¼ Ñ€Ð°ÑÐ¿Ñ€Ð¾ÑÑ‚Ñ€Ð°Ð½ÐµÐ½Ð¸Ð¸ Ð¸ÑÑ…Ð¾Ð´Ð½Ð¾Ð³Ð¾ ÐºÐ¾Ð´Ð° Ð´Ð¾Ð»Ð¶Ð½Ñ‹ Ð¾ÑÑ‚Ð°Ð²Ð°Ñ‚ÑŒÑÑ ÑƒÐºÐ°Ð·Ð°Ð½Ð½Ð¾Ðµ
+        Ð²Ñ‹ÑˆÐµ ÑƒÐ²ÐµÐ´Ð¾Ð¼Ð»ÐµÐ½Ð¸Ðµ Ð¾Ð± Ð°Ð²Ñ‚Ð¾Ñ€ÑÐºÐ¾Ð¼ Ð¿Ñ€Ð°Ð²Ðµ, ÑÑ‚Ð¾Ñ‚ ÑÐ¿Ð¸ÑÐ¾Ðº ÑƒÑÐ»Ð¾Ð²Ð¸Ð¹ Ð¸ Ð¿Ð¾ÑÐ»ÐµÐ´ÑƒÑŽÑ‰Ð¸Ð¹
+        Ð¾Ñ‚ÐºÐ°Ð· Ð¾Ñ‚ Ð³Ð°Ñ€Ð°Ð½Ñ‚Ð¸Ð¹.
+      * ÐŸÑ€Ð¸ Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€Ð½Ð¾Ð¼ Ñ€Ð°ÑÐ¿Ñ€Ð¾ÑÑ‚Ñ€Ð°Ð½ÐµÐ½Ð¸Ð¸ Ð´Ð²Ð¾Ð¸Ñ‡Ð½Ð¾Ð³Ð¾ ÐºÐ¾Ð´Ð° Ð² Ð´Ð¾ÐºÑƒÐ¼ÐµÐ½Ñ‚Ð°Ñ†Ð¸Ð¸ Ð¸/Ð¸Ð»Ð¸ Ð²
+        Ð´Ñ€ÑƒÐ³Ð¸Ñ… Ð¼Ð°Ñ‚ÐµÑ€Ð¸Ð°Ð»Ð°Ñ…, Ð¿Ð¾ÑÑ‚Ð°Ð²Ð»ÑÐµÐ¼Ñ‹Ñ… Ð¿Ñ€Ð¸ Ñ€Ð°ÑÐ¿Ñ€Ð¾ÑÑ‚Ñ€Ð°Ð½ÐµÐ½Ð¸Ð¸, Ð´Ð¾Ð»Ð¶Ð½Ñ‹ ÑÐ¾Ñ…Ñ€Ð°Ð½ÑÑ‚ÑŒÑÑ
+        ÑƒÐºÐ°Ð·Ð°Ð½Ð½Ð°Ñ Ð²Ñ‹ÑˆÐµ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð¾Ð± Ð°Ð²Ñ‚Ð¾Ñ€ÑÐºÐ¾Ð¼ Ð¿Ñ€Ð°Ð²Ðµ, ÑÑ‚Ð¾Ñ‚ ÑÐ¿Ð¸ÑÐ¾Ðº ÑƒÑÐ»Ð¾Ð²Ð¸Ð¹ Ð¸
+        Ð¿Ð¾ÑÐ»ÐµÐ´ÑƒÑŽÑ‰Ð¸Ð¹ Ð¾Ñ‚ÐºÐ°Ð· Ð¾Ñ‚ Ð³Ð°Ñ€Ð°Ð½Ñ‚Ð¸Ð¹.
+      * ÐÐ¸ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ðµ Cognitive Technologies, Ð½Ð¸ Ð¸Ð¼ÐµÐ½Ð° ÐµÐµ ÑÐ¾Ñ‚Ñ€ÑƒÐ´Ð½Ð¸ÐºÐ¾Ð² Ð½Ðµ Ð¼Ð¾Ð³ÑƒÑ‚
+        Ð±Ñ‹Ñ‚ÑŒ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ñ‹ Ð² ÐºÐ°Ñ‡ÐµÑÑ‚Ð²Ðµ ÑÑ€ÐµÐ´ÑÑ‚Ð²Ð° Ð¿Ð¾Ð´Ð´ÐµÑ€Ð¶ÐºÐ¸ Ð¸/Ð¸Ð»Ð¸ Ð¿Ñ€Ð¾Ð´Ð²Ð¸Ð¶ÐµÐ½Ð¸Ñ
+        Ð¿Ñ€Ð¾Ð´ÑƒÐºÑ‚Ð¾Ð², Ð¾ÑÐ½Ð¾Ð²Ð°Ð½Ð½Ñ‹Ñ… Ð½Ð° ÑÑ‚Ð¾Ð¼ ÐŸÐž, Ð±ÐµÐ· Ð¿Ñ€ÐµÐ´Ð²Ð°Ñ€Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾Ð³Ð¾ Ð¿Ð¸ÑÑŒÐ¼ÐµÐ½Ð½Ð¾Ð³Ð¾
+        Ñ€Ð°Ð·Ñ€ÐµÑˆÐµÐ½Ð¸Ñ.
 
-ÝÒÀ ÏÐÎÃÐÀÌÌÀ ÏÐÅÄÎÑÒÀÂËÅÍÀ ÂËÀÄÅËÜÖÀÌÈ ÀÂÒÎÐÑÊÈÕ ÏÐÀÂ È/ÈËÈ ÄÐÓÃÈÌÈ ËÈÖÀÌÈ "ÊÀÊ
-ÎÍÀ ÅÑÒÜ" ÁÅÇ ÊÀÊÎÃÎ-ËÈÁÎ ÂÈÄÀ ÃÀÐÀÍÒÈÉ, ÂÛÐÀÆÅÍÍÛÕ ßÂÍÎ ÈËÈ ÏÎÄÐÀÇÓÌÅÂÀÅÌÛÕ,
-ÂÊËÞ×Àß ÃÀÐÀÍÒÈÈ ÊÎÌÌÅÐ×ÅÑÊÎÉ ÖÅÍÍÎÑÒÈ È ÏÐÈÃÎÄÍÎÑÒÈ ÄËß ÊÎÍÊÐÅÒÍÎÉ ÖÅËÈ, ÍÎ ÍÅ
-ÎÃÐÀÍÈ×ÈÂÀßÑÜ ÈÌÈ. ÍÈ ÂËÀÄÅËÅÖ ÀÂÒÎÐÑÊÈÕ ÏÐÀÂ È ÍÈ ÎÄÍÎ ÄÐÓÃÎÅ ËÈÖÎ, ÊÎÒÎÐÎÅ
-ÌÎÆÅÒ ÈÇÌÅÍßÒÜ È/ÈËÈ ÏÎÂÒÎÐÍÎ ÐÀÑÏÐÎÑÒÐÀÍßÒÜ ÏÐÎÃÐÀÌÌÓ, ÍÈ Â ÊÎÅÌ ÑËÓ×ÀÅ ÍÅ
-ÍÅÑ¨Ò ÎÒÂÅÒÑÒÂÅÍÍÎÑÒÈ, ÂÊËÞ×Àß ËÞÁÛÅ ÎÁÙÈÅ, ÑËÓ×ÀÉÍÛÅ, ÑÏÅÖÈÀËÜÍÛÅ ÈËÈ
-ÏÎÑËÅÄÎÂÀÂØÈÅ ÓÁÛÒÊÈ, ÑÂßÇÀÍÍÛÅ Ñ ÈÑÏÎËÜÇÎÂÀÍÈÅÌ ÈËÈ ÏÎÍÅÑÅÍÍÛÅ ÂÑËÅÄÑÒÂÈÅ
-ÍÅÂÎÇÌÎÆÍÎÑÒÈ ÈÑÏÎËÜÇÎÂÀÍÈß ÏÐÎÃÐÀÌÌÛ (ÂÊËÞ×Àß ÏÎÒÅÐÈ ÄÀÍÍÛÕ, ÈËÈ ÄÀÍÍÛÅ,
-ÑÒÀÂØÈÅ ÍÅÃÎÄÍÛÌÈ, ÈËÈ ÓÁÛÒÊÈ È/ÈËÈ ÏÎÒÅÐÈ ÄÎÕÎÄÎÂ, ÏÎÍÅÑÅÍÍÛÅ ÈÇ-ÇÀ ÄÅÉÑÒÂÈÉ
-ÒÐÅÒÜÈÕ ËÈÖ È/ÈËÈ ÎÒÊÀÇÀ ÏÐÎÃÐÀÌÌÛ ÐÀÁÎÒÀÒÜ ÑÎÂÌÅÑÒÍÎ Ñ ÄÐÓÃÈÌÈ ÏÐÎÃÐÀÌÌÀÌÈ,
-ÍÎ ÍÅ ÎÃÐÀÍÈ×ÈÂÀßÑÜ ÝÒÈÌÈ ÑËÓ×ÀßÌÈ), ÍÎ ÍÅ ÎÃÐÀÍÈ×ÈÂÀßÑÜ ÈÌÈ, ÄÀÆÅ ÅÑËÈ ÒÀÊÎÉ
-ÂËÀÄÅËÅÖ ÈËÈ ÄÐÓÃÎÅ ËÈÖÎ ÁÛËÈ ÈÇÂÅÙÅÍÛ Î ÂÎÇÌÎÆÍÎÑÒÈ ÒÀÊÈÕ ÓÁÛÒÊÎÂ È ÏÎÒÅÐÜ.
+Ð­Ð¢Ð ÐŸÐ ÐžÐ“Ð ÐÐœÐœÐ ÐŸÐ Ð•Ð”ÐžÐ¡Ð¢ÐÐ’Ð›Ð•ÐÐ Ð’Ð›ÐÐ”Ð•Ð›Ð¬Ð¦ÐÐœÐ˜ ÐÐ’Ð¢ÐžÐ Ð¡ÐšÐ˜Ð¥ ÐŸÐ ÐÐ’ Ð˜/Ð˜Ð›Ð˜ Ð”Ð Ð£Ð“Ð˜ÐœÐ˜ Ð›Ð˜Ð¦ÐÐœÐ˜ "ÐšÐÐš
+ÐžÐÐ Ð•Ð¡Ð¢Ð¬" Ð‘Ð•Ð— ÐšÐÐšÐžÐ“Ðž-Ð›Ð˜Ð‘Ðž Ð’Ð˜Ð”Ð Ð“ÐÐ ÐÐÐ¢Ð˜Ð™, Ð’Ð«Ð ÐÐ–Ð•ÐÐÐ«Ð¥ Ð¯Ð’ÐÐž Ð˜Ð›Ð˜ ÐŸÐžÐ”Ð ÐÐ—Ð£ÐœÐ•Ð’ÐÐ•ÐœÐ«Ð¥,
+Ð’ÐšÐ›Ð®Ð§ÐÐ¯ Ð“ÐÐ ÐÐÐ¢Ð˜Ð˜ ÐšÐžÐœÐœÐ•Ð Ð§Ð•Ð¡ÐšÐžÐ™ Ð¦Ð•ÐÐÐžÐ¡Ð¢Ð˜ Ð˜ ÐŸÐ Ð˜Ð“ÐžÐ”ÐÐžÐ¡Ð¢Ð˜ Ð”Ð›Ð¯ ÐšÐžÐÐšÐ Ð•Ð¢ÐÐžÐ™ Ð¦Ð•Ð›Ð˜, ÐÐž ÐÐ•
+ÐžÐ“Ð ÐÐÐ˜Ð§Ð˜Ð’ÐÐ¯Ð¡Ð¬ Ð˜ÐœÐ˜. ÐÐ˜ Ð’Ð›ÐÐ”Ð•Ð›Ð•Ð¦ ÐÐ’Ð¢ÐžÐ Ð¡ÐšÐ˜Ð¥ ÐŸÐ ÐÐ’ Ð˜ ÐÐ˜ ÐžÐ”ÐÐž Ð”Ð Ð£Ð“ÐžÐ• Ð›Ð˜Ð¦Ðž, ÐšÐžÐ¢ÐžÐ ÐžÐ•
+ÐœÐžÐ–Ð•Ð¢ Ð˜Ð—ÐœÐ•ÐÐ¯Ð¢Ð¬ Ð˜/Ð˜Ð›Ð˜ ÐŸÐžÐ’Ð¢ÐžÐ ÐÐž Ð ÐÐ¡ÐŸÐ ÐžÐ¡Ð¢Ð ÐÐÐ¯Ð¢Ð¬ ÐŸÐ ÐžÐ“Ð ÐÐœÐœÐ£, ÐÐ˜ Ð’ ÐšÐžÐ•Ðœ Ð¡Ð›Ð£Ð§ÐÐ• ÐÐ•
+ÐÐ•Ð¡ÐÐ¢ ÐžÐ¢Ð’Ð•Ð¢Ð¡Ð¢Ð’Ð•ÐÐÐžÐ¡Ð¢Ð˜, Ð’ÐšÐ›Ð®Ð§ÐÐ¯ Ð›Ð®Ð‘Ð«Ð• ÐžÐ‘Ð©Ð˜Ð•, Ð¡Ð›Ð£Ð§ÐÐ™ÐÐ«Ð•, Ð¡ÐŸÐ•Ð¦Ð˜ÐÐ›Ð¬ÐÐ«Ð• Ð˜Ð›Ð˜
+ÐŸÐžÐ¡Ð›Ð•Ð”ÐžÐ’ÐÐ’Ð¨Ð˜Ð• Ð£Ð‘Ð«Ð¢ÐšÐ˜, Ð¡Ð’Ð¯Ð—ÐÐÐÐ«Ð• Ð¡ Ð˜Ð¡ÐŸÐžÐ›Ð¬Ð—ÐžÐ’ÐÐÐ˜Ð•Ðœ Ð˜Ð›Ð˜ ÐŸÐžÐÐ•Ð¡Ð•ÐÐÐ«Ð• Ð’Ð¡Ð›Ð•Ð”Ð¡Ð¢Ð’Ð˜Ð•
+ÐÐ•Ð’ÐžÐ—ÐœÐžÐ–ÐÐžÐ¡Ð¢Ð˜ Ð˜Ð¡ÐŸÐžÐ›Ð¬Ð—ÐžÐ’ÐÐÐ˜Ð¯ ÐŸÐ ÐžÐ“Ð ÐÐœÐœÐ« (Ð’ÐšÐ›Ð®Ð§ÐÐ¯ ÐŸÐžÐ¢Ð•Ð Ð˜ Ð”ÐÐÐÐ«Ð¥, Ð˜Ð›Ð˜ Ð”ÐÐÐÐ«Ð•,
+Ð¡Ð¢ÐÐ’Ð¨Ð˜Ð• ÐÐ•Ð“ÐžÐ”ÐÐ«ÐœÐ˜, Ð˜Ð›Ð˜ Ð£Ð‘Ð«Ð¢ÐšÐ˜ Ð˜/Ð˜Ð›Ð˜ ÐŸÐžÐ¢Ð•Ð Ð˜ Ð”ÐžÐ¥ÐžÐ”ÐžÐ’, ÐŸÐžÐÐ•Ð¡Ð•ÐÐÐ«Ð• Ð˜Ð—-Ð—Ð Ð”Ð•Ð™Ð¡Ð¢Ð’Ð˜Ð™
+Ð¢Ð Ð•Ð¢Ð¬Ð˜Ð¥ Ð›Ð˜Ð¦ Ð˜/Ð˜Ð›Ð˜ ÐžÐ¢ÐšÐÐ—Ð ÐŸÐ ÐžÐ“Ð ÐÐœÐœÐ« Ð ÐÐ‘ÐžÐ¢ÐÐ¢Ð¬ Ð¡ÐžÐ’ÐœÐ•Ð¡Ð¢ÐÐž Ð¡ Ð”Ð Ð£Ð“Ð˜ÐœÐ˜ ÐŸÐ ÐžÐ“Ð ÐÐœÐœÐÐœÐ˜,
+ÐÐž ÐÐ• ÐžÐ“Ð ÐÐÐ˜Ð§Ð˜Ð’ÐÐ¯Ð¡Ð¬ Ð­Ð¢Ð˜ÐœÐ˜ Ð¡Ð›Ð£Ð§ÐÐ¯ÐœÐ˜), ÐÐž ÐÐ• ÐžÐ“Ð ÐÐÐ˜Ð§Ð˜Ð’ÐÐ¯Ð¡Ð¬ Ð˜ÐœÐ˜, Ð”ÐÐ–Ð• Ð•Ð¡Ð›Ð˜ Ð¢ÐÐšÐžÐ™
+Ð’Ð›ÐÐ”Ð•Ð›Ð•Ð¦ Ð˜Ð›Ð˜ Ð”Ð Ð£Ð“ÐžÐ• Ð›Ð˜Ð¦Ðž Ð‘Ð«Ð›Ð˜ Ð˜Ð—Ð’Ð•Ð©Ð•ÐÐ« Ðž Ð’ÐžÐ—ÐœÐžÐ–ÐÐžÐ¡Ð¢Ð˜ Ð¢ÐÐšÐ˜Ð¥ Ð£Ð‘Ð«Ð¢ÐšÐžÐ’ Ð˜ ÐŸÐžÐ¢Ð•Ð Ð¬.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
@@ -103,9 +103,9 @@ CTDIB::CTDIB(Handle hAtDIB)
 	hDIB = hAtDIB;
 }
 
-Word32 CTDIB::GetActualColorNumber()
+uint32_t CTDIB::GetActualColorNumber()
 {
-	Word32 RGBCount;
+	uint32_t RGBCount;
 	PCTDIBBITMAPINFOHEADER pHeader;
 
 	CTDIB_IFNODIB(0);
@@ -194,7 +194,7 @@ PVOID CTDIB::GetPtrToRGB()
 	return (PVOID)pRGBQuads;
 }
 
-Word32 CTDIB::GetDIBVersion()
+uint32_t CTDIB::GetDIBVersion()
 {
 	CTDIB_IFNODIB(0);
 	return wVersion;
@@ -223,14 +223,14 @@ Bool32 CTDIB::IsDIBAvailable()
 	return IsAvailable;
 }
 //////////////////  !
-Int32 CTDIB::GetImageHeight()
+int32_t CTDIB::GetImageHeight()
 {
 	CTDIB_IFNODIB(0);
 
 	return ((PCTDIBBITMAPINFOHEADER)pDIBHeader)->biHeight;
 }
 
-Word32 CTDIB::GetLinesNumber()
+uint32_t CTDIB::GetLinesNumber()
 {
 	CTDIB_IFNODIB(0);
 
@@ -238,40 +238,40 @@ Word32 CTDIB::GetLinesNumber()
 }
 //////////////////  !
 
-Int32 CTDIB::GetImageWidth()
+int32_t CTDIB::GetImageWidth()
 {
 	CTDIB_IFNODIB(0);
 	return ((PCTDIBBITMAPINFOHEADER)pDIBHeader)->biWidth;
 }
 
-Word32 CTDIB::GetLineWidth()
+uint32_t CTDIB::GetLineWidth()
 {
 	CTDIB_IFNODIB(0);
 
 	return abs(GetImageWidth());
 }
 
-Word32 CTDIB::GetLineWidthInBytes()
+uint32_t CTDIB::GetLineWidthInBytes()
 {
 	CTDIB_IFNODIB(0);
 
 	return DIB_BITS_TO_BYTES(GetLineWidth() * GetPixelSize());
 }
 
-Word32 CTDIB::GetUsedLineWidthInBytes()
+uint32_t CTDIB::GetUsedLineWidthInBytes()
 {
 	CTDIB_IFNODIB(0);
 	return BITS_TO_BYTES(GetLineWidth() * GetPixelSize());
 }
 
-Word32 CTDIB::GetImageSize()
+uint32_t CTDIB::GetImageSize()
 {
 	CTDIB_IFNODIB(0);
 
 	return GetLinesNumber() * GetLineWidth();
 }
 
-Word32 CTDIB::GetImageSizeInBytes()
+uint32_t CTDIB::GetImageSizeInBytes()
 {
 	CTDIB_IFNODIB(0);
 
@@ -279,14 +279,14 @@ Word32 CTDIB::GetImageSizeInBytes()
 }
 /////////////////////////////////////////////////////////////////////
 //
-Word32 CTDIB::GetPixelSize()
+uint32_t CTDIB::GetPixelSize()
 {
 	CTDIB_IFNODIB(0);
-	return (Word32)(((PCTDIBBITMAPINFOHEADER)pDIBHeader)->biBitCount);
+	return (uint32_t)(((PCTDIBBITMAPINFOHEADER)pDIBHeader)->biBitCount);
 }
 ///////////////////////////////////////////////////////////////////////
 //
-Handle CTDIB::CreateDIBBegin(Int32 Width, Int32 Height, Word32 BitCount, Word32 UseColors, CTDIBVersion dVersion)
+Handle CTDIB::CreateDIBBegin(int32_t Width, int32_t Height, uint32_t BitCount, uint32_t UseColors, CTDIBVersion dVersion)
 {
 	#define DELETE_PHEADER(a)                if ( a )  delete a;
 
@@ -294,8 +294,8 @@ Handle CTDIB::CreateDIBBegin(Int32 Width, Int32 Height, Word32 BitCount, Word32 
 	PCTDIBBITMAPV4HEADER   pV4Header = NULL;
 	PCTDIBBITMAPV5HEADER   pV5Header = NULL;
 	PVOID                  pHeader = NULL;
-	Word32 HeaderSize;
-	Word32 FuelSize = 0;
+	uint32_t HeaderSize;
+	uint32_t FuelSize = 0;
 
 	if ( !CTDIB_READYTOCREAT )
 		return NULL;
@@ -417,9 +417,9 @@ Bool32 CTDIB::SetExternals(PCTDIBMemAlloc pfAlloc, PCTDIBMemFree pfFree, PCTDIBM
 	return TRUE;
 }
 
-Word32 CTDIB::UsedColors(Word32 wBitCount, Word32 wClrUsed)
+uint32_t CTDIB::UsedColors(uint32_t wBitCount, uint32_t wClrUsed)
 {
-	Word32 RGBCount;
+	uint32_t RGBCount;
 
 	if ( ( RGBCount = wClrUsed ) == 0)
 	{
@@ -451,14 +451,14 @@ Word32 CTDIB::UsedColors(Word32 wBitCount, Word32 wClrUsed)
 	return RGBCount;
 }
 
-Bool32 CTDIB::SetResolutionDPI(Word32 X_Dpi, Word32 Y_Dpi)
+Bool32 CTDIB::SetResolutionDPI(uint32_t X_Dpi, uint32_t Y_Dpi)
 {
 	CTDIB_UNDECONST(FALSE);
 
-	return SetResolutionDPM((Word32)CTDIB_DPI_TO_DPM(X_Dpi), (Word32)CTDIB_DPI_TO_DPM(Y_Dpi));
+	return SetResolutionDPM((uint32_t)CTDIB_DPI_TO_DPM(X_Dpi), (uint32_t)CTDIB_DPI_TO_DPM(Y_Dpi));
 }
 
-Bool32 CTDIB::SetResolutionDPM(Word32 X_Dpm, Word32 Y_Dpm)
+Bool32 CTDIB::SetResolutionDPM(uint32_t X_Dpm, uint32_t Y_Dpm)
 {
 	PCTDIBBITMAPINFOHEADER pH;
 
@@ -475,10 +475,10 @@ Bool32 CTDIB::SetResolutionDPM(Word32 X_Dpm, Word32 Y_Dpm)
 	return TRUE;
 }
 
-Bool32 CTDIB::GetResolutionDPI(PWord32 pX_Dpi, PWord32 pY_Dpi)
+Bool32 CTDIB::GetResolutionDPI(uint32_t * pX_Dpi, uint32_t * pY_Dpi)
 {
-	Word32 x_dpi;
-	Word32 y_dpi;
+	uint32_t x_dpi;
+	uint32_t y_dpi;
 
 	CTDIB_IFNODIB(FALSE);
 
@@ -486,16 +486,16 @@ Bool32 CTDIB::GetResolutionDPI(PWord32 pX_Dpi, PWord32 pY_Dpi)
 		return FALSE;
 
 
-	*pX_Dpi = (Word32)CTDIB_DPM_TO_DPI(x_dpi);
+	*pX_Dpi = (uint32_t)CTDIB_DPM_TO_DPI(x_dpi);
 
 	if ( pY_Dpi != NULL )
-		*pY_Dpi = (Word32)CTDIB_DPM_TO_DPI(y_dpi);
+		*pY_Dpi = (uint32_t)CTDIB_DPM_TO_DPI(y_dpi);
 
 	return TRUE;
 
 }
 
-Bool32 CTDIB::GetResolutionDPM(PWord32 pX_Dpm, PWord32 pY_Dpm)
+Bool32 CTDIB::GetResolutionDPM(uint32_t * pX_Dpm, uint32_t * pY_Dpm)
 {
 	PCTDIBBITMAPINFOHEADER pH;
 
@@ -518,7 +518,7 @@ Bool32 CTDIB::CreateDIBEnd()
 	return !(UnderConstruction = FALSE);
 }
 
-PVOID CTDIB::GetPtrToLine(Word32 wLine)
+PVOID CTDIB::GetPtrToLine(uint32_t wLine)
 {
 	PWord8  pLine = NULL;
 
@@ -544,7 +544,7 @@ PVOID CTDIB::GetPtrToLine(Word32 wLine)
 	return NULL;
 }
 
-PVOID CTDIB::GetPtrToPixel(Word32 wPixelX, Word32 wPixelY)
+PVOID CTDIB::GetPtrToPixel(uint32_t wPixelX, uint32_t wPixelY)
 {
 	PWord8  pLine = NULL;
 
@@ -587,7 +587,7 @@ Bool32 CTDIB::GetDIBPtr(PPVOID ppDIB)
 	return TRUE;
 }
 
-Bool32 CTDIB::SetRGBQuad(Word32 wQuad, CTDIBRGBQUAD Quad)
+Bool32 CTDIB::SetRGBQuad(uint32_t wQuad, CTDIBRGBQUAD Quad)
 {
 	PCTDIBRGBQUAD pCurrentQuad;
 
@@ -642,9 +642,9 @@ Bool32 CTDIB::SetDIBHandle(Handle hSetDIB)
 }
 
 
-Word32 CTDIB::GetDIBSize()
+uint32_t CTDIB::GetDIBSize()
 {
-	Word32 FuelSize = 0;
+	uint32_t FuelSize = 0;
 
 	CTDIB_IFNODIB(0);
 
@@ -655,21 +655,21 @@ Word32 CTDIB::GetDIBSize()
 	return FuelSize;
 }
 
-Word32 CTDIB::GetHeaderSize()
+uint32_t CTDIB::GetHeaderSize()
 {
 	CTDIB_IFNODIB(0);
 
-	return *((PWord32)(GetPtrToHeader()));
+	return *((uint32_t *)(GetPtrToHeader()));
 }
 
-Word32 CTDIB::GetRGBPalleteSize()
+uint32_t CTDIB::GetRGBPalleteSize()
 {
 	CTDIB_IFNODIB(0);
 
 	return (GetActualColorNumber() * sizeof(CTDIBRGBQUAD));
 }
 
-Word32 CTDIB::GetPixelShiftInByte(Word32 dwX)
+uint32_t CTDIB::GetPixelShiftInByte(uint32_t dwX)
 {
 	CTDIB_IFNODIB(0);
 
@@ -694,7 +694,7 @@ Bool32 CTDIB::IsExternalsSets()
 	return ( pExternalAlloc && pExternalFree && pExternalLock && pExternalUnlock ) != NULL ;
 }
 
-Bool32 CTDIB::GetRGBQuad(Word32 wQuad, PCTDIBRGBQUAD pQuad)
+Bool32 CTDIB::GetRGBQuad(uint32_t wQuad, PCTDIBRGBQUAD pQuad)
 {
 	PCTDIBRGBQUAD pCurrentQuad;
 
@@ -729,12 +729,12 @@ CTDIB::CTDIBVersion CTDIB::GetVersion()
 }
 ///////////////////////////////////////////////////////////////////////////////////////////////
 //
-Bool32 CTDIB::SetFuelLineFromDIB(CTDIB * pSrcDIB, Word32 nSrcLine, Word32 nDscLine, Word32 wSrcX)
+Bool32 CTDIB::SetFuelLineFromDIB(CTDIB * pSrcDIB, uint32_t nSrcLine, uint32_t nDscLine, uint32_t wSrcX)
 {
 	PWord8 pSrcStart = (PWord8)pSrcDIB->GetPtrToPixel(wSrcX, nSrcLine);
 	PWord8 pDscStart = (PWord8)this->GetPtrToLine(nDscLine);
 	PWord8 pBuffer;
-	Word32 wShift;
+	uint32_t wShift;
 
 	if ( pSrcDIB == NULL )
 		return FALSE;
@@ -748,7 +748,7 @@ Bool32 CTDIB::SetFuelLineFromDIB(CTDIB * pSrcDIB, Word32 nSrcLine, Word32 nDscLi
 	if ( pSrcDIB->GetPixelSize() != this->GetPixelSize() )
 		return FALSE;
 
-	Word32 t = pSrcDIB->GetUsedLineWidthInBytes() > this->GetUsedLineWidthInBytes() + ((wSrcX * GetPixelSize()) / 8) ? 1 : 0;
+	uint32_t t = pSrcDIB->GetUsedLineWidthInBytes() > this->GetUsedLineWidthInBytes() + ((wSrcX * GetPixelSize()) / 8) ? 1 : 0;
 	switch ( this->GetPixelSize() )
 	{
 	case 1:
@@ -767,8 +767,8 @@ Bool32 CTDIB::SetFuelLineFromDIB(CTDIB * pSrcDIB, Word32 nSrcLine, Word32 nDscLi
 
 		if ( wShift )
 		{
-//			Word32 wByte  = this->GetUsedLineWidthInBytes() + 1;
-			Word32 wByte  = this->GetUsedLineWidthInBytes() + t;
+//			uint32_t wByte  = this->GetUsedLineWidthInBytes() + 1;
+			uint32_t wByte  = this->GetUsedLineWidthInBytes() + t;
 			PWord8 pwByte = pBuffer;
 			Word8  wShiftic = 0;
 
@@ -814,8 +814,8 @@ Bool32 CTDIB::SetFuelLineFromDIB(CTDIB * pSrcDIB, Word32 nSrcLine, Word32 nDscLi
 Bool32 CTDIB::CopyPalleteFromDIB(CTDIB *pSrcDIB)
 {
 	CTDIBRGBQUAD Quad;
-	Word32       wQuad;
-	Word32       nColors = this->GetActualColorNumber();
+	uint32_t       wQuad;
+	uint32_t       nColors = this->GetActualColorNumber();
 
 	CTDIB_IFNODIB(FALSE);
 
@@ -835,7 +835,7 @@ Bool32 CTDIB::CopyPalleteFromDIB(CTDIB *pSrcDIB)
 
 Bool32 CTDIB::CopyDPIFromDIB(CTDIB *pSrcDIB)
 {
-	Word32 wX, wY;
+	uint32_t wX, wY;
 
 	CTDIB_UNDECONST(FALSE);
 
@@ -849,12 +849,12 @@ Bool32 CTDIB::CopyDPIFromDIB(CTDIB *pSrcDIB)
 	return FALSE;
 }
 
-Word32 CTDIB::GetWhitePixel()
+uint32_t CTDIB::GetWhitePixel()
 {
 	CTDIBRGBQUAD fQ;
 	CTDIBRGBQUAD sQ;
-	Word32 i;
-	Word32 Color = 0;
+	uint32_t i;
+	uint32_t Color = 0;
 
 	CTDIB_IFNODIB(0);
 
@@ -903,12 +903,12 @@ Word32 CTDIB::GetWhitePixel()
 
 }
 
-Word32 CTDIB::GetBlackPixel()
+uint32_t CTDIB::GetBlackPixel()
 {
 	CTDIBRGBQUAD fQ;
 	CTDIBRGBQUAD sQ;
-	Word32 i;
-	Word32 Color = 0;
+	uint32_t i;
+	uint32_t Color = 0;
 
 	CTDIB_IFNODIB(0);
 

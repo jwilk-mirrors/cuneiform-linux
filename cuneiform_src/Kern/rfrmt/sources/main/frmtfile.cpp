@@ -2,33 +2,33 @@
 Copyright (c) 1993-2008, Cognitive Technologies
 All rights reserved.
 
-Разрешается повторное распространение и использование как в виде исходного кода,
-так и в двоичной форме, с изменениями или без, при соблюдении следующих условий:
+Р Р°Р·СЂРµС€Р°РµС‚СЃСЏ РїРѕРІС‚РѕСЂРЅРѕРµ СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРµ Рё РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ РєР°Рє РІ РІРёРґРµ РёСЃС…РѕРґРЅРѕРіРѕ РєРѕРґР°,
+С‚Р°Рє Рё РІ РґРІРѕРёС‡РЅРѕР№ С„РѕСЂРјРµ, СЃ РёР·РјРµРЅРµРЅРёСЏРјРё РёР»Рё Р±РµР·, РїСЂРё СЃРѕР±Р»СЋРґРµРЅРёРё СЃР»РµРґСѓСЋС‰РёС… СѓСЃР»РѕРІРёР№:
 
-      * При повторном распространении исходного кода должны оставаться указанное
-        выше уведомление об авторском праве, этот список условий и последующий
-        отказ от гарантий.
-      * При повторном распространении двоичного кода в документации и/или в
-        других материалах, поставляемых при распространении, должны сохраняться
-        указанная выше информация об авторском праве, этот список условий и
-        последующий отказ от гарантий.
-      * Ни название Cognitive Technologies, ни имена ее сотрудников не могут
-        быть использованы в качестве средства поддержки и/или продвижения
-        продуктов, основанных на этом ПО, без предварительного письменного
-        разрешения.
+      * РџСЂРё РїРѕРІС‚РѕСЂРЅРѕРј СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё РёСЃС…РѕРґРЅРѕРіРѕ РєРѕРґР° РґРѕР»Р¶РЅС‹ РѕСЃС‚Р°РІР°С‚СЊСЃСЏ СѓРєР°Р·Р°РЅРЅРѕРµ
+        РІС‹С€Рµ СѓРІРµРґРѕРјР»РµРЅРёРµ РѕР± Р°РІС‚РѕСЂСЃРєРѕРј РїСЂР°РІРµ, СЌС‚РѕС‚ СЃРїРёСЃРѕРє СѓСЃР»РѕРІРёР№ Рё РїРѕСЃР»РµРґСѓСЋС‰РёР№
+        РѕС‚РєР°Р· РѕС‚ РіР°СЂР°РЅС‚РёР№.
+      * РџСЂРё РїРѕРІС‚РѕСЂРЅРѕРј СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё РґРІРѕРёС‡РЅРѕРіРѕ РєРѕРґР° РІ РґРѕРєСѓРјРµРЅС‚Р°С†РёРё Рё/РёР»Рё РІ
+        РґСЂСѓРіРёС… РјР°С‚РµСЂРёР°Р»Р°С…, РїРѕСЃС‚Р°РІР»СЏРµРјС‹С… РїСЂРё СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёРё, РґРѕР»Р¶РЅС‹ СЃРѕС…СЂР°РЅСЏС‚СЊСЃСЏ
+        СѓРєР°Р·Р°РЅРЅР°СЏ РІС‹С€Рµ РёРЅС„РѕСЂРјР°С†РёСЏ РѕР± Р°РІС‚РѕСЂСЃРєРѕРј РїСЂР°РІРµ, СЌС‚РѕС‚ СЃРїРёСЃРѕРє СѓСЃР»РѕРІРёР№ Рё
+        РїРѕСЃР»РµРґСѓСЋС‰РёР№ РѕС‚РєР°Р· РѕС‚ РіР°СЂР°РЅС‚РёР№.
+      * РќРё РЅР°Р·РІР°РЅРёРµ Cognitive Technologies, РЅРё РёРјРµРЅР° РµРµ СЃРѕС‚СЂСѓРґРЅРёРєРѕРІ РЅРµ РјРѕРіСѓС‚
+        Р±С‹С‚СЊ РёСЃРїРѕР»СЊР·РѕРІР°РЅС‹ РІ РєР°С‡РµСЃС‚РІРµ СЃСЂРµРґСЃС‚РІР° РїРѕРґРґРµСЂР¶РєРё Рё/РёР»Рё РїСЂРѕРґРІРёР¶РµРЅРёСЏ
+        РїСЂРѕРґСѓРєС‚РѕРІ, РѕСЃРЅРѕРІР°РЅРЅС‹С… РЅР° СЌС‚РѕРј РџРћ, Р±РµР· РїСЂРµРґРІР°СЂРёС‚РµР»СЊРЅРѕРіРѕ РїРёСЃСЊРјРµРЅРЅРѕРіРѕ
+        СЂР°Р·СЂРµС€РµРЅРёСЏ.
 
-ЭТА ПРОГРАММА ПРЕДОСТАВЛЕНА ВЛАДЕЛЬЦАМИ АВТОРСКИХ ПРАВ И/ИЛИ ДРУГИМИ ЛИЦАМИ "КАК
-ОНА ЕСТЬ" БЕЗ КАКОГО-ЛИБО ВИДА ГАРАНТИЙ, ВЫРАЖЕННЫХ ЯВНО ИЛИ ПОДРАЗУМЕВАЕМЫХ,
-ВКЛЮЧАЯ ГАРАНТИИ КОММЕРЧЕСКОЙ ЦЕННОСТИ И ПРИГОДНОСТИ ДЛЯ КОНКРЕТНОЙ ЦЕЛИ, НО НЕ
-ОГРАНИЧИВАЯСЬ ИМИ. НИ ВЛАДЕЛЕЦ АВТОРСКИХ ПРАВ И НИ ОДНО ДРУГОЕ ЛИЦО, КОТОРОЕ
-МОЖЕТ ИЗМЕНЯТЬ И/ИЛИ ПОВТОРНО РАСПРОСТРАНЯТЬ ПРОГРАММУ, НИ В КОЕМ СЛУЧАЕ НЕ
-НЕСЁТ ОТВЕТСТВЕННОСТИ, ВКЛЮЧАЯ ЛЮБЫЕ ОБЩИЕ, СЛУЧАЙНЫЕ, СПЕЦИАЛЬНЫЕ ИЛИ
-ПОСЛЕДОВАВШИЕ УБЫТКИ, СВЯЗАННЫЕ С ИСПОЛЬЗОВАНИЕМ ИЛИ ПОНЕСЕННЫЕ ВСЛЕДСТВИЕ
-НЕВОЗМОЖНОСТИ ИСПОЛЬЗОВАНИЯ ПРОГРАММЫ (ВКЛЮЧАЯ ПОТЕРИ ДАННЫХ, ИЛИ ДАННЫЕ,
-СТАВШИЕ НЕГОДНЫМИ, ИЛИ УБЫТКИ И/ИЛИ ПОТЕРИ ДОХОДОВ, ПОНЕСЕННЫЕ ИЗ-ЗА ДЕЙСТВИЙ
-ТРЕТЬИХ ЛИЦ И/ИЛИ ОТКАЗА ПРОГРАММЫ РАБОТАТЬ СОВМЕСТНО С ДРУГИМИ ПРОГРАММАМИ,
-НО НЕ ОГРАНИЧИВАЯСЬ ЭТИМИ СЛУЧАЯМИ), НО НЕ ОГРАНИЧИВАЯСЬ ИМИ, ДАЖЕ ЕСЛИ ТАКОЙ
-ВЛАДЕЛЕЦ ИЛИ ДРУГОЕ ЛИЦО БЫЛИ ИЗВЕЩЕНЫ О ВОЗМОЖНОСТИ ТАКИХ УБЫТКОВ И ПОТЕРЬ.
+Р­РўРђ РџР РћР“Р РђРњРњРђ РџР Р•Р”РћРЎРўРђР’Р›Р•РќРђ Р’Р›РђР”Р•Р›Р¬Р¦РђРњР РђР’РўРћР РЎРљРРҐ РџР РђР’ Р/РР›Р Р”Р РЈР“РРњР Р›РР¦РђРњР "РљРђРљ
+РћРќРђ Р•РЎРўР¬" Р‘Р•Р— РљРђРљРћР“Рћ-Р›РР‘Рћ Р’РР”Рђ Р“РђР РђРќРўРР™, Р’Р«Р РђР–Р•РќРќР«РҐ РЇР’РќРћ РР›Р РџРћР”Р РђР—РЈРњР•Р’РђР•РњР«РҐ,
+Р’РљР›Р®Р§РђРЇ Р“РђР РђРќРўРР РљРћРњРњР•Р Р§Р•РЎРљРћР™ Р¦Р•РќРќРћРЎРўР Р РџР РР“РћР”РќРћРЎРўР Р”Р›РЇ РљРћРќРљР Р•РўРќРћР™ Р¦Р•Р›Р, РќРћ РќР•
+РћР“Р РђРќРР§РР’РђРЇРЎР¬ РРњР. РќР Р’Р›РђР”Р•Р›Р•Р¦ РђР’РўРћР РЎРљРРҐ РџР РђР’ Р РќР РћР”РќРћ Р”Р РЈР“РћР• Р›РР¦Рћ, РљРћРўРћР РћР•
+РњРћР–Р•Рў РР—РњР•РќРЇРўР¬ Р/РР›Р РџРћР’РўРћР РќРћ Р РђРЎРџР РћРЎРўР РђРќРЇРўР¬ РџР РћР“Р РђРњРњРЈ, РќР Р’ РљРћР•Рњ РЎР›РЈР§РђР• РќР•
+РќР•РЎРЃРў РћРўР’Р•РўРЎРўР’Р•РќРќРћРЎРўР, Р’РљР›Р®Р§РђРЇ Р›Р®Р‘Р«Р• РћР‘Р©РР•, РЎР›РЈР§РђР™РќР«Р•, РЎРџР•Р¦РРђР›Р¬РќР«Р• РР›Р
+РџРћРЎР›Р•Р”РћР’РђР’РЁРР• РЈР‘Р«РўРљР, РЎР’РЇР—РђРќРќР«Р• РЎ РРЎРџРћР›Р¬Р—РћР’РђРќРР•Рњ РР›Р РџРћРќР•РЎР•РќРќР«Р• Р’РЎР›Р•Р”РЎРўР’РР•
+РќР•Р’РћР—РњРћР–РќРћРЎРўР РРЎРџРћР›Р¬Р—РћР’РђРќРРЇ РџР РћР“Р РђРњРњР« (Р’РљР›Р®Р§РђРЇ РџРћРўР•Р Р Р”РђРќРќР«РҐ, РР›Р Р”РђРќРќР«Р•,
+РЎРўРђР’РЁРР• РќР•Р“РћР”РќР«РњР, РР›Р РЈР‘Р«РўРљР Р/РР›Р РџРћРўР•Р Р Р”РћРҐРћР”РћР’, РџРћРќР•РЎР•РќРќР«Р• РР—-Р—Рђ Р”Р•Р™РЎРўР’РР™
+РўР Р•РўР¬РРҐ Р›РР¦ Р/РР›Р РћРўРљРђР—Рђ РџР РћР“Р РђРњРњР« Р РђР‘РћРўРђРўР¬ РЎРћР’РњР•РЎРўРќРћ РЎ Р”Р РЈР“РРњР РџР РћР“Р РђРњРњРђРњР,
+РќРћ РќР• РћР“Р РђРќРР§РР’РђРЇРЎР¬ Р­РўРРњР РЎР›РЈР§РђРЇРњР), РќРћ РќР• РћР“Р РђРќРР§РР’РђРЇРЎР¬ РРњР, Р”РђР–Р• Р•РЎР›Р РўРђРљРћР™
+Р’Р›РђР”Р•Р›Р•Р¦ РР›Р Р”Р РЈР“РћР• Р›РР¦Рћ Р‘Р«Р›Р РР—Р’Р•Р©Р•РќР« Рћ Р’РћР—РњРћР–РќРћРЎРўР РўРђРљРРҐ РЈР‘Р«РўРљРћР’ Р РџРћРўР•Р Р¬.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
@@ -81,18 +81,18 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 extern std::vector<RECT>   *pInputArray;
 #endif
 
-Int32	PageIncline2048 = 2048;
-Word32  CountPict=0,CountTable=0;
+int32_t	PageIncline2048 = 2048;
+uint32_t  CountPict=0,CountTable=0;
 void    SetReturnCode_rfrmt(Word16 rc);
 POINT   TemplateOffset;
 
-extern "C" Word32   GetPictCount(void);
-extern "C" Word32   GetTablCount(void);
+extern "C" uint32_t   GetPictCount(void);
+extern "C" uint32_t   GetTablCount(void);
 extern  Word8       Frmt_CharSet;
 extern  Int16       CreateEmptyRtfFile(void);
 extern  char        UnRecogSymbol;
-extern  Word32      FlagMode;
-extern  Word32      ExFlagMode;
+extern  uint32_t      FlagMode;
+extern  uint32_t      ExFlagMode;
 
 #define HalfDefMargL   900 // Left margin in twips    (the default is 1800).
 #define HalfDefMargT   720 // Top  margin in twips    (the default is 1440).
@@ -118,11 +118,11 @@ BOOL CreateInternalFileForFormatter(FILE *pIFName)
      TemplateOffset.y = 0;
  }
 
- //Создание массива текстовых фрагментов
+ //РЎРѕР·РґР°РЅРёРµ РјР°СЃСЃРёРІР° С‚РµРєСЃС‚РѕРІС‹С… С„СЂР°РіРјРµРЅС‚РѕРІ
  Page.FragmentsArray.clear();
  Page.CreateArray_For_TextFragments( );
 
- //Чтение информации из хранилиша
+ //Р§С‚РµРЅРёРµ РёРЅС„РѕСЂРјР°С†РёРё РёР· С…СЂР°РЅРёР»РёС€Р°
  line = CSTR_FirstLine (1);
 
  while(line)
@@ -147,7 +147,7 @@ BOOL CreateInternalFileForFormatter(FILE *pIFName)
 	return TRUE;
  }
 
- //Создания внутреннего файла для форматирования
+ //РЎРѕР·РґР°РЅРёСЏ РІРЅСѓС‚СЂРµРЅРЅРµРіРѕ С„Р°Р№Р»Р° РґР»СЏ С„РѕСЂРјР°С‚РёСЂРѕРІР°РЅРёСЏ
  WORD  DistanceBetweenLeftMargin = 15;
  WORD  DistanceBetweenTopMargin  =  5;
  Page.m_wDpi             = (WORD)PageInfo.DPIX;
@@ -155,10 +155,10 @@ BOOL CreateInternalFileForFormatter(FILE *pIFName)
 
  InternalRect VRect;
  fwrite(&Page.m_wDpi,              sizeof(WORD),1,pIFName); // ScanResolution
- fwrite(&Page.Count.Frags,         sizeof(WORD),1,pIFName); // число колонок
- fwrite(&Page.Count.Chars,         sizeof(WORD),1,pIFName); // число знакомест  in all page
- fwrite(&Page.Count.Words,         sizeof(WORD),1,pIFName); // число слов
- fwrite(&Page.Count.Strings,       sizeof(WORD),1,pIFName); // число строк
+ fwrite(&Page.Count.Frags,         sizeof(WORD),1,pIFName); // С‡РёСЃР»Рѕ РєРѕР»РѕРЅРѕРє
+ fwrite(&Page.Count.Chars,         sizeof(WORD),1,pIFName); // С‡РёСЃР»Рѕ Р·РЅР°РєРѕРјРµСЃС‚  in all page
+ fwrite(&Page.Count.Words,         sizeof(WORD),1,pIFName); // С‡РёСЃР»Рѕ СЃР»РѕРІ
+ fwrite(&Page.Count.Strings,       sizeof(WORD),1,pIFName); // С‡РёСЃР»Рѕ СЃС‚СЂРѕРє
  fwrite(&DistanceBetweenLeftMargin,sizeof(WORD),1,pIFName); // distance between left margin letters- neighdoors from one word
  fwrite(&DistanceBetweenTopMargin, sizeof(WORD),1,pIFName); // distance between top margin
 
@@ -175,8 +175,8 @@ BOOL CreateInternalFileForFormatter(FILE *pIFName)
 	  FReturnCode = FALSE ;
     fwrite(&VRect , sizeof( InternalRect ),1,pIFName);
     fwrite(&cFrag->m_wStringsCount, sizeof( WORD  ),1,pIFName);
-    fwrite(&cFrag->m_wUserNumber  , sizeof( DWORD ),1,pIFName);
-    fwrite(&cFrag->m_Flags        , sizeof( DWORD ),1,pIFName);
+    fwrite(&cFrag->m_wUserNumber  , sizeof( uint32_t ),1,pIFName);
+    fwrite(&cFrag->m_Flags        , sizeof( uint32_t ),1,pIFName);
 
    // Processing Strings
    for(int iFrag=0; iFrag < cFrag->m_wStringsCount; iFrag++){
@@ -186,7 +186,7 @@ BOOL CreateInternalFileForFormatter(FILE *pIFName)
       VCopyRect( &VRect, &cString->m_rectString );
       fwrite( &VRect, sizeof( InternalRect ),1,pIFName);
       fwrite( &cString->m_wWordsCount,  sizeof( WORD ),1,pIFName);
-	  fwrite( &cString->S_Flags,  sizeof( Word32 ),1,pIFName); //NEGA_STR
+	  fwrite( &cString->S_Flags,  sizeof( uint32_t ),1,pIFName); //NEGA_STR
       // Processing Words
       for(int iString=0; iString < cString->m_wWordsCount; iString++){
          cWord = (CWord*)cString->m_arWords[iString];
@@ -249,7 +249,7 @@ void CFPage::CreateArray_For_TextFragments( )
  while( hBlock )
  {
     if(CPAGE_GetBlockType( hPage , hBlock ) == TYPE_TEXT){
-       Word32 BlockNumber = CPAGE_GetBlockInterNum( hPage, hBlock);
+       uint32_t BlockNumber = CPAGE_GetBlockInterNum( hPage, hBlock);
        FragmentsArray.push_back( BlockNumber );
     }
 	hBlock = CPAGE_GetBlockNext( hPage , hBlock , 0);
@@ -260,7 +260,7 @@ void CFPage::CreateArray_For_TextFragments( )
 //                    CFPage::CheckComingLine_For_TextFragments
 BOOL CFPage::CheckComingLine_For_TextFragments( CSTR_line* line )
 {
- Int32 CurFragNumber,SizeArrayTextFragments,i;
+ int32_t CurFragNumber,SizeArrayTextFragments,i;
  CSTR_attr  attr;
 
  if( !CSTR_GetLineAttr( *line , &attr ) )
@@ -269,7 +269,7 @@ BOOL CFPage::CheckComingLine_For_TextFragments( CSTR_line* line )
  SizeArrayTextFragments = FragmentsArray.size();
 
  for( i=0; i<SizeArrayTextFragments; i++ )
-  if( CurFragNumber ==(Int32)FragmentsArray[i])
+  if( CurFragNumber ==(int32_t)FragmentsArray[i])
     return 1;
 
  return 0;
@@ -314,8 +314,8 @@ void CFPage::ProcessingComingLine( CSTR_line* Comingline )
 
 	while(hBlock)
     {
-		if(CPAGE_GetBlockInterNum(hCPAGE,hBlock)==(Word32)m_nCurFragNumber){
-		   Fragment->m_wUserNumber = (DWORD)CPAGE_GetBlockUserNum( hCPAGE, hBlock  );
+		if(CPAGE_GetBlockInterNum(hCPAGE,hBlock)==(uint32_t)m_nCurFragNumber){
+		   Fragment->m_wUserNumber = (uint32_t)CPAGE_GetBlockUserNum( hCPAGE, hBlock  );
            Fragment->m_Flags = attr.Flags; //nega
            if(attr.Flags == CSTR_STR_NEGATIVE){ //nega_str
  		      CPAGE_GetBlockData(hCPAGE,hBlock,TYPE_TEXT, &poly, sizeof(POLY_));
@@ -432,7 +432,7 @@ BOOL CheckLineForFilling( CSTR_line* Comingline )
  CSTR_rast_attr	 rast_attr;
 
  line = *Comingline;
- rast =  CSTR_GetFirstRaster( line );                              // I фикт. растр
+ rast =  CSTR_GetFirstRaster( line );                              // I С„РёРєС‚. СЂР°СЃС‚СЂ
  rast =  CSTR_GetNextRaster( rast , CSTR_f_all );
 
  while( rast )
@@ -440,10 +440,10 @@ BOOL CheckLineForFilling( CSTR_line* Comingline )
 	 CSTR_GetCollection( rast,&vers );
      CSTR_GetAttr( rast,&rast_attr );
 
-     if((rast_attr.flg&CSTR_f_dust) ||  (rast_attr.flg&CSTR_f_fict ) ||//Дусты и
+     if((rast_attr.flg&CSTR_f_dust) ||  (rast_attr.flg&CSTR_f_fict ) ||//Р”СѓСЃС‚С‹ Рё
 	    ((rast_attr.flg&CSTR_f_space) &&
 	    (!vers.Alt[0].Code || vers.Alt[0].Code == 0x1e ||
-		vers.Alt[0].Code == 0x1f)))                                 //полупробелы  выкидываем.
+		vers.Alt[0].Code == 0x1f)))                                 //РїРѕР»СѓРїСЂРѕР±РµР»С‹  РІС‹РєРёРґС‹РІР°РµРј.
      goto next_raster;
      return TRUE;
 
@@ -499,7 +499,7 @@ void CFString::ExtractWordsFromString( CSTR_line* Comingline , PageElementCount*
  FlagCapDrop = FALSE;
 
  CSTR_GetLineAttr( line , &line_attr );
- if(line_attr.Flags & CSTR_STR_CapDrop) //буквица - см. первая буква в сказках
+ if(line_attr.Flags & CSTR_STR_CapDrop) //Р±СѓРєРІРёС†Р° - СЃРј. РїРµСЂРІР°СЏ Р±СѓРєРІР° РІ СЃРєР°Р·РєР°С…
     FlagCapDrop = TRUE;
 
  SetRect(&m_rectBaseLine, line_attr.bs1, line_attr.bs2,
@@ -519,7 +519,7 @@ void CFString::ExtractWordsFromString( CSTR_line* Comingline , PageElementCount*
  }
  #endif
 
- rast =  CSTR_GetFirstRaster( line );            // I фикт. растр
+ rast =  CSTR_GetFirstRaster( line );            // I С„РёРєС‚. СЂР°СЃС‚СЂ
  rast =  CSTR_GetNextRaster( rast , CSTR_f_all );
 
  while( rast )
@@ -530,10 +530,10 @@ void CFString::ExtractWordsFromString( CSTR_line* Comingline , PageElementCount*
      //#define POS_HALF_SPACE  0x1f
      //#define REGULAR_SPACE   0x20
 
-     if((rast_attr.flg&CSTR_f_dust) ||  (rast_attr.flg&CSTR_f_fict ) ||//Дусты и
+     if((rast_attr.flg&CSTR_f_dust) ||  (rast_attr.flg&CSTR_f_fict ) ||//Р”СѓСЃС‚С‹ Рё
 	    ((rast_attr.flg&CSTR_f_space) &&
 	    (!vers.Alt[0].Code || vers.Alt[0].Code == 0x1e ||
-	    vers.Alt[0].Code == 0x1f)))//полупробелы  выкидываем.
+	    vers.Alt[0].Code == 0x1f)))//РїРѕР»СѓРїСЂРѕР±РµР»С‹  РІС‹РєРёРґС‹РІР°РµРј.
       goto next_raster;
 
       FlagString = TRUE;
