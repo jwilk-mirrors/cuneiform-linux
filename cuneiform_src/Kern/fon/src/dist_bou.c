@@ -113,7 +113,7 @@ typedef struct tagMYSTACK {
 } MYSTACK;
 */
 
-extern Word8 language;
+extern uchar language;
 
 static int *AllBounds=NULL;
 static RECBOU AllRecBou[MAX_ALT_BOU];
@@ -206,7 +206,7 @@ static void SetBound(welet *wel,int *bou)
   }
 }
 /////////////////
-static BOOL GetBounds(welet *wel,int num)
+static Bool GetBounds(welet *wel,int num)
 {
 int *bou;
 
@@ -1272,7 +1272,7 @@ int maxWidth=REC_MAX_RASTER_SIZE/MAX(1,yrow);
 	return startX;
 }
 ///////////////
-extern BOOL IsSnap;
+extern Bool IsSnap;
 int AddBitmapToSnap(BYTE *buf,int xbit,int yrow,int num,int dist);
 
 int KleyRecog(BYTE *inBuf,int xbyte,int xbit, int yrow,
@@ -1424,7 +1424,7 @@ static int FillInBuf(BYTE *inBuf,int xbyte,int yrow,CSTR_rast fir,CSTR_rast las,
 	{
         if( !CSTR_GetAttr (fir, &attr) )
                 return -1;
-		if( !CSTR_GetImage(fir,(Word8*)&recRast,CSTR_TYPE_IMAGE_RS ) )
+		if( !CSTR_GetImage(fir,(uchar*)&recRast,CSTR_TYPE_IMAGE_RS ) )
                 return -1;
 
 		xbyte8 = REC_GW_WORD8(recRast.lnPixWidth);
@@ -1608,7 +1608,7 @@ Bool32 p2_StoreVersions(CSTR_rast rast,RecVersions *rver,int lang)
 {
 int  i;
 UniVersions cver,*ver;
-Word8 let;
+uchar let;
 
 //if( lang==LANG_ENGLISH && multy_language )
 //    lang    = LANG_RUSENG;

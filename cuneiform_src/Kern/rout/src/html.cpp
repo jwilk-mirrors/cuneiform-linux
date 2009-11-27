@@ -77,22 +77,22 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 using namespace std;
 
-static BOOL Static_MakeHTML(Handle hObject, long reason);
+static Bool Static_MakeHTML(Handle hObject, long reason);
 
-static BOOL FontStyle(ulong newStyle);
-static BOOL BeginParagraph(Handle hObject);
-static BOOL CellStart();
-static BOOL CalcCellSpan();
-static BOOL OptimizeTags();
-static BOOL Picture();
-static BOOL CreatePageFilesFolder();
+static Bool FontStyle(ulong newStyle);
+static Bool BeginParagraph(Handle hObject);
+static Bool CellStart();
+static Bool CalcCellSpan();
+static Bool OptimizeTags();
+static Bool Picture();
+static Bool CreatePageFilesFolder();
 
 static ulong sFontStyle = 0;		// Стиль шрифта
 static long rowspan = 0, colspan = 0;
-static BOOL hocrmode = FALSE; // If true, print hOCR tags to output.
+static Bool hocrmode = FALSE; // If true, print hOCR tags to output.
 
 //********************************************************************
-BOOL MakeHTML()
+Bool MakeHTML()
 {
 /* Формат HTML.
 
@@ -108,7 +108,7 @@ BOOL MakeHTML()
 
 }
 //********************************************************************
-BOOL MakeHOCR() {
+Bool MakeHOCR() {
     sFontStyle = 0;
     hocrmode = TRUE;
     return BrowsePage(Static_MakeHTML, FALSE, FALSE);
@@ -119,7 +119,7 @@ BOOL MakeHOCR() {
        \~russian Поместить содержимое строкового потока в буфер
                  результатов распознавания.
 */
-static BOOL
+static Bool
 strm2buf(const ostringstream& outStrm)
 {
 	unsigned long sizeMem = outStrm.str().size();
@@ -138,7 +138,7 @@ strm2buf(const ostringstream& outStrm)
 \brief \~english Put info about hOCR text line into buffer for OCR results.
        \~russian Поместить текстовую строку hOCR в буфер результатов распознавания.
 */
-static BOOL
+static Bool
 writeHocrLineStartTag(Byte* pLineStart, const edRect& rcLine, const unsigned int iLine)
 {
 	ASSERT(pLineStart);
@@ -177,7 +177,7 @@ isGoodCharRect(const edRect& rc)
 
 // decided to use CHECK_MEMORY macro in case it becomes a function which does more things than check if gMemCur+a>gMemEnd
 // as a consequence, this function assures that allocated memory in gMemCur is enough.
-static BOOL
+static Bool
 writeHocrCharBBoxesInfo(const std::vector<edRect > &charBboxes, const unsigned int iLine)
 {
 	ostringstream outStrm;
@@ -205,7 +205,7 @@ writeHocrCharBBoxesInfo(const std::vector<edRect > &charBboxes, const unsigned i
 
 
 //********************************************************************
-BOOL Static_MakeHTML(
+Bool Static_MakeHTML(
 			Handle hObject,
 			long reason	// См. enum BROWSE_REASON
 			)
@@ -401,7 +401,7 @@ BOOL Static_MakeHTML(
 	return TRUE;	// Продолжить просмотр
 }
 //********************************************************************
-static BOOL FontStyle(ulong newStyle)
+static Bool FontStyle(ulong newStyle)
 {
 
 if ((newStyle & FONT_BOLD) &&
@@ -435,7 +435,7 @@ sFontStyle = newStyle;
 return TRUE;
 }
 //********************************************************************
-static BOOL BeginParagraph(Handle hObject)
+static Bool BeginParagraph(Handle hObject)
 {
 	const char *p = NULL;
 	char buf[80] = "";
@@ -473,7 +473,7 @@ static BOOL BeginParagraph(Handle hObject)
     return TRUE;
 }
 //********************************************************************
-static BOOL CellStart()
+static Bool CellStart()
 {
 // Ячейка таблицы
 	char buf[80] = "";
@@ -497,7 +497,7 @@ static BOOL CellStart()
 	return TRUE;
 }
 //********************************************************************
-static BOOL CalcCellSpan()
+static Bool CalcCellSpan()
 {
 // Вычислить размер ячейки
 	long row,col;
@@ -533,7 +533,7 @@ static BOOL CalcCellSpan()
 	return TRUE;
 }
 //********************************************************************
-static BOOL OptimizeTags()
+static Bool OptimizeTags()
 {
 	// Устранение избыточных тегов
 	long l1 = 0, l2 = 0;
@@ -559,7 +559,7 @@ static BOOL OptimizeTags()
 	return TRUE;
 }
 //********************************************************************
-static BOOL Picture()
+static Bool Picture()
 {
 /* Картинка.
 
@@ -619,8 +619,8 @@ static BOOL Picture()
 /**
  * Create a subdirectory to hold image files for html document.
  */
-static BOOL CreatePageFilesFolder() {
-    // Создать подпапку для картинок gPageFilesFolder.
+static Bool CreatePageFilesFolder() {
+    // РЎРѕР·РґР°С‚СЊ РїРѕРґРїР°РїРєСѓ РґР»СЏ РєР°СЂС‚РёРЅРѕРє gPageFilesFolder.
     char dir[_MAX_PATH], name[_MAX_PATH], ext[_MAX_EXT], path[_MAX_PATH];
 
     // Задано ли имя страницы?

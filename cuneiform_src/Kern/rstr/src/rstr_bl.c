@@ -71,18 +71,18 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "bal.h"
 
 extern BYTE fax1x2;
-extern Word8 language;
+extern uchar language;
 extern BYTE multy_language;
 
 extern uint16_t actual_resolution;
-extern BOOL   line_BL;
-extern Word8  spec_camera;
-extern Word8  no_linpen;
+extern Bool   line_BL;
+extern uchar  spec_camera;
+extern uchar  no_linpen;
 extern int16_t  prop_l_delta, prop_r_delta;
-extern Word8  db_pass;
+extern uchar  db_pass;
 
-extern Word8 *letters_pidx_table;  // 512
-extern Word8 decode_ASCII_to_[256][4];
+extern uchar *letters_pidx_table;  // 512
+extern uchar decode_ASCII_to_[256][4];
 
 
 INT     minrow,mincol, maxrow, maxcol;
@@ -120,7 +120,7 @@ INT def_locbas(cell *cl)
 {
  BAL_bas_ln *bc, *bn, *bsp;
  INT i, x, y, dc, dn;
- Word8 fl_defb;
+ uchar fl_defb;
 
  if ((multi_bas & 128) == 0)
    goto retps;  // multiple bases not set
@@ -249,12 +249,12 @@ BYTE get_homot(BYTE ch);
 INT  draft_cut_hyps(INT bs,INT fl);
 
 /*============= Source code ============*/
-BOOL is_liga_ff(BYTE c)
+Bool is_liga_ff(BYTE c)
 {
 // Код лиги определен через макру в ligas.h 05.09.2000 E.P.
   return (c==liga_ff);
 }
-BOOL is_liga_ffl(BYTE c)
+Bool is_liga_ffl(BYTE c)
 {
 // Код лиги определен через макру в ligas.h 05.09.2000 E.P.
   return (c==liga_ffl);
@@ -610,7 +610,7 @@ if(ch >= 'A' && ch <= 'Z') return 1;
  return 0;
 }
 
-BOOL is_digit(BYTE ch)
+Bool is_digit(BYTE ch)
 {
 if(ch >= (BYTE)'0' && ch <= (BYTE)'9') return TRUE;
 else return FALSE;
@@ -939,7 +939,7 @@ static uint16_t RestoreScaleLine(CSTR_line ln , uint16_t scale)
 
 	CSTR_GetLineAttr(ln,&lattr);
 	lattr.Flags |= CSTR_STR_SCALED;
-	lattr.scale  = (Word8)scale;
+	lattr.scale  = (uchar)scale;
 	CSTR_SetLineAttr(ln,&lattr);
 
 	for(rast=CSTR_GetNext(CSTR_GetFirstRaster(ln));rast;
@@ -973,7 +973,7 @@ static uint16_t RestoreScaleLine(CSTR_line ln , uint16_t scale)
 void clear_cells(void);
 void Cells2CSTR(CSTR_line lin,CSTR_line lino,cell *cur,Bool32 enable_scaled);
 // для CopyAttr2CSTR в Cells2CSTR() !!!
-BOOL SetFontReady(BOOL fready);
+Bool SetFontReady(Bool fready);
 int32_t p2_Cstr2Cell( CSTR_line lin,CSTR_rast first,CSTR_rast last,Bool32 needVers, uint32_t disable );
 // предварительный поиск базовых линий
 void basedraft(CSTR_line ln)
@@ -1004,7 +1004,7 @@ void basedraft(CSTR_line ln)
 	// переведем cell_f()-> в нашу линию, используя
 	// атрибуты ln
 	{
-	  BOOL old_ready = SetFontReady(TRUE);
+	  Bool old_ready = SetFontReady(TRUE);
       Cells2CSTR( ln, line_bal, NULL, 1);
 	  SetFontReady(old_ready);
 	}
@@ -1048,7 +1048,7 @@ void basedraft(CSTR_line ln)
     // переведем cell_f()-> в нашу линию, используя
 	// атрибуты ln
     {
-	  BOOL old_ready = SetFontReady(TRUE);
+	  Bool old_ready = SetFontReady(TRUE);
       Cells2CSTR( ln, line_bal, NULL, 1);
 	  SetFontReady(old_ready);
 	}
@@ -1091,7 +1091,7 @@ void basedraft(CSTR_line ln)
     // переведем cell_f()-> в нашу линию, используя
 	// атрибуты ln
      {
-	  BOOL old_ready = SetFontReady(TRUE);
+	  Bool old_ready = SetFontReady(TRUE);
       Cells2CSTR( ln, line_bal, NULL, 1);
 	  SetFontReady(old_ready);
 	}
@@ -1148,7 +1148,7 @@ void basefin(CSTR_line ln)
 	// переведем cell_f()-> в нашу линию, используя
 	// атрибуты ln
     {
-	  BOOL old_ready = SetFontReady(TRUE);
+	  Bool old_ready = SetFontReady(TRUE);
       Cells2CSTR( ln, line_bal, NULL, 1);
 	  SetFontReady(old_ready);
 	}
@@ -1199,7 +1199,7 @@ void linpos(CSTR_line ln)
 	// переведем cell_f()-> в нашу линию, используя
 	// атрибуты ln
     {
-	  BOOL old_ready = SetFontReady(TRUE);
+	  Bool old_ready = SetFontReady(TRUE);
       Cells2CSTR( ln, line_bal, NULL, 1);
 	  SetFontReady(old_ready);
 	}

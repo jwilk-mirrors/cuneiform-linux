@@ -86,7 +86,7 @@ extern unsigned short int run_options;
 }
 
 /////////////////////////////////////////
-BOOL APIENTRY DllMain( HINSTANCE  hModule,
+Bool APIENTRY DllMain( HINSTANCE  hModule,
 uint32_t ul_reason_for_call,
                         LPVOID lpReserved )
 {
@@ -135,7 +135,7 @@ RBLOCK_FUNC(uint32_t) RBLOCK_GetReturnCode()
 }
 //////////////////////////////////////////////////////////////////////////////////
 //
-RBLOCK_FUNC(Int8 *) RBLOCK_GetReturnString(uint32_t dwError)
+RBLOCK_FUNC(char *) RBLOCK_GetReturnString(uint32_t dwError)
 {
 	static char szBuffer[512];
 	uint16_t low = (uint16_t)(dwError &  0xFFFF);
@@ -151,7 +151,7 @@ RBLOCK_FUNC(Int8 *) RBLOCK_GetReturnString(uint32_t dwError)
 		LoadString(ghInst,IDS_ERR_NOTIMPLEMENT,(char *)szBuffer,sizeof(szBuffer));
 	}
 
-	return (Int8*)szBuffer;
+	return (char*)szBuffer;
 }
 //////////////////////////////////////////////////////////////////////////////////
 //

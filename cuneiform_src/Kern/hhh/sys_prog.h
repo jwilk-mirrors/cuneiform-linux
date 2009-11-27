@@ -159,7 +159,7 @@ typedef unsigned int uint;
   typedef unsigned int WORD;
   typedef signed long LONG;
   typedef unsigned long DWORD;
-  typedef int BOOL;
+  typedef int Bool;
   #ifndef PASCAL
 	  #define PASCAL _pascal
   #endif

@@ -64,14 +64,14 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "cpage.h"
 #include "mpumatime.h"
 
-typedef int BOOL;
+typedef int Bool;
 
 
 # define  TYPE_BIG_COMP		CPAGE_GetInternalType("TYPE_BIG_COMP")
 struct BIG_IMAGE
 {
 	CCOM_handle hCCOM;
-	Word8 ImageName[CPAGE_MAXNAME];
+	uchar ImageName[CPAGE_MAXNAME];
 };
 
 

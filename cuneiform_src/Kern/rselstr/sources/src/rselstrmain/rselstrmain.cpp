@@ -95,7 +95,7 @@ struct PL
 	 int Beg_Y;
 	 int End_X;
 	 int End_Y;
-	 BOOL fl_use;
+	 Bool fl_use;
 	 PL* next;
 	 PL* prev;
 };
@@ -124,7 +124,7 @@ extern BLOCK** pBlockPointer;
 //////////////////////////////////
 static void LayoutFromCPAGE(Handle hCPAGE,Handle hCCOM);
 int IsInPoly(Point16 a, void * pPoly);
-BOOL dphShowString;
+Bool dphShowString;
 
 void RotatePageToIdeal (void);
 void RotatePageToReal (void);
@@ -135,11 +135,11 @@ Bool32 ReadRoots(Handle hCCOM);
 void EnableDebug(void);
 void progress_finish(void);
 void DrawRect(Handle wnd,uint32_t OperCode,uint32_t color,int top,int bottom,int left,int right);
-BOOL InitHstrMas(CHSTR_Objects** ppRc,int len);
+Bool InitHstrMas(CHSTR_Objects** ppRc,int len);
 void DelHstrMas(CHSTR_Objects *masp);
-BOOL AddLenHstrMas(CHSTR_Objects** ppRc,int& len,int add);
+Bool AddLenHstrMas(CHSTR_Objects** ppRc,int& len,int add);
 void PointedProc(void);
-BOOL LineInCell(Rect32* CellRect,PL* po_li);
+Bool LineInCell(Rect32* CellRect,PL* po_li);
 void SomeDraw(void);
 void DrawComps(Handle hCCOM);
 
@@ -227,11 +227,11 @@ void LayoutFromCPAGE(Handle hCPAGE,Handle hCCOM)
 	Point16 pLeftTop, pRightTop, pLeftBottom, pRightBottom;
 	ROOT * pRoot = NULL;
 	uint32_t BlockNumber;
-	BOOL WasVertCells=FALSE;
-	BOOL WasNegaCells=FALSE;
-	BOOL dpShowVertCells=!LDPUMA_Skip(ShowVertCells);
-	BOOL dpShowNegaCells=!LDPUMA_Skip(ShowNegaCells);
-	BOOL dphShowCells=!LDPUMA_Skip(hShowCells);
+	Bool WasVertCells=FALSE;
+	Bool WasNegaCells=FALSE;
+	Bool dpShowVertCells=!LDPUMA_Skip(ShowVertCells);
+	Bool dpShowNegaCells=!LDPUMA_Skip(ShowNegaCells);
+	Bool dphShowCells=!LDPUMA_Skip(hShowCells);
     // piter 08.07.99
 	PAGEINFO    PInfo = {0};
 
@@ -299,12 +299,12 @@ void LayoutFromCPAGE(Handle hCPAGE,Handle hCCOM)
 
 
 
-    BOOL type_vert;
-	BOOL type_neg;
-	Word8* ImageTurn=(Word8*)PUMA_IMAGE_TURN;
-	Word8* ImageUser=(Word8*)PUMA_IMAGE_USER;
-	Word8* ImageOrto=(Word8*)PUMA_IMAGE_ORTOMOVE;
-	Word8* ImageBin = (Word8*)PUMA_IMAGE_BINARIZE;
+    Bool type_vert;
+	Bool type_neg;
+	uchar* ImageTurn=(uchar*)PUMA_IMAGE_TURN;
+	uchar* ImageUser=(uchar*)PUMA_IMAGE_USER;
+	uchar* ImageOrto=(uchar*)PUMA_IMAGE_ORTOMOVE;
+	uchar* ImageBin = (uchar*)PUMA_IMAGE_BINARIZE;
 	CHSTR_Objects* Hstr=NULL;
 	int nObjects=0;
 	int len_Objects=50;
@@ -527,7 +527,7 @@ if( s->nDust > s->nLetters*1 )
 					attr.r_col = com->left;
 					attr.flg   = CSTR_f_dust;
 					CSTR_SetAttr (rst, &attr);
-					CSTR_StoreComp (rst, (Word8*)com->linerep,1,com->scale);
+					CSTR_StoreComp (rst, (uchar*)com->linerep,1,com->scale);
                     if(com->vers )
 					CSTR_StoreCollection(rst, com->vers);
 					}
@@ -554,7 +554,7 @@ if( s->nDust > s->nLetters*1 )
 					attr.r_col = com->left;
 					attr.flg   = CSTR_f_let|CSTR_f_bad;
 					CSTR_SetAttr (rst, &attr);
- 					CSTR_StoreComp (rst, (Word8*)com->linerep,1,com->scale);
+ 					CSTR_StoreComp (rst, (uchar*)com->linerep,1,com->scale);
                     if( s->uFlags & CSTR_STR_CapDrop )
                         {
                         CCOM_comp       *ci=com;
@@ -563,7 +563,7 @@ if( s->nDust > s->nLetters*1 )
                         int32_t           n;
 
                         ub.code=CCOM_UB_CAPDROPLN;
-                        ub.data=(Word8*)&n;
+                        ub.data=(uchar*)&n;
                         if( CCOM_GetUserBlock(ci,&ub) )
                             CCOM_SetUserBlock(co,&ub);
                         }
@@ -609,7 +609,7 @@ int IsInPoly(Point16 a, void * pPoly)
 	return Count & 1;
 }
 
-BOOL AddLenHstrMas(CHSTR_Objects** ppRc,int& len,int add)
+Bool AddLenHstrMas(CHSTR_Objects** ppRc,int& len,int add)
 {
  CHSTR_Objects *dop;
  int i;
@@ -657,7 +657,7 @@ void DelHstrMas(CHSTR_Objects *masp)
 	delete[] masp;
 }
 
-BOOL InitHstrMas(CHSTR_Objects** ppRc,int len)
+Bool InitHstrMas(CHSTR_Objects** ppRc,int len)
 {
 	(*ppRc)=NULL;
 	if(!((*ppRc)=new CHSTR_Objects[len]))
@@ -673,14 +673,14 @@ void PointedProc()
  PAGEINFO info={0};
  GetPageInfo(HCPAGE,&info);
  nIncline=info.Incline2048;
-// BOOL fl_use_cline=!LDPUMA_Skip(hUseCLine);
+// Bool fl_use_cline=!LDPUMA_Skip(hUseCLine);
 
  int Right;
  int Left;
  int Top;
  int Bottom;
- BOOL fl_beg;
- BOOL fl_end;
+ Bool fl_beg;
+ Bool fl_end;
 // Rect32 CellRect;
 
  CLINE_handle hCLINE=CLINE_GetMainContainer();
@@ -776,7 +776,7 @@ void PointedProc()
 
 }
 
-BOOL LineInCell(Rect32* CellRect,PL* po_li)
+Bool LineInCell(Rect32* CellRect,PL* po_li)
 {
 	int left=po_li->Beg_X;
 	int right=po_li->End_X;
@@ -812,7 +812,7 @@ void SomeDraw()
 	PAGEINFO info={0};
 	GetPageInfo(HCPAGE,&info);
 	nIncline=info.Incline2048;
-	BOOL fl_exist=FALSE;
+	Bool fl_exist=FALSE;
 
 	for(str=CSTR_FirstLine(0);str;str=CSTR_NextLine(str,0))
 	{

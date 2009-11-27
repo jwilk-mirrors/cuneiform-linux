@@ -80,17 +80,17 @@ BYTE  my_p2_GetCodePage(int lang){return 0;};
 void  my_p2_DecodeCode(char *pCode,int let){return;};
 //////////////////
 // снэр
-BOOL    my_NoStopSnapLEO(void){return FALSE;};
+Bool    my_NoStopSnapLEO(void){return FALSE;};
 Bool16	my_snap_monitor_ori(CSTR_line *snap_line, int32_t num_lines){return FALSE;};
-Bool16	my_snap_activity(Word8 a){return FALSE;};
-Bool16	my_snap_show_text(Word8 *txt){return FALSE;};
+Bool16	my_snap_activity(uchar a){return FALSE;};
+Bool16	my_snap_show_text(uchar *txt){return FALSE;};
 
 Bool32  mySetupField(void *letInfo,int32_t nFont,void *info) {return FALSE;};
 Bool32  mySetupPage(void *info) {return FALSE;};
 Bool32  mySpecRecog(RecObject *ro) {return FALSE;};
 ///////////////
 // проверка по словарю
-BOOL    my_p2_spell(PCHAR s,BYTE lang) {return FALSE;};
+Bool    my_p2_spell(PCHAR s,BYTE lang) {return FALSE;};
 
 ///////////////////////////////
 // распознать с разрезанием/склейкой кусок - от first до last,
@@ -106,21 +106,21 @@ BYTE  (*RSTR_p2_GetCodePage)(int lang)=my_p2_GetCodePage;
 void  (*RSTR_p2_DecodeCode)(char *pCode,int let)=my_p2_DecodeCode;
 //////////////////
 // снэр
-BOOL    (*RSTR_p2_NoStopSnapLEO)(void)=my_NoStopSnapLEO;
+Bool    (*RSTR_p2_NoStopSnapLEO)(void)=my_NoStopSnapLEO;
 Bool16	(*RSTR_p2_snap_monitor_ori)(CSTR_line *snap_line, int32_t num_lines)=my_snap_monitor_ori;
-Bool16	(*RSTR_p2_snap_activity)(Word8 a)=my_snap_activity;
-Bool16	(*RSTR_p2_snap_show_text)(Word8 *txt)=my_snap_show_text;
+Bool16	(*RSTR_p2_snap_activity)(uchar a)=my_snap_activity;
+Bool16	(*RSTR_p2_snap_show_text)(uchar *txt)=my_snap_show_text;
 ///////////////
 // проверка по словарю
-BOOL    (*RSTR_p2_spell)(PCHAR s,BYTE lang)=my_p2_spell;
+Bool    (*RSTR_p2_spell)(PCHAR s,BYTE lang)=my_p2_spell;
 
 // дополнительное распознавание (LEO)
 Bool32  (*ADDREC_SetupField)(void *letInfo,int32_t nFont,void* fontInfo)=mySetupField;
 Bool32  (*ADDREC_SetupPage)(void *info)=mySetupPage;
 Bool32  (*ADDREC_Recog)(RecObject* obj)=mySpecRecog;
 
-//Word8	db_status=0;
-//Word8   spec_camera=0;
+//uchar	db_status=0;
+//uchar   spec_camera=0;
 
 P2_FUNC(void) P2_SetRSTR( Handle RecogCutGlu,
                           Handle setAlpha,Handle GetPage,Handle Decode,

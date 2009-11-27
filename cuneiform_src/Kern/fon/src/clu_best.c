@@ -365,7 +365,7 @@ static int TestO0b6(int numSymbol,Nraster_header *rh,
 ///////////////////////
 void GetClusterStatistic(int numSymbol,int numCluster,Nraster_header *rh,
 						SINT *nClus,InfoCluster *infoC,int *countC,
-						BYTE *metkaGood,BYTE *metkaValid,BOOL addLingvo)
+						BYTE *metkaGood,BYTE *metkaValid,Bool addLingvo)
 {
  int i;
  int curClus;
@@ -385,7 +385,7 @@ void GetClusterStatistic(int numSymbol,int numCluster,Nraster_header *rh,
 
      AddDWORDField(rh[i].nField,infoC[curClus].fields);
 
-	 let=TestCursivName((Word8)rh[i].let);
+	 let=TestCursivName((uchar)rh[i].let);
 
 #ifndef _GOOD_BIG_SMALL_
 	// are big & small - before were only BIG

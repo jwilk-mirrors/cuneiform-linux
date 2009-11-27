@@ -70,7 +70,7 @@ static HANDLE            ghStorage = NULL;
 static HINSTANCE         ghInst =  NULL;
 //////////////////////////////////////////////////////////////////////////////////
 
-BOOL APIENTRY DllMain( HINSTANCE hModule,
+Bool APIENTRY DllMain( HINSTANCE hModule,
                         uint32_t ul_reason_for_call,
                         LPVOID lpReserved )
 {
@@ -118,10 +118,10 @@ RPIC_FUNC(uint32_t) RPIC_GetReturnCode()
 	return rc;
 }
 //////////////////////////////////////////////////////////////////////////////////
-RPIC_FUNC(Int8 *) RPIC_GetReturnString(uint32_t dwError)
+RPIC_FUNC(char *) RPIC_GetReturnString(uint32_t dwError)
 {
 	uint16_t rc = (uint16_t)(dwError & 0xFFFF) + IDS_ERR_NO;
-	static Int8 szBuffer[512];
+	static char szBuffer[512];
 
 	if( dwError >> 16 != gwHeightRC)
 		gwLowRC = IDS_ERR_NOTIMPLEMENT;

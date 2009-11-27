@@ -90,7 +90,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "compat_defs.h"
 
 //*********************************************************************
-BOOL APIENTRY DllMain( HANDLE hModule,
+Bool APIENTRY DllMain( HANDLE hModule,
 uint32_t ul_reason_for_call,
                         LPVOID lpReserved )
 {
@@ -149,10 +149,10 @@ uint32_t rc = 0;
 return rc;
 }
 //********************************************************************
-ROUT_FUNC(Int8 *) ROUT_GetReturnString(uint32_t dwError)
+ROUT_FUNC(char *) ROUT_GetReturnString(uint32_t dwError)
 {
 	uint16_t rc = (uint16_t)(dwError & 0xFFFF) + IDS_ERR_NO;
-	static Int8 szBuffer[512];
+	static char szBuffer[512];
 
 	if( dwError >> 16 != gwHighRC_rout)
 		gwLowRC_rout = IDS_ERR_NOTIMPLEMENT;
@@ -201,7 +201,7 @@ ROUT_FUNC(Bool32) ROUT_SetImportData(uint32_t dwType, void * pData)
 // Импорт моих опций
 
 #define CASE_FUNCTION(a) case ROUT_FN##a: a=(FN##a)pData; break
-	BOOL rc = TRUE;
+	Bool rc = TRUE;
 
 	switch(dwType)
 		{
@@ -531,7 +531,7 @@ void ErrUpdateActiveAlphabet(const char *file, long line)
 	gwLowRC_rout = IDS_ERR_UPDATE_ACTIVE_ALPHABET;
 }
 //********************************************************************
-BOOL InitMemory(Byte *memStart,
+Bool InitMemory(Byte *memStart,
 				  long sizeMem)
 {
 // Отвести страховочные бамперы в начале
@@ -564,7 +564,7 @@ BOOL InitMemory(Byte *memStart,
 	return TRUE;
 }
 //********************************************************************
-BOOL SetTableTextSeparators(char* s)
+Bool SetTableTextSeparators(char* s)
 {
 // Список разделителей табличного текста:
 

@@ -79,7 +79,7 @@ static int32_t             InitCount =  0;
 
 Bool32 InitCFIOInterface(Bool32 Status);
 /////////////////////////////////////////
-BOOL APIENTRY DllMain( HINSTANCE hModule,
+Bool APIENTRY DllMain( HINSTANCE hModule,
                         uint32_t ul_reason_for_call,
                         LPVOID lpReserved )
 {
@@ -168,10 +168,10 @@ RIMAGE_FUNC(uint32_t) RIMAGE_GetReturnCode()
 }
 //////////////////////////////////////////////////////////////////////////////////
 //
-RIMAGE_FUNC(Int8 *) RIMAGE_GetReturnString(uint32_t dwError)
+RIMAGE_FUNC(char *) RIMAGE_GetReturnString(uint32_t dwError)
 {
 	uint16_t rc = (uint16_t)(dwError & 0xFFFF) + IDS_RIMAGE_ERR_NO;
-	static Int8 szBuffer[512];
+	static char szBuffer[512];
 
 	if( dwError >> 16 != gwHeightRC)
 		gwLowRC = IDS_RIMAGE_ERR_NOTIMPLEMENT;
@@ -215,7 +215,7 @@ RIMAGE_FUNC(Bool32) RIMAGE_GetExportData(uint32_t dwType, void * pData)
 //
 RIMAGE_FUNC(Bool32) RIMAGE_SetImportData(uint32_t dwType, void * pData)
 {
-	BOOL rc = FALSE;
+	Bool rc = FALSE;
 	gwLowRC = IDS_RIMAGE_ERR_NOTIMPLEMENT;
 
 	switch(dwType)

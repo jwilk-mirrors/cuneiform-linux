@@ -87,7 +87,7 @@ int inf_let_w = 5;
 int sup_dust_w = 5;
 int min_cut_down_let_w = 3;
 int sup_prob_w = 20;
-BOOL type_let;
+Bool type_let;
 extern Handle HCPAGE;
 extern Handle hDebugCutStr;
 extern Handle CutStrD;
@@ -112,19 +112,19 @@ extern FILE* f_temp_cut;
 extern FILE* f_old_cut;
 
 int GetMediumHeight(POLY_*);
-BOOL GetMasP(Handle hCPage, Rect16 Rc, Word8** ppmasp);
-BOOL Increase2(RecRaster* rast, CCOM_comp* comp);
+Bool GetMasP(Handle hCPage, Rect16 Rc, uchar** ppmasp);
+Bool Increase2(RecRaster* rast, CCOM_comp* comp);
 int GetCountNumbers(int num);
 void StrDrawRect(Handle wnd, uint32_t OperCode, uint32_t color, int top,
 		int bottom, int left, int right);
-BOOL IfEqv(char* buf1, char* buf2);
-BOOL IfEqv(Rect16 r1, Rect16 r2);
-BOOL AddLenBlockMas(POLY_** ppRc, int& len, int add);
+Bool IfEqv(char* buf1, char* buf2);
+Bool IfEqv(Rect16 r1, Rect16 r2);
+Bool AddLenBlockMas(POLY_** ppRc, int& len, int add);
 void DelBlockMas(POLY_* masp);
-BOOL InitBlockMas(POLY_** ppRc, int len);
+Bool InitBlockMas(POLY_** ppRc, int len);
 int IsInPoly(Point16 a, void * pPoly);
-BOOL CutComp(Handle hCPAGE, CCOM_handle hCCOM, CCOM_comp* comp, int bound,
-		BOOL fl_cut);
+Bool CutComp(Handle hCPAGE, CCOM_handle hCCOM, CCOM_comp* comp, int bound,
+		Bool fl_cut);
 void UndoCutInRect(Handle hCPAGE, CCOM_handle hCCOM, Rect32* Rc);
 
 void RSELSTR_CutCompInTableZones(Handle hCPAGE, CCOM_handle hCCOM) {
@@ -182,7 +182,7 @@ int CutStrings(POLY_* pBlock) {
 	Point16 pLeftBottom;
 	Point16 pRightBottom;
 
-	BOOL fl_cont = FALSE;
+	Bool fl_cont = FALSE;
 
 	comp = CCOM_GetFirst((CCOM_handle) HCCOM, NULL);
 	prev_comp = comp;
@@ -222,9 +222,9 @@ int CutStrings(POLY_* pBlock) {
 				pBlock)) {
 			if (comp->h >= cut_h && comp->h <= medium_h * 5 && comp->w
 					>= inf_let_w - 1) {
-				Word8 Data[1000];
+				uchar Data[1000];
 				memset(Data, 0, sizeof(Data));
-				Word8* pmasp = Data;
+				uchar* pmasp = Data;
 				Rect16 Rc;
 
 				Rc.top = comp->upper;
@@ -342,7 +342,7 @@ int GetStatisticsH() {
 	return sum / count;
 }
 
-BOOL GetMasP(Handle hCPage, Rect16 Rc, Word8** ppmasp) {
+Bool GetMasP(Handle hCPage, Rect16 Rc, uchar** ppmasp) {
 	int prewide;
 	int left = Rc.left;
 	int h = Rc.bottom - Rc.top + 1;
@@ -359,7 +359,7 @@ BOOL GetMasP(Handle hCPage, Rect16 Rc, Word8** ppmasp) {
 	CIMAGEInfoDataInGet DataInto = { 0 };
 	CIMAGEInfoDataOutGet DataOut = { 0 };
 
-	Word8 Name[CPAGE_MAXNAME];
+	uchar Name[CPAGE_MAXNAME];
 	Bool ret;
 	int i;
 
@@ -389,7 +389,7 @@ BOOL GetMasP(Handle hCPage, Rect16 Rc, Word8** ppmasp) {
 	return TRUE;
 }
 
-BOOL Increase2(RecRaster* rast, CCOM_comp* comp) {
+Bool Increase2(RecRaster* rast, CCOM_comp* comp) {
 	int newbytewide = ((rast->lnPixWidth) * 2 + 7) / 8;
 	int bytewide = (rast->lnPixWidth + 7) / 8;
 	int newh = rast->lnPixHeight * 2;
@@ -398,8 +398,8 @@ BOOL Increase2(RecRaster* rast, CCOM_comp* comp) {
 	if (comp->h * ((comp->w + 7) / 8) > REC_MAX_RASTER_SIZE)
 		return FALSE;
 
-	Word8 bytep;
-	Word8 bytep2;
+	uchar bytep;
+	uchar bytep2;
 	int nowbyte = 0;
 	int nowbyte2 = 0;
 	int k;
@@ -407,7 +407,7 @@ BOOL Increase2(RecRaster* rast, CCOM_comp* comp) {
 	int count = (rast->lnPixWidth + 63) / 64;
 	int new_count = (newbytewide + 7) / 8;
 
-	Word8* str = new Word8[REC_MAX_RASTER_SIZE];
+	uchar* str = new uchar[REC_MAX_RASTER_SIZE];
 	if (!str)
 		return FALSE;
 
@@ -521,7 +521,7 @@ BOOL Increase2(RecRaster* rast, CCOM_comp* comp) {
 		}
 	}
 
-	Word8* raster = rast->Raster;
+	uchar* raster = rast->Raster;
 	for (i = REC_MAX_RASTER_SIZE - 1; i >= 0; i--)
 		raster[i] = str[i];
 
@@ -605,7 +605,7 @@ void IfDifCut(void) {
 	char buf1[10000];
 	char buf2[10000];
 	fgets(buf1, 10000, f_temp_cut);
-	BOOL fl_exist = FALSE;
+	Bool fl_exist = FALSE;
 
 	while (fgets(buf2, 10000, f_old_cut)) {
 		if (IfEqv(buf1, buf2))
@@ -620,7 +620,7 @@ void IfDifCut(void) {
 	int nOldCut = 0;
 	Rect16 pNewCut[1000];
 	int nNewCut = 0;
-	BOOL fl_empty = FALSE;
+	Bool fl_empty = FALSE;
 
 	if (!fgets(buf2, 10000, f_old_cut))
 		fl_empty = TRUE;
@@ -740,7 +740,7 @@ void IfDifCut(void) {
 
 }
 
-BOOL IfEqv(char* buf1, char* buf2) {
+Bool IfEqv(char* buf1, char* buf2) {
 	int i = 0;
 	while (buf1[i] != '\0' && buf2[i] != '\0' && buf1[i] == buf2[i])
 		i++;
@@ -749,7 +749,7 @@ BOOL IfEqv(char* buf1, char* buf2) {
 	return FALSE;
 }
 
-BOOL IfEqv(Rect16 r1, Rect16 r2) {
+Bool IfEqv(Rect16 r1, Rect16 r2) {
 	if (r1.top != r2.top)
 		return FALSE;
 	if (r1.bottom != r2.bottom)
@@ -761,7 +761,7 @@ BOOL IfEqv(Rect16 r1, Rect16 r2) {
 	return TRUE;
 }
 
-BOOL AddLenBlockMas(POLY_** ppRc, int& len, int add) {
+Bool AddLenBlockMas(POLY_** ppRc, int& len, int add) {
 	POLY_ *dop;
 	int i;
 	if (!(InitBlockMas(&dop, len)))
@@ -795,7 +795,7 @@ void DelBlockMas(POLY_ *masp) {
 	delete[] masp;
 }
 
-BOOL InitBlockMas(POLY_** ppRc, int len) {
+Bool InitBlockMas(POLY_** ppRc, int len) {
 	(*ppRc) = NULL;
 	if (!((*ppRc) = new POLY_[len]))
 		return FALSE;

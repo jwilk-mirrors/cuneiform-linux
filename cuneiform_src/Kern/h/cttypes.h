@@ -106,9 +106,6 @@ class cls;                 \
 #endif
 
 /*** Base types ***/
-typedef unsigned int Indx;_SETTYPES( Indx )
-typedef char Int8;      _SETTYPES( Int8 )
-typedef unsigned char Word8;_SETTYPES( Word8 )
 typedef long double Float80; _SETTYPES( Float80 )
 typedef int Bool; _SETTYPES( Bool )
 typedef int16_t Bool16;_SETTYPES( Bool16 )
@@ -200,8 +197,6 @@ typedef uint32_t * PDWORD;
 typedef uint32_t * LPDWORD;
 #endif
 
-typedef int BOOL;
-
 typedef char CHAR;
 typedef char * PCHAR;
 
@@ -219,7 +214,7 @@ typedef int16_t * _PINT;
 typedef WORD * PWORD;
 
 typedef BYTE* LPBYTE;
-typedef BOOL* LPBOOL;
+typedef Bool* LPBool;
 typedef LONG* LPLONG;
 typedef void* LPVOID;
 

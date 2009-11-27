@@ -79,7 +79,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 # define DUST_LIST_MEMORY_ALLOCATION_SHIFT   7
 
 STRING String;
-BOOL bNeedFreeString = FALSE;
+Bool bNeedFreeString = FALSE;
 STRING *pStringsList     = NULL;
 STRING *pStringsListEnd  = NULL;
 STRING *pStringsUpList   = NULL;
@@ -91,11 +91,11 @@ void StringPrepare (void)
 
     String.pLettersList =(int*) malloc (nRoots * sizeof (int));
     if (String.pLettersList == NULL)
-        ErrorNoEnoughMemory ((Word8*)"in SESTRING.C,StringPrepare,part 1");
+        ErrorNoEnoughMemory ((uchar*)"in SESTRING.C,StringPrepare,part 1");
 
     String.pDustList =(int*) malloc (nRoots * sizeof (int));
     if (String.pDustList == NULL)
-        ErrorNoEnoughMemory ((Word8*)"in SESTRING.C,StringPrepare,part 2");
+        ErrorNoEnoughMemory ((uchar*)"in SESTRING.C,StringPrepare,part 2");
 
     bNeedFreeString = TRUE;
 }
@@ -119,13 +119,13 @@ void StringNewDescriptor (void)
     String.nSpecialsLetters = 0;
 }
 
-BOOL StringIncludes (STRING *p, STRING *q)
+Bool StringIncludes (STRING *p, STRING *q)
 {
     int    i;
     ROOT * pRoot;
     int    nLettersSquare;
     int    nStringSquare;
-    BOOL   bNotIncludes;
+    Bool   bNotIncludes;
 
     if ((p -> uFlags & SF_SPECIAL)     ||
         (q -> uFlags & SF_SPECIAL)     ||
@@ -325,7 +325,7 @@ void StringAddDust2 (STRING *pString, int iRoot)
                      * sizeof (int)));
 
         if (pString -> pDustList == NULL)
-        ErrorNoEnoughMemory ((Word8*)"in SESTRING.C,StringAddDust2,part 1");
+        ErrorNoEnoughMemory ((uchar*)"in SESTRING.C,StringAddDust2,part 1");
     }
 
     pString -> pDustList [pString -> nDust++] = iRoot;
@@ -338,7 +338,7 @@ STRING *StringAddToList (void)
 
     pNew =(STRING*) malloc (sizeof (STRING));
     if (pNew == NULL)
-        ErrorNoEnoughMemory ((Word8*)"in SESTRING.C,StringAddToList,part 1");
+        ErrorNoEnoughMemory ((uchar*)"in SESTRING.C,StringAddToList,part 1");
 
     memcpy (pNew, &String, sizeof (String));
 
@@ -347,7 +347,7 @@ STRING *StringAddToList (void)
         pNew -> pLettersList =(int*) malloc (String.nLetters * sizeof (int));
 
         if (pNew -> pLettersList == NULL)
-        ErrorNoEnoughMemory ((Word8*)"in SESTRING.C,StringAddToList,part 2");
+        ErrorNoEnoughMemory ((uchar*)"in SESTRING.C,StringAddToList,part 2");
 
         memcpy (pNew -> pLettersList,
                 String.pLettersList,
@@ -363,7 +363,7 @@ STRING *StringAddToList (void)
         pNew -> pDustList =(int*) malloc (String.nDust * sizeof (int));
 
         if (pNew -> pDustList == NULL)
-        ErrorNoEnoughMemory ((Word8*)"in SESTRING.C,StringAddToList,part 3");
+        ErrorNoEnoughMemory ((uchar*)"in SESTRING.C,StringAddToList,part 3");
 
         memcpy (pNew -> pDustList,
                 String.pDustList,

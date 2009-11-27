@@ -80,7 +80,7 @@ static int32_t             InitCount =  0;
 #undef APIENTRY
 #define APIENTRY
 
-BOOL APIENTRY DllMain( HINSTANCE  hModule,
+Bool APIENTRY DllMain( HINSTANCE  hModule,
                         uint32_t ul_reason_for_call,
                         LPVOID lpReserved )
 {
@@ -155,7 +155,7 @@ CIMAGE_FUNC(uint32_t) CIMAGE_GetReturnCode()
 }
 //////////////////////////////////////////////////////////////////////////////////
 //
-CIMAGE_FUNC(PInt8) CIMAGE_GetReturnString(uint32_t dwError)
+CIMAGE_FUNC(char *) CIMAGE_GetReturnString(uint32_t dwError)
 {
 	uint16_t rc = (uint16_t)(dwError & 0xFFFF) + IDS_CIMAGE_ERR_NO;
 	static Char8 szBuffer[512];
@@ -168,7 +168,7 @@ CIMAGE_FUNC(PInt8) CIMAGE_GetReturnString(uint32_t dwError)
 	else
 		return NULL;
 
-	return (PInt8)szBuffer;
+	return (char *)szBuffer;
 }
 //////////////////////////////////////////////////////////////////////////////////
 //
@@ -213,7 +213,7 @@ CIMAGE_FUNC(Bool32) CIMAGE_GetExportData(uint32_t dwType, void * pData)
 //
 CIMAGE_FUNC(Bool32) CIMAGE_SetImportData(uint32_t dwType, void * pData)
 {
-	BOOL rc = FALSE;
+	Bool rc = FALSE;
 	gwLowRC = IDS_CIMAGE_ERR_NOTIMPLEMENT;
 
 	return rc;

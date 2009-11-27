@@ -157,11 +157,11 @@ char * _ErrorMessage(long rc)
 	return p;
 }
 
-BOOL _Load(CRecognition * pThis)
+Bool _Load(CRecognition * pThis)
 {
 	HINSTANCE hInstance = GetModuleHandle("ATIGER.DLL");
 	char szFullPath[_MAX_PATH];
-	BOOL rc;
+	Bool rc;
 
 	GetModuleFileName(hInstance,szFullPath,sizeof(szFullPath));
 	char * p = strstr(strupr(szFullPath),"ATIGER.DLL");
@@ -219,9 +219,9 @@ short  _EnumLanguage(short PrevLang)
 	return rc;
 }
 
-BOOL _Open(char * hDIB, char * FileName)
+Bool _Open(char * hDIB, char * FileName)
 {
-	BOOL rc = FALSE;
+	Bool rc = FALSE;
 
 	if(g_hPage)
 		_Close( );
@@ -238,7 +238,7 @@ BOOL _Open(char * hDIB, char * FileName)
 	//
 	// Запишем изображение
 	//
-	if(!CIMAGE_WriteDIB((PWord8)_IMAGE_USER,g_pDIB,1))
+	if(!CIMAGE_WriteDIB((uchar *)_IMAGE_USER,g_pDIB,1))
 	{
 		g_pRecognition->SetError((char *)CIMAGE_GetReturnString(CIMAGE_GetReturnCode()));
 		rc = FALSE;
@@ -271,7 +271,7 @@ BOOL _Open(char * hDIB, char * FileName)
 	return rc;
 }
 
-BOOL _Close()
+Bool _Close()
 {
 	g_pDIB = NULL;
 
@@ -281,9 +281,9 @@ BOOL _Close()
 	return TRUE;
 }
 
-BOOL _Recognition()
+Bool _Recognition()
 {
-BOOL rc = FALSE;
+Bool rc = FALSE;
 
 	InitPRGTIME();
 
@@ -313,9 +313,9 @@ BOOL rc = FALSE;
 return rc;
 }
 
-BOOL _Save(void * hEdPage,char * lpFileName,long format, long code, Bool32 bAppend)
+Bool _Save(void * hEdPage,char * lpFileName,long format, long code, Bool32 bAppend)
 {
-	BOOL rc = FALSE;
+	Bool rc = FALSE;
 
 	InitPRGTIME();
 
@@ -346,9 +346,9 @@ BOOL _Save(void * hEdPage,char * lpFileName,long format, long code, Bool32 bAppe
 	return rc;
 }
 
-BOOL _PageAnalysis(BOOL bUpdateCPAGE)
+Bool _PageAnalysis(Bool bUpdateCPAGE)
 {
-	BOOL rc;
+	Bool rc;
 	WORD wOptions = TSRO_PICTURES_NO;
 		 wOptions |= g_bSpeller ? TSRO_SPELLER : 0 ;
 		 wOptions |= g_bOneColumn ? TSRO_FORCE_ONE_COLUMN : 0 ;
@@ -468,9 +468,9 @@ BOOL _PageAnalysis(BOOL bUpdateCPAGE)
 	return rc;
 }
 
-BOOL _FinalRecognition()
+Bool _FinalRecognition()
 {
-	BOOL rc = TRUE;
+	Bool rc = TRUE;
 
 	int number_blocks = CPAGE_GetCountBlock(g_hPage);
 
@@ -490,7 +490,7 @@ BOOL _FinalRecognition()
 		Handle hPage = CPAGE_GetHandlePage(CPAGE_GetCurrentPage());
 
 		// Проинициализируем ядро выделением одной колонки
-		BOOL bOneColumn = g_bOneColumn;
+		Bool bOneColumn = g_bOneColumn;
 		g_bOneColumn = TRUE;
 
 		PRGTIME	prevAnalys = StorePRGTIME(0, 30);
@@ -809,9 +809,9 @@ long _EnumPictureMode(long prev)
 }
 
 
-BOOL _GetRotateDIB(long * phDIB,long * x0,long * y0)
+Bool _GetRotateDIB(long * phDIB,long * x0,long * y0)
 {
-	BOOL rc = TRUE;
+	Bool rc = TRUE;
 	PAGEINFO info;
 
 	if(rc)
@@ -834,8 +834,8 @@ BOOL _GetRotateDIB(long * phDIB,long * x0,long * y0)
 	//
 	if(rc)
 	{
-		if(RIMAGE_Rotate((PWord8)_IMAGE_USER,
-							(PWord8)_IMAGE_ROTATE,
+		if(RIMAGE_Rotate((uchar *)_IMAGE_USER,
+							(uchar *)_IMAGE_ROTATE,
 							info.Incline2048,2048, 0) == FALSE)
 		{
 			g_pRecognition->SetError((char *)RIMAGE_GetReturnString(RIMAGE_GetReturnCode()));
@@ -846,7 +846,7 @@ BOOL _GetRotateDIB(long * phDIB,long * x0,long * y0)
 
 	if(rc)
 	{
-		if(!CIMAGE_ReadDIB((PWord8)_IMAGE_ROTATE,(void**)phDIB,TRUE))
+		if(!CIMAGE_ReadDIB((uchar *)_IMAGE_ROTATE,(void**)phDIB,TRUE))
 		{
 			g_pRecognition->SetError((char *)CIMAGE_GetReturnString(CIMAGE_GetReturnCode()));
 			rc = FALSE;

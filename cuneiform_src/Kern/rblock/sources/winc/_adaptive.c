@@ -139,7 +139,7 @@ void * TigerReallocateMemory(void * mem, uint32_t size) {
 }
 
 
-extern MN * LOC_CLocomp(Word8* raster, int32_t bw, int32_t h, int16_t upper,
+extern MN * LOC_CLocomp(uchar* raster, int32_t bw, int32_t h, int16_t upper,
 		int16_t left);
 extern BYTE work_raster[], work_raster_1[];
 //extern c_comp wcomp;
@@ -200,7 +200,7 @@ CCOM_comp *get_CCOM_comp(PROOT r) {
 	return (CCOM_comp *) r->pComp;
 }
 
-BOOL save_MN(MN *mn) {
+Bool save_MN(MN *mn) {
 	extern Handle exthCCOM;
 	CCOM_comp * p = REXC_MN2CCOM((Handle) exthCCOM, (Handle) mn);
 	if (!p)

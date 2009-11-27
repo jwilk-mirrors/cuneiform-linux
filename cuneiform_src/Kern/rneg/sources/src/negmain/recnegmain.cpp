@@ -98,13 +98,13 @@ int	DPIX;
 int	DPIY;
 int Height;
 int Width;
-Word8 ImageName[CPAGE_MAXNAME];
+uchar ImageName[CPAGE_MAXNAME];
 int nIncline;
-BOOL dpTime;
-BOOL dpPrintResConsole;
-BOOL dpNegResD;
-BOOL dpNegRecD;
-BOOL dpRecOneLetter;
+Bool dpTime;
+Bool dpPrintResConsole;
+Bool dpNegResD;
+Bool dpNegRecD;
+Bool dpRecOneLetter;
 /*----------------------------------------------------------------------------*/
 NegImage* pNegImage;
 
@@ -112,7 +112,7 @@ NegImage* pNegImage;
 
 
 
-RNEG_FUNC(void) RNEG_RecogNeg(CCOM_handle hCCOM, Handle hCPage,Word8* pImageName,int skew)
+RNEG_FUNC(void) RNEG_RecogNeg(CCOM_handle hCCOM, Handle hCPage,uchar* pImageName,int skew)
 {
 
  MainWindowD=NULL;
@@ -182,9 +182,9 @@ RNEG_FUNC(void) RNEG_RecogNeg(CCOM_handle hCCOM, Handle hCPage,Word8* pImageName
  NegList* temp;
  int nRC=0;
  int i;
- BOOL fl_del_mas_neg;
- BOOL flag_rotate;
- BOOL flag_rimage_rotate;
+ Bool fl_del_mas_neg;
+ Bool flag_rotate;
+ Bool flag_rimage_rotate;
 
 
  if(!LDPUMA_Skip(SetSkew))
@@ -605,7 +605,7 @@ RNEG_FUNC(void) RNEG_RecogNeg(CCOM_handle hCCOM, Handle hCPage,Word8* pImageName
  {
   now=root;
 
-  Word8 Name[CPAGE_MAXNAME];
+  uchar Name[CPAGE_MAXNAME];
   for (int j=0; j<CPAGE_MAXNAME; j++)
 		Name[j] = ImageName[j];
 
@@ -642,9 +642,9 @@ RNEG_FUNC(void) RNEG_RecogNeg(CCOM_handle hCCOM, Handle hCPage,Word8* pImageName
 }
 
 
-BOOL NegRotate(Handle hCPage,NegList* root,int nRc,int skew)
+Bool NegRotate(Handle hCPage,NegList* root,int nRc,int skew)
 {
- BOOL ret=FALSE;
+ Bool ret=FALSE;
  int oldskew=skew;
  if(skew<0)
 	 skew=-skew;
@@ -654,13 +654,13 @@ BOOL NegRotate(Handle hCPage,NegList* root,int nRc,int skew)
  int h;
  int bytewide;
 
- Word8 Data[1000];
+ uchar Data[1000];
  memset (Data, 0, sizeof (Data));
- Word8* pmasp;
+ uchar* pmasp;
 
  NegList* now=root;
  Rect16 Rc;
- BOOL fl_cont;
+ Bool fl_cont;
 
  while(now)
  {
@@ -686,7 +686,7 @@ BOOL NegRotate(Handle hCPage,NegList* root,int nRc,int skew)
   }
   if(fl_cont)
 	  continue;
-  if(!( (now->neg).rot.pmasp=new Word8[bytewide*h]))
+  if(!( (now->neg).rot.pmasp=new uchar[bytewide*h]))
   {
 	  fl_cont=TRUE;
 	  now=now->next;
@@ -727,14 +727,14 @@ BOOL NegRotate(Handle hCPage,NegList* root,int nRc,int skew)
  return ret;
 }
 
-void NegCopy(Word8* from,Word8* to,int bytewide,int h)
+void NegCopy(uchar* from,uchar* to,int bytewide,int h)
 {
 	int j=bytewide*h;
 	for(int i=0;i<j;i++)
 		to[i]=from[i];
 }
 
-BOOL InitRotateMas(int w,int h,int16_t** ppbegx,int16_t** ppmovey,Word8** ppflmovey,int** pphi)
+Bool InitRotateMas(int w,int h,int16_t** ppbegx,int16_t** ppmovey,uchar** ppflmovey,int** pphi)
 {
 	if(!( (*ppbegx)=new int16_t[h+1]))
 		return FALSE;
@@ -744,7 +744,7 @@ BOOL InitRotateMas(int w,int h,int16_t** ppbegx,int16_t** ppmovey,Word8** ppflmo
 		(*ppbegx)=NULL;
 		return FALSE;
 	}
-	if(!( (*ppflmovey)=new Word8[w+1]))
+	if(!( (*ppflmovey)=new uchar[w+1]))
 	{
 		delete[] (*ppbegx);
 		(*ppbegx)=NULL;
@@ -765,7 +765,7 @@ BOOL InitRotateMas(int w,int h,int16_t** ppbegx,int16_t** ppmovey,Word8** ppflmo
 	return TRUE;
 }
 
-void DeleteRotateMas(Word8** pmasp,int16_t** begx,int16_t** movey,Word8** flmovey,int** hi)
+void DeleteRotateMas(uchar** pmasp,int16_t** begx,int16_t** movey,uchar** flmovey,int** hi)
 {
 	    delete[] (*pmasp);
 		*pmasp=NULL;
@@ -779,13 +779,13 @@ void DeleteRotateMas(Word8** pmasp,int16_t** begx,int16_t** movey,Word8** flmove
 		*hi=NULL;
 }
 
-BOOL IfNeedGlobalRotate(NegList* root,int& skew)
+Bool IfNeedGlobalRotate(NegList* root,int& skew)
 {
  NegList* now=root;
  Rect16 Rc;
  int w;
  int h;
- BOOL fl_break=FALSE;
+ Bool fl_break=FALSE;
  int modskew=skew;
  if(modskew<0)
 	 modskew=-modskew;
@@ -818,7 +818,7 @@ BOOL IfNeedGlobalRotate(NegList* root,int& skew)
  w=pNegImage->Wide;
  h=pNegImage->Height;
 
- Word8* newlpdata=pNegImage->GetPmasp(&Rc);
+ uchar* newlpdata=pNegImage->GetPmasp(&Rc);
  if(!newlpdata)
 	 return FALSE;
 
@@ -847,15 +847,15 @@ BOOL IfNeedGlobalRotate(NegList* root,int& skew)
  Width=Rc.right+1;
  const int bytewide=(Width+7)/8;
  int i;
- Word8* lptemp = new Word8[bytewide];
+ uchar* lptemp = new uchar[bytewide];
  if(!lptemp)
  {
 	 delete pRotImage;
 	 return FALSE;
  }
 
- Word8* to=newlpdata;
- Word8* from=newlpdata+(Height-1)*bytewide;
+ uchar* to=newlpdata;
+ uchar* from=newlpdata+(Height-1)*bytewide;
  for(i=Height>>1;i>0;i--,to+=bytewide,from-=bytewide)
  {
 	 memcpy(lptemp,to,bytewide);
@@ -1047,7 +1047,7 @@ void CheckNega(NegList* root)
  }
 }
 
-BOOL InitMyImage()
+Bool InitMyImage()
 {
 	Handle lpDIB;
 	if(!CIMAGE_ReadDIB(ImageName,&lpDIB,1))
@@ -1066,7 +1066,7 @@ BOOL InitMyImage()
     const int bytewide=ctdib->GetLineWidthInBytes();
     const int num_str=ctdib->GetLinesNumber ();
 	const int w=ctdib->GetImageWidth();
-    Word8* pmasp=(Word8*)(ctdib->GetPtrToBitFild());
+    uchar* pmasp=(uchar*)(ctdib->GetPtrToBitFild());
 
 	pNegImage = new NegImage;
 	if(!pNegImage)

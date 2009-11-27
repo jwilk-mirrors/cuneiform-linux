@@ -102,7 +102,7 @@ static INT kill_version( BYTE prob);
   extern BYTE line_tabcell;
 
   extern BYTE enable_table_recog; // Oleg : 10-02-95 09:05pm : sheet version
-  extern BOOL test_alphabet_elem(BYTE let);
+  extern Bool test_alphabet_elem(BYTE let);
 /*......................................................................*/
 WORD	mkm1=0x1111, mkm2=0x2222, mkm3=0x3333,	// MK Variables
 	mkm4=0x4444, mkm5=0x5555;
@@ -177,7 +177,7 @@ return;
 
 /* set letter (let) propability to (prob) if prob > old propability */
 /* return FALSE if letter (let) not exist in cell *c                */
-BOOL set_prob(cell *c, CHAR let, BYTE prob)
+Bool set_prob(cell *c, CHAR let, BYTE prob)
 {
 INT i,n=c->nvers;
 for(i=0;i<n;i++)
@@ -225,7 +225,7 @@ else
 return;
 }
 
-BOOL check_let(cell *c, CHAR let )
+Bool check_let(cell *c, CHAR let )
 {
 BYTE i,l=(BYTE)let,n=(BYTE)c->nvers;
 version *bv;
@@ -725,7 +725,7 @@ if( !typ_inc && dx<5 && language!=LANG_RUSSIAN )
 	      l->conc[0]+l->conc[1] &&
 	      !l->mount[0] &&
 	      !l->mount[4] &&
-          !check_let(c,(Word8)t_inv_roof)
+          !check_let(c,(uchar)t_inv_roof)
         )
 	   new_vers(c,t_inv_roof,(BYTE)cut_by_pos(c,t_inv_roof,prob,1,1) );
 	}
@@ -735,7 +735,7 @@ if( !typ_inc && dx<5 && language!=LANG_RUSSIAN )
 	{
       get_b_lines(c,&basL);
 	  if( dy > dx*2 &&
-		  !check_let(c,(Word8)t_bottom_accent) &&
+		  !check_let(c,(uchar)t_bottom_accent) &&
           r->mount[0] + r->mount[1] &&
 		  l->mount[0] + l->mount[1] &&
 		  c->row < basL.b2 &&

@@ -61,7 +61,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
 
-int IfStr(Rect16* pN,int nN,BOOL vertical)
+int IfStr(Rect16* pN,int nN,Bool vertical)
 {
  int let_h;
  int let_w;
@@ -86,7 +86,7 @@ int IfStr(Rect16* pN,int nN,BOOL vertical)
  return 0;
 }
 
-void StrDrawRect(Handle wnd,uint32_t OperCode,uint32_t color,Rect16 *pRc,int nRc,BOOL vert,Rect16 Rc)
+void StrDrawRect(Handle wnd,uint32_t OperCode,uint32_t color,Rect16 *pRc,int nRc,Bool vert,Rect16 Rc)
 {
 	int i;
 	Rect16 Rect;
@@ -127,12 +127,12 @@ void StrDrawRect(Handle wnd,uint32_t OperCode,uint32_t color,Rect16 Rc)
 }
 
 
-Handle GetStrCCOM(Handle hCPage,Word8* ImageName,Rect16 Rc,BOOL neg,BOOL vertical)
+Handle GetStrCCOM(Handle hCPage,uchar* ImageName,Rect16 Rc,Bool neg,Bool vertical)
 {
  int min_h,min_w,max_h,max_w;
  int j;
  PAGEINFO info = {0};
- Word8 Name[CPAGE_MAXNAME];
+ uchar Name[CPAGE_MAXNAME];
  GetPageInfo(hCPage,&info);
 
  if(ImageName)
@@ -173,13 +173,13 @@ Handle GetStrCCOM(Handle hCPage,Word8* ImageName,Rect16 Rc,BOOL neg,BOOL vertica
  if(neg)
 	 Control.Control|=Ex_Invert;
 
- if(REXCExtraDIB(Control,(Word8*)(lpDIB),Rc.left,Rc.top,Rc.right-Rc.left+1,Rc.bottom-Rc.top+1))
+ if(REXCExtraDIB(Control,(uchar*)(lpDIB),Rc.left,Rc.top,Rc.right-Rc.left+1,Rc.bottom-Rc.top+1))
     return REXCGetContainer();
  return 0;
  }
 
 
-void Invert(Rect16* pRc,Word8* pmasp)
+void Invert(Rect16* pRc,uchar* pmasp)
 {
  int h=pRc[0].bottom-pRc[0].top+1;
  int w=pRc[0].right-pRc[0].left+1;
@@ -193,7 +193,7 @@ void Invert(Rect16* pRc,Word8* pmasp)
 }
 
 
-void CopyP(Rect16* pRc,Word8* Raster,Word8* pmasp)
+void CopyP(Rect16* pRc,uchar* Raster,uchar* pmasp)
 {
  int h=pRc[0].bottom-pRc[0].top+1;
  int w=pRc[0].right-pRc[0].left+1;
@@ -206,7 +206,7 @@ void CopyP(Rect16* pRc,Word8* Raster,Word8* pmasp)
 
 }
 
-void ToHorizont(Rect16* pRc,Word8* Raster,Word8* pmasp)
+void ToHorizont(Rect16* pRc,uchar* Raster,uchar* pmasp)
 {
  int h=pRc[0].bottom-pRc[0].top+1;
  int w=pRc[0].right-pRc[0].left+1;
@@ -216,7 +216,7 @@ void ToHorizont(Rect16* pRc,Word8* Raster,Word8* pmasp)
  int vbytewide=(h)/8;
  if( ((h)%8) != 0)
 	 vbytewide++;
- Word8 bytep;
+ uchar bytep;
  int i,k;
  int nowbyte=0;
  int nowbyte2;
@@ -277,7 +277,7 @@ void ToHorizont(Rect16* pRc,Word8* Raster,Word8* pmasp)
 
 
 
-RSELSTR_FUNC(Bool32) RSELSTR_CutStr(Rect16** ppRc,int& nRc,int& len_mas,Word8* pmasp,int DPIX,int DPIY,int str_w)
+RSELSTR_FUNC(Bool32) RSELSTR_CutStr(Rect16** ppRc,int& nRc,int& len_mas,uchar* pmasp,int DPIX,int DPIY,int str_w)
 {
  inf_str_h=15;
  if(str_w<=0)
@@ -303,7 +303,7 @@ RSELSTR_FUNC(Bool32) RSELSTR_CutStr(Rect16** ppRc,int& nRc,int& len_mas,Word8* p
  Rect16* pRc=(*ppRc);
  int up;
  int oldtop;
- BOOL white=TRUE;
+ Bool white=TRUE;
 
  for(i=nRc-1;i>=0;i--)
  {
@@ -319,10 +319,10 @@ RSELSTR_FUNC(Bool32) RSELSTR_CutStr(Rect16** ppRc,int& nRc,int& len_mas,Word8* p
   int k;
   int top=pRc[i].top;
   oldtop=top;
-  Word8 bytep;
+  uchar bytep;
   int count_black=0;
   double proc;
-  BOOL str=FALSE;
+  Bool str=FALSE;
   int oldoldtop=pRc[i].top;
   int W;
   int rightbyte;
@@ -433,7 +433,7 @@ RSELSTR_FUNC(Bool32) RSELSTR_CutStr(Rect16** ppRc,int& nRc,int& len_mas,Word8* p
 }
 
 
-int GetStrW(Word8* pmasp,int spusk,int from,int h,int w,int& leftbyte,int& rightbyte)
+int GetStrW(uchar* pmasp,int spusk,int from,int h,int w,int& leftbyte,int& rightbyte)
 {
  int bytewide=(w+7)/8;
  int j=7-(bytewide*8-w);
@@ -443,7 +443,7 @@ int GetStrW(Word8* pmasp,int spusk,int from,int h,int w,int& leftbyte,int& right
  if(from+real_spusk>h)
 	 real_spusk=h-from;
  int count_black;
- Word8 bytep;
+ uchar bytep;
 
  leftbyte=0;
  rightbyte=bytewide-1;
@@ -541,7 +541,7 @@ int GetStrW(Word8* pmasp,int spusk,int from,int h,int w,int& leftbyte,int& right
 
 
 
-BOOL IfNewStr(Word8* pmasp,int i,int h,int bytewide,int w,int& l,int rect)
+Bool IfNewStr(uchar* pmasp,int i,int h,int bytewide,int w,int& l,int rect)
 {
 // if(LDPUMA_Skip (CutStrDel) )
 	 return TRUE;
@@ -549,7 +549,7 @@ BOOL IfNewStr(Word8* pmasp,int i,int h,int bytewide,int w,int& l,int rect)
  double proc;
  int j;
  int W;
- Word8 bytep;
+ uchar bytep;
  int k;
  int leftbyte;
  int rightbyte;
@@ -635,7 +635,7 @@ void StrMoveMasR(Rect16* pRc,int& nRc,int num)
   nRc++;
 }
 
-BOOL GetMasP(Handle hCPage,Word8* ImageName,Rect16 Rc,Word8** ppmasp)
+Bool GetMasP(Handle hCPage,uchar* ImageName,Rect16 Rc,uchar** ppmasp)
 {
     int prewide;
 	int left=Rc.left;
@@ -651,7 +651,7 @@ BOOL GetMasP(Handle hCPage,Word8* ImageName,Rect16 Rc,Word8** ppmasp)
 	PAGEINFO info = {0};
 	CIMAGEInfoDataInGet DataInto = {0};
 	CIMAGEInfoDataOutGet DataOut = {0};
-	Word8 Name[CPAGE_MAXNAME];
+	uchar Name[CPAGE_MAXNAME];
 	Bool ret;
 	int i;
 
@@ -718,7 +718,7 @@ void InitRc(Rect16* pRc,int nRC,CCOM_comp * pcomp)
 			 #define VOID
 			 #endif
 			 extern "C" {
-			 WINBASEAPI BOOL WINAPI IsDebuggerPresent(VOID);
+			 WINBASEAPI Bool WINAPI IsDebuggerPresent(VOID);
 			 }
 
 			 // остановка под отладчиком:
@@ -730,7 +730,7 @@ void InitRc(Rect16* pRc,int nRC,CCOM_comp * pcomp)
 // <--= отладочная вставка для слежения за качеством заплатки
 //////////////////////////////////////////////////////////////////////////
 
-BOOL InitStrMas(Rect16** ppRc,int len)
+Bool InitStrMas(Rect16** ppRc,int len)
 {
 	if (NULL != *ppRc)
 	{
@@ -767,7 +767,7 @@ BOOL InitStrMas(Rect16** ppRc,int len)
 	return TRUE;
 }
 
-BOOL InitStrMas(CCOM_comp*** ppRc,int len)
+Bool InitStrMas(CCOM_comp*** ppRc,int len)
 {
 	(*ppRc)=NULL;
 	if(!((*ppRc)=new CCOM_comp*[len]))
@@ -788,7 +788,7 @@ void DelStrMas(CCOM_comp** masp)
 	delete[] masp;
 }
 
-BOOL AddLenStrMas(Rect16** ppRc,int& len,int add)
+Bool AddLenStrMas(Rect16** ppRc,int& len,int add)
 {
  Rect16 *dop = NULL;
  int i;
@@ -810,7 +810,7 @@ BOOL AddLenStrMas(Rect16** ppRc,int& len,int add)
  return TRUE;
 }
 
-BOOL AddLenStrMas(CCOM_comp*** ppRc,int& len,int add)
+Bool AddLenStrMas(CCOM_comp*** ppRc,int& len,int add)
 {
  CCOM_comp** dop;
  int i;
@@ -832,7 +832,7 @@ BOOL AddLenStrMas(CCOM_comp*** ppRc,int& len,int add)
 
 
 
-void SortLetter(CCOM_comp** ppComp,int n,BOOL vert)
+void SortLetter(CCOM_comp** ppComp,int n,Bool vert)
 {
  CCOM_comp* comp;
  int j,i;

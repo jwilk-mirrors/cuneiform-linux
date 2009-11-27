@@ -73,26 +73,26 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 extern INT it_done;
 static int16_t skew_corr_stat(CSTR_line ln, INT pool_src);
 static int16_t rast_is_BOX_solid (CSTR_rast B1,int16_t scale);
-static BOOL snap_monitor_stat(void);
-static BOOL snap_monitor_ori_stat(CSTR_line *snap_line, int32_t num_lines);//IGOR
-static BOOL snap_is_marked_stat(CSTR_line ln);//IGOR
-static BOOL snap_baselines_stat(BYTE a);//IGOR
+static Bool snap_monitor_stat(void);
+static Bool snap_monitor_ori_stat(CSTR_line *snap_line, int32_t num_lines);//IGOR
+static Bool snap_is_marked_stat(CSTR_line ln);//IGOR
+static Bool snap_baselines_stat(BYTE a);//IGOR
 static void snap_draw_line_stat(Handle wnd, Point16 *start, Point16 *end, int32_t skew,
 					                               uint32_t rgb, int16_t pen, uint32_t key);//IGOR
 static void snap_del_line_stat(Handle wnd, uint32_t key);//IGOR
-static BOOL snap_show_text_stat(BYTE *txt);
-static BOOL snap_activity_stat(BYTE a);
+static Bool snap_show_text_stat(BYTE *txt);
+static Bool snap_activity_stat(BYTE a);
 
-static Word8 let_linempty[512]={0};
+static uchar let_linempty[512]={0};
 
 int16_t (*RSTR_skew_corr)(CSTR_line ln, INT pool_src)=skew_corr_stat;
 int16_t (*RSTR_rast_is_BOX_solid) (CSTR_rast B1,int16_t scale) = rast_is_BOX_solid;
-BOOL (*snap_monitor_rbal)(void)=snap_monitor_stat;
-BOOL (*snap_show_text_rbal)(BYTE *txt)=snap_show_text_stat;
-BOOL (*snap_activity_rbal)(BYTE a)=snap_activity_stat;
-BOOL (*snap_monitor_ori_rbal)(CSTR_line *snap_line, int32_t num_lines)=snap_monitor_ori_stat; //IGOR
-BOOL (*snap_is_marked_rbal)(CSTR_line ln)=snap_is_marked_stat;//IGOR
-BOOL (*snap_baselines_rbal)(BYTE a)=snap_baselines_stat;//IGOR
+Bool (*snap_monitor_rbal)(void)=snap_monitor_stat;
+Bool (*snap_show_text_rbal)(BYTE *txt)=snap_show_text_stat;
+Bool (*snap_activity_rbal)(BYTE a)=snap_activity_stat;
+Bool (*snap_monitor_ori_rbal)(CSTR_line *snap_line, int32_t num_lines)=snap_monitor_ori_stat; //IGOR
+Bool (*snap_is_marked_rbal)(CSTR_line ln)=snap_is_marked_stat;//IGOR
+Bool (*snap_baselines_rbal)(BYTE a)=snap_baselines_stat;//IGOR
 void (*snap_draw_line_rbal)(Handle wnd, Point16 *start, Point16 *end, int32_t skew,
 					                   uint32_t rgb, int16_t pen, uint32_t key)
 							=snap_draw_line_stat;//IGOR
@@ -100,28 +100,28 @@ void (*snap_del_line_rbal)(Handle wnd, uint32_t key) = snap_del_line_stat;//IGOR
 
 CSTR_line lin_str=(CSTR_line)NULL;
 
-Word8 language=3;
+uchar language=3;
 int16_t line_number = 0;
 
-Word8  fax1x2=0;
+uchar  fax1x2=0;
 uint16_t actual_resolution=300;
-Word8  fEdCode = 0;  // ASCII
-BOOL   line_BL=FALSE;
-Word8  spec_camera = 0;
+uchar  fEdCode = 0;  // ASCII
+Bool   line_BL=FALSE;
+uchar  spec_camera = 0;
 int32_t  nIncline=0;
-Word8  no_linpen=0;
+uchar  no_linpen=0;
 int16_t  prop_l_delta=0, prop_r_delta=0;
 
-Word8 db_status=0;
-Word8 db_pass=0;
+uchar db_status=0;
+uchar db_pass=0;
 
-Word8 *let_lindef3 =&let_linempty[0];
-Word8 *let_lindef  =&let_linempty[0];
-Word8 *let_linpos  =&let_linempty[0];
-Word8 *let_linshape=&let_linempty[0];
-Word8 *let_sans_acc=&let_linempty[0];          // [257]
-Word8 *letters_pidx_table = &let_linempty[0];  // 512
-Word8 decode_ASCII_to_[256][4] = {0};
+uchar *let_lindef3 =&let_linempty[0];
+uchar *let_lindef  =&let_linempty[0];
+uchar *let_linpos  =&let_linempty[0];
+uchar *let_linshape=&let_linempty[0];
+uchar *let_sans_acc=&let_linempty[0];          // [257]
+uchar *letters_pidx_table = &let_linempty[0];  // 512
+uchar decode_ASCII_to_[256][4] = {0};
 
 ///////////////////////////////
 CSTR_rast cell_f()
@@ -391,7 +391,7 @@ static Bool32 CopyRasterToLine(CSTR_rast c, CSTR_line trg)
 	 return FALSE;
 
   if( CSTR_GetAttr (c, &attr) &&
-      CSTR_GetImage (c, (Word8 *)&rs, CSTR_TYPE_IMAGE_RS) &&
+      CSTR_GetImage (c, (uchar *)&rs, CSTR_TYPE_IMAGE_RS) &&
       CSTR_GetCollectionUni(c,&vr) &&
       (comp=CSTR_GetComp(c))!=NULL )
      {
@@ -461,16 +461,16 @@ void dust_ini(CSTR_line lin)
 }
 ///////////////////////
 
-BOOL snap_monitor_stat(void)
+Bool snap_monitor_stat(void)
 { return FALSE;}
 ///////
-BOOL snap_monitor_ori_stat(CSTR_line *snap_line, int32_t num_lines)//IGOR
+Bool snap_monitor_ori_stat(CSTR_line *snap_line, int32_t num_lines)//IGOR
 {return FALSE;}
 ///////
-BOOL snap_is_marked_stat(CSTR_line ln)//IGOR
+Bool snap_is_marked_stat(CSTR_line ln)//IGOR
 { return FALSE;}
 ///////
-BOOL snap_baselines_stat(BYTE a)//IGOR
+Bool snap_baselines_stat(BYTE a)//IGOR
 { return FALSE;}
 ///////
 void snap_draw_line_stat(Handle wnd, Point16 *start, Point16 *end, int32_t skew,
@@ -480,14 +480,14 @@ void snap_draw_line_stat(Handle wnd, Point16 *start, Point16 *end, int32_t skew,
 void snap_del_line_stat(Handle wnd, uint32_t key)//IGOR
 { return;}
 ///////
-BOOL snap_show_text_stat(BYTE *txt)
+Bool snap_show_text_stat(BYTE *txt)
 { return FALSE;}
 ///////
-BOOL snap_activity_stat(BYTE a)
+Bool snap_activity_stat(BYTE a)
 { return FALSE;}
 ///////
 /*
-BOOL snap_newcell (CSTR_rast c)
+Bool snap_newcell (CSTR_rast c)
 {
 	return FALSE;
 }
@@ -524,7 +524,7 @@ static void test_dust(void)     // INT arg)
 // Вход ln, 1
 // Вход ln, 2
 //
-static int basedraft(CSTR_line ln, Word8 isDust)
+static int basedraft(CSTR_line ln, uchar isDust)
 {
 // CHAR riter1, riter0;
  int riter1;
@@ -689,14 +689,14 @@ drfin:
 //////////////////////
 static void GetRstrGlobals(BAL_RSTR_GLOBALS  *rstrGlob)
 {
-	language    = (Word8)rstrGlob->language;
+	language    = (uchar)rstrGlob->language;
 	line_number = (int16_t)rstrGlob->line_number;
-	fax1x2      = (Word8)rstrGlob->fax1x2;
+	fax1x2      = (uchar)rstrGlob->fax1x2;
 	actual_resolution = (uint16_t) rstrGlob->actual_resolution;
-    fEdCode           = (Word8)rstrGlob->fEdCode;  // ASCII
+    fEdCode           = (uchar)rstrGlob->fEdCode;  // ASCII
     line_BL           = (int16_t)rstrGlob->line_BL;
-    spec_camera       = (Word8)rstrGlob->spec_camera;
-    no_linpen         = (Word8)rstrGlob->no_linpen;
+    spec_camera       = (uchar)rstrGlob->spec_camera;
+    no_linpen         = (uchar)rstrGlob->no_linpen;
 
     prop_l_delta = rstrGlob->prop_l_delta;
 	prop_r_delta = rstrGlob->prop_r_delta;
@@ -821,7 +821,7 @@ static void SetBalBases(BAL_bas_ln *bal_bases)
 	}
 }
 /////////////////////
-BAL_FUNC(Bool32) BAL_basedraft(CSTR_line ln, Word8 isDust,
+BAL_FUNC(Bool32) BAL_basedraft(CSTR_line ln, uchar isDust,
 						 BAL_RSTR_GLOBALS  *rstrGlob,
 						 BAL_INOUT_GLOBALS *balGlob,
 						 BAL_bas_ln *bal_bases)

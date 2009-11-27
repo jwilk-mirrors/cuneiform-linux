@@ -171,7 +171,7 @@ extern "C" {
 #endif
             if(LDPUMA_IsActive())
                 rc = fAllocHook(allocType,userData,size,prevSize,blockType,
-                                requestNumber,(PWord8)filename, lineNumber);
+                                requestNumber,(uchar *)filename, lineNumber);
         }
         return rc;
     }
@@ -558,7 +558,7 @@ extern "C" {
     //////////////////////////////////////////////
     Bool32 LDPUMA_RegVariable(Handle owner, const char * lpText,void * lpData, const char * lpType)
     {
-        BOOL rc = FALSE;
+        Bool rc = FALSE;
         if(RegVariable)
             rc = RegVariable(owner,lpText,lpData,lpType);
         return rc;

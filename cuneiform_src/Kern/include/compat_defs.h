@@ -279,16 +279,16 @@ typedef struct tagLOGPALETTE {
  } HPALETTE;
  */
 
-typedef BOOL(*WNDENUMPROC)(HWND, int);
+typedef Bool(*WNDENUMPROC)(HWND, int);
 
 typedef int HPALETTE;
 
 typedef struct tagPAINTSTRUCT {
 	HDC hdc;
-	BOOL fErase;
+	Bool fErase;
 	RECT rcPaint;
-	BOOL fRestore;
-	BOOL fIncUpdate;
+	Bool fRestore;
+	Bool fIncUpdate;
 	unsigned char rgbReserved[32];
 } PAINTSTRUCT, *PPAINTSTRUCT;
 
@@ -390,7 +390,7 @@ typedef int REGSAM;
 #endif
 
 #ifndef RGB
-#define RGB(r,g,b) ((uint32_t)(((Word8)(r)|((uint16_t)((Word8)(g))<<8))|(((uint32_t)(Word8)(b))<<16)))
+#define RGB(r,g,b) ((uint32_t)(((uchar)(r)|((uint16_t)((uchar)(g))<<8))|(((uint32_t)(uchar)(b))<<16)))
 #endif
 
 #ifndef GENERIC_READ

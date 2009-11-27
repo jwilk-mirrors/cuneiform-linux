@@ -103,7 +103,7 @@ static BYTE Only_symbols[257]={
 //////////////////////////////////////////////////////////////////////////////////////
 //
 extern  BYTE    line_alphabet;
-static BOOL proplet_tg(BYTE let)
+static Bool proplet_tg(BYTE let)
 {
 
 	extern BYTE NO_Punct;
@@ -156,7 +156,7 @@ static BOOL proplet_tg(BYTE let)
 	}
 
 	// for INTERSEPTOR need "S"
-	if(language==LANG_RUSSIAN && multy_language && (is_english(let)||let=='$'||let==(Word8)'ß'))
+	if(language==LANG_RUSSIAN && multy_language && (is_english(let)||let=='$'||let==(uchar)'ß'))
 		return FALSE;
 	// Oleg : 20-10-1994 : kill english versions for Rus-Eng mode
 	if(language==LANG_ENGLISH && (is_russian(let)||let=='|'))
@@ -314,9 +314,9 @@ static BOOL proplet_tg(BYTE let)
 	return TRUE;
 }
 
-BOOL proplet(BYTE let)
+Bool proplet(BYTE let)
 {
-BOOL rc = proplet_tg(let) ;
+Bool rc = proplet_tg(let) ;
 if( !alpha_used_mode )
     return rc;
 return (alphabet[let] && rc);

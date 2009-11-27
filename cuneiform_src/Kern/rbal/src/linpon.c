@@ -74,7 +74,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 INT sMALL_SIZE=SMALL_SIZE;  //NB 3.4.95
 
 EXTLIN CSTR_line lin_str;
-//extern BOOL  FlagRestDust;
+//extern Bool  FlagRestDust;
 
 static void cell_position(CSTR_rast c);
 INT if_dust(CSTR_rast C);
@@ -1629,7 +1629,7 @@ p_prot (11001);
 		   CSTR_rast_attr attr2;
 		   INT weight;
 		   UniVersions vers;
-		   Word8 chr;
+		   uchar chr;
 
 //  no scaling h,w,... - we scaled on input to BAL !
            weight = RSTR_rast_is_BOX_solid(wc,0);     // solid BOX estimate -- killed

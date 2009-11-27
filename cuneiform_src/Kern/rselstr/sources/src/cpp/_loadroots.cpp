@@ -377,7 +377,7 @@ Bool32 ReadRoots(Handle hCCOM)
 
 }
 
-BOOL AddRoot(CCOM_comp * comp, Bool32 FirstTime)
+Bool AddRoot(CCOM_comp * comp, Bool32 FirstTime)
 {
 ROOT   RootRecord = {0};
 int h=comp->h;
@@ -432,7 +432,7 @@ int w=comp->w;
 
         if (pRoots == NULL)
         {
-            ErrorNoEnoughMemory ((Word8*)"in LTROOTS.C, AddRoot");
+            ErrorNoEnoughMemory ((uchar*)"in LTROOTS.C, AddRoot");
             nRoots = 0;
             return FALSE;
         }

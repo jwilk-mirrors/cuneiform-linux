@@ -136,7 +136,7 @@ void context_proc_line()
 	}
   if ( lang_ret_code == CONTINUE_ACTION )
     continue;
-// BOOL internet_word(void)
+// Bool internet_word(void)
 { //
 cell *  c;
 char    wrd[80],*p;
@@ -398,7 +398,7 @@ else		return ALPHANUM;
   return 0;
 }
 
-static BOOL find_delim ( INT Let )
+static Bool find_delim ( INT Let )
 {
   if ( ( strchr("?!:;+'\x22\x20\x1f\x2f\x5c", Let) ) || ( Let == liga_exm ) )
 /**********            "   spc +spc /  \  *********/
@@ -490,7 +490,7 @@ static void set_word_type()
   word_flag |= COMPLEX;
 }
 
-static BOOL real_delim ()
+static Bool real_delim ()
 {
  if ( possible_delim_flag & DELIM_WORD_IS_POSSIBLE )
    {
@@ -616,7 +616,7 @@ static void negspace()
  }
 #endif
 
-static BOOL roma_num()
+static Bool roma_num()
  {
 
  if ( n_ltr != roman_sym_num )
@@ -1091,9 +1091,9 @@ EV_Ret:
    return curest;
 }
 
-static BOOL Lbs_word()
+static Bool Lbs_word()
 {
-BOOL ret_code;
+Bool ret_code;
 INT pos_l, pos_b, pos_s, pos_dot;
 cell *c_l, *c_b, *c_s, *c_dot;
 
@@ -1161,9 +1161,9 @@ static void contextNumberTable(void)
 	int    numDig,numAll;
 	int    isCommaDot=0;
 	int    isDig;
-	Word8  letAsDig[] ="OoIli!SsBg\x8e\xae\x87\xa7\x9d\xed\x97\xe7\xa1\x82\xa2";
+	uchar  letAsDig[] ="OoIli!SsBg\x8e\xae\x87\xa7\x9d\xed\x97\xe7\xa1\x82\xa2";
 	//                            ОоЗзЭэЧчбВв
-	Word8  accordDig[]="001111558900333344688";
+	uchar  accordDig[]="001111558900333344688";
 	char *qq;
 	int minSize,maxSize;
 
@@ -1247,7 +1247,7 @@ static void contextNumberTable(void)
 	     qq = strchr(letAsDig,cc->vers[0].let);
 
 		 if( qq )
-           cc->vers[0].let=accordDig[(Word8*)qq-letAsDig];
+           cc->vers[0].let=accordDig[(uchar*)qq-letAsDig];
 		}
 
 		if (snap_activity('c'))
