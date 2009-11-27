@@ -109,8 +109,6 @@ class cls;                 \
 typedef unsigned int Indx;_SETTYPES( Indx )
 typedef char Int8;      _SETTYPES( Int8 )
 typedef unsigned char Word8;_SETTYPES( Word8 )
-typedef float Float32;  _SETTYPES( Float32 )
-typedef double Float64; _SETTYPES( Float64 )
 typedef long double Float80; _SETTYPES( Float80 )
 typedef int Bool; _SETTYPES( Bool )
 typedef int16_t Bool16;_SETTYPES( Bool16 )
