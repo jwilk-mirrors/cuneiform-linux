@@ -79,7 +79,7 @@ void    leo_over( RecVersions *ver, RecVersions *alph);
 int     leo_exist_codes(RecVersions *ver, Word8 *codes);
 void    add_to_prob_array(Word8 prob[],RecVersions *v);
 void    VersToAlph(RecVersions *ver,Word8 alphabet0[]);
-void    leo_expert_prob( RecVersions *v,Word16 *v3x5, RecRaster *r ,
+void    leo_expert_prob( RecVersions *v,uint16_t *v3x5, RecRaster *r ,
                          Word8 prob_3x5[], Word8 prob_iva[], int32_t prn,
                          Bool32 bonus, Bool32 enable5x3);
 
@@ -98,19 +98,19 @@ void    leo_setup_inc(RecObject*  object);
 void    leo_erect(RecObject* object,int inc);
 void    leo_set_sticks_group(   RecVersions *v, int32_t ret,
                                 unsigned char alph[], int32_t simple_st, int32_t nose_1);
-int32_t   leo_recog_stick(Word16 *lpool, int w, int h);
+int32_t   leo_recog_stick(uint16_t *lpool, int w, int h);
 void    leo_diskrim_stick(RecVersions *ver);
 
 /// functions from module leo_cont
 void    leo_close_cont(void);
 Bool32  leo_cont_new_page(int32_t id_page);
-Int16   leo_cont_store(RecRaster *r,Word8 let, Word8 nLns,Rect16 *rect, Word8 IsPrn,
+int16_t   leo_cont_store(RecRaster *r,Word8 let, Word8 nLns,Rect16 *rect, Word8 IsPrn,
 		Word8 Prob, Word8 Valid, RecVersions *ver,Word8 control);
-Bool32  leo_cont_restore(RecRaster *r, int32_t id_page, Int16 id_rast, Word8 *nLns,Rect16 *rect, Word8 *IsPrn,Word8 *datao);
+Bool32  leo_cont_restore(RecRaster *r, int32_t id_page, int16_t id_rast, Word8 *nLns,Rect16 *rect, Word8 *IsPrn,Word8 *datao);
 void    leo_close_cont_temp(void);
 int     leo_open_cont_temp(void);
-Bool32  leo_cont_set_valid(int32_t id_page, Int16 id_rast,Word8 code, Word8 valid,Word8 control);
-Bool32  leo_cont_del_final(int32_t id_page, Int16 id_rast);
+Bool32  leo_cont_set_valid(int32_t id_page, int16_t id_rast,Word8 code, Word8 valid,Word8 control);
+Bool32  leo_cont_del_final(int32_t id_page, int16_t id_rast);
 Bool32  leo_cont_store_collection(RecVersions *ver);
 
 /// functions from module leo_prn

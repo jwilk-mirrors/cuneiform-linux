@@ -213,7 +213,7 @@ typedef struct tagStdMemInfo
 
 /* On Windows wchar_t is 16 bit. On Unix it is 32 bit. */
 #ifndef WIN32
-#define wchar_t Int16
+#define wchar_t int16_t
 #endif
 
 STD_FUNC( Bool32 ) stdCheckFile(const char * lpFileName );
@@ -260,7 +260,7 @@ STD_FUNC( Bool32 ) stdMoveFile(
 
     STD_FUNC( Word8 ) stdAnsiToAscii( Word8 Code); // WIN => DOS
     STD_FUNC( Word8 ) stdAsciiToAnsi( Word8 Code); // DOS => WIN
-    STD_FUNC(Word16) stdAnsiToUnicode( Word8 Code);
+    STD_FUNC(uint16_t) stdAnsiToUnicode( Word8 Code);
     STD_FUNC(void) stdStrUnicodeToAnsi(char* pAnsi,const wchar_t* pUnicode);
 
     STD_FUNC( Word8 ) stdUpperAscii ( Word8 Code);
