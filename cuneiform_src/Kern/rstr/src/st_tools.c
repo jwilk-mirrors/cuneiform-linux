@@ -371,12 +371,12 @@ static int dotIsGlue(cell *c)
 
 	memset (size, 0, maxH*sizeof(int));
 
-	for ( line=(lnhead *)((char *)(c->env)+c->env->lines+sizeof(INT));
-		       (l=line->lth)>0; line=(lnhead *)((char *)line+l)  )
+	for ( line=(lnhead *)((PCHAR)(c->env)+c->env->lines+sizeof(INT));
+		       (l=line->lth)>0; line=(lnhead *)((PCHAR)line+l)  )
 	{
 		start = line->row;
 
-		intval=(interval *)((char *)line+sizeof(lnhead));
+		intval=(interval *)((PCHAR)line+sizeof(lnhead));
 		for ( i = 0; i < line->h ; i++, intval++)
 		{
 			if( start + i  >= maxH )
@@ -725,7 +725,7 @@ if( !typ_inc && dx<5 && language!=LANG_RUSSIAN )
 	      l->conc[0]+l->conc[1] &&
 	      !l->mount[0] &&
 	      !l->mount[4] &&
-          !check_let(c,(uchar)t_inv_roof)
+          !check_let(c,(Word8)t_inv_roof)
         )
 	   new_vers(c,t_inv_roof,(BYTE)cut_by_pos(c,t_inv_roof,prob,1,1) );
 	}
@@ -735,7 +735,7 @@ if( !typ_inc && dx<5 && language!=LANG_RUSSIAN )
 	{
       get_b_lines(c,&basL);
 	  if( dy > dx*2 &&
-		  !check_let(c,(uchar)t_bottom_accent) &&
+		  !check_let(c,(Word8)t_bottom_accent) &&
           r->mount[0] + r->mount[1] &&
 		  l->mount[0] + l->mount[1] &&
 		  c->row < basL.b2 &&

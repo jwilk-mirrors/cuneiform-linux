@@ -77,7 +77,7 @@ void r_criteria(cell *c, const s_glue * gl);
 INT brigt(INT, INT, INT, INT);
 
 // module names.c
-char * full_name(char * w, char * n);
+PCHAR full_name(PCHAR w, PCHAR n);
 
 // module kernel.c
 void correct_dir_path(PBYTE p);
@@ -108,7 +108,7 @@ void short_undln();
 void del_root(INT, INT, INT, INT);
 
 // module rulsh.c
-int rules_shaving(MN *, INT);
+LONG rules_shaving(MN *, INT);
 INT shaving_let();
 
 // module rulbr.c
@@ -118,7 +118,7 @@ void cutoffs();
 void sweeper_ini();
 WORD sweeper(INT);
 void sweeper_end();
-void read_comp(uint32_t, char *, int);
+void read_comp(uint32_t, PCHAR, LONG);
 void comp_file_close();
 INT delgarb();
 void del_shav();
@@ -148,7 +148,7 @@ Bool snap_newcell(cell *);
 Bool snap_stopcell(cell *, cell *);
 Bool snap_activity(BYTE);
 Bool snap_show_raster(PBYTE, INT, INT);
-Bool Alik_snap_show_raster(PBYTE, PBYTE, PBYTE, INT, INT, char *, char *, PINT);
+Bool Alik_snap_show_raster(PBYTE, PBYTE, PBYTE, INT, INT, PCHAR, PCHAR, PINT);
 void snap_newcut();
 void snap_show_cuts(cell *C, struct cut_elm *cut_points);
 void snap_newpoint(INT i);
@@ -191,8 +191,8 @@ void cell_by_base();
 void cell_position(cell *);
 INT levcut(cell *, INT);
 void get_b_lines(cell *, B_LINES *);
-int get_size();
-INT get_bsm(); //AK 04.03.97 ? to int
+LONG get_size();
+INT get_bsm(); //AK 04.03.97 ? to LONG
 INT is_defis(cell *);
 void basedraft(str *);
 void basefin(str *);
@@ -210,13 +210,13 @@ INT decidust(cell *);
 INT estcomp(char, cell *, SVERS *, INT, INT, INT, s_glue *, cut_pos*, cut_pos*,
 		char, char, char);
 void snBOX(cell *);
-void est_snap(char user, cell *C, char * txt);
+void est_snap(char user, cell *C, PCHAR txt);
 void promote(BYTE, cell *, BYTE, INT);
 void collect_pat(cell *, s_glue *, cell *);
 
 // module dm2.c
 void dm2();
-void glsnap(char, cell *, char *);
+void glsnap(char, cell *, PCHAR);
 
 // module dms.c
 void save_vers(cell *, SVERS *);
@@ -228,7 +228,7 @@ INT cell_is_BOX_solid(cell*);
 
 // module locomp.asm
 /*#define c_locomp(a, b, c, d, e)        EVN_CLocomp((a), (b), (c), (d), (e))*/
-MN *c_locomp(PBYTE, int, int, INT, INT);
+MN *c_locomp(PBYTE, LONG, LONG, INT, INT);
 
 // module v0compgl.asm
 void invert_tiff(PBYTE c, WORD lth);
@@ -241,7 +241,7 @@ void find_path();
 // module cutpoint.c
 INT cut_points(INT, INT, PBYTE, struct cut_elm *);
 INT Alik_cut_points(INT, INT, PBYTE, struct cut_elm *, INT);
-MN* cut_rast(PBYTE, INT, INT, INT, INT, struct cut_elm *, char, char, char *,
+MN* cut_rast(PBYTE, INT, INT, INT, INT, struct cut_elm *, char, char, PCHAR,
 		cut_pos*);
 
 // module alcutfun.c
@@ -270,7 +270,7 @@ void embBOXF(servBOX *, INT, Bool);
 // module scalar.asm
 INT proport(WORD, WORD, WORD, INT, INT);
 extern WORD (*scalarf)(PWORD, PWORD, WORD);
-extern int (*scalar)(PWORD, PWORD);
+extern LONG (*scalar)(PWORD, PWORD);
 INT long_sqrt(uint32_t);
 
 // module funcBOX.asm
@@ -396,7 +396,7 @@ void recover_dusts(void);
 void hide_dusts(BYTE reg);
 
 // module il1peak.c
-void extremum(char *, INT, INT, INT, INT, char, char);
+void extremum(PCHAR, INT, INT, INT, INT, char, char);
 
 // module il1tg.c
 void il1();
@@ -450,7 +450,7 @@ INT ed_scan(Bool(*)(PBYTE, INT), Bool(*)(PBYTE, INT), PBYTE, PBYTE);
 Bool scan_skip(PBYTE p, INT lth);
 
 // module edp.c
-void edp_main(PBYTE memory, int lth);
+void edp_main(PBYTE memory, LONG lth);
 
 // module edpsave.c
 void save_ed(void);
@@ -471,7 +471,7 @@ PBYTE il1_pool_ptr();
 PBYTE t_raster();
 c_comp * comp_vers_to_kit(MN * mn, c_comp *c);
 c_comp * dust_to_kit(dust_comp *);
-c_comp * comp_from_file(uint32_t, int);
+c_comp * comp_from_file(uint32_t, LONG);
 c_comp * compose_comp(INT, c_comp **);
 Bool compose_cell(INT, cell **, cell *);
 Bool compose_cell_save(INT, cell **, cell *);
@@ -525,7 +525,7 @@ void maden_comp(PBYTE, INT, INT, INT, INT);
 c_comp *get_comp(PROOT);
 void Pass2(void);
 void read_rec_file(INT seqn, PBYTE pool, PBYTE * end);
-///////////////////INT cond_open(INT seqn, char * name, WORD b1, WORD b2);
+///////////////////INT cond_open(INT seqn, PCHAR name, WORD b1, WORD b2);
 PBYTE seq_nam(INT seqn);
 INT to_voc(void);
 void to_edp(void);
@@ -582,7 +582,7 @@ PBYTE compress_dust_component(c_comp *c, BYTE scale);
 INT filling_MN(MN *mn, WORD h, WORD w);
 
 // 	module tg_spell
-INT spelling(PBYTE memory, int size);
+INT spelling(PBYTE memory, LONG size);
 
 // module in_treei.c
 BYTE * load_stat_dict(PBYTE ptr);
@@ -593,14 +593,14 @@ void user_voc_init(void);
 void discrim_un(cell *, s_glue *, INT);
 
 // module rtf.c
-void rtf_main(PBYTE memory, int memory_lth);
+void rtf_main(PBYTE memory, LONG memory_lth);
 
 // module rtfdebug.c
 void print_fragments();
 
 // module ascisave.c
-void smart_ascii_save(PBYTE pool, int lth);
-void ascii_save(PBYTE pool, int lth);
+void smart_ascii_save(PBYTE pool, LONG lth);
+void ascii_save(PBYTE pool, LONG lth);
 
 // module writepro
 void write_prot(cell *);
@@ -658,7 +658,7 @@ void c_rastror(PBYTE, PBYTE, WORD, WORD);
 lnhead *c_boxln(MN *);
 
 // module html.c
-void html_main(PBYTE memory, int memory_lth);
+void html_main(PBYTE memory, LONG memory_lth);
 
 // virtual function...
 WORD Tiger_BIOSKEY(WORD);

@@ -189,7 +189,7 @@ extern BYTE multy_language;
 #endif
 
 /************************************************************************/
-INT spelling(BYTE *beg, int size) {
+INT spelling(BYTE *beg, LONG size) {
 	INT ret;
 	SPQ.beg_alloc_mem = SPQ.free_alloc_mem = beg;
 	SPQ.end_alloc_mem = (char *) beg + size * 16;
@@ -258,10 +258,10 @@ static INT run_page() /* run one page */
 
 #ifdef WATCOM
 
-int read_all_vfile( char *path, char *buff)
+LONG read_all_vfile( char *path, char *buff)
 {
 	int f;
-	int lth;
+	LONG lth;
 
 	f=open(path,O_RDONLY|O_BINARY,S_IREAD);
 	if(f==-1) return(-1);
@@ -270,7 +270,7 @@ int read_all_vfile( char *path, char *buff)
 
 	return(lth);
 }
-int write_all_vfile( char *path, char *buff,uint32_t lth)
+LONG write_all_vfile( char *path, char *buff,uint32_t lth)
 {
 	INT f;
 
@@ -282,10 +282,10 @@ int write_all_vfile( char *path, char *buff,uint32_t lth)
 	return(lth);
 }
 
-int read_all_vtab( INT tabn, char *buff)
+LONG read_all_vtab( INT tabn, char *buff)
 {
 	int f;
-	int lth;
+	LONG lth;
 
 	if (vocs_NOK)
 	return -1;
@@ -298,7 +298,7 @@ int read_all_vtab( INT tabn, char *buff)
 		return(-1);
 	}
 
-	lth=TGREAD((INT)(f), buff, (int)(TGFILELTH((INT)f)));
+	lth=TGREAD((INT)(f), buff, (LONG)(TGFILELTH((INT)f)));
 	TGCLOSE((INT)f);
 
 	return(lth);

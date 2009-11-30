@@ -101,7 +101,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
   typedef signed char           char;
   typedef unsigned char         BYTE;
-  typedef signed char near *	char *;
+  typedef signed char near *	PCHAR;
   typedef unsigned char near *	PBYTE;
   typedef unsigned char near *	PSTR;
 
@@ -123,9 +123,9 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 /*			Double word size data                      */
 
-  typedef signed long int			int;
+  typedef signed long int			LONG;
   typedef unsigned long int		    DWORD;
-  typedef signed long int near *	pint;
+  typedef signed long int near *	PLONG;
   typedef unsigned long int near *	PDWORD;
 
 /*								 */
@@ -135,7 +135,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 /*			Byte size data */
 
   typedef signed char		char;
-  typedef signed char *		char *;
+  typedef signed char *		PCHAR;
 
 /*			Word size data */
 

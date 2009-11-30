@@ -759,7 +759,7 @@ else
         c=cell_f()->next;
         rst=CSTR_GetNextRaster(CSTR_GetFirstRaster(ln),CSTR_f_bad|CSTR_f_let);
 
-        if( rst && CSTR_GetImage(rst,(uchar *)&rrst,CSTR_TYPE_IMAGE_RS))
+        if( rst && CSTR_GetImage(rst,(Word8 *)&rrst,CSTR_TYPE_IMAGE_RS))
             {
             if( c->w>c->h*5
 				|| c->w>c->h*3 && c->env && c->env->nl == 1 // Nick 18.01.2002
@@ -940,8 +940,8 @@ INT ll, pos_n;
 
 if( !c->env )
   return 0;
-for (pos_n=nl=0,inter_l=255,line=(lnhead *)((char *)(c->env)+c->env->lines+sizeof(INT));
-		(ll=line->lth)>0; line=(lnhead *)((char *)line+ll))
+for (pos_n=nl=0,inter_l=255,line=(lnhead *)((PCHAR)(c->env)+c->env->lines+sizeof(INT));
+		(ll=line->lth)>0; line=(lnhead *)((PCHAR)line+ll))
 	{
 	h=(BYTE)line->h;
   if( nl>1 )
@@ -949,7 +949,7 @@ for (pos_n=nl=0,inter_l=255,line=(lnhead *)((char *)(c->env)+c->env->lines+sizeo
   if( h>1 )
     nl ++;
 
-  for( inter=(interval *)((char *)line+sizeof(lnhead));
+  for( inter=(interval *)((PCHAR)line+sizeof(lnhead));
        h ;h--,inter++)        /* one line     */
 		{
     if( nl && inter_l > inter->l && h<line->h-3 && h>line->h/2 )

@@ -793,8 +793,8 @@ static RecRaster workRaster;
 Bool makeRasterC( c_comp* comp, RecRaster** rast )
 {
    int          i,cInter,beg,end,beg31,end31,beg32,end32,width32;
-   uint32_t       tmp;
-   uint32_t*      rast32;
+   Word32       tmp;
+   Word32*      rast32;
    lnhead*   plnhead;
    interval* inter;
 
@@ -803,13 +803,13 @@ Bool makeRasterC( c_comp* comp, RecRaster** rast )
    workRaster.lnPixHeight = comp->h;
    workRaster.lnRasterBufSize = REC_MAX_RASTER_SIZE;
    width32 = REC_GW_WORD32(workRaster.lnPixWidth);
-   rast32 = (uint32_t*)&workRaster.Raster[0];
+   rast32 = (Word32*)&workRaster.Raster[0];
 
 //   assert(4*width32*workRaster.lnPixHeight <= REC_MAX_RASTER_SIZE);  Paul 10-6-97
    if (4*width32*workRaster.lnPixHeight > REC_MAX_RASTER_SIZE)
 	   return FALSE;
 
-   plnhead = (lnhead*)((char*)comp + sizeof(c_comp) + sizeof(uint16_t));
+   plnhead = (lnhead*)((char*)comp + sizeof(c_comp) + sizeof(Word16));
    while( plnhead->lth ){
       cInter = plnhead->row;
       inter = (interval*)(plnhead+1);
@@ -824,16 +824,16 @@ Bool makeRasterC( c_comp* comp, RecRaster** rast )
          for(i = beg32+1; i < end32; i++)
             rast32[i] = 0xFFFFFFFF;
          if( beg32 == end32 ){
-            tmp = ( (uint32_t)0xFFFFFFFF >> beg31 ) &
-                  ( (uint32_t)0xFFFFFFFF << (31-end31) );
+            tmp = ( (Word32)0xFFFFFFFF >> beg31 ) &
+                  ( (Word32)0xFFFFFFFF << (31-end31) );
             swapbytes(tmp);
             rast32[beg32] |= tmp;
          }
          else{
-            tmp = (uint32_t)0xFFFFFFFF >> beg31;
+            tmp = (Word32)0xFFFFFFFF >> beg31;
             swapbytes(tmp);
             rast32[beg32] |= tmp;
-            tmp = (uint32_t)0xFFFFFFFF << (31-end31);
+            tmp = (Word32)0xFFFFFFFF << (31-end31);
             swapbytes(tmp);
             rast32[end32] |= tmp;
          }

@@ -90,7 +90,7 @@ ArtFH  *        SpABCroot;
 
 /* ------------------------------------------------------------------ */
 
-extern int read_all_vtab(INT,char  *);
+extern LONG read_all_vtab(INT,char  *);
 
 BYTE  * load_specABC (BYTE  *point, INT Country)
 {
@@ -159,8 +159,8 @@ INT check_art_dict (char word[], INT * wordlth, INT * vockind)
       char                    pref;
       char                   postf;
       char  CapWord[MAX_WORD_SIZE];
- register char *             body_b;
-      char *                 body_e;
+ register PCHAR             body_b;
+      PCHAR                 body_e;
  register BYTE             *p;
   word[*wordlth+1]=0;
 

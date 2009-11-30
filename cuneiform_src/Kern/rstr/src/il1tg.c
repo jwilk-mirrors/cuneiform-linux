@@ -152,7 +152,7 @@ static void NHdiff                  (cell *);
 static void TYcell                  (cell *);
 static void GCcell                  (cell *);
 static void set_mem                 (void);
-static INT  check_two_case          (cell *, char *);
+static INT  check_two_case          (cell *, PCHAR);
 static void comptorast              (PBYTE, cell *);
 static void make_hor_vert           (cell *);
 static void make_hist               (void);
@@ -170,7 +170,7 @@ static INT  valley                  (PBYTE, INT, INT, INT);
 static Bool fill                    (PBYTE, INT, INT, INT);
 static void oarecog                 (cell *);
 static void TYrecog                 (void);
-//static void put_two_case            (cell *, char *);
+//static void put_two_case            (cell *, PCHAR);
 static void put_oa_case             (cell *);
 static void put_ec_case             (cell *);
 static void make_hor_vert_ec        (void);
@@ -701,18 +701,18 @@ TY_noshift:
 static void set_mem ()
 {
     INT   i;
-    char * c;
+    PCHAR c;
 
     R    = t_raster ();
     hor  = (struct statist *) il1_pool_ptr ();
     vert = hor + MAX_HOR_IL1;
-    c    = (char *) (vert + MAX_VERT_IL1);
+    c    = (PCHAR) (vert + MAX_VERT_IL1);
     for (i = 0; i < N_HIST; i++, c += MAX_HOR_IL1)          hist      [i] = c;
     for (i = 0; i < MAX_NEW_FUNC; i++, c += MAX_HOR_IL1)    funcs     [i] = c;
     for (i = 0; i < NFUNC; i++, c += MAX_HOR_IL1 / 4)       peak_vect [i] = c;
 }
 
-static INT check_two_case (cell *C, char * c)
+static INT check_two_case (cell *C, PCHAR c)
 {
     INT     i, n;
     version *v;
@@ -909,12 +909,12 @@ static Bool not_AvanGard_a()
  }
 
 /***********
-static void put_two_case(cell *C, char * pair)
+static void put_two_case(cell *C, PCHAR pair)
 {
     INT     i, m, n;
     version *v, *v1;
     version vers [16];
-    char *   c;
+    PCHAR   c;
 
     n = strlen (recog_res);
     if (!n) goto end;             // no ideas - left old versions
@@ -1294,7 +1294,7 @@ WORD wup, wbot;
 
 static void cell_versions_to_text (cell *C)
 {
-    char * t;
+    PCHAR t;
     INT   i;
 
     t  = text_string;

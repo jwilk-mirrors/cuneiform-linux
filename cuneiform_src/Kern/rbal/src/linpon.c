@@ -1542,7 +1542,7 @@ void approve_bases()
 void linpos(CSTR_line ln)
 {
  INT riter1;
- int sumbox;
+ LONG sumbox;
  INT sum_n, finCSTR_n, dead_cells=0,v_prom;
 
  lin_str = ln;
@@ -1629,7 +1629,7 @@ p_prot (11001);
 		   CSTR_rast_attr attr2;
 		   INT weight;
 		   UniVersions vers;
-		   uchar chr;
+		   Word8 chr;
 
 //  no scaling h,w,... - we scaled on input to BAL !
            weight = RSTR_rast_is_BOX_solid(wc,0);     // solid BOX estimate -- killed
@@ -2670,11 +2670,11 @@ INT get_bsm()
  { return (bbsm+minrow); }
 
 /////////////
-int get_size()                                                   //16.01.97
+LONG get_size()                                                   //16.01.97
  {
    if (multi_bas & 128)
       def_locbas(NULL);
-   return (int) Ps;                                              //16.01.97
+   return (LONG) Ps;                                              //16.01.97
  }
 ///////////
 

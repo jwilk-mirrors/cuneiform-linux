@@ -93,7 +93,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #endif
 
 //IGOR
-extern uchar language;
+extern Word8 language;
 extern CSTR_line lin_str;
 extern int32_t  nIncline;
 //IGOR
@@ -1644,7 +1644,7 @@ INT dbsum(INT filter)
 
 	if(i_method != 0)
 	{
-		int16_t n1 = 0, n2 = 0, n3 = 0, n4 = 0;
+		Int16 n1 = 0, n2 = 0, n3 = 0, n4 = 0;
 		m_attr.row = minrow;
 		m_attr.language = language; //IGOR
 
@@ -1727,8 +1727,8 @@ INT dbsum(INT filter)
 		(bbs1 != m_attr.bs1 || bbs2 != m_attr.bs2 || bbs3 != m_attr.bs3 || bbs4 != m_attr.bs4)))
 	{
 		Point16 rs, re, rsm, rem;
-		int16_t startx, endx, mc;
-		uint32_t rgb;
+		Int16 startx, endx, mc;
+		Word32 rgb;
 		CSTR_attr line_attr;
 
 		if(CSTR_GetLineAttr(lin_str, &line_attr))
@@ -1744,7 +1744,7 @@ INT dbsum(INT filter)
 		{
 			if(i_method != 1)//PUMA
 			{
-				int16_t ic = 0;
+				Int16 ic = 0;
 				rgb = wRGB(64,128,128);
 				rs.x = startx; re.x = startx + MIN(80, endx - startx);
 				while(rs.x <= endx && re.x <= endx)
@@ -1799,7 +1799,7 @@ INT dbsum(INT filter)
 		{
 			if(i_method != 1)//PUMA
 			{
-				int16_t ic = 0;
+				Int16 ic = 0;
 				rgb = wRGB(124,190,190);
 				rs.x = startx; re.x = startx + MIN(80, endx - startx);
 				while(rs.x <= endx && re.x <= endx)
@@ -1890,7 +1890,7 @@ INT dbsum(INT filter)
 // собственно поиск БЛ
 INT calc_base()
 {
- INT j, iret; int w1, w2;
+ INT j, iret; LONG w1, w2;
 
  Nb2=Ns2; Nb3=Ns3; Nb1=Ns1; Nb4=Ns4;
  iret = 0;

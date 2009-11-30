@@ -66,15 +66,15 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 typedef int             Bool;
 
 typedef signed char		char;
-typedef signed char *	char *;
+typedef signed char *	PCHAR;
 
 typedef unsigned char	BYTE;
 typedef unsigned char *	PBYTE;
 
-typedef signed   short int	int16_t;
+typedef signed   short int	SINT;
 typedef unsigned short int  WORD;
 
-typedef signed   long int	int;
+typedef signed   long int	LONG;
 typedef unsigned long int   DWORD;
 /*----------------- Strings long prototypes ----------------------------*/
 
