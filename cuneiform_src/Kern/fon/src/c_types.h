@@ -71,10 +71,10 @@ typedef signed char *	char *;
 typedef unsigned char	BYTE;
 typedef unsigned char *	PBYTE;
 
-typedef signed   short int	SINT;
+typedef signed   short int	int16_t;
 typedef unsigned short int  WORD;
 
-typedef signed   long int	LONG;
+typedef signed   long int	int;
 typedef unsigned long int   DWORD;
 /*----------------- Strings long prototypes ----------------------------*/
 

@@ -1487,7 +1487,7 @@ uint32_t dwStyle = GetStyle() & 0x000000FF;
         if(m_bPaintLabel)
         {
             ATL::CRegKey rk;
-            LONG lRet = rk.Open(HKEY_CURRENT_USER, _T("Software\\Microsoft\\Internet Explorer\\Settings"));
+            int lRet = rk.Open(HKEY_CURRENT_USER, _T("Software\\Microsoft\\Internet Explorer\\Settings"));
             if(lRet == 0)
             {
                 const int cchValue = 12;
@@ -2398,7 +2398,7 @@ uint32_t dwPrevStyle = m_dwExtendedStyle;
 
     // Methods
     HWND Create(HWND hWndParent, LPCTSTR lpstrTitle = NULL, DWORD dwStyle = WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS | WS_CLIPCHILDREN,
-uint32_t dwExStyle = 0, UINT nID = 0, LPVOID lpCreateParam = NULL)
+uint32_t dwExStyle = 0, UINT nID = 0, pvoid lpCreateParam = NULL)
     {
         if(lpstrTitle != NULL)
             SecureHelper::strncpy_x(m_szTitle, m_cchTitle, lpstrTitle, _TRUNCATE);
@@ -2411,7 +2411,7 @@ uint32_t dwExStyle = 0, UINT nID = 0, LPVOID lpCreateParam = NULL)
     }
 
     HWND Create(HWND hWndParent, UINT uTitleID, DWORD dwStyle = WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS | WS_CLIPCHILDREN,
-uint32_t dwExStyle = 0, UINT nID = 0, LPVOID lpCreateParam = NULL)
+uint32_t dwExStyle = 0, UINT nID = 0, pvoid lpCreateParam = NULL)
     {
         if(uTitleID != 0U)
             ::LoadString(ModuleHelper::GetResourceInstance(), uTitleID, m_szTitle, m_cchTitle);
@@ -2819,7 +2819,7 @@ enum
     LVCOLSORT_NONE,
     LVCOLSORT_TEXT,   // default
     LVCOLSORT_TEXTNOCASE,
-    LVCOLSORT_LONG,
+    LVCOLSORT_int,
     LVCOLSORT_DOUBLE,
     LVCOLSORT_DECIMAL,
     LVCOLSORT_DATETIME,
@@ -3056,7 +3056,7 @@ uint32_t dwPrevStyle = m_dwSortLVExtendedStyle;
                 bStrValue = true;
             }
             break;
-                case LVCOLSORT_LONG:
+                case LVCOLSORT_int:
             {
                 pFunc = (PFNLVCOMPARE)pT->LVCompareLong;
                 for(int i = 0; i < nCount; i++)
@@ -3505,9 +3505,9 @@ uint32_t dwFlags = LOCALE_NOUSEROVERRIDE;
                 // Keep the multiplier representable in 32bit
                 scaleDiff = largestPower;
             }
-            DWORDLONG power = powersOfTen[scaleDiff - 1];
+            DWORDint power = powersOfTen[scaleDiff - 1];
             // Multiply temp's mantissa by power
-            DWORDLONG product = temp.Lo32 * power;
+            DWORDint product = temp.Lo32 * power;
             ulong carry = static_cast<ulong>(product >> 32);
             temp.Lo32  = static_cast<ulong>(product);
             product = temp.Mid32 * power + carry;
@@ -3692,7 +3692,7 @@ public:
     {
         HWND hWnd;
         LPTSTR lpstrTitle;
-        LPVOID pData;
+        pvoid pData;
     };
 
     struct TCITEMEXTRA
@@ -3971,7 +3971,7 @@ public:
         return true;
     }
 
-    LPVOID GetPageData(int nPage) const
+    pvoid GetPageData(int nPage) const
     {
         ATLASSERT(::IsWindow(m_hWnd));
         ATLASSERT(IsValidPageIndex(nPage));
@@ -3983,7 +3983,7 @@ public:
         return tcix.tvpage.pData;
     }
 
-    LPVOID SetPageData(int nPage, LPVOID pData)
+    pvoid SetPageData(int nPage, pvoid pData)
     {
         ATLASSERT(::IsWindow(m_hWnd));
         ATLASSERT(IsValidPageIndex(nPage));
@@ -3991,7 +3991,7 @@ public:
         TCITEMEXTRA tcix = { 0 };
         tcix.tciheader.mask = TCIF_PARAM;
         m_tab.GetItem(nPage, tcix);
-        LPVOID pDataOld = tcix.tvpage.pData;
+        pvoid pDataOld = tcix.tvpage.pData;
 
         tcix.tvpage.pData = pData;
         m_tab.SetItem(nPage, tcix);
@@ -4028,12 +4028,12 @@ public:
     }
 
     // Operations
-    bool AddPage(HWND hWndView, LPCTSTR lpstrTitle, int nImage = -1, LPVOID pData = NULL)
+    bool AddPage(HWND hWndView, LPCTSTR lpstrTitle, int nImage = -1, pvoid pData = NULL)
     {
         return InsertPage(GetPageCount(), hWndView, lpstrTitle, nImage, pData);
     }
 
-    bool InsertPage(int nPage, HWND hWndView, LPCTSTR lpstrTitle, int nImage = -1, LPVOID pData = NULL)
+    bool InsertPage(int nPage, HWND hWndView, LPCTSTR lpstrTitle, int nImage = -1, pvoid pData = NULL)
     {
         ATLASSERT(::IsWindow(m_hWnd));
         ATLASSERT(nPage == GetPageCount() || IsValidPageIndex(nPage));

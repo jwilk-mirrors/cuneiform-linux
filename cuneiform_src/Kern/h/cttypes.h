@@ -113,6 +113,9 @@ typedef int32_t Bool32;_SETTYPES( Bool32 )
 
 typedef unsigned long ulong;
 typedef unsigned char uchar;
+
+typedef void * pvoid;
+typedef int * pint;
 typedef char * pchar;
 
 #ifndef   FALSE
@@ -187,7 +190,6 @@ typedef Bool32 (* CFTBool32_uint32_t)(uint32_t);
 
 #ifndef WIN32
 
-typedef int32_t LONG;
 typedef uint16_t WORD;
 typedef uint32_t UINT;
 
@@ -206,8 +208,6 @@ typedef unsigned char * PBYTE;
 
 typedef int16_t SINT;
 
-typedef LONG * PLONG;
-
 typedef int16_t _INT;
 typedef int16_t * _PINT;
 #define INT  _INT
@@ -216,8 +216,6 @@ typedef WORD * PWORD;
 
 typedef BYTE* LPBYTE;
 typedef Bool* LPBool;
-typedef LONG* LPLONG;
-typedef void* LPVOID;
 
 #define PSTR  char *
 
