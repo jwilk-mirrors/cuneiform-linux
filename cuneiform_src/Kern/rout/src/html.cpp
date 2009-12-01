@@ -359,7 +359,7 @@ Bool Static_MakeHTML(
 			// Конец страницы
 			PUT_STRING("</div>");
 			// Конец документа
-			PUT_STRING("</body></html>");
+			PUT_STRING("</body></html>\n");
 			iLine = 1;
 			break;
 
