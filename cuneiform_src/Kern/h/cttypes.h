@@ -201,8 +201,6 @@ typedef uint32_t * PDWORD;
 typedef uint32_t * LPDWORD;
 #endif
 
-typedef char * PCHAR;
-
 typedef unsigned char BYTE;
 typedef unsigned char * PBYTE;
 
@@ -221,7 +219,7 @@ typedef Bool* LPBOOL;
 typedef LONG* LPLONG;
 typedef void* LPVOID;
 
-#define PSTR  PCHAR
+#define PSTR  pchar
 
 #include "cttypext.h"
 
