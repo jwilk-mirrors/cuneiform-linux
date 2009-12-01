@@ -208,6 +208,4 @@ typedef uint16_t * PWORD;
 typedef Bool* LPBOOL;
 typedef int32_t* LPLONG;
 
-#include "cttypext.h"
-
 #endif   // __CTTYPES_H
