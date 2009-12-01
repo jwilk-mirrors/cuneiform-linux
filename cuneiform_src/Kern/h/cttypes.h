@@ -202,10 +202,9 @@ typedef uint32_t * LPDWORD;
 typedef uchar* LPBYTE;
 typedef int32_t * PLONG;
 typedef uint16_t * PWORD;
-#endif
-
-
 typedef Bool* LPBOOL;
 typedef int32_t* LPLONG;
+#endif
+
 
 #endif   // __CTTYPES_H
