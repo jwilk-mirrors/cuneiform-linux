@@ -199,10 +199,8 @@ typedef const char* LPCTSTR;
 
 typedef uint32_t * PDWORD;
 typedef uint32_t * LPDWORD;
+typedef uchar* LPBYTE;
 #endif
-
-typedef unsigned char BYTE;
-typedef unsigned char * PBYTE;
 
 typedef int16_t SINT;
 
@@ -214,12 +212,9 @@ typedef int16_t * _PINT;
 #define PINT _PINT
 typedef uint16_t * PWORD;
 
-typedef BYTE* LPBYTE;
 typedef Bool* LPBOOL;
 typedef LONG* LPLONG;
 typedef void* LPVOID;
-
-#define PSTR  pchar
 
 #include "cttypext.h"
 

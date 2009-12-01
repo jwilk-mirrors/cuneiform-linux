@@ -155,7 +155,7 @@ typedef unsigned int uint;
 #endif
 /*
 #ifndef WIN_MOD
-  typedef unsigned char BYTE;
+  typedef unsigned char uchar;
   typedef unsigned int uint16_t;
   typedef signed long LONG;
   typedef unsigned long DWORD;
