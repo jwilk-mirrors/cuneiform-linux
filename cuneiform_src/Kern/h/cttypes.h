@@ -116,6 +116,7 @@ typedef unsigned char uchar;
 
 typedef char * pchar;
 typedef unsigned char * puchar;
+typedef void * pvoid;
 
 #ifndef   FALSE
 #define FALSE               0
@@ -202,8 +203,6 @@ typedef uint32_t * LPDWORD;
 typedef uchar* LPBYTE;
 #endif
 
-typedef int16_t SINT;
-
 typedef LONG * PLONG;
 
 typedef int16_t _INT;
@@ -214,7 +213,6 @@ typedef uint16_t * PWORD;
 
 typedef Bool* LPBOOL;
 typedef LONG* LPLONG;
-typedef void* LPVOID;
 
 #include "cttypext.h"
 
