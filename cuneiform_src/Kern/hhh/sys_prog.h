@@ -59,10 +59,11 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #define CT_SKEW
 
+/*
 #if defined (_MSC_VER)
 	#define BITS32
 #endif
-
+*/
 #ifdef BITS32
   #define _pascal
 #endif
@@ -172,7 +173,7 @@ typedef unsigned int uint;
   typedef int HFILE;
 #endif
 */
-
+/*
 #ifdef WIN_MOD
   //#define STRICT
   #include <windows.h>
@@ -194,6 +195,10 @@ typedef unsigned int uint;
     #define PASC
   #endif
   int PutMyMessage(HWND,int,char *);
+#else
+*/
+#ifdef WIN32
+  #define PASC 
 #else
   #define PASC
   #define WINAPI

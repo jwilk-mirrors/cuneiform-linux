@@ -53,37 +53,12 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
-/*
-#ifdef WIN32
-#define BITS32
-#endif
-*/
-//--COMMON types--
+
+#ifndef WIND32H
+#define WIND32H
+
 typedef unsigned short intU;
 typedef unsigned long intLU;
+#include"compat_defs.h"
 
-#ifdef BITS32
-  #ifndef __WIN32__
-    #define __WIN32__
-    typedef struct tagRECT16 {__int16 left,top,right,bottom;} RECT16;
-    typedef struct tagPOINT16 {__int16 x,y;} POINT16;
-    typedef signed short INT16;
-    typedef unsigned short UINT16;
-    typedef unsigned short SIZE_T16;
-  #endif
-  //for default int = int16
-  #define int INT16
-  #define size_t  SIZE_T16
-  //for default RECT = RECT16
-    #define RECT RECT16
-  //for default POINT = POINT16
-    #define POINT POINT16
-  //for default Bool = short
-    //#define Bool short
-    //typedef __int16 Bool;
-  //for default uint = short
-    #define uint UINT16
-  //for combination "unsigned int" -> intU
-  //for combination "unsigned long" -> intLU
 #endif
-
