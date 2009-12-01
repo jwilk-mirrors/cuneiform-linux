@@ -223,7 +223,7 @@ inline int WINAPI lstrlenA(LPCSTR lpszString)
 #ifndef SetWindowLongPtrW
   inline LONG_PTR tmp_SetWindowLongPtrW( HWND hWnd, int nIndex, LONG_PTR dwNewLong )
   {
-	return( ::SetWindowLongW( hWnd, nIndex, LONG( dwNewLong ) ) );
+	return( ::SetWindowLongW( hWnd, nIndex, int32_t( dwNewLong ) ) );
   }
   #define SetWindowLongPtrW tmp_SetWindowLongPtrW
 #endif
@@ -241,7 +241,7 @@ inline int WINAPI lstrlenA(LPCSTR lpszString)
 #endif
 
 #ifndef PtrToInt
-  #define PtrToInt( p ) ((INT)(INT_PTR) (p) )
+  #define PtrToInt( p ) ((int16_t)(INT_PTR) (p) )
 #endif
 
 #else // !(_ATL_VER >= 0x0800)
@@ -411,7 +411,7 @@ static CWndClassInfo& GetWndClassInfo() \
     #define HandleToUlong( h ) ((ulong)(ULONG_PTR)(h) )
   #endif
   #ifndef HandleToLong
-    #define HandleToLong( h ) ((LONG)(LONG_PTR) (h) )
+    #define HandleToLong( h ) ((int32_t)(LONG_PTR) (h) )
   #endif
   #ifndef LongToHandle
     #define LongToHandle( h) ((HANDLE)(LONG_PTR) (h))
@@ -420,13 +420,13 @@ static CWndClassInfo& GetWndClassInfo() \
     #define PtrToUlong( p ) ((ulong)(ULONG_PTR) (p) )
   #endif
   #ifndef PtrToLong
-    #define PtrToLong( p ) ((LONG)(LONG_PTR) (p) )
+    #define PtrToLong( p ) ((int32_t)(LONG_PTR) (p) )
   #endif
   #ifndef PtrToUint
     #define PtrToUint( p ) ((uint)(UINT_PTR) (p) )
   #endif
   #ifndef PtrToInt
-    #define PtrToInt( p ) ((INT)(INT_PTR) (p) )
+    #define PtrToInt( p ) ((int16_t)(INT_PTR) (p) )
   #endif
   #ifndef PtrToUshort
     #define PtrToUshort( p ) ((unsigned short)(ULONG_PTR)(p) )
@@ -1510,9 +1510,9 @@ public:
 	}
 
 // COM Server methods
-	LONG Unlock()
+	int32_t Unlock()
 	{
-		LONG lRet = CComModule::Unlock();
+		int32_t lRet = CComModule::Unlock();
 		if(lRet == 0)
 		{
 			m_bActivity = true;

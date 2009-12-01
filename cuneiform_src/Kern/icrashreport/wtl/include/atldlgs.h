@@ -1933,7 +1933,7 @@ public:
 		if((cf.dwMask & CFM_SIZE) != 0)
 		{
 			HDC hDC = ::CreateDC(_T("DISPLAY"), NULL, NULL, NULL);
-			LONG yPerInch = ::GetDeviceCaps(hDC, LOGPIXELSY);
+			int32_t yPerInch = ::GetDeviceCaps(hDC, LOGPIXELSY);
 			m_lf.lfHeight = -(int)((cf.yHeight * yPerInch) / 1440);
 		}
 		else
@@ -5235,7 +5235,7 @@ public:
 		titleLogFont.lfCharSet = DEFAULT_CHARSET;
 		titleLogFont.lfWeight = FW_BOLD;
 		SecureHelper::strcpy_x(titleLogFont.lfFaceName, _countof(titleLogFont.lfFaceName), _T("Verdana Bold"));
-		INT titleFontPointSize = 12;
+		int16_t titleFontPointSize = 12;
 		titleLogFont.lfHeight = -::MulDiv(titleFontPointSize, dcScreen.GetDeviceCaps(LOGPIXELSY), 72);
 		m_fontExteriorPageTitle.CreateFontIndirect(&titleLogFont);
 
@@ -5244,7 +5244,7 @@ public:
 		bulletLogFont.lfCharSet = DEFAULT_CHARSET;
 		bulletLogFont.lfWeight = FW_NORMAL;
 		SecureHelper::strcpy_x(bulletLogFont.lfFaceName, _countof(bulletLogFont.lfFaceName), _T("Marlett"));
-		INT bulletFontSize = 8;
+		int16_t bulletFontSize = 8;
 		bulletLogFont.lfHeight = -::MulDiv(bulletFontSize, dcScreen.GetDeviceCaps(LOGPIXELSY), 72);
 		m_fontBullet.CreateFontIndirect(&bulletLogFont);
 	}

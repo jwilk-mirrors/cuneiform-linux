@@ -117,6 +117,9 @@ typedef unsigned char uchar;
 typedef char * pchar;
 typedef unsigned char * puchar;
 typedef void * pvoid;
+typedef int16_t * pint16_t;
+
+typedef void * Handle;
 
 #ifndef   FALSE
 #define FALSE               0
@@ -189,30 +192,21 @@ typedef Bool32 (* CFTBool32_Word32)(uint32_t);
  */
 
 #ifndef WIN32
-
-typedef int32_t LONG;
-
 typedef char* LPSTR;
 typedef char* LPTSTR;
 typedef const char* LPCSTR;
 typedef const char* LPCWSTR;
 typedef const char* LPCTSTR;
-
 typedef uint32_t * PDWORD;
 typedef uint32_t * LPDWORD;
 typedef uchar* LPBYTE;
+typedef int32_t * PLONG;
+typedef uint16_t * PWORD;
 #endif
 
-typedef LONG * PLONG;
-
-typedef int16_t _INT;
-typedef int16_t * _PINT;
-#define INT  _INT
-#define PINT _PINT
-typedef uint16_t * PWORD;
 
 typedef Bool* LPBOOL;
-typedef LONG* LPLONG;
+typedef int32_t* LPLONG;
 
 #include "cttypext.h"
 
