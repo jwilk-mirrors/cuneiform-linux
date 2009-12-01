@@ -97,13 +97,13 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 static void accept_Cell(cell *ce,CSTR_rast_attr*co, CCOM_comp *cmp, Bool sca);
 
 // P2_COUR.C
-Bool32 RecogLEO(RecRaster *Rs,Word8 Language,UniVersions *Vs);
+Bool32 RecogLEO(RecRaster *Rs,uchar Language,UniVersions *Vs);
 // ERECTION.C
 extern INT    erection_inc;
 // DIFFRV.C
 void final_descriminate(cell *b, cell *e);
 // EVN.DLL
-extern Word8*   EVNMakeLine( RecRaster   *rRaster,int32_t parm);
+extern uchar*   EVNMakeLine( RecRaster   *rRaster,int32_t parm);
 // RCM.C
 extern  STRLN   page_lines[];
 extern  int32_t   num_of_lines;
@@ -141,10 +141,10 @@ extern char alphabet[256];
 INT    page_nIncline;
 BYTE   pass2;
 INT    del_squares();
-Bool   ProgressSetPhase (char *text, WORD wPhaseSize);
-Bool   ProgressSetPercentage (WORD wPercentage);
+Bool   ProgressSetPhase (char *text, uint16_t wPhaseSize);
+Bool   ProgressSetPercentage (uint16_t wPercentage);
 Bool   ProgressHandleMessages (void);
-Bool   check_cancel(WORD t);
+Bool   check_cancel(uint16_t t);
 Bool   snap_skip();
 INT    tot_strings(void);
 Bool   kernel_reload_vocs(void);
@@ -1432,7 +1432,7 @@ return;
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-void set_cells_language(Word8 lang)
+void set_cells_language(uchar lang)
 { // Oleg : 06-08-95 09:48pm : set 2 language
 cell *c;
 if( lang==LANG_RUSSIAN )
@@ -1558,7 +1558,7 @@ extern PBYTE kit_curr, kit_end;
 static void accept_Cell( cell *c,CSTR_rast_attr *rst, CCOM_comp *cmp, Bool shift)
  {
  c_comp ec={0};
- Word16 zero=0;
+ uint16_t zero=0;
 
 if( !cmp )
     return;
@@ -1854,8 +1854,8 @@ void letters_ini(CSTR_line lin, Bool enable_scaling)
         {
         RecRaster       rs;
         CCOM_comp      *scale_comp;
-        Word8          *lpool;
-        Int16           scale=line_scale-cmp->scale;
+        uchar          *lpool;
+        int16_t           scale=line_scale-cmp->scale;
 
         if( !CCOM_GetScaleRaster(cmp, &rs,scale) )
             continue;
@@ -1865,7 +1865,7 @@ void letters_ini(CSTR_line lin, Bool enable_scaling)
             continue;
 
         scale_comp = CCOM_New(CSTR_GetContainer(lin) ,cmp->upper, cmp->left, cmp->w, cmp->h);
-        CCOM_Store(scale_comp,0, (Int16)((*((Int16*)&lpool[0]))), lpool,  0, 0, 0, &zer,  NULL);
+        CCOM_Store(scale_comp,0, (int16_t)((*((int16_t*)&lpool[0]))), lpool,  0, 0, 0, &zer,  NULL);
         if( scale_comp->w<(1<<scale) )
             scale_comp->w= 1<<scale;
         if( scale_comp->h<(1<<scale) )
@@ -2059,8 +2059,8 @@ void dust_ini(CSTR_line lin)
     {
     RecRaster       rs;
     CCOM_comp      *scale_comp;
-    Word8          *lpool;
-    Int16           scale=line_scale-cmp->scale;
+    uchar          *lpool;
+    int16_t           scale=line_scale-cmp->scale;
 
     if( !CCOM_GetScaleRaster(cmp, &rs,scale) )
         continue;
@@ -2070,7 +2070,7 @@ void dust_ini(CSTR_line lin)
         continue;
 
     scale_comp = CCOM_New(CSTR_GetContainer(lin) ,cmp->upper, cmp->left, cmp->w, cmp->h);
-    CCOM_Store(scale_comp,0, (Int16)((*((Int16*)&lpool[0]))), lpool,  0, 0, 0, &zer,  NULL);
+    CCOM_Store(scale_comp,0, (int16_t)((*((int16_t*)&lpool[0]))), lpool,  0, 0, 0, &zer,  NULL);
     if( scale_comp->w<(1<<scale) )
         scale_comp->w= 1<<scale;
     if( scale_comp->h<(1<<scale) )
@@ -2474,7 +2474,7 @@ for (c = cell_f()->next; c != cell_l(); c = c->next)
         CSTR_StoreCollection (rst, &ver);
 
         if( c->env /*&& c->env->scale<2*/ )
-          CSTR_StoreComp (rst, (Word8*)((Word8*)c->env+c->env->lines),1,0);
+          CSTR_StoreComp (rst, (uchar*)((uchar*)c->env+c->env->lines),1,0);
         }
                   c=del_cell(c);
             } //loop for dusts
@@ -2489,8 +2489,8 @@ CSTR_rast_attr  attr,zattr={0};
 CSTR_attr               attrlin={0};
 CSTR_rast       rst, old_rst=CSTR_GetFirstRaster(lino);
 UniVersions     uvs;
-Int16            macol,  micol,  marow,  mirow;
-Int16           rmacol, rmicol, rmarow, rmirow;
+int16_t            macol,  micol,  marow,  mirow;
+int16_t           rmacol, rmicol, rmarow, rmirow;
 int32_t           need_scale=0;
 Bool            sfr;
 if( lin )
@@ -2589,7 +2589,7 @@ for (c = cell_f()->next; c != cell_l(); c = c -> next)
         CSTR_SetAttr (rst, &attr);
 
         if( c->env /*&& c->env->scale<2*/ )
-          CSTR_StoreComp (rst, (Word8*)((Word8*)c->env+c->env->lines),1,c->env->scale);
+          CSTR_StoreComp (rst, (uchar*)((uchar*)c->env+c->env->lines),1,c->env->scale);
         old_rst = rst;
         if( cc.col+cc.w>macol )
             macol=cc.col+cc.w;
@@ -2797,7 +2797,7 @@ Bool del_spaces_before_carry(CSTR_line ln)
 CSTR_rast       r=CSTR_GetPrev(CSTR_GetLastRaster(ln)),l,f;
 CSTR_rast_attr  a;
 UniVersions     u;
-Word8           carry[]="-\x5F";
+uchar           carry[]="-\x5F";
 
 CSTR_GetCollectionUni(r,&u);
 if(!u.lnAltCnt || !strchr(carry,u.Alt[0].Liga)    )
@@ -2918,7 +2918,7 @@ Bool pass3BL(CSTR_line ln)
     cell   *c;
     BYTE    str[100];
     Bool    ret;
-	Int16   minr,maxr;
+	int16_t   minr,maxr;
 
     pass_start();
     snap_is_active();
@@ -3292,7 +3292,7 @@ return ret;
 void add_vers_underlined(void)
 {
 cell *  c;
-Word16  flg;
+uint16_t  flg;
 for(c=cell_f()->nextl;c!=cell_l();c=c->nextl)
     {
     if( c->nvers && ((c->flg_new&CSTR_fn_under)||(c->font&c_fp_undrln)) )
@@ -3321,7 +3321,7 @@ for(rst=CSTR_GetNextRaster(CSTR_GetFirstRaster(ln),CSTR_f_let);
     CSTR_GetAttr(rst,&attr);
     if( attr.language==LANG_RUSSIAN )
         {
-        CSTR_GetImage(rst,(Word8*)&rc, CSTR_TYPE_IMAGE_RS);
+        CSTR_GetImage(rst,(uchar*)&rc, CSTR_TYPE_IMAGE_RS);
         CSTR_GetCollectionUni(rst,&uo);
         u=uo;
         RecogLEO(&rc,attr.language,&u);
@@ -3555,7 +3555,7 @@ for(numdots=0,rst=CSTR_GetNext(CSTR_GetFirstRaster(ln));rst;rst=CSTR_GetNext(rst
                         break;
                     case    '.':
                         break;
-                    case    (Word8)'\xd5':
+                    case    (uchar)'\xd5':
                         uni.Alt[0].Liga='.';
                         uni.Alt[0].Code[0]='.'; uni.Alt[0].Code[1]=0;
                         CSTR_StoreCollectionUni(rst,&uni);
@@ -3586,15 +3586,15 @@ for(rst=CSTR_GetPrev(CSTR_GetLastRaster(ln));rst;rst=CSTR_GetPrev(rst))
         {
         switch( uni.Alt[0].Liga  )
             {
-            case    (Word8)0x1e:
-            case    (Word8)0x1f:
+            case    (uchar)0x1e:
+            case    (uchar)0x1f:
             case    ' ':
                 uni.Alt[0].Liga='\x1e';
                 uni.Alt[0].Code[0]=0;
                 uni.Alt[0].Prob=75;
                 CSTR_StoreCollectionUni(rst,&uni);
                 break;
-            case    (Word8)0xFE:
+            case    (uchar)0xFE:
             case    '\"':
             case    '-':
             case    ',':
@@ -3604,7 +3604,7 @@ for(rst=CSTR_GetPrev(CSTR_GetLastRaster(ln));rst;rst=CSTR_GetPrev(rst))
                 break;
             case    '.':
                 break;
-            case    (Word8)'\xd5':
+            case    (uchar)'\xd5':
                 uni.Alt[0].Liga='.';
                 uni.Alt[0].Code[0]='.'; uni.Alt[0].Code[1]=0;
                 CSTR_StoreCollectionUni(rst,&uni);

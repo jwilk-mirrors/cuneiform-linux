@@ -68,7 +68,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   typedef struct {int i;} STAT_STR;
   typedef struct {STAT_STR *stat_str; int dx_col,dy_col,dsym_col,dy_Low,dy_Upp;} STAT_COL;
   typedef int (*FUN_POMP)(void);
-  typedef void (*FUN_MESS)(WORD wPar,DWORD lPar);
+  typedef void (*FUN_MESS)(uint16_t wPar,DWORD lPar);
   typedef struct hSTRET
   { short xn,xk,yn,yk;
     float k;
@@ -307,7 +307,7 @@ typedef struct hINF_TREE
   BOUND     bnd_page,*bnd_col,**bnd_str;
   FRAME     ***sym;
   int       k_colt,**k_sym;
-  Int16  	*k_str;
+  int16_t  	*k_str;
   STAT_COL  *StatCol;
   POS_STR   **PosStr;
   char      FilePrc[255];//имя файла извлечен.компонент

@@ -73,10 +73,10 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 typedef struct
 	{
-	Word32 dwBeg;   // Начало текущего диапозона
-	Word32 dwEnd;	// Конец
+	uint32_t dwBeg;   // Начало текущего диапозона
+	uint32_t dwEnd;	// Конец
 
-	Word32 dwStep;  // текущий номер шага
+	uint32_t dwStep;  // текущий номер шага
 	char * name;	// текущее название шага
 	} PRGTIME;
 
@@ -85,13 +85,13 @@ extern PRGTIME g_PrgTime;
 // 1. Для инициализации внутреннего счетчика надо вызвать InitPRGTIME.
 // 2. Внутри одной функции разбиение идет всегда от 0 до 100 процентов
 // 3. Перед вызовом функции надо установить диапозон прогресса для этой функции в масштабе 0 - 100
-//		Для этого надо выполнить StorePRGTIME(Word32 beg, Word32 end);
+//		Для этого надо выполнить StorePRGTIME(uint32_t beg, uint32_t end);
 // 4. После возврата из этой функции надо восстановить счетчик функцией RestorePRGTIME(PRGTIME prev)
 //		Параметром этой функции должно быть возвращаемое значение функции StorePRGTIME
 
 Bool32	InitPRGTIME();
 Bool32	DonePRGTIME();
-PRGTIME	StorePRGTIME(Word32 beg, Word32 end);// Устанавливает дапозон изменений, который учитывается в  ProgressStep
+PRGTIME	StorePRGTIME(uint32_t beg, uint32_t end);// Устанавливает дапозон изменений, который учитывается в  ProgressStep
 void 	RestorePRGTIME(PRGTIME prev);// Устанавливает дапозон изменений, который учитывается в  ProgressStep
 
 
@@ -153,7 +153,7 @@ long _Status()
 char * _ErrorMessage(long rc)
 {
 	char * p;
-		p = Tiger_ErrorMessage( (WORD)rc );
+		p = Tiger_ErrorMessage( (uint16_t)rc );
 	return p;
 }
 
@@ -238,7 +238,7 @@ Bool _Open(char * hDIB, char * FileName)
 	//
 	// Запишем изображение
 	//
-	if(!CIMAGE_WriteDIB((PWord8)_IMAGE_USER,g_pDIB,1))
+	if(!CIMAGE_WriteDIB((puchar)_IMAGE_USER,g_pDIB,1))
 	{
 		g_pRecognition->SetError((char *)CIMAGE_GetReturnString(CIMAGE_GetReturnCode()));
 		rc = FALSE;
@@ -287,7 +287,7 @@ Bool rc = FALSE;
 
 	InitPRGTIME();
 
-	WORD wOptions = TSRO_PICTURES_NO;
+	uint16_t wOptions = TSRO_PICTURES_NO;
 		 wOptions |= g_bSpeller ? TSRO_SPELLER : 0 ;
 		 wOptions |= g_bOneColumn ? TSRO_FORCE_ONE_COLUMN : 0 ;
 		 wOptions |= g_bFax100 ? TSRO_FAX100 : 0 ;
@@ -326,7 +326,7 @@ Bool _Save(void * hEdPage,char * lpFileName,long format, long code, Bool32 bAppe
 	#define NOFORMAT	0x0008
 	#define NOSIZE		0x0010
 
-	WORD wOptions = (int)!g_bBold   & NOBOLD |
+	uint16_t wOptions = (int)!g_bBold   & NOBOLD |
 			   (int)!g_bItalic & NOCURSIV |
 			   (int)!g_bSize   & NOSIZE |
 			   (int)!g_bFormat & NOFORMAT;
@@ -349,7 +349,7 @@ Bool _Save(void * hEdPage,char * lpFileName,long format, long code, Bool32 bAppe
 Bool _PageAnalysis(Bool bUpdateCPAGE)
 {
 	Bool rc;
-	WORD wOptions = TSRO_PICTURES_NO;
+	uint16_t wOptions = TSRO_PICTURES_NO;
 		 wOptions |= g_bSpeller ? TSRO_SPELLER : 0 ;
 		 wOptions |= g_bOneColumn ? TSRO_FORCE_ONE_COLUMN : 0 ;
 		 wOptions |= g_bFax100 ? TSRO_FAX100 : 0 ;
@@ -834,8 +834,8 @@ Bool _GetRotateDIB(long * phDIB,long * x0,long * y0)
 	//
 	if(rc)
 	{
-		if(RIMAGE_Rotate((PWord8)_IMAGE_USER,
-							(PWord8)_IMAGE_ROTATE,
+		if(RIMAGE_Rotate((puchar)_IMAGE_USER,
+							(puchar)_IMAGE_ROTATE,
 							info.Incline2048,2048, 0) == FALSE)
 		{
 			g_pRecognition->SetError((char *)RIMAGE_GetReturnString(RIMAGE_GetReturnCode()));
@@ -846,7 +846,7 @@ Bool _GetRotateDIB(long * phDIB,long * x0,long * y0)
 
 	if(rc)
 	{
-		if(!CIMAGE_ReadDIB((PWord8)_IMAGE_ROTATE,(void**)phDIB,TRUE))
+		if(!CIMAGE_ReadDIB((puchar)_IMAGE_ROTATE,(void**)phDIB,TRUE))
 		{
 			g_pRecognition->SetError((char *)CIMAGE_GetReturnString(CIMAGE_GetReturnCode()));
 			rc = FALSE;

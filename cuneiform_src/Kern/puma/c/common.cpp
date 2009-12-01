@@ -86,13 +86,13 @@ void ClearAll( void )
 	SetPageInfo(hCPAGE,PInfo);
 
 	CCOM_DeleteAll();  hCCOM = NULL;
-	CIMAGE_DeleteImage((PWord8)PUMA_IMAGE_BINARIZE );
-	CIMAGE_DeleteImage((PWord8)PUMA_IMAGE_DELLINE	);
+	CIMAGE_DeleteImage((puchar)PUMA_IMAGE_BINARIZE );
+	CIMAGE_DeleteImage((puchar)PUMA_IMAGE_DELLINE	);
 //  Повернутое изображение ( PUMA_IMAGE_ROTATE) удалять нельзя, как и исходное,
 //  поскольку оно отображается в интерфейсе. Его нужно удалять
 //  либо при получении нового довернутого изображения, либо при
 //  закрытии файла
-	CIMAGE_DeleteImage((PWord8)PUMA_IMAGE_TURN		);
+	CIMAGE_DeleteImage((puchar)PUMA_IMAGE_TURN		);
 	/*
 	if(hCPAGE && CPAGE_GetCountBlock(hCPAGE))
 	{
@@ -108,12 +108,12 @@ void ClearAll( void )
 }
 ///////////////////////////////////////////////////////
 // Функции прогресс индикатора
-Bool32 rexcProgressStep  (Word32 step)
+Bool32 rexcProgressStep  (uint32_t step)
 {
 	return ProgressStep(2,NULL,step);
 }
 ///////////////////////////////////////////////////////
-Bool32  ExtractComponents( Bool32 bIsRotate, Handle * prev_ccom, PWord8 name)
+Bool32  ExtractComponents( Bool32 bIsRotate, Handle * prev_ccom, puchar name)
 {
 	Bool32 rc = TRUE;
 	ExcControl      exc = {0};
@@ -144,7 +144,7 @@ Bool32  ExtractComponents( Bool32 bIsRotate, Handle * prev_ccom, PWord8 name)
     if( gnPictures )
         exc.Control |= Ex_PictureLarge;
 /*
-	if(rc && !REXC_SetEVNProperties(exc, GetModulePath(),(Word8)gnLanguage) )
+	if(rc && !REXC_SetEVNProperties(exc, GetModulePath(),(uchar)gnLanguage) )
 	{ // инициализировать распознавание по эвентам и задать алфавит
 		SetReturnCode_puma(REXC_GetReturnCode());
 		rc = FALSE;
@@ -152,10 +152,10 @@ Bool32  ExtractComponents( Bool32 bIsRotate, Handle * prev_ccom, PWord8 name)
 	else
 */
 	{
-		Word8 w8 = (Word8)gbDotMatrix;
+		uchar w8 = (uchar)gbDotMatrix;
 			REXC_SetImportData(REXC_Word8_Matrix,&w8);
 
-		w8 = (Word8)gbFax100;
+		w8 = (uchar)gbFax100;
 			REXC_SetImportData(REXC_Word8_Fax1x2,&w8);
 	}
 /*
@@ -267,7 +267,7 @@ return (over>0);
 // авторство принадлежит AlMi
 Bool32 MyGetZher (void **vvZher, int32_t *nZher, int32_t MaxZher, Handle hCPage)
 {
-	Word32 err32, nTeor, nReal;
+	uint32_t err32, nTeor, nReal;
 	Handle hBlockZher;
 	Handle hBlockPrev;
 	int i;
@@ -307,9 +307,9 @@ Bool32 MyGetZher (void **vvZher, int32_t *nZher, int32_t MaxZher, Handle hCPage)
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 // будет перенесено в RSource.dll
-Bool32 RemoveLines(Handle hccom,Handle hcpage,PWord8 * lppDIB)
+Bool32 RemoveLines(Handle hccom,Handle hcpage,puchar * lppDIB)
 {
-	PWord8 hDIB = NULL;
+	puchar hDIB = NULL;
 	Bool32 rc = TRUE;
     hLinesCCOM = NULL;
     CCOM_comp   *victim[100];
@@ -326,7 +326,7 @@ Bool32 RemoveLines(Handle hccom,Handle hcpage,PWord8 * lppDIB)
 //
 //	 Получим изображение с удаленными линиями
 //
-	if(rc && !CIMAGE_ReadDIB((PWord8)PUMA_IMAGE_DELLINE,(Handle*)&hDIB,TRUE))
+	if(rc && !CIMAGE_ReadDIB((puchar)PUMA_IMAGE_DELLINE,(Handle*)&hDIB,TRUE))
 	{
 		SetReturnCode_puma(CIMAGE_GetReturnCode());
 		rc = FALSE;
@@ -336,7 +336,7 @@ Bool32 RemoveLines(Handle hccom,Handle hcpage,PWord8 * lppDIB)
 //
 //		 Удалим компоненты и выделим их заново.
 //
-		*lppDIB = (PWord8)hDIB;
+		*lppDIB = (puchar)hDIB;
 		if(rc)
 		{
         if( CCOM_GetContainerVolume((CCOM_handle)hCCOM)<60000 &&
@@ -349,7 +349,7 @@ Bool32 RemoveLines(Handle hccom,Handle hcpage,PWord8 * lppDIB)
             hCCOM=0;
             }
 
-		if(!ExtractComponents(FALSE,&hLinesCCOM,(PWord8)PUMA_IMAGE_DELLINE))
+		if(!ExtractComponents(FALSE,&hLinesCCOM,(puchar)PUMA_IMAGE_DELLINE))
 		{
 				rc = FALSE;
 		}
@@ -382,7 +382,7 @@ Bool32 RemoveLines(Handle hccom,Handle hcpage,PWord8 * lppDIB)
                 {
                 /*
                 Rect16 rect1;
-	            Word32 key = 111;
+	            uint32_t key = 111;
                 for(i=0;i<nvict;i++)
                     {
                     exa = victim[i];
@@ -516,15 +516,15 @@ void ProgressFinish()
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-Bool32 ProgressStep(Word32 step,char*name,Word32 percent)
+Bool32 ProgressStep(uint32_t step,char*name,uint32_t percent)
 {
 	Bool32 rc = TRUE;
-	static Word32 old = 0;
+	static uint32_t old = 0;
 
 	g_PrgTime.dwStep = step;
 	g_PrgTime.name = name ? name : g_PrgTime.name;
 
-	Word32 perc = g_PrgTime.dwBeg + percent*(g_PrgTime.dwEnd - g_PrgTime.dwBeg)/100;
+	uint32_t perc = g_PrgTime.dwBeg + percent*(g_PrgTime.dwEnd - g_PrgTime.dwBeg)/100;
 	rc = LDPUMA_ProgressStep(step,g_PrgTime.name,perc);
 //	_ASSERT(perc>=old);
 	if(fnProgressStep)
@@ -535,34 +535,34 @@ Bool32 ProgressStep(Word32 step,char*name,Word32 percent)
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-Bool32 ProgressStepLayout(Word32 step,Word32 percent)
+Bool32 ProgressStepLayout(uint32_t step,uint32_t percent)
 {
 	return ProgressStep(step, GetResourceString(IDS_PRG_OPEN), percent);
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-Bool32 ProgressStepLines(Word32 step,Word32 percent)
+Bool32 ProgressStepLines(uint32_t step,uint32_t percent)
 {
 	return ProgressStep(step, GetResourceString(IDS_REMOVELINE), percent);
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-Bool32 ProgressStepTables(Word32 step,Word32 percent)
+Bool32 ProgressStepTables(uint32_t step,uint32_t percent)
 {
 	return ProgressStep(step, GetResourceString(IDS_REMOVELINE), percent);
 }
 //////////////////////////////////////////////////////
-Bool32 ProgressStepSearchTables(Word32 step,Word32 percent)
+Bool32 ProgressStepSearchTables(uint32_t step,uint32_t percent)
 {
 	return ProgressStep(step, GetResourceString(IDS_SEARCHTABLE), percent);
 }
 //////////////////////////////////////////////////////
-Bool32 ProgressStepAutoLayout(Word32 step,Word32 percent)
+Bool32 ProgressStepAutoLayout(uint32_t step,uint32_t percent)
 {
 	return ProgressStep(step, GetResourceString(IDS_AUTOLAYOUT), percent);
 }
 
-static Word32 bInitPrgTime = 0;
+static uint32_t bInitPrgTime = 0;
 void ResetPRGTIME()
 {
 	bInitPrgTime = 0;
@@ -596,12 +596,12 @@ Bool32  InitPRGTIME()
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-PRGTIME	 StorePRGTIME(Word32 beg, Word32 end)
+PRGTIME	 StorePRGTIME(uint32_t beg, uint32_t end)
 {
 	PRGTIME rc = g_PrgTime;
 
-	Word32 newBeg = g_PrgTime.dwBeg + (g_PrgTime.dwEnd - g_PrgTime.dwBeg)*beg/100;
-	Word32 newEnd = g_PrgTime.dwBeg + (g_PrgTime.dwEnd - g_PrgTime.dwBeg)*end/100;
+	uint32_t newBeg = g_PrgTime.dwBeg + (g_PrgTime.dwEnd - g_PrgTime.dwBeg)*beg/100;
+	uint32_t newEnd = g_PrgTime.dwBeg + (g_PrgTime.dwEnd - g_PrgTime.dwBeg)*end/100;
 
 	g_PrgTime.dwBeg = newBeg;
 	g_PrgTime.dwEnd = newEnd;
@@ -630,11 +630,11 @@ Bool32 PrintResult(int num,CSTR_line lout,Handle hCPAGE)
 	Bool32 underline = 0;
 	int32_t height = 0;
 	int32_t offset = 0;
-	Word32 textcolor = 0;
+	uint32_t textcolor = 0;
 	int charset = RUSSIAN_CHARSET;
 	const char * name = NULL;
 	static int32_t  nFragment = -1;
-	static Word32 deftextcolor = 0;
+	static uint32_t deftextcolor = 0;
 	Bool32 bOutputKegl = TRUE;
 
 	CSTR_GetLineAttr (lout,&line_attr);
@@ -646,7 +646,7 @@ Bool32 PrintResult(int num,CSTR_line lout,Handle hCPAGE)
 		Handle hBlock = CPAGE_GetBlockFirst(hCPAGE,0);
 		while(hBlock)
 		{
-			if(CPAGE_GetBlockInterNum(hCPAGE,hBlock) == (Word32)line_attr.fragment)
+			if(CPAGE_GetBlockInterNum(hCPAGE,hBlock) == (uint32_t)line_attr.fragment)
 			{
 				nFragment = line_attr.fragment;
 				goto lNext;
@@ -753,18 +753,18 @@ lNext:
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-Bool32  HL_TableExtractEx( Handle hPAGE, Word32 perc, Rect32 rect )
+Bool32  HL_TableExtractEx( Handle hPAGE, uint32_t perc, Rect32 rect )
 {
 	return RMARKER_SearchTableInZone(hPAGE,hCCOM,perc,rect);
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-Bool32 IsUpdate(Word32 flg)
+Bool32 IsUpdate(uint32_t flg)
 {
 	return (g_flgUpdate & flg) > 0;
 }
 
-void   SetUpdate(Word32 flgAdd,Word32 flgRemove)
+void   SetUpdate(uint32_t flgAdd,uint32_t flgRemove)
 {
 	g_flgUpdate = (g_flgUpdate | flgAdd) & ~flgRemove;
 }

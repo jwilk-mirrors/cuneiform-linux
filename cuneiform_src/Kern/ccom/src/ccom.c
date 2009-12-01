@@ -67,12 +67,12 @@ static  int32_t       num_containers = 0;
 static  int32_t       user_number    = 0xFFFF+1;
 static  Bool32      ccom_init=FALSE;
 static  Bool32      ccom_show_kill_mode=FALSE;
-Word16              wHeightRC      = 0;
-Word16              wLowRC         = CCOM_ERR_NO;
+uint16_t              wHeightRC      = 0;
+uint16_t              wLowRC         = CCOM_ERR_NO;
 #define     CCOM_DAT    "ccom.dat"
 
 // memory funct
-static void *   ccom_alloc(Word32 len)   {
+static void *   ccom_alloc(uint32_t len)   {
 //return malloc(len);
 void *ma = malloc(len);
     if( !ma )
@@ -80,24 +80,24 @@ void *ma = malloc(len);
     memset(ma,0,len);
     return ma;
 }
-static void     ccom_free(void *ptr,Word32 len) { free(ptr);};
+static void     ccom_free(void *ptr,uint32_t len) { free(ptr);};
 static FILE *   ccom_fopen(char *name,char *type) { return fopen(name,type);};
 static void     ccom_fclose(FILE *file) { fclose(file);};
 static int      ccom_fread(void *dst, int len , int num,FILE *file) { return fread(dst,len,num,file);};
 static int      ccom_fwrite(void *dst, int len, int num,FILE *file) { return fwrite(dst,len,num,file);};
 
-static void * (*my_alloc)(Word32 len)                 = ccom_alloc;
-static void   (*my_free )(void *,Word32 len)          = ccom_free;
+static void * (*my_alloc)(uint32_t len)                 = ccom_alloc;
+static void   (*my_free )(void *,uint32_t len)          = ccom_free;
 static FILE * (*my_fopen)(char *name,char *type) = ccom_fopen;
 static void   (*my_fclose)(FILE *file)           = ccom_fclose;
 static int    (*my_fread) (void *dst, int len, int num,FILE *file) = ccom_fread;
 static int    (*my_fwrite)(void *dst, int len, int num,FILE *file) = ccom_fwrite;
-static Bool32 (*my_MakeLP)( RecRaster   *rRaster , Word8 *lp, Int16 *lp_size, Int16 *numcomp)=NULL;
+static Bool32 (*my_MakeLP)( RecRaster   *rRaster , uchar *lp, int16_t *lp_size, int16_t *numcomp)=NULL;
 
 /////////////////////
 // common functions
 /////////////////////
-CCOM_FUNC(Bool32)  CCOM_Init( Word16 wHeightCode , Handle hStorage)
+CCOM_FUNC(Bool32)  CCOM_Init( uint16_t wHeightCode , Handle hStorage)
 {
 if( ccom_init )
     return TRUE;
@@ -215,16 +215,16 @@ ccom_init=FALSE;
 return;
 }
 
-CCOM_FUNC(Word32)   CCOM_GetReturnCode(void)
+CCOM_FUNC(uint32_t)   CCOM_GetReturnCode(void)
 {
 if( wLowRC==CCOM_ERR_NO)
   return 0;
 return (wHeightRC<<16)|(wLowRC-CCOM_ERR_MIN);
 }
 
-CCOM_FUNC(char*)   CCOM_GetReturnString(Word32 dwError)
+CCOM_FUNC(char*)   CCOM_GetReturnString(uint32_t dwError)
 {
-	Word16 rc = (Word16)(dwError & 0xFFFF + CCOM_ERR_MIN);
+	uint16_t rc = (uint16_t)(dwError & 0xFFFF + CCOM_ERR_MIN);
 	static char szBuffer[512];
 
 	if( dwError >> 16 != wHeightRC)
@@ -279,11 +279,11 @@ CCOM_FUNC(CCOM_comp     *) CCOM_New(CCOM_handle hcont, int32_t upper, int32_t le
     }
   memset( new_comp, 0 , sizeof(CCOM_comp) );
   new_comp->next_comp = NULL;
-  new_comp->upper     = (Int16)upper;
-  new_comp->left      = (Int16)left ;
-  new_comp->w         = (Int16)w    ;
-  new_comp->h         = (Int16)h    ;
-  new_comp->rw        = (Word8)((w+7)/8);
+  new_comp->upper     = (int16_t)upper;
+  new_comp->left      = (int16_t)left ;
+  new_comp->w         = (int16_t)w    ;
+  new_comp->h         = (int16_t)h    ;
+  new_comp->rw        = (uchar)((w+7)/8);
 if( !cont->first )
   {
   cont->first         = new_comp;
@@ -319,14 +319,14 @@ if( cont->kill_dust_mode && ccom_small_dust(new_comp,hcont) )
 return new_comp;
 }
 
-CCOM_FUNC(Bool32)   CCOM_StoreLarge(CCOM_comp * comp, Int16 numcomp,
-                        int32_t size_lrep, Word8 *lines, Int16 nl,
-                        Word8 free_beg, Word8 free_end,
+CCOM_FUNC(Bool32)   CCOM_StoreLarge(CCOM_comp * comp, int16_t numcomp,
+                        int32_t size_lrep, uchar *lines, int16_t nl,
+                        uchar free_beg, uchar free_end,
                         RecVersions *vers,
                         CCOM_USER_BLOCK  *ub)
 {
 CCOM_lnhead* ln;
-Word8   comptype;
+uchar   comptype;
 int32_t   size;
 if( !comp  )
     {
@@ -336,8 +336,8 @@ if( !comp  )
 
 if( size_lrep && lines>0 && lines )
   {
-  comp->size_linerep = (Int16)size_lrep;
-  comp->linerep      = (Word8*)my_alloc(size_lrep+2);
+  comp->size_linerep = (int16_t)size_lrep;
+  comp->linerep      = (uchar*)my_alloc(size_lrep+2);
   if( !comp->linerep ||
 	  size_lrep==-1 ) // OLEG & ANTON : very large components
     return FALSE;
@@ -347,9 +347,9 @@ if( size_lrep && lines>0 && lines )
     comp->size_linerep += 2;
   if( numcomp<2 && (nl==0 || free_beg==0 || free_end==0) )
     {
-    for (size=2,ln=(CCOM_lnhead*)((Word8*)lines+2),free_beg=free_end=0,nl=0;
+    for (size=2,ln=(CCOM_lnhead*)((uchar*)lines+2),free_beg=free_end=0,nl=0;
                     size<size_lrep&&ln->lth;
-					nl++,ln=(CCOM_lnhead *)((Word8*)ln+ln->lth))
+					nl++,ln=(CCOM_lnhead *)((uchar*)ln+ln->lth))
                      {
                      if( ln->flg&CCOM_l_fbeg )
                         free_beg++;
@@ -416,7 +416,7 @@ CCOM_FUNC(Bool32)   CCOM_Copy(CCOM_comp* to, CCOM_comp* from)
     {
         CCOM_USER_BLOCK ublock;
         ublock.code = CCOM_UB_SIZELINEREP;
-        ublock.data = (Word8*)&size;
+        ublock.data = (uchar*)&size;
         ublock.size = 4;
         CCOM_GetUserBlock(from, &ublock);
         size = *(int32_t*)ublock.data;
@@ -429,14 +429,14 @@ CCOM_FUNC(Bool32)   CCOM_Copy(CCOM_comp* to, CCOM_comp* from)
 	               from->nl,from->begs,from->ends,from->vers,from->user_block);
 }
 
-CCOM_FUNC(Bool32)   CCOM_Store(CCOM_comp * comp, Int16 numcomp,
-                        int32_t size_lrep, Word8 *lines, Int16 nl,
-                        Word8 free_beg, Word8 free_end,
+CCOM_FUNC(Bool32)   CCOM_Store(CCOM_comp * comp, int16_t numcomp,
+                        int32_t size_lrep, uchar *lines, int16_t nl,
+                        uchar free_beg, uchar free_end,
                         RecVersions *vers,
                         CCOM_USER_BLOCK  *ub)
 {
 CCOM_lnhead* ln;
-Word8   comptype;
+uchar   comptype;
 int32_t   size;
 if( !comp  )
     {
@@ -446,8 +446,8 @@ if( !comp  )
 
 if( size_lrep && lines>0 && lines )
   {
-  comp->size_linerep = (Int16)size_lrep;
-  comp->linerep      = (Word8*)my_alloc(size_lrep+2);
+  comp->size_linerep = (int16_t)size_lrep;
+  comp->linerep      = (uchar*)my_alloc(size_lrep+2);
   if( !comp->linerep ||
 	  size_lrep==-1 ) // OLEG & ANTON : very large components
     return FALSE;
@@ -457,9 +457,9 @@ if( size_lrep && lines>0 && lines )
     comp->size_linerep += 2;
   if( numcomp<2 && (nl==0 || free_beg==0 || free_end==0) )
     {
-    for (size=2,ln=(CCOM_lnhead*)((Word8*)lines+2),free_beg=free_end=0,nl=0;
+    for (size=2,ln=(CCOM_lnhead*)((uchar*)lines+2),free_beg=free_end=0,nl=0;
                     size<size_lrep&&ln->lth;
-					nl++,ln=(CCOM_lnhead *)((Word8*)ln+ln->lth))
+					nl++,ln=(CCOM_lnhead *)((uchar*)ln+ln->lth))
                      {
                      if( ln->flg&CCOM_l_fbeg )
                         free_beg++;
@@ -633,7 +633,7 @@ if( !comp )
     wLowRC=CCOM_ERR_NULL;
     return NULL;
     }
-if( ((Word8*)filtrate)==NULL )
+if( ((uchar*)filtrate)==NULL )
     {
     //return comp->next_comp;
     for(curr=comp->next_comp; curr!=NULL; curr=curr->next_comp)
@@ -665,7 +665,7 @@ if( !cont )
     return NULL;
     }
 
-if( ((Word8*)filtrate)==NULL )
+if( ((uchar*)filtrate)==NULL )
     {
     //return cont->first;
     for(curr=cont->first; curr!=NULL; curr=curr->next_comp)
@@ -689,9 +689,9 @@ return NULL;
 ////////////////////////////
 // exclude representations
 ////////////////////////////
-CCOM_FUNC(Int16) CCOM_GetLine(CCOM_comp * comp,CCOM_linerep  *lrep)
+CCOM_FUNC(int16_t) CCOM_GetLine(CCOM_comp * comp,CCOM_linerep  *lrep)
 {
-Int16  size;
+int16_t  size;
 if( !comp || !lrep )
     {
     wLowRC=CCOM_ERR_NULL;
@@ -714,9 +714,9 @@ return size;
 
 CCOM_FUNC(Bool32) CCOM_GetRaster(CCOM_comp * comp, RecRaster *rec)
 {
-Int16 w, h;
-Word8 * lp;
-Int16 * lt;
+int16_t w, h;
+uchar * lp;
+int16_t * lt;
 if( !comp || comp==(CCOM_comp *)0xcdcdcdcd ||!rec )
     {
     wLowRC=CCOM_ERR_NULL;
@@ -748,7 +748,7 @@ if( comp->numcomp>1 )
     {
     Bool32 ret;
     lp = &comp->linerep[0];
-    lt = (Int16*)lp;
+    lt = (int16_t*)lp;
     w = comp->w;
     h = comp->h;
     if( comp->scale )
@@ -757,9 +757,9 @@ if( comp->numcomp>1 )
         h =(h+(1<<comp->scale)-1)>> comp->scale;
         }
     do  { // comps cycle
-		ret = Linerep2Raster((CCOM_lnhead*)&lp[2],(Int16)((*lt)-2), w, h, 0,0,rec, TRUE);
+		ret = Linerep2Raster((CCOM_lnhead*)&lp[2],(int16_t)((*lt)-2), w, h, 0,0,rec, TRUE);
         lp += *lt;
-        lt  = (Int16*)lp;
+        lt  = (int16_t*)lp;
         }while( ret && ((*lt)>0) );   // Nick - was lt );
     return ret;
     }
@@ -771,15 +771,15 @@ if( comp->scale )
     h =(h+(1<<comp->scale)-1)>> comp->scale;
     }
 lp = &comp->linerep[0];
-lt = (Int16*)lp;
-return Linerep2Raster((CCOM_lnhead*)&comp->linerep[2],(Int16)((*lt)-2), w, h, 0,0,rec, TRUE);
+lt = (int16_t*)lp;
+return Linerep2Raster((CCOM_lnhead*)&comp->linerep[2],(int16_t)((*lt)-2), w, h, 0,0,rec, TRUE);
 }
 
 CCOM_FUNC(Bool32) CCOM_GetExtRaster(CCOM_comp * comp, RecRaster *rec)
 {
-Int16 w, h;
-Word8 * lp;
-Int16 * lt;
+int16_t w, h;
+uchar * lp;
+int16_t * lt;
 if( !comp || !rec )
     {
     wLowRC=CCOM_ERR_NULL;
@@ -810,15 +810,15 @@ w = comp->w;
 h = comp->h;
 
 lp = &comp->linerep[0];
-lt = (Int16*)lp;
-return Linerep2ExtRaster((CCOM_lnhead*)&comp->linerep[2],(Int16)((*lt)-2), w, h, 0,0,rec);
+lt = (int16_t*)lp;
+return Linerep2ExtRaster((CCOM_lnhead*)&comp->linerep[2],(int16_t)((*lt)-2), w, h, 0,0,rec);
 }
 
 CCOM_FUNC(Bool32) CCOM_GetScaleRaster(CCOM_comp * comp, RecRaster *rec,int32_t scale)
 {
-Int16 w, h;
-Word8 * lp;
-Int16 * lt;
+int16_t w, h;
+uchar * lp;
+int16_t * lt;
 if( !comp || !rec )
     {
     wLowRC=CCOM_ERR_NULL;
@@ -851,15 +851,15 @@ w = comp->w;
 h = comp->h;
 
 lp = &comp->linerep[0];
-lt = (Int16*)lp;
-return Linerep2ScaleRaster((CCOM_lnhead*)&comp->linerep[2],(Int16)((*lt)-2), w, h, 0,0,rec,scale);
+lt = (int16_t*)lp;
+return Linerep2ScaleRaster((CCOM_lnhead*)&comp->linerep[2],(int16_t)((*lt)-2), w, h, 0,0,rec,scale);
 }
 
 CCOM_FUNC(Bool32) CCOM_AddLPToRaster(CCOM_comp * comp, RecRaster *rec)
 {
-Int16 w, h;
-Word8 * lp;
-Int16 * lt;
+int16_t w, h;
+uchar * lp;
+int16_t * lt;
 if( !comp || !rec || !rec->lnPixWidth || !rec->lnPixHeight )
     {
     wLowRC=CCOM_ERR_NULL;
@@ -880,7 +880,7 @@ if( comp->numcomp>1 )
     {
     Bool32 ret;
     lp = &comp->linerep[0];
-    lt = (Int16*)lp;
+    lt = (int16_t*)lp;
     w = comp->w;
     h = comp->h;
     if( comp->scale )
@@ -891,9 +891,9 @@ if( comp->numcomp>1 )
         h =(h+(1<<comp->scale)-1)>> comp->scale;
         }
     do  { // comps cycle
-        ret = Linerep2Raster((CCOM_lnhead*)&lp[2],(Int16)((*lt)-2), w, h, 0,0,rec, TRUE);
+        ret = Linerep2Raster((CCOM_lnhead*)&lp[2],(int16_t)((*lt)-2), w, h, 0,0,rec, TRUE);
         lp += *lt;
-        lt  = (Int16*)lp;
+        lt  = (int16_t*)lp;
         }while( ret && *lt );
     return ret;
     }
@@ -907,18 +907,18 @@ if( comp->scale )
     h =(h+(1<<comp->scale)-1)>> comp->scale;
     }
 lp = &comp->linerep[0];
-lt = (Int16*)lp;
-return Linerep2Raster((CCOM_lnhead*)&comp->linerep[2],(Int16)((*lt)-2), w, h, 0,0,rec, TRUE);
+lt = (int16_t*)lp;
+return Linerep2Raster((CCOM_lnhead*)&comp->linerep[2],(int16_t)((*lt)-2), w, h, 0,0,rec, TRUE);
 }
 
 CCOM_FUNC(Bool32)      CCOM_AddCompToRaster(CCOM_comp * comp,
-                                            Int16 relleft,
-                                            Int16 relupper,
+                                            int16_t relleft,
+                                            int16_t relupper,
                                             RecRaster *rec)
 {
-Int16 w, h, left=relleft,upper=relupper;
-Word8 * lp;
-Int16 * lt;
+int16_t w, h, left=relleft,upper=relupper;
+uchar * lp;
+int16_t * lt;
 if( !comp || !rec || !rec->lnPixWidth || !rec->lnPixHeight )
     {
     wLowRC=CCOM_ERR_NULL;
@@ -939,7 +939,7 @@ if( comp->numcomp>1 )
     {
     Bool32 ret;
     lp = &comp->linerep[0];
-    lt = (Int16*)lp;
+    lt = (int16_t*)lp;
     w = comp->w;
     h = comp->h;
     if( comp->scale )
@@ -958,9 +958,9 @@ if( comp->numcomp>1 )
         upper>>=comp->scale;
         }
     do  { // comps cycle
-        ret = Linerep2Raster((CCOM_lnhead*)&lp[2],(Int16)((*lt)-2), w, h, left, upper, rec, FALSE);
+        ret = Linerep2Raster((CCOM_lnhead*)&lp[2],(int16_t)((*lt)-2), w, h, left, upper, rec, FALSE);
         lp += *lt;
-        lt  = (Int16*)lp;
+        lt  = (int16_t*)lp;
         }while( ret && *lt );
     return ret;
     }
@@ -977,8 +977,8 @@ if( comp->scale )
     upper>>=comp->scale;
     }
 lp = &comp->linerep[0];
-lt = (Int16*)lp;
-return Linerep2Raster((CCOM_lnhead*)&comp->linerep[2],(Int16)((*lt)-2), w, h, left, upper, rec, FALSE);
+lt = (int16_t*)lp;
+return Linerep2Raster((CCOM_lnhead*)&comp->linerep[2],(int16_t)((*lt)-2), w, h, left, upper, rec, FALSE);
 }
 
 CCOM_FUNC(Bool32) CCOM_GetCollection(CCOM_comp * comp, RecVersions   *vers)
@@ -1027,7 +1027,7 @@ if( ublock->size && ublock->data )
         {
         if( ub->data && ub->size )
           my_free(ub->data, ub->size);
-        ub->data = (Word8*)my_alloc(ublock->size);
+        ub->data = (uchar*)my_alloc(ublock->size);
         if( !ub->data )
           return FALSE;
         ub->size = ublock->size;
@@ -1043,7 +1043,7 @@ if( ublock->size && ublock->data )
     wLowRC=CCOM_ERR_NOMEMORY        ;
     return FALSE;
     }
-  ub->data = (Word8*)my_alloc(ublock->size);
+  ub->data = (uchar*)my_alloc(ublock->size);
   if( !ub->data )
     {
     wLowRC=CCOM_ERR_NOMEMORY        ;
@@ -1089,7 +1089,7 @@ if( ublock->code )
 return FALSE;
 }
 
-CCOM_FUNC(Bool32)      CCOM_MakeLP( RecRaster   *rRaster , Word8 *lp, Int16 *lp_size, Int16 *numcomp)
+CCOM_FUNC(Bool32)      CCOM_MakeLP( RecRaster   *rRaster , uchar *lp, int16_t *lp_size, int16_t *numcomp)
 {
 if( !my_MakeLP )
     return FALSE;
@@ -1115,7 +1115,7 @@ Bool32 ccom_save_comp( CCOM_comp *cur)
 {
 FILE *fp=my_fopen(CCOM_DAT,"wb+");
 CCOM_USER_BLOCK *ub = cur->user_block;
-Word32 zub={0};
+uint32_t zub={0};
 
 if( !fp )
     return FALSE;
@@ -1250,18 +1250,18 @@ if( size>32767 )
 	comp->size_linerep = -1;
 }
 else
-	comp->size_linerep = (Int16)size;
-comp->linerep      = (Word8*)my_alloc(size+4);
+	comp->size_linerep = (int16_t)size;
+comp->linerep      = (uchar*)my_alloc(size+4);
 if( !comp->linerep )
     return (CCOM_comp*)NULL;
-*((Int16*)comp->linerep)=comp->size_linerep;
+*((int16_t*)comp->linerep)=comp->size_linerep;
 comp->user_block = (CCOM_USER_BLOCK   *)(comp->linerep+2); // first line
 return comp;
 }
 
 CCOM_FUNC(Bool32) CCOM_LargeNewLn(CCOM_comp   *comp,CCOM_lnhead **lnh)
 {
-Word8   *p=(Word8*)comp->user_block;
+uchar   *p=(uchar*)comp->user_block;
 if( !comp->user_block  )
     {
     *lnh =(CCOM_lnhead*)NULL;
@@ -1273,11 +1273,11 @@ comp->user_block=(CCOM_USER_BLOCK   *)p; // +=2*4 = 8 bytes = 4 word16
 return TRUE;
 }
 
-CCOM_FUNC(Bool32) CCOM_LargeNewInterval(CCOM_comp   *comp,Int16 e,Int16 l)
+CCOM_FUNC(Bool32) CCOM_LargeNewInterval(CCOM_comp   *comp,int16_t e,int16_t l)
 {
-Word8   *p=(Word8*)comp->user_block;
+uchar   *p=(uchar*)comp->user_block;
 CCOM_interval16 inter={l,e};
-memcpy( p,   (Word8*)&inter, 4 );
+memcpy( p,   (uchar*)&inter, 4 );
 p+=4;
 comp->user_block=(CCOM_USER_BLOCK   *)p; // +=4 bytes = 2 word16
 return TRUE;
@@ -1350,7 +1350,7 @@ for(current=curr->first; current!=NULL; current = next_comp)
 return TRUE;
 }
 
-CCOM_FUNC(Bool32)     CCOM_SetLanguage(CCOM_handle hcont,Int16 language)
+CCOM_FUNC(Bool32)     CCOM_SetLanguage(CCOM_handle hcont,int16_t language)
 {
 CCOM_cont *cnt=(CCOM_cont*)hcont;
 if( !hcont )
@@ -1363,7 +1363,7 @@ cnt->language=language;
 return TRUE;
 }
 
-CCOM_FUNC(Bool32)     CCOM_GetLanguage(CCOM_handle hcont,Int16 *language)
+CCOM_FUNC(Bool32)     CCOM_GetLanguage(CCOM_handle hcont,int16_t *language)
 {
 CCOM_cont *cnt=(CCOM_cont*)hcont;
 if( !hcont )
@@ -1375,12 +1375,12 @@ if( !hcont )
 return TRUE;
 }
 
-CCOM_FUNC(Bool32) CCOM_GetExportData(Word32 dwType, void * pData)
+CCOM_FUNC(Bool32) CCOM_GetExportData(uint32_t dwType, void * pData)
 {
 	Bool32 rc = TRUE;
     int32_t  vers=CCOM_VERSION_CODE;
 
-#define EXPORT(a) *(Word32*)(pData)=          (Word32)a;
+#define EXPORT(a) *(uint32_t*)(pData)=          (uint32_t)a;
   wLowRC = CCOM_ERR_NO;
 	switch(dwType)
 	{
@@ -1501,7 +1501,7 @@ CCOM_FUNC(Bool32) CCOM_GetExportData(Word32 dwType, void * pData)
 return rc;
 }
 
-CCOM_FUNC(Bool32) CCOM_SetImportData(Word32 dwType, void * pData)
+CCOM_FUNC(Bool32) CCOM_SetImportData(uint32_t dwType, void * pData)
 {
 
   wLowRC = CCOM_ERR_NO;

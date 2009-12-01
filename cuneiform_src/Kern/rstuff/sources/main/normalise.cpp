@@ -103,7 +103,7 @@ const int MIN_BIG_W=30;
 struct BIG_IMAGE
 {
 	CCOM_handle hCCOM;
-	Word8 ImageName[CPAGE_MAXNAME];
+	uchar ImageName[CPAGE_MAXNAME];
 };
 
 #define RSL_VERLINE CPAGE_GetInternalType("RVL_VERIFY")
@@ -227,7 +227,7 @@ Bool32 SearchNewLines( PRSPreProcessImage Image )
 
     if(LDPUMA_Skip(Image->hDebugCancelVerifyLines))
     {
-        ret=RLINE_LinesPass1(Image->hCPAGE,*(Image->phCCOM),Image->phCLINE,Image->pgneed_clean_line, searchlines, (Word8)Image->gnLanguage);
+        ret=RLINE_LinesPass1(Image->hCPAGE,*(Image->phCCOM),Image->phCLINE,Image->pgneed_clean_line, searchlines, (uchar)Image->gnLanguage);
 
         if (ret && !gbRSLT)
             ret = RLINE_LinesPass2(*(Image->phCCOM),Image->phCLINE, Image->hCPAGE);
@@ -306,14 +306,14 @@ Bool32 PreProcessImage( PRSPreProcessImage Image )
 {
 
 	Bool32 gbAutoRotate          = Image->gbAutoRotate;
-	PWord8 *gpRecogDIB           = Image->pgpRecogDIB;
+	puchar *gpRecogDIB           = Image->pgpRecogDIB;
 	Handle hCPAGE                = Image->hCPAGE;
 	const char * glpRecogName    = *Image->pglpRecogName;
 	PCIMAGEBITMAPINFOHEADER info = (PCIMAGEBITMAPINFOHEADER)Image->pinfo;
 	/////////////////////////////////
 	Bool32 rc = TRUE;
 	//char * lpRecogName = NULL;
-	Word32 Angle = 0;
+	uint32_t Angle = 0;
 
 	hWndTurn = 0;
 
@@ -357,9 +357,9 @@ Bool32 PreProcessImage( PRSPreProcessImage Image )
 	{
 		if(LDPUMA_Skip(Image->hDebugCancelComponent)/*DPumaSkipComponent()*/)
 		{
-//			Word8 ori;
+//			uchar ori;
 			PRGTIME prev = StorePRGTIME(65, 85);
-			rc = ExtractComponents( gbAutoRotate, NULL, (PWord8)glpRecogName, Image);
+			rc = ExtractComponents( gbAutoRotate, NULL, (puchar)glpRecogName, Image);
 			RestorePRGTIME(prev);
 /*			if(rc && gbAutoRotate)
 			{
@@ -375,7 +375,7 @@ Bool32 PreProcessImage( PRSPreProcessImage Image )
 					//if(ori)
 					if(ori && !(db_spec_prj==SPEC_PRJ_GIP&&ori==4))
 					{
-						Word32 dwTurn = 0;
+						uint32_t dwTurn = 0;
 						switch(ori)
 						{
 						case 1:
@@ -394,7 +394,7 @@ Bool32 PreProcessImage( PRSPreProcessImage Image )
 
 						if( LDPUMA_Skip(Image->hDebugCancelTurn) /*umaSkipTurn()*/ /*)
 						{
-							if(!RIMAGE_Turn((PWord8)glpRecogName,(PWord8)PUMA_IMAGE_TURN,dwTurn,0))
+							if(!RIMAGE_Turn((puchar)glpRecogName,(puchar)PUMA_IMAGE_TURN,dwTurn,0))
 							{
 								SetReturnCode_rstuff_rstuff(RIMAGE_GetReturnCode());
 								rc = FALSE;
@@ -402,7 +402,7 @@ Bool32 PreProcessImage( PRSPreProcessImage Image )
 							else
 							{
 
-								if(!CIMAGE_ReadDIB((PWord8)PUMA_IMAGE_TURN,(Handle*)gpRecogDIB,TRUE))
+								if(!CIMAGE_ReadDIB((puchar)PUMA_IMAGE_TURN,(Handle*)gpRecogDIB,TRUE))
 								{
 									SetReturnCode_rstuff_rstuff(CIMAGE_GetReturnCode());
 									rc = FALSE;
@@ -415,7 +415,7 @@ Bool32 PreProcessImage( PRSPreProcessImage Image )
 									glpRecogName = PUMA_IMAGE_TURN;
 									hWndTurn = LDPUMA_CreateWindow(PUMA_IMAGE_TURN,(*gpRecogDIB));
 									PRGTIME prev = StorePRGTIME(85, 100);
-									rc = ExtractComponents( FALSE, NULL, (PWord8)glpRecogName, Image);
+									rc = ExtractComponents( FALSE, NULL, (puchar)glpRecogName, Image);
 									PAGEINFO info = {0};
 		                            GetPageInfo(hCPAGE,&info);
 									info.Images|=IMAGE_TURN;
@@ -470,7 +470,7 @@ Bool32 PreProcessImage( PRSPreProcessImage Image )
 //////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 // Выделение компонент
-Bool32  ExtractComponents( Bool32 bIsRotate, Handle * prev_ccom, PWord8 name, PRSPreProcessImage Image)
+Bool32  ExtractComponents( Bool32 bIsRotate, Handle * prev_ccom, puchar name, PRSPreProcessImage Image)
 {
 	Bool32 rc = TRUE;
 	ExcControl      exc = {0};
@@ -516,17 +516,17 @@ Bool32  ExtractComponents( Bool32 bIsRotate, Handle * prev_ccom, PWord8 name, PR
 //    if( Image->gnPictures )
         exc.Control |= Ex_PictureLarge;
 /*//Andrey: опознавалка вынесена в отдельный модуль RRecCom
-	if(rc && !REXC_SetEVNProperties(exc, GetModulePath(),(Word8)Image->gnLanguage) )
+	if(rc && !REXC_SetEVNProperties(exc, GetModulePath(),(uchar)Image->gnLanguage) )
 	{ // инициализировать распознавание по эвентам и задать алфавит
 		SetReturnCode_rstuff(REXC_GetReturnCode());
 		rc = FALSE;
 	}
 	else
 */	{
-		Word8 w8 = (Word8)Image->gbDotMatrix;
+		uchar w8 = (uchar)Image->gbDotMatrix;
 			REXC_SetImportData(REXC_Word8_Matrix,&w8);
 
-		w8 = (Word8)Image->gbFax100;
+		w8 = (uchar)Image->gbFax100;
 			REXC_SetImportData(REXC_Word8_Fax1x2,&w8);
 	}
 
@@ -563,7 +563,7 @@ Bool32  ExtractComponents( Bool32 bIsRotate, Handle * prev_ccom, PWord8 name, PR
 		memset(&rec_control, 0, sizeof(RRecComControl));
 		rec_control.flags = RECOG_EVN;
 
-		if (!RRECCOM_Recog(*(Image->phCCOM), rec_control, GetModulePath(), (Word8)Image->gnLanguage))
+		if (!RRECCOM_Recog(*(Image->phCCOM), rec_control, GetModulePath(), (uchar)Image->gnLanguage))
 		{
 			SetReturnCode_rstuff(RRECCOM_GetReturnCode());
 			rc = FALSE;
@@ -659,7 +659,7 @@ Bool32 VerifyLines ( PRSPreProcessImage Image )
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-/*Bool32 ShortVerticalLinesProcess ( PRSPreProcessImage Image, Word32 Step )
+/*Bool32 ShortVerticalLinesProcess ( PRSPreProcessImage Image, uint32_t Step )
 {
 	Bool32 bRet = FALSE;
 
@@ -715,9 +715,9 @@ Bool32 VerifyLines ( PRSPreProcessImage Image )
 	Handle         hBlockLineHor;
 	Handle         hBlockLineVer;
 	Handle         hBlockLinePrev;
-	Word32         nTagSize;
-	Word32         nReal;
-	Word32         wErr32;
+	uint32_t         nTagSize;
+	uint32_t         nReal;
+	uint32_t         wErr32;
 
 	nTagSize = sizeof (LinesTotalInfo);
 	pLHor = LTInfo->Hor.Lns;
@@ -769,9 +769,9 @@ Bool32 VerifyLines ( PRSPreProcessImage Image )
 		for (int32_t i=0; i<LTInfo->Hor.Cnt; i++)
 		{
 			if (i==0)
-				hBlockLineHor = CPAGE_GetBlockFirst (Image->hCPAGE, (Word32)(LTInfo->Hor.Lns));
+				hBlockLineHor = CPAGE_GetBlockFirst (Image->hCPAGE, (uint32_t)(LTInfo->Hor.Lns));
 			else
-				hBlockLineHor = CPAGE_GetBlockNext (Image->hCPAGE, hBlockLinePrev, (Word32)(LTInfo->Hor.Lns));
+				hBlockLineHor = CPAGE_GetBlockNext (Image->hCPAGE, hBlockLinePrev, (uint32_t)(LTInfo->Hor.Lns));
 			wErr32 = CPAGE_GetReturnCode ();
 			if (wErr32!=0)
 			{
@@ -783,7 +783,7 @@ Bool32 VerifyLines ( PRSPreProcessImage Image )
 				break;
 			}
 			nTagSize = sizeof (LineInfo);
-			nReal = CPAGE_GetBlockData (Image->hCPAGE, hBlockLineHor, (Word32)(LTInfo->Hor.Lns), (void *)&(pLHor[i]), nTagSize);
+			nReal = CPAGE_GetBlockData (Image->hCPAGE, hBlockLineHor, (uint32_t)(LTInfo->Hor.Lns), (void *)&(pLHor[i]), nTagSize);
 			wErr32 = CPAGE_GetReturnCode ();
 			if ((nReal!=nTagSize)||(wErr32!=0))
 			{
@@ -800,9 +800,9 @@ Bool32 VerifyLines ( PRSPreProcessImage Image )
 		for (int32_t i=0; i<LTInfo->Ver.Cnt; i++)
 		{
 			if (i==0)
-				hBlockLineVer = CPAGE_GetBlockFirst (Image->hCPAGE, (Word32)(LTInfo->Ver.Lns));
+				hBlockLineVer = CPAGE_GetBlockFirst (Image->hCPAGE, (uint32_t)(LTInfo->Ver.Lns));
 			else
-				hBlockLineVer = CPAGE_GetBlockNext (Image->hCPAGE, hBlockLinePrev, (Word32)(LTInfo->Ver.Lns));
+				hBlockLineVer = CPAGE_GetBlockNext (Image->hCPAGE, hBlockLinePrev, (uint32_t)(LTInfo->Ver.Lns));
 			wErr32 = CPAGE_GetReturnCode ();
 			if (wErr32!=0)
 			{
@@ -814,7 +814,7 @@ Bool32 VerifyLines ( PRSPreProcessImage Image )
 				break;
 			}
 			nTagSize = sizeof (LineInfo);
-			nReal = CPAGE_GetBlockData (Image->hCPAGE, hBlockLineVer, (Word32)(LTInfo->Ver.Lns), (void *)&(pLVer[i]), nTagSize);
+			nReal = CPAGE_GetBlockData (Image->hCPAGE, hBlockLineVer, (uint32_t)(LTInfo->Ver.Lns), (void *)&(pLVer[i]), nTagSize);
 			wErr32 = CPAGE_GetReturnCode ();
 			if ((nReal!=nTagSize)||(wErr32!=0))
 			{
@@ -826,8 +826,8 @@ Bool32 VerifyLines ( PRSPreProcessImage Image )
 		}
 	}
 
-	//*pHoriType = (Word32)LTInfo.Hor.Lns;
-	//*pVertType = (Word32)LTInfo.Ver.Lns;
+	//*pHoriType = (uint32_t)LTInfo.Hor.Lns;
+	//*pVertType = (uint32_t)LTInfo.Ver.Lns;
 	//LTInfo->Hor.Lns = pLHor;
 	//LTInfo->Ver.Lns = pLVer;
 
@@ -847,7 +847,7 @@ Bool32    KillLines(PRSPreProcessImage Image)
 	{
 		if(LDPUMA_Skip(Image->hDebugCancelRemoveLines)	)
 		{
-			PWord8 pDIB = NULL;
+			puchar pDIB = NULL;
 			PRGTIME	prev = StorePRGTIME(30, 40);
 
 			rc = RemoveLines(Image, &pDIB);
@@ -867,13 +867,13 @@ Bool32    KillLines(PRSPreProcessImage Image)
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-Bool32 RemoveLines(PRSPreProcessImage Image, PWord8 * lppDIB)
+Bool32 RemoveLines(PRSPreProcessImage Image, puchar * lppDIB)
 {
 	Handle hccom = *Image->phCCOM;
 	Handle hcpage = Image->hCPAGE;
 	Handle *hLinesCCOM = Image->phLinesCCOM;
 
-	PWord8 hDIB = NULL;
+	puchar hDIB = NULL;
 	Bool32 rc = TRUE;
     *hLinesCCOM = NULL;
     CCOM_comp   *victim[100];
@@ -899,7 +899,7 @@ Bool32 RemoveLines(PRSPreProcessImage Image, PWord8 * lppDIB)
 	//
 	// Получим изображение с удаленными линиями
 	//
-	if(rc && !CIMAGE_ReadDIB((PWord8)PUMA_IMAGE_DELLINE,(Handle*)&hDIB,TRUE))
+	if(rc && !CIMAGE_ReadDIB((puchar)PUMA_IMAGE_DELLINE,(Handle*)&hDIB,TRUE))
 	{
 		SetReturnCode_rstuff(CIMAGE_GetReturnCode());
 		rc = FALSE;
@@ -909,7 +909,7 @@ Bool32 RemoveLines(PRSPreProcessImage Image, PWord8 * lppDIB)
 		//
 		// Удалим компоненты и выделим их заново.
 		//
-		*lppDIB = (PWord8)hDIB;
+		*lppDIB = (puchar)hDIB;
 		if(rc)
 		{
 		//if( CCOM_GetContainerVolume((CCOM_handle)*Image->phCCOM)>30000 )
@@ -924,7 +924,7 @@ Bool32 RemoveLines(PRSPreProcessImage Image, PWord8 * lppDIB)
             *Image->phCCOM = 0;
             }
 
-		if(!ExtractComponents(FALSE, hLinesCCOM, (PWord8)PUMA_IMAGE_DELLINE, Image))
+		if(!ExtractComponents(FALSE, hLinesCCOM, (puchar)PUMA_IMAGE_DELLINE, Image))
 		{
 				rc = FALSE;
 		}
@@ -958,7 +958,7 @@ Bool32 RemoveLines(PRSPreProcessImage Image, PWord8 * lppDIB)
                 {
                 /*
                 Rect16 rect1;
-	            Word32 key = 111;
+	            uint32_t key = 111;
                 for(i=0;i<nvict;i++)
                     {
                     exa = victim[i];
@@ -1009,7 +1009,7 @@ return rc;
 //
 Bool32 MyGetZher (void **vvZher, int32_t *nZher, int32_t MaxZher, Handle hCPage)
 {
-	Word32 err32, nTeor, nReal;
+	uint32_t err32, nTeor, nReal;
 	Handle hBlockZher;
 	Handle hBlockPrev;
 	int i;
@@ -1170,7 +1170,7 @@ Bool32 CalcIncline(PRSPreProcessImage Image)
 	char Str[256];
 	Bool ret, WasLine, ManyComp;
 	Bool CalcMuchSkew, TalkMuchSkew;
-	Word16 Code;
+	uint16_t Code;
 	int32_t SkewReg, Skew, SkewLocVerLin;
 	Rect16 RcReg;
     PAGEINFO info = {0};
@@ -1230,9 +1230,9 @@ Bool32 CalcIncline(PRSPreProcessImage Image)
 	}
 
 	RcReg.left=0;
-	RcReg.right=(Int16)info.Width;
+	RcReg.right=(int16_t)info.Width;
 	RcReg.top=0;
-    RcReg.bottom=(Int16)info.Height;
+    RcReg.bottom=(int16_t)info.Height;
 	SkewReg=0;
 	Bool ContWarn = 0;
 	SkewLocVerLin = 0;

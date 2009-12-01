@@ -77,7 +77,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 # include "dpuma.h"
 
-extern WORD run_options;
+extern uint16_t run_options;
 
 /*********************************/
 extern Handle hPageBeforeEditing ;
@@ -163,7 +163,7 @@ uint32_t i;
 # endif
 
     if (nRoots == 0)
-//        ErrorInternal ((Word8*)"Page is empty");
+//        ErrorInternal ((uchar*)"Page is empty");
 		ErrorEmptyPage();
 
     nNextBlockNumber = FIRST_REGULAR_BLOCK_NUMBER;

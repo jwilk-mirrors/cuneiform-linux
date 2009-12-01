@@ -237,7 +237,7 @@ INT prop_index(INT h, INT w);
 void ideal_rc(CSTR_rast c);
 void dust_ini(CSTR_line lin);
 INT short_recog_cell (CSTR_rast c, int line_scale);
-WORD el_pidx_crit(WORD t_let,INT pidx);
+uint16_t el_pidx_crit(uint16_t t_let,INT pidx);
 
 // added for snap
 Bool (*snap_monitor_rbal)(void);
@@ -246,8 +246,8 @@ Bool (*snap_monitor_ori_rbal)(CSTR_line *snap_line, int32_t num_lines);
 Bool (*snap_is_marked_rbal)(CSTR_line ln);//IGOR
 Bool (*snap_baselines_rbal)(BYTE a);//IGOR
 void (*snap_draw_line_rbal)(Handle wnd, Point16 *start, Point16 *end, int32_t skew,
-										  Word32 rgb, Int16 pen, Word32 key);//IGOR
-void (*snap_del_line_rbal)(Handle wnd, Word32 key);
+										  uint32_t rgb, int16_t pen, uint32_t key);//IGOR
+void (*snap_del_line_rbal)(Handle wnd, uint32_t key);
 //IGOR
 Bool (*snap_show_text_rbal)(BYTE *txt);
 Bool (*snap_activity_rbal)(BYTE a);
@@ -271,5 +271,5 @@ Bool (*snap_activity_rbal)(BYTE a);
 #define f_letter ( CSTR_f_let | CSTR_f_bad )
 
 // внешние функции
-Int16 (*RSTR_skew_corr)(CSTR_line ln, INT pool_src);
-Int16 (*RSTR_rast_is_BOX_solid) (CSTR_rast B1, Int16 scale);
+int16_t (*RSTR_skew_corr)(CSTR_line ln, INT pool_src);
+int16_t (*RSTR_rast_is_BOX_solid) (CSTR_rast B1, int16_t scale);

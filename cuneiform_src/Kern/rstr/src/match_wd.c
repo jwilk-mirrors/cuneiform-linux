@@ -91,7 +91,7 @@ extern B_LINES my_bases;
 //cut point - graph node in dynamic matching
 typedef struct tagCutPoint
 {
-  WORD    x;  //position
+  uint16_t    x;  //position
   BYTE    dh;  //cut lehgth
   BYTE     h;  //cut begin from raster bottom
   BYTE   var;  //cut point type
@@ -101,7 +101,7 @@ typedef struct tagCutPoint
 
 typedef struct tagGraphNode
 {
-  WORD   prev;  //previous node in this path
+  uint16_t   prev;  //previous node in this path
   Weight weight;   //accrued weight to current node
   uint32_t  monitors; //rates of monitoring letters
 // SVERS  vers;  //versions for segment from prev to current
@@ -331,7 +331,7 @@ static void set_param (MatchWordPar *par)
 
 Bool match_word_prepare(CSTR_line ln, BYTE *alpha, MatchWordPar *param);
 
-RSTR_FUNC(Bool32) RSTR_recog_one_word(CSTR_line ln, Word8 *word, char *points,Word8 *res)
+RSTR_FUNC(Bool32) RSTR_recog_one_word(CSTR_line ln, uchar *word, char *points,uchar *res)
 {
 Weight      w;
 MatchWordPar param={0};
@@ -1061,7 +1061,7 @@ result:
   wt = add_weight(&wp,(BYTE)ro,nlet);
   if (wc.meas<0 || wc.meas>wt.meas)
   {
-    wc=wt;  cur_layer[ir].prev=(WORD)il;  add_monitors(il,ir,(BYTE)(nlet+1),(*p));
+    wc=wt;  cur_layer[ir].prev=(uint16_t)il;  add_monitors(il,ir,(BYTE)(nlet+1),(*p));
   }
   else
     change=FALSE;
@@ -1239,12 +1239,12 @@ static void mw_show_rast()
 
   if (str_raster.w>128 || str_raster.h>64)
   {
-    Word32 key=1;
+    uint32_t key=1;
     for (i=1; i<ncut-1; i++)
     {
       Point16 vh,vl;
-      vh.y=(Int16)str_raster.top;  vl.y=(Int16)(str_raster.top+str_raster.h);
-      vh.x=vl.x=(Int16)(str_raster.left+cut_list[i].x);
+      vh.y=(int16_t)str_raster.top;  vl.y=(int16_t)(str_raster.top+str_raster.h);
+      vh.x=vl.x=(int16_t)(str_raster.left+cut_list[i].x);
       LDPUMA_DrawLine(NULL,&vh,&vl,0,wRGB(255,0,0),1,key);
     }
     glsnap('a',c,"raster too big to show");
@@ -1302,7 +1302,7 @@ static void show_layer(BYTE let, LONG prev, LONG imax)
 
 #ifdef MATCH_WORD
 
-void myCharToOem(Word8 ansi[], Word8 ascii[]);
+void myCharToOem(uchar ansi[], uchar ascii[]);
 
 void test_match_cell_word(B_LINES *my_bases, INT cut_width)
 {

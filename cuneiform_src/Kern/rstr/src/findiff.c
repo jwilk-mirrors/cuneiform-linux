@@ -490,7 +490,7 @@ static void final_bh(cell *c)
 static void final_ii_u(cell *c)
  {
  cell *c1;
- Word8 lett = u_2dot_accent;
+ uchar lett = u_2dot_accent;
 
  c1=c->nextl;
  if (c->vers[0].let=='i' ||
@@ -660,7 +660,7 @@ static void final_Il_1(cell *c)
  indBOX *h;
  elmBOX *elm;
  extern PCHAR tableBOX;
- WORD max,prob;
+ uint16_t max,prob;
  INT i;
 
  GL.celist[0]=c;

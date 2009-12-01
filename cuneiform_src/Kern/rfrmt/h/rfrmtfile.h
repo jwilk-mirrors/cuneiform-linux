@@ -83,17 +83,17 @@ class CChar;
 class CRtfString;
 
 struct PageElementCount {
-	WORD Frags;
-	WORD Strings;
-	WORD Words;
-	WORD Chars;
+	uint16_t Frags;
+	uint16_t Strings;
+	uint16_t Words;
+	uint16_t Chars;
 };
 
 typedef struct tagInternalRect {
-	Int16 left;
-	Int16 top;
-	Int16 right;
-	Int16 bottom;
+	int16_t left;
+	int16_t top;
+	int16_t right;
+	int16_t bottom;
 } InternalRect;
 
 void VCopyRect(InternalRect* InnerR, RECT* OuterR);
@@ -119,7 +119,7 @@ public:
 	/*CDWordArray*/
 	std::vector<uint32_t> FragmentsArray;
 	PageElementCount Count;
-	WORD m_wDpi;
+	uint16_t m_wDpi;
 	std::vector<CFragment*>/*CObArray*/m_arFrags;
 	int m_nIndex;
 	int m_nCurFragNumber;
@@ -140,12 +140,12 @@ public:
 	void AddString(CSTR_line* line, PageElementCount* Count);
 	Bool Write();
 
-	WORD m_wStringsCount;
+	uint16_t m_wStringsCount;
 	/*CObArray*/
 	std::vector<CFString*> m_arStrings;
-	WORD m_wIndex;
+	uint16_t m_wIndex;
 	RECT m_rectFrag;
-	WORD m_wType;
+	uint16_t m_wType;
 	uint32_t m_wUserNumber;
 	uint32_t m_Flags;
 };
@@ -165,15 +165,15 @@ public:
 	void ExtractNextWord(CSTR_line* line);
 	Bool Write();
 
-	WORD m_wWordsCount;
+	uint16_t m_wWordsCount;
 	/*CObArray*/
 	std::vector<CWord*> m_arWords;
-	WORD m_wIndex;
+	uint16_t m_wIndex;
 	CFragment* m_Frag;
 	RECT m_rectString;
-	WORD m_wType;
+	uint16_t m_wType;
 	RECT m_rectBaseLine;
-	Word32 S_Flags; //NEGA_STR vmk 10-06-2001
+	uint32_t S_Flags; //NEGA_STR vmk 10-06-2001
 };
 
 /////////////////////////////////////////////////////////////////////////////
@@ -193,12 +193,12 @@ public:
 
 	/*CObArray*/
 	std::vector<CChar*> m_arChars;
-	WORD m_wCharsCount;
-	WORD m_wIndex;
+	uint16_t m_wCharsCount;
+	uint16_t m_wIndex;
 	CFString* m_String;
 	RECT m_rectWord;
-	WORD m_wFontNumber;
-	WORD m_wFontPointSize;
+	uint16_t m_wFontNumber;
+	uint16_t m_wFontPointSize;
 };
 
 /////////////////////////////////////////////////////////////////////////////
@@ -222,9 +222,9 @@ public:
 	BYTE m_bFlg_spell;
 	BYTE m_bFlg_spell_nocarrying;
 	BYTE m_bFlg_cup_drop;
-	WORD m_wCountAlt;
-	WORD m_wFontNumber;
-	WORD m_wIndex;
+	uint16_t m_wCountAlt;
+	uint16_t m_wFontNumber;
+	uint16_t m_wIndex;
 };
 
 /////////////////////////////////////////////////////////////////////////////

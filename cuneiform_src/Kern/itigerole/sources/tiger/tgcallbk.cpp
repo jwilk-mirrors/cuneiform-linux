@@ -69,10 +69,10 @@ HANDLE ToMono(HANDLE hDIB);
 
 typedef struct
 	{
-	Word32 dwBeg;   // Начало текущего диапозона
-	Word32 dwEnd;	// Конец
+	uint32_t dwBeg;   // Начало текущего диапозона
+	uint32_t dwEnd;	// Конец
 
-	Word32 dwStep;  // текущий номер шага
+	uint32_t dwStep;  // текущий номер шага
 	const char * name;	// текущее название шага
 	} PRGTIME;
 
@@ -91,7 +91,7 @@ extern FNPROGRESS_STOP  fnProgressStop;
 extern FNPROGRESS_STEP  fnProgressStep;
 
 //////////////////////////////////////////////////////
-static Word32 bInitPrgTime = 0;
+static uint32_t bInitPrgTime = 0;
 Bool32  DonePRGTIME()
 {
 	Bool32 rc = FALSE;
@@ -125,12 +125,12 @@ Bool32  InitPRGTIME()
 	bInitPrgTime++;
 	return rc;
 }
-PRGTIME	 StorePRGTIME(Word32 beg, Word32 end)
+PRGTIME	 StorePRGTIME(uint32_t beg, uint32_t end)
 {
 	PRGTIME rc = g_PrgTime;
 
-	Word32 newBeg = g_PrgTime.dwBeg + (g_PrgTime.dwEnd - g_PrgTime.dwBeg)*beg/100;
-	Word32 newEnd = g_PrgTime.dwBeg + (g_PrgTime.dwEnd - g_PrgTime.dwBeg)*end/100;
+	uint32_t newBeg = g_PrgTime.dwBeg + (g_PrgTime.dwEnd - g_PrgTime.dwBeg)*beg/100;
+	uint32_t newEnd = g_PrgTime.dwBeg + (g_PrgTime.dwEnd - g_PrgTime.dwBeg)*end/100;
 
 	g_PrgTime.dwBeg = newBeg;
 	g_PrgTime.dwEnd = newEnd;
@@ -173,13 +173,13 @@ FNBOOL16 Tiger_Callback_ImageOpen (LPTIGER_IMAGEINFO lpImageInfo)
 
 
 
-lpImageInfo->wImageWidth = (WORD)pDIB->biWidth;           // Height of the image in lines
-lpImageInfo->wImageHeight = (WORD)pDIB->biHeight;            // Width of the image in pixels
+lpImageInfo->wImageWidth = (uint16_t)pDIB->biWidth;           // Height of the image in lines
+lpImageInfo->wImageHeight = (uint16_t)pDIB->biHeight;            // Width of the image in pixels
 s_WidthBytesInDIB = ((((lpImageInfo->wImageWidth+7)/8 + 3)/4) * 4);
 lpImageInfo->wImageByteWidth = (lpImageInfo->wImageWidth+7)/8;        // Size of the image line in bytes
 lpImageInfo->wImageDisplacement = 0;     // Displacement of the first pixel of
 							  //   image line in pixels, usually 0
-lpImageInfo->wResolutionX = ((WORD)((double)pDIB->biXPelsPerMeter/100.0*25.4)+5)/10;           // Resolution by X-axe
+lpImageInfo->wResolutionX = ((uint16_t)((double)pDIB->biXPelsPerMeter/100.0*25.4)+5)/10;           // Resolution by X-axe
 
 if(lpImageInfo->wResolutionX<200)
 	lpImageInfo->wResolutionX = 200;
@@ -204,7 +204,7 @@ return TRUE;
 }
 ////////////////////////////////////////////
 
-FNWORD Tiger_Callback_ImageRead (LPSTR lpImage, WORD wMaxSize)
+FNWORD Tiger_Callback_ImageRead (LPSTR lpImage, uint16_t wMaxSize)
 {
 	 if(wMaxSize<s_ImageInfo.wImageByteWidth)
 		return 0;
@@ -227,14 +227,14 @@ FNBOOL16 Tiger_Callback_ImageClose (void)
     return (TRUE);
 }
 
-FNVOID Tiger_Callback_ReportError (WORD wStatus, LPSTR lpMessage)
+FNVOID Tiger_Callback_ReportError (uint16_t wStatus, LPSTR lpMessage)
 {
     wStatus = wStatus;
 //	g_pRecognition->SetError(lpMessage);
 }
 
-static WORD swPercent = 0;
-static WORD swStageNumber = 0;
+static uint16_t swPercent = 0;
+static uint16_t swStageNumber = 0;
 static char StageName[256];
 
 //static int  countProgressStart = 0;
@@ -266,12 +266,12 @@ return rc;
 }
 
 
-FNBOOL16 Tiger_Callback_ProgressSetPerc (WORD wPercent)
+FNBOOL16 Tiger_Callback_ProgressSetPerc (uint16_t wPercent)
 {
 	USES_CONVERSION;
 
-	Word32 perc = g_PrgTime.dwBeg + wPercent*(g_PrgTime.dwEnd - g_PrgTime.dwBeg)/100;
-	swPercent = (WORD)perc;
+	uint32_t perc = g_PrgTime.dwBeg + wPercent*(g_PrgTime.dwEnd - g_PrgTime.dwBeg)/100;
+	swPercent = (uint16_t)perc;
 
     return fnProgressStep(swStageNumber,StageName,perc) &
 		(BOOL16)g_pRecognition->Fire_ProgressStep((long)swStageNumber,T2OLE(StageName),(long)perc);
@@ -279,9 +279,9 @@ FNBOOL16 Tiger_Callback_ProgressSetPerc (WORD wPercent)
 
 FNBOOL16 Tiger_Callback_ProgressSetStage
 (
-    WORD wStageNumber,
+    uint16_t wStageNumber,
     LPSTR lpStageName,
-    WORD wVolume
+    uint16_t wVolume
 )
 {
 	USES_CONVERSION;
@@ -296,7 +296,7 @@ FNBOOL16 Tiger_Callback_ProgressSetStage
 		(BOOL16)g_pRecognition->Fire_ProgressStep((long)swStageNumber,T2OLE(StageName),(long)swPercent);
 }
 
-FNBOOL16 Tiger_Callback_ImageOpen_xy (LPTIGER_IMAGEINFO lpImageInfo,WORD x,WORD y,WORD w,WORD h)
+FNBOOL16 Tiger_Callback_ImageOpen_xy (LPTIGER_IMAGEINFO lpImageInfo,uint16_t x,uint16_t y,uint16_t w,uint16_t h)
 {
 lpImageInfo=lpImageInfo;
 x=x;

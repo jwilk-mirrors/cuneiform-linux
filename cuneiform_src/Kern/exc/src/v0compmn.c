@@ -61,26 +61,26 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "v1comp.h"
 #include "msgerr.h"
 
-extern  Word8   fax1x2;
+extern  uchar   fax1x2;
 extern  int32_t   box_number;
 //------------------------ Common working fields
 
-extern Word8 double_fax;
-extern Word8 image_disp_mask;
-extern Word16 image_disp_end;
-extern Word16 image_disp_byte;
+extern uchar double_fax;
+extern uchar image_disp_mask;
+extern uint16_t image_disp_end;
+extern uint16_t image_disp_byte;
 
-extern Int16 image_blth    ;  // pixels per line
-extern Int16  image_height  ;  // lines in file number
-extern Int16 image_lth     ;  // bytes per line
-extern Word8 image_black   ;  // mask for black pixels adding
-extern Word8 image_white   ;  // mask for wite pixels adding
+extern int16_t image_blth    ;  // pixels per line
+extern int16_t  image_height  ;  // lines in file number
+extern int16_t image_lth     ;  // bytes per line
+extern uchar image_black   ;  // mask for black pixels adding
+extern uchar image_white   ;  // mask for wite pixels adding
 extern struct main_memory_str Q;
 
 void analise();
-BWS *extrcomp_seglist(Word8* raster, BWS *bwsp, BWS *bwe, Int16 width);
-Word32 progress_set_percent (Word32 volume);
-Int16 source_read(Word8* start, Word8* ptr, Word8* end);
+BWS *extrcomp_seglist(uchar* raster, BWS *bwsp, BWS *bwe, int16_t width);
+uint32_t progress_set_percent (uint32_t volume);
+int16_t source_read(uchar* start, uchar* ptr, uchar* end);
 
 //---------------------- Internal working fields
 // TGCV static LONG progress_next;
@@ -90,16 +90,16 @@ static void enough_memory();
 static void initdsect();
 static void allocboxes();
 static void begin();
-static Word16 readline();
+static uint16_t readline();
 static void exchangelines();
 static void fax_double();
-static Int16 fax_test();
+static int16_t fax_test();
 static void emptyline();
 /*
 static MN   * Cmnstart;
 static BWS  * Cline1;
 static BWS  * Cline2;
-static Word8 * Cscan;*/
+static uchar * Cscan;*/
 /*
 comp_mem_alloc()
 {
@@ -159,14 +159,14 @@ lastline:
 static void enough_memory()
 {
  Q.boxalloc = (BOX *)box_pool;
- root_file = (PROOT) (((Word8*)Q.boxalloc) + BOX_NUMBER*BOXSIZE);
- if (memory_pool_end <= (Word8*)root_file) error_exit(ERR_comp,9);
+ root_file = (PROOT) (((uchar*)Q.boxalloc) + BOX_NUMBER*BOXSIZE);
+ if (memory_pool_end <= (uchar*)root_file) error_exit(ERR_comp,9);
 }
     */
 static void initdsect()
 {
  MN *p;
- Int16 i;
+ int16_t i;
  /*memset (&Q, 0, sizeof(Q));
 
  Q.mnstart    = Cmnstart;
@@ -191,8 +191,8 @@ static void allocboxes()
  BOX *b;
  int32_t i;
  for (b = Q.boxalloc = Q.boxstart, i=0; i<box_number-1; i++,
-      b = (BOX *)((Word8*)b + BOXSIZE))
-  b->boxnext = (BOX *)((Word8*)b + BOXSIZE);
+      b = (BOX *)((uchar*)b + BOXSIZE))
+  b->boxnext = (BOX *)((uchar*)b + BOXSIZE);
  b->boxnext = NULL;
 }
 
@@ -213,10 +213,10 @@ static void exchangelines()
  p = Q.oldline; Q.oldline = Q.newline; Q.newline = p;
 }
 
-static Word16 readline()
+static uint16_t readline()
 {
- Word8* p;
- Int16 i;
+ uchar* p;
+ int16_t i;
  p =  Q.dcodeptr + image_lth;
 after_read:
  if (p + image_lth > Q.dcodeend) goto rd_source;
@@ -235,7 +235,7 @@ rd_source:
  p = Q.scan_buffer;     goto after_read;
 }
 
-static Int16 fax_test()
+static int16_t fax_test()
 {
  BWS * old, * new;
  old = Q.oldline; new = Q.newline;

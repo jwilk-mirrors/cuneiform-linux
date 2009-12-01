@@ -71,18 +71,18 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "bal.h"
 
 extern BYTE fax1x2;
-extern Word8 language;
+extern uchar language;
 extern BYTE multy_language;
 
-extern Word16 actual_resolution;
+extern uint16_t actual_resolution;
 extern Bool   line_BL;
-extern Word8  spec_camera;
-extern Word8  no_linpen;
-extern Int16  prop_l_delta, prop_r_delta;
-extern Word8  db_pass;
+extern uchar  spec_camera;
+extern uchar  no_linpen;
+extern int16_t  prop_l_delta, prop_r_delta;
+extern uchar  db_pass;
 
-extern Word8 *letters_pidx_table;  // 512
-extern Word8 decode_ASCII_to_[256][4];
+extern uchar *letters_pidx_table;  // 512
+extern uchar decode_ASCII_to_[256][4];
 
 
 INT     minrow,mincol, maxrow, maxcol;
@@ -120,7 +120,7 @@ INT def_locbas(cell *cl)
 {
  BAL_bas_ln *bc, *bn, *bsp;
  INT i, x, y, dc, dn;
- Word8 fl_defb;
+ uchar fl_defb;
 
  if ((multi_bas & 128) == 0)
    goto retps;  // multiple bases not set
@@ -836,7 +836,7 @@ static void GetBalGlobals(BAL_INOUT_GLOBALS  *balGlob)
 	Ps  = balGlob->Ps  ;
 	Psf = balGlob->Psf ;
 
-	nIncline = (Int16)balGlob->nIncline;
+	nIncline = (int16_t)balGlob->nIncline;
 }
 /////////////////////
 static void SetBalGlobals(BAL_INOUT_GLOBALS  *balGlob)
@@ -875,13 +875,13 @@ static void SetBalGlobals(BAL_INOUT_GLOBALS  *balGlob)
 }
 //////////////////////
 static CSTR_head *llRaw=(CSTR_head *)NULL;
-static Word16 SetNoScaleLine(CSTR_line ln )
+static uint16_t SetNoScaleLine(CSTR_line ln )
 {
 	CSTR_attr lattr;
 	CSTR_rast rast;
 	CSTR_rast_attr attr;
 	CCOM_comp *cmp;
-	Word16 scale;
+	uint16_t scale;
 
     llRaw = (CSTR_head *)ln;
 
@@ -927,7 +927,7 @@ static Word16 SetNoScaleLine(CSTR_line ln )
 }
 ///////////////
 //////////////////////
-static Word16 RestoreScaleLine(CSTR_line ln , Word16 scale)
+static uint16_t RestoreScaleLine(CSTR_line ln , uint16_t scale)
 {
 	CSTR_attr lattr;
 	CSTR_rast rast;
@@ -939,7 +939,7 @@ static Word16 RestoreScaleLine(CSTR_line ln , Word16 scale)
 
 	CSTR_GetLineAttr(ln,&lattr);
 	lattr.Flags |= CSTR_STR_SCALED;
-	lattr.scale  = (Word8)scale;
+	lattr.scale  = (uchar)scale;
 	CSTR_SetLineAttr(ln,&lattr);
 
 	for(rast=CSTR_GetNext(CSTR_GetFirstRaster(ln));rast;
@@ -974,7 +974,7 @@ void clear_cells(void);
 void Cells2CSTR(CSTR_line lin,CSTR_line lino,cell *cur,Bool32 enable_scaled);
 // для CopyAttr2CSTR в Cells2CSTR() !!!
 Bool SetFontReady(Bool fready);
-int32_t p2_Cstr2Cell( CSTR_line lin,CSTR_rast first,CSTR_rast last,Bool32 needVers, Word32 disable );
+int32_t p2_Cstr2Cell( CSTR_line lin,CSTR_rast first,CSTR_rast last,Bool32 needVers, uint32_t disable );
 // предварительный поиск базовых линий
 void basedraft(CSTR_line ln)
 {
@@ -984,7 +984,7 @@ void basedraft(CSTR_line ln)
  int  i;
  CSTR_rast rast;
  int  ret;
- Word16 saveScale;
+ uint16_t saveScale;
  Bool32 retBaseDraft;
  CSTR_attr lattr,lattr_bal;
 
@@ -1131,7 +1131,7 @@ void basefin(CSTR_line ln)
  CSTR_line line_bal=(CSTR_line)NULL;
  int  i;
  int  ret;
- Word16 saveScale;
+ uint16_t saveScale;
 
    lin_str = ln;
 
@@ -1182,7 +1182,7 @@ void linpos(CSTR_line ln)
  CSTR_line line_bal=(CSTR_line)NULL;
  int  i;
  int  ret;
- Word16 saveScale;
+ uint16_t saveScale;
 
    lin_str = ln;
 

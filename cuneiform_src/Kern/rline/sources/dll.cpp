@@ -86,8 +86,8 @@ extern Bool32 gbNOVBORDER;
 Bool32 RLINE_SubInit( void );
 
 ///////////////////////////////////GLOBAL VARIABLES///////////////////////////////
-static Word16            gwHeightRC = 0;
-static Word16            gwLowRC = 0;
+static uint16_t            gwHeightRC = 0;
+static uint16_t            gwLowRC = 0;
 static HANDLE            ghStorage = NULL;
 static HINSTANCE         ghInst =  NULL;
 //////////////////////////////////////////////////////////////////////////////////
@@ -113,7 +113,7 @@ uint32_t ul_reason_for_call,
 
 //////////////////////////////////////////////////////////////////////////////////
 //
-RLINE_FUNC(Bool32) RLINE_Init(Word16 wHeightCode,HANDLE hStorage)
+RLINE_FUNC(Bool32) RLINE_Init(uint16_t wHeightCode,HANDLE hStorage)
 {
 	Bool32 b;
 	gwHeightRC = wHeightCode;
@@ -145,18 +145,18 @@ RLINE_FUNC(Bool32) RLINE_Done()
 }
 //////////////////////////////////////////////////////////////////////////////////
 //
-RLINE_FUNC(Word32) RLINE_GetReturnCode()
+RLINE_FUNC(uint32_t) RLINE_GetReturnCode()
 {
-	Word32 rc = 0;
+	uint32_t rc = 0;
 	if(gwLowRC && (gwLowRC - IDS_ERR_NO)> 0 )
-		rc = (Word32)(gwHeightRC<<16)|(gwLowRC - IDS_ERR_NO);
+		rc = (uint32_t)(gwHeightRC<<16)|(gwLowRC - IDS_ERR_NO);
 return rc;
 }
 //////////////////////////////////////////////////////////////////////////////////
 //
-RLINE_FUNC(char *) RLINE_GetReturnString(Word32 dwError)
+RLINE_FUNC(char *) RLINE_GetReturnString(uint32_t dwError)
 {
-	Word16 rc = (Word16)(dwError & 0xFFFF) + IDS_ERR_NO;
+	uint16_t rc = (uint16_t)(dwError & 0xFFFF) + IDS_ERR_NO;
 	static char szBuffer[512];
 
 	if( dwError >> 16 != gwHeightRC)
@@ -171,7 +171,7 @@ RLINE_FUNC(char *) RLINE_GetReturnString(Word32 dwError)
 }
 //////////////////////////////////////////////////////////////////////////////////
 //
-RLINE_FUNC(Bool32) RLINE_GetExportData(Word32 dwType, void * pData)
+RLINE_FUNC(Bool32) RLINE_GetExportData(uint32_t dwType, void * pData)
 {
 	Bool32 rc = TRUE;
 
@@ -207,7 +207,7 @@ return rc;
 }
 //////////////////////////////////////////////////////////////////////////////////
 //
-RLINE_FUNC(Bool32) RLINE_SetImportData(Word32 dwType, void * pData)
+RLINE_FUNC(Bool32) RLINE_SetImportData(uint32_t dwType, void * pData)
 {
 	Bool32 rc = TRUE;
 
@@ -230,21 +230,21 @@ return rc;
 //////////////////////////////////////////////////////////////////////////////////
 //
 
-void SetReturnCode_rline(Word32 rc)
+void SetReturnCode_rline(uint32_t rc)
 {
-	gwHeightRC = (Word16)(rc>>16);
-	gwLowRC = (Word16)rc;
+	gwHeightRC = (uint16_t)(rc>>16);
+	gwLowRC = (uint16_t)rc;
 }
 
 
-void SetReturnCode_rline(Word16 rc)
+void SetReturnCode_rline(uint16_t rc)
 {
 	gwLowRC = rc;
 }
 
 
 
-Word16 GetReturnCode_rline()
+uint16_t GetReturnCode_rline()
 {
 	return gwLowRC;
 }

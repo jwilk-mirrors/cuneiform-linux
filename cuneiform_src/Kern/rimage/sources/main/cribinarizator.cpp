@@ -133,7 +133,7 @@ Bool32 CRIBinarizator::SetRasters(PCTDIB pSrcDIB, PCTDIB pDescDIB)
 	return FALSE;
 }
 
-Bool32 CRIBinarizator::Binarize(CTBinarize eBinType, Word32 wFlag)
+Bool32 CRIBinarizator::Binarize(CTBinarize eBinType, uint32_t wFlag)
 {
 	Bool32 bRet = FALSE;
 
@@ -157,7 +157,7 @@ Bool32 CRIBinarizator::Binarize(CTBinarize eBinType, Word32 wFlag)
 		bRet =  TRUE;
 	}
 
-	catch ( Word32 wExit)
+	catch ( uint32_t wExit)
 	{
 		if ( wExit = IDS_RIMAGE_EXIT_BY_USER)
 		{
@@ -174,7 +174,7 @@ Bool32 CRIBinarizator::Binarize(CTBinarize eBinType, Word32 wFlag)
 	return bRet;
 }
 
-Bool32 CRIBinarizator::OpenBinarizator(Word32 wFlag)
+Bool32 CRIBinarizator::OpenBinarizator(uint32_t wFlag)
 {
 	Bool32 bRet = FALSE;
 
@@ -199,7 +199,7 @@ Bool32 CRIBinarizator::OpenBinarizator(Word32 wFlag)
 		*/
 		mwGreyBufferSize = mpIncomeDIB->GetLineWidth() + 8;
 		if ( !(mhszGreyBuffer = RIMAGEDAlloc( mwGreyBufferSize, "Binarizator - grey buffer")) ||
-			 !(mpszGreyBuffer = (PWord8)RIMAGELock(mhszGreyBuffer)) )
+			 !(mpszGreyBuffer = (puchar)RIMAGELock(mhszGreyBuffer)) )
 		return FALSE;
 
 		bRet = KronrodOpenBin(mpIncomeDIB->GetLinesNumber(), mpIncomeDIB->GetLineWidth());
@@ -275,10 +275,10 @@ Bool32 CRIBinarizator::OnBinarizeLoop()
 {
 	Bool32 bRet = FALSE;
 	int32_t  i;
-	PWord8 pLALine;
+	puchar pLALine;
 	int32_t NumberBWLines = 0;
 	int32_t CurGreyLine = 0;
-	Word32  nLines = mpOutcomeDIB->GetLinesNumber();
+	uint32_t  nLines = mpOutcomeDIB->GetLinesNumber();
 
 	/////////////////////////////////////////////////////////////////////////
 	//   см. G2BW.cpp, дшту 67 - Binarize
@@ -290,12 +290,12 @@ Bool32 CRIBinarizator::OnBinarizeLoop()
 		i = 0;
 		do
 		{
-			pLALine = (PWord8)mpOutcomeDIB->GetPtrToLine(i++);
+			pLALine = (puchar)mpOutcomeDIB->GetPtrToLine(i++);
 
 			if ( !pLALine )
 				break;
 		}
-		while ( mpDezaBinarizator->GetBinarized(pLALine, (Word16)(mpOutcomeDIB->GetUsedLineWidthInBytes())) );          // was Outcome
+		while ( mpDezaBinarizator->GetBinarized(pLALine, (uint16_t)(mpOutcomeDIB->GetUsedLineWidthInBytes())) );          // was Outcome
 
 		bRet = ( i == ( (int32_t)nLines + 1 ) );
 		break;
@@ -308,13 +308,13 @@ Bool32 CRIBinarizator::OnBinarizeLoop()
 
 		while (  i < (int32_t)nLines )
 		{
-			pLALine = (PWord8)mpOutcomeDIB->GetPtrToLine(i++);
+			pLALine = (puchar)mpOutcomeDIB->GetPtrToLine(i++);
 
 			if(!NumberBWLines)
 			{
 				do
 				{
-					if(!KronrodImageRead(mpszGreyBuffer,(Int16)CurGreyLine++,(Int16)1))
+					if(!KronrodImageRead(mpszGreyBuffer,(int16_t)CurGreyLine++,(int16_t)1))
 						return 0;
 
 					if ( mpProgressor->SetStep( ((CurGreyLine / nLines ) * 50) ) )
@@ -349,47 +349,47 @@ Bool32 CRIBinarizator::OnBinarizeLoop()
 	#define FUN_IMPO(a)    a
 	extern "C"
 	{
-		FUN_IMPO(void)   grey_open(Word16 Width, Word16 Height);
-		FUN_IMPO(Word16) grey_to(PWord8);
-		FUN_IMPO(void)   grey_from(PWord8);
+		FUN_IMPO(void)   grey_open(uint16_t Width, uint16_t Height);
+		FUN_IMPO(uint16_t) grey_to(puchar);
+		FUN_IMPO(void)   grey_from(puchar);
 		FUN_IMPO(void)   grey_close(void);
 	}
 	#undef FUN_IMPO
 //////////////////////////////////////////////////////////
 //
-Bool32 CRIBinarizator::KronrodOpenBin(Word32 wHeight, Word32 wWeidth)
+Bool32 CRIBinarizator::KronrodOpenBin(uint32_t wHeight, uint32_t wWeidth)
 {
 	/*
 	if ( !mpKronrodBinarizator )
 		return FALSE;
 	*/
 	//mpKronrodBinarizator->grey_open(wHeight, wWeidth);
-	grey_open((Word16)wHeight, (Word16)wWeidth);
+	grey_open((uint16_t)wHeight, (uint16_t)wWeidth);
 	mbKronrodInvert = TRUE;
 	return TRUE;
 }
 
 
-Int16 CRIBinarizator::KronrodImageRead(PWord8 lpImage, Int16 fstLine, Int16 nLines)
+int16_t CRIBinarizator::KronrodImageRead(puchar lpImage, int16_t fstLine, int16_t nLines)
 {
 	/*
 	if ( !mpKronrodBinarizator )
 		return FALSE;
 	*/
-	return (Int16)KronrodImageRead(lpImage, (int32_t)fstLine, (int32_t)nLines );
+	return (int16_t)KronrodImageRead(lpImage, (int32_t)fstLine, (int32_t)nLines );
 }
 
-int32_t CRIBinarizator::KronrodImageRead(PWord8 lpImage, int32_t fstLine, int32_t nLines)
+int32_t CRIBinarizator::KronrodImageRead(puchar lpImage, int32_t fstLine, int32_t nLines)
 {
-	Word32 i;
-	Word32 j;
-	Word32 ReadedPixelsperLine = 0;
-	Word32 ReadedLines = 0;
-	Word32 wFirstLine = fstLine;
-	Word32 wLines = nLines;
-	Word8 gray;
-	Word8 halfgray;
-	PWord8 pIn;
+	uint32_t i;
+	uint32_t j;
+	uint32_t ReadedPixelsperLine = 0;
+	uint32_t ReadedLines = 0;
+	uint32_t wFirstLine = fstLine;
+	uint32_t wLines = nLines;
+	uchar gray;
+	uchar halfgray;
+	puchar pIn;
 
 	if ( !lpImage )
 		return 0;
@@ -407,7 +407,7 @@ int32_t CRIBinarizator::KronrodImageRead(PWord8 lpImage, int32_t fstLine, int32_
 
 			for(j=0;j<mwLineLenght;j++)
 			{
-				if ( !(pIn = (PWord8)mpIncomeDIB->GetPtrToPixel(j,fstLine + i /*- 1*/)) )
+				if ( !(pIn = (puchar)mpIncomeDIB->GetPtrToPixel(j,fstLine + i /*- 1*/)) )
 					break;
 
 				gray = mbIndexColor ? wIndex8ToGray[pIn[0]] : pIn[0];
@@ -427,7 +427,7 @@ int32_t CRIBinarizator::KronrodImageRead(PWord8 lpImage, int32_t fstLine, int32_
 
 			for(j=0;j<mwLineLenght;j+=2)
 			{
-				if ( !(pIn = (PWord8)mpIncomeDIB->GetPtrToPixel(j,fstLine + i)) )
+				if ( !(pIn = (puchar)mpIncomeDIB->GetPtrToPixel(j,fstLine + i)) )
 					break;
 
 				gray = *pIn;
@@ -450,7 +450,7 @@ int32_t CRIBinarizator::KronrodImageRead(PWord8 lpImage, int32_t fstLine, int32_
 
 			for(j=0;j<mwLineLenght;j++)
 			{
-				if ( !(pIn = (PWord8)mpIncomeDIB->GetPtrToPixel(j,fstLine + i)) )
+				if ( !(pIn = (puchar)mpIncomeDIB->GetPtrToPixel(j,fstLine + i)) )
 					break;
 
 				gray = ((pIn[0] + pIn[1] + pIn[2]) / 3);
@@ -469,10 +469,10 @@ int32_t CRIBinarizator::KronrodImageRead(PWord8 lpImage, int32_t fstLine, int32_
 	return ReadedLines;//nLines;
 }
 
-Bool32 CRIBinarizator::KronrodGreyTo(PWord8 pGTo)
+Bool32 CRIBinarizator::KronrodGreyTo(puchar pGTo)
 {
-	Word32 Size = mwGreyBufferSize;
-	Word32 i;
+	uint32_t Size = mwGreyBufferSize;
+	uint32_t i;
 
 	if(mbKronrodInvert)
 	{
@@ -484,10 +484,10 @@ Bool32 CRIBinarizator::KronrodGreyTo(PWord8 pGTo)
 	return grey_to(pGTo);
 }
 
-Bool32 CRIBinarizator::KronrodGreyFrom(PWord8 pGFrom)
+Bool32 CRIBinarizator::KronrodGreyFrom(puchar pGFrom)
 {
-	Word32 Size = mpOutcomeDIB->GetLineWidthInBytes();
-	Word32 i;
+	uint32_t Size = mpOutcomeDIB->GetLineWidthInBytes();
+	uint32_t i;
 
 	//mpKronrodBinarizator->grey_from(pGFrom);
 	grey_from(pGFrom);
@@ -507,9 +507,9 @@ Bool32 CRIBinarizator::KronrodCloseGray()
 
 	return TRUE;
 }
-Bool32 CRIBinarizator::DezaOpenBin(Word32 wDezaFlag)
+Bool32 CRIBinarizator::DezaOpenBin(uint32_t wDezaFlag)
 {
-	Word32  wDpiX, wDpiY;
+	uint32_t  wDpiX, wDpiY;
 	PVOID fGetGreyBlock;
 
 	fGetGreyBlock = (PVOID)this;
@@ -517,26 +517,26 @@ Bool32 CRIBinarizator::DezaOpenBin(Word32 wDezaFlag)
 #ifdef DEZA_TIG_IMAGEINFO
 	TIG_IMAGEINFO    DezaImageInfo;
 
-	DezaImageInfo.wImageHeight       = (Word16)mpIncomeDIB->GetLinesNumber();
-	DezaImageInfo.wImageWidth        = (Word16)mpIncomeDIB->GetLineWidth();
-	DezaImageInfo.wImageByteWidth    = (Word16)mpIncomeDIB->GetUsedLineWidthInBytes();
+	DezaImageInfo.wImageHeight       = (uint16_t)mpIncomeDIB->GetLinesNumber();
+	DezaImageInfo.wImageWidth        = (uint16_t)mpIncomeDIB->GetLineWidth();
+	DezaImageInfo.wImageByteWidth    = (uint16_t)mpIncomeDIB->GetUsedLineWidthInBytes();
 	DezaImageInfo.wImageDisplacement = 0;
 	mpIncomeDIB->GetResolutionDPI(&wDpiX, &wDpiY);
-	DezaImageInfo.wResolutionX       = (Word16)wDpiX;
-	DezaImageInfo.wResolutionY       = (Word16)wDpiY;
+	DezaImageInfo.wResolutionX       = (uint16_t)wDpiX;
+	DezaImageInfo.wResolutionY       = (uint16_t)wDpiY;
 	DezaImageInfo.bFotoMetrics       = 1;
 	DezaImageInfo.wAddX              = 0;
 	DezaImageInfo.wAddY              = 0;
 
-	return OpenTrackBin(&DezaImageInfo, fGetGreyBlock, (Word16)wDezaFlag);
+	return OpenTrackBin(&DezaImageInfo, fGetGreyBlock, (uint16_t)wDezaFlag);
 #else
-	mDezaImageInfo.wImageHeight       = (Word16)mpIncomeDIB->GetLinesNumber();
-	mDezaImageInfo.wImageWidth        = (Word16)mpIncomeDIB->GetLineWidth();
-	mDezaImageInfo.wImageByteWidth    = (Word16)mpIncomeDIB->GetUsedLineWidthInBytes();
+	mDezaImageInfo.wImageHeight       = (uint16_t)mpIncomeDIB->GetLinesNumber();
+	mDezaImageInfo.wImageWidth        = (uint16_t)mpIncomeDIB->GetLineWidth();
+	mDezaImageInfo.wImageByteWidth    = (uint16_t)mpIncomeDIB->GetUsedLineWidthInBytes();
 	mDezaImageInfo.wImageDisplacement = 0;
 	mpIncomeDIB->GetResolutionDPI(&wDpiX, &wDpiY);
-	mDezaImageInfo.wResolutionX       = (Word16)wDpiX;
-	mDezaImageInfo.wResolutionY       = (Word16)wDpiY;
+	mDezaImageInfo.wResolutionX       = (uint16_t)wDpiX;
+	mDezaImageInfo.wResolutionY       = (uint16_t)wDpiY;
 	mDezaImageInfo.bFotoMetrics       = 1;
 	mDezaImageInfo.wAddX              = 0;
 	mDezaImageInfo.wAddY              = 0;
@@ -553,10 +553,10 @@ Bool32 CRIBinarizator::DezaCloseBin()
 }
 Bool32 CRIBinarizator::SupportedIndexColorImage(PCTDIB pImage)
 {
-    Word32 Colors = pImage->GetActualColorNumber();
-    Word32 PalletteSize = pImage->GetRGBPalleteSize();
+    uint32_t Colors = pImage->GetActualColorNumber();
+    uint32_t PalletteSize = pImage->GetRGBPalleteSize();
     CTDIBRGBQUAD Q, prQ;
-    Word32 i;
+    uint32_t i;
 
 	mbIndexColor = false;
 
@@ -585,10 +585,10 @@ Bool32 CRIBinarizator::SupportedIndexColorImage(PCTDIB pImage)
 
 Bool32 CRIBinarizator::PrepareIndexTable(PCTDIB pDIB)
 {
-	Word32 i;
+	uint32_t i;
 	CTDIBRGBQUAD Quad;
-	PWord8 pTable = NULL;
-	Word32 Colors = (pDIB->GetRGBPalleteSize())/4;
+	puchar pTable = NULL;
+	uint32_t Colors = (pDIB->GetRGBPalleteSize())/4;
 
 	switch ( pDIB->GetPixelSize() )
 	{
@@ -615,13 +615,13 @@ Bool32 CRIBinarizator::PrepareIndexTable(PCTDIB pDIB)
 }
 
 //#include <math.h>
-Word8 CRIBinarizator::IndexPalleteToGray(PCTDIBRGBQUAD pQuad)
+uchar CRIBinarizator::IndexPalleteToGray(PCTDIBRGBQUAD pQuad)
 {
 	float b = ((float)(pQuad->rgbBlue) * 70 ) / 255;
 	float g = ((float)(pQuad->rgbGreen) * 220 ) / 255;
 	float r = ((float)(pQuad->rgbRed) * 130 ) / 255;
 
-	return (Word8)sqrt((((b * b) + (g * g) + (r * r)) / 70200 ) * 65025  );
+	return (uchar)sqrt((((b * b) + (g * g) + (r * r)) / 70200 ) * 65025  );
 
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////

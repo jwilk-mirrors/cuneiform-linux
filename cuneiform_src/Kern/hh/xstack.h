@@ -94,7 +94,7 @@ class XStack : private XPool
       Err16    Read( XFile & bf, Bool32 swap_bytes = FALSE );
       Bool     Write( XFile & bf ) const;
 
-      void     MemSet( Word8 pattern ){ XPool::MemSet(pattern); };
+      void     MemSet( uchar pattern ){ XPool::MemSet(pattern); };
 
    private:
                int32_t   MaxCnt;
@@ -110,7 +110,7 @@ class XStack : private XPool
 		void     flush  () {Destroy();};
 //		T      * ptr( uint num )        { return &(*this)[num]; }
 		T      * firstPtr(void)         { return (T *)GetData();}
-		Word32   volume( void )         {  return MaxCnt;}
+		uint32_t   volume( void )         {  return MaxCnt;}
 		T      & GetLast(void)          {  return (*this)[(uint)(CurCnt -1)];}
 **/
 };

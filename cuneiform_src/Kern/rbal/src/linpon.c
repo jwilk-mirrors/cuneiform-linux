@@ -83,7 +83,7 @@ void   save_dust(void);
 void   restore_dust(void);
 
 #define no__MULTI_PROT__
-extern WORD actual_resolution;
+extern uint16_t actual_resolution;
 extern BYTE let_captype[];
 extern INT line_number;
 INT it_done;
@@ -1629,7 +1629,7 @@ p_prot (11001);
 		   CSTR_rast_attr attr2;
 		   INT weight;
 		   UniVersions vers;
-		   Word8 chr;
+		   uchar chr;
 
 //  no scaling h,w,... - we scaled on input to BAL !
            weight = RSTR_rast_is_BOX_solid(wc,0);     // solid BOX estimate -- killed
@@ -1661,7 +1661,7 @@ p_prot (11001);
          }
         else
         {
-         WORD iI,nv_o;
+         uint16_t iI,nv_o;
          INT pidx;
 		 BYTE let;
 		 UniVersions vers;
@@ -1688,7 +1688,7 @@ p_prot (11001);
           if(!twin(let))
 			  continue;
           let = is_lower(let) ? to_upper(let) : to_lower(let);
-          if( !el_pidx_crit((WORD)let,pidx) )
+          if( !el_pidx_crit((uint16_t)let,pidx) )
 			  continue;
 
 		  // версия вставляется и переупорядочивается!

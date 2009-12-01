@@ -88,14 +88,14 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #define far
 
 /*----------------------------------------------------------------------*/
-EXPORT(void) grey_open (WORD H, WORD N);
+EXPORT(void) grey_open (uint16_t H, uint16_t N);
 void    grey_open_init_flags (void);
 void    grey_open_init_MEM (void);
-EXPORT(WORD) grey_to   (BYTE far *pKogo);    //returns n_lines_ready
+EXPORT(uint16_t) grey_to   (BYTE far *pKogo);    //returns n_lines_ready
 void	grey_to_memory_monitor (void);
-void	grey_to_monitor_MBIT (WORD n_from);
+void	grey_to_monitor_MBIT (uint16_t n_from);
 EXPORT(void) grey_from (BYTE far *pKuda);
-EXPORT(WORD) grey_close (void);      //returns n_lines_ready
+EXPORT(uint16_t) grey_close (void);      //returns n_lines_ready
 void	grey_quant_KOROB (void);
 void	grey_quant_KOROB_1x1 (void);
 void	grey_quant_KOROB_1x3_MAX (void);
@@ -105,16 +105,16 @@ void	grey_quant_KOROB_3x3_VERB (void);
 void	grey_quant_KOROB_draw_RAMKA (void);
 void	grey_quant_KOROB_graph_Hist (void);
 void	grey_quant_KOROB_PR_Factor (void);
-void	grey_PR_BYTE (WORD ibeg, WORD jbeg, WORD value);
+void	grey_PR_BYTE (uint16_t ibeg, uint16_t jbeg, uint16_t value);
 //......................................................................//
-void	hist_add (LPBYTE p, WORD N_Lines);	// PART-2: grey-kor.c
+void	hist_add (LPBYTE p, uint16_t N_Lines);	// PART-2: grey-kor.c
 void	hist_glad_8_121 (void);
 void	hist_MIN_MAX (void);
 void	Korobs_init (void);
 void	Korobs (void);
 void	Korobs_CLEAR_and_GLUE (void);
-void	Korob_add (WORD j);
-void	Korob_calc_BOX (WORD j);
+void	Korob_add (uint16_t j);
+void	Korob_calc_BOX (uint16_t j);
 void	Korob_calc_Factor (void);
 void	Korob_calc_TdP (void);
 void	Korob_calc_porog_x_y (void);
@@ -128,17 +128,17 @@ void	memory_allocation (void);
 void	memory_alloc_from_body (void);
 void	memory_free (void);
 void	pr_ERR (char *text);
-void	pr_ERR_1 (char *text, Int16 n1);
-void	pr_ERR_2 (char *text, Int16 n1, Int16 n2);
-void	pr_ERR_3 (char *text, Int16 n1, Int16 n2, Int16 n3);
+void	pr_ERR_1 (char *text, int16_t n1);
+void	pr_ERR_2 (char *text, int16_t n1, int16_t n2);
+void	pr_ERR_3 (char *text, int16_t n1, int16_t n2, int16_t n3);
 void	pr_MES (char *text);
-void	pr_MES_1 (char *text, Int16 n1);
-void	pr_MES_2 (char *text, Int16 n1, Int16 n2);
-void	pr_MES_3 (char *text, Int16 n1, Int16 n2, Int16 n3);
+void	pr_MES_1 (char *text, int16_t n1);
+void	pr_MES_2 (char *text, int16_t n1, int16_t n2);
+void	pr_MES_3 (char *text, int16_t n1, int16_t n2, int16_t n3);
 //......................................................................//
 						// MKASM.ASM  PROGRAMS:
-WORD	mk_1235 (void);
-void	mk_hist_WORD (WORD *Hist_WORD, LPBYTE p, WORD n);
+uint16_t	mk_1235 (void);
+void	mk_hist_WORD (uint16_t *Hist_WORD, LPBYTE p, uint16_t n);
 //......................................................................//
 //int	abs (int value);
 /*----------------------------------------------------------------------*/
@@ -161,20 +161,20 @@ void	mk_hist_WORD (WORD *Hist_WORD, LPBYTE p, WORD n);
 int32_t    Ln_hist;
 int32_t	Korob_Files_Address;
 
-WORD	I_to;		//current Line "TO"
-WORD    Itek;       //current Line "FROM"
-WORD	NI, NJ, NI_1, NJ_1, NJ_2, NJx3;
-WORD	N_Bytes_FROM;
-WORD	N_Bytes_per_ONE_MEM = 64000;	// it was 0xC000: 48 Kb
-WORD	N_Bytes_in_MBIT_Line;		// 2550 -> 319
-WORD	N_Bytes_in_all_MBIT;		// 200 * 319 = 63 800
+uint16_t	I_to;		//current Line "TO"
+uint16_t    Itek;       //current Line "FROM"
+uint16_t	NI, NJ, NI_1, NJ_1, NJ_2, NJx3;
+uint16_t	N_Bytes_FROM;
+uint16_t	N_Bytes_per_ONE_MEM = 64000;	// it was 0xC000: 48 Kb
+uint16_t	N_Bytes_in_MBIT_Line;		// 2550 -> 319
+uint16_t	N_Bytes_in_all_MBIT;		// 200 * 319 = 63 800
 
-WORD	N_Lines_per_1_MEM;	// 64000 / 2550 = 25 (25.098)
-WORD	N_Lines_per_4_MEMs;	// 4 * 25 = 100
-WORD	N_Lines_per_8_MEMs;	// 8 * 25 = 200
-WORD	N_of_TEK_MEM;		// 0 - 7;
-WORD	N_Lines_in_TEK_MEM;
-WORD	N_tek_Line_in_MBIT;
+uint16_t	N_Lines_per_1_MEM;	// 64000 / 2550 = 25 (25.098)
+uint16_t	N_Lines_per_4_MEMs;	// 4 * 25 = 100
+uint16_t	N_Lines_per_8_MEMs;	// 8 * 25 = 200
+uint16_t	N_of_TEK_MEM;		// 0 - 7;
+uint16_t	N_Lines_in_TEK_MEM;
+uint16_t	N_tek_Line_in_MBIT;
 
 BYTE	IER;
 BYTE	Flag_ERR_Hist_L, Flag_ERR_Hist_R;
@@ -230,14 +230,14 @@ LPBYTE	pMem_TEK, pMem_kuda;
 BYTE far * far * ppMem;	//Array of FAR Pointers
 /*----------------------------------------------------------------------*/
 							// KOROB VARIABLES
-WORD	Korob_i1;		// ==Itek !!!
-WORD	Korob_i2;		// include this Line
-WORD	Korob_j1, Korob_nj;
-WORD	Korob_Factor;
-Int16	Korob_x, Korob_y;
+uint16_t	Korob_i1;		// ==Itek !!!
+uint16_t	Korob_i2;		// include this Line
+uint16_t	Korob_j1, Korob_nj;
+uint16_t	Korob_Factor;
+int16_t	Korob_x, Korob_y;
 BYTE	Korob_porog;
 /*----------------------------------------------------------------------*/
-WORD	N_Korob;					// KOROBS STATISTIC
+uint16_t	N_Korob;					// KOROBS STATISTIC
 int32_t	LS_Korobs, LSH_Korobs, LSL_Korobs, LNgrey16, LNgreyD8, LNgrey08;
 /*----------------------------------------------------------------------*/
 	//  - - -   - X -   X X X   X X X   X - X   X X X   - X X   X X X
@@ -245,7 +245,7 @@ int32_t	LS_Korobs, LSH_Korobs, LSL_Korobs, LNgrey16, LNgreyD8, LNgrey08;
 	//  X - X   - X -   X X -   - X X   X X X   X X X   X X X   - X -
 	//  X - X   - X -   X - -   - - X   - - X   - - X   X - X   X - -
 	//  - X -   X X X   X X X   X X X   - - X   X X X   X X X   X - -
-WORD	Hex_35 [16] = {
+uint16_t	Hex_35 [16] = {
 	   002552, 026227, 071647, 071317, 055711, 074717, 034757, 071244,
 	   075257, 075716, 025755, 065657, 074447, 065556, 074747, 074744};
 	//  X X X   X X X   - X -   X X -   X X X   X X -   X X X   X X X
@@ -254,8 +254,8 @@ WORD	Hex_35 [16] = {
 	//  X - X   - - X   X - X   X - X   X - -   X - X   X - -   X - -
 	//  X X X   X X -   X - X   X X X   X X X   X X -   X X X   X - -
 /*----------------------------------------------------------------------*/
-EXPORT(void) grey_open (WORD H, WORD N)  {           // 28.10.1992
-WORD	k;
+EXPORT(void) grey_open (uint16_t H, uint16_t N)  {           // 28.10.1992
+uint16_t	k;
 //////extern char auto_flag;
 
 /*......................................................................*/
@@ -297,7 +297,7 @@ PR_BEG	"MK Message:\nGREY OPEN  %d*%d %04X %d (%d) %d",
 
 /*----------------------------------------------------------------------*/
 void	grey_open_init_flags ()  {			// 02.11.1992
-WORD	k, kk, n;
+uint16_t	k, kk, n;
 BYTE	b1, b2, bb, cc;
 char	Full_Name_GREY_INI [33];
 static	char	Name_GREY_INI[]="\\grey.ini";	// 10 chars, include 00
@@ -379,7 +379,7 @@ char	buf [888];
 }
 /*----------------------------------------------------------------------*/
 void	grey_open_init_MEM ()  {			// 28.10.1992
-WORD	k;
+uint16_t	k;
 /*......................................................................*/
 	N_Bytes_FROM = (NJ + 15) / 16 * 2;
 	N_Lines_per_1_MEM  = N_Bytes_per_ONE_MEM / N_Bytes_FROM / 8;	// 940301 AL
@@ -407,8 +407,8 @@ if (N_Bytes_FROM==0)  pr_ERR ("GREY: NBF==0");
 	I_to = 0;	// for  grey_to
 }
 /*----------------------------------------------------------------------*/
-EXPORT(WORD) grey_to (BYTE far *pKogo)   {       // 30.10.1992
-WORD	n_acc, n_from;	// really it is N_lines_will_be_ready;
+EXPORT(uint16_t) grey_to (BYTE far *pKogo)   {       // 30.10.1992
+uint16_t	n_acc, n_from;	// really it is N_lines_will_be_ready;
 
 	if (Flag_OPEN==FALSE)
 	   { pr_ERR_2 ("GREY TO:\nNOT OPEN %d,%d", I_to, Itek);
@@ -445,7 +445,7 @@ I_to, pKogo [0], pKogo [0x40], pKogo [0x80], pKogo [0xC0]);	PR_END
 	    n_from = 2*N_Lines_per_1_MEM;    goto m1;	// FIRST PORTION !!!
 	    }
 							// MIDDLE PORTION ?
-	if (n_acc < (WORD) (6 * N_Lines_per_1_MEM))  return 0;	// NO READY
+	if (n_acc < (uint16_t) (6 * N_Lines_per_1_MEM))  return 0;	// NO READY
 	n_from = 2 * N_Lines_per_1_MEM;			// MIDDLE PORTION !!!
 
 m1:	grey_to_monitor_MBIT (n_from);
@@ -470,8 +470,8 @@ void	grey_to_memory_monitor ()	{		//29.08.1992
 /*......................................................................*/
 }
 /*----------------------------------------------------------------------*/
-void	grey_to_monitor_MBIT (WORD n_from)	{	// 22.09.1992
-WORD	n1, n2;
+void	grey_to_monitor_MBIT (uint16_t n_from)	{	// 22.09.1992
+uint16_t	n1, n2;
 
 	if (N_tek_Line_in_MBIT==0)  return;
 /*......................................................................*/
@@ -504,7 +504,7 @@ EXPORT(void) grey_from (BYTE far *pKuda) {       // 29.08.1992
       { memory_free ();  Flag_OPEN = FALSE; }
 }
 /*----------------------------------------------------------------------*/
-EXPORT(WORD) grey_close ()   {               // 02.11.1992
+EXPORT(uint16_t) grey_close ()   {               // 02.11.1992
 
 	if (Flag_STAT)  Korob_statistic_print ();
 
@@ -546,9 +546,9 @@ void	grey_quant_KOROB ()	{			// 03.11.1992
 }
 /*----------------------------------------------------------------------*/
 void	grey_quant_KOROB_1x1 ()	{			// 29.08.1992
-WORD	i, i1, i2;					// SIMPLE VARIANT
-WORD	j, j1, nj, j7;
-Int16	porog_tek;
+uint16_t	i, i1, i2;					// SIMPLE VARIANT
+uint16_t	j, j1, nj, j7;
+int16_t	porog_tek;
 BYTE	b, mask_left, mask;
 LPBYTE	pkuda_beg, pkuda;
 LPBYTE	pkogo;
@@ -571,7 +571,7 @@ LPBYTE	pkogo;
 /*......................................................................*/
 	    pkogo = ppMem [i] + j1;
 	    for (j=0; j<nj; j++)  {
-		if ((Int16)*pkogo++>=porog_tek)  b |= mask;
+		if ((int16_t)*pkogo++>=porog_tek)  b |= mask;
 		if (mask>>=1)  continue;
 		*pkuda++ = b;		// WRITE OLD BYTE
 		b = *pkuda;		// READ NEW BYTE
@@ -583,11 +583,11 @@ LPBYTE	pkogo;
 }
 /*----------------------------------------------------------------------*/
 void	grey_quant_KOROB_1x3_MAX ()	{		// 14.09.1992
-WORD	i, i1, i2;					// SPECIAL VARIANT
-WORD	j, j1, nj, j7;				// Vers-33: begin;
-WORD	nj_8;					// Vers-34: NO for 8 El. L/R
-Int16	porog_tek, porog_max, delta;
-Int16	nL, nC, nR;
+uint16_t	i, i1, i2;					// SPECIAL VARIANT
+uint16_t	j, j1, nj, j7;				// Vers-33: begin;
+uint16_t	nj_8;					// Vers-34: NO for 8 El. L/R
+int16_t	porog_tek, porog_max, delta;
+int16_t	nL, nC, nR;
 BYTE	b, mask_left, mask;
 LPBYTE	pkuda_beg, pkuda;
 LPBYTE	pkogo;
@@ -615,7 +615,7 @@ LPBYTE	pkogo;
 	    for (j=0; j<nj; j++)  {
 		nL = nC;
 		nC = nR;
-		nR = (Int16) *pkogo++;
+		nR = (int16_t) *pkogo++;
 		if (nC<porog_tek)  goto m2;	// WHITE
 
 		if (j<8)     goto m1;		// BLACK (for 8 LEFT)
@@ -624,7 +624,7 @@ LPBYTE	pkogo;
 		if (nC>=porog_max) goto m1;	// BLACK
 		delta = (nL>nR) ? (nL - nC) : (nR - nC);
 		if (delta<=0)  goto  m1;	// BLACK
-		if (delta > (Int16) Diapazon_16)  delta = Diapazon_16;
+		if (delta > (int16_t) Diapazon_16)  delta = Diapazon_16;
 		if ((nC - delta) < porog_tek)  goto m2;		// WHITE !!!
 m1:		b |= mask;			// BLACK
 m2:		if (mask>>=1)  continue;
@@ -638,11 +638,11 @@ m2:		if (mask>>=1)  continue;
 }
 /*----------------------------------------------------------------------*/
 void	grey_quant_KOROB_1x5work ()	{		// 03.11.1992
-WORD	i, i1, i2;					// SPECIAL VARIANT
-WORD	j, j1, j7;					// from 03.11.1992
-WORD	j_beg, j_end;			// NB: spec work for 2 left & 2 right
-Int16	porog_tek;
-Int16	nLL, nL, nC, nR, nRR, nCmod;
+uint16_t	i, i1, i2;					// SPECIAL VARIANT
+uint16_t	j, j1, j7;					// from 03.11.1992
+uint16_t	j_beg, j_end;			// NB: spec work for 2 left & 2 right
+int16_t	porog_tek;
+int16_t	nLL, nL, nC, nR, nRR, nCmod;
 BYTE	b, mask_left, mask;
 LPBYTE	pkuda_beg, pkuda;
 LPBYTE	pkogo;
@@ -683,9 +683,9 @@ LPBYTE	pkogo;
 		nL = nC;
 		nC = nR;
 		nR = nRR;
-		nRR= (Int16) *pkogo++;
+		nRR= (int16_t) *pkogo++;
 
-		if (nC<(Int16)Porog_38)  goto m2;	// WHITE
+		if (nC<(int16_t)Porog_38)  goto m2;	// WHITE
 
 		nCmod = nC - Diapazon_8;
 		if ((nLL<=nCmod) && (nRR>=nCmod))  goto m1;	// BLACK
@@ -716,13 +716,13 @@ m2:		if (mask>>=1)  continue;
 }
 /*----------------------------------------------------------------------*/
 void	grey_quant_KOROB_3x3 ()	{			// 29.08.1992
-WORD	i, i1, i2;
-WORD	j, j1, nj;
-Int16	n, x, y, porog_tek, porog_min, porog_max;
-Int16	nUL, nU, nUR;
-Int16	nL,  nC, nR;
-Int16	nDL, nD, nDR;
-Int16	k_plan;
+uint16_t	i, i1, i2;
+uint16_t	j, j1, nj;
+int16_t	n, x, y, porog_tek, porog_min, porog_max;
+int16_t	nUL, nU, nUR;
+int16_t	nL,  nC, nR;
+int16_t	nDL, nD, nDR;
+int16_t	k_plan;
 BYTE	b, mask_left, mask;
 BYTE	here_Laplas, here_Plan, here_Hor, here_Vert;
 int32_t	L_kp_D8;
@@ -790,7 +790,7 @@ PR_BEG "pD: i=%d %lX, %lX\n%d-%d %d,%d",
 	    }
 /*......................................................................*/
 if (here_Laplas)  {					// LAPLAS:
-Int16	lapl;
+int16_t	lapl;
 	lapl =  -  nUL  -  nU  -  nUR
 		-  nL   + 8*nC -  nR
 		-  nDL  -  nD  -  nDR;
@@ -801,7 +801,7 @@ Int16	lapl;
 }	// END OF LAPLAS IF
 /*......................................................................*/
 if (here_Plan)  {					// PLAN:
-Int16	sred, plan, plan_2;
+int16_t	sred, plan, plan_2;
 
 	sred = (nUL + nU + nUR + nL + nC + nR + nDL + nD + nDR) / 9;
 	plan = abs (sred-nUL) + abs (sred- nU) + abs (sred- nUR) +
@@ -830,7 +830,7 @@ Int16	sred, plan, plan_2;
 }	// END OF PLAN IF
 /*......................................................................*/
 if (here_Hor && ((Itek-i1)*4>i2))	{		// Hor SEDLO:
-Int16	sedlo;				/* for BLACK THICK Text only	*/
+int16_t	sedlo;				/* for BLACK THICK Text only	*/
 					/* for UPPER 1/4 of KOROB only	*/
 
 	if (( nU>nC) && ( nD>nC) &&		/* Centre Vert	*/
@@ -844,7 +844,7 @@ Int16	sedlo;				/* for BLACK THICK Text only	*/
 }	// END OF HOR IF
 /*......................................................................*/
 if (here_Vert)	{					// Vert SEDLO:
-Int16	sedlo;				/* for BLACK THICK Text only	*/
+int16_t	sedlo;				/* for BLACK THICK Text only	*/
 	if (( nL>nC) && ( nR>nC) && 		/* Centre Hor	*/
 	    (nUL>nU) && (nUR>nU) &&		/* Up     Hor	*/
 	    (nDL>nD) && (nDR>nD))		/* Down   Hor	*/
@@ -867,13 +867,13 @@ m_mask:	if (mask>>=1)  continue;
 }
 /*----------------------------------------------------------------------*/
 void	grey_quant_KOROB_3x3_VERB ()	{		// 25.09.1992
-WORD	i, i1, i2;				// LAPLAS to BLACK ONLY
-WORD	j, j1, nj;
-Int16	n, y, porog_tek, porog_min;
-Int16	nUL, nU, nUR;
-Int16	nL,  nC, nR;
-Int16	nDL, nD, nDR;
-Int16	lapl;
+uint16_t	i, i1, i2;				// LAPLAS to BLACK ONLY
+uint16_t	j, j1, nj;
+int16_t	n, y, porog_tek, porog_min;
+int16_t	nUL, nU, nUR;
+int16_t	nL,  nC, nR;
+int16_t	nDL, nD, nDR;
+int16_t	lapl;
 BYTE	b, mask_left, mask;
 LPBYTE	pkuda_beg, pkuda;
 LPBYTE	pU, pC, pD;		// Up, Centre, Down
@@ -939,8 +939,8 @@ m_mask:	if (mask>>=1)  continue;
 }
 /*----------------------------------------------------------------------*/
 void	grey_quant_KOROB_draw_RAMKA ()	{		// 29.08.1992
-WORD	i, i1, i2;
-WORD	j, j1, nj, j2;
+uint16_t	i, i1, i2;
+uint16_t	j, j1, nj, j2;
 BYTE	mask, mask_L, mask_R;
 LPBYTE	pU, pD, pL, pR;		// Up, Down, Left, Right
 
@@ -971,7 +971,7 @@ LPBYTE	pU, pD, pL, pR;		// Up, Down, Left, Right
 }
 /*----------------------------------------------------------------------*/
 void	grey_quant_KOROB_graph_Hist ()	{		// 22.09.1992
-WORD	i = Itek + N_Lines_per_1_MEM - 8;
+uint16_t	i = Itek + N_Lines_per_1_MEM - 8;
 
 	grey_PR_BYTE (i, 16, (BYTE)((Itek >> 8) & 0xFF));	// HIGH
 	grey_PR_BYTE (i, 24, (BYTE)(Itek & 0xFF));	// LOW
@@ -982,7 +982,7 @@ WORD	i = Itek + N_Lines_per_1_MEM - 8;
 }
 /*----------------------------------------------------------------------*/
 void	grey_quant_KOROB_PR_Factor ()	{		// 27.10.1992
-WORD	ibeg, jbeg;
+uint16_t	ibeg, jbeg;
 	ibeg = Korob_i2 + 2;	jbeg = Korob_j1;	// for PRINT DOWN;
 	if ((Korob_nj<12) && ((Korob_i2-Korob_i1)<12))	// for PRINT RIGHT:
 		{ ibeg = Korob_i1;  jbeg = Korob_j1 + Korob_nj + 1; }
@@ -993,9 +993,9 @@ WORD	ibeg, jbeg;
 	grey_PR_BYTE (ibeg, jbeg, Korob_Factor);
 }
 /*----------------------------------------------------------------------*/
-void	grey_PR_BYTE (WORD ibeg, WORD jbeg, WORD value) {   // 22.09.1992
-WORD	i, j, k;
-WORD	cifra, scale;
+void	grey_PR_BYTE (uint16_t ibeg, uint16_t jbeg, uint16_t value) {   // 22.09.1992
+uint16_t	i, j, k;
+uint16_t	cifra, scale;
 BYTE	mask;
 LPBYTE	p;
 /*......................................................................*/
@@ -1008,7 +1008,7 @@ LPBYTE	p;
 		    (jbeg/8);
 		mask = 0x80;    mask >>= (jbeg & 7);
 		for (j=0; j<3; j++)  {
-		    if ((Int16) (scale<<=1) < 0)  *p |= mask;
+		    if ((int16_t) (scale<<=1) < 0)  *p |= mask;
 		    if ((mask>>=1) == 0)  { mask = 0x80;  p++; }
 		    } // FOR J
 		} // FOR I
@@ -1029,14 +1029,14 @@ LPBYTE	p;
 // 27.10.1992	use const 16 (instead old 32) in hist_MIN_MAX for LEFT MAX
 // 28.10.1992	RIKOH: Experiments with  memory_alloc_from_body ();
 /*----------------------------------------------------------------------*/
-void	hist_add (LPBYTE p, WORD N_Lines);	// PART-2: grey-kor.c
+void	hist_add (LPBYTE p, uint16_t N_Lines);	// PART-2: grey-kor.c
 void	hist_glad_8_121 (void);
 void	hist_MIN_MAX (void);
 void	Korobs_init (void);
 void	Korobs (void);
 void	Korobs_CLEAR_and_GLUE (void);
-void	Korob_add (WORD j);
-void	Korob_calc_BOX (WORD j);
+void	Korob_add (uint16_t j);
+void	Korob_calc_BOX (uint16_t j);
 void	Korob_calc_Factor (void);
 void	Korob_calc_TdP (void);
 void	Korob_calc_porog_x_y (void);
@@ -1050,17 +1050,17 @@ void	memory_allocation (void);
 void	memory_alloc_from_body (void);
 void	memory_free (void);
 void	pr_ERR (char *text);
-void	pr_ERR_1 (char *text, Int16 n1);
-void	pr_ERR_2 (char *text, Int16 n1, Int16 n2);
-void	pr_ERR_3 (char *text, Int16 n1, Int16 n2, Int16 n3);
+void	pr_ERR_1 (char *text, int16_t n1);
+void	pr_ERR_2 (char *text, int16_t n1, int16_t n2);
+void	pr_ERR_3 (char *text, int16_t n1, int16_t n2, int16_t n3);
 void	pr_MES (char *text);
-void	pr_MES_1 (char *text, Int16 n1);
-void	pr_MES_2 (char *text, Int16 n1, Int16 n2);
-void	pr_MES_3 (char *text, Int16 n1, Int16 n2, Int16 n3);
+void	pr_MES_1 (char *text, int16_t n1);
+void	pr_MES_2 (char *text, int16_t n1, int16_t n2);
+void	pr_MES_3 (char *text, int16_t n1, int16_t n2, int16_t n3);
 /*----------------------------------------------------------------------*/
-void	hist_add (LPBYTE p, WORD N_Lines)	{	// 01.09.1992
-WORD	k, n;
-WORD	Hist_WORD [256];
+void	hist_add (LPBYTE p, uint16_t N_Lines)	{	// 01.09.1992
+uint16_t	k, n;
+uint16_t	Hist_WORD [256];
 
 	n = N_Lines * NJ;
 
@@ -1080,7 +1080,7 @@ WORD	Hist_WORD [256];
 }
 /*----------------------------------------------------------------------*/
 void	hist_glad_8_121 ()	{			// 26.08.1992
-Int16	k, n;
+int16_t	k, n;
 int32_t	LnL, LnC, LnR;
 	for (k=0; k<256; k++)  Hist_glad [k] = Hist_tek [k];
 
@@ -1112,8 +1112,8 @@ void	hist_MIN_MAX ()	{				// 27.09.1992
 		/*Ё	THE FIRST PROJECT (not used, not tested) -	Ё*/
 		/*Ё                       see MK-GREY.ABC.		Ё*/
 		/*юддддддддддддддддддддддддддддддддддддддддддддддддддддды*/
-Int16	k;
-Int16	KmaxL, KmaxR;
+int16_t	k;
+int16_t	KmaxL, KmaxR;
 int32_t	Ln, LmaxL, LmaxR, Lporog_34;	////// Lporog_2, Lporog_4;
 int32_t	L_incr_2, Lporog_MM, Lporog_MMx2;
 /*......................................................................*/
@@ -1202,8 +1202,8 @@ m_ex:	Porog_12 = (BYTE) ((KmaxL + KmaxR) / 2);		  // 4/8
 }
 /*----------------------------------------------------------------------*/
 void	Korobs_init ()	{				// 11.09.1992
-WORD	k;
-Int16 far	*KR = (Int16 far *) pMREF;	// KOROBS REFERENCES
+uint16_t	k;
+int16_t far	*KR = (int16_t far *) pMREF;	// KOROBS REFERENCES
 
 	for (k=0; k<NJx3; k++)	KR [k] = 9999;	// OTL: "ERROR" INDICATION
 	N_Korob = 0;
@@ -1217,18 +1217,18 @@ Int16 far	*KR = (Int16 far *) pMREF;	// KOROBS REFERENCES
 }
 /*----------------------------------------------------------------------*/
 void	Korobs ()	{				// 23.10.1992
-WORD	/*i1,*/ i2, j1, nj, j2m;	// здддддддддддддддддддддддддддддддддддд©
-WORD	j;			// Ё Current line contain a number of [)Ё
-WORD	a, aaa;	// LAST for BASE// Ё intervals. Used NON-FULL reference	Ё
-WORD	b, bbb;	// BASE		// Ё structure, 3 Int16's per each busy	Ё
-WORD	c, ccc;	// LEFT		// Ё elemelt: [+0],[+1]	- references to	Ё
-WORD	d, ddd;	// RIGHT	// Ё LAST & NEXT; [+2] - 'DOWN': if 0,	Ё
-WORD	e, eee;	// NEXT		// Ё this interval is free, else it is 	Ё
-WORD	f, fff;	// NEXT for NEXT// Ё the number of last busy line.	Ё
-WORD	b_old;			// Ё    New KOROB included to it. The	Ё
-Int16	ai2, ei2;		// Ё simplest case - if KOROB is inter 	Ё
+uint16_t	/*i1,*/ i2, j1, nj, j2m;	// здддддддддддддддддддддддддддддддддддд©
+uint16_t	j;			// Ё Current line contain a number of [)Ё
+uint16_t	a, aaa;	// LAST for BASE// Ё intervals. Used NON-FULL reference	Ё
+uint16_t	b, bbb;	// BASE		// Ё structure, 3 int16_t's per each busy	Ё
+uint16_t	c, ccc;	// LEFT		// Ё elemelt: [+0],[+1]	- references to	Ё
+uint16_t	d, ddd;	// RIGHT	// Ё LAST & NEXT; [+2] - 'DOWN': if 0,	Ё
+uint16_t	e, eee;	// NEXT		// Ё this interval is free, else it is 	Ё
+uint16_t	f, fff;	// NEXT for NEXT// Ё the number of last busy line.	Ё
+uint16_t	b_old;			// Ё    New KOROB included to it. The	Ё
+int16_t	ai2, ei2;		// Ё simplest case - if KOROB is inter 	Ё
 LPBYTE	pC;			// Ё free interval. But it can be lefts	Ё
-Int16 far	*KR = (Int16 far *) pMREF;// Ё from left boundary or rights from 	Ё
+int16_t far	*KR = (int16_t far *) pMREF;// Ё from left boundary or rights from 	Ё
 	// (KOROBS REFERENCES)	// Ё right boundary of free interval...	Ё
 				// юдддддддддддддддддддддддддддддддддддды
 /*......................................................................*/
@@ -1292,14 +1292,14 @@ m_Left_spec:			// REFERENCE for LEFT: SPECIAL CASE
 
 mLs1:	bbb = b + b + b;	// NOTA BENE:  b  can be modified !!!
 /*......................................................................*/
-	if ((Int16) i2 > KR [bbb + 2])  KR [bbb + 2] = i2;  // for all cases !
+	if ((int16_t) i2 > KR [bbb + 2])  KR [bbb + 2] = i2;  // for all cases !
 
 	if (c==b)  goto  mLs_ex;	// case c.0
 
 	a = KR [bbb + 0];	aaa = a + a + a;
 	ai2 = KR [aaa + 2];	// DOWN of a-PoluInterval [a;b)
 	if (c>a)  {			// case c.1 or c.2:
-	    if ((Int16)i2<=ai2)  goto mLs_ex;	// case c.1;
+	    if ((int16_t)i2<=ai2)  goto mLs_ex;	// case c.1;
 				// case c.2:
 	    KR [aaa + 1] = c;	//NEXT	//GLUE  a & c
 	    KR [ccc + 0] = a;	//LAST
@@ -1309,7 +1309,7 @@ mLs1:	bbb = b + b + b;	// NOTA BENE:  b  can be modified !!!
 	    goto  mLs_ex;
 	    }
 				// case  c.3,5  or  c.4,6:
-	if ((Int16)i2<=ai2)  { b = a;  goto  mLs1; }	// case  c.3,5;
+	if ((int16_t)i2<=ai2)  { b = a;  goto  mLs1; }	// case  c.3,5;
 				// case  c.4,6:
 	KR [aaa + 2] = i2;	//DOWN for POLUINTERVAL [a;b) !!!
 	b = a;			// for repeat
@@ -1352,7 +1352,7 @@ mrs1:	if (d==e)  {  b = e;  goto  m1;  }	// case d.0: IGNORE d
 	ei2 = KR [eee + 2];	// DOWN of e-Interval
 	f = KR [eee + 1];	fff = f + f + f;	// NJ_1 - ??????
 	if (d<f)  {			// case d.1 or d.2:
-	    if ((Int16)i2<=ei2)  { b = f;  goto m1; }	// case d.1;
+	    if ((int16_t)i2<=ei2)  { b = f;  goto m1; }	// case d.1;
 				// case d.2:
 	    KR [ccc + 1] = d;	//NEXT	//GLUE  c & d
 	    KR [ddd + 0] = c;	//LAST
@@ -1363,7 +1363,7 @@ mrs1:	if (d==e)  {  b = e;  goto  m1;  }	// case d.0: IGNORE d
 	    goto m1;
 	    }
 				// case  d.3,5  or  d.4,6:
-	if ((Int16)i2<=ei2)  { e = f;  goto  mrs1; }	// case  d.3,5;
+	if ((int16_t)i2<=ei2)  { e = f;  goto  mrs1; }	// case  d.3,5;
 				// case  d.4,6:
 	KR [ccc + 1] = f;	//NEXT	//GLUE  c & f
 	KR [fff + 0] = c;	//LAST
@@ -1373,16 +1373,16 @@ mrs1:	if (d==e)  {  b = e;  goto  m1;  }	// case d.0: IGNORE d
 }
 /*----------------------------------------------------------------------*/
 void	Korobs_CLEAR_and_GLUE ()	{		// 30.08.1992
-WORD	b, bbb;	// BASE
-WORD	c, ccc;	// NEXT for BASE
-WORD	d;	// NEXT for NEXT
-Int16	bi2;
-Int16 far	*KR = (Int16 far *) pMREF;	// KOROBS REFERENCES
+uint16_t	b, bbb;	// BASE
+uint16_t	c, ccc;	// NEXT for BASE
+uint16_t	d;	// NEXT for NEXT
+int16_t	bi2;
+int16_t far	*KR = (int16_t far *) pMREF;	// KOROBS REFERENCES
 
 	b = 1;
 m1:	bbb = b + b + b;
 	bi2 = KR [bbb + 2];
-	if ((bi2!=0) && (bi2 < (Int16) Itek))  KR [bbb+2] = bi2 = 0;  // CLEAR
+	if ((bi2!=0) && (bi2 < (int16_t) Itek))  KR [bbb+2] = bi2 = 0;  // CLEAR
 	c = KR [bbb + 1];	if (c==NJ_1)  return;
 	ccc = c + c + c;
 	if (bi2 != KR [ccc + 2])  { b = c;  goto  m1; }
@@ -1394,7 +1394,7 @@ m1:	bbb = b + b + b;
 	if (b!=NJ_1)  goto  m1;	// BBB;
 }
 /*----------------------------------------------------------------------*/
-void	Korob_add (WORD j)	{			// 27.10.1992
+void	Korob_add (uint16_t j)	{			// 27.10.1992
 
 	Korob_calc_BOX (j);	if (Flag_Korob_OK==FALSE)  return;
 /*......................................................................*/
@@ -1423,14 +1423,14 @@ void	Korob_add (WORD j)	{			// 27.10.1992
 	if (Flag_WrKor)  Korob_Files_Write ();
 }
 /*----------------------------------------------------------------------*/
-void    Korob_calc_BOX (WORD j) {           // 27.10.1992 +MK 27.09.1993
-WORD	ii, jj;					/* NB: U+ -> +2  R & L	*/
-WORD	i1,i2, ni, i_down;
-WORD	j1,j2, nj;
-WORD	n_0_2, n_j_empty;	/* for RIGHT +0 (U-) or +2 (U+) GLUE  */
+void    Korob_calc_BOX (uint16_t j) {           // 27.10.1992 +MK 27.09.1993
+uint16_t	ii, jj;					/* NB: U+ -> +2  R & L	*/
+uint16_t	i1,i2, ni, i_down;
+uint16_t	j1,j2, nj;
+uint16_t	n_0_2, n_j_empty;	/* for RIGHT +0 (U-) or +2 (U+) GLUE  */
 BYTE	/*FlagR,*/ FlagD, FlagL/*, Flag_DOWN_100*/;
 BYTE far *p;
-Int16	count_5555 = 5555;	// BBB for OTLADKA
+int16_t	count_5555 = 5555;	// BBB for OTLADKA
 
 	i1 = i2 = Itek;	ni = 1;
 	j1 = j2 = j;	nj = 1;
@@ -1555,8 +1555,8 @@ void	Korob_calc_Factor ()	{			// 07.09.1992
 			/*	Var-2: all black Border is diff !!!!!!	*/
 			/* porog: HAND - par_W;  AUTO - Porog_12;	*/
 int32_t	LNblack, LNdiff, LNinter;
-WORD	i1,i2, j1,nj, nj_1;
-WORD	i, j;
+uint16_t	i1,i2, j1,nj, nj_1;
+uint16_t	i, j;
 BYTE	por_tek;
 LPBYTE	pU, pC, pD;	/* Up, Centre, Down */
 
@@ -1594,13 +1594,13 @@ LPBYTE	pU, pC, pD;	/* Up, Centre, Down */
 /*......................................................................*/
 	LNinter = LNblack - LNdiff;
 	if (LNblack==0)	 Korob_Factor = 0;	// ???????????????????
-		   else  Korob_Factor = (WORD) (LNinter*255L/LNblack);
+		   else  Korob_Factor = (uint16_t) (LNinter*255L/LNblack);
 /*......................................................................*/
 }
 /*----------------------------------------------------------------------*/
 void	Korob_calc_TdP ()	{			// 01.09.1992
-Int16	i1,i2, j1,nj, Factor;				/* OTLADKA ONLY	*/
-Int16	i, j;
+int16_t	i1,i2, j1,nj, Factor;				/* OTLADKA ONLY	*/
+int16_t	i, j;
 BYTE	mkMax, nn/*, dd*/;
 
 	if (Flag_T==FALSE)  return;
@@ -1621,8 +1621,8 @@ BYTE	mkMax, nn/*, dd*/;
 }
 /*----------------------------------------------------------------------*/
 void	Korob_calc_porog_x_y ()	{			// 27.10.1992
-Int16	Factor;
-Int16	porog_tek, xx, yy;
+int16_t	Factor;
+int16_t	porog_tek, xx, yy;
 
 	if (Flag_Xverb) goto m_TIMES_ROMAN;	// from 27.10.1992
 	if (Flag_VERB)  goto m_Verblud;		// from 04.09.1992
@@ -1763,9 +1763,9 @@ void	Korob_Files_Open ()	{			// 06.10.1992
 }
 /*----------------------------------------------------------------------*/
 void	Korob_Files_Write ()	{			// 06.10.1992
-WORD	n, ni, i;
-WORD	buf_H [8];
-WORD	buf_B [2550];	//////////////////////////////////////////////////
+uint16_t	n, ni, i;
+uint16_t	buf_H [8];
+uint16_t	buf_B [2550];	//////////////////////////////////////////////////
 
 	if (Flag_ERR_DISK)  return;
 
@@ -1813,10 +1813,10 @@ void	Korob_see ()	{				// 04.09.1992
 }
 /*----------------------------------------------------------------------*/
 void	Korob_statistic ()	{			// 11.09.1992
-WORD	i1,i2, j1,nj, nj_1;
-WORD	i, j;
-Int16	nC, nL, nR;
-Int16	por_tek;
+uint16_t	i1,i2, j1,nj, nj_1;
+uint16_t	i, j;
+int16_t	nC, nL, nR;
+int16_t	por_tek;
 LPBYTE	pC;
 /*......................................................................*/
 	LS_Korobs += (Korob_i2 - Korob_i1 + 1) * (int32_t) Korob_nj;
@@ -1841,7 +1841,7 @@ N_Korob+1, i1,i2, j1,nj, Korob_Factor, por_tek);	PR_END
 		if (nL<por_tek)  continue;	// mulT be BLACK
 		if (nR<por_tek)  continue;	// mulT be BLACK
 		if ((nR-nC)>=16)  LNgrey16++;
-		if ((nR-nC) >= (Int16) Diapazon_8)  LNgreyD8++;
+		if ((nR-nC) >= (int16_t) Diapazon_8)  LNgreyD8++;
 		if ((nR-nC) >= 8)  LNgrey08++;
 if ((nR-nC)>=16)
 PR_BEG	"%ld) %d-%d K=%d\n%02X %02X %02X\nF=%02X P=%02X",
@@ -1852,8 +1852,8 @@ PR_END
 }
 /*----------------------------------------------------------------------*/
 void	Korob_statistic_print ()	{		// 11.09.1992
-WORD	percent;
-	percent = (WORD) (LS_Korobs * 100L / (NI * (int32_t) NJ));
+uint16_t	percent;
+	percent = (uint16_t) (LS_Korobs * 100L / (NI * (int32_t) NJ));
 PR_BEG	"%d Korobs;  S=%ld (%d)\n"
 	"SH=%ld SL=%ld\n"
 	"Ngrey: 16)%ld  D8)%ld  08)%ld",
@@ -1865,7 +1865,7 @@ PR_END
 /*----------------------------------------------------------------------*/
 void	memory_allocation ()
 {			// 11.02.1992
-	WORD	k;
+	uint16_t	k;
 //////	hMem  = GlobalAlloc (GHND, bufl);
 //////	lpMem = GlobalLock (hMem);
 
@@ -1897,7 +1897,7 @@ void	memory_allocation ()
 	if (hMREF)
 		PR_BEG "MEM.ALL ERR: hMREF = %04X", hMREF);	PR_END
 
-	hMREF = KRONROD_ALLOC(NJ*6); //GlobalAlloc (GHND, NJ*6);		// NJ*3 Int16
+	hMREF = KRONROD_ALLOC(NJ*6); //GlobalAlloc (GHND, NJ*6);		// NJ*3 int16_t
 
 	if (hMREF==0)
 		PR_BEG "hMREF = %04X", hMREF);	PR_END
@@ -1946,7 +1946,7 @@ KEY	PR_BEG	"pMem08: %lX,%lX,%lX,%lX\n....... %lX,%lX,%lX,%lX",
 }
 /*----------------------------------------------------------------------*/
 void	memory_alloc_from_body ()	{		// 11.02.1992
-WORD	k;
+uint16_t	k;
 static	BYTE	Virginity = TRUE;
 
 	if (!Virginity)  return;
@@ -1964,7 +1964,7 @@ static	BYTE	Virginity = TRUE;
 	hMBIT = KRONROD_ALLOC(0xFFFE); //GlobalAlloc (GHND, 0xFFFE);		//~63 800 b
 	if (hMBIT==0)  PR_BEG "hMBIT = %04X", hMBIT);	PR_END
 
-	hMREF = KRONROD_ALLOC(MAX_NJ*6); //GlobalAlloc (GHND, MAX_NJ*6);		// NJ*3 Int16
+	hMREF = KRONROD_ALLOC(MAX_NJ*6); //GlobalAlloc (GHND, MAX_NJ*6);		// NJ*3 int16_t
 	if (hMREF==0)  PR_BEG "hMREF = %04X", hMREF);	PR_END
 
 	hPPMEM = KRONROD_ALLOC(MAX_NI*4); //GlobalAlloc (GHND, MAX_NI*4);		// MAX_NI far *
@@ -2004,7 +2004,7 @@ KEY	PR_BEG	"pMem08: %lX,%lX,%lX,%lX\n....... %lX,%lX,%lX,%lX",
 /*----------------------------------------------------------------------*/
 void	memory_free ()
 {				// 03.11.1992
-	WORD	k;
+	uint16_t	k;
 				//for 8 MEMs
 	for (k=0; k<8; k++)
 	{
@@ -2035,17 +2035,17 @@ void	pr_ERR (char *text)	{			//12.08.1992
 //////	MessageBox (GetFocus(), mkText, 0, MB_SYSTEMMODAL);
 }
 /*----------------------------------------------------------------------*/
-void	pr_ERR_1 (char *text, Int16 n1)	{ 		//12.08.1992
+void	pr_ERR_1 (char *text, int16_t n1)	{ 		//12.08.1992
 //////	wsprintf (mkText, "MK GREY MESSAGE [1] %s %d", text, n1);
 	wsprintf (mkText, text, n1);		MMM;
 }
 /*----------------------------------------------------------------------*/
-void	pr_ERR_2 (char *text, Int16 n1, Int16 n2)	{	//12.08.1992
+void	pr_ERR_2 (char *text, int16_t n1, int16_t n2)	{	//12.08.1992
 //////	wsprintf (mkText, "MK GREY MESSAGE [2] %s %d,%d", text, n1, n2);
 	wsprintf (mkText, text, n1, n2);	MMM;
 }
 /*----------------------------------------------------------------------*/
-void	pr_ERR_3 (char *text, Int16 n1, Int16 n2, Int16 n3) {	//12.08.1992
+void	pr_ERR_3 (char *text, int16_t n1, int16_t n2, int16_t n3) {	//12.08.1992
 	wsprintf (mkText, text, n1, n2, n3);	MMM;
 }
 /*----------------------------------------------------------------------*/
@@ -2054,17 +2054,17 @@ void	pr_MES (char *text)	{			//14.08.1992
 //////	MessageBox (GetFocus(), mkText, 0, 0);
 }
 /*----------------------------------------------------------------------*/
-void	pr_MES_1 (char *text, Int16 n1)	{ 		//14.08.1992
+void	pr_MES_1 (char *text, int16_t n1)	{ 		//14.08.1992
 //////	wsprintf (mkText, "MK GREY MESSAGE [1] %s %d", text, n1);
 	wsprintf (mkText, text, n1);		MMM_NP;
 }
 /*----------------------------------------------------------------------*/
-void	pr_MES_2 (char *text, Int16 n1, Int16 n2)	{	//14.08.1992
+void	pr_MES_2 (char *text, int16_t n1, int16_t n2)	{	//14.08.1992
 //////	wsprintf (mkText, "MK GREY MESSAGE [2] %s %d,%d", text, n1, n2);
 	wsprintf (mkText, text, n1, n2);	MMM_NP;
 }
 /*----------------------------------------------------------------------*/
-void	pr_MES_3 (char *text, Int16 n1, Int16 n2, Int16 n3) {	//14.08.1992
+void	pr_MES_3 (char *text, int16_t n1, int16_t n2, int16_t n3) {	//14.08.1992
 	wsprintf (mkText, text, n1, n2, n3);	MMM_NP;
 }
 /*----------------------------------------------------------------------*/

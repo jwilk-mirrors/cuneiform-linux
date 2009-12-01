@@ -86,29 +86,29 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "minmax.h"
 
 #include "resource.h"
-//static  Word8*  lnOcrPath;
+//static  uchar*  lnOcrPath;
 static  Rect16  merge_frame;
 static  Bool32  is_merge_frame=FALSE;
 static  CCOM_handle NumContainer =0;
 static  int32_t   curr_line=0, original_density;
-static  Word8   original_begends;
-static  Word8 * rasterDIB4=NULL;
+static  uchar   original_begends;
+static  uchar * rasterDIB4=NULL;
 static  int32_t   DIB_Hei,    DIB_Wid,
                 DIB_HRes,   DIB_VRes,
                 DIB_TCol,   DIB_TRow,
                 DIB_BW,     DIB_FM=1,
                 DIB_TWid,   DIB_THei ;
 static  Bool32  EnableTemplate=FALSE;
-static  Word8 mask_l[]     =
+static  uchar mask_l[]     =
         {255,    127,   63,   31,   15,    7,    3,   1};
-static  Word8 mask_r[]     =
+static  uchar mask_r[]     =
         {  128,  192,  224,  240,  248,  252,  254, 255};
 static FNREXC_ProgressStart  fnProgressStart_exc =NULL;
 static FNREXC_ProgressStep   fnProgressStep_exc  =NULL;
 static FNREXC_ProgressFinish fnProgressFinish_exc=NULL;
 //=========== Progress Monitor
-static  Word32 progress_vol=0, progress_rel=0;
-void    progress_start (Word32 volume)
+static  uint32_t progress_vol=0, progress_rel=0;
+void    progress_start (uint32_t volume)
 {
 progress_vol=volume;
 if( fnProgressStart_exc )
@@ -125,9 +125,9 @@ if( fnProgressFinish_exc )
 return ;
 }
 
-Word32  progress_set_percent (Word32 step)
+uint32_t  progress_set_percent (uint32_t step)
 {
-Word32  rel = (step/progress_vol)*100;
+uint32_t  rel = (step/progress_vol)*100;
 if( !progress_vol || rel<progress_rel+10 )
     return step;
 progress_rel = rel;
@@ -136,24 +136,24 @@ if( fnProgressStep_exc )
 return step;
 }
  //------------------ Image attributes ---------------------
-Word16 image_disp_byte, image_disp_end;
-Word8 image_disp_mask;
-Int16  image_blth    ;  // pixels per line
-Int16  image_height  ;  // lines in file number
-Int16  image_lth     ;  // bytes per line
-Word8 image_black   ;  // mask for black pixels adding
-Word8 image_white   ;  // mask for wite pixels adding
+uint16_t image_disp_byte, image_disp_end;
+uchar image_disp_mask;
+int16_t  image_blth    ;  // pixels per line
+int16_t  image_height  ;  // lines in file number
+int16_t  image_lth     ;  // bytes per line
+uchar image_black   ;  // mask for black pixels adding
+uchar image_white   ;  // mask for wite pixels adding
 
 static char image_file_status = -1;
-static Word8 image_invert = 0;
+static uchar image_invert = 0;
 //========== Global func ==========
 void extrcomp(void);
 void save_component(ExtComponent *c, version *vs, version *ve,
-                           Word8 *lp, Word16 lpl);
-void invert_tiff (Word8 *p, Word16 lth);
+                           uchar *lp, uint16_t lpl);
+void invert_tiff (uchar *p, uint16_t lth);
 void image_file_close(void);
 Bool image_file_open (void);
-Int16 source_read(Word8 *start, Word8 *ptr, Word8 *end);
+int16_t source_read(uchar *start, uchar *ptr, uchar *end);
 
 //========= Import func =========
 // from GRA_REC.c
@@ -161,29 +161,29 @@ Int16 source_read(Word8 *start, Word8 *ptr, Word8 *end);
 //--------------------------------------------------------------
 extern void     exc_ori_init(void);
 extern void     exc_ori_add(void);
-extern Word8    exc_ori_result(void);
+extern uchar    exc_ori_result(void);
 -*/
 // from COMPKIT.C
-extern Int16   MN_to_line(MN * mn);
-//-extern Word8 * make_raster();
+extern int16_t   MN_to_line(MN * mn);
+//-extern uchar * make_raster();
 // from ALPHABET.C
 /*-Andrey: moved to RRecCom (recognition) and RNorm (autorotate)
 //--------------------------------------------------------------
-extern Bool16   rexc_set_alpha(Word8 language, Word8 *alphabet);
-extern Bool16   rexc_load_tables(Word8 language);
-extern Bool16   rexc_is_language(Word8 language);
-extern int32_t    rexc_gra_type_ori(Word8 lang);
-extern int32_t    rexc_gra_type_rec(Word8 lang);
+extern Bool16   rexc_set_alpha(uchar language, uchar *alphabet);
+extern Bool16   rexc_load_tables(uchar language);
+extern Bool16   rexc_is_language(uchar language);
+extern int32_t    rexc_gra_type_ori(uchar lang);
+extern int32_t    rexc_gra_type_rec(uchar lang);
 extern void     exc_ori_recog(RecVersions *v);
 -*/
 // from MATRIX.C
-extern Int16  matrix_read(Word8 *buff, Word16 lth);
+extern int16_t  matrix_read(uchar *buff, uint16_t lth);
 extern void matrix_open ();
 extern void matrix_close();
 extern void matrix_reset();
 //========== Local func ==========
 static void save_gcomp(ExtComponent *c);
-static Bool process_comp(void * pool,Word32 size);
+static Bool process_comp(void * pool,uint32_t size);
 static Bool flush_cache(void);
 static void reset_cache(void);
 static Bool init_dump_file(void);
@@ -193,13 +193,13 @@ static Bool extrcomp_setup_memory(void);
 //========== Import data
 extern struct main_memory_str Q;
 extern ExtComponent wcomp;
-extern Word16 lpool_lth;
-extern Word8 lpool[];
-extern Word8 work_raster[];
+extern uint16_t lpool_lth;
+extern uchar lpool[];
+extern uchar work_raster[];
 extern int32_t sz_work_raster, sz_work_raster_1;
 extern BOX *dl_last_in_chain;
 //========== Global data
-Word8       language=-1;
+uchar       language=-1;
 int32_t       gra_type_ori =-1;
 int32_t       gra_type_rec =-1;
 TImageOpen  Tiger_ImageOpen;
@@ -207,22 +207,22 @@ TImageRead  Tiger_ImageRead;
 TImageClose Tiger_ImageClose;
 Tiger_ProcComp    Tiger_ProcessComp;
 int32_t   box_number=BOX_NUMBER;
-Word8   fax1x2=0,matrix=0;
-Word16  actual_resolution;
-Word16  comp_max_h, comp_max_w, comp_min_h, comp_min_w;
-Word8   alphabet[256];
-Int16   nBlack,nAll,nWid;
+uchar   fax1x2=0,matrix=0;
+uint16_t  actual_resolution;
+uint16_t  comp_max_h, comp_max_w, comp_min_h, comp_min_w;
+uchar   alphabet[256];
+int16_t   nBlack,nAll,nWid;
 int32_t ExControl;
 //========== Local data
 
 #define CACHESIZE       (64*1024)
 
-static Word8 cache[CACHESIZE],*cache_end,*cache_curr;
+static uchar cache[CACHESIZE],*cache_end,*cache_curr;
 static char dumpfile[]= EXC_DUMP_FILE;
-static Int16  MaxScale;
+static int16_t  MaxScale;
 static jmp_buf jumper;
-static Word16            wHeightRC =                         0;
-static Word16            wLowRC =                            REXC_ERR_NO;;
+static uint16_t            wHeightRC =                         0;
+static uint16_t            wLowRC =                            REXC_ERR_NO;;
 
 //============= Source CODE =============
 
@@ -408,18 +408,18 @@ Bool16  EXC_DIBOpen(Tiger_ImageInfo *lpImageInfo)
 if( !rasterDIB4 )
     return FALSE;
 memset(lpImageInfo,0,sizeof(Tiger_ImageInfo));
-lpImageInfo -> wImageHeight       = (Word16)DIB_Hei;
-lpImageInfo -> wImageWidth        = (Word16)DIB_Wid;
+lpImageInfo -> wImageHeight       = (uint16_t)DIB_Hei;
+lpImageInfo -> wImageWidth        = (uint16_t)DIB_Wid;
 
 lpImageInfo -> wImageByteWidth    = (lpImageInfo -> wImageWidth + 7) / 8;
-lpImageInfo -> wResolutionX       = (Word16)DIB_HRes;
-lpImageInfo -> wResolutionY       = (Word16)DIB_VRes;
-lpImageInfo -> bFotoMetrics       = (Word8)DIB_FM; // inverted tiff image
+lpImageInfo -> wResolutionX       = (uint16_t)DIB_HRes;
+lpImageInfo -> wResolutionY       = (uint16_t)DIB_VRes;
+lpImageInfo -> bFotoMetrics       = (uchar)DIB_FM; // inverted tiff image
 
 return TRUE;
 }
 
-Int16   EXC_DIBRead(Word8 *lpImage, Word16 wMaxSize)
+int16_t   EXC_DIBRead(uchar *lpImage, uint16_t wMaxSize)
 {
 int     d = (DIB_Wid+7)/8, len;
 
@@ -464,7 +464,7 @@ else
 return len;
 }
 // reverse order of string. DIB
-Int16   EXC_DIBReadReverse(Word8 *lpImage, Word16 wMaxSize)
+int16_t   EXC_DIBReadReverse(uchar *lpImage, uint16_t wMaxSize)
 {
 int     d = (DIB_Wid+7)/8, len;
 if( !EnableTemplate )
@@ -510,13 +510,13 @@ return len;
 /////////////////////
 // OUTPUT CALLBACKs
 /////////////////////
-Word16          push_box_to_container(ExcBox *  g)
+uint16_t          push_box_to_container(ExcBox *  g)
 {
 CCOM_New(NumContainer ,g->row, g->col, g->w, g->h);
 return 1;
 }
 
-Bool    AcceptBoxes(void * pool, Word32 size)
+Bool    AcceptBoxes(void * pool, uint32_t size)
 {
 ExcBox* g , *ge;
 
@@ -530,22 +530,22 @@ for(    g = (ExcBox*)pool, ge = (ExcBox*)((char*)pool+size)  ;
 return TRUE;
 }
 
-Word16          push_comp_to_container(ExtComponent *  g)
+uint16_t          push_comp_to_container(ExtComponent *  g)
 {
-Word8           res[16];
+uchar           res[16];
 int             nvers, i;
 RecVersions     vers={0};
 CCOM_comp    *  curr_comp;
 CCOM_USER_BLOCK ublock[3];
-Word16          lth;
-Word8        *  lpool;
+uint16_t          lth;
+uchar        *  lpool;
 
-lth = *((Word16*)((Word8*)g + sizeof(ExtComponent))); // size
-lpool = (Word8*) ((Word8*)g + g->lines); // linerepesentation
+lth = *((uint16_t*)((uchar*)g + sizeof(ExtComponent))); // size
+lpool = (uchar*) ((uchar*)g + g->lines); // linerepesentation
 if( g->nvers )
     {
     nvers = g->nvers;
-    memcpy(res,(Word8*)g + g->records, g->nvers);
+    memcpy(res,(uchar*)g + g->records, g->nvers);
     }
 else
     nvers=res[0]=0;
@@ -578,11 +578,11 @@ if( curr_comp  )
         {
         ublock[0].code=CCOM_UB_DENSITY;
         ublock[0].size=4;
-        ublock[0].data=(Word8*)&g->dens;
+        ublock[0].data=(uchar*)&g->dens;
         ublock[0].next_block=&ublock[1];
         ublock[1].code=CCOM_UB_BEGENDS;
         ublock[1].size=1;
-        ublock[1].data=(Word8*)&g->begends;
+        ublock[1].data=(uchar*)&g->begends;
         ublock[1].next_block=0;
         }
     if( is_merge_frame )
@@ -590,7 +590,7 @@ if( curr_comp  )
         ublock[1].next_block=&ublock[2];
         ublock[2].code=CCOM_UB_MERGEFRAME;
         ublock[2].size=sizeof(merge_frame);
-        ublock[2].data=(Word8*)&merge_frame;
+        ublock[2].data=(uchar*)&merge_frame;
         ublock[2].next_block=0;
         }
     CCOM_Store(curr_comp,0,
@@ -607,16 +607,16 @@ if( curr_comp  )
 return lth ;
 }
 
-Bool    AcceptComps(void * pool, Word32 size)
+Bool    AcceptComps(void * pool, uint32_t size)
 {
 ExtComponent *  g , *ge;
-Word16          lth;
+uint16_t          lth;
 
 for( g = (ExtComponent*)pool, ge = (ExtComponent*)((char*)pool+size);
 g<ge    ;
-g=(ExtComponent*)((char*)g+sizeof(Word16)+sizeof(ExtComponent)+lth+g->nvers))
+g=(ExtComponent*)((char*)g+sizeof(uint16_t)+sizeof(ExtComponent)+lth+g->nvers))
     {
-    lth = *((Word16*)((Word8*)g + sizeof(ExtComponent))); // size
+    lth = *((uint16_t*)((uchar*)g + sizeof(ExtComponent))); // size
        //push_comp_to_container(g);
     }
 return TRUE;
@@ -624,7 +624,7 @@ return TRUE;
 
 
 Bool32  REXCExtra(ExcControl ExCW,
-    Word8 *lpRaster, int32_t BWid, Bool32 ReverseOrder,
+    uchar *lpRaster, int32_t BWid, Bool32 ReverseOrder,
     int32_t Wid, int32_t Hei, int32_t HRes, int32_t VRes,
     int32_t TemplCol, int32_t TemplRow, int32_t TemplWid, int32_t TemplHei, Bool32 FotoMetr )
 
@@ -793,12 +793,12 @@ return FALSE;
 }
 
 Bool32  REXCExtraDIB(ExcControl ExCW,
-     Word8 *lp_DIB,
+     uchar *lp_DIB,
      int32_t TemplCol, int32_t TemplRow, int32_t TemplWid, int32_t TemplHei)
 
 {
 REXC_DIB        *lpDIB = (REXC_DIB *)lp_DIB;
-REXC_RGBQUAD    *pal=(REXC_RGBQUAD    *)((Word8*)(lpDIB)+sizeof(REXC_DIB ));
+REXC_RGBQUAD    *pal=(REXC_RGBQUAD    *)((uchar*)(lpDIB)+sizeof(REXC_DIB ));
 Bool32           foto_metric = TRUE;
 
 if( pal[0].rgbBlue!=0 && pal[0].rgbRed!=0 && pal[0].rgbGreen!=0 &&
@@ -806,7 +806,7 @@ if( pal[0].rgbBlue!=0 && pal[0].rgbRed!=0 && pal[0].rgbGreen!=0 &&
     foto_metric = FALSE;
 
 return REXCExtra(ExCW,
-    (Word8*)(lpDIB)+sizeof(REXC_DIB )+2*sizeof(REXC_RGBQUAD),
+    (uchar*)(lpDIB)+sizeof(REXC_DIB )+2*sizeof(REXC_RGBQUAD),
     ((((lpDIB->biWidth+7)/8)+3)/4)*4, 1,
     lpDIB->biWidth, lpDIB->biHeight,
     lpDIB->biXPelsPerMeter, lpDIB->biYPelsPerMeter,
@@ -842,9 +842,9 @@ void image_file_close(void)
  image_file_status = -1;
 }
 
-static Word8 rest_line_mask_tab[8]=
+static uchar rest_line_mask_tab[8]=
  {0xff,0x80,0xc0,0xe0,0xf0,0xf8,0xfc,0xfe};
-static Word8 start_line_mask_tab[8]=
+static uchar start_line_mask_tab[8]=
  {0xff,0x7f,0x3f,0x1f,0x0f,0x07,0x03,0x01};
 
 Bool image_file_open (void)
@@ -891,9 +891,9 @@ Bool image_file_open (void)
 }
 
 
-Int16 source_read(Word8* start, Word8* ptr, Word8* end)
+int16_t source_read(uchar* start, uchar* ptr, uchar* end)
 {
- Int16 i, l;
+ int16_t i, l;
 
  i=end-ptr; /* length of rest of last string */
  if (i)  { memcpy (start,ptr,i); start += i; }
@@ -909,7 +909,7 @@ Int16 source_read(Word8* start, Word8* ptr, Word8* end)
 }
 
 
-void error_exit(Int16 group, Int16 element)
+void error_exit(int16_t group, int16_t element)
 {
 group=element;
 longjmp(jumper,element);
@@ -925,7 +925,7 @@ void alone_comp(void)
         save_gcomp(&wcomp);
 }
 
-void save_component(ExtComponent *c, version *vs, version *ve, Word8* lp, Word16 lpl)
+void save_component(ExtComponent *c, version *vs, version *ve, uchar* lp, uint16_t lpl)
 {
 char pool[64*1024];
 char *p=pool;
@@ -944,7 +944,7 @@ if( acc==OLEG_DEBUG )
         }
 #endif
  vs=ve; /* avoid warn */
- c->size = sizeof(ExtComponent)+sizeof(Word16)+lpl;
+ c->size = sizeof(ExtComponent)+sizeof(uint16_t)+lpl;
  c->lines= sizeof(ExtComponent);
  if( lpl>sizeof(pool)-10 )
         {
@@ -964,8 +964,8 @@ if(  c->scale<3 && (c->w>>c->scale)<comp_max_w && (c->h>>c->scale)<comp_max_h )
         c->h >>=c->scale;
         c->rw  =(c->w+7)/8;
         }
-    c->nvers=  (Int16)EVNRecog_lp(  (ExtComponent *)c, lp, lpl, evn_res   );
-    c->records = (Int16)(sizeof(ExtComponent)+sizeof(Word16)+lpl);
+    c->nvers=  (int16_t)EVNRecog_lp(  (ExtComponent *)c, lp, lpl, evn_res   );
+    c->records = (int16_t)(sizeof(ExtComponent)+sizeof(uint16_t)+lpl);
     mkrs=FALSE;
 
     if( ((ExControl & Ex_NetRecog)||c->scale) &&
@@ -990,7 +990,7 @@ if(  c->scale<3 && (c->w>>c->scale)<comp_max_w && (c->h>>c->scale)<comp_max_h )
             gra_res[j]=0;
             if( gra_res[0] )
                 {
-                c->nvers=(Int16)j;
+                c->nvers=(int16_t)j;
                 memcpy(evn_res, gra_res,j);
                 c->cs=255; // gra versions
                 }
@@ -1015,7 +1015,7 @@ if( c->scale )
     c->begends=original_begends;
     }
 memcpy(p,c   ,sizeof(ExtComponent));  p += sizeof(ExtComponent);
-memcpy(p,&lpl,sizeof(Word16));  p += sizeof(Word16);
+memcpy(p,&lpl,sizeof(uint16_t));  p += sizeof(uint16_t);
 memcpy(p,lp,lpl);               p += lpl;
 /*-
 if( (ExControl & Ex_EvnRecog) && c->nvers>0 )
@@ -1054,7 +1054,7 @@ if( ExControl & Ex_NoContainer )
  process_comp(&g,sizeof(gcomp));
 }
 
-Bool process_comp(void * pool,Word32 size)
+Bool process_comp(void * pool,uint32_t size)
 {
  assert(size < CACHESIZE);
  assert(pool && cache);
@@ -1093,11 +1093,11 @@ int h;
  return close(h)==0;
 }
 
-EXC_FUNC(Bool32)  REXCMakeLP( RecRaster   *rRaster , Word8 *lp, Int16 *lp_size, Int16 *numcomp)
+EXC_FUNC(Bool32)  REXCMakeLP( RecRaster   *rRaster , uchar *lp, int16_t *lp_size, int16_t *numcomp)
 {
-Word8  *l, *ls;
+uchar  *l, *ls;
 int     len, numc;
-Int16  *llen;
+int16_t  *llen;
 ls=l=EVNMakeLine( rRaster , 2);
 if( !l )
     {
@@ -1106,22 +1106,22 @@ if( !l )
     }
 for(numc=len=0;;)
     {
-    llen = (Int16*)l;
+    llen = (int16_t*)l;
     len += *llen;
     if( *llen==0 )
         break;
     numc++;
     l+=*llen;
     }
-*lp_size = (Int16)len;
-*numcomp = (Int16)numc;
+*lp_size = (int16_t)len;
+*numcomp = (int16_t)numc;
 memcpy(lp,ls,len);
 return TRUE;
 }
 
 /*-Andrey: moved to RNorm (autorotate)
 //--------------------------------------------------------------
-EXC_FUNC(Bool32) REXC_GetOrient(Word8 *ori)
+EXC_FUNC(Bool32) REXC_GetOrient(uchar *ori)
 {
 if( !ori )
     {
@@ -1133,7 +1133,7 @@ if( !ori )
 if (*ori == 5)
 {
 	const double formatA4 = 1.4;
-	Word32 PageNumber = CPAGE_GetCurrentPage();
+	uint32_t PageNumber = CPAGE_GetCurrentPage();
 	Handle h_Page = CPAGE_GetHandlePage(PageNumber);
 	PAGEINFO page_info = {0};
     if(GetPageInfo(h_Page,&page_info))
@@ -1149,7 +1149,7 @@ return (*ori<4);
 }
 -*/
 
-EXC_FUNC(Bool32) REXC_GetInvertion(Word8 *inv)
+EXC_FUNC(Bool32) REXC_GetInvertion(uchar *inv)
 {
 if( !(ExControl & Ex_Background) )
     {
@@ -1173,7 +1173,7 @@ else
 return TRUE;
 }
 
-EXC_FUNC(Bool32) REXC_GetExportData(Word32 dwType, void * pData)
+EXC_FUNC(Bool32) REXC_GetExportData(uint32_t dwType, void * pData)
 {
 #define CASE_DATA(a,b,c)        case a: *(b *)pData = c; break
         Bool32 rc = TRUE;
@@ -1181,66 +1181,66 @@ EXC_FUNC(Bool32) REXC_GetExportData(Word32 dwType, void * pData)
   wLowRC = REXC_ERR_NO;
         switch(dwType)
         {
-        CASE_DATA(REXC_Word8_Matrix                     ,Word8,matrix);
-        CASE_DATA(REXC_Word8_Fax1x2                     ,Word8,fax1x2);
-        CASE_DATA(REXC_Word16_ActualResolution  ,Word16,actual_resolution);
+        CASE_DATA(REXC_Word8_Matrix                     ,uchar,matrix);
+        CASE_DATA(REXC_Word8_Fax1x2                     ,uchar,fax1x2);
+        CASE_DATA(REXC_Word16_ActualResolution  ,uint16_t,actual_resolution);
 /*-Andrey: moved to RRecCom (recognition) and RNorm (autorotate)
 //--------------------------------------------------------------
         case REXC_FNEVNPROPERT:
-            *(Word32*)pData =          (Word32)REXC_SetEVNProperties;
+            *(uint32_t*)pData =          (uint32_t)REXC_SetEVNProperties;
             break;
 -*/
         case REXC_FNEXTRACOMP :
-            *(Word32*)pData =          (Word32)REXCExtracomp;
+            *(uint32_t*)pData =          (uint32_t)REXCExtracomp;
             break;
         case REXC_FNEXTRA :
-            *(Word32*)pData =          (Word32)REXCExtra;
+            *(uint32_t*)pData =          (uint32_t)REXCExtra;
             break;
         case REXC_FNEXTRADIB:
-            *(Word32*)pData =          (Word32)REXCExtraDIB;
+            *(uint32_t*)pData =          (uint32_t)REXCExtraDIB;
             break;
 
         case    REXC_FNGETCONTAINER:
-            *(Word32*)pData =          (Word32)REXCGetContainer;
+            *(uint32_t*)pData =          (uint32_t)REXCGetContainer;
             break;
 
         case    REXC_FNGETLENEREP:
-            *(Word32*)pData =          (Word32)REXCMakeLP;
+            *(uint32_t*)pData =          (uint32_t)REXCMakeLP;
             break;
         case    REXC_FNVERSION:
-            *(Word32*)pData =          (Word32)REXC_VERSION_CODE;
+            *(uint32_t*)pData =          (uint32_t)REXC_VERSION_CODE;
             break;
 /*-Andrey: moved to RRecCom (recognition) and RNorm (autorotate)
 //--------------------------------------------------------------
         case    REXC_FNREX_ISLANGUAGE:
-            *(Word32*)pData =          (Word32)REXC_IsLanguage;
+            *(uint32_t*)pData =          (uint32_t)REXC_IsLanguage;
             break;
         case    REXC_FNGETORIENT:
-            *(Word32*)pData =          (Word32)REXC_GetOrient;
+            *(uint32_t*)pData =          (uint32_t)REXC_GetOrient;
             break;
 -*/
         case    REXC_FNMN2CCOM:
-            *(Word32*)pData =          (Word32)REXC_MN2CCOM;
+            *(uint32_t*)pData =          (uint32_t)REXC_MN2CCOM;
             break;
         case    REXC_FNGETINVERTION:
-            *(Word32*)pData =          (Word32)REXC_GetInvertion;
+            *(uint32_t*)pData =          (uint32_t)REXC_GetInvertion;
             break;
 /*-Andrey: moved to RRecCom (recognition) and RNorm (autorotate)
 //--------------------------------------------------------------
         case    REXC_FNEVNALPHABET:     // установка алфавита для евент
-            *(Word32*)pData =          (Word32)REXC_SetEVNAlphabet;
+            *(uint32_t*)pData =          (uint32_t)REXC_SetEVNAlphabet;
             break;
 -*/
         case    REXC_FNEXTRACOMP3CB:    // 3 коллбэка
-            *(Word32*)pData =          (Word32)REXCExtracomp3CB;
+            *(uint32_t*)pData =          (uint32_t)REXCExtracomp3CB;
             break;
 /*-Andrey: moved to RRecCom (recognition) and RNorm (autorotate)
 //--------------------------------------------------------------
         case    REXC_FNEXTGETRECRASTERORIENT: // ориентация рабочего растра
-            *(Word32*)pData =          (Word32)exc_get_rec_raster_orient;
+            *(uint32_t*)pData =          (uint32_t)exc_get_rec_raster_orient;
             break;
         case    REXC_FNSETALLALPHAGRA: // алфавит нейронной сети
-            *(Word32*)pData =          (Word32)exc_set_all_alphabet_gra;
+            *(uint32_t*)pData =          (uint32_t)exc_set_all_alphabet_gra;
             break;
 -*/
         default:
@@ -1251,20 +1251,20 @@ EXC_FUNC(Bool32) REXC_GetExportData(Word32 dwType, void * pData)
 return rc;
 }
 
-EXC_FUNC(Bool32) REXC_SetImportData(Word32 dwType, void * pData)
+EXC_FUNC(Bool32) REXC_SetImportData(uint32_t dwType, void * pData)
 {
 #define CASE_DATA(a,b,c)        case a: c = *(b *)pData; break
 #define CASE_PDATA(a,b,c)       case a: c = (b)pData;    break
 wLowRC = REXC_ERR_NO;
 switch(dwType)
     {
-        CASE_DATA(REXC_Word8_Matrix             ,Word8,matrix);
-        CASE_DATA(REXC_Word8_Fax1x2             ,Word8,fax1x2);
-    CASE_DATA(REXC_Word16_ActualResolution,Word16,actual_resolution);
+        CASE_DATA(REXC_Word8_Matrix             ,uchar,matrix);
+        CASE_DATA(REXC_Word8_Fax1x2             ,uchar,fax1x2);
+    CASE_DATA(REXC_Word16_ActualResolution,uint16_t,actual_resolution);
     CASE_PDATA(REXC_ProgressStart,      FNREXC_ProgressStart, fnProgressStart_exc);
         CASE_PDATA(REXC_ProgressStep,   FNREXC_ProgressStep,  fnProgressStep_exc);
         CASE_PDATA(REXC_ProgressFinish, FNREXC_ProgressFinish,fnProgressFinish_exc);
-//    CASE_PDATA(REXC_OcrPath,    Word8*, lnOcrPath);
+//    CASE_PDATA(REXC_OcrPath,    uchar*, lnOcrPath);
     default:
             wLowRC = REXC_ERR_NOTIMPLEMENT;
             return FALSE;
@@ -1274,16 +1274,16 @@ switch(dwType)
 return TRUE;
 }
 
-EXC_FUNC(Word32)   REXC_GetReturnCode(void)
+EXC_FUNC(uint32_t)   REXC_GetReturnCode(void)
 {
 if( wLowRC == REXC_ERR_NO )
   return 0;
 return (wHeightRC<<16)|(wLowRC-REXC_ERR_MIN);
 }
 
-EXC_FUNC(char*)   REXC_GetReturnString(Word32 dwError)
+EXC_FUNC(char*)   REXC_GetReturnString(uint32_t dwError)
 {
-        Word16 rc = (Word16)((dwError & 0xFFFF) );
+        uint16_t rc = (uint16_t)((dwError & 0xFFFF) );
         static char szBuffer[512];
 
         if( dwError >> 16 != wHeightRC)
@@ -1297,7 +1297,7 @@ EXC_FUNC(char*)   REXC_GetReturnString(Word32 dwError)
         return szBuffer;
 }
 
-EXC_FUNC(Bool32) REXC_Init(Word16 wHeightCode, Handle hStorage)
+EXC_FUNC(Bool32) REXC_Init(uint16_t wHeightCode, Handle hStorage)
 {
 if(Q.boxstart)
     {
@@ -1322,21 +1322,21 @@ return;
 
 struct cut_pnt
 {
- Int16 xl;
- Int16 xr;
- Int16 est;
- Int16 ref;
+ int16_t xl;
+ int16_t xr;
+ int16_t est;
+ int16_t ref;
 };
 
 typedef struct cut_pnt CP;
 #define MAX_NUM_CUTPN 2048
 struct big_merge_struct
 {
- Int16 vh[2*RASTER_MAX_HEIGHT+2];
+ int16_t vh[2*RASTER_MAX_HEIGHT+2];
  char eh[MAX_NUM_CUTPN];
  char sh[MAX_NUM_CUTPN];
- Word16 np;
- Int16 min_est;
+ uint16_t np;
+ int16_t min_est;
  CP cp[MAX_NUM_CUTPN];
 };
 
@@ -1345,14 +1345,14 @@ typedef struct big_merge_struct BM;
 BM W;
 
 static void frame_hist (MN *mn);
-Word8* frame_cut_MN(Int16, Int16);
+uchar* frame_cut_MN(int16_t, int16_t);
 static Bool32 frame_cut_points();
 static void frame_select();
 static Bool16 frame_check();
 static int32_t frame_cut(MN *mn);
 static Bool16 save_picture_scale (MN *mn);
 
-static Int16 big_merge(MN *mn)
+static int16_t big_merge(MN *mn)
 {
 
  if ((wcomp.h > comp_max_h) || (wcomp.w >= sizeof (W.eh)))
@@ -1380,7 +1380,7 @@ static void frame_hist (MN *mn)
  BOX *box;
  LNSTRT * ls;
  BOXINT * iv;
- Int16 i,j, row, end, lth;
+ int16_t i,j, row, end, lth;
  memset (&W,0,sizeof(W));
  i = mn->mnboxcnt;      box = (BOX *)(mn->mnfirstbox);
  while (--i >= 0)
@@ -1416,10 +1416,10 @@ next_box:;
 
 static Bool16 frame_check()
 {
- Word16 hist[2*RASTER_MAX_HEIGHT+2];
- Word16 s,bound,i;
- Word8* pe,*pb;
- Word16 out_4max;
+ uint16_t hist[2*RASTER_MAX_HEIGHT+2];
+ uint16_t s,bound,i;
+ uchar* pe,*pb;
+ uint16_t out_4max;
  memset (hist,0,sizeof(hist));
  pb = W.sh; pe = W.sh+wcomp.w;
  while (pb != pe) hist[*(pb++)]++;
@@ -1442,9 +1442,9 @@ reject:;
 
 static Bool32 frame_cut_points()
 {
- Int16 ncp,ndown,nups,nupe,nw,nstart;
- Int16 add_est;
- Int16 thick_b;
+ int16_t ncp,ndown,nups,nupe,nw,nstart;
+ int16_t add_est;
+ int16_t thick_b;
  W.min_est = 0x7fff; W.np = 1; thick_b = (wcomp.h < 34) ? 2 : 3;
 
 if( actual_resolution>400 )
@@ -1547,7 +1547,7 @@ return 1;
 }
 
 
-static Int16 dist_est (Int16 est)
+static int16_t dist_est (int16_t est)
 {
       if (est < 64) return 0;
       else
@@ -1560,7 +1560,7 @@ static Int16 dist_est (Int16 est)
 
 static void frame_select()
 {
- Int16 i, j, est, mest, ref, we, wr;
+ int16_t i, j, est, mest, ref, we, wr;
  if (W.np == 1) return;
  W.min_est--;
  W.cp[0].est = W.min_est;
@@ -1569,10 +1569,10 @@ static void frame_select()
     ref = 0;
     we = W.cp[i].est - W.min_est;
     wr = W.cp[i].xr;
-    mest = we + dist_est((Int16)(wcomp.w - wr));
+    mest = we + dist_est((int16_t)(wcomp.w - wr));
     for (j = i+1; j<W.np; j++)
      {
-      est = W.cp[j].est + we + dist_est((Int16)(W.cp[j].xl - wr));
+      est = W.cp[j].est + we + dist_est((int16_t)(W.cp[j].xl - wr));
       if (est < mest) { ref = j; mest = est; }
      }
     W.cp[i].est = mest; W.cp[i].ref = ref;
@@ -1581,9 +1581,9 @@ static void frame_select()
 //----------------------- Frame cut ---------------------------------------
 
 MN * frame_comp;
-Int16 frame_upper, frame_comp_col, frame_height;
+int16_t frame_upper, frame_comp_col, frame_height;
 BOX * frame_end;
-static void frame_put (Word8* p, Int16 x, Int16 l, Int16 from, Int16 to);
+static void frame_put (uchar* p, int16_t x, int16_t l, int16_t from, int16_t to);
 
 void frame_cut_MN_set (MN *mn)                  //AK 14.03.97 void
 {
@@ -1592,11 +1592,11 @@ void frame_cut_MN_set (MN *mn)                  //AK 14.03.97 void
  frame_height = wcomp.h;
 }
 
-Word8* frame_cut_MN (Int16 from, Int16 to)
+uchar* frame_cut_MN (int16_t from, int16_t to)
 {
- Int16 bw, col, x, cnt;
+ int16_t bw, col, x, cnt;
  BOX *bp;
- Word8* p;
+ uchar* p;
  LNSTRT *lp;
  BOXINT *ip;
  to -= from; bw = (to+7) >> 3;
@@ -1622,11 +1622,11 @@ box_cont:
   }
  return work_raster;
 }
-static Word8 start_shift[] = {255, 127, 63, 31, 15, 7, 3 ,1};
-static Word8 end_shift[] = {0,0x80,0xc0,0xe0,0xf0,0xf8,0xfc,0xfe};
-static void frame_put (Word8* p, Int16 x, Int16 l, Int16 from, Int16 to)
+static uchar start_shift[] = {255, 127, 63, 31, 15, 7, 3 ,1};
+static uchar end_shift[] = {0,0x80,0xc0,0xe0,0xf0,0xf8,0xfc,0xfe};
+static void frame_put (uchar* p, int16_t x, int16_t l, int16_t from, int16_t to)
 {
- Word8 b;
+ uchar b;
  x -= l + from; if (x < 0) { if ((l+=x) < 0) return; x = 0; }
  if ( x >= to) return; if (to - x < l) l = to - x;
  p += x >> 3; b = start_shift [x & 7]; l+= x&7;
@@ -1634,15 +1634,15 @@ static void frame_put (Word8* p, Int16 x, Int16 l, Int16 from, Int16 to)
  b &= end_shift[l]; *p |= b;
 }
 
-static Bool16 exclude_one_piece(Int16 xl, Int16 xr, Int16 x0, Int16 y0, Int16 xmax, Int16 h)
+static Bool16 exclude_one_piece(int16_t xl, int16_t xr, int16_t x0, int16_t y0, int16_t xmax, int16_t h)
 {
 #ifdef _USE_LOC_
 MN * wm;
-Word8* raster;
+uchar* raster;
 
 
      raster = frame_cut_MN(xl,xr);
-     wm = LOC_CLocomp (raster, (xr - xl + 7)>>3, h, y0, (Int16)(x0 + xl));
+     wm = LOC_CLocomp (raster, (xr - xl + 7)>>3, h, y0, (int16_t)(x0 + xl));
 
      while (wm && wm->mnfirstbox)
        {
@@ -1660,8 +1660,8 @@ return FALSE;
 
 static int32_t frame_cut(MN *mn)
 {
- Int16 xl, xr, ncp,cutn;
- Int16 x0 = wcomp.left, y0=wcomp.upper, xmax = wcomp.w, h=wcomp.h;
+ int16_t xl, xr, ncp,cutn;
+ int16_t x0 = wcomp.left, y0=wcomp.upper, xmax = wcomp.w, h=wcomp.h;
 
 
  if (W.cp[0].ref == 0)
@@ -1685,9 +1685,9 @@ static int32_t frame_cut(MN *mn)
     }
    else if( xr - xl>=comp_max_w && xr - xl < 2*comp_max_w)
     {
-    if( !exclude_one_piece(xl, (Int16)((xl+xr)/2), x0, y0, xmax, h) )
+    if( !exclude_one_piece(xl, (int16_t)((xl+xr)/2), x0, y0, xmax, h) )
         break;
-    if( !exclude_one_piece((Int16)((xl+xr)/2), xr, x0, y0, xmax, h) )
+    if( !exclude_one_piece((int16_t)((xl+xr)/2), xr, x0, y0, xmax, h) )
         break;
     cutn++;
     }
@@ -1730,10 +1730,10 @@ return;
 
 static void save_prot(void)
         { // protocol for exernal viewer
-         Word8* p;
-         Int16 l;
+         uchar* p;
+         int16_t l;
          FILE *ev;
-         Word8 wr_ltr;
+         uchar wr_ltr;
          wr_ltr = 'c';
          ev=fopen("sqprot.pro","a");
          if (ev==NULL) ev=fopen("sqprot.pro","w");
@@ -1752,7 +1752,7 @@ static void save_prot(void)
         }
 
 
-extern void WriteInterval ( Word8 *p, int x , int l);
+extern void WriteInterval ( uchar *p, int x , int l);
 static void WriteOneInterval ( int h, int b, int e, int bw, int scale)
 {
 if( b<0 )
@@ -1777,7 +1777,7 @@ return;
 
 
 // compress MN to work_raster
-static Bool16 scaleMN2work_raster(  MN *mn,Int16 upper, Int16 left, Int16 w, Int16 h,
+static Bool16 scaleMN2work_raster(  MN *mn,int16_t upper, int16_t left, int16_t w, int16_t h,
                         int     scale_2)
 {
 BOX    *pBox;
@@ -1787,7 +1787,7 @@ BOXINT *pInts;
 BOXINT *pAfterInts;
 BOXINT *pInt;
 int             xEnd, xBeg, y, hmin, hmax;
-Int16     top=upper+h, right=left+w;
+int16_t     top=upper+h, right=left+w;
 
 
 memset( work_raster,0, wcomp.rw*wcomp.h);
@@ -1799,7 +1799,7 @@ for (pBox = (BOX *) mn -> mnfirstbox, nBox = 0;
         {
     if (pBox -> boxflag & BOXBEG)
         { // new line
-        pLine = (LNSTRT *) ((Word8 *) pBox + sizeof (BOX));
+        pLine = (LNSTRT *) ((uchar *) pBox + sizeof (BOX));
 
         xEnd = pLine -> x-wcomp.left;
         y    = pLine -> y-wcomp.upper;
@@ -1807,18 +1807,18 @@ for (pBox = (BOX *) mn -> mnfirstbox, nBox = 0;
         if( y>hmax )    hmax=y;
         xBeg = MAX(xEnd - pLine -> l,0);
         WriteOneInterval ( y, xBeg, MIN(xEnd,right) ,wcomp.rw,scale_2);
-        pInts = (BOXINT *) ((Word8 *) pBox + sizeof (BOX) + sizeof (LNSTRT));
+        pInts = (BOXINT *) ((uchar *) pBox + sizeof (BOX) + sizeof (LNSTRT));
         }
     else
         { // continue BOX
-        pInts = (BOXINT *) ((Word8 *) pBox + sizeof (BOX));
+        pInts = (BOXINT *) ((uchar *) pBox + sizeof (BOX));
         }
 
-    pAfterInts = (BOXINT *) ((Word8 *) pBox + pBox -> boxptr);
+    pAfterInts = (BOXINT *) ((uchar *) pBox + pBox -> boxptr);
 
     for (pInt = pInts;   ;     pInt++)
         { // cont line
-        int s=(Word8 *) pAfterInts - (Word8 *) pInt;
+        int s=(uchar *) pAfterInts - (uchar *) pInt;
         if( s<sizeof (BOXINT) )
             break;
         xEnd += pInt -> d;
@@ -1844,7 +1844,7 @@ return 0;
 #endif
 }
 
-static store_MN(MN *locmn,Int16 upper, Int16 left, Int16 w, Int16 h,
+static store_MN(MN *locmn,int16_t upper, int16_t left, int16_t w, int16_t h,
                         int     scale_2)
 {
 if( !locmn )
@@ -1915,23 +1915,23 @@ for (pBox = (BOX *) mn -> mnfirstbox, nBox = 0;
         {
     if (pBox -> boxflag & BOXBEG)
         { // new line
-        pLine = (LNSTRT *) ((Word8 *) pBox + sizeof (BOX));
+        pLine = (LNSTRT *) ((uchar *) pBox + sizeof (BOX));
 
         xEnd = pLine -> x-wcomp.left;
         if( (xEnd>>scale_2)>255 || (pLine->l>>scale_2)>255 )
             return TRUE;
-        pInts = (BOXINT *) ((Word8 *) pBox + sizeof (BOX) + sizeof (LNSTRT));
+        pInts = (BOXINT *) ((uchar *) pBox + sizeof (BOX) + sizeof (LNSTRT));
         }
     else
             { // continue BOX
-        pInts = (BOXINT *) ((Word8 *) pBox + sizeof (BOX));
+        pInts = (BOXINT *) ((uchar *) pBox + sizeof (BOX));
         }
 
-    pAfterInts = (BOXINT *) ((Word8 *) pBox + pBox -> boxptr);
+    pAfterInts = (BOXINT *) ((uchar *) pBox + pBox -> boxptr);
 
     for (pInt = pInts;     ;      pInt++)
         { // cont line
-        int s=(Word8 *) pAfterInts - (Word8 *) pInt;
+        int s=(uchar *) pAfterInts - (uchar *) pInt;
         if( s<sizeof (BOXINT) )
             break;
         xEnd += pInt -> d;
@@ -1968,20 +1968,20 @@ for (s=0, pBox = (BOX *) mn -> mnfirstbox, nBox = 0;
             {
             start=0;
             }
-        pLine = (LNSTRT *) ((Word8 *) pBox + sizeof (BOX));
+        pLine = (LNSTRT *) ((uchar *) pBox + sizeof (BOX));
         hh=1;
-        pInts = (BOXINT *) ((Word8 *) pBox + sizeof (BOX) + sizeof (LNSTRT));
+        pInts = (BOXINT *) ((uchar *) pBox + sizeof (BOX) + sizeof (LNSTRT));
         }
     else
         { // continue BOX
-        pInts = (BOXINT *) ((Word8 *) pBox + sizeof (BOX));
+        pInts = (BOXINT *) ((uchar *) pBox + sizeof (BOX));
         }
 
-    pAfterInts = (BOXINT *) ((Word8 *) pBox + pBox -> boxptr);
+    pAfterInts = (BOXINT *) ((uchar *) pBox + pBox -> boxptr);
 
     for (pInt = pInts;      ;   pInt++)
         { // cont line
-        int s=(Word8 *) pAfterInts - (Word8 *) pInt;
+        int s=(uchar *) pAfterInts - (uchar *) pInt;
         if( s<sizeof (BOXINT) )
             break;
         hh++;
@@ -1994,7 +1994,7 @@ return s;
 }
 
 // store long MN intervals to container
-static Bool16 longMN2container(  MN *mn,Int16 upper, Int16 left, Int16 w, Int16 h,
+static Bool16 longMN2container(  MN *mn,int16_t upper, int16_t left, int16_t w, int16_t h,
                         int     scale_2)
 {
 BOX    *pBox;
@@ -2021,7 +2021,7 @@ for (pBox = (BOX *) mn -> mnfirstbox, nBox = 0;
         { // new line
         if( !start )
             {
-            CCOM_LargeNewInterval(cmp,(Int16)0,(Int16)0); // fictive interval
+            CCOM_LargeNewInterval(cmp,(int16_t)0,(int16_t)0); // fictive interval
             lnh->lth=4*2+4*(hh+1); // header + intervals + fictive interval
             lnh->h      =hh; // store actual line header
             }
@@ -2029,7 +2029,7 @@ for (pBox = (BOX *) mn -> mnfirstbox, nBox = 0;
             {
             start=0;
             }
-        pLine = (LNSTRT *) ((Word8 *) pBox + sizeof (BOX));
+        pLine = (LNSTRT *) ((uchar *) pBox + sizeof (BOX));
         hh=1;
         xEnd = pLine -> x-wcomp.left;
         y0=y    = pLine -> y-wcomp.upper;
@@ -2040,30 +2040,30 @@ for (pBox = (BOX *) mn -> mnfirstbox, nBox = 0;
         lnh->h  =0; // store actual line header
         lnh->row        =y;
         lnh->flg        =pBox->boxflag;
-        CCOM_LargeNewInterval(cmp,(Int16)xEnd,(Int16)pLine -> l);
-        pInts = (BOXINT *) ((Word8 *) pBox + sizeof (BOX) + sizeof (LNSTRT));
+        CCOM_LargeNewInterval(cmp,(int16_t)xEnd,(int16_t)pLine -> l);
+        pInts = (BOXINT *) ((uchar *) pBox + sizeof (BOX) + sizeof (LNSTRT));
         }
     else
         { // continue BOX
         lnh->flg        |=pBox->boxflag;
-        pInts = (BOXINT *) ((Word8 *) pBox + sizeof (BOX));
+        pInts = (BOXINT *) ((uchar *) pBox + sizeof (BOX));
         }
 
-    pAfterInts = (BOXINT *) ((Word8 *) pBox + pBox -> boxptr);
+    pAfterInts = (BOXINT *) ((uchar *) pBox + pBox -> boxptr);
 
     for (pInt = pInts;  ;  pInt++)
         { // cont line
-        int s=(Word8 *) pAfterInts - (Word8 *) pInt;
+        int s=(uchar *) pAfterInts - (uchar *) pInt;
         if( s<sizeof (BOXINT) )
             break;
         xEnd += pInt -> d;
         y++;
         hh++;
-        CCOM_LargeNewInterval(cmp,(Int16)xEnd,(Int16)pInt -> l);
+        CCOM_LargeNewInterval(cmp,(int16_t)xEnd,(int16_t)pInt -> l);
         }
 
     }
-CCOM_LargeNewInterval(cmp,(Int16)0,(Int16)0); // fictive interval
+CCOM_LargeNewInterval(cmp,(int16_t)0,(int16_t)0); // fictive interval
 lnh->lth=4*2+4*(hh+1); // header + intervals + fictive interval
 lnh->h  =hh; // store actual line header
 CCOM_LargeClose(cmp);
@@ -2071,7 +2071,7 @@ cmp->scale = CCOM_LONGLINES|scale_2 ;
 {
 	CCOM_USER_BLOCK ublock;
 	ublock.code = CCOM_UB_SIZELINEREP;
-	ublock.data = (Word8*)&size;
+	ublock.data = (uchar*)&size;
 	ublock.size = 4;
 	CCOM_SetUserBlock(cmp, &ublock);
 }
@@ -2096,21 +2096,21 @@ for (pBox = (BOX *) mn -> mnfirstbox, nBox = 0;
         {
     if (pBox -> boxflag & BOXBEG)
         { // new line
-        pLine = (LNSTRT *) ((Word8 *) pBox + sizeof (BOX));
+        pLine = (LNSTRT *) ((uchar *) pBox + sizeof (BOX));
 
         sum += pLine -> l;
-        pInts = (BOXINT *) ((Word8 *) pBox + sizeof (BOX) + sizeof (LNSTRT));
+        pInts = (BOXINT *) ((uchar *) pBox + sizeof (BOX) + sizeof (LNSTRT));
         }
     else
             { // continue BOX
-        pInts = (BOXINT *) ((Word8 *) pBox + sizeof (BOX));
+        pInts = (BOXINT *) ((uchar *) pBox + sizeof (BOX));
         }
 
-    pAfterInts = (BOXINT *) ((Word8 *) pBox + pBox -> boxptr);
+    pAfterInts = (BOXINT *) ((uchar *) pBox + pBox -> boxptr);
 
     for (pInt = pInts;   ;    pInt++)
         { // cont line
-        int s=(Word8 *) pAfterInts - (Word8 *) pInt;
+        int s=(uchar *) pAfterInts - (uchar *) pInt;
         if( s<sizeof (BOXINT) )
                 break;
         sum += pInt->l;
@@ -2122,7 +2122,7 @@ return sum;
 Bool16 save_picture_scale (MN *mn)
 {
 int32_t     scale_2, scale;
-Int16     sv_upper, sv_left, sv_w, sv_h;
+int16_t     sv_upper, sv_left, sv_w, sv_h;
 MN      *locmn;
 
 if( !(ExControl&Ex_Picture) )
@@ -2173,7 +2173,7 @@ if( scale_2==0 )
     }
 scale_2 = MIN(scale_2,MaxScale-1);
 scale = 1<<scale_2 ;
-original_begends=(Word8)(MIN(wcomp.begs+wcomp.ends,255));
+original_begends=(uchar)(MIN(wcomp.begs+wcomp.ends,255));
 // COMPRESSION PICTURES TO comp_max_w:comp_max_h
 sv_upper    =wcomp.upper;
 sv_left     =wcomp.left ;

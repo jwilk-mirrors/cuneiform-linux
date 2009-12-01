@@ -119,7 +119,7 @@
 // Parameter CountryCode has been removed.
 // 12-09-93 ATAL
 // This function have tu return proper pointer, never NULL !
-void * (*my_alloc)(Word32 len);
+void * (*my_alloc)(uint32_t len);
 void (*my_free)(void *);
 void ErrorExit(int Code);
 //uint32_t  LoadUserDict( char*, char*, uint32_t, voc_state*);
@@ -169,7 +169,7 @@ extern INT vocs_NOK;
 /**************************************************************************/
 /* -- Code -- */
 
-INT cond_open(INT seqn, PBYTE name, WORD b1, WORD b2);
+INT cond_open(INT seqn, PBYTE name, uint16_t b1, uint16_t b2);
 PBYTE seq_nam(INT seqn);
 PCHAR full_name(PBYTE w, PBYTE n);
 
@@ -263,7 +263,7 @@ BYTE * load_stat_dict(char *point)
 	if (size > 64) {
 		return (BYTE *) dict;
 	} else {
-		dict->abcSize = (WORD) size;
+		dict->abcSize = (uint16_t) size;
 	}
 
 	/*  -- Load decode tables. -- NEED TO THINK ABOUT !!!

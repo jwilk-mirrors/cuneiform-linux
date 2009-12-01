@@ -91,8 +91,8 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #define  USE_NONE              0x0040   // no formatting
 
-extern   Word32 FlagMode;
-extern   Word32 RtfWriteMode;
+extern   uint32_t FlagMode;
+extern   uint32_t RtfWriteMode;
 extern   POINT  TemplateOffset;
 
 extern	  char   RtfFileName[MAX_PATH];
@@ -101,14 +101,14 @@ extern	  char   RtfFileName[MAX_PATH];
 /*
 * Dib Header Marker - used in writing DIBs to files
 */
-#define DIB_HEADER_MARKER   ((WORD) ('M' << 8) | 'B')
+#define DIB_HEADER_MARKER   ((uint16_t) ('M' << 8) | 'B')
 
 
 //==============   Определение кол-ва картин на странице  ======================
-Word32 GetPictCount(void)
+uint32_t GetPictCount(void)
 {
-	Word32 PictCount = 0;
-	Word32 NumberPage = CPAGE_GetCurrentPage();
+	uint32_t PictCount = 0;
+	uint32_t NumberPage = CPAGE_GetCurrentPage();
 	Handle h_Page = CPAGE_GetHandlePage(NumberPage);
 
 	Handle h_Pict = CPAGE_PictureGetFirst(h_Page);
@@ -121,12 +121,12 @@ Word32 GetPictCount(void)
 }
 
 //=====================     Размер картинки     ===================================
-BYTE GetPictRect( Word32 NumberPict , Rect16* RectPict,Word32* UserNumber )
+BYTE GetPictRect( uint32_t NumberPict , Rect16* RectPict,uint32_t* UserNumber )
 {
-	Word32  PictCount  = 0;
+	uint32_t  PictCount  = 0;
 	Point32 Lr = {0};
 	Point32 Wh = {0};
-	Word32  NumberPage = CPAGE_GetCurrentPage();
+	uint32_t  NumberPage = CPAGE_GetCurrentPage();
 	Handle  h_Page     = CPAGE_GetHandlePage(NumberPage);
 	Handle  h_Pict     = CPAGE_PictureGetFirst(h_Page);
 
@@ -140,23 +140,23 @@ BYTE GetPictRect( Word32 NumberPict , Rect16* RectPict,Word32* UserNumber )
 		return FALSE;
 
 
-	*UserNumber = (Word32)CPAGE_GetBlockUserNum( h_Page, h_Pict  );
+	*UserNumber = (uint32_t)CPAGE_GetBlockUserNum( h_Page, h_Pict  );
 
 
 	if(CPAGE_PictureGetPlace (h_Page, h_Pict, 0, &Lr, &Wh))
 	{
-		RectPict->left   = (Int16)( Lr.x - TemplateOffset.x);
-		RectPict->right  = (Int16)( Lr.x - TemplateOffset.x + Wh.x );
-		RectPict->top    = (Int16)( Lr.y - TemplateOffset.y);
-		RectPict->bottom = (Int16)( Lr.y - TemplateOffset.y + Wh.y );
+		RectPict->left   = (int16_t)( Lr.x - TemplateOffset.x);
+		RectPict->right  = (int16_t)( Lr.x - TemplateOffset.x + Wh.x );
+		RectPict->top    = (int16_t)( Lr.y - TemplateOffset.y);
+		RectPict->bottom = (int16_t)( Lr.y - TemplateOffset.y + Wh.y );
 	}
 	return TRUE;
 }
 
 //**************************** Запись картин ************************************
-Bool WritePict( Word32 IndexPict,RtfSectorInfo* SectorInfo /*, CString* PictString*/, Bool OutPutTypeFrame)
+Bool WritePict( uint32_t IndexPict,RtfSectorInfo* SectorInfo /*, CString* PictString*/, Bool OutPutTypeFrame)
 {
-	Word32        PictNumber    = 0;
+	uint32_t        PictNumber    = 0;
 //	int           Realx,Realy;
 	Point32       RtfLt = {0};
 	CPAGE_PICTURE pict = {0};
@@ -179,7 +179,7 @@ Bool WritePict( Word32 IndexPict,RtfSectorInfo* SectorInfo /*, CString* PictStri
 	Handle   hPrevObject;
 #endif
 
-	Word32   NumberPage    = CPAGE_GetCurrentPage();
+	uint32_t   NumberPage    = CPAGE_GetCurrentPage();
 	Handle   h_Page        = CPAGE_GetHandlePage(NumberPage);
 	Handle   h_Pict        = CPAGE_PictureGetFirst(h_Page);
 //	CString  str;
@@ -202,15 +202,15 @@ Bool WritePict( Word32 IndexPict,RtfSectorInfo* SectorInfo /*, CString* PictStri
 	{
 		CIMAGE_InfoDataInGet in = {0};
 		CIMAGEBITMAPINFOHEADER image_info = {0};
-		Word32 nSize = 0;
+		uint32_t nSize = 0;
 		Point32 Lr = {0};
 		Point32 Wh = {0};
 		Point32 PLr = {0};
 		Point32 LrN = {0};
 		Point32 WhN = {0};
-		WORD    FrameOffset=0;
+		uint16_t    FrameOffset=0;
 
-		if(CIMAGE_GetImageInfo((PWord8)pinfo.szImageName,&image_info)==FALSE)
+		if(CIMAGE_GetImageInfo((puchar)pinfo.szImageName,&image_info)==FALSE)
 			return 0;
 		CPAGE_PictureGetPlace (h_Page, h_Pict, 0, &Lr, &Wh);
 		CPAGE_PictureGetPlace (h_Page, h_Pict,-pinfo.Incline2048, &LrN, &WhN);
@@ -224,7 +224,7 @@ Bool WritePict( Word32 IndexPict,RtfSectorInfo* SectorInfo /*, CString* PictStri
 /*
  	if(CPAGE_GetBlockData(h_Page,h_Pict,TYPE_CPAGE_PICTURE,&pict,sizeof(pict))==sizeof(pict))
 	 {
-		 for(Word32 i = 0; i<pict.Number;i++)
+		 for(uint32_t i = 0; i<pict.Number;i++)
 		 {
 				RtfLt.x = pict.Corner[i].x;
 				RtfLt.y = pict.Corner[i].y;
@@ -302,7 +302,7 @@ Bool WritePict( Word32 IndexPict,RtfSectorInfo* SectorInfo /*, CString* PictStri
 			// end piter
 			LDPUMA_Skip(hTestDIBData);
 			in.MaskFlag = FALSE;
-			if(CIMAGE_GetDIBData((PWord8)PUMA_IMAGE_USER,&in,&pOutDIB))
+			if(CIMAGE_GetDIBData((puchar)PUMA_IMAGE_USER,&in,&pOutDIB))
 			{// Соберем изображение
 				char szTurnName[]  ="RFRMT:TurnPicture";
 				char szPictName[]  ="RFRMT:Picture";
@@ -311,23 +311,23 @@ Bool WritePict( Word32 IndexPict,RtfSectorInfo* SectorInfo /*, CString* PictStri
 
 
 				LDPUMA_Skip(hTestTurn);
-				if(CIMAGE_WriteDIB((PWord8)szPictName,pOutDIB,TRUE))
+				if(CIMAGE_WriteDIB((puchar)szPictName,pOutDIB,TRUE))
 				{
 					switch(pinfo.Angle)
 					{
 					case 90:
-						rc = RIMAGE_Turn((PWord8)szPictName,(PWord8)szTurnName,RIMAGE_TURN_90,FALSE);
-						CIMAGE_DeleteImage((PWord8)lpName);
+						rc = RIMAGE_Turn((puchar)szPictName,(puchar)szTurnName,RIMAGE_TURN_90,FALSE);
+						CIMAGE_DeleteImage((puchar)lpName);
 						lpName = szTurnName;
 						break;
 					case 180:
-						rc = RIMAGE_Turn((PWord8)szPictName,(PWord8)szTurnName,RIMAGE_TURN_180,FALSE);
-						CIMAGE_DeleteImage((PWord8)lpName);
+						rc = RIMAGE_Turn((puchar)szPictName,(puchar)szTurnName,RIMAGE_TURN_180,FALSE);
+						CIMAGE_DeleteImage((puchar)lpName);
 						lpName = szTurnName;
 						break;
 					case 270:
-						rc = RIMAGE_Turn((PWord8)szPictName,(PWord8)szTurnName,RIMAGE_TURN_270,FALSE);
-						CIMAGE_DeleteImage((PWord8)lpName);
+						rc = RIMAGE_Turn((puchar)szPictName,(puchar)szTurnName,RIMAGE_TURN_270,FALSE);
+						CIMAGE_DeleteImage((puchar)lpName);
 						lpName = szTurnName;
 						break;
 					}
@@ -339,7 +339,7 @@ Bool WritePict( Word32 IndexPict,RtfSectorInfo* SectorInfo /*, CString* PictStri
 
 				// Довернем изображение на малый угол.
 				LDPUMA_Skip(hTestRotate);
-				if(!RIMAGE_Rotate((PWord8)lpName,(PWord8)szRotateName,
+				if(!RIMAGE_Rotate((puchar)lpName,(puchar)szRotateName,
 					pinfo.Incline2048,2048, 0))
 				{
 					char * lp = (char*)RIMAGE_GetReturnString(RIMAGE_GetReturnCode());
@@ -347,7 +347,7 @@ Bool WritePict( Word32 IndexPict,RtfSectorInfo* SectorInfo /*, CString* PictStri
 				}
 				else
 				{
-					CIMAGE_DeleteImage((PWord8)lpName);
+					CIMAGE_DeleteImage((puchar)lpName);
 					lpName = szRotateName;
 				}
 
@@ -368,7 +368,7 @@ Bool WritePict( Word32 IndexPict,RtfSectorInfo* SectorInfo /*, CString* PictStri
 						in.dwY = (-ptWh.x*pinfo.Incline2048/2048);
 						//  End of Almi Corr
 					}
-					if(!RIMAGE_RotatePoint((PWord8)lpName,
+					if(!RIMAGE_RotatePoint((puchar)lpName,
 						in.dwX,in.dwY,
 						(int32_t *)&in.dwX,(int32_t *)&in.dwY))
 					{
@@ -381,7 +381,7 @@ Bool WritePict( Word32 IndexPict,RtfSectorInfo* SectorInfo /*, CString* PictStri
 					in.wByteWidth = (unsigned short)((in.dwWidth +7)/8); //?
 					in.MaskFlag = TRUE;
 					// Получим размер маски
-					Word32 nSize = 0;
+					uint32_t nSize = 0;
 					LDPUMA_Skip(hTestGetMaskDIB);
 					if(CPAGE_PictureGetMask (h_Page,h_Pict,0,NULL,&nSize))
 					{
@@ -391,7 +391,7 @@ Bool WritePict( Word32 IndexPict,RtfSectorInfo* SectorInfo /*, CString* PictStri
 							*(PCIMAGE_InfoDataInGet)lpMask = in;
 							if(CPAGE_PictureGetMask (h_Page,h_Pict,0,lpMask + sizeof(in),&nSize))
 							{
-								if(!CIMAGE_GetDIBData((PWord8)lpName,(PCIMAGE_InfoDataInGet)lpMask,&pOutDIB))
+								if(!CIMAGE_GetDIBData((puchar)lpName,(PCIMAGE_InfoDataInGet)lpMask,&pOutDIB))
 								{
 									rc = FALSE;
 								}
@@ -502,7 +502,7 @@ Bool WritePict( Word32 IndexPict,RtfSectorInfo* SectorInfo /*, CString* PictStri
 				}
 				// piter
 				// освобождает память переданную по pOutDIB
-				CIMAGE_DeleteImage((PWord8)lpName);
+				CIMAGE_DeleteImage((puchar)lpName);
 				CIMAGE_FreeCopedDIB(pOutDIB);
 				// end piter
 			}
@@ -550,31 +550,31 @@ Bool SaveMetafile(CString * strBuf, BITMAPINFOHEADER * lpDIB)
 
 #pragma pack (push,1)
 	struct MF_header {
-		WORD 	mtType;
-		WORD 	mtHeaderSize; // in words
-		WORD 	mtVersion;
+		uint16_t 	mtType;
+		uint16_t 	mtHeaderSize; // in words
+		uint16_t 	mtVersion;
 		uint32_t	mtSize;       // in words
-		WORD  	mtNoObjects;
+		uint16_t  	mtNoObjects;
 		uint32_t 	mtMaxRecord;
-		WORD	mtNoParameters;
+		uint16_t	mtNoParameters;
 	} hMF={1,9,0x0300,0,0,0,0};
 
 	struct MF_GDI_records {
 		uint32_t   rdSize;
-		WORD    rdFunction;
+		uint16_t    rdFunction;
 	} MF_GDI;
 
 	struct MF_StretchDlBitst_info {
 		uint32_t	dwRop;
-		WORD	wUsage;
-		WORD	srcYExt;
-		WORD	srcXExt;
-		WORD 	srcY;
-		WORD	srcX;
-		WORD	dstYExt;
-		WORD	dstXExt;
-		WORD	dstY;
-		WORD	dstX;
+		uint16_t	wUsage;
+		uint16_t	srcYExt;
+		uint16_t	srcXExt;
+		uint16_t 	srcY;
+		uint16_t	srcX;
+		uint16_t	dstYExt;
+		uint16_t	dstXExt;
+		uint16_t	dstY;
+		uint16_t	dstX;
 	}  MF_SI;
 #pragma pack (pop)
 
@@ -639,9 +639,9 @@ Bool SaveMetafile(CString * strBuf, BITMAPINFOHEADER * lpDIB)
 		MF_GDI.rdSize=5;
 		MF_GDI.rdFunction=0x20c;
 		bufcpy(&str,&MF_GDI,sizeof(MF_GDI));
-		WORD word=(WORD)lpDIB->biHeight;
+		uint16_t word=(uint16_t)lpDIB->biHeight;
 		bufcpy(&str,&word,sizeof(word));
-		word=(WORD)lpDIB->biWidth;
+		word=(uint16_t)lpDIB->biWidth;
 		bufcpy(&str,&word,sizeof(word));
 		// SetTextColor
 		MF_GDI.rdSize=5;
@@ -668,12 +668,12 @@ Bool SaveMetafile(CString * strBuf, BITMAPINFOHEADER * lpDIB)
 
 		MF_SI.dwRop	=0x00cc0020L;
 		MF_SI.wUsage	=0;
-		MF_SI.srcYExt	=(WORD)lpDIB->biHeight;
-		MF_SI.srcXExt	=(WORD)lpDIB->biWidth ;
+		MF_SI.srcYExt	=(uint16_t)lpDIB->biHeight;
+		MF_SI.srcXExt	=(uint16_t)lpDIB->biWidth ;
 		MF_SI.srcY	=0;
 		MF_SI.srcX	=0;
-		MF_SI.dstYExt	=(WORD)lpDIB->biHeight;
-		MF_SI.dstXExt	=(WORD)lpDIB->biWidth ;
+		MF_SI.dstYExt	=(uint16_t)lpDIB->biHeight;
+		MF_SI.dstXExt	=(uint16_t)lpDIB->biWidth ;
 		MF_SI.dstY	=0;
 		MF_SI.dstX	=0;
 		bufcpy(&str,&MF_SI,sizeof(MF_SI));

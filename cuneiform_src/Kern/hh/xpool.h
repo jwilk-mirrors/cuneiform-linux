@@ -152,9 +152,9 @@ public:
    //operator PVoid() const  {  return (PVoid)Data; };
    //PByte    operator + (uint i) const { return ((PByte)Data)+i; };
 
-   void*    VPtr( int32_t i=0 ) const    { return (void*)(((Word8*)Data)+i);};
-   Word8*   BPtr( int32_t i=0 ) const    { return        (((Word8*)Data)+i);};
-   char*    CPtr( int32_t i=0 ) const    { return (char*)(((Word8*)Data)+i);};
+   void*    VPtr( int32_t i=0 ) const    { return (void*)(((uchar*)Data)+i);};
+   uchar*   BPtr( int32_t i=0 ) const    { return        (((uchar*)Data)+i);};
+   char*    CPtr( int32_t i=0 ) const    { return (char*)(((uchar*)Data)+i);};
 
    Err16 Read( XFile& bf, Bool32 swap_bytes = FALSE );
    Bool  Write( XFile& bf, int32_t size=-1 ) const;
@@ -162,7 +162,7 @@ public:
    //BINFILE_READ_FUNCS_PROTOTYPES
 
    //Bool     Write( RBinFile bf, int32_t size = -1 ) const;
-   void     MemSet( Word8 pattern )
+   void     MemSet( uchar pattern )
    {
       if (Data)
          memset(Data, pattern, Volume );
@@ -173,7 +173,7 @@ public:
          if (size == -1)
             size = Volume;
 		assert(size>=0);
-		if (((Word32)size) > Volume)
+		if (((uint32_t)size) > Volume)
             size = Volume;
          if (size) memcpy(Data, src, (uint)size);
       };
@@ -182,7 +182,7 @@ public:
          if (size == -1)
             size = Volume;
 		assert(size >=0);
-		 if (((Word32)size) > Volume)
+		 if (((uint32_t)size) > Volume)
             size = Volume;
 			if (size) memcpy(dst, Data, (uint)size);
 		};

@@ -67,11 +67,7 @@
 #include "dpuma.h"
 #include "polyblock.h"
 #include "rcutp.h"
-
-#ifndef WIN32
-#define RGB(r,g,b)          ((COLORREF)(((BYTE)(r)|((WORD)((BYTE)(g))<<8))|(((uint32_t)(BYTE)(b))<<16)))
-typedef uint32_t COLORREF;
-#endif
+#include "compat_defs.h"
 
 #define TYPE_NormalZone		CPAGE_GetInternalType("TYPE_NormalZone")
 #define TYPE_NormalRazrezZone		CPAGE_GetInternalType("TYPE_NormalRazrezZone")
@@ -96,11 +92,11 @@ extern Handle DifferenCutToHistory;
 extern Handle hTime;
 int medium_statistics_h;
 extern int medium_h;
-Word32 code_str_cut_d = 117;
+uint32_t code_str_cut_d = 117;
 Bool32 WasCut = FALSE;
 Bool32 WasDif = FALSE;
-Word32 Code_UB_Kill = 0;
-Word32 Code_UB_Create = 0;
+uint32_t Code_UB_Kill = 0;
+uint32_t Code_UB_Create = 0;
 
 int CutStrings(POLY_* pBLOCK);
 int GetStatisticsH(void);
@@ -112,10 +108,10 @@ extern FILE* f_temp_cut;
 extern FILE* f_old_cut;
 
 int GetMediumHeight(POLY_*);
-Bool GetMasP(Handle hCPage, Rect16 Rc, Word8** ppmasp);
+Bool GetMasP(Handle hCPage, Rect16 Rc, uchar** ppmasp);
 Bool Increase2(RecRaster* rast, CCOM_comp* comp);
 int GetCountNumbers(int num);
-void StrDrawRect(Handle wnd, Word32 OperCode, Word32 color, int top,
+void StrDrawRect(Handle wnd, uint32_t OperCode, uint32_t color, int top,
 		int bottom, int left, int right);
 Bool IfEqv(char* buf1, char* buf2);
 Bool IfEqv(Rect16 r1, Rect16 r2);
@@ -132,15 +128,15 @@ void RSELSTR_CutCompInTableZones(Handle hCPAGE, CCOM_handle hCCOM) {
 
 void UndoCutInRect(Handle hCPAGE, CCOM_handle hCCOM, Rect32* Rc) {
 	CCOM_comp * comp;
-	Int16 top = (Int16) Rc->top;
-	Int16 bottom = (Int16) Rc->bottom;
-	Int16 left = (Int16) Rc->left;
-	Int16 right = (Int16) Rc->right;
+	int16_t top = (int16_t) Rc->top;
+	int16_t bottom = (int16_t) Rc->bottom;
+	int16_t left = (int16_t) Rc->left;
+	int16_t right = (int16_t) Rc->right;
 	CCOM_USER_BLOCK ub;
 
 	for (comp = CCOM_GetFirst(hCCOM, NULL); comp; comp = CCOM_GetNext(comp,
 			NULL)) {
-		int size = sizeof(Word32);
+		int size = sizeof(uint32_t);
 
 		if (comp->upper >= top && comp->left >= left && comp->upper + comp->h
 				<= bottom && comp->left + comp->w <= right) {
@@ -148,7 +144,7 @@ void UndoCutInRect(Handle hCPAGE, CCOM_handle hCCOM, Rect32* Rc) {
 				ub.code = Code_UB_Kill;
 				if (CCOM_GetUserBlock(comp, &ub)) {
 					if (ub.size == size) {
-						if (*((Word32*) (ub.data)) == Code_UB_Kill)
+						if (*((uint32_t*) (ub.data)) == Code_UB_Kill)
 							CCOM_Reanimate(comp);
 					}
 				}
@@ -156,7 +152,7 @@ void UndoCutInRect(Handle hCPAGE, CCOM_handle hCCOM, Rect32* Rc) {
 				ub.code = Code_UB_Create;
 				if (CCOM_GetUserBlock(comp, &ub)) {
 					if (ub.size == size) {
-						if (*((Word32*) (ub.data)) == Code_UB_Create)
+						if (*((uint32_t*) (ub.data)) == Code_UB_Create)
 							CCOM_Kill(comp);
 					}
 				}
@@ -222,9 +218,9 @@ int CutStrings(POLY_* pBlock) {
 				pBlock)) {
 			if (comp->h >= cut_h && comp->h <= medium_h * 5 && comp->w
 					>= inf_let_w - 1) {
-				Word8 Data[1000];
+				uchar Data[1000];
 				memset(Data, 0, sizeof(Data));
-				Word8* pmasp = Data;
+				uchar* pmasp = Data;
 				Rect16 Rc;
 
 				Rc.top = comp->upper;
@@ -342,7 +338,7 @@ int GetStatisticsH() {
 	return sum / count;
 }
 
-Bool GetMasP(Handle hCPage, Rect16 Rc, Word8** ppmasp) {
+Bool GetMasP(Handle hCPage, Rect16 Rc, uchar** ppmasp) {
 	int prewide;
 	int left = Rc.left;
 	int h = Rc.bottom - Rc.top + 1;
@@ -359,14 +355,14 @@ Bool GetMasP(Handle hCPage, Rect16 Rc, Word8** ppmasp) {
 	CIMAGEInfoDataInGet DataInto = { 0 };
 	CIMAGEInfoDataOutGet DataOut = { 0 };
 
-	Word8 Name[CPAGE_MAXNAME];
+	uchar Name[CPAGE_MAXNAME];
 	Bool ret;
 	int i;
 
 	//  1. Подготовка к запросу части изображения.
-	DataInto.dwHeight = (Word32)(h);
-	DataInto.dwWidth = (Word32)(prewide);
-	DataInto.wByteWidth = (Word16)(prewide / 8);
+	DataInto.dwHeight = (uint32_t)(h);
+	DataInto.dwWidth = (uint32_t)(prewide);
+	DataInto.wByteWidth = (uint16_t)(prewide / 8);
 	DataInto.dwX = left;
 	DataInto.dwY = upper;
 	DataInto.MaskFlag = 0x00;
@@ -376,7 +372,7 @@ Bool GetMasP(Handle hCPage, Rect16 Rc, Word8** ppmasp) {
 	DataOut.dwWidth = DataInto.dwWidth;
 	DataOut.dwHeight = DataInto.dwHeight;
 	DataOut.wByteWidth = DataInto.wByteWidth;
-	DataOut.byBit = (Word16) info.BitPerPixel;
+	DataOut.byBit = (uint16_t) info.BitPerPixel;
 	DataOut.lpData = *ppmasp;
 
 	//	  5. Чтение части изображения.
@@ -398,8 +394,8 @@ Bool Increase2(RecRaster* rast, CCOM_comp* comp) {
 	if (comp->h * ((comp->w + 7) / 8) > REC_MAX_RASTER_SIZE)
 		return FALSE;
 
-	Word8 bytep;
-	Word8 bytep2;
+	uchar bytep;
+	uchar bytep2;
 	int nowbyte = 0;
 	int nowbyte2 = 0;
 	int k;
@@ -407,7 +403,7 @@ Bool Increase2(RecRaster* rast, CCOM_comp* comp) {
 	int count = (rast->lnPixWidth + 63) / 64;
 	int new_count = (newbytewide + 7) / 8;
 
-	Word8* str = new Word8[REC_MAX_RASTER_SIZE];
+	uchar* str = new uchar[REC_MAX_RASTER_SIZE];
 	if (!str)
 		return FALSE;
 
@@ -521,7 +517,7 @@ Bool Increase2(RecRaster* rast, CCOM_comp* comp) {
 		}
 	}
 
-	Word8* raster = rast->Raster;
+	uchar* raster = rast->Raster;
 	for (i = REC_MAX_RASTER_SIZE - 1; i >= 0; i--)
 		raster[i] = str[i];
 
@@ -584,7 +580,7 @@ int GetCountNumbers(int num) {
 	return count;
 }
 
-void StrDrawRect(Handle wnd, Word32 OperCode, Word32 color, int top,
+void StrDrawRect(Handle wnd, uint32_t OperCode, uint32_t color, int top,
 		int bottom, int left, int right) {
 
 	Rect16 Rect;

@@ -90,10 +90,10 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #define  NOCURSIV             0x0008
 #define  NOSIZE               0x0020
 
-Word32   FlagMode;
-Word32   ExFlagMode;
+uint32_t   FlagMode;
+uint32_t   ExFlagMode;
 
-Word32   RtfWriteMode;
+uint32_t   RtfWriteMode;
 char     RtfFileName[MAX_PATH];
 char     WriteRtfImageName[MAX_PATH];
 char     lpMyNameSerif[MAX_PATH];
@@ -107,15 +107,15 @@ Bool32   FlagDebugAlign;
 extern   Bool32   gbBold		;
 extern   Bool32   gbItalic;
 extern   Bool32   gbSize		;
-extern   Word32   gnFormat;
+extern   uint32_t   gnFormat;
 extern   const char*    gpSerifName;
 extern   const char*    gpSansSerifName;
 extern   const char*    gpCourierName;
-extern   Word32   CountTable;
+extern   uint32_t   CountTable;
 
 // extern functions
-void    SetReturnCode_rfrmt(Word16 rc);
-Word16  GetReturnCode_rfrmt();
+void    SetReturnCode_rfrmt(uint16_t rc);
+uint16_t  GetReturnCode_rfrmt();
 
 #ifdef alDebug
 std::vector <tagRECT>   *pInputArray;
@@ -123,9 +123,9 @@ std::vector <tagRECT>   *pTheGeomStep1;
 std::vector <tagRECT>   *pTheGeomStep2;
 std::vector <tagRECT>   *pTheGeomTemp ;
 vectorWord             *pFragRectColor;
-WORD                   *CountRect;
-WORD                    Draw_Step;
-WORD                    Draw_Cycle;
+uint16_t                   *CountRect;
+uint16_t                    Draw_Step;
+uint16_t                    Draw_Cycle;
 #endif
 ///////////////////////////////////////////////////////////////
 
@@ -239,35 +239,35 @@ RtfFragRect.m_Step                        = 0;
 	for( i=0;i<pInputArray->size();i++)
     {
 	    RECT rect = (*pInputArray)[i];
-	    Rect16 rect16 = {(Int16)rect.left,(Int16)rect.top,(Int16)rect.right,(Int16)rect.bottom};
-	    LDPUMA_DrawRect(hDbgWnd,&rect16, 0, RGB(0,127,0),1,(Word32)hDbgWnd);
+	    Rect16 rect16 = {(int16_t)rect.left,(int16_t)rect.top,(int16_t)rect.right,(int16_t)rect.bottom};
+	    LDPUMA_DrawRect(hDbgWnd,&rect16, 0, RGB(0,127,0),1,(uint32_t)hDbgWnd);
     }
 
 	LDPUMA_Console("Press any key...pInputArray");
 	LDPUMA_WaitUserInput(hDebugMy,hDbgWnd);
-	LDPUMA_DeleteRects(hDbgWnd,(Word32)hDbgWnd);
+	LDPUMA_DeleteRects(hDbgWnd,(uint32_t)hDbgWnd);
 
 	for( i=0;i<pTheGeomStep1->size();i++)
     {
 		RECT rect = (*pTheGeomStep1)[i];
-		Rect16 rect16 = {(Int16)rect.left,(Int16)rect.top,(Int16)rect.right,(Int16)rect.bottom};
-		LDPUMA_DrawRect(hDbgWnd,&rect16, 0, RGB(0,127,0),1,(Word32)hDbgWnd);
+		Rect16 rect16 = {(int16_t)rect.left,(int16_t)rect.top,(int16_t)rect.right,(int16_t)rect.bottom};
+		LDPUMA_DrawRect(hDbgWnd,&rect16, 0, RGB(0,127,0),1,(uint32_t)hDbgWnd);
     }
 
  	LDPUMA_Console("Press any key...pTheGeomStep1");
 	LDPUMA_WaitUserInput(hDebugMy,hDbgWnd);
-    LDPUMA_DeleteRects(hDbgWnd,(Word32)hDbgWnd);
+    LDPUMA_DeleteRects(hDbgWnd,(uint32_t)hDbgWnd);
 
     for( i=0;i<pTheGeomStep2->size();i++)
     {
 	    RECT rect = (*pTheGeomStep2)[i];
-	    Rect16 rect16 = {(Int16)rect.left,(Int16)rect.top,(Int16)rect.right,(Int16)rect.bottom};
-	    LDPUMA_DrawRect(hDbgWnd,&rect16, 0, RGB(0,127,0),1,(Word32)hDbgWnd);
+	    Rect16 rect16 = {(int16_t)rect.left,(int16_t)rect.top,(int16_t)rect.right,(int16_t)rect.bottom};
+	    LDPUMA_DrawRect(hDbgWnd,&rect16, 0, RGB(0,127,0),1,(uint32_t)hDbgWnd);
     }
 
 	LDPUMA_Console("Press any key...pTheGeomStep2");
 	LDPUMA_WaitUserInput(hDebugMy,hDbgWnd);
-    LDPUMA_DeleteRects(hDbgWnd,(Word32)hDbgWnd);
+    LDPUMA_DeleteRects(hDbgWnd,(uint32_t)hDbgWnd);
 
   }
 #endif
@@ -281,7 +281,7 @@ RtfFragRect.m_Step                        = 0;
 }
 
 //###########################################
-RFRMT_FUNC(Bool32)  RFRMT_SaveRtf(char* lpOutputFileName,Word32 code)
+RFRMT_FUNC(Bool32)  RFRMT_SaveRtf(char* lpOutputFileName,uint32_t code)
 {
  FILE *fpInternalFile = create_temp_file();
  if ( fpInternalFile== NULL) {
@@ -386,35 +386,35 @@ RFRMT_FUNC(Bool32)  RFRMT_SaveRtf(char* lpOutputFileName,Word32 code)
    for( i=0;i<pInputArray->size();i++)
    {
 	    RECT rect = (*pInputArray)[i];
-	    Rect16 rect16 = {(Int16)rect.left,(Int16)rect.top,(Int16)rect.right,(Int16)rect.bottom};
-	    LDPUMA_DrawRect(hDbgWnd,&rect16, 0, RGB(0,127,0),1,(Word32)hDbgWnd);
+	    Rect16 rect16 = {(int16_t)rect.left,(int16_t)rect.top,(int16_t)rect.right,(int16_t)rect.bottom};
+	    LDPUMA_DrawRect(hDbgWnd,&rect16, 0, RGB(0,127,0),1,(uint32_t)hDbgWnd);
    }
 
    LDPUMA_Console("Press any key...pInputArray");
    LDPUMA_WaitUserInput(hDebugMy,hDbgWnd);
-   LDPUMA_DeleteRects(hDbgWnd,(Word32)hDbgWnd);
+   LDPUMA_DeleteRects(hDbgWnd,(uint32_t)hDbgWnd);
 
    for( i=0;i<pTheGeomStep1->size();i++)
    {
 		RECT rect = (*pTheGeomStep1)[i];
-		Rect16 rect16 = {(Int16)rect.left,(Int16)rect.top,(Int16)rect.right,(Int16)rect.bottom};
-		LDPUMA_DrawRect(hDbgWnd,&rect16, 0, RGB(0,127,0),1,(Word32)hDbgWnd);
+		Rect16 rect16 = {(int16_t)rect.left,(int16_t)rect.top,(int16_t)rect.right,(int16_t)rect.bottom};
+		LDPUMA_DrawRect(hDbgWnd,&rect16, 0, RGB(0,127,0),1,(uint32_t)hDbgWnd);
    }
 
    LDPUMA_Console("Press any key...pTheGeomStep1");
    LDPUMA_WaitUserInput(hDebugMy,hDbgWnd);
-   LDPUMA_DeleteRects(hDbgWnd,(Word32)hDbgWnd);
+   LDPUMA_DeleteRects(hDbgWnd,(uint32_t)hDbgWnd);
 
    for( i=0;i<pTheGeomStep2->size();i++)
    {
 		RECT rect = (*pTheGeomStep2)[i];
-	    Rect16 rect16 = {(Int16)rect.left,(Int16)rect.top,(Int16)rect.right,(Int16)rect.bottom};
-	    LDPUMA_DrawRect(hDbgWnd,&rect16, 0, RGB(0,127,0),1,(Word32)hDbgWnd);
+	    Rect16 rect16 = {(int16_t)rect.left,(int16_t)rect.top,(int16_t)rect.right,(int16_t)rect.bottom};
+	    LDPUMA_DrawRect(hDbgWnd,&rect16, 0, RGB(0,127,0),1,(uint32_t)hDbgWnd);
    }
 
    LDPUMA_Console("Press any key...pTheGeomStep2");
    LDPUMA_WaitUserInput(hDebugMy,hDbgWnd);
-   LDPUMA_DeleteRects(hDbgWnd,(Word32)hDbgWnd);
+   LDPUMA_DeleteRects(hDbgWnd,(uint32_t)hDbgWnd);
 
  }
 #endif

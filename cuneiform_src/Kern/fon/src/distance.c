@@ -91,10 +91,10 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "ctbdefs.h"
 #include "ligas.h"    // 13.09.2000
 
-extern Word8 language;
+extern uchar language;
 
 
-WORD cmp(PBYTE r,WORD fullwb,WORD w,WORD h,welet * wl);
+uint16_t cmp(PBYTE r,uint16_t fullwb,uint16_t w,uint16_t h,welet * wl);
 SINT RazmazHalf(BYTE *bSource,BYTE *bDest,SINT xbit,SINT yrow);
 ///////////////////////
 //
@@ -536,7 +536,7 @@ int w2,h2;
 ////////////
 int distWelet(BYTE *buf,BYTE *bufraz,int w,int h,welet * wl,int porog,int countRazmaz)
 {
- WORD best,east,west,north,south,center;
+ uint16_t best,east,west,north,south,center;
  int   lbest;   // local best
  int bound=140; //2*MIN(50,w+h);
  int initPorog=porog;
@@ -698,10 +698,10 @@ static int LookBestClusters(int w,int h,BYTE *buf,BYTE *bufrazmaz,
 
 ///////////////////////
 
-int AddTestAlt(Word8 prob,int numAlt,FonTestInfo *attr,
+int AddTestAlt(uchar prob,int numAlt,FonTestInfo *attr,
 			   welet *wel,int nClust)
 {
-    Word8 flg =CTB_PRINT_FONT;
+    uchar flg =CTB_PRINT_FONT;
 	int j,k;
 
 	if(wel->attr & FON_CLU_ITALIC)
@@ -756,7 +756,7 @@ int AddTestAlt(Word8 prob,int numAlt,FonTestInfo *attr,
 }
 /////////////
 static SINT CheckLetter(SINT w,SINT h,BYTE *buf,BYTE *bufrazmaz,
-		       FONBASE *fbase,int porog, int let,FonTestInfo *attr ,Int16 nInCTB)
+		       FONBASE *fbase,int porog, int let,FonTestInfo *attr ,int16_t nInCTB)
 {
  SINT dist;
  int num=0,i;
@@ -782,7 +782,7 @@ static SINT CheckLetter(SINT w,SINT h,BYTE *buf,BYTE *bufrazmaz,
 
   if(dist <= porog)
   {
-   Word8 prob=MAX(0,255-STRAFPOINT*dist);
+   uchar prob=MAX(0,255-STRAFPOINT*dist);
    numAlt = AddTestAlt( prob,numAlt,attr,wel,i);
   }
 
@@ -800,7 +800,7 @@ static BYTE const mask0[8]={255,128,192,224,240,248,252,254};
 SINT RecogClu(BYTE *rast,SINT xbyte,SINT xbit,SINT yrow,
               RECRESULT *recres, SINT maxNames,
               welet *wl,int numWel,
-              int porog ,int nInCTB, Int16 col, Int16 row,
+              int porog ,int nInCTB, int16_t col, int16_t row,
 			  int32_t countRazmaz)
 {
  int i;
@@ -838,7 +838,7 @@ SINT RecogClu(BYTE *rast,SINT xbyte,SINT xbit,SINT yrow,
   if( i > 1 &&
 	  recres[0].prob - 3 <= recres[1].prob )
   {
-   int CheckRaster(PBYTE r,WORD fullBytes,WORD w,WORD h,
+   int CheckRaster(PBYTE r,uint16_t fullBytes,uint16_t w,uint16_t h,
 				welet *wel,int inBase,int let);
    int prob0,prob1;
    prob0= CheckRaster(buf,rbyte,xbit,yrow,wl,numWel,recres[0].name);
@@ -872,7 +872,7 @@ SINT RecogClu(BYTE *rast,SINT xbyte,SINT xbit,SINT yrow,
 }
 ///////////////////////////
 SINT CheckClu(BYTE *rast,SINT xbyte,SINT xbit,SINT yrow,
-			  FONBASE *fbase,int let,FonTestInfo *attr,Int16 nInCTB)
+			  FONBASE *fbase,int let,FonTestInfo *attr,int16_t nInCTB)
 {
  int i;
  int rbyte=(xbit+7)>>3;
@@ -1203,7 +1203,7 @@ int dist,j;
 
 static int distWeletOkr(BYTE *buf,BYTE *razmaz,int w,int h,welet * wl,int porog,int okr,int proc)
 {
- WORD best,east,west,north,south,center;
+ uint16_t best,east,west,north,south,center;
  int   lbest;   // local best
  int bound=200; //2*MIN(50,w+h);
  int initPorog=porog;
@@ -1374,7 +1374,7 @@ static int LookBestOkr(int w,int h,BYTE *buf,BYTE *razmaz,
 int RecogCluOkr(BYTE *rast,SINT xbyte,SINT xbit,SINT yrow,
               RECRESULT *recres, SINT maxNames,
               welet *wl,int numWel,
-              int porog ,int nInCTB, Int16 col, Int16 row,
+              int porog ,int nInCTB, int16_t col, int16_t row,
 			  int okr,int proc)
 {
  int i;
@@ -1475,7 +1475,7 @@ int dist;
 static int LookBestInner(int w,int h,BYTE *buf,BYTE *razmaz,
 		    int NumClus, welet *wel,
             RECRESULT *recres,int maxNames,int nInCTB,
-			Int16 *col,Int16 *row)
+			int16_t *col,int16_t *row)
 {
  int i,j,k;
  int dist;
@@ -1660,7 +1660,7 @@ static int ScaleSymbol(BYTE *inbuf,int fullByte,int allSizeX, int allSizeY,BYTE 
 int RecogCluInner(BYTE *rast,SINT xbyte,SINT xbit,SINT yrow,
               RECRESULT *recres, SINT maxNames,
               welet *wl,int numWel,
-              int nInCTB, Int16 *col, Int16 *row )
+              int nInCTB, int16_t *col, int16_t *row )
 {
  int i;
  int rbyte=(xbit+7)>>3;

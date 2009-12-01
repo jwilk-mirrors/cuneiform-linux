@@ -73,13 +73,13 @@ static int		font,kegl,lang;
 static int foregroundColor,backgroundColor,fontNum;
 static char * verInfo;
 
-static void ExtDataProc(Word8* _ptr, Word32 lth);
+static void ExtDataProc(uchar* _ptr, uint32_t lth);
 void NewFormattedSDD(const sheet_disk_descr* pt);
 void NewFormattedFDD(const fragm_disk_descr* pt);
 void NewFormattedTR(const text_ref* pt);
 //void NewFormattedFD(const fragm_disk* pt);
 void NewFormattedLB(const line_beg* pt);
-void NewFormattedL(const letter* pt,const Word32 alternatives);
+void NewFormattedL(const letter* pt,const uint32_t alternatives);
 void NewFormattedBMR(const bit_map_ref * pt);
 void NewFormattedFK(const font_kegl * pt);
 void NewFormattedE(const edExtention* pt,const void* ptExt);
@@ -93,13 +93,13 @@ void CED_DeleteTree(CEDPage * pg)
 
 void RepairStructure();
 
-CEDPage * CED_FormattedLoad (char * file,Bool32 readFromFile, Word32 bufLen)
+CEDPage * CED_FormattedLoad (char * file,Bool32 readFromFile, uint32_t bufLen)
 {
 	CED_SetRawDataProc(ExtDataProc);
 	if (CED_IsEdFile(file,readFromFile,bufLen)==96)
 	{
 		return 0;
-//		return Formattedload_96(char * file,Bool32 readFromFile, Word32 bufLen);
+//		return Formattedload_96(char * file,Bool32 readFromFile, uint32_t bufLen);
 	}
 	else if (CED_IsEdFile(file,readFromFile,bufLen)!=2000)
 		return 0;
@@ -131,7 +131,7 @@ CEDPage * CED_FormattedLoad (char * file,Bool32 readFromFile, Word32 bufLen)
 }
 
 //Put non-recognized codes to the corresponding field of extData
-void ExtDataProc(Word8* _ptr, Word32 lth)
+void ExtDataProc(uchar* _ptr, uint32_t lth)
 {}
 
 void NewFormattedSDD(const sheet_disk_descr* pt)
@@ -442,7 +442,7 @@ void NewFormattedLang(const EdTagLanguage* pt)
 {
 	lang=pt->language;
 }
-void NewFormattedL(const letter* pt,const Word32 alternatives)
+void NewFormattedL(const letter* pt,const uint32_t alternatives)
 {
 	if (!curEdLine)
 		return;
@@ -754,7 +754,7 @@ Bool32	CED_FormattedWrite(char * fileName, CEDPage *page)
 	sdd.quant_fragm=1;
 	sdd.sheet_numb=page->pageNumber;
 	sdd.descr_lth=sizeof(sdd)+sizeof(fragm_disk_descr);
-	sdd.resolution=(Word16)page->dpi.cx;
+	sdd.resolution=(uint16_t)page->dpi.cx;
 	sdd.incline=page->turn;
 	sdd.version=2000;
 	if (!Write(hFile,(pchar)&sdd,sizeof(sdd))) goto ED_WRITE_END;
@@ -947,10 +947,10 @@ Bool32	CED_FormattedWrite(char * fileName, CEDPage *page)
 					line->SetCurChar(chr);
 					bit_map_ref bmr;
 					bmr.code=SS_BITMAP_REF;
-					bmr.col=(Word16)chr->layout.left;
-					bmr.row=(Word16)chr->layout.top;
-					bmr.height=(Word16)(chr->layout.bottom-chr->layout.top);
-					bmr.width=Word16(chr->layout.right-chr->layout.left);
+					bmr.col=(uint16_t)chr->layout.left;
+					bmr.row=(uint16_t)chr->layout.top;
+					bmr.height=(uint16_t)(chr->layout.bottom-chr->layout.top);
+					bmr.width=uint16_t(chr->layout.right-chr->layout.left);
 					if (!Write(hFile,(pchar)(&bmr),sizeof(bmr))) goto ED_WRITE_END;
 					if(chr->fontHeight!=kegl||chr->fontAttribs!=font)
 					{
@@ -1049,8 +1049,8 @@ Bool32 WriteTiffDescr(HANDLE hFile, CEDPage* page)
 	fond.width=page->sizeOfImage.cx;
 	fond.pageNum=page->pageNumber;
 	fond.inclune=page->turn;
-	fond.resolutionX=(WORD)page->dpi.cx;
-	fond.resolutionY=(WORD)page->dpi.cy;
+	fond.resolutionX=(uint16_t)page->dpi.cx;
+	fond.resolutionY=(uint16_t)page->dpi.cy;
 	fond.unrecogSymbol=page->unrecogChar;
 	if (!WriteExtCode(hFile,EDEXT_TIFF_DESC,&fond,sizeof(fond),strlen(page->imageName)+1)) return FALSE;
 	if (!Write(hFile,(pchar)page->imageName,strlen(page->imageName)+1)) return FALSE;
@@ -1154,18 +1154,18 @@ Bool32 WriteRemark(HANDLE hFile,int type, int object)
 }
 
 
-Word32 CED_IsEdFile (char * file,Bool32 readFromFile, Word32 bufLen)
+uint32_t CED_IsEdFile (char * file,Bool32 readFromFile, uint32_t bufLen)
 {
 	HANDLE PedHandle;
-	Word32 len;
-	PWord8 start;
+	uint32_t len;
+	puchar start;
 
 	if (readFromFile)
 	{
 		len=MemFromFile((pchar)file,&PedHandle);
 		if (len==0)
 			return 0;
-		start = (PWord8)Lock(PedHandle);
+		start = (puchar)Lock(PedHandle);
 		if ( !start )
 		{
 			Unlock(PedHandle);
@@ -1175,7 +1175,7 @@ Word32 CED_IsEdFile (char * file,Bool32 readFromFile, Word32 bufLen)
 	}
 	else
 	{
-		start =(Word8*)file;
+		start =(uchar*)file;
 		len=bufLen;
 	}
 	Bool32 ret=96;

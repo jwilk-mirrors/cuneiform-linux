@@ -82,17 +82,17 @@ extern std::vector<RECT>   *pInputArray;
 #endif
 
 int32_t	PageIncline2048 = 2048;
-Word32  CountPict=0,CountTable=0;
-void    SetReturnCode_rfrmt(Word16 rc);
+uint32_t  CountPict=0,CountTable=0;
+void    SetReturnCode_rfrmt(uint16_t rc);
 POINT   TemplateOffset;
 
-extern "C" Word32   GetPictCount(void);
-extern "C" Word32   GetTablCount(void);
-extern  Word8       Frmt_CharSet;
-extern  Int16       CreateEmptyRtfFile(void);
+extern "C" uint32_t   GetPictCount(void);
+extern "C" uint32_t   GetTablCount(void);
+extern  uchar       Frmt_CharSet;
+extern  int16_t       CreateEmptyRtfFile(void);
 extern  char        UnRecogSymbol;
-extern  Word32      FlagMode;
-extern  Word32      ExFlagMode;
+extern  uint32_t      FlagMode;
+extern  uint32_t      ExFlagMode;
 
 #define HalfDefMargL   900 // Left margin in twips    (the default is 1800).
 #define HalfDefMargT   720 // Top  margin in twips    (the default is 1440).
@@ -148,19 +148,19 @@ Bool CreateInternalFileForFormatter(FILE *pIFName)
  }
 
  //Создания внутреннего файла для форматирования
- WORD  DistanceBetweenLeftMargin = 15;
- WORD  DistanceBetweenTopMargin  =  5;
- Page.m_wDpi             = (WORD)PageInfo.DPIX;
+ uint16_t  DistanceBetweenLeftMargin = 15;
+ uint16_t  DistanceBetweenTopMargin  =  5;
+ Page.m_wDpi             = (uint16_t)PageInfo.DPIX;
  PageIncline2048         = PageInfo.Incline2048;
 
  InternalRect VRect;
- fwrite(&Page.m_wDpi,              sizeof(WORD),1,pIFName); // ScanResolution
- fwrite(&Page.Count.Frags,         sizeof(WORD),1,pIFName); // число колонок
- fwrite(&Page.Count.Chars,         sizeof(WORD),1,pIFName); // число знакомест  in all page
- fwrite(&Page.Count.Words,         sizeof(WORD),1,pIFName); // число слов
- fwrite(&Page.Count.Strings,       sizeof(WORD),1,pIFName); // число строк
- fwrite(&DistanceBetweenLeftMargin,sizeof(WORD),1,pIFName); // distance between left margin letters- neighdoors from one word
- fwrite(&DistanceBetweenTopMargin, sizeof(WORD),1,pIFName); // distance between top margin
+ fwrite(&Page.m_wDpi,              sizeof(uint16_t),1,pIFName); // ScanResolution
+ fwrite(&Page.Count.Frags,         sizeof(uint16_t),1,pIFName); // число колонок
+ fwrite(&Page.Count.Chars,         sizeof(uint16_t),1,pIFName); // число знакомест  in all page
+ fwrite(&Page.Count.Words,         sizeof(uint16_t),1,pIFName); // число слов
+ fwrite(&Page.Count.Strings,       sizeof(uint16_t),1,pIFName); // число строк
+ fwrite(&DistanceBetweenLeftMargin,sizeof(uint16_t),1,pIFName); // distance between left margin letters- neighdoors from one word
+ fwrite(&DistanceBetweenTopMargin, sizeof(uint16_t),1,pIFName); // distance between top margin
 
  CFragment* cFrag;
  CFString*  cString;
@@ -174,7 +174,7 @@ Bool CreateInternalFileForFormatter(FILE *pIFName)
 	if(CheckRect( &VRect ) == FALSE)
 	  FReturnCode = FALSE ;
     fwrite(&VRect , sizeof( InternalRect ),1,pIFName);
-    fwrite(&cFrag->m_wStringsCount, sizeof( WORD  ),1,pIFName);
+    fwrite(&cFrag->m_wStringsCount, sizeof( uint16_t  ),1,pIFName);
     fwrite(&cFrag->m_wUserNumber  , sizeof( uint32_t ),1,pIFName);
     fwrite(&cFrag->m_Flags        , sizeof( uint32_t ),1,pIFName);
 
@@ -185,14 +185,14 @@ Bool CreateInternalFileForFormatter(FILE *pIFName)
       fwrite( &VRect, sizeof( InternalRect ),1,pIFName);
       VCopyRect( &VRect, &cString->m_rectString );
       fwrite( &VRect, sizeof( InternalRect ),1,pIFName);
-      fwrite( &cString->m_wWordsCount,  sizeof( WORD ),1,pIFName);
-	  fwrite( &cString->S_Flags,  sizeof( Word32 ),1,pIFName); //NEGA_STR
+      fwrite( &cString->m_wWordsCount,  sizeof( uint16_t ),1,pIFName);
+	  fwrite( &cString->S_Flags,  sizeof( uint32_t ),1,pIFName); //NEGA_STR
       // Processing Words
       for(int iString=0; iString < cString->m_wWordsCount; iString++){
          cWord = (CWord*)cString->m_arWords[iString];
-         fwrite( &cWord->m_wCharsCount,   sizeof( WORD ),1,pIFName);
-         fwrite( &cWord->m_wFontNumber,   sizeof( WORD ),1,pIFName);
-         fwrite( &cWord->m_wFontPointSize,sizeof( WORD ),1,pIFName);
+         fwrite( &cWord->m_wCharsCount,   sizeof( uint16_t ),1,pIFName);
+         fwrite( &cWord->m_wFontNumber,   sizeof( uint16_t ),1,pIFName);
+         fwrite( &cWord->m_wFontPointSize,sizeof( uint16_t ),1,pIFName);
 
          // Processing Letters
          for(int iWord=0; iWord < cWord->m_wCharsCount; iWord++){
@@ -201,7 +201,7 @@ Bool CreateInternalFileForFormatter(FILE *pIFName)
             fwrite( &VRect , sizeof( InternalRect ),1,pIFName);
             VCopyRect( &VRect, &cChar->m_RealRectChar );
             fwrite( &VRect , sizeof( InternalRect ),1,pIFName);
-            fwrite( &cChar->m_wCountAlt ,    sizeof( WORD ),1,pIFName);
+            fwrite( &cChar->m_wCountAlt ,    sizeof( uint16_t ),1,pIFName);
 			for (int iAlt=0;iAlt<cChar->m_wCountAlt&&iAlt<REC_MAX_VERS;iAlt++)
 			{
 				fwrite( &cChar->m_chrVersions[iAlt].m_bChar ,sizeof( char ),1,pIFName);
@@ -249,7 +249,7 @@ void CFPage::CreateArray_For_TextFragments( )
  while( hBlock )
  {
     if(CPAGE_GetBlockType( hPage , hBlock ) == TYPE_TEXT){
-       Word32 BlockNumber = CPAGE_GetBlockInterNum( hPage, hBlock);
+       uint32_t BlockNumber = CPAGE_GetBlockInterNum( hPage, hBlock);
        FragmentsArray.push_back( BlockNumber );
     }
 	hBlock = CPAGE_GetBlockNext( hPage , hBlock , 0);
@@ -314,7 +314,7 @@ void CFPage::ProcessingComingLine( CSTR_line* Comingline )
 
 	while(hBlock)
     {
-		if(CPAGE_GetBlockInterNum(hCPAGE,hBlock)==(Word32)m_nCurFragNumber){
+		if(CPAGE_GetBlockInterNum(hCPAGE,hBlock)==(uint32_t)m_nCurFragNumber){
 		   Fragment->m_wUserNumber = (uint32_t)CPAGE_GetBlockUserNum( hCPAGE, hBlock  );
            Fragment->m_Flags = attr.Flags; //nega
            if(attr.Flags == CSTR_STR_NEGATIVE){ //nega_str
@@ -691,10 +691,10 @@ void CChar::AddingLetter(CSTR_rast* rast, int index, Bool* FlagCapDrop)
 
 void VCopyRect(InternalRect* Inner, RECT* Outer)
 {
- Inner->top    = (WORD)Outer->top;
- Inner->bottom = (WORD)Outer->bottom;
- Inner->left   = (WORD)Outer->left;
- Inner->right  = (WORD)Outer->right;
+ Inner->top    = (uint16_t)Outer->top;
+ Inner->bottom = (uint16_t)Outer->bottom;
+ Inner->left   = (uint16_t)Outer->left;
+ Inner->right  = (uint16_t)Outer->right;
 }
 
 /////////////////////////////////////////////////////////////////////////////

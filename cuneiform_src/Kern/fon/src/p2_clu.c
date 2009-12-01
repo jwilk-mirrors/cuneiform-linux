@@ -111,7 +111,7 @@ static SINT ReadAllFromBase(char *name, SINT *nClu, char *movxy, SINT AllCount);
 #define SIGNAL_SAVE     40
 void Signal(void);
 
-typedef LONG (* MKFAM)(raster_header * rh, WORD nclu);
+typedef LONG (* MKFAM)(raster_header * rh, uint16_t nclu);
 
 // now - common number of symbols <= MAXSYM
 // number in one weighted raster <= MAXINCLUS (127)
@@ -134,18 +134,18 @@ static SINT IsCTBBase = 1; // load from b/w CTB
 static SINT OutCTBBase = 1; // save as grey CTB
 static BYTE metkaGoodStat[MAXWEICLUS * 2];
 static BYTE saveOnlyBest = 0; // make one font ?
-static Word32 allFields[4][NFIELDDWORD];
+static uint32_t allFields[4][NFIELDDWORD];
 #define MAXKEGL 127
 static SINT keglBuffer[MAXKEGL + 1];
 ////////////////
 // ctb-functions
-int StartCTB(char *outname, CTB_handle *ccc, Int16 countFont, Word32 *allFil);
+int StartCTB(char *outname, CTB_handle *ccc, int16_t countFont, uint32_t *allFil);
 void EndCTB(CTB_handle *ccc);
 int SaveWeletAsCTB(welet *wel, CTB_handle *ccc);
 ///////////////////
 int FindBestClusters(int numSymbol, int numCluster, Nraster_header *rh,
 		SINT *nClus, BYTE *metka, BYTE *metkaValid, int maxOutFonts,
-		Word32 *ffFields);
+		uint32_t *ffFields);
 int MultiFindBestClusters(int numSymbol, int numCluster, Nraster_header *rh,
 		SINT *nClus, BYTE *metka, BYTE *metkaValid);
 int GetProbValid(int numSymbol, int numCluster, Nraster_header *rh,
@@ -158,7 +158,7 @@ static SINT ReOrderClusters(SINT NumClus, SINT NumAll, clu_info *cin);
 static SINT TestUnionSolid(SINT porog, SINT NumAll, SINT Clus2, SINT NumClus);
 SINT MakeMoved(BYTE *etalon, SINT xbyte, SINT yrow, BYTE *tmpbuf);
 static SINT UnionOneAll(SINT fir, SINT las, BYTE *buf, BYTE *bufr, SINT xbyte,
-		SINT yrow, WORD CurName, SINT porog, SINT *NumIn);
+		SINT yrow, uint16_t CurName, SINT porog, SINT *NumIn);
 static SINT TestUnionOne(SINT porog, SINT NumAll, SINT NumClus);
 SINT FindDistanceWr(welet *wel, welet *outwel);
 SINT CheckCenterSymbol(BYTE *b1, SINT xbyte, SINT yrow, BYTE *buf2, BYTE *tbuf,
@@ -172,7 +172,7 @@ static BYTE *BitHau[MAXHAU]; // big buffers
 static LONG LastBit = 0;
 Nraster_header *rh = NULL;
 SINT nClus[MAXSYM];
-Word8 language = 0, langCyrilRoman = 0;
+uchar language = 0, langCyrilRoman = 0;
 static SINT clusBuffer[MAXSYM];
 static SINT *mysteck = NULL; // == dist_wel
 
@@ -580,7 +580,7 @@ SINT MakeClusters(SINT fir, SINT NumAll, SINT CurClus, SINT porog,
 	SINT i, j;
 	SINT IsSame, IsNew;
 	SINT NumSame;
-	WORD CurName;
+	uint16_t CurName;
 	BYTE *buf, *bufr;
 	SINT xbyte, yrow; // size of current
 	SINT dist;
@@ -686,7 +686,7 @@ static SINT ClusterHausdorfDLL(char *NameWr, SINT porog, char *szOutName,
 	BYTE *metkaValid;
 	SINT fhSnap = -1; // 30.10.98
 	CTB_handle CTBfile, CTBsnap, *CTBpointer = NULL;
-	Int16 countFont = 0;
+	int16_t countFont = 0;
 
 	if (NameWr == NULL) {
 		if ((NumAll = (SINT) GetNumMemory()) <= 0)
@@ -950,14 +950,14 @@ void init11(void) {
 /////////////
 // rbyte =8*...  !!!
 // return number of black points
-WORD PutSymbolRaster(BYTE *pHau, BYTE *rast, SINT rbyte, SINT xbits,
+uint16_t PutSymbolRaster(BYTE *pHau, BYTE *rast, SINT rbyte, SINT xbits,
 		SINT xbyte, SINT yrow) {
 	SINT i, j;
 	SINT xb = (xbits + 7) >> 3; // actual bytes in row
 	BYTE *rr;
 	BYTE *tb;
 	BYTE num;
-	WORD summa = 0;
+	uint16_t summa = 0;
 
 	for (i = 0; i < yrow; i++, rast += rbyte, pHau += xbyte) {
 		for (j = 0, rr = rast; j < xb; j++, rr += 8) {
@@ -968,7 +968,7 @@ WORD PutSymbolRaster(BYTE *pHau, BYTE *rast, SINT rbyte, SINT xbits,
 			} else {
 				if (num == 0)
 					continue;
-				tb = tabl + (((WORD) num) << 3);
+				tb = tabl + (((uint16_t) num) << 3);
 				num = Num11[num];
 				summa += num;
 				for (; num; num--, tb++)
@@ -1182,16 +1182,16 @@ SINT SaveCluster(SINT fh, CTB_handle *CTBfile, SINT fhSnap,
 	welBuf->sr_row = rh[fir].sr_row;
 
 	if (IsCTBBase && metkaGood) {
-		Word16 meme = METKA_VALID;
+		uint16_t meme = METKA_VALID;
 		welBuf->prob = metkaGood[clus - 1];
 		welBuf->valid = metkaValid[clus - 1] & (~meme);
 	}
 
 	// middle width,height
-	welBuf->mw = (BYTE)((summax + ((WORD) welBuf->weight / 2))
-			/ (WORD) welBuf->weight);
-	welBuf->mh = (BYTE)((summay + ((WORD) welBuf->weight / 2))
-			/ (WORD) welBuf->weight);
+	welBuf->mw = (BYTE)((summax + ((uint16_t) welBuf->weight / 2))
+			/ (uint16_t) welBuf->weight);
+	welBuf->mh = (BYTE)((summay + ((uint16_t) welBuf->weight / 2))
+			/ (uint16_t) welBuf->weight);
 
 	j = WR_MAX_WIDTH * WR_MAX_HEIGHT;
 
@@ -1326,7 +1326,7 @@ static SINT TestUnionOne(SINT porog, SINT NumAll, SINT NumClus) {
 	SINT i, j, k;
 	SINT *LasIn;
 	SINT *NumIn;
-	WORD CurName;
+	uint16_t CurName;
 	SINT best, numbest;
 
 	NumClus++; // start from 1
@@ -1443,7 +1443,7 @@ static SINT TestUnionOne(SINT porog, SINT NumAll, SINT NumClus) {
 
 #ifdef _RENAME_
 SINT UnionOneAll(SINT fir, SINT las, BYTE *buf, BYTE *bufr, SINT xbyte,
-		SINT yrow, WORD CurName, SINT porog, SINT *NumIn) {
+		SINT yrow, uint16_t CurName, SINT porog, SINT *NumIn) {
 	SINT j;
 	SINT dist;
 
@@ -1480,7 +1480,7 @@ SINT TestUnionSolid(SINT porog, SINT NumAll, SINT Clus2, SINT NumClus) {
 	SINT j, k;
 	SINT *IsTwin; // buffer for number union
 	SINT *FirIn; // first from every non-solid cluster
-	WORD CurName;
+	uint16_t CurName;
 	SINT CurClus;
 	BYTE *buf;
 	BYTE *bufr;
@@ -1780,8 +1780,8 @@ static SINT ReadAllFromBase(char *name, SINT *nClu, char *movxy, SINT AllCount) 
 	return allnum;
 }
 /////////////////////
-FON_FUNC(int32_t) FONFontClusters(char *rname,char *cluname,void *accept,Word8 *extern_buf,int32_t size,
-		Word32 param,void *ShowProgress,Word8 lang)
+FON_FUNC(int32_t) FONFontClusters(char *rname,char *cluname,void *accept,uchar *extern_buf,int32_t size,
+		uint32_t param,void *ShowProgress,uchar lang)
 {
 	clu_info cin;
 	char szOutName[144];

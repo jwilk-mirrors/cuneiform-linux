@@ -103,14 +103,14 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 			int HndTab,
 			RecRaster  *recraster, // raster description
 			RecVersions *Indres,
-            Word32    Flags     );
+            uint32_t    Flags     );
 
   MSK_FUNC(Bool32)  MSKSetHndTab(int HndTab);
 
   MSK_FUNC(void)  MSKDone(void);
 			// Stop function. Call after LEOInit()
 
-  MSK_FUNC(Int16) MSKGetErr(void);
+  MSK_FUNC(int16_t) MSKGetErr(void);
 			// Err16.h defined codes or one of the next
 			//
 

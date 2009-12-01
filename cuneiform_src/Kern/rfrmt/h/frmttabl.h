@@ -82,20 +82,20 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #define  TG_EDW_NARROW        128     // user defined
 
 extern   float      Twips;
-extern   Word32     FlagMode;
+extern   uint32_t     FlagMode;
 extern   char       lpMyNameSerif[MAX_PATH];
 extern   char       lpMyNameNonSerif[MAX_PATH];
 extern   char       lpMyNameMono[MAX_PATH];
-extern   Int16      get_font_name(Int16 FontNumber);
+extern   int16_t      get_font_name(int16_t FontNumber);
 
 #ifdef __cplusplus
 	extern "C" {
 #endif
 
-Word32 GetTablCount(void);
+uint32_t GetTablCount(void);
 void   ViewTable(void);
-void   GetTableRect( Word32 NumberTable , Rect16* RectTable,Word32* UserNumber );
-Bool   WriteTable( Word32 IndexTable, RtfSectorInfo* SectorInfo/*, CString* TableString*/ ,Bool OutPutMode );
+void   GetTableRect( uint32_t NumberTable , Rect16* RectTable,uint32_t* UserNumber );
+Bool   WriteTable( uint32_t IndexTable, RtfSectorInfo* SectorInfo/*, CString* TableString*/ ,Bool OutPutMode );
 //void   TablePutChar( CString* TableString, BYTE sym );
 
 #ifdef __cplusplus
@@ -110,7 +110,7 @@ class CTableChar;
 
 void  GetFragmLines( int32_t m_NumberFragm , Point32* m_point );
 Bool  CheckLine( CSTR_line* Comingline );
-void  AddLetter( CSTR_rast* rast , Word8*  m_ucCode , Word8* m_ucFontNumber );
+void  AddLetter( CSTR_rast* rast , uchar*  m_ucCode , uchar* m_ucFontNumber );
 void  Write_SetPhCellParam( Handle h_Page, Handle h_Table, CTableRow* rTableRow, Point32 m_TempPhPoint,
 																										 int32_t CountStrCellInPn, int32_t FlagPhisicalGroup , int32_t NumberPhysicalGroup );
 /////////////////////////////////////////////////////////////////////////////
@@ -126,7 +126,7 @@ public:
 
   Rect32        RectTable;
   std::vector<CTableRow*>/*CObArray*/	    m_arTableRows;
-  WORD          m_wIndex;
+  uint16_t          m_wIndex;
   int32_t         m_CountRows;
   int32_t         m_CountColumns;
 };
@@ -143,11 +143,11 @@ public:
   void	        Write(/*CString* TableString,*/RtfSectorInfo* SectorInfo);
 
   std::vector<CTablePhCell*>/*CObArray*/	    m_arPhCells;
-  WORD		    m_wHeight;
-  WORD          m_wPosX;
-  WORD          m_wPosY;
-  WORD          m_wIndex;
-  WORD          m_wCountPhCells;
+  uint16_t		    m_wHeight;
+  uint16_t          m_wPosX;
+  uint16_t          m_wPosY;
+  uint16_t          m_wIndex;
+  uint16_t          m_wCountPhCells;
   Handle        m_hEdTableRow;
 };
 
@@ -175,13 +175,13 @@ public:
   Rect32        RectTable;
   Point32       m_PhCellPoint;
 
-  WORD	        m_wIndex;
+  uint16_t	        m_wIndex;
   Bool32	    m_FlagTerminalPhCell;
   Bool32        m_FlagPhisicalGroup;
   int32_t         m_NumberPhysicalGroup;
   int32_t         m_FragmentNumber;
   int32_t         m_LeftIndent;
-  WORD     	    m_wCountStrings;
+  uint16_t     	    m_wCountStrings;
   Bool32        m_PhCellFragmentFormatting;       //Hor. formatting
   Bool32        m_PhCellFragmentAlignment;        //Ver. formatting
   Handle        m_hEdTableCell;
@@ -189,8 +189,8 @@ uint32_t         m_Flags;
 
   union
   {
-	Word8		m_u8BoundsType[4];//Информация о типе границ ячейки:L,R,T,B !!!Art
-	Word32		m_u32BoundsType;
+	uchar		m_u8BoundsType[4];//Информация о типе границ ячейки:L,R,T,B !!!Art
+	uint32_t		m_u32BoundsType;
   };
 };
 
@@ -206,13 +206,13 @@ public:
   void  	    ExtractWordsFromString( CSTR_line line );
   void          ExtractNextWord( CSTR_line* line );
   void	        Write(/*CString* TableString,*/ RtfSectorInfo* SectorInfo);
-  void          MyCorrectKegl( Int16 width );
-  Int16         GetRealSizeForKegl( char* str,Int16 FontSize,Int16 FontNumber );
+  void          MyCorrectKegl( int16_t width );
+  int16_t         GetRealSizeForKegl( char* str,int16_t FontSize,int16_t FontNumber );
 
   /*CObArray*/std::vector<CTableWord*>      m_arWords;
 
-  WORD	        m_wIndex;
-  WORD          m_wCountWords;
+  uint16_t	        m_wIndex;
+  uint16_t          m_wCountWords;
 uint32_t         m_Flags;
 };
 
@@ -233,15 +233,15 @@ public:
   std::vector<CTableChar*>/*CObArray*/      m_arChars;
   RECT	        m_rectWord;
 
-  WORD	        m_wCountChars;
-  WORD	        m_wIndex;
-  WORD	        m_wEDIndex;
-  WORD	        m_wFontNumber;
-  WORD	        m_wFontPointSize;
-  WORD          m_wUnderline;
-  WORD          m_wBold;
-  WORD          m_wItalic;
-  WORD          m_wProb;
+  uint16_t	        m_wCountChars;
+  uint16_t	        m_wIndex;
+  uint16_t	        m_wEDIndex;
+  uint16_t	        m_wFontNumber;
+  uint16_t	        m_wFontPointSize;
+  uint16_t          m_wUnderline;
+  uint16_t          m_wBold;
+  uint16_t          m_wItalic;
+  uint16_t          m_wProb;
   BYTE          m_bSpell;
 uint32_t         m_Flags;
 };
@@ -265,9 +265,9 @@ public:
   } m_chrVersions[REC_MAX_VERS];//!!! Art
   BYTE          m_blanguage;
   BYTE          m_bFlg_spell;
-  WORD          m_wCountAlt;
-  WORD          m_wFontNumber;
-  WORD	        m_wIndex;
+  uint16_t          m_wCountAlt;
+  uint16_t          m_wFontNumber;
+  uint16_t	        m_wIndex;
 uint32_t         m_Flags;
  };
 

@@ -72,7 +72,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "sfont.h"
 #include "fonrec.h"
 
-WORD cmp(PBYTE r,WORD fullwb,WORD w,WORD h,welet * wl);
+uint16_t cmp(PBYTE r,uint16_t fullwb,uint16_t w,uint16_t h,welet * wl);
 SINT RazmazHalf(BYTE *bSource,BYTE *bDest,SINT xbit,SINT yrow);
 
 static int LookLeft(int *startRow,int yrow,int bits,int height,
@@ -113,7 +113,7 @@ typedef struct tagMYSTACK {
 } MYSTACK;
 */
 
-extern Word8 language;
+extern uchar language;
 
 static int *AllBounds=NULL;
 static RECBOU AllRecBou[MAX_ALT_BOU];
@@ -396,7 +396,7 @@ int dist,j;
 static int distWeletBound(BYTE *buf,BYTE *bufraz,int w,int h,welet * wl,int porog,
 						  int *bou,RECBOU *recBou, int countRazmaz)
 {
- WORD best,east,west,north,south,center;
+ uint16_t best,east,west,north,south,center;
  int   lbest; // local best
  int bound=2*MIN(50,w+h);
  int initPorog=porog;
@@ -1424,7 +1424,7 @@ static int FillInBuf(BYTE *inBuf,int xbyte,int yrow,CSTR_rast fir,CSTR_rast las,
 	{
         if( !CSTR_GetAttr (fir, &attr) )
                 return -1;
-		if( !CSTR_GetImage(fir,(Word8*)&recRast,CSTR_TYPE_IMAGE_RS ) )
+		if( !CSTR_GetImage(fir,(uchar*)&recRast,CSTR_TYPE_IMAGE_RS ) )
                 return -1;
 
 		xbyte8 = REC_GW_WORD8(recRast.lnPixWidth);
@@ -1608,7 +1608,7 @@ Bool32 p2_StoreVersions(CSTR_rast rast,RecVersions *rver,int lang)
 {
 int  i;
 UniVersions cver,*ver;
-Word8 let;
+uchar let;
 
 //if( lang==LANG_ENGLISH && multy_language )
 //    lang    = LANG_RUSENG;

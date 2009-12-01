@@ -76,7 +76,7 @@
 
 extern BYTE *let_linpos, *let_lindef, *let_lincomp, *let_linshape,
 		*let_sans_acc, *let_lindef3;
-extern Word16 *accent_tab; // 30.08.2000 E.P.
+extern uint16_t *accent_tab; // 30.08.2000 E.P.
 
 // module diffrv.c
 void r_criteria(cell *c, const s_glue * gl);
@@ -105,7 +105,7 @@ void progress_finish(void);
 // module matrix.c
 void matrix_open();
 void matrix_close();
-INT matrix_read(PBYTE buff, WORD lth);
+INT matrix_read(PBYTE buff, uint16_t lth);
 
 // module rules.c
 void rules_open();
@@ -124,7 +124,7 @@ void cutoffs();
 
 // module sweeper.c
 void sweeper_ini();
-WORD sweeper(INT);
+uint16_t sweeper(INT);
 void sweeper_end();
 void read_comp(uint32_t, PCHAR, LONG);
 void comp_file_close();
@@ -160,8 +160,8 @@ Bool snap_show_text(PBYTE);
 Bool snap_show_text1(PBYTE);
 Bool snap_monitor(void);
 void snap_draw_line(Handle wnd, Point16 *start, Point16 *end, int32_t skew,
-		Word32 rgb, Int16 pen, Word32 key);//IGOR
-void snap_del_line(Handle wnd, Word32 key);//IGOR
+		uint32_t rgb, int16_t pen, uint32_t key);//IGOR
+void snap_del_line(Handle wnd, uint32_t key);//IGOR
 Bool snap_baselines(BYTE a);//IGOR
 Bool snap_monitor_ori(CSTR_line *snap_line, int32_t nums);
 Bool snap_newcell(cell *);
@@ -254,7 +254,7 @@ INT cell_is_BOX_solid(cell*);
 MN* c_locomp(PBYTE, LONG, LONG, INT, INT);
 
 // module v0compgl.asm
-void invert_tiff(PBYTE c, WORD lth);
+void invert_tiff(PBYTE c, uint16_t lth);
 
 // module cutgraph.c
 INT make_graph();
@@ -291,13 +291,13 @@ void embBOX(servBOX *, SVERS *, Bool);
 void embBOXF(servBOX *, INT, Bool);
 
 // module scalar.asm
-INT proport(WORD, WORD, WORD, INT, INT);
-extern WORD (*scalarf)(PWORD, PWORD, WORD);
+INT proport(uint16_t, uint16_t, uint16_t, INT, INT);
+extern uint16_t (*scalarf)(PWORD, PWORD, uint16_t);
 extern LONG (*scalar)(PWORD, PWORD);
 INT long_sqrt(uint32_t);
 
 // module funcBOX.asm
-void comp_to_box(PWORD, c_comp *, WORD, WORD, WORD, WORD);
+void comp_to_box(PWORD, c_comp *, uint16_t, uint16_t, uint16_t, uint16_t);
 
 // module abris.c
 void abris_reset();
@@ -372,7 +372,7 @@ BYTE similar_wide_frt1(STICK_CHARS *left_chars, STICK_CHARS *right_chars);
 
 // module def_stic.c
 INT stick_center_study(cell *c, s_glue *GL, INT typ);
-WORD typ_thin_stick(lnhead *lin, INT dy, INT dx);
+uint16_t typ_thin_stick(lnhead *lin, INT dy, INT dx);
 INT erector(cell *c, INT enable_erect, INT enable_shave, INT enable_snap,
 		INT enable_diskrim);
 
@@ -390,8 +390,8 @@ void num_of_skip_line(BYTE left[], BYTE right[], INT dy, INT opt, INT wide,
 void set_stick_aux_signums(cell *c, BYTE left[], BYTE right[], INT dy,
 		INT wide_up, STICK_CHARS *left_chars, STICK_CHARS *right_chars,
 		STICK_SIGNUMS *signums, INT dis_left_brace, INT dis_right_brace,
-		INT dis_slash, INT l_f_sym, INT r_f_sym, INT T_c, WORD T_2_3,
-		WORD T_skok, B_LINES *bl, INT nlines, INT incline);
+		INT dis_slash, INT l_f_sym, INT r_f_sym, INT T_c, uint16_t T_2_3,
+		uint16_t T_skok, B_LINES *bl, INT nlines, INT incline);
 
 void
 		calc_skipped_lines(INT hist_int[], BYTE left[], BYTE right[], INT dy,
@@ -553,7 +553,7 @@ void maden_comp(PBYTE, INT, INT, INT, INT);
 c_comp *get_comp(PROOT);
 void Pass2(void);
 Bool32 read_rec_file(INT seqn, PBYTE pool, PBYTE * end);
-///////////////////INT cond_open(INT seqn, PCHAR name, WORD b1, WORD b2);
+///////////////////INT cond_open(INT seqn, PCHAR name, uint16_t b1, uint16_t b2);
 PBYTE seq_nam(INT seqn);
 INT to_voc(void);
 void to_edp(void);
@@ -573,7 +573,7 @@ void snap_events(cell *);
 void write_events(cell *);
 void * snap_ev_res();
 void snap_ev_reset();
-void snap_keep(BYTE user, PBYTE addr, WORD lth);
+void snap_keep(BYTE user, PBYTE addr, uint16_t lth);
 /*void snap_sticks(cell *,char *);*/
 
 // module v0compmn.asm
@@ -587,7 +587,7 @@ void recog_save_maden();
 void v2_pidx_crit(cell *);
 void pidx_crit();
 Bool pidx_skip(INT h, INT w, BYTE t_let);
-WORD el_pidx_crit(WORD t_let, INT pidx);
+uint16_t el_pidx_crit(uint16_t t_let, INT pidx);
 
 // module lang_fil.c
 void ev_lang_filter();
@@ -605,7 +605,7 @@ INT scaled(INT value, BYTE scale);
 PBYTE compress_component(c_comp *c, BYTE scale);
 PBYTE compress_large_component(c_comp *c, BYTE scale);
 PBYTE compress_dust_component(c_comp *c, BYTE scale);
-INT filling_MN(MN *mn, WORD h, WORD w);
+INT filling_MN(MN *mn, uint16_t h, uint16_t w);
 
 //      module tg_spell
 INT spelling(PBYTE memory, LONG size);
@@ -633,7 +633,7 @@ void write_prot(cell *);
 
 // module scanjet
 INT give_scan_handle(void);
-WORD scan_close(void);
+uint16_t scan_close(void);
 
 // module dllentry or run
 void write_text(BYTE);
@@ -681,7 +681,7 @@ INT erect_raster_value(BYTE *raster, INT dx, INT dy, INT inc);
 void shevron(cell*);
 /*-------------------------- Extern -------------------*/
 
-Bool check_cancel(WORD perc);
+Bool check_cancel(uint16_t perc);
 
 MN *cell_cut(cell *);
 
@@ -689,19 +689,19 @@ void set_page_name(PBYTE);
 
 void setdrmode(INT);
 
-void c_rastror(PBYTE, PBYTE, WORD, WORD);
+void c_rastror(PBYTE, PBYTE, uint16_t, uint16_t);
 
 lnhead *c_boxln(MN *);
 
 // rstr_con.c
-Int16 rstr_cont_store(RecRaster *r, Word8 let, Word8 nLns, Rect16 *rect,
-		Word8 IsPrint, Word8 Prob, Word8 Valid, RecVersions *v, Word8 control,
-		Word8 kegl, Word8 column, Word8 tabno);
+int16_t rstr_cont_store(RecRaster *r, uchar let, uchar nLns, Rect16 *rect,
+		uchar IsPrint, uchar Prob, uchar Valid, RecVersions *v, uchar control,
+		uchar kegl, uchar column, uchar tabno);
 void rstr_close_cont(void);
 Bool32 rstr_open_cont(void);
 // rcm.c
-Bool32 Reload_lang_vocs(Word8 language);
-Bool32 set_user_alphabet(Word8 * usa_ascii);
+Bool32 Reload_lang_vocs(uchar language);
+Bool32 set_user_alphabet(uchar * usa_ascii);
 void ErrorExit(int Code);
 #ifndef _JBTYPE
 #define _JBTYPE jmp_buf

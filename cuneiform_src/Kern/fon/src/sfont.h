@@ -76,8 +76,8 @@
 #define NotEmptyField(sour) (sour[0]|sour[1])
 #define EmptyField(sour)    ((sour[0]|sour[1])==0)
 #define ClearFields(sour)   {sour[0]=sour[1]=0;}
-void MakeDWORDField(int i, Word32 *fifi);
-void AddDWORDField(int i, Word32 *fifi);
+void MakeDWORDField(int i, uint32_t *fifi);
+void AddDWORDField(int i, uint32_t *fifi);
 
 // маски параметров кластера
 #define FON_CLU_SOLID    1
@@ -91,18 +91,18 @@ void AddDWORDField(int i, Word32 *fifi);
 
 typedef struct tag_welet {
 	char raster[WR_MAX_HEIGHT * WR_MAX_WIDTH];
-	WORD w;
-	WORD h; // actual width and height
+	uint16_t w;
+	uint16_t h; // actual width and height
 	uint32_t summa; // summa of all weighted points
-	WORD fill; // number of not-empty points in raster
+	uint16_t fill; // number of not-empty points in raster
 	SINT num; // linear number of struct in file
 	uint32_t fields[NFIELDDWORD]; //  30.11.98 - from which plat. fields
 	SINT sr_col;
 	SINT sr_row; // source row,col
 	SINT nInCTB; // first in CTB
 	SINT next; // next with same name
-	WORD invalid; // !=0 -> cluster glue
-	WORD attr;
+	uint16_t invalid; // !=0 -> cluster glue
+	uint16_t attr;
 	/*            solid      : 1, // confirmed
 	 italic     : 1,
 	 bold       : 1,
@@ -125,23 +125,23 @@ typedef struct tag_welet {
 } welet;
 
 typedef struct tag_raster_header {
-	WORD w, h; // actual width and height
-	WORD let;  // ascii code
+	uint16_t w, h; // actual width and height
+	uint16_t let;  // ascii code
 	BYTE code[4]; // code of first intervals
 	SINT sr_col, sr_row; // real coord of letter
-	WORD num; // number of cluster that was accept raster
-	WORD solid :1, // confirmed letter
+	uint16_t num; // number of cluster that was accept raster
+	uint16_t solid :1, // confirmed letter
 			:15;
 	BYTE reserved[6];
 } raster_header;
 
 // results of clusterization
 typedef struct tag_clu_info {
-	WORD totclu; // total number of clusters
-	WORD nsymbols; // Number of symbols were clusterized
-	WORD nsolid;
-	WORD ninvalid;
-	WORD ntwins;
+	uint16_t totclu; // total number of clusters
+	uint16_t nsymbols; // Number of symbols were clusterized
+	uint16_t nsolid;
+	uint16_t ninvalid;
+	uint16_t ntwins;
 	LONG memused; // memory were used
 	SINT rc; // return code
 } clu_info;
@@ -152,23 +152,23 @@ typedef struct tag_access_tab {
 #define ENTRIES         24
 #define FREECELL        0xffff
 #define SIGNATURE       "Fast access table2"
-	WORD access_tab[NCELL][ENTRIES];
-	WORD all_access[256];
+	uint16_t access_tab[NCELL][ENTRIES];
+	uint16_t all_access[256];
 	SINT wlsize; // size of cluster in bytes for external utilities
 	char sign[20];
 } access_tab;
 
 typedef struct tag_version {
 #define MAXVERS 8
-	WORD let; // letter code
+	uint16_t let; // letter code
 	SINT prob; // probability
 	SINT aux; // working var
-	WORD recsource :2; // Who is recognize
+	uint16_t recsource :2; // Who is recognize
 #define src_letter      0
 #define src_full        1
 #define src_3x5         2
 #define src_ev          3
-	WORD mixp :1; // prob was fixed
+	uint16_t mixp :1; // prob was fixed
 	SINT xo :2, yo :2;
 } Version;
 
@@ -176,7 +176,7 @@ typedef struct tag_answer {
 	Version vers[MAXVERS + 1];
 	BYTE nvers;
 	SINT ret;
-	WORD recletterdone :1, // recognition method
+	uint16_t recletterdone :1, // recognition method
 			recfulldone :1, // recognition method
 			recdone :1, // recognize was made
 			reccopy :1; // answer was filled by copying
@@ -196,17 +196,17 @@ typedef struct tag_answer {
 #define MAXWEICLUS (4*1024*1024L/sizeof(welet))
 
 typedef struct tag_Nraster_header {
-	WORD w;
-	WORD h;
-	WORD xbyte; // special !
-	WORD let;
+	uint16_t w;
+	uint16_t h;
+	uint16_t xbyte; // special !
+	uint16_t let;
 	BYTE *pHau; // pointer to picture
 	BYTE *pHaur; // pointer to thick picture
 	SINT sr_col;
 	SINT sr_row;
 	SINT nInCTB; // number in CTB
-	WORD nField; // field in plat
-	WORD num; // use to mark - if >0 - invalid, and = ClusterNumber
+	uint16_t nField; // field in plat
+	uint16_t num; // use to mark - if >0 - invalid, and = ClusterNumber
 	BYTE solid :1, fat :1, italic :1, bold :1, serif :1, gelv :1, narrow :1,
 			reservBits :1;
 	BYTE kegl;
@@ -219,10 +219,10 @@ typedef struct tag_Nraster_header {
 typedef struct tagInfoCluster {
 	int32_t mw;
 	int32_t mh;
-	Word32 fields[NFIELDDWORD];
-	Int16 count;
-	Int16 first;
-	Int16 let;
+	uint32_t fields[NFIELDDWORD];
+	int16_t count;
+	int16_t first;
+	int16_t let;
 	BYTE invalid;
 	BYTE good;
 	BYTE prob;
@@ -233,15 +233,15 @@ typedef struct tagInfoCluster {
 	BYTE nBold;
 	BYTE attr; // attributes - italic,...
 	BYTE isSame; // working for test 0O6b
-	Word32 tablColumn;
+	uint32_t tablColumn;
 } InfoCluster;
 
 typedef struct tagFontField {
-	Word32 field[NFIELDDWORD];
-	Word32 testField[NFIELDDWORD];
-	Int16 sBig;
-	Int16 sLit;
-	Word16 inFont[256];
+	uint32_t field[NFIELDDWORD];
+	uint32_t testField[NFIELDDWORD];
+	int16_t sBig;
+	int16_t sLit;
+	uint16_t inFont[256];
 } FONTFIELD;
 
 #define METKA_VALID 0x80  // get as good in font
@@ -256,8 +256,8 @@ LONG StartHausdorfDLL(int num, void *ExternBuf, uint32_t SizeExternBuf);
 void EndHausdorfDLL(void);
 int32_t GetNumMemory(void);
 void EndNumMemory(void);
-int32_t StartAddMemCluster(Word8 *metkaValid, int32_t CurClus, Int16 countFont,
-		Word32 *allFields);
+int32_t StartAddMemCluster(uchar *metkaValid, int32_t CurClus, int16_t countFont,
+		uint32_t *allFields);
 int32_t AddClusterMemFont(welet *wel);
 SINT Razmaz(BYTE *bSource, BYTE *bDest, SINT xbyte, SINT xbit, SINT yrow,
 		BYTE bold);

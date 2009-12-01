@@ -88,18 +88,18 @@ class CRIBinarizator
 {
 private:
 
-	Word8          wIndex4ToGray[16];
-	Word8          wIndex8ToGray[256];
+	uchar          wIndex4ToGray[16];
+	uchar          wIndex8ToGray[256];
 	Bool32          mbIndexColor;
-	Word32     mwGreenK;
-	Word32     mwRedK;
-	Word32     mwBlueK;
+	uint32_t     mwGreenK;
+	uint32_t     mwRedK;
+	uint32_t     mwBlueK;
 	float    mfGreenK;
 	float    mfRedK;
 	float    mfBlueK;
 
 public:
-	Bool32 Binarize(CTBinarize eBinType, Word32 wFlag);
+	Bool32 Binarize(CTBinarize eBinType, uint32_t wFlag);
 	Bool32 SetRasters(PCTDIB pSrcDIB, PCTDIB pDescDIB );
 	CRIBinarizator();
 	CRIBinarizator( PCRProgressor pProgressIndicator);
@@ -107,35 +107,35 @@ public:
 
 private:
 	Bool32 DezaCloseBin(void);
-	Bool32 DezaOpenBin(Word32 wDezaFlag);
+	Bool32 DezaOpenBin(uint32_t wDezaFlag);
 	Bool32 KronrodCloseGray(void);
-	Bool32 KronrodGreyFrom(PWord8 pGFrom);
-	Bool32 KronrodGreyTo(PWord8 pGTo);
+	Bool32 KronrodGreyFrom(puchar pGFrom);
+	Bool32 KronrodGreyTo(puchar pGTo);
 
 public:
-	Int16  KronrodImageRead(PWord8, Int16 fstLine, Int16 nLines);
-	int32_t  KronrodImageRead(PWord8, int32_t fstLine, int32_t nLines);
+	int16_t  KronrodImageRead(puchar, int16_t fstLine, int16_t nLines);
+	int32_t  KronrodImageRead(puchar, int32_t fstLine, int32_t nLines);
 
 private:
 	Bool32 OnBinarizeLoop();
-	Bool32 KronrodOpenBin(Word32 wHeight, Word32 wWeidth);
+	Bool32 KronrodOpenBin(uint32_t wHeight, uint32_t wWeidth);
 	Bool32 OnBinarizator( );
 	Bool32 CloseBinarizator();
-	Bool32 OpenBinarizator(Word32 wFlag);
-	Word8           IndexPalleteToGray(PCTDIBRGBQUAD pQuad);
+	Bool32 OpenBinarizator(uint32_t wFlag);
+	uchar           IndexPalleteToGray(PCTDIBRGBQUAD pQuad);
 	Bool32          PrepareIndexTable(PCTDIB pDIB);
 	Bool32          SupportedIndexColorImage(PCTDIB pImage);
 
 private:
-	Word32                 mwGreyBufferSize;
+	uint32_t                 mwGreyBufferSize;
 	PCTDIB                 mpOutcomeDIB;
 	PCTDIB                 mpIncomeDIB;
 	CTBinarize             meBinType;
-	Word32                 mwSrcBitCount;
-	PWord8                 mpSrcBuffer;
-	Word32                 mwLineLenght;
+	uint32_t                 mwSrcBitCount;
+	puchar                 mpSrcBuffer;
+	uint32_t                 mwLineLenght;
 	Handle                 mhszGreyBuffer;
-	PWord8                 mpszGreyBuffer;
+	puchar                 mpszGreyBuffer;
 	Bool32                 mbKronrodInvert;
 	CTBINTigerImageInfo    mDezaImageInfo;
 	PCDezaBinarizator      mpDezaBinarizator;

@@ -93,11 +93,11 @@ static HWND h_found=NULL;
 extern "C" {
 #endif
 //---Из секции колонок---
-Int16 NumCol;
+int16_t NumCol;
 int SizeSectionCol;
-Int16 *NumStr;//[nc]
-Word32 *UserNumber;//[nc]
-Word32 *FragFlag;//[nc]
+int16_t *NumStr;//[nc]
+uint32_t *UserNumber;//[nc]
+uint32_t *FragFlag;//[nc]
 SRECT *BndCol;//[nc]
 STAT_COL *StatCol;//[nc]
 int len_col,k_frm;
@@ -176,8 +176,8 @@ extern int ConsMess( const char* str, ... );
 #endif
 int TypeDoc;
 */ // !!! Art - устарело
-Int16 MonoSpaceAllPage;
-Int16 HeiStrAllPage;
+int16_t MonoSpaceAllPage;
+int16_t HeiStrAllPage;
 /* // !!! Art - устарело
 int getchW(void);
 
@@ -197,8 +197,8 @@ int SaveFullOutTiger(char *FileName);
 //FileNameOut - имя выходного файла
 //Return: 0 - OK
 //
-WORD NumZ,NumW,NumS;
-Int16 SizeYGlobUpp;
+uint16_t NumZ,NumW,NumS;
+int16_t SizeYGlobUpp;
 int IsB1(BYTE a)
 { if((FeatLet[a].Chif && a != ',' && a != '.' && a != '-') ||
      (FeatLet[a].Let &&  a != '-' && a != '\'' &&
@@ -420,25 +420,25 @@ int CalcStatTiger(void)
 }
 
 //Формат файла:
-//Int16 ScanResolution
-//Int16 NumCol,NumZ,NumW,NumS - числа колонок, знакомест, слов и строк in all page
-//Int16 MonoSpaceAllPage - distance between left margin letters-neighdoors from one word
-//Int16 HeiStrAllPage - distance between top margin
+//int16_t ScanResolution
+//int16_t NumCol,NumZ,NumW,NumS - числа колонок, знакомест, слов и строк in all page
+//int16_t MonoSpaceAllPage - distance between left margin letters-neighdoors from one word
+//int16_t HeiStrAllPage - distance between top margin
 //Fragm[0], ..., Fragm[NumCol-1] фрагменты
 //  Fragm[nf]: один фрагмент
 //    Rect16 RectFragm
-//    Int16  NumStr число строк
+//    int16_t  NumStr число строк
 //    Str[0], ..., Str[NumStr-1] строки
 //      Str[nf][ns]:
 //        Rect16 S_Rect // 4 base lines
-//        Int16  NumWordStr; число слов текущей строки
+//        int16_t  NumWordStr; число слов текущей строки
 //        Word[0], ..., Word[NumWordStr-1] слова
 //          Word[nf][ns][nw]: одно слово
-//            Int16 NumSym число знакомест слова (пробелов нет)
+//            int16_t NumSym число знакомест слова (пробелов нет)
 //            Sym[0], ..., Sym[NumSym-1] знакоместа
 //              Sym[nf][ns][nw][nz]:
 //                Rect16 Z_Rect     рамка знакоместа
-//                Int16  NumAlt     число альтернатив
+//                int16_t  NumAlt     число альтернатив
 //                Alt[0], ..., Alt[NumAlt-1] альтернативы
 //                  Alt[nf][ns][nw][nz][na] одна альтернатива
 //                    BYTE Code код
@@ -455,7 +455,7 @@ int CalcStatTiger(void)
 
 extern Rect16  *RectFragm;
 extern float    Twips;
-extern Int16   K_TwipsInInch;
+extern int16_t   K_TwipsInInch;
 
 short __cdecl  OpenFullOutTiger(FILE *in)
 {
@@ -466,11 +466,11 @@ short __cdecl  OpenFullOutTiger(FILE *in)
 
 	rewind(in);
 
- fread(&ScanResolution,sizeof(WORD),1,in);
- fread(&NumCol,sizeof(WORD),1,in);
- fread(&NumZ,sizeof(WORD),1,in);
- fread(&NumW,sizeof(WORD),1,in);
- fread(&NumS,sizeof(WORD),1,in);
+ fread(&ScanResolution,sizeof(uint16_t),1,in);
+ fread(&NumCol,sizeof(uint16_t),1,in);
+ fread(&NumZ,sizeof(uint16_t),1,in);
+ fread(&NumW,sizeof(uint16_t),1,in);
+ fread(&NumS,sizeof(uint16_t),1,in);
 
 #ifdef alDebug
 		if(dets)	{ ConsMess("OpenFullOutTiger ScanResolution=%d ",ScanResolution); }
@@ -487,7 +487,7 @@ short __cdecl  OpenFullOutTiger(FILE *in)
 // Twips = (float)((int)(Twips+0.5));
 	if(NumCol)
 	{
-		NumStr    = (Int16*)malloc(NumCol*sizeof(Int16));
+		NumStr    = (int16_t*)malloc(NumCol*sizeof(int16_t));
 		StatCol   = (STAT_COL*)malloc(NumCol*sizeof(STAT_COL));
 		if(NumStr==NULL||StatCol==NULL)
 		{
@@ -509,8 +509,8 @@ short __cdecl  OpenFullOutTiger(FILE *in)
 	}
 
  BndCol     = (SRECT*)malloc(NumCol * sizeof(SRECT));
- UserNumber = (Word32*)malloc(NumCol*sizeof(Word32));
- FragFlag   = (Word32*)malloc(NumCol*sizeof(Word32));
+ UserNumber = (uint32_t*)malloc(NumCol*sizeof(uint32_t));
+ FragFlag   = (uint32_t*)malloc(NumCol*sizeof(uint32_t));
 
  RectFragm = (Rect16*)malloc(NumCol*sizeof(Rect16));
 
@@ -559,9 +559,9 @@ short __cdecl  OpenFullOutTiger(FILE *in)
 	{
   fread(&RectFragm[nc],1,sizeof(Rect16),in);
 	 // *********** РАСЧЕТ КОЛОННОЙ СТАТИСТИКИ *************
-  fread(&NumStr[nc],sizeof(Int16),1,in);
-  fread(&UserNumber[nc],sizeof(Word32),1,in);
-  fread(&FragFlag[nc],sizeof(Word32),1,in);
+  fread(&NumStr[nc],sizeof(int16_t),1,in);
+  fread(&UserNumber[nc],sizeof(uint32_t),1,in);
+  fread(&FragFlag[nc],sizeof(uint32_t),1,in);
 
   Zn[nc]=(ZN***)Submalloc((NumStr[nc])*sizeof(ZN**),&SubZn);
   TitleStr[nc]=(TITLE_STR*)Submalloc((NumStr[nc])*sizeof(TITLE_STR),&SubZn);
@@ -573,7 +573,7 @@ short __cdecl  OpenFullOutTiger(FILE *in)
 		for(ns=0; ns <= NumStr[nc]; ++ns)
 		{
 			TITLE_STR *t = &TitleStr[nc][ns];
-			Int16        tmp;
+			int16_t        tmp;
 
 			t->Z_Code = 2;
 			t->S_Attr = 0;
@@ -604,15 +604,15 @@ short __cdecl  OpenFullOutTiger(FILE *in)
 				TITLE_WORD *tw=&TitleWord[nc][ns][nw];
 
 				tw->Z_Code=1;
-				fread(&tmp, sizeof(Int16), 1, in);
+				fread(&tmp, sizeof(int16_t), 1, in);
 				tw->W_Gen.W_NumSym=tmp;// NumZn
 				k_z=tw->W_Gen.W_NumSym-1;
 
-				fread(&tmp, sizeof(Int16), 1, in);
-				tw->W_Gen.FontNumber=(WORD)tmp;
+				fread(&tmp, sizeof(int16_t), 1, in);
+				tw->W_Gen.FontNumber=(uint16_t)tmp;
 
-				fread(&tmp, sizeof(Int16), 1, in);
-				tw->W_Gen.FontSize=(WORD)tmp;
+				fread(&tmp, sizeof(int16_t), 1, in);
+				tw->W_Gen.FontSize=(uint16_t)tmp;
 
 				if((Zn[nc][ns][nw]=(ZN*)Submalloc((k_z+1)*sizeof(ZN),&SubZn))==NULL)
 					goto BadReturn;
@@ -621,7 +621,7 @@ short __cdecl  OpenFullOutTiger(FILE *in)
 				{
 					ZN        *z  = &Zn[nc][ns][nw][nz];
 					TITLE_ZN  *tz = &z->Title;
-					Int16     num;
+					int16_t     num;
 #pragma pack(1)
 					//   struct RECT_TIGER {int top,left,bottom,right;} rect;
 					struct ALT_TIGER1  {unsigned char let, prob;} alt1;
@@ -633,7 +633,7 @@ short __cdecl  OpenFullOutTiger(FILE *in)
 					//fread_m(&tz->Z_RealRect,sizeof(SRECT),1,in); // Real BOX
 					readSRECT(&tz->Z_RealRect, in);
 
-					fread(&num, sizeof(Int16), 1, in);  tz->Z_Num_Alt=(BYTE)MIN(num,REC_MAX_VERS); //NumAlt
+					fread(&num, sizeof(int16_t), 1, in);  tz->Z_Num_Alt=(BYTE)MIN(num,REC_MAX_VERS); //NumAlt
 //					if(num > 1)
 //						num = 1;
 
@@ -877,7 +877,7 @@ int FreeStructFull(void)
   int b_close(void)
   { SpellClose(); LmClose(); }
   svocab far* PASC b_char(unsigned kod);
-  int PASC GetWordOcr(WORD inst, WORD instb,WORD del,WORD  Else,WORD unknow,float delta1,ZN *zz,int kz);
+  int PASC GetWordOcr(uint16_t inst, uint16_t instb,uint16_t del,uint16_t  Else,uint16_t unknow,float delta1,ZN *zz,int kz);
   void PASC SetRegimDelta(int in,int Porog);
   void PASC SetTimerOwn(uint32_t NumMs);
 */ // !!! Art - устарело
@@ -969,7 +969,7 @@ int OpenFullOut(char *FileName)
     { knot[nlev]=(LEV*)malloc((k_col[nlev]+1)*sizeof(LEV));
       do0(nc,0,k_col[nlev])
       { fread_m(&knot[nlev][nc].bnd,sizeof(SRECT),1,in);
-        fread_m(&knot[nlev][nc].SpecInt,sizeof(WORD),1,in);
+        fread_m(&knot[nlev][nc].SpecInt,sizeof(uint16_t),1,in);
         fread_m(&knot[nlev][nc].kp,sizeof(int),1,in);
         if(knot[nlev][nc].kp >= 0)
         { knot[nlev][nc].Addr=(ADDR*)malloc((knot[nlev][nc].kp+1)*sizeof(ADDR));
@@ -1151,7 +1151,7 @@ int OpenFullOut(char *FileName)
           do0(i,0,num-1)
           { BYTE w; ALT_SPELL *AltS=&tw->AltSpell[i];
             fread_m(&AltS->Len,sizeof(BYTE),1,in);
-            fread_m(&w,sizeof(BYTE),1,in);fread_m(&AltS->Penalty,sizeof(WORD),1,in);
+            fread_m(&w,sizeof(BYTE),1,in);fread_m(&AltS->Penalty,sizeof(uint16_t),1,in);
             Len=(int)AltS->Len;
             #ifndef SUB_ZN
              if((AltS->Alt=(char*)malloc(Len))==NULL)return NOT_ALLOC;
@@ -1450,7 +1450,7 @@ int OpenFullOut(char *FileName)
       do0(nlev,0,k_lev)
       { do0(nc,0,k_col[nlev])
         { fwrite_m(&knot[nlev][nc].bnd,sizeof(SRECT),1,in);
-          fwrite_m(&knot[nlev][nc].SpecInt,sizeof(WORD),1,in);
+          fwrite_m(&knot[nlev][nc].SpecInt,sizeof(uint16_t),1,in);
           fwrite_m(&knot[nlev][nc].kp,sizeof(int),1,in);
           if(knot[nlev][nc].kp >= 0)
           { do0(i,0,knot[nlev][nc].kp)
@@ -1481,7 +1481,7 @@ int OpenFullOut(char *FileName)
           { BYTE w;
             fwrite_m(&TitleWord[nc][ns][nw].AltSpell[i].Len ,sizeof(BYTE),1,in);
             fwrite_m(&w ,sizeof(BYTE),1,in);
-            fwrite_m(&TitleWord[nc][ns][nw].AltSpell[i].Penalty,sizeof(WORD),1,in);
+            fwrite_m(&TitleWord[nc][ns][nw].AltSpell[i].Penalty,sizeof(uint16_t),1,in);
             fwrite_m(TitleWord[nc][ns][nw].AltSpell[i].Alt,(int)TitleWord[nc][ns][nw].AltSpell[i].Len,1,in);
           }
         }
@@ -1715,13 +1715,13 @@ int TstNameOwr(uchar LastCod,uchar FirstCod)
 #define MAX_LEN 50 //max число знаков в параметре
 #define MAX_STR 249 //max число знаков в параметре
 
-WORD Penalty1LenWord(int n)
-{ static WORD Pen[16]={ 0,2,3,3,3,6,6,8,8,8,8,8,8,8,8,8 },ii=1,i;
+uint16_t Penalty1LenWord(int n)
+{ static uint16_t Pen[16]={ 0,2,3,3,3,6,6,8,8,8,8,8,8,8,8,8 },ii=1,i;
   if(n < 0)
   { char *str=malloc(250),param[MAX_LEN+1],*s,*err="Penalty1LenWord";
     ii=0; s=str;
     GetPrivateProfileString("orfo","REMAX","",s,100,FileParSpel);
-    do0(i,0,15) {s=get_param(s,param,MAX_LEN-1); Pen[i]=(WORD)atoi(param);}
+    do0(i,0,15) {s=get_param(s,param,MAX_LEN-1); Pen[i]=(uint16_t)atoi(param);}
     free(str); return 0;
   }
   return Pen[MIN(n,15)];
@@ -1820,7 +1820,7 @@ void close_f03(void)
 //  STATIC BYTE Chif[25];
 //  STATIC BYTE ImUppLow[80];
 //  STATIC BYTE DelimSubWord[16];
-//  WORD w;
+//  uint16_t w;
 //  if(TypeDoc!=NORV)
 //  #ifdef WIN_MOD
 //  { strcpy_m((char*)UpLine,(char*)"сщфbdfhijklt");
@@ -1988,7 +1988,7 @@ void close_f03(void)
 //  par_ful.AllowCorrRusLat=GetPrivateProfileInt("corr_word","AllowCorrRusLat",0,FileParSpel);
 //  par_ful.AllowCorrFnt=GetPrivateProfileInt("corr_word","AllowCorrFnt",0,FileParSpel);
 //  par_ful.DelStick=(float)(GetPrivateProfileInt("corr_word","DelStick",0,FileParSpel)/100.);
-//  w=(WORD)GetPrivateProfileInt("ful_txt","RelDistAltOCR",(int)10,FileParSpel);
+//  w=(uint16_t)GetPrivateProfileInt("ful_txt","RelDistAltOCR",(int)10,FileParSpel);
 //  par_ful.RelDistAltOCR=(float)(w/10.);
 //  return 0;
 //}
@@ -2004,7 +2004,7 @@ int init_ful()
     uchar WordOneSymb[]="АаБбВвИиКкОоСсУуЭэЯя";
   #endif
   int NumOne;
-  BYTE s[3];WORD w;
+  BYTE s[3];uint16_t w;
   static uchar Upp[159]="АБВГДЕЖЗИЙКЛМНОПРСТУФХШЩЦЧЪЫЬЭЮЯABCDEFGHIJKLMNOPQRSTUVWXYZ";
   static uchar Low[159]="абвгдежзийклмнопрстуфхшщцчъыьэюяabcdefghijklmnopqrstuvwxyz";
   static uchar Punct1[5]=".!?";
@@ -2090,7 +2090,7 @@ int init_ful()
   GetPrivateProfileString("ful_txt","KodNoRecogOut","@",(char*)s,2,FileParSpel);
   par_ful.KodNoRecogOut=s[0];
   par_ful.NumAlt=GetPrivateProfileInt("ful_txt","NumAlt",2,FileParSpel);
-  w=(WORD)GetPrivateProfileInt("ful_txt","RelKrit",(int)10,FileParSpel);
+  w=(uint16_t)GetPrivateProfileInt("ful_txt","RelKrit",(int)10,FileParSpel);
   par_ful.RelKrit=(float)(w/10.);
   par_ful.IndexDelta=GetPrivateProfileInt("ful_txt","IndexDelta",1,FileParSpel);
   if(par_ful.IndexDelta!=2) MaxValue=MAX_VALUE;
