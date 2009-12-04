@@ -114,6 +114,7 @@ typedef unsigned long ulong;
 typedef unsigned int uint;
 typedef unsigned char uchar;
 
+typedef Bool * pBool;
 typedef char * pchar;
 typedef unsigned char * puchar;
 typedef void * pvoid;
@@ -187,7 +188,8 @@ typedef Bool32 (* CFTBool32_Word32)(uint32_t);
 }
 #endif   // __cplusplus
 
-/* These definitions were originally scattered about the code tree.
+/*
+ * These definitions were originally scattered about the code tree.
  * Consolidating them all here.
  */
 

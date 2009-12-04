@@ -95,7 +95,7 @@
 
 CFCOMPAT_FUNC(int) HFILE_ERROR;
 
-int LoadString(HINSTANCE hInstance, uint uID, LPTSTR lpBuffer, int nBufferMax) {
+int LoadString(HINSTANCE hInstance, uint uID, char* lpBuffer, int nBufferMax) {
 	return 0;
 }
 
@@ -106,7 +106,7 @@ int CreateDirectory(const char *dir, void *dummy) {
 		return FALSE;
 }
 
-uint32_t GetTempPath(uint32_t nBufferLength, LPTSTR lpBuffer) {
+uint32_t GetTempPath(uint32_t nBufferLength, char* lpBuffer) {
 	strcpy(lpBuffer, "/tmp");
 	return strlen(lpBuffer);
 }
@@ -130,8 +130,8 @@ void* GlobalReAlloc(void* hMem, int dwBytes, uint uFlags) {
 	return realloc(hMem, dwBytes); // Should init to zero on uFlags & GMEM_ZEROINIT.
 }
 
-int GetTempFileName(LPCTSTR lpPathName, LPCTSTR lpPrefixString, uint uUnique,
-		LPTSTR lpTempFileName) {
+int GetTempFileName(const char * lpPathName, const char * lpPrefixString, uint uUnique,
+		char* lpTempFileName) {
 	return -1;
 }
 
@@ -139,7 +139,7 @@ int GetLastError() {
 	return errno;
 }
 
-uint32_t GetModuleFileName(HMODULE hModule, LPTSTR lpFilename, uint32_t nSize) {
+uint32_t GetModuleFileName(HMODULE hModule, char* lpFilename, uint32_t nSize) {
 	lpFilename[0] = '.'; /* Currently all modules must be in the directory pumatest was run in. */
 	lpFilename[1] = '\0';
 	return 1;
@@ -149,18 +149,18 @@ Bool CloseHandle(HANDLE hObject) {
 	return FALSE;
 }
 
-HANDLE CreateFile(LPCTSTR lpFileName, uint32_t dwDesiredAccess,
+HANDLE CreateFile(const char * lpFileName, uint32_t dwDesiredAccess,
 		uint32_t dwShareMode, void* lpSecurityAttributes,
 		uint32_t dwCreationDisposition, uint32_t dwFlagsAndAttributes,
 		HANDLE hTemplateFile) {
 	return 0;
 }
 
-HWND FindWindow(LPCTSTR lpClassName, LPCTSTR lpWindowName) {
+HWND FindWindow(const char * lpClassName, const char * lpWindowName) {
 	return 0;
 }
 
-uint RegisterWindowMessage(LPCTSTR lpString) {
+uint RegisterWindowMessage(const char * lpString) {
 	return 0;
 }
 
@@ -171,18 +171,18 @@ long _tell(int handle) {
 	return lseek(handle, 0, SEEK_CUR);
 }
 
-Bool GetComputerName(LPTSTR lpBuffer, long unsigned int *lpnSize) {
+Bool GetComputerName(char* lpBuffer, long unsigned int *lpnSize) {
 	strncpy(lpBuffer, "CompName", *lpnSize);
 	*lpnSize = strlen(lpBuffer);
 	return TRUE;
 }
 
-int32_t RegOpenKeyEx(HKEY hKey, LPCTSTR lpSubKey, uint32_t ulOptions,
+int32_t RegOpenKeyEx(HKEY hKey, const char * lpSubKey, uint32_t ulOptions,
 		REGSAM samDesired, PHKEY phkResult) {
 	return 0;
 }
 
-int32_t RegQueryValueEx(HKEY hKey, LPCTSTR lpValueName, LPDWORD lpReserved,
+int32_t RegQueryValueEx(HKEY hKey, const char * lpValueName, LPDWORD lpReserved,
 		LPDWORD lpType, LPBYTE lpData, LPDWORD lpcbData) {
 	return 0;
 }
@@ -191,25 +191,25 @@ Bool GetClientRect(HWND hWnd, LPRECT lpRect) {
 	return 0;
 }
 
-Bool WritePrivateProfileString(LPCTSTR lpAppName, LPCTSTR lpKeyName,
-		LPCTSTR lpString, LPCTSTR lpFileName) {
+Bool WritePrivateProfileString(const char * lpAppName, const char * lpKeyName,
+		const char * lpString, const char * lpFileName) {
 	return 0;
 }
 
-uint32_t GetPrivateProfileString(LPCTSTR lpAppName, LPCTSTR lpKeyName,
-		LPCTSTR lpDefault, LPTSTR lpReturnedString, uint32_t nSize,
-		LPCTSTR lpFileName) {
+uint32_t GetPrivateProfileString(const char * lpAppName, const char * lpKeyName,
+		const char * lpDefault, char* lpReturnedString, uint32_t nSize,
+		const char * lpFileName) {
 	return 0;
 }
 
-uint GetPrivateProfileInt(LPCTSTR lpAppName, LPCTSTR lpKeyName, int16_t nDefault,
-		LPCTSTR lpFileName) {
+uint GetPrivateProfileInt(const char * lpAppName, const char * lpKeyName, int16_t nDefault,
+		const char * lpFileName) {
 	return 0;
 }
 
 int WideCharToMultiByte(uint CodePage, uint32_t dwFlags,
-		const wchar_t *lpWideCharStr, int cchWideChar, LPSTR lpMultiByteStr,
-		int cbMultiByte, LPCSTR lpDefaultChar, LPBOOL lpUsedDefaultChar) {
+		const wchar_t *lpWideCharStr, int cchWideChar, char* lpMultiByteStr,
+		int cbMultiByte, const char * lpDefaultChar, pBool lpUsedDefaultChar) {
 	return 0;
 }
 Bool ShowWindow(HWND hWnd, int nCmdShow) {
@@ -241,7 +241,7 @@ int _access(const char *filename, int mode) {
 	return stat(filename, &foo);
 }
 
-Bool SetWindowText(HWND hWnd, LPCTSTR lpString) {
+Bool SetWindowText(HWND hWnd, const char * lpString) {
 	return 0;
 }
 
@@ -275,7 +275,7 @@ void strlwr(char *foo) {
 }
 #endif
 
-HWND CreateWindow(LPCTSTR lpClassName, LPCTSTR lpWindowName, uint32_t dwStyle,
+HWND CreateWindow(const char * lpClassName, const char * lpWindowName, uint32_t dwStyle,
 		int x, int y, int nWidth, int nHeight, HWND hWndParent, HMENU hMenu,
 		HINSTANCE hInstance, pvoid lpParam) {
 	return (HWND) 55;
@@ -285,23 +285,23 @@ HGDIOBJ SelectObject(HDC hdc, HGDIOBJ hgdiobj) {
 	return 0;
 }
 
-LPTSTR lstrcat(LPTSTR lpString1, LPTSTR lpString2) {
+char* lstrcat(char* lpString1, char* lpString2) {
 	return strcat(lpString1, lpString2);
 }
 
-int lstrlen(LPCTSTR lpString) {
+int lstrlen(const char * lpString) {
 	return strlen(lpString);
 }
 
-int lstrcmp(LPCTSTR lpString1, LPCTSTR lpString2) {
+int lstrcmp(const char * lpString1, const char * lpString2) {
 	return strcmp(lpString1, lpString2);
 }
 
-LPTSTR lstrcpy(LPTSTR lpString1, LPCTSTR lpString2) {
+char* lstrcpy(char* lpString1, const char * lpString2) {
 	return strcpy(lpString1, lpString2);
 }
 
-int wsprintf(LPTSTR lpOut, LPCTSTR lpFmt, ...) {
+int wsprintf(char* lpOut, const char * lpFmt, ...) {
 	char buffer[256];
 	int ret;
 	va_list args;
@@ -313,7 +313,7 @@ int wsprintf(LPTSTR lpOut, LPCTSTR lpFmt, ...) {
 	return ret;
 }
 
-int lstrcmpi(LPCTSTR lpString1, LPCTSTR lpString2) {
+int lstrcmpi(const char * lpString1, const char * lpString2) {
 	return strcasecmp(lpString1, lpString2);
 }
 
@@ -325,7 +325,7 @@ HWND GetFocus() {
 	return NULL;
 }
 
-int MessageBox(HWND hWnd, LPCTSTR lpText, LPCTSTR lpCaption, uint uType) {
+int MessageBox(HWND hWnd, const char * lpText, const char * lpCaption, uint uType) {
 	fprintf(stderr, "MessageBox %s: %s\n", lpCaption, lpText);
 	return 0;
 }
@@ -346,7 +346,7 @@ Bool IsBadWritePtr(pvoid lp, int ucb) {
 	return 0;
 }
 
-void OutputDebugString(LPCTSTR lpOutputString) {
+void OutputDebugString(const char * lpOutputString) {
 
 }
 
@@ -415,11 +415,11 @@ HFONT CreateFont(int nHeight, int nWidth, int nEscapement, int nOrientation,
 		int fnWeight, uint32_t fdwItalic, uint32_t fdwUnderline,
 		uint32_t fdwStrikeOut, uint32_t fdwCharSet,
 		uint32_t fdwOutputPrecision, uint32_t fdwClipPrecision,
-		uint32_t fdwQuality, uint32_t fdwPitchAndFamily, LPCTSTR lpszFace) {
+		uint32_t fdwQuality, uint32_t fdwPitchAndFamily, const char * lpszFace) {
 	return 0;
 }
 
-Bool GetTextExtentPoint32(HDC hdc, LPCTSTR lpString, int c, LPSIZE lpSize) {
+Bool GetTextExtentPoint32(HDC hdc, const char * lpString, int c, LPSIZE lpSize) {
 	return 0;
 }
 
@@ -427,11 +427,11 @@ Bool EnumWindows(WNDENUMPROC lpEnumFunc, LPARAM lParam) {
 	return 0;
 }
 
-int GetWindowText(HWND hWnd, LPTSTR lpString, int nMaxCount) {
+int GetWindowText(HWND hWnd, char* lpString, int nMaxCount) {
 	return 0;
 }
 
-HMODULE LoadLibrary(LPCTSTR lpFileName) {
+HMODULE LoadLibrary(const char * lpFileName) {
 	return dlopen(lpFileName, RTLD_LAZY);
 }
 
@@ -439,7 +439,7 @@ Bool FreeLibrary(HMODULE hModule) {
 	return dlclose(hModule);
 }
 
-void* GetProcAddress(HMODULE hModule, LPCSTR lpProcName) {
+void* GetProcAddress(HMODULE hModule, const char * lpProcName) {
 	return dlsym(hModule, lpProcName);
 }
 
@@ -463,15 +463,15 @@ Bool RegisterClass(const WNDCLASS *lpWndClass) {
 	return 0;
 }
 
-HMODULE GetModuleHandle(LPCTSTR lpModuleName) {
+HMODULE GetModuleHandle(const char * lpModuleName) {
 	return NULL;
 }
 
-HICON LoadIcon(HINSTANCE hInstance, LPCTSTR lpIconName) {
+HICON LoadIcon(HINSTANCE hInstance, const char * lpIconName) {
 	return NULL;
 }
 
-int LoadCursor(HINSTANCE hInstance, LPCTSTR lpCursorName) {
+int LoadCursor(HINSTANCE hInstance, const char * lpCursorName) {
 	return 0;
 }
 
