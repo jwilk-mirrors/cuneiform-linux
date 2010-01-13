@@ -341,7 +341,7 @@ int main(int argc, char **argv) {
     PUMA_SetImportData(PUMA_Bool32_Fax100, &fax);
     PUMA_SetImportData(PUMA_Bool32_OneColumn, &onecolumn);
 
-    if(!PUMA_XOpen(dib, "none.txt")) {
+    if(!PUMA_XOpen(dib, infilename)) {
         cerr << "PUMA_Xopen failed.\n";
         return 1;
     }
