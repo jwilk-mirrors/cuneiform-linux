@@ -703,10 +703,7 @@ Bool32 rstr_open_cont(void);
 Bool32 Reload_lang_vocs(uchar language);
 Bool32 set_user_alphabet(uchar * usa_ascii);
 void ErrorExit(int Code);
-#ifndef _JBTYPE
-#define _JBTYPE jmp_buf
-#endif
-_JBTYPE *Control_Point();
+jmp_buf *Control_Point();
 #endif
 
 // font_ser.c
