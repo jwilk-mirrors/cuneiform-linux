@@ -53,4 +53,4 @@ cstr
 rcutp
 )
 
-install_dll(rselstr)
+library_hook(rselstr)

@@ -14,4 +14,4 @@ set_property(TARGET rbal PROPERTY COMPILE_DEFINITIONS __RBAL__)
 
 target_link_libraries(rbal cstr evn32)
 
-install_dll(rbal)
+library_hook(rbal)

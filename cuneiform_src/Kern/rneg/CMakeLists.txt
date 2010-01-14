@@ -21,4 +21,4 @@ exc
 rstr
 )
 
-install_dll(rneg)
+library_hook(rneg)

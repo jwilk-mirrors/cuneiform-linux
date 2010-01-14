@@ -16,4 +16,4 @@ set_property(TARGET evn32 PROPERTY COMPILE_DEFINITIONS __EVN__)
 
 target_link_libraries(evn32 dif32 cfcompat)
 
-install_dll(evn32)
+library_hook(evn32)

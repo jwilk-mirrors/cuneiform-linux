@@ -26,4 +26,4 @@ rpic
 rselstr
 )
 
-install_dll(rmarker)
+library_hook(rmarker)

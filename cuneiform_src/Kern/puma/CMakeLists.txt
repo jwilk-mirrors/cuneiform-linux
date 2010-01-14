@@ -38,4 +38,4 @@ rreccom
 rpstr
 )
 
-install_dll(puma)
+library_hook(puma)

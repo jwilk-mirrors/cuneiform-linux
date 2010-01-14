@@ -10,4 +10,4 @@ src/mmxmain.c
 
 set_property(TARGET mmx32 PROPERTY COMPILE_DEFINITIONS __MMX__)
 
-install_dll(mmx32)
+library_hook(mmx32)

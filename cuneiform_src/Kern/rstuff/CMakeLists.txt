@@ -38,4 +38,4 @@ rreccom
 exc
 )
 
-install_dll(rstuff)
+library_hook(rstuff)

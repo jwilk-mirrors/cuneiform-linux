@@ -32,4 +32,4 @@ cstr
 cfcompat
 )
 
-install_dll(rfrmt)
+library_hook(rfrmt)

@@ -14,4 +14,4 @@ set_property(TARGET exc PROPERTY COMPILE_DEFINITIONS __EXC__)
 
 target_link_libraries(exc loc32 ccom evn32)
 
-install_dll(exc)
+library_hook(exc)

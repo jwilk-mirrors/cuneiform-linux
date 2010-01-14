@@ -41,4 +41,4 @@ set_property(TARGET rling PROPERTY COMPILE_DEFINITIONS __RLING__)
 
 target_link_libraries(rling cstr rlings)
 
-install_dll(rling)
+library_hook(rling)
