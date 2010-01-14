@@ -87,8 +87,8 @@ typedef struct {
 	uint16_t wImageDisplacement;
 	uint16_t wResolutionX;
 	uint16_t wResolutionY;
-	uchar bFotoMetrics;
-	uchar bUnused;
+	uint8_t bFotoMetrics;
+	uint8_t bUnused;
 	uint16_t wAddX;
 	uint16_t wAddY;
 } PUMA_ImageInfo;
@@ -209,8 +209,8 @@ char * LPUMA_GetVersion(void);
 uint32_t LPUMA_GetFormatMode(void); // old
 void LPUMA_SetFormatMode(uint32_t nNewValue);// old
 
-void LPUMA_SetUnrecogChar(uchar nChar);
-uchar LPUMA_GetUnrecogChar(void);
+void LPUMA_SetUnrecogChar(uint8_t nChar);
+uint8_t LPUMA_GetUnrecogChar(void);
 
 Bool32 LPUMA_SetProgressFunction(FNPUMA_ProgressStart fnStart,
 		FNPUMA_ProgressStep fnStep, FNPUMA_ProgressFinish fnFinish);
@@ -279,7 +279,7 @@ DEC_FUN(uint32_t, PUMA_SaveToMemory,(Handle hEdPage, int32_t lnFormat, int32_t l
 ;
 DEC_FUN(void , PUMA_GetSpecialBuffer,(char * szResult,int32_t *nResultLength))
 ;
-DEC_FUN(Bool32, PUMA_SetSpecialProject,(uchar nSpecPrj))
+DEC_FUN(Bool32, PUMA_SetSpecialProject,(uint8_t nSpecPrj))
 ;
 
 #undef DEC_FUN

@@ -655,7 +655,7 @@ void    LPUMA_SetFormatMode(uint32_t nNewValue)
         }
 }
 //////////////////////////////////////////////////////////////////
-void    LPUMA_SetUnrecogChar(uchar nNewValue)
+void    LPUMA_SetUnrecogChar(uint8_t nNewValue)
 {
         if(s_hLib && SetImportData &&
            SetImportData(PUMA_Word8_Format,&nNewValue))
@@ -664,7 +664,7 @@ void    LPUMA_SetUnrecogChar(uchar nNewValue)
         }
 }
 //////////////////////////////////////////////////////////////////
-uchar   LPUMA_GetUnrecogChar()
+uint8_T LPUMA_GetUnrecogChar()
 {
         uchar rc = 0;
         if(s_hLib && GetExportData &&

@@ -847,7 +847,7 @@ PUMA_FUNC(void) PUMA_GetSpecialBuffer(char * szResult,int32_t *nResultLength)
     }
 }
 
-PUMA_FUNC(Bool32) PUMA_SetSpecialProject(uchar nSpecialProject)
+PUMA_FUNC(Bool32) PUMA_SetSpecialProject(uint8_t nSpecialProject)
 {
 
     gnSpecialProject = nSpecialProject;
