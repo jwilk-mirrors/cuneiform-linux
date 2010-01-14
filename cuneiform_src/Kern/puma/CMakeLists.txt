@@ -1,6 +1,6 @@
 include_directories(h)
 
-add_library(puma ${LIBTYPE}
+add_library(cuneiform ${LIBTYPE}
 ${SNP_SRC}
 c/common.cpp 
 c/debug.cpp 
@@ -14,9 +14,9 @@ main/mymem.cpp
 main/puma.cpp 
 main/dll.cpp 
 )
-set_property(TARGET puma PROPERTY COMPILE_DEFINITIONS __PUMA__)
+set_property(TARGET cuneiform PROPERTY COMPILE_DEFINITIONS __PUMA__)
 
-target_link_libraries(puma
+target_link_libraries(cuneiform
 ced
 cfio
 cimage
@@ -38,4 +38,4 @@ rreccom
 rpstr
 )
 
-library_hook(puma)
+library_hook(cuneiform)
