@@ -228,28 +228,33 @@ Bool32 LPUMA_GetPreserveLineBreaks(void);
 
 uint32_t LCED_DeletePage(Handle hEdPage);
 #define DEC_FUN(a,b,c) typedef a (*FN##b)c; PUMA_FUNC(a) b c; a L##b c
-DEC_FUN(Bool32, PUMA_Init,(uint16_t wHeightCode,Handle hStorage))
+
+/* PUMA_xxx functions define a public API, so they must use only
+ * datatypes available to both C and C++.
+ */
+
+DEC_FUN(Bool, PUMA_Init,(uint16_t wHeightCode, void* hStorage))
 ;
-DEC_FUN(Bool32, PUMA_Done,())
+DEC_FUN(Bool, PUMA_Done,())
 ;
 DEC_FUN(uint32_t, PUMA_GetReturnCode,())
 ;
 DEC_FUN(char *, PUMA_GetReturnString,(uint32_t dwError))
 ;
-DEC_FUN(Bool32, PUMA_GetExportData,(uint32_t dwType, void * pData))
+DEC_FUN(Bool, PUMA_GetExportData,(uint32_t dwType, void * pData))
 ;
-DEC_FUN(Bool32, PUMA_SetImportData,(uint32_t dwType, void * pData))
+DEC_FUN(Bool, PUMA_SetImportData,(uint32_t dwType, void * pData))
 ;
 
-DEC_FUN(bool, PUMA_XOpen, (void * pDIB, const std::string& filename))
+DEC_FUN(Bool, PUMA_XOpen, (void * pDIB, const char* filename))
 ;
-DEC_FUN(bool, PUMA_XClose, (void))
+DEC_FUN(Bool, PUMA_XClose, (void))
 ;
 DEC_FUN(Bool32, PUMA_XPageAnalysis, (void))
 ;
-DEC_FUN(bool, PUMA_XFinalRecognition, (void))
+DEC_FUN(Bool, PUMA_XFinalRecognition, (void))
 ;
-DEC_FUN(Bool32, PUMA_XSave,(const char * lpOutFileName, int32_t lnFormat, int32_t lnCode ))
+DEC_FUN(Bool, PUMA_XSave,(const char * lpOutFileName, int32_t lnFormat, int32_t lnCode ))
 ;
 DEC_FUN(int32_t, PUMA_EnumLanguages,(int32_t nPrev ))
 ;

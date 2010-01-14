@@ -122,7 +122,7 @@ uint32_t ul_reason_for_call,
 }
 //////////////////////////////////////////////////////////////////////////////////
 //
-PUMA_FUNC(Bool32) PUMA_Init(uint16_t wHeightCode,HANDLE hStorage)
+PUMA_FUNC(Bool) PUMA_Init(uint16_t wHeightCode, void* hStorage)
 {
 	gwHeightRC = wHeightCode;
 
@@ -177,9 +177,9 @@ PUMA_FUNC(char *) PUMA_GetReturnString(uint32_t dwError)
 }
 //////////////////////////////////////////////////////////////////////////////////
 //
-PUMA_FUNC(Bool32) PUMA_GetExportData(uint32_t dwType, void * pData)
+PUMA_FUNC(Bool) PUMA_GetExportData(uint32_t dwType, void * pData)
 {
-	Bool32 rc = TRUE;
+	Bool rc = TRUE;
 
 	gwRC = 0;
 
@@ -263,9 +263,9 @@ return rc;
 }
 
 //////////////////////////////////////////////////////////////////////////////////
-PUMA_FUNC(Bool32) PUMA_SetImportData(uint32_t dwType, void * pData)
+PUMA_FUNC(Bool) PUMA_SetImportData(uint32_t dwType, void * pData)
 {
-	Bool32 rc = TRUE;
+	Bool rc = TRUE;
 
 	gwRC = 0;
 

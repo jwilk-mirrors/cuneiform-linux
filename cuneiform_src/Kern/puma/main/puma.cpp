@@ -399,14 +399,14 @@ static Bool32  PostOpenInitialize(const char * lpFileName)
     return rc;
 }
 /////////////////////////////////////////////////
-PUMA_FUNC(bool) PUMA_XOpen(void * pDIB, const std::string& filename)
+PUMA_FUNC(Bool) PUMA_XOpen(void * pDIB, const char *filename)
 {
-    bool rc = true;
-    PreOpenInitialize(filename.c_str());
+    Bool rc = TRUE;
+    PreOpenInitialize(filename);
     assert(pDIB);
     if( pDIB == NULL) {
         SetReturnCode_puma(IDS_ERR_IMAGE);
-        rc = false;
+        rc = FALSE;
     }
     else
         gpInputDIB = (puchar)pDIB;
@@ -417,11 +417,11 @@ PUMA_FUNC(bool) PUMA_XOpen(void * pDIB, const std::string& filename)
         if(!CIMAGE_WriteDIB((puchar)PUMA_IMAGE_USER,pDIB,1))
         {
             SetReturnCode_puma(CIMAGE_GetReturnCode());
-            rc = false;
+            rc = FALSE;
         }
     }
     if(rc)
-        rc = PostOpenInitialize(filename.c_str());
+        rc = PostOpenInitialize(filename);
     return rc;
 }
 /////////////////////////////////////////////////
@@ -540,7 +540,7 @@ PUMA_FUNC(Bool32) PUMA_XGetRotateDIB(void ** lpDIB, Point32 * p)
     return rc;
 }
 //////////////////////////////////////////////////
-PUMA_FUNC(bool) PUMA_XClose()
+PUMA_FUNC(Bool) PUMA_XClose()
 {
     CLINE_Reset();
     ClearAll();
@@ -577,9 +577,9 @@ PUMA_FUNC(Bool32) PUMA_XPageAnalysis( )
     return rc;
 }
 //////////////////////////////////////////////////
-PUMA_FUNC(bool) PUMA_XFinalRecognition( )
+PUMA_FUNC(Bool) PUMA_XFinalRecognition( )
 {
-    bool rc = true;
+    Bool rc = TRUE;
     ResetPRGTIME();
     if(InitPRGTIME())
         ProgressStart();
@@ -608,9 +608,9 @@ PUMA_FUNC(bool) PUMA_XFinalRecognition( )
     return rc;
 }
 //////////////////////////////////////////////////
-PUMA_FUNC(Bool32) PUMA_XSave(const char * lpOutFileName, int32_t lnFormat, int32_t lnCode ) {
+PUMA_FUNC(Bool) PUMA_XSave(const char * lpOutFileName, int32_t lnFormat, int32_t lnCode ) {
     char *fname = strdup(lpOutFileName);
-    Bool32 res;
+    Bool res;
     winpath_to_internal(fname);
     res = PUMA_Save(ghEdPage, fname, lnFormat, lnCode,FALSE );
     free(fname);
