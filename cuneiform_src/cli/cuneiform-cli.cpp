@@ -156,12 +156,23 @@ static char* read_file(const char *fname);
 #include <Magick++.h>
 using namespace Magick;
 
+static void preprocess_image(Image &im) {
+    // Cuneiform seems to have problems with non-bitmap images.
+    if(im.type() != BilevelType) {
+        if(im.totalColors() > 2)
+            im.monochrome();
+        im.type(BilevelType);
+    }
+}
+
 static char* read_file(const char *fname) {
     Blob blob;
     size_t data_size;
     char *dib;
     try {
         Image image(fname);
+        preprocess_image(image);
+
         // Write to BLOB in BMP format
         image.write(&blob, "DIB");
     } catch(Exception &error_) {
