@@ -160,7 +160,7 @@ Bool IsVowel(uchar c)
 extern void init_tab_alpha(uchar *s1,uchar *s2,int16_t num);
 Bool InitializeAlphabet (int16_t CountryCode)
 {
-  uchar w[ABCSIZE+1];
+  char w[ABCSIZE+1];
   int16_t  h;
 
   if ( (h = TBOPEN( 6, language, BO_READ_TEXT, S_IREAD )) < 0 ) {

@@ -83,18 +83,18 @@ static CPrtTransactionBuffer* pTransactionBuffer = NULL;
 
 static StdPrtEvent szStdPrtSysEventList[] =
    {
-      {"Р—Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅ С‚РёРї СЃРѕРѕР±С‰РµРЅРёСЏ РЅРѕРјРµСЂ %03i(%i РїР°СЂР°РјРµС‚СЂРѕРІ). РЎС‚СЂРѕРєР° СЃРѕРѕР±С‰РµРЅРёСЏ - \"%s\"",SPE_PUBLIC|SPE_WAIT|SPE_WITHTIME,0,0}, // Р РµРіРёСЃС‚СЂР°С†РёСЏ СЃРѕР±С‹С‚РёСЏ
-      {"РЎРѕРѕР±С‰РµРЅРёРµ СЃРёСЃС‚РµРјРЅРѕРіРѕ С‚Р°Р№РјРµСЂР°:\t%s",0,1,0}, // С‚Р°Р№РјРµСЂ
-      {"%s С‚СЂР°РЅР·Р°РєС†РёРё:\tРјР°С€РёРЅР°-%s\tРїСЂРѕС†РµСЃСЃ-%s\tРїРѕР»СЊР·РѕРІР°С‚РµР»СЊ-%s",SPE_PUBLIC|SPE_WAIT|SPE_WITHTIME,2,0},
+      {"Зарегистрирован тип сообщения номер %03i(%i параметров). Строка сообщения - \"%s\"",SPE_PUBLIC|SPE_WAIT|SPE_WITHTIME,0,0}, // Регистрация события
+      {"Сообщение системного таймера:\t%s",0,1,0}, // таймер
+      {"%s транзакции:\tмашина-%s\tпроцесс-%s\tпользователь-%s",SPE_PUBLIC|SPE_WAIT|SPE_WITHTIME,2,0},
       {"",SPE_PUBLIC|SPE_WAIT,3,0},
       {"",SPE_PUBLIC|SPE_WAIT,4,0},
       {"",SPE_PUBLIC|SPE_WAIT,5,0},
       {"",SPE_PUBLIC|SPE_WAIT,6,0},
       {"",SPE_PUBLIC|SPE_WAIT,7,0},
       {"",SPE_PUBLIC|SPE_WAIT,8,0},
-      {"РќР° РјР°С€РёРЅРµ %s РїРѕРґСЃРёСЃС‚РµРјР° - %s %s, РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ - %s",SPE_PUBLIC|SPE_WAIT|SPE_WITHTIME,9,0},
-      {"РџСЂРѕС†РµСЃСЃ %s %s(РјР°С€РёРЅР° - %s, РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ - %s)",SPE_PUBLIC|SPE_WAIT|SPE_WITHTIME,10,0},
-      {"Р”РѕРєСѓРјРµРЅС‚ %s %s РѕРїРµСЂР°С‚РѕСЂРѕРј - %s, РјР°С€РёРЅР° - %s, РїСЂРёРјРµС‡Р°РЅРёРµ %s",SPE_PUBLIC|SPE_WAIT|SPE_WITHTIME,11,0}
+      {"На машине %s подсистема - %s %s, пользователь - %s",SPE_PUBLIC|SPE_WAIT|SPE_WITHTIME,9,0},
+      {"Процесс %s %s(машина - %s, пользователь - %s)",SPE_PUBLIC|SPE_WAIT|SPE_WITHTIME,10,0},
+      {"Документ %s %s оператором - %s, машина - %s, примечание %s",SPE_PUBLIC|SPE_WAIT|SPE_WITHTIME,11,0}
    };
 
 //static CSysDataEventTypeList SysDataToEventTypeList; // РґРѕР±Р°РІР»РµРЅРёРµ СЃРёСЃС‚РµРјРЅС‹С… СЃРѕРѕР±С‰РµРЅРёР№ РІ xsEventTypeData
@@ -279,7 +279,7 @@ Bool32 stdPrtConsole::SendTextToConsole(char *text, int len)
    ::GlobalUnlock(hMessageText);
    ::PostMessage(hConsoleOutput,uiMesasageHandle,reinterpret_cast<unsigned int>(hMessageText),len);
 #endif
-   printf(text);
+   printf("%s", text);
    return TRUE;
 }
 

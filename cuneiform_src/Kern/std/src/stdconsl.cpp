@@ -114,7 +114,7 @@ STD_FUNC( int ) stdConsole(const char* str, ... )
       ff  = fopen (_ConsoleFileName, "a");
       if (ff)
       {  strcat(res_str,"\n");
-         fprintf( ff, res_str);
+         fwrite(res_str, strlen(res_str), 1, ff);
          fclose (ff);
       }
    }
@@ -151,7 +151,7 @@ STD_FUNC( int ) stdConsole_(const char* str, ...)   // без перевода �
       ff  = fopen (_ConsoleFileName, "a");
       if (ff)
       {  strcat(res_str,"\n");
-         fprintf( ff, res_str);
+         fwrite(res_str, strlen(res_str), 1, ff);
          fclose (ff);
       }
    }

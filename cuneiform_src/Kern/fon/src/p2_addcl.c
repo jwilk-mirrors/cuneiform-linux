@@ -105,8 +105,6 @@ int16_t ReadAllFromWr(char  *name,uchar *buf,int16_t size,int16_t *nClu,char *mo
 void MakRas(char *inp,char *ras,int16_t point);
 int16_t GetNumSym(char *NameWr);
 
-#define memmove memmove
-
 #define MAXWELHAU  16
 #define MAXWELSYM  2048    // maximal number old clusters
 
@@ -540,7 +538,7 @@ int16_t x,y;
    FONCutOffClusters(welBuf,1);
 
    sw[i].let=welBuf->let;
-   if( welBuf->let < 256 && FirLet[welBuf->let] < 0) FirLet[welBuf->let]=i;
+   if( /*welBuf->let < 256 &&*/ FirLet[welBuf->let] < 0) FirLet[welBuf->let]=i;
    sw[i].w=welBuf->w;
    sw[i].h=welBuf->h;
    sw[i].raster=NULL;

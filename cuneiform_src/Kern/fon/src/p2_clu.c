@@ -100,7 +100,6 @@ void CloseBase(void);
 
 static int16_t ReadAllFromBase(char *name, int16_t *nClu, char *movxy, int16_t AllCount);
 
-#define memmove memmove
 #define MAXINCLUS 127
 
 // if numpoint > level_grey*POROG_IDEAL  - remove this grey point
@@ -1350,7 +1349,7 @@ static int16_t TestUnionOne(int16_t porog, int16_t NumAll, int16_t NumClus) {
 	for(i=1;i< NumClus;i++)
 	{
 		CurName=rh[LasIn[i]].let;
-		if( CurName < 0 || CurName >=256 )
+		if( /*CurName < 0 ||*/ CurName >=256 )
 		continue;
 
 		// tested name already ?
@@ -1391,7 +1390,7 @@ static int16_t TestUnionOne(int16_t porog, int16_t NumAll, int16_t NumClus) {
 				CurName=rh[k].let;
 
 #ifdef _UNION_ONEONE_
-			if(CurName >= 0 && CurName < 256 &&
+			if(/*CurName >= 0 &&*/ CurName < 256 &&
 					maxClusName[CurName] <= 1 )
 			continue; // goto rename; ????
 #endif

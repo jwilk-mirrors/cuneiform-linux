@@ -87,7 +87,7 @@ MMX_FUNC(void)      MMX_binarize_16x16(uint16_t *rin,uchar *rout);
 
 // for NET.dll
 MMX_FUNC(uint32_t)    MMX_scalarUni (int16_t * _EAX, int16_t * _EDX, int32_t num);
-MMX_FUNC(uint32_t)    MMX_scalar16 (int16_t * _EAX, int16_t * _EDX);
+MMX_FUNC(int32_t)    MMX_scalar16 (int16_t * _EAX, int16_t * _EDX);
 MMX_FUNC(uint32_t)    MMX_scalar36 (int16_t * _EAX, int16_t * _EDX);
 
 // for  GRA.dll

@@ -115,7 +115,7 @@ save_res:
 //
 //       uint32_t   MMX_scalar16 (int16_t * _EAX, int16_t * _EDX)
 //
-MMX_FUNC(uint32_t) MMX_scalar16 (int16_t * _EAX, int16_t * _EDX)
+MMX_FUNC(int32_t) MMX_scalar16 (int16_t * _EAX, int16_t * _EDX)
 {
 #ifdef _MSC_VER
 _asm{
