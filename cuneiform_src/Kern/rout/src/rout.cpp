@@ -992,7 +992,7 @@ static Bool LoadAlphabet(
 
     fgets(buf,sizeof(buf)-1,f);
 
-    sscanf(buf,"%d",&sizeAlphabet);
+    sscanf(buf,"%ld",&sizeAlphabet);
 
     if( sizeAlphabet < 1 ||
         sizeAlphabet > kMaxSizeAlphabet

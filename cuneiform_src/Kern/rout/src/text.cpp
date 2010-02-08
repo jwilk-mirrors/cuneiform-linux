@@ -378,7 +378,7 @@ char word1[40]="", word2[40]="", word3[40]="", word4[40]="";
 
 	char buf[1000] = "";
 	sprintf(buf,
-			"<< %s %d: %s %d, %s %d, %s %d >>",
+			"<< %s %ld: %s %ld, %s %ld, %s %ld >>",
 			word1, gHitTables,
 			word2, gTableRows,
 			word3, gTableCols,

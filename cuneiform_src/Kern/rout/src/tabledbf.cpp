@@ -238,7 +238,7 @@ static Bool MakeDbfHeader()
 		DBF_FIELD *f = &dbf_fields[gIndexTableCol];
 
 		// Имя поля "col_n"
-		sprintf(f->name,"col_%d",gIndexTableCol+1);
+		sprintf(f->name,"col_%ld",gIndexTableCol+1);
 
 		// Тип поля всегда текстовый
 		f->type = 'C';
