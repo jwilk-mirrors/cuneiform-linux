@@ -65,6 +65,8 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 char logName[_MAX_PATH];
 FILE *logStream;
 
+#define pointer_to_num(x) reinterpret_cast<unsigned int>(x)
+
 //create page
 CED_FUNC(Handle) CED_CreatePage(char * _imageName,EDSIZE _sizeOfImage,EDSIZE _dpi,int _turn,
 					  int _pageNumber,EDSIZE _sizeInTwips, EDRECT _pageBordersInTwips, char _unrecogChar, Bool32 _resizeToFit)
@@ -99,7 +101,7 @@ CED_FUNC(Handle) CED_CreatePage(char * _imageName,EDSIZE _sizeOfImage,EDSIZE _dp
 	ret->recogLang=LANG_RUSENG;
 	if (logStream)
 	{
-		fprintf(logStream,"CreatePage returned %x\n",ret);
+		fprintf(logStream,"CreatePage returned %x\n", pointer_to_num(ret));
 		fflush(logStream);
 	}
 	return (Handle)ret;
@@ -111,7 +113,7 @@ CED_FUNC(Bool32) CED_CreateFont(Handle hEdPage, uchar fontNumber, uchar fontPitc
 {
 	if (logStream)
 	{
-		fprintf(logStream,"CreateFont params: %x,%hd,%hd,%hd,%s\n", hEdPage, fontNumber, fontPitchAndFamily, fontCharset,
+		fprintf(logStream,"CreateFont params: %x,%hd,%hd,%hd,%s\n", pointer_to_num(hEdPage), fontNumber, fontPitchAndFamily, fontCharset,
 				fontName);
 		fflush(logStream);
 	}
@@ -128,7 +130,7 @@ CED_FUNC(Bool32) CED_CreatePicture(Handle hEdPage, int pictNumber, EDSIZE pictSi
 {
 	if (logStream)
 	{
-		fprintf(logStream,"CreatePicture params: %x,%i,(%i,%i),(%i,%i),%i,%i,%x,%i\n", hEdPage, pictNumber, pictSize.cx, pictSize.cy, pictGoal.cx, pictGoal.cy, pictAlign, type, data, len);
+		fprintf(logStream,"CreatePicture params: %x,%i,(%i,%i),(%i,%i),%i,%i,%x,%i\n", pointer_to_num(hEdPage), pictNumber, pictSize.cx, pictSize.cy, pictGoal.cx, pictGoal.cy, pictAlign, type, pointer_to_num(data), len);
 		fflush(logStream);
 	}
 	Bool ret=((CEDPage*)hEdPage)->CreatePicture(pictNumber,pictSize,pictGoal,pictAlign,type,data,len);
@@ -147,8 +149,8 @@ CED_FUNC(Handle) CED_CreateSection(Handle hEdPage,EDRECT border, int colInterval
 {
 	if (logStream)
 	{
-		fprintf(logStream,"CreateSection params: %x,(%i,%i,%i,%i),%i,%i,%x,%hd,%i,%i,%hd,%i,%i\n", hEdPage, border.left, border.top, border.right, border.bottom,
-			colInterval, numOfCols, colInfo, sectionBreak, width, height, orientation, headerY, footerY);
+		fprintf(logStream,"CreateSection params: %x,(%i,%i,%i,%i),%i,%i,%x,%hd,%i,%i,%hd,%i,%i\n", pointer_to_num(hEdPage), border.left, border.top, border.right, border.bottom,
+			colInterval, numOfCols, pointer_to_num(colInfo), sectionBreak, width, height, orientation, headerY, footerY);
 		fflush(logStream);
 	}
 	CEDSection *sect =((CEDPage*)hEdPage)->InsertSection();
@@ -168,7 +170,7 @@ CED_FUNC(Handle) CED_CreateSection(Handle hEdPage,EDRECT border, int colInterval
 		memset(sect->colInfo,-1,sizeof(EDCOL)*numOfCols);
 	if (logStream)
 	{
-		fprintf(logStream,"CreateSection returned %x\n",sect);
+		fprintf(logStream,"CreateSection returned %x\n", pointer_to_num(sect));
 		fflush(logStream);
 	}
 	return (Handle)sect;
@@ -178,7 +180,7 @@ CED_FUNC(Bool32) CED_SetSectLineBetCol( Handle hEdSection, Bool32 lineBetCol)
 {
 	if (logStream)
 	{
-		fprintf(logStream,"SetSectLineBetCol params: %x,%i\n", hEdSection,lineBetCol);
+		fprintf(logStream,"SetSectLineBetCol params: %x,%i\n", pointer_to_num(hEdSection), lineBetCol);
 		fflush(logStream);
 	}
 	((CEDSection*)hEdSection)->lineBetCol=lineBetCol;
@@ -195,13 +197,13 @@ CED_FUNC(Handle) CED_CreateColumn( Handle hEdSection)
 {
 	if (logStream)
 	{
-		fprintf(logStream,"CreateColumn params: %x\n", hEdSection);
+		fprintf(logStream,"CreateColumn params: %x\n", pointer_to_num(hEdSection));
 		fflush(logStream);
 	}
 	Handle ret=(Handle)(((CEDSection*)hEdSection)->CreateColumn());
 	if (logStream)
 	{
-		fprintf(logStream,"CreateColumn returned %x\n",ret);
+		fprintf(logStream,"CreateColumn returned %x\n", pointer_to_num(ret));
 		fflush(logStream);
 	}
 	return ret;
@@ -213,14 +215,14 @@ CED_FUNC(Handle) CED_CreateFrame(Handle hEdSection, Handle hEdColumn, edBox rect
 {
 	if (logStream)
 	{
-		fprintf(logStream,"CreateFrame params: %x,%x,(%i,%i,%i,%i),%hd,%i,%i,%i\n", hEdSection,hEdColumn, rect.x, rect.y, rect.w, rect.h,
+		fprintf(logStream,"CreateFrame params: %x,%x,(%i,%i,%i,%i),%hd,%i,%i,%i\n", pointer_to_num(hEdSection), pointer_to_num(hEdColumn), rect.x, rect.y, rect.w, rect.h,
 								 position, borderSpace, dxfrtextx, dxfrtexty);
 		fflush(logStream);
 	}
 	Handle ret=(Handle)(((CEDSection*)hEdSection)->CreateFrame((CEDParagraph*)hEdColumn,rect,position,borderSpace,dxfrtextx,dxfrtexty));
 	if (logStream)
 	{
-		fprintf(logStream,"CreateFrame returned %x\n",ret);
+		fprintf(logStream,"CreateFrame returned %x\n", pointer_to_num(ret));
 		fflush(logStream);
 	}
 	return ret;
@@ -230,7 +232,7 @@ CED_FUNC(Bool32) CED_SetFrameFlag(Handle hEdFrame, int flag)
 {
 	if (logStream)
 	{
-		fprintf(logStream,"SetFrameFlag params: %x,%x\n", hEdFrame,flag);
+		fprintf(logStream,"SetFrameFlag params: %x,%x\n", pointer_to_num(hEdFrame), flag);
 		fflush(logStream);
 	}
 	((EDFRAMEDESCR *)( ((CEDParagraph*)hEdFrame)->descriptor))->flag=flag;
@@ -247,13 +249,13 @@ CED_FUNC(Handle) CED_CreateTable(  Handle hEdSection, Handle hObject)
 {
 	if (logStream)
 	{
-		fprintf(logStream,"CreateTable params: %x,%x\n", hEdSection,hObject);
+		fprintf(logStream,"CreateTable params: %x,%x\n", pointer_to_num(hEdSection), pointer_to_num(hObject));
 		fflush(logStream);
 	}
 	Handle ret=(Handle)(((CEDSection*)hEdSection)->CreateTable((CEDParagraph*)hObject));
 	if (logStream)
 	{
-		fprintf(logStream,"CreateTable returned %x\n",ret);
+		fprintf(logStream,"CreateTable returned %x\n", pointer_to_num(ret));
 		fflush(logStream);
 	}
 	return ret;
@@ -269,7 +271,7 @@ CED_FUNC(Handle) CED_CreateTableRow(Handle hEdSection, Handle hEdTable,
 {
 	if (logStream)
 	{
-		fprintf(logStream,"CreateTableRow params: %x,%x,%i,%i,%i,%i,%i,%i,%i,%i,%i,%i,%i,%i,%i\n", hEdSection,hEdTable,
+		fprintf(logStream,"CreateTableRow params: %x,%x,%i,%i,%i,%i,%i,%i,%i,%i,%i,%i,%i,%i,%i\n", pointer_to_num(hEdSection), pointer_to_num(hEdTable),
 		left, rowHeight, leftBrdrType, leftBrdrWidth, rightBrdrType,
 		rightBrdrWidth, topBrdrType, topBrdrWidth, bottomBrdrType,
 		bottomBrdrWidth, gaph, position, header);
@@ -282,7 +284,7 @@ CED_FUNC(Handle) CED_CreateTableRow(Handle hEdSection, Handle hEdTable,
 
 	if (logStream)
 	{
-		fprintf(logStream,"CreateTableRow returned %x\n",ret);
+		fprintf(logStream,"CreateTableRow returned %x\n", pointer_to_num(ret));
 		fflush(logStream);
 	}
 	return ret;
@@ -298,7 +300,7 @@ CED_FUNC(Handle) CED_CreateCell(Handle hEdSection,Handle hEdRow, int cellX, int 
 {
 	if (logStream)
 	{
-		fprintf(logStream,"CreateCell params: %x,%x,%i,%i,%i,%i,%i,%i,%i,%i,%i,%i,%i,(%i,%i,%i,%i),%i,%i\n", hEdSection,hEdRow,
+		fprintf(logStream,"CreateCell params: %x,%x,%i,%i,%i,%i,%i,%i,%i,%i,%i,%i,%i,(%i,%i,%i,%i),%i,%i\n", pointer_to_num(hEdSection), pointer_to_num(hEdRow),
 			cellX, merging, vertTextAlign, leftBrdrType, leftBrdrWidth,
 			rightBrdrType, rightBrdrWidth, topBrdrType, topBrdrWidth, bottomBrdrType,
 			bottomBrdrWidth, layout.x, layout.y, layout.w, layout.h, shading, color);
@@ -307,7 +309,7 @@ CED_FUNC(Handle) CED_CreateCell(Handle hEdSection,Handle hEdRow, int cellX, int 
 	Handle ret=(Handle)( ((CEDSection*)hEdSection) -> CreateCell((CEDParagraph*)hEdRow, cellX, merging, vertTextAlign, leftBrdrType, leftBrdrWidth, rightBrdrType, rightBrdrWidth, topBrdrType, topBrdrWidth, bottomBrdrType, bottomBrdrWidth, layout, shading, color));
 	if (logStream)
 	{
-		fprintf(logStream,"CreateCell returned %x\n",ret);
+		fprintf(logStream,"CreateCell returned %x\n", pointer_to_num(ret));
 		fflush(logStream);
 	}
 	return ret;
@@ -317,7 +319,7 @@ CED_FUNC(Bool32) CED_SetCellFlag(Handle hEdCell, int flag)
 {
 	if (logStream)
 	{
-		fprintf(logStream,"SetCellFlag params: %x,%x\n", hEdCell,flag);
+		fprintf(logStream,"SetCellFlag params: %x,%x\n", pointer_to_num(hEdCell), flag);
 		fflush(logStream);
 	}
 	((EDCELLDESCR *)( ((CEDParagraph*)hEdCell)->descriptor))->flag=flag;
@@ -340,13 +342,13 @@ CED_FUNC(Handle) CED_CreateParagraph(Handle hEdSection, Handle hObject,
 	if (logStream)
 	{
 		fprintf(logStream,"CreateParagraph params: %x,%x,%i,(%i,%i,%i,%i),%i,%i,(%i,%i),(%i,%i,%i,%i),%i,%i,%i,%hd,%hd\n",
-			hEdSection,hObject,align,indent.left,indent.top,indent.right,indent.bottom,UserNum,FlagBorder,interval.cx,interval.cy,layout.x,layout.y,layout.w,layout.h, color, shading, spaceBetweenLines, spcBtwLnsMult, keep);
+		        pointer_to_num(hEdSection), pointer_to_num(hObject),align,indent.left,indent.top,indent.right,indent.bottom,UserNum,FlagBorder,interval.cx,interval.cy,layout.x,layout.y,layout.w,layout.h, color, shading, spaceBetweenLines, spcBtwLnsMult, keep);
 		fflush(logStream);
 	}
 	Handle ret=(Handle)(((CEDSection*)hEdSection)->CreateParagraph((CEDParagraph*)hObject,align,indent,UserNum,FlagBorder,interval,layout, color, shading, spaceBetweenLines, spcBtwLnsMult, keep));
 	if (logStream)
 	{
-		fprintf(logStream,"CreateParagraph returned %x\n",ret);
+		fprintf(logStream,"CreateParagraph returned %x\n", pointer_to_num(ret));
 		fflush(logStream);
 	}
 	return ret;
@@ -361,7 +363,7 @@ CED_FUNC(Bool32) CED_SetParaBorders(Handle hEdParagraph,
 {
 	if (logStream)
 	{
-		fprintf(logStream,"SetParaBorders params: %x,%i,%i,%i,%i,%i,%i,%i,%i,%i\n", hEdParagraph,
+		fprintf(logStream,"SetParaBorders params: %x,%i,%i,%i,%i,%i,%i,%i,%i,%i\n", pointer_to_num(hEdParagraph),
 			leftBrdrType, leftBrdrWidth,
 			rightBrdrType, rightBrdrWidth, topBrdrType, topBrdrWidth, bottomBrdrType,
 			bottomBrdrWidth,brdrBtw);
@@ -391,7 +393,7 @@ CED_FUNC(Handle) CED_CreateLine(Handle hEdParagraph, Bool32 hardBreak, int defCh
 	if (logStream)
 	{
 		fprintf(logStream,"CreateLine params: %x,%i,%i\n",
-			hEdParagraph, hardBreak, defChrFontHeight);
+		        pointer_to_num(hEdParagraph), hardBreak, defChrFontHeight);
 		fflush(logStream);
 	}
 	CEDLine * lin=((CEDParagraph*)hEdParagraph)->InsertLine();
@@ -399,7 +401,7 @@ CED_FUNC(Handle) CED_CreateLine(Handle hEdParagraph, Bool32 hardBreak, int defCh
 	lin->defChrFontHeight=defChrFontHeight;
 	if (logStream)
 	{
-		fprintf(logStream,"CreateLine returned %x\n",lin);
+		fprintf(logStream,"CreateLine returned %x\n", pointer_to_num(lin));
 		fflush(logStream);
 	}
 	return (Handle)lin;
@@ -410,7 +412,7 @@ CED_FUNC(Bool32) CED_SetLineParams(Handle hEdLine, Bool32 hardBreak, int defChrF
 	if (logStream)
 	{
 		fprintf(logStream,"SetLineParams params: %x,%i,%i\n",
-			hEdLine, hardBreak, defChrFontHeight);
+		        pointer_to_num(hEdLine), hardBreak, defChrFontHeight);
 		fflush(logStream);
 	}
 	CEDLine * lin=((CEDLine*)hEdLine);
@@ -471,7 +473,7 @@ CED_FUNC(void) CED_DeletePage(Handle hEdPage)
 	delete (CEDPage*)hEdPage;
 	if (logStream)
 	{
-		fprintf(logStream,"DeletePage params %x\n",hEdPage);
+		fprintf(logStream,"DeletePage params %x\n", pointer_to_num(hEdPage));
 		fclose(logStream);
 		logStream=0;
 	}
@@ -488,7 +490,7 @@ CED_FUNC(Bool32) CED_WriteFormattedEd(char * lpEdFileName, Handle hEdPage)
 {
 	if (logStream)
 	{
-		fprintf(logStream,"WriteFormattedEd params: %s,%x\n", lpEdFileName, hEdPage);
+		fprintf(logStream,"WriteFormattedEd params: %s,%x\n", lpEdFileName, pointer_to_num(hEdPage));
 		fflush(logStream);
 	}
 	Bool32 ret=CED_FormattedWrite(lpEdFileName,(CEDPage*)hEdPage);
@@ -1038,7 +1040,7 @@ CED_FUNC(Bool32) CED_WriteFormattedRtf(const char * fileName, Handle hEdPage)
 {
 	if (logStream)
 	{
-		fprintf(logStream,"WriteFormattedRtf params: %s,%x\n", fileName, hEdPage);
+		fprintf(logStream,"WriteFormattedRtf params: %s,%x\n", fileName, pointer_to_num(hEdPage));
 		fflush(logStream);
 	}
 	Bool32 ret=((CEDPage*)hEdPage)->FormattedWriteRtf(fileName,FALSE);
