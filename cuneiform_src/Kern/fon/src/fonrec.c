@@ -132,8 +132,10 @@ static void SetFirstNext(void) {
 	for(i=1,wel=fonbase.start;i<=fonbase.inBase;i++,wel++)
 	{
 		wel->next=0;
+		/*
 		if(wel->let < 0 || wel->let > 255)
 		continue;
+		*/
 		if(fonbase.first[wel->let]==0)
 		fonbase.first[wel->let]=i;
 		else
@@ -748,8 +750,8 @@ FON_FUNC(int32_t) FONSetAlphabet(char *coll)
 	{
 		for(i=0,wel=fonbase.start;i<fonbase.inBase;i++,wel++)
 		{
-			if( wel->let < 0 || wel->let > 255 )
-			continue;
+			/*if( wel->let < 0 || wel->let > 255 )
+			continue;*/
 			if( alphabet[wel->let] )
 			wel->num=abs(wel->num);
 			else

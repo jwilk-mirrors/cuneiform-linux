@@ -292,7 +292,7 @@ return 1;
 void str_to_bmp(char *buf,unsigned char *raster,int h,int ww,int w_last)
 {
 char c[3];
-int i,j;
+int i,j,temp;
 
 for(i=0;i<h;i++)
 	{
@@ -301,7 +301,8 @@ for(i=0;i<h;i++)
 		c[0]=buf[i*ww+j];
 		c[1]=buf[i*ww+j+1];
 		c[2]=0;
-		sscanf(c,"%x",raster++);
+		sscanf(c,"%x",&temp);
+		*raster++ = temp;
 		}
 	raster += w_last;
 	}
@@ -331,7 +332,7 @@ return 0;
 int get_raster_from_prot()
 {
 int l;
-
+int temp;
 
 int ww,w_, w_last;
 
@@ -344,7 +345,8 @@ if( l==4 && strlen(sdata)==52 )
     str_to_bmp(sdata,data,1,52,52);
 if( !my_fgets())
 	return 0;
-sscanf(buffer,"%d %d",&l,&let);
+sscanf(buffer,"%d %d",&l,&temp);
+let = temp;
 if( !my_fgets())
 	return 0;
 sscanf(buffer,"%d %d %d",&l,&w_,&h);

@@ -177,7 +177,7 @@ CTB_FUNC(int32_t) CTB_gettmpdirname(void) {
     char* tmp = get_tmp_pattern();
     ctb_tmp_dir = malloc(strlen(tmp) + 1);
     strncpy(ctb_tmp_dir, tmp, strlen(tmp) + 1);
-    ctb_tmp_dir = mkdtemp(ctb_tmp_dir);
+    ctb_tmp_dir = (char*)mkdtemp(ctb_tmp_dir);
     free_tmp_pattern(tmp);
     if(!ctb_tmp_dir)
         return 1;
@@ -729,7 +729,7 @@ if( !w || !h )
 wb =  gray ? (((int32_t)w+7)/8)*8 : (((int32_t)w+7)/8);
 
 n = len = (int16_t)(wb*(int32_t)h);
-if( hnd->type==CTB_256_128_2 && (w>255 || h>127 || len>REC_MAX_RASTER_SIZE) )
+if( hnd->type==CTB_256_128_2 && (/*w>255 ||*/ h>127 || len>REC_MAX_RASTER_SIZE) )
     {
         ctb_err_code = CTB_ERR_WRITE;
         return FALSE;

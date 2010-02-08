@@ -187,7 +187,7 @@ typedef struct {
 	unsigned int style;
 	int hbrBackground;
 	int hCursor;
-	int hIcon;
+	HICON hIcon;
 	char * lpszMenuName;
 	char *cbClsExtra;
 	char *cbWndExtra;
@@ -413,7 +413,7 @@ typedef int REGSAM;
 #define LRESULT int
 #endif
 
-#define HMENU int
+#define HMENU void*
 
 #include "cfcompat.h"
 /* A bunch of windows DLL initialisation values. I don't know the
@@ -470,11 +470,11 @@ typedef int REGSAM;
 #endif
 
 #ifndef IDC_ARROW
-#define IDC_ARROW 38
+#define IDC_ARROW "arrow_dummy"
 #endif
 
 #ifndef IDI_ASTERISK
-#define IDI_ASTERISK 939
+#define IDI_ASTERISK "asterisk_dummy"
 #endif
 
 #ifndef GHND
