@@ -234,7 +234,7 @@ DEC_FUNC(DPUMA_Callback_WindowProc,  DPUMA_SetCallbackMainFrameWindowProc,(DPUMA
 DEC_FUNC(uint32_t,  DPUMA_SendWindow,(Handle wnd,uint32_t message, uint32_t wParam, uint32_t lParam));
 DEC_FUNC(uint32_t,  DPUMA_SendMainWnd,(uint32_t message, uint32_t wParam, uint32_t lParam));
 
-DEC_FUNC(uint32_t,  DPUMA_CSTR_Monitor,(Handle owner, uint32_t cstr_line, uint32_t pos,
+DEC_FUNC(uint32_t,  DPUMA_CSTR_Monitor,(Handle owner, Handle cstr_line, uint32_t pos,
 									  DPUMA_Callback_WindowProc lpproc));
 
 DEC_FUNC(uint32_t, DPUMA_CSTR_GetPosition,( uint32_t * cstr_rester ));

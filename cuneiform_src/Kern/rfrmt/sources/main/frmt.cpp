@@ -229,7 +229,7 @@ RtfFragRect.m_Step                        = 0;
  if (fclose(fpInternalFile) != 0)
  {
 	char ch[500];
-	sprintf(ch,"File %s cannot be closed\n",fpInternalFile);
+	sprintf(ch,"Temporary file cannot be closed\n");
 	assert (ch);
  }
 
@@ -376,7 +376,7 @@ RFRMT_FUNC(Bool32)  RFRMT_SaveRtf(char* lpOutputFileName,uint32_t code)
  if (fclose(fpInternalFile) != 0)
  {
 	char ch[500];
-	sprintf(ch,"File %s cannot be closed\n",fpInternalFile);
+	sprintf(ch,"Temporary file cannot be closed\n");
 	assert (ch);
  }
 

@@ -1231,7 +1231,7 @@ if( !(*txt) )
     }
 sprintf(texto,"line %d,%s, pass %d, language %d, lines %d\n",
     line_number,
-    (curr_pass>=snap_clients||curr_pass<0)?"":snap_pass[curr_pass],
+    (curr_pass>=snap_clients||curr_pass<0)?"":(const char*)(snap_pass[curr_pass]),
     p2_active+1, language,
     num_select_lines?num_select_lines:1);
 while(1)

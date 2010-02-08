@@ -636,7 +636,7 @@ extern "C" {
 		return rc;
 	};
 	//////////////////////////////////////////////
-	uint32_t LDPUMA_CSTR_Monitor(Handle owner, uint32_t cstr_line, uint32_t pos,
+	uint32_t LDPUMA_CSTR_Monitor(Handle owner, Handle cstr_line, uint32_t pos,
 			DPUMA_Callback_WindowProc lpproc)
 	{
 		uint32_t rc = 0;
