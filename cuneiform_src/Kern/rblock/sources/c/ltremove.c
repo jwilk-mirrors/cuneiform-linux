@@ -180,9 +180,11 @@ static int PassVertInterval (int x, int y1, int y2)
     return (nCounter);
 }
 // new page
-static int CompDirsPictureDensity (const DIRECTION *p,
-								   const DIRECTION *q)
+static int CompDirsPictureDensity (const void *pi,
+								   const void *qi)
 {
+    const DIRECTION *p = (const DIRECTION*) pi;
+    const DIRECTION *q = (const DIRECTION*) qi;
     if (p -> nWidth == 0 || q -> nWidth == 0)
         ErrorInternal ("p -> nWidth == 0 || q -> nWidth == 0 !");
 
@@ -320,7 +322,7 @@ static void CalculateDirectionsValues (BLOCK *pBlock)
                               rMatrix.xLeft, rMatrix.xRight);
     }
 
-    q_sort ((char *) Dirs, N_DIRECTIONS, sizeof (DIRECTION), CompDirsPictureDensity); //AK 04.03.97
+    qsort ((char *) Dirs, N_DIRECTIONS, sizeof (DIRECTION), CompDirsPictureDensity); //AK 04.03.97
 }
 // new page
 /****************************************************************************
@@ -342,8 +344,10 @@ static void CalculateDirectionsValues (BLOCK *pBlock)
 int DQD_Matrix [DD_MATRIX_SIZE]; /* Dust Quantity Distribution */
 int DSD_Matrix [DD_MATRIX_SIZE]; /* Dust Square   Distribution */
 
-static int DD_CompProc (const int *p, const int *q)
+static int DD_CompProc (const void *pi, const void *qi)
 {
+    const int *p = (const int*) pi;
+    const int *q = (const int*) qi;
     return (*q - *p);
 }
 // new page
@@ -414,8 +418,8 @@ void CalculateDustDistribution (BLOCK *p)
         DSD_Matrix [i] = DSD_Matrix [i] * 100 / nDSD_Sum;
     }
 
-    q_sort ((char*)DQD_Matrix, DD_MATRIX_SIZE, sizeof (int), DD_CompProc); //AK 04.03.97
-    q_sort ((char*)DSD_Matrix, DD_MATRIX_SIZE, sizeof (int), DD_CompProc); //AK 04.03.97
+    qsort ((char*)DQD_Matrix, DD_MATRIX_SIZE, sizeof (int), DD_CompProc); //AK 04.03.97
+    qsort ((char*)DSD_Matrix, DD_MATRIX_SIZE, sizeof (int), DD_CompProc); //AK 04.03.97
 }
 // new page
 # ifdef LT_DEBUG

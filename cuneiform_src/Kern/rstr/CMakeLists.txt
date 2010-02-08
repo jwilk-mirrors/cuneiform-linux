@@ -61,7 +61,6 @@ src/prop.c
 src/proport.c
 src/proptab.c
 src/punct.c
-src/qsort.c
 src/rastror.c
 src/rcm.c
 src/rcontext.c

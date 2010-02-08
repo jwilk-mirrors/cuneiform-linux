@@ -39,7 +39,6 @@ sources/c/lttrees.c
 sources/c/ltwstrip.c
 sources/c/madebug.c
 sources/c/msgerr.c
-sources/c/qsort.c
 sources/c/scalar.c
 sources/c/seblocks.c
 sources/c/seform.c

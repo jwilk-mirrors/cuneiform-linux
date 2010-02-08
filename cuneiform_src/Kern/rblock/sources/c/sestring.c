@@ -526,15 +526,17 @@ STRING *StringAddToList (void)
 
     return (pNew);
 }
-
-static int StringListCompProc (const int *p1, const int *p2)
+
+static int StringListCompProc (const void *in1, const void *in2)
 {
+  const int *p1 = (const int*) in1;
+  const int *p2 = (const int*) in2;
     return (pRoots [*p1].xColumn - pRoots [*p2].xColumn);
 }
 
 void StringSortLetters (STRING *pString)
 {
-    q_sort ((char *) pString -> pLettersList,
+    qsort ((char *) pString -> pLettersList,
            pString -> nLetters,
            sizeof (int),
            StringListCompProc);
@@ -542,7 +544,7 @@ void StringSortLetters (STRING *pString)
 
 void StringSortDust (STRING *pString)
 {
-    q_sort ((char *) pString -> pDustList,
+    qsort ((char *) pString -> pDustList,
            pString -> nDust,
            sizeof (int),
            StringListCompProc);
