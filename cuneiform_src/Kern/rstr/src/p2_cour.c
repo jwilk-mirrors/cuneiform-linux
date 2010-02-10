@@ -100,7 +100,7 @@ void set_alphabet(unsigned char *alpha,unsigned char *letters)
 static void print_method(FILE *fp,RecVersions *res,char *s,int ansi)
 {
     int ii;
-    fprintf(fp,s);
+    fprintf(fp, "%s", s);
     if( !res->lnAltCnt )
     {
         fprintf(fp,"-\n");

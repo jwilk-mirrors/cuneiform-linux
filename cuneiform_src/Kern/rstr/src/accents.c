@@ -298,7 +298,7 @@ int16_t accent(cell *c)
  {
  int16_t acc_type,i,n;
  version *v1,*v2,vers[VERS_IN_CELL];
- uchar str[15];
+ uchar str[255];
 
  if (!(acc_type=type_acc(c,TRUE)))
     return bottom_accent(c);     // Try to find bottom accent. 17.10.97 E.P.

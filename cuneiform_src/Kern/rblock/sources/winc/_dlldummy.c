@@ -2031,7 +2031,7 @@ static void BreakingUpdate (int xLeft, int yTop, int nScaling)
 	}
 }
 
-void LT_GraphicsTitle (char *pTitle)
+void LT_GraphicsTitle (const char *pTitle)
 {
 	//    _setcolor (_COLOR_BACKGROUND);
 	_setcolor (_COLOR_TEXT);
