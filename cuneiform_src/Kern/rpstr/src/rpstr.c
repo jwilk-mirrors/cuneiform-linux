@@ -361,7 +361,7 @@ Bool32 correct_line_spell(CSTR_line line, CSTR_rast* re, CSTR_rast* rb, int32_t 
 
     if( !rpstr_correct_spell(line,rb, re, rf,line_num,disable_new_dict, disable_check_word) )
         {
-        sprintf("speller error : %s ",sp_err);
+        sprintf(snapstr, "speller error : %s ",sp_err);
         Snap_Console(snapstr);
         LDPUMA_DestroyRasterWnd();
         return FALSE;
