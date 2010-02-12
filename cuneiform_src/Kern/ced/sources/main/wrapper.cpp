@@ -65,7 +65,10 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 char logName[_MAX_PATH];
 FILE *logStream;
 
-#define pointer_to_num(x) reinterpret_cast<unsigned int>(x)
+/* Chops off 32 bits on 64 bit machines, but it is ok, since
+ * the result is only used informally.
+ */
+#define pointer_to_num(x) ((unsigned int)reinterpret_cast<unsigned long>(x))
 
 //create page
 CED_FUNC(Handle) CED_CreatePage(char * _imageName,EDSIZE _sizeOfImage,EDSIZE _dpi,int _turn,
