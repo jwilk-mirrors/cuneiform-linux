@@ -77,6 +77,10 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "minmax.h"
 
 static void snap_sticks(cell *,char *);
+/* Chops off 32 bits on 64 bit machines, but it is ok, since
+ * the result is only used informally.
+ */
+#define pointer_to_num(x) ((unsigned int)((unsigned long)(x)))
 
 
 // from module PASSE
@@ -1042,7 +1046,13 @@ switch(message)
                         sprintf(buf,"Позиция %i из %i",pos,LDPUMA_CSTR_GetLength());
             RUS_Console(buf);
             sprintf(buf,"растр CSTR=0x%x(cell=0x%x,env=0x%x,prevl=0x%x,nextl=0x%x,prev=0x%x,next=0x%x)",
-                r, c,c?c->env:0,c?c->prevl:0,c?c->nextl:0,c?c->prev:0,c?c->next:0);
+                pointer_to_num(r),
+                pointer_to_num(c),
+                c?pointer_to_num(c->env):0,
+                c?pointer_to_num(c->prevl):0,
+                c?pointer_to_num(c->nextl):0,
+                c?pointer_to_num(c->prev):0,
+                c?pointer_to_num(c->next):0);
             RUS_Console(buf);
                         LDPUMA_RasterText("F12 - позиция. см. консоль.");
                         break;
