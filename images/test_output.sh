@@ -2,6 +2,8 @@
 
 # Does not work on windows.
 
+# Input file paths must be absolute.
+
 infile=$1
 truthfile=${infile}.txt
 tempfile=`mktemp /tmp/cftest.XXXXXXXX`
