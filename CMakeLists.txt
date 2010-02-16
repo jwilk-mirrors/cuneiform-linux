@@ -23,6 +23,7 @@ if(BUILD_TESTING)
   enable_testing()
   include(CTest)
   include(Dart)
+  add_subdirectory(images)
 endif()
 
 include(install_files.cmake)
