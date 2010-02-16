@@ -6,8 +6,6 @@ infile=$1
 truthfile=${infile}.txt
 tempfile=`mktemp /tmp/cftest.XXXXXXXX`
 
-#echo `pwd` 
-echo "$@" > ~/test.out
 export CF_DATADIR=../../datafiles
 
 ../cuneiform -o $tempfile "$@"
