@@ -1161,7 +1161,7 @@ static cell *cut_glue (cell *LC, cell *E, char ovfl)
 #pragma warning ( disable : 4047 4024 )
 
   memset(&vers_pool.node,0,MAX_SEG_VERS*sizeof(seg_vers *));
-  vers_list=&vers_pool.pool;
+  vers_list=(seg_vers*)&vers_pool.pool;
 
   //наклон для всех
 
@@ -1218,7 +1218,7 @@ static cell *cut_glue (cell *LC, cell *E, char ovfl)
 //построение растра
 
   kita=give_kit_addr();
-  if (!compose_raster(&r,&org_cells.cells,org_cells.N) || r.w>RASTER_WIDTH)
+  if (!compose_raster(&r,(cell**)&org_cells.cells,org_cells.N) || r.w>RASTER_WIDTH)
     { glsnap('a',B,"raster too large"); return NULL;}
 
 //список сечений и начальные значения
@@ -2167,20 +2167,20 @@ static uchar accept_segment(cell *C, raster *r0, struct cut_elm *cut_list,
 
   kit=give_kit_addr();
   cut_fl= ( seci0->dh != 0 ) ? c_cg_cutr : 0; //разрез справа
-  mn1=cut_rast(&r0->pict,r0->w,r0->h,r0->top,r0->left,cut_list,(char)i0,1,
+  mn1=cut_rast((puchar)&r0->pict,r0->w,r0->h,r0->top,r0->left,cut_list,(char)i0,1,
                csv0,&cpos0);
   d_row=(int32_t)nIncline*(r0->left+x0)/2048;
   cpos0.row1 -= d_row;  cpos0.row2 -= d_row;   //для forbid_stick_cut
 
   if ( seci1->dh != 0 ) cut_fl |= c_cg_cutl; //разрез слева
-  mn1=cut_rast(&r0->pict,r0->w,r0->h,r0->top,r0->left,cut_list,(char)i1,2,
+  mn1=cut_rast((puchar)&r0->pict,r0->w,r0->h,r0->top,r0->left,cut_list,(char)i1,2,
                csv1,&cpos1);
   cpos1.row1 -= d_row;  cpos1.row2 -= d_row;
 
 //восстанавливаем растр
 
-  cut_rast(&r0->pict,r0->w,r0->h,r0->top,r0->left,cut_list,(char)i0,0,csv0,&cposc);
-  cut_rast(&r0->pict,r0->w,r0->h,r0->top,r0->left,cut_list,(char)i1,0,csv1,&cposc);
+  cut_rast((puchar)&r0->pict,r0->w,r0->h,r0->top,r0->left,cut_list,(char)i0,0,csv0,&cposc);
+  cut_rast((puchar)&r0->pict,r0->w,r0->h,r0->top,r0->left,cut_list,(char)i1,0,csv1,&cposc);
 
 //выделяем cell'ы из mn1
 
@@ -2949,7 +2949,7 @@ static cell *unite (cell *C, cell **org_cells, int16_t N, s_glue *GL, uchar *gva
   if ( N==1 )  *gvar=0;
   if ( *gvar )
   {
-    mn1=mn=glue(&GL->complist, 1);
+    mn1=mn=glue((c_comp**)&GL->complist, 1);
     for ( i=0;  mn1; i++, mn1=mn1->mnnext );
     if ( i>0 && i<N )        //склеилось
     {
@@ -3008,7 +3008,7 @@ static uchar classify (cell **cells, int16_t N, grup *box, grup *bottom,
   uchar proj[RASTER_HEIGHT+1];  //проекция на вертикальную ось
 
   far_top->n=far_bottom->n=top->n=bottom->n=0;
-  upper=horiz_proj(cells,N,&proj,RASTER_HEIGHT+1);
+  upper=horiz_proj(cells,N,(uchar*)&proj,RASTER_HEIGHT+1);
 
 //ищем дальние
 
@@ -3537,10 +3537,10 @@ static cell *recover_path(void *kita, raster *r, struct cut_elm *cut_list,
     while ( i>0 )
     {
       seci=&cut_list[i];
-      mn1=cut_rast(&r->pict,r->w,r->h,r->top,r->left,cut_list,(char)i,2,csv,&cpos);
+      mn1=cut_rast((puchar)&r->pict,r->w,r->h,r->top,r->left,cut_list,(char)i,2,csv,&cpos);
       i=seci->px;            //следующий на оптимальном пути
     }
-    mn1=cut_rast(&r->pict,r->w,r->h,r->top,r->left,cut_list,0,3,csv,&cpos);
+    mn1=cut_rast((puchar)&r->pict,r->w,r->h,r->top,r->left,cut_list,0,3,csv,&cpos);
     if (!mn1) return NULL;
 
     take_kit_addr(kita);

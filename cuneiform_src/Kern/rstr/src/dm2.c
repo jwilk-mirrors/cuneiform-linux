@@ -669,7 +669,7 @@ backg:
   if (BC->flg & c_f_bad )   // 93.08.19 no more RQDOT
   {
     B1=BC; B2=EC; tx1=txt11; tx2=txt12;
-    rp1=results_right_to_bad;
+    rp1=(uchar**)results_right_to_bad;
     rp2=letters_right_to_bad;
     rps=sticks_right_to_bad;
     rps[0] = liga_i;
@@ -679,7 +679,7 @@ backg:
   if (EC->flg & c_f_bad )   // 93.08.19 no more RQDOT
   {
     B1=EC; B2=BC; tx1=txt21; tx2=txt22;
-    rp1=results_left_to_bad;
+    rp1=(uchar**)results_left_to_bad;
     rp2=letters_left_to_bad;
     rps=sticks_left_to_bad;
     rps[0] = liga_i;
