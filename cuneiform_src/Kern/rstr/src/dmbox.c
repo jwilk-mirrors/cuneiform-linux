@@ -420,7 +420,7 @@ makeans:
  BC->history   |= c_rs_BOX;
 #pragma warning ( disable : 4047 ) //AK 11.03.97
 
- v=&(SBOX.best_BOX);                       //AK 04.03.97 ? for address
+ v=(t_answer*)&(SBOX.best_BOX);                       //AK 04.03.97 ? for address
  vx=VERS_IN_CELL-1;
  fBOXvers=v->ltr;
  wbuf[0]=0;   // clear print buf
@@ -606,7 +606,7 @@ makeans:
      }
      // else : sticks were a dream of EVENTS; retain BOX best list
          best3=beste=0;
-         for ( dv2=&(svers.vers);                    //AK 04.03.97 ? for address
+         for ( dv2=(version*)&(svers.vers);                    //AK 04.03.97 ? for address
                (((wc=dv2->let)!=0) && ((w1=dv2->prob)!=0));
                dv2++)
             if (beste < w1) beste=w1;    // beste - best tiger stick

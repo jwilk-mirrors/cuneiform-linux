@@ -151,7 +151,7 @@ void save_vers(cell *C, SVERS *S)
  S->nClust        = C->nClust;   // Nick
  nn=S->nvers;
  if (nn==0)  nn = 1;
- for (i=0, s=&(C->vers), d=&(S->vers); i<nn; i++, d++, s++) //AK 04.03.97 ? for address
+ for (i=0, s=(version*)&(C->vers), d=(version*)&(S->vers); i<nn; i++, d++, s++) //AK 04.03.97 ? for address
  {
    d->let = s->let;
    d->prob = s->prob;
@@ -181,7 +181,7 @@ void rest_vers(cell *C, SVERS *S)
 
  nn=S->nvers;
  if (nn==0) nn=1;
- for (i=0, d=&(C->vers), s=&(S->vers); i<nn; i++, d++, s++)  //AK 04.03.97 ? for address
+ for (i=0, d=(version*)&(C->vers), s=(version*)&(S->vers); i<nn; i++, d++, s++)  //AK 04.03.97 ? for address
  {
   d->let = s->let;
   d->prob = s->prob;
@@ -243,7 +243,6 @@ int16_t cell_is_BOX_solid (cell  *B1)
 void save_rast_vers(CSTR_rast C, SVERS *S)
  {
  int16_t i, nn;
-// version *s, *d;
  UniVersions vers;
  CSTR_rast_attr attr;
  version *d;
@@ -269,7 +268,7 @@ void save_rast_vers(CSTR_rast C, SVERS *S)
 
  nn=S->nvers;
 // if (nn==0)  nn = 1;
- for (i=0, d=&(S->vers); i<nn; i++, d++ ) //AK 04.03.97 ? for address
+ for (i=0, d=(version*)&(S->vers); i<nn; i++, d++ ) //AK 04.03.97 ? for address
  {
    d->let  = vers.Alt[i].Liga;
    d->prob =  vers.Alt[i].Prob;
