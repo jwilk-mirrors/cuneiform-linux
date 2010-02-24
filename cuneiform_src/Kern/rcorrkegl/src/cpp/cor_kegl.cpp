@@ -1486,7 +1486,7 @@ static void draw_fragment(Handle hBlock, uint32_t color, uint32_t key)
     if( snap_enable && !LDPUMA_SkipEx(hSnapGarbage,FALSE,TRUE,1) )
     {
       uchar msg[80];
-      sprintf((char*)msg,"draw=%d handle=%x\n",com->number,CPAGE_GetHandleBlock(hCPAGE, com->number));
+      sprintf((char*)msg,"draw=%d handle=%x\n",com->number,(unsigned int)((unsigned long)CPAGE_GetHandleBlock(hCPAGE, com->number)));
       LDPUMA_Console((const char*)msg);
       LDPUMA_RasterText((char*)msg);
     }

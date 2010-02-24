@@ -1430,7 +1430,7 @@ MN  *cut_rast(puchar r,int16_t width, int16_t height,int16_t upper, int16_t left
 
 		for (y=0;  y < dh; y++,c+=dx)
 		{
-			if ( s < svp || s > ( svp + 32 ) )    //AK! add crash debug
+			if ( (char*)s < svp || (char*)s > ( svp + 32 ) )    //AK! add crash debug
 			{
 				continue;
 			}
@@ -1473,7 +1473,7 @@ agacut:;
 	{
 		for (y=0; y < dh; y++,r0++,c+=dx)
 		{
-			if ( s < svp || s > (svp + 32 ))              //AK! add
+			if ( (char*)s < svp || (char*)s > (svp + 32 ))              //AK! add
 			{
 				continue;
 			}
@@ -1548,7 +1548,7 @@ agacut:;
 	{
 		for (y=0; y < dh; y++,c+=dx)
 		{
-			if ( s < svp || s > (svp + 32 ))              //AK! add
+			if ( (char*)s < svp || (char*)s > (svp + 32 ))              //AK! add
 			{
 				continue;
 			}
