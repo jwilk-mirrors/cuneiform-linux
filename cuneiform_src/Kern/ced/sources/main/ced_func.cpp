@@ -743,6 +743,9 @@ Bool32	CED_FormattedWrite(char * fileName, CEDPage *page)
 	int sec;
 	CEDChar *tmpChr;
 	HANDLE hFile=Open(0, (pchar)fileName,OSF_CREATE|OSF_BINARY|OSF_WRITE);
+	fragm_disk_descr fdd;
+	pageDescr pd;
+
 	if (!hFile)
 	{
 		SetReturnCode_ced(CFIO_GetReturnCode());
@@ -758,7 +761,6 @@ Bool32	CED_FormattedWrite(char * fileName, CEDPage *page)
 	sdd.incline=page->turn;
 	sdd.version=2000;
 	if (!Write(hFile,(pchar)&sdd,sizeof(sdd))) goto ED_WRITE_END;
-	fragm_disk_descr fdd;
 	memset((void*)&fdd,0,sizeof(fdd));
 	fdd.code=SS_FRAGMENT;
 	if (!Write(hFile,(pchar)&fdd,sizeof(fdd))) goto ED_WRITE_END;
@@ -767,7 +769,6 @@ Bool32	CED_FormattedWrite(char * fileName, CEDPage *page)
 	//Write table of fonts
 	if (!WriteFontTable(hFile,page)) goto ED_WRITE_END;
 	//Write the boundaries of the page
-	pageDescr pd;
 	pd.paperw=page->pageSizeInTwips.cx;
 	pd.paperh=page->pageSizeInTwips.cy;
 	pd.margt=page->pageBordersInTwips.top;
