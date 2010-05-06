@@ -2,3 +2,4 @@
 .cproject
 builddir
 .settings
+.DS_Store
