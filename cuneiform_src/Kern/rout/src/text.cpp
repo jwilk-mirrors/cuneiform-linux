@@ -195,15 +195,6 @@ Bool OneChar(Handle charHandle)
 	// Специальные случаи перекодировки
 	switch(c1)
 		{
-		// Французский Макинтош - непонятно,
-		// но оставляю как есть. 26.05.99
-#ifdef __MAC__
-		case (uchar)206: case (uchar)207:
-		case (uchar)174: case (uchar)190:
-			if( gLanguage==LANG_FRENCH )
-				c2=с1;
-			break;
-#endif
 		// unknows symbol
 		case bad_char:
 			c2 = gBadChar;
@@ -280,10 +271,12 @@ Bool OneChar(Handle charHandle)
 				}
 			break;
 
-#ifndef __MAC__
 		//	0xA9 © -> (C),
 		//	0xAE ® -> (R)
 		case  0xA9:  case  0xAE:
+		    if(gActiveCode == ROUT_CODE_UTF8)
+		        break;
+
 			if( gActiveCode==ROUT_CODE_ASCII ||
 				gActiveCode==ROUT_CODE_ISO
 			  )
@@ -299,10 +292,9 @@ Bool OneChar(Handle charHandle)
 			return TRUE;
 			break;
 
-#endif
 		// 0x99 ™ -> (TM) except ANSI and UTF8
 		case  0x99:
-			if( gActiveCode!=ROUT_CODE_ANSI && gActiveCode!=ROUT_CODE_UTF8)
+            if( gActiveCode!=ROUT_CODE_ANSI && gActiveCode!=ROUT_CODE_UTF8)
 				{
 				*gMemCur++ = '(';
 				*gMemCur++ = c2;	// 'T'
