@@ -60,5 +60,5 @@
 #include "func.h"
 
 int16_t long_sqrt(uint32_t n) {
-    return (int16_t) sqrt(n);
+    return (int16_t) sqrt((double)n);
 }

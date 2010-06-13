@@ -95,11 +95,11 @@ uint32_t ul_reason_for_call,
     case DLL_PROCESS_ATTACH:
 		ghInst = hModule;
 		GetModuleFileName(hModule,szPath,sizeof(szPath));
-		if(p = strstr(_strupr(szPath),"PUMA.DLL"))
+		if(p = strstr(_strupr(szPath),"cuneiform.dll"))
 			*(p-1)=0;
 		else
 		{
-			MessageBox(NULL,"Start folder PUMA.DLL not found!",NULL,MB_ICONSTOP);
+			MessageBox(NULL,"Start folder cuneiform.dll not found!",NULL,MB_ICONSTOP);
 			return FALSE;
 		}
 		if(GetTempPath(sizeof(szTempPath),szTempPath))
