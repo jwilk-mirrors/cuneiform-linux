@@ -1,4 +1,4 @@
-include_directories(BEFORE . src)
+include_directories(BEFORE src)
 
 add_library(rout ${LIBTYPE}
 src/browse.cpp
