@@ -11,8 +11,8 @@ if(PROJECT_BINARY_DIR STREQUAL PROJECT_SOURCE_DIR)
    message(FATAL_ERROR "In-tree build attempt detected, aborting. Set your build dir outside your source dir, delete CMakeCache.txt from source root and try again.")
 endif()
 
-set(CF_VERSION_MAJOR "0")
-set(CF_VERSION_MINOR "9")
+set(CF_VERSION_MAJOR "1")
+set(CF_VERSION_MINOR "0")
 set(CF_VERSION_PATCH "0")
 
 set(CF_VERSION "${CF_VERSION_MAJOR}.${CF_VERSION_MINOR}.${CF_VERSION_PATCH}")
