@@ -327,8 +327,8 @@ static Bool RegisterGlu(HANDLE hInstance, char* szAppName) {
 	WndClass.hCursor = LoadCursor(NULL, IDC_ARROW);
 	WndClass.hIcon = LoadIcon(NULL, IDI_ASTERISK);
 	WndClass.lpszMenuName = (char*) NULL;
-	WndClass.cbClsExtra = (int) NULL;
-	WndClass.cbWndExtra = (int) NULL;
+	WndClass.cbClsExtra = NULL;
+	WndClass.cbWndExtra = NULL;
 
 	bSuccess = RegisterClass(&WndClass);
 
