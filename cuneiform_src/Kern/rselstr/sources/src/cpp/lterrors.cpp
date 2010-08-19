@@ -98,7 +98,7 @@ void FreeAllData(void) {
 }
 
 # ifdef LT_STAND_ALONE
-void ErrorNoEnoughMemory (puchar message)
+void ErrorNoEnoughMemory (const char *message)
 {
 	LDPUMA_Console ("No enough memory - press any key\nMESSAGE:%s",message);
 	FreeAllData ();
