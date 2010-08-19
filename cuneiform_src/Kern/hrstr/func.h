@@ -156,7 +156,7 @@ Bool snap_init_variables(void);
 Bool snap_finish(void);
 Bool snap_newline(void);
 Bool snap_newpass(uchar);
-Bool snap_show_text(puchar);
+Bool snap_show_text(const char*);
 Bool snap_show_text1(puchar);
 Bool snap_monitor(void);
 void snap_draw_line(Handle wnd, Point16 *start, Point16 *end, int32_t skew,

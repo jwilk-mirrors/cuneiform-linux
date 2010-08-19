@@ -1217,7 +1217,7 @@ return TRUE;
 
 
 // вывести текст
-Bool snap_show_text(uchar *txt)
+Bool snap_show_text(const char *txt)
 {
 char text[256],texto[80*40];
 if( snap_disable
