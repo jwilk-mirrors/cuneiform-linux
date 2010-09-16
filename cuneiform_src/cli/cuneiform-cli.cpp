@@ -337,6 +337,10 @@ int main(int argc, char **argv) {
         return 0;
     }
 
+#ifdef USE_MAGICK
+    Magick::InitializeMagick("");
+#endif
+
     dib = read_file(infilename);
     if(!dib) // Error msg is already printed so just get out.
         return 1;
