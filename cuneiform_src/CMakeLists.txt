@@ -28,6 +28,10 @@ if(MSVC)
     endif()
 endif()
 
+
+INCLUDE (CheckIncludeFiles)
+CHECK_INCLUDE_FILES (endian.h HAVE_ENDIAN_H)
+
 add_definitions(-D_USE_RVERLINE_)
 
 find_package(ImageMagick COMPONENTS Magick++)

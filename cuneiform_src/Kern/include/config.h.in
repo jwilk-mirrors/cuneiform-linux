@@ -2,6 +2,7 @@
 #define CONFIG_H_CF
 
 #cmakedefine USE_MAGICK
+#cmakedefine HAVE_ENDIAN_H
 
 #define CF_VERSION "@CF_VERSION@"
 

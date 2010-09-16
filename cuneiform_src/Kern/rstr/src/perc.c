@@ -778,7 +778,12 @@ static RecRaster workRaster;
  * Since it was only used on Windows (not Mac) I'm assuming it means
  * "swap 32 bytes between big endian and current byte order".
  */
-#if defined(WIN32) && defined(_MSC_VER) && (_MSC_VER > 800)
+#if HAVE_ENDIAN_H
+
+#include <endian.h>
+#define swapbytes(a) do { (a) = htobe32(a); } while (0)
+
+#elif defined(WIN32) && defined(_MSC_VER) && (_MSC_VER > 800)
   #define   swapbytes(a) __asm {                      \
                                  __asm   mov   EAX,a  \
                                  __asm   bswap EAX    \
