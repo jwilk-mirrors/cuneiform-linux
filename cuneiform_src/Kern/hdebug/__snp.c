@@ -431,6 +431,7 @@ extern "C" {
 	int32_t LDPUMA_ConsoleN(const char * message,...)
 	{
 		int32_t rc = 0;
+#ifdef WIN32
 		if(Console)
 		{
 			va_list marker;
@@ -439,6 +440,7 @@ extern "C" {
 			va_end(marker);
 			LDPUMA_Console("\n");
 		}
+#endif
 		return rc;
 	}
 	//////////////////////////////////////////////
@@ -446,10 +448,12 @@ extern "C" {
 	{
 		if(StatusLine)
 		{
-			va_list marker;
+#ifdef WIN32
+		    va_list marker;
 			va_start( marker, message);
 			StatusLine(message,marker);
 			va_end(marker);
+#endif
 		}
 	}
 	//////////////////////////////////////////////
@@ -457,10 +461,12 @@ extern "C" {
 	{
 		if(MessageBoxOk)
 		{
-			va_list marker;
+#ifdef WIN32
+		    va_list marker;
 			va_start( marker, message);
 			MessageBoxOk(message,marker);
 			va_end(marker);
+#endif
 		}
 	};
 	//////////////////////////////////////////////
@@ -469,10 +475,12 @@ extern "C" {
 		Bool16 rc = FALSE;
 		if(MessageBoxYesNo)
 		{
-			va_list marker;
+#ifdef WIN32
+		    va_list marker;
 			va_start( marker, message);
 			rc = MessageBoxYesNo(message,marker);
 			va_end(marker);
+#endif
 		}
 		return rc;
 	};
@@ -890,6 +898,7 @@ extern "C" {
 	int32_t LDPUMA_FPrintf1024(Handle hFile,const char * lpFormat,...)
 	{
 		int32_t rc = 0;
+#ifdef WIN32
 		if(fFPrintf1024 && hFile)
 		{
 			va_list marker;
@@ -897,6 +906,7 @@ extern "C" {
 			rc = fFPrintf1024(hFile,lpFormat,marker);
 			va_end(marker);
 		}
+#endif
 		return rc;
 	}
 	//////////////////////////////////////////////
