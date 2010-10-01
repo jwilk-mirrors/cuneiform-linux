@@ -95,7 +95,7 @@ uint32_t ul_reason_for_call,
     case DLL_PROCESS_ATTACH:
 		ghInst = hModule;
 		GetModuleFileName(hModule,szPath,sizeof(szPath));
-		if(p = strstr(_strupr(szPath),"cuneiform.dll"))
+		if(p = strstr(_strupr(szPath),"CUNEIFORM.DLL"))
 			*(p-1)=0;
 		else
 		{
