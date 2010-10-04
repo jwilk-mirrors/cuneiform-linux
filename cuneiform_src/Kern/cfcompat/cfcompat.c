@@ -511,7 +511,7 @@ mkdtemp(char *tmpl) {
 
 	const int len = strlen (tmpl);
 	char* x_tail = tmpl + len - 6;
-	LARGE_INTEGER rand_seed;
+	LARGE_INTEGER rand_seed = {0, 0};
 	uint64_t value = rand_seed.QuadPart ^ GetCurrentThreadId();
 	unsigned int cnt = 0;
 
