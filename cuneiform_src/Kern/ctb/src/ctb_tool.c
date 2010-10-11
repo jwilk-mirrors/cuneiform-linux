@@ -68,6 +68,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 /*#include<direct.h>*/
 #include<stdlib.h>
 #include<ctype.h>
+#include<unistd.h>
 /*#include<io.h>*/
 
 #include "ctb.h"
