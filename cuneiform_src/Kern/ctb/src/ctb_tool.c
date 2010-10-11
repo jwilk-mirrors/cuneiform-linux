@@ -177,7 +177,7 @@ CTB_FUNC(int32_t) CTB_gettmpdirname(void) {
     char* tmp = get_tmp_pattern();
     ctb_tmp_dir = malloc(strlen(tmp) + 1);
     strncpy(ctb_tmp_dir, tmp, strlen(tmp) + 1);
-    ctb_tmp_dir = (char*)mkdtemp(ctb_tmp_dir);
+    ctb_tmp_dir = mkdtemp(ctb_tmp_dir);
     free_tmp_pattern(tmp);
     if(!ctb_tmp_dir)
         return 1;
