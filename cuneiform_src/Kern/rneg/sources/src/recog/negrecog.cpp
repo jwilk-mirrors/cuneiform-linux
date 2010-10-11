@@ -74,7 +74,7 @@ extern Bool dpRecOneLetter;
 void NegRecog(Handle hCPage,NegList** proot,int& nRC,int skew)
 {
  uint32_t code_recd=512<<19;
- uint32_t code_resd=512<<19+512<<16;
+ uint32_t code_resd=(512<<19)+(512<<16);
  CCOM_handle hNegCCOM;
  CCOM_comp * pcomp;
  Rect16* pN;
