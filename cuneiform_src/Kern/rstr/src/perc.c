@@ -109,6 +109,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <string.h>
 #include <assert.h>
 
+#include "config.h"
 #include "struct.h"
 #include "func.h"
 #include "ligas.h"
@@ -778,7 +779,7 @@ static RecRaster workRaster;
  * Since it was only used on Windows (not Mac) I'm assuming it means
  * "swap 32 bytes between big endian and current byte order".
  */
-#if HAVE_ENDIAN_H
+#if defined(HAVE_ENDIAN_H)
 
 #include <endian.h>
 #define swapbytes(a) do { (a) = htobe32(a); } while (0)
