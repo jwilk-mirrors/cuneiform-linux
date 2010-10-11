@@ -728,7 +728,12 @@ return (rm>0);
 
 Bool32 recog_cluster5x3(uint16_t Im3x5[], uchar let, VERSION *v)
 {
-int jold, jm, rm, res;
+
+int jold = 0;
+int jm = 0;
+int rm = 0;
+int res = 0;
+
 elm3x5 *curr;
 
 curr = &tab3x5 [ (jm=header3x5[ let ].numel) ];
