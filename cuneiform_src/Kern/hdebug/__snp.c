@@ -999,6 +999,7 @@ extern "C" {
 	int SnpLog(const char * message,...)
 	{
 		int rc = 0;
+#ifdef WIN32
 		if(Console)
 		{
 			va_list marker;
@@ -1006,10 +1007,12 @@ extern "C" {
 			rc = Console(message,marker);
 			va_end(marker);
 		}
+#endif
 		return rc;
 	}
 	void SnpStatusLine(const char * message,...)
 	{
+#ifdef WIN32
 		if(StatusLine)
 		{
 			va_list marker;
@@ -1017,6 +1020,7 @@ extern "C" {
 			StatusLine(message,marker);
 			va_end(marker);
 		}
+#endif
 	}
 	void SnpMessBoxOk( char * message )
 	{
