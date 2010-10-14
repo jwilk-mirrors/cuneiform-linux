@@ -333,7 +333,7 @@ int main(int argc, char **argv) {
     }
 
     if(infilename == NULL) {
-        cout << "Usage: " << argv[0] << " [-l languagename -f format --dotmatrix --fax -o result_file] imagefile\n";
+        cout << "Usage: " << argv[0] << " [-l languagename -f format --dotmatrix --fax --singlecolumn -o result_file] imagefile\n";
         return 0;
     }
 
