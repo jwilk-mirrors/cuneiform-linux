@@ -68,7 +68,9 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 /*#include<direct.h>*/
 #include<stdlib.h>
 #include<ctype.h>
+#ifndef _MSC_VER
 #include<unistd.h>
+#endif
 /*#include<io.h>*/
 
 #include "ctb.h"
