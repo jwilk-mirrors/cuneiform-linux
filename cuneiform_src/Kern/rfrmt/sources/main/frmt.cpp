@@ -136,6 +136,11 @@ extern Handle hDebugFrame;
 extern Handle hDebugLineTransfer;
 extern Handle hDebugAlign;
 
+static void errord(const char *msg) {
+    printf("%s\n", msg);
+    abort();
+}
+
 //###########################################
 #define New On
 RFRMT_FUNC(Bool32)  RFRMT_Formatter(char* lpInputImageName , Handle* PtrEdTree )
@@ -143,7 +148,7 @@ RFRMT_FUNC(Bool32)  RFRMT_Formatter(char* lpInputImageName , Handle* PtrEdTree )
 #ifdef New
  FILE *fpInternalFile = create_temp_file();
  if ( fpInternalFile == NULL) {
-	assert ("Could not create tmpfile\n");
+	errord ("Could not create tmpfile\n");
  }
 
  LDPUMA_Skip(hDebugProfStart);
@@ -230,7 +235,7 @@ RtfFragRect.m_Step                        = 0;
  {
 	char ch[500];
 	sprintf(ch,"Temporary file cannot be closed\n");
-	assert (ch);
+	errord (ch);
  }
 
  #ifdef alDebug
@@ -285,7 +290,7 @@ RFRMT_FUNC(Bool32)  RFRMT_SaveRtf(char* lpOutputFileName,uint32_t code)
 {
  FILE *fpInternalFile = create_temp_file();
  if ( fpInternalFile== NULL) {
-	assert ("Could not create tmpfile\n");
+	errord ("Could not create tmpfile\n");
  }
 
  LDPUMA_Skip(hDebugProfStart);
@@ -377,7 +382,7 @@ RFRMT_FUNC(Bool32)  RFRMT_SaveRtf(char* lpOutputFileName,uint32_t code)
  {
 	char ch[500];
 	sprintf(ch,"Temporary file cannot be closed\n");
-	assert (ch);
+	errord (ch);
  }
 
 #ifdef alDebug
