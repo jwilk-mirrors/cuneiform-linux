@@ -319,9 +319,8 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
        int    SnpLog( const char* s, ...);
        void   SnpStatusLine( char* s, ...);
-       void   SnpDrawRect(Rect16* rc, int32_t skew, uint32_t rgb_color,
-         int32_t pen_width,uint32_t key);
-       void   SnpHideRects(uint32_t key);
+       void   SnpDrawRect(Rect16* rc, int32_t skew, uint32_t rgb_color, int32_t pen_width, intptr_t key);
+       void   SnpHideRects(intptr_t key);
        void   SnpDrawLine(Point16* start, Point16* end, int32_t skew,
          uint32_t rgb_color,int16_t pen_width, Handle key );
        void   SnpHideLines(Handle key);

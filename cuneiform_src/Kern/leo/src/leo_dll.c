@@ -2,33 +2,33 @@
 Copyright (c) 1993-2008, Cognitive Technologies
 All rights reserved.
 
-Разрешается повторное распространение и использование как в виде исходного кода,
-так и в двоичной форме, с изменениями или без, при соблюдении следующих условий:
+пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ,
+пїЅпїЅпїЅ пїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ:
 
-      * При повторном распространении исходного кода должны оставаться указанное
-        выше уведомление об авторском праве, этот список условий и последующий
-        отказ от гарантий.
-      * При повторном распространении двоичного кода в документации и/или в
-        других материалах, поставляемых при распространении, должны сохраняться
-        указанная выше информация об авторском праве, этот список условий и
-        последующий отказ от гарантий.
-      * Ни название Cognitive Technologies, ни имена ее сотрудников не могут
-        быть использованы в качестве средства поддержки и/или продвижения
-        продуктов, основанных на этом ПО, без предварительного письменного
-        разрешения.
+      * пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+        пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+        пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
+      * пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ/пїЅпїЅпїЅ пїЅ
+        пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+        пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ
+        пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
+      * пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ Cognitive Technologies, пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+        пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ/пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+        пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+        пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
 
-ЭТА ПРОГРАММА ПРЕДОСТАВЛЕНА ВЛАДЕЛЬЦАМИ АВТОРСКИХ ПРАВ И/ИЛИ ДРУГИМИ ЛИЦАМИ "КАК
-ОНА ЕСТЬ" БЕЗ КАКОГО-ЛИБО ВИДА ГАРАНТИЙ, ВЫРАЖЕННЫХ ЯВНО ИЛИ ПОДРАЗУМЕВАЕМЫХ,
-ВКЛЮЧАЯ ГАРАНТИИ КОММЕРЧЕСКОЙ ЦЕННОСТИ И ПРИГОДНОСТИ ДЛЯ КОНКРЕТНОЙ ЦЕЛИ, НО НЕ
-ОГРАНИЧИВАЯСЬ ИМИ. НИ ВЛАДЕЛЕЦ АВТОРСКИХ ПРАВ И НИ ОДНО ДРУГОЕ ЛИЦО, КОТОРОЕ
-МОЖЕТ ИЗМЕНЯТЬ И/ИЛИ ПОВТОРНО РАСПРОСТРАНЯТЬ ПРОГРАММУ, НИ В КОЕМ СЛУЧАЕ НЕ
-НЕСЁТ ОТВЕТСТВЕННОСТИ, ВКЛЮЧАЯ ЛЮБЫЕ ОБЩИЕ, СЛУЧАЙНЫЕ, СПЕЦИАЛЬНЫЕ ИЛИ
-ПОСЛЕДОВАВШИЕ УБЫТКИ, СВЯЗАННЫЕ С ИСПОЛЬЗОВАНИЕМ ИЛИ ПОНЕСЕННЫЕ ВСЛЕДСТВИЕ
-НЕВОЗМОЖНОСТИ ИСПОЛЬЗОВАНИЯ ПРОГРАММЫ (ВКЛЮЧАЯ ПОТЕРИ ДАННЫХ, ИЛИ ДАННЫЕ,
-СТАВШИЕ НЕГОДНЫМИ, ИЛИ УБЫТКИ И/ИЛИ ПОТЕРИ ДОХОДОВ, ПОНЕСЕННЫЕ ИЗ-ЗА ДЕЙСТВИЙ
-ТРЕТЬИХ ЛИЦ И/ИЛИ ОТКАЗА ПРОГРАММЫ РАБОТАТЬ СОВМЕСТНО С ДРУГИМИ ПРОГРАММАМИ,
-НО НЕ ОГРАНИЧИВАЯСЬ ЭТИМИ СЛУЧАЯМИ), НО НЕ ОГРАНИЧИВАЯСЬ ИМИ, ДАЖЕ ЕСЛИ ТАКОЙ
-ВЛАДЕЛЕЦ ИЛИ ДРУГОЕ ЛИЦО БЫЛИ ИЗВЕЩЕНЫ О ВОЗМОЖНОСТИ ТАКИХ УБЫТКОВ И ПОТЕРЬ.
+пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ/пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅ
+пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ" пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ-пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ,
+пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅпїЅ
+пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ. пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ/пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ
+пїЅпїЅСЁпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
+пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ,
+пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ/пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ-пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ/пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ,
+пїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ), пїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ, пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
@@ -248,7 +248,7 @@ void leo_snapSimpleKey(char *str, SnpTreeNode *stnRecog)
 SnpLog("%s",str);
 SnpLog("");
 Leo_SnpWaitUserInput(stnRecog); // pass control to user
-SnpHideRects((uint32_t)stnRecog);
+SnpHideRects((intptr_t)stnRecog);
 return;
 }
 
@@ -289,7 +289,7 @@ SnpDrawRect(&object->recData.rect,
      0, //Skew - zero to real coords
      wRGB(0,0,255),
      -16, // one image pixel width
-     (uint32_t)stnRecog    );
+     (intptr_t)stnRecog    );
 
 SnpDrawRaster( &object->recData.recRaster );
 return;
@@ -530,10 +530,10 @@ return leo_open_cont_temp();
 
 LEO_FUNC(Bool32)  LEOPushAlphabetType(uchar alpha_valid, uchar isPrint)
 {
-char my_alpha_cap[]="ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ";
+char my_alpha_cap[]="пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
 char my_digit[]="0123456789";
 char my_roma[]="VIX"; //MCD";
-char my_alpha_cap_and_digit[]="ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ/0123456789";
+char my_alpha_cap_and_digit[]="пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ/0123456789";
 char *palph, al[256]={0};
 
 
@@ -622,12 +622,12 @@ for(eng=all=rus=leo_alpha_type=i=0;i<256;i++)
 	}
 leo_current_alpha_ndx=leo_register_alphabet(alphabet);
 prn_roma_regim = (
-        !ansi_letters[(uchar)'А'] &&
+        !ansi_letters[(uchar)'пїЅ'] &&
         ansi_letters['I'] &&
-        ansi_letters[(uchar)'П'] &&
-        ansi_letters[(uchar)'У'] &&
-        ansi_letters[(uchar)'Х'] &&
-        ansi_letters[(uchar)'Ш'] &&
+        ansi_letters[(uchar)'пїЅ'] &&
+        ansi_letters[(uchar)'пїЅ'] &&
+        ansi_letters[(uchar)'пїЅ'] &&
+        ansi_letters[(uchar)'пїЅ'] &&
         ansi_letters['1']);
 
 if( leo_alpha_type&ALPH_R_E )
@@ -729,10 +729,10 @@ LEO_FUNC( void   )      LEORegisterSnpTree(
 #ifdef DPUMA_SNAP
    {
 	SnpTreeNode p;
-	SnpAddNode(&p,"Распознавание строк...",NULL);
+	SnpAddNode(&p,"пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ...",NULL);
     parent = (SnpTreeNode*)&p;
    }
-// или Parent = NULL, если родитель -  корень
+// пїЅпїЅпїЅ Parent = NULL, пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ -  пїЅпїЅпїЅпїЅпїЅпїЅ
 #endif
    SnpAddNode( &stnCharRecog,
       "Show Leo LTR Recognize results",  parent);
@@ -957,7 +957,7 @@ if (!SnpSkip(&stnCharRecog)|| leo_Snp_In_Rect)
          SnpLog("LEO PRN LTR : %s", buf);
          SnpLog("%s","");
          Leo_SnpWaitUserInput(&stnCharRecog);
-		 SnpHideRects( (uint32_t)&stnCharRecog );
+		 SnpHideRects( (intptr_t)&stnCharRecog );
       }
 
 if (!SnpSkip(&stnSnapCharProt))
@@ -1012,21 +1012,21 @@ static Bool32 leo_near_letters(RecVersions *fon,uchar leo_code)
 {
 if( fon->lnAltCnt<2 )
     return FALSE;
-if( !(leo_strchr_codes_ansi("0оО",  fon->Alt[0].Code) &&
-      leo_strchr_codes_ansi("0оО",  leo_code) &&
-      leo_strchr_codes_ansi("0оО",  fon->Alt[1].Code)) &&
-    !(leo_strchr_codes_ansi("3зЗ",  fon->Alt[0].Code) &&
-      leo_strchr_codes_ansi("3зЗ",  leo_code) &&
-      leo_strchr_codes_ansi("3зЗ",  fon->Alt[1].Code)) &&
-    !(leo_strchr_codes_ansi("пПлЛ", fon->Alt[0].Code) &&
-      leo_strchr_codes_ansi("пПлЛ", leo_code) &&
-      leo_strchr_codes_ansi("пПлЛ", fon->Alt[1].Code)) &&
-    !(leo_strchr_codes_ansi("иИнН", fon->Alt[0].Code) &&
-      leo_strchr_codes_ansi("иИнН", leo_code) &&
-      leo_strchr_codes_ansi("иИнН", fon->Alt[1].Code)) &&
-    !(leo_strchr_codes_ansi("б6", fon->Alt[0].Code) &&
-      leo_strchr_codes_ansi("б6", leo_code) &&
-      leo_strchr_codes_ansi("б6", fon->Alt[1].Code)))
+if( !(leo_strchr_codes_ansi("0пїЅпїЅ",  fon->Alt[0].Code) &&
+      leo_strchr_codes_ansi("0пїЅпїЅ",  leo_code) &&
+      leo_strchr_codes_ansi("0пїЅпїЅ",  fon->Alt[1].Code)) &&
+    !(leo_strchr_codes_ansi("3пїЅпїЅ",  fon->Alt[0].Code) &&
+      leo_strchr_codes_ansi("3пїЅпїЅ",  leo_code) &&
+      leo_strchr_codes_ansi("3пїЅпїЅ",  fon->Alt[1].Code)) &&
+    !(leo_strchr_codes_ansi("пїЅпїЅпїЅпїЅ", fon->Alt[0].Code) &&
+      leo_strchr_codes_ansi("пїЅпїЅпїЅпїЅ", leo_code) &&
+      leo_strchr_codes_ansi("пїЅпїЅпїЅпїЅ", fon->Alt[1].Code)) &&
+    !(leo_strchr_codes_ansi("пїЅпїЅпїЅпїЅ", fon->Alt[0].Code) &&
+      leo_strchr_codes_ansi("пїЅпїЅпїЅпїЅ", leo_code) &&
+      leo_strchr_codes_ansi("пїЅпїЅпїЅпїЅ", fon->Alt[1].Code)) &&
+    !(leo_strchr_codes_ansi("пїЅ6", fon->Alt[0].Code) &&
+      leo_strchr_codes_ansi("пїЅ6", leo_code) &&
+      leo_strchr_codes_ansi("пїЅ6", fon->Alt[1].Code)))
     return FALSE;
 return (fon->Alt[0].Prob-fon->Alt[1].Prob<5);
 }
@@ -1064,11 +1064,11 @@ return;
 
 
 
-// выбор и рспознавание
+// пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 #define POROG_NICE    250
 #define VERY_GOOD_FON 245
 //////////////////
-// установить новую оценку
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 static int GetNewProb(int oldRec,int newRec,int nice)
 {
  int addRec=2;
@@ -1093,8 +1093,8 @@ static int GetNewProb(int oldRec,int newRec,int nice)
 	return MIN(254,MAX(newRec,oldRec+addRec));
 }
 ///////////
-// надо взять иную первую альтернативу ?
-// (уже знаем, что новая - неплохая, иначе сюда и не идем)
+// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ ?
+// (пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ)
 static Bool32 FonIsBetter(int newProb,int oldProb)
 {
  if( newProb <= 100)
@@ -1106,8 +1106,8 @@ static Bool32 FonIsBetter(int newProb,int oldProb)
  return FALSE;
 }
 //////////////
-// Функция выбора - я пока в экспериментах менял
-// только первую альтернативу и/или оценку
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ - пїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ/пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
 Bool32 LEO_SelectOldNewOkr(RecVersions *verOld,RecVersions *verNew)
 {
@@ -1116,7 +1116,7 @@ uchar   oldprob;
   if( verOld->Alt[0].Code != verNew->Alt[0].Code )
   {
 //	  fprintf(basOut," MISS");
-// Новая альтернатива достойна внимания ?
+// пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ ?
 	  if( ( verNew->lnAltCnt == 1 ||
 		   verNew->lnAltCnt > 1 && verNew->Alt[0].Prob > verOld->Alt[1].Prob + 40 ) &&
 		   FonIsBetter(verNew->Alt[0].Prob, verOld->Alt[0].Prob) // data[14]
@@ -1130,7 +1130,7 @@ uchar   oldprob;
 	  return ret;
   }
 
-// версии совпали - изменить (возможно) оценку
+// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ) пїЅпїЅпїЅпїЅпїЅпїЅ
  oldprob=verOld->Alt[0].Prob;
   verOld->Alt[0].Prob = GetNewProb(verOld->Alt[0].Prob,verNew->Alt[0].Prob,POROG_NICE);
   if( oldprob!=verOld->Alt[0].Prob )
@@ -1184,7 +1184,7 @@ for(i=0;i<n;i++)
                 if (/*!SnpSkip(&stnReRecog)||*/ local_snap)
 					{
 					leo_snapChar(&old,"PASS1.51 NICE LEO COLLECTION : ",TRUE);
-					SnpDrawRect(&r16,0,wRGB(0,0,255),-16,(uint32_t)&stnReRecog    );
+					SnpDrawRect(&r16,0, wRGB(0,0,255), -16, (intptr_t)&stnReRecog);
 					SnpDrawRaster( &r );
 					Leo_SnpWaitUserInput(&stnReRecog);
 					}
@@ -1193,7 +1193,7 @@ for(i=0;i<n;i++)
             if (!SnpSkip(&stnReRecog)|| local_snap)
 					{
 					leo_snapChar(&old,"PASS1.51 LEO COLLECTION : ",TRUE);
-					SnpDrawRect(&r16,0,wRGB(0,0,255),-16,(uint32_t)&stnReRecog    );
+					SnpDrawRect(&r16,0, wRGB(0,0,255), -16, (intptr_t)&stnReRecog);
 					SnpDrawRaster( &r );
 					Leo_SnpWaitUserInput(&stnReRecog);
 					}
@@ -1217,7 +1217,7 @@ for(i=0;i<n;i++)
                 if (!SnpSkip(&stnReRecog)|| local_snap)
                     {
                     leo_snapChar(&old,"PASS1.51 FNT RERECOG DIGITAL HAND : ",TRUE);
-				    SnpDrawRect(&r16,0,wRGB(0,0,255),-16,(uint32_t)&stnReRecog    );
+				    SnpDrawRect(&r16, 0 ,wRGB(0,0,255), -16, (intptr_t)&stnReRecog    );
 				    SnpDrawRaster( &r );
 				    Leo_SnpWaitUserInput(&stnReRecog);
                     }
@@ -1225,7 +1225,7 @@ for(i=0;i<n;i++)
             else if (!SnpSkip(&stnReRecog)|| local_snap)
                 {
                 leo_snapChar(&ver,"PASS1.51 FNT UNKNOWN CASE FOR DIGITAL HAND : ",TRUE);
-				SnpDrawRect(&r16,0,wRGB(0,0,255),-16,(uint32_t)&stnReRecog    );
+				SnpDrawRect(&r16, 0, wRGB(0,0,255), -16, (intptr_t)&stnReRecog);
 				SnpDrawRaster( &r );
 				Leo_SnpWaitUserInput(&stnReRecog);
                 }
@@ -1237,7 +1237,7 @@ for(i=0;i<n;i++)
             if (!SnpSkip(&stnReRecog)|| local_snap)
 					{
 					leo_snapChar(&old,"PASS1.5 LEO COLLECTION : ",TRUE);
-					SnpDrawRect(&r16,0,wRGB(0,0,255),-16,(uint32_t)&stnReRecog    );
+					SnpDrawRect(&r16,0, wRGB(0,0,255), -16, (intptr_t)&stnReRecog);
 					SnpDrawRaster( &r );
 					Leo_SnpWaitUserInput(&stnReRecog);
 					}
@@ -1260,7 +1260,7 @@ for(i=0;i<n;i++)
 			   if (!SnpSkip(&stnReRecog)|| local_snap)
 				   {
 				   leo_snapChar(&ver,"PASS1.5 FNT COLLECTION : ",TRUE);
-				   SnpDrawRect(&r16,0,wRGB(0,0,255),-16,(uint32_t)&stnReRecog    );
+				   SnpDrawRect(&r16,0, wRGB(0,0,255), -16, (intptr_t)&stnReRecog);
 				   SnpDrawRaster( &r );
 				   Leo_SnpWaitUserInput(&stnReRecog);
 				   }
@@ -1343,7 +1343,7 @@ for(i=0;i<n;i++)
                            leo_snapChar(&ver,"PASS1.5 FNT+LEO CONFIRMING : ",TRUE);
 					   else
                            leo_snapChar(&ver,"PASS1.5 FNT+LEO CHANGING : ",TRUE);
-					   SnpDrawRect(&r16,0,wRGB(0,0,255),-16,(uint32_t)&stnReRecog    );
+					   SnpDrawRect(&r16,0, wRGB(0,0,255), -16, (intptr_t)&stnReRecog);
 					   SnpDrawRaster( &r );
 					   Leo_SnpWaitUserInput(&stnReRecog);
 					   }
@@ -1468,7 +1468,7 @@ if (!SnpSkip(&stnCharRecog)|| leo_Snp_In_Rect)
          SnpLog("LEO PRN RERECOG FNT LTR (num=%d): %s", idr-1, buf);
          SnpLog("%s","");
          Leo_SnpWaitUserInput(&stnCharRecog); // pass control to user
-		 SnpHideRects( (uint32_t)&stnCharRecog );
+		 SnpHideRects( (intptr_t)&stnCharRecog );
       }
 return data[27]&(~LEO_CONTROL_CASE) ;
 }
@@ -1516,12 +1516,12 @@ if(object->recData.recRaster.lnPixWidth<5 ||
                       0, //Skew - zero to real coords
                      wRGB(255,0,0),
                      -16, // one image pixel width
-                     (uint32_t)&stnCharRecog
+                     (intptr_t)&stnCharRecog
                     );
 			SnpDrawRaster( &object->recData.recRaster );
 			SnpLog("%s","TOO SMALL RASTER");
 			Leo_SnpWaitUserInput(&stnCharRecog); // pass control to user
-			SnpHideRects((uint32_t)&stnCharRecog);
+			SnpHideRects((intptr_t)&stnCharRecog);
 			}
 	return FALSE;
 	}
@@ -1536,12 +1536,12 @@ if(object->recData.recRaster.lnPixWidth>150 ||
                       0, //Skew - zero to real coords
                      wRGB(255,0,0),
                      -16, // one image pixel width
-                     (uint32_t)&stnCharRecog
+                     (intptr_t)&stnCharRecog
                     );
 			SnpDrawRaster( &object->recData.recRaster );
 			SnpLog("%s","TOO BIG RASTER");
 			Leo_SnpWaitUserInput(&stnCharRecog); // pass control to user
-			SnpHideRects((uint32_t)&stnCharRecog);
+			SnpHideRects((intptr_t)&stnCharRecog);
 			}
 
 	return FALSE;
@@ -1563,7 +1563,7 @@ if (!SnpSkip(&stnCharRecog)|| leo_Snp_In_Rect)
          SnpLog("EXPERT PRN LTR : %s", buf);
          SnpLog("%s","");
          Leo_SnpWaitUserInput(&stnCharRecog); // pass control to user
-         SnpHideRects( (uint32_t)&stnCharRecog );
+         SnpHideRects( (intptr_t)&stnCharRecog );
       }
 
 return TRUE;
