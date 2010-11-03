@@ -183,8 +183,7 @@ CSTR_FUNC(char*)   CSTR_GetReturnString(uint32_t dwError)
 //////////////////////////////////
 // alloc / free & access lines to
 //////////////////////////////////
-CSTR_FUNC(CSTR_line)    CSTR_NewLine(int32_t  lineno, int32_t version,
-    int32_t container)
+CSTR_FUNC(CSTR_line)    CSTR_NewLine(int32_t  lineno, int32_t version, intptr_t container)
 {
 CSTR_head       *line=head.next, *lineins=0, *prev, *next;
 // scan all heads
