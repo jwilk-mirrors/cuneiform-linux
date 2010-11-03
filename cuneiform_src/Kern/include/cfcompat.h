@@ -168,7 +168,7 @@ CFCOMPAT_FUNC(HGDIOBJ) GetStockObject(int fnObject);
 CFCOMPAT_FUNC(Bool) IsWindowVisible(HWND hWnd);
 CFCOMPAT_FUNC(LRESULT) DefWindowProc(HWND hWnd, uint Msg, WPARAM wParam,
 		LPARAM lParam);
-CFCOMPAT_FUNC(int32_t) GetWindowLong(HWND hWnd, int nIndex);
+CFCOMPAT_FUNC(intptr_t) GetWindowLong(HWND hWnd, int nIndex);
 CFCOMPAT_FUNC(Bool) RegisterClass(const WNDCLASS *lpWndClass);
 CFCOMPAT_FUNC(HMODULE) GetModuleHandle(const char * lpModuleName);
 CFCOMPAT_FUNC(HICON) LoadIcon(HINSTANCE hInstance, const char * lpIconName);

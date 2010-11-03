@@ -455,7 +455,7 @@ LRESULT DefWindowProc(HWND hWnd, uint Msg, WPARAM wParam, LPARAM lParam) {
 	return 0;
 }
 
-int32_t GetWindowLong(HWND hWnd, int nIndex) {
+intptr_t GetWindowLong(HWND hWnd, int nIndex) {
 	return 0;
 }
 

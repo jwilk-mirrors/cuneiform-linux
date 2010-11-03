@@ -322,7 +322,7 @@ static Bool RegisterGlu(HANDLE hInstance, char* szAppName) {
 	WndClass.lpszClassName = szAppName;
 	WndClass.hInstance = hInstance;
 	WndClass.lpfnWndProc = GluFonWindowProc;
-	WndClass.style = (unsigned int) NULL;
+	WndClass.style = 0;
 	WndClass.hbrBackground = GetStockObject(WHITE_BRUSH);
 	WndClass.hCursor = LoadCursor(NULL, IDC_ARROW);
 	WndClass.hIcon = LoadIcon(NULL, IDI_ASTERISK);
