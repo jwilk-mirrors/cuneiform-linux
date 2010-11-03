@@ -2191,7 +2191,8 @@ CSTR_FUNC(Bool32) CSTR_GetExportData(uint32_t dwType, void * pData)
 {
         Bool32 rc = TRUE;
     int32_t  vers = CSTR_VERSION_CODE;
-#define EXPORT(name) *(uint32_t*)(pData)=(uint32_t)name;
+#define EXPORT(name) *(uintptr_t*)(pData)=(uintptr_t)name;
+#define EXPORTNUM(name) *(uint32_t*)(pData)=(uint32_t)name;
         wLowRC = CSTR_ERR_NO;
         switch(dwType)
         {
@@ -2276,7 +2277,7 @@ CSTR_FUNC(Bool32) CSTR_GetExportData(uint32_t dwType, void * pData)
         EXPORT(CSTR_NewUserCode);
         break;
     case    CSTR_FNVERSION:     //      дать версию библиотеки
-        EXPORT(vers);
+        EXPORTNUM(vers);
         break;
     case    CSTR_FNTOTXT:       //  получить текстовый обрах строки
         EXPORT(CSTR_LineToTxt );
