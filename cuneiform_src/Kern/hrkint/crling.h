@@ -65,7 +65,9 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   #undef  __RLING__
   #define __CRLINGS_HEADER_
 #else
-  #define __RLING__
+  #ifndef __RLING__
+    #define __RLING__
+  #endif
   #undef  __RLINGS__
   #define __CRLING_HEADER_
 #endif

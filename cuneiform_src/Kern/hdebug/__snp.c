@@ -374,7 +374,7 @@ extern "C" {
 		DrawRectTip(wnd,rc,skew,rgb_color,(int16_t)pen_width,key,pTip);
 	}
 	//////////////////////////////////////////////
-	void LDPUMA_DeleteRects(Handle wnd, uint32_t key)
+	void LDPUMA_DeleteRects(Handle wnd, intptr_t key)
 	{
 		if(DeleteRects)
 		DeleteRects(wnd,key);

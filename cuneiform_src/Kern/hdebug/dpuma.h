@@ -197,7 +197,7 @@ DEC_FUNC(void,  DPUMA_DestroyWindow,(Handle wnd));
 DEC_FUNC(uint32_t,  DPUMA_WaitUserInput,(Handle owner,Handle wnd));
 DEC_FUNC(void,  DPUMA_DrawLine,(Handle wnd,Point16 * start, Point16 * end, int32_t skew, uint32_t rgb, int16_t pen, uint32_t key));
 DEC_FUNC(void,  DPUMA_DrawRect,(Handle wnd,Rect16 * rect, int32_t skew, uint32_t rgb, int16_t pen, uint32_t key));
-DEC_FUNC(void,  DPUMA_DeleteRects,(Handle wnd, uint32_t key));
+DEC_FUNC(void,  DPUMA_DeleteRects,(Handle wnd, intptr_t key));
 DEC_FUNC(void,  DPUMA_DeleteLines,(Handle wnd, uint32_t key));
 DEC_FUNC(Bool16,  DPUMA_GetUserPoint,(Handle wnd,Point16 * point));
 DEC_FUNC(Bool16,  DPUMA_GetUserRect,(Handle wnd,Rect16 * rect));
