@@ -2358,7 +2358,8 @@ RSTR_FUNC(Bool32) RSTR_GetExportData (uint32_t dwType, void * pData)
 {
 	Bool32 rc = TRUE;
 	int32_t vers = RSTR_VERSION_CODE;
-#define EXPORT(name) *(uint32_t*)(pData)=(uint32_t)name;
+#define EXPORT(name) *(uintptr_t*)(pData)=(uintptr_t)name;
+#define EXPORTNUM(name) *(uint32_t*)(pData)=(uint32_t)name;
 
 #define CASE_DATA(a,b,c)        case a: *(b *)pData = c; break
 
@@ -2385,7 +2386,7 @@ RSTR_FUNC(Bool32) RSTR_GetExportData (uint32_t dwType, void * pData)
 		EXPORT(RSTR_Recog);
 		break;
 		case RSTR_FNVERSION: //      код версии
-		EXPORT(vers);
+		EXPORTNUM(vers);
 		break;
 		case REXC_FNRSTR_ISLANGUAGE: // возможен ли язык
 		EXPORT(RSTR_IsLanguage);
