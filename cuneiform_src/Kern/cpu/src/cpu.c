@@ -80,7 +80,7 @@ short int retu;
 _asm{
 ;
 ; cmp 386 & 486 &586 : study bit 18 in flag register EFLAGS. If we can
-; chandged this bit, then used i486. If can't - i386.
+; chandged this bit, then used i486. If cant - i386.
 ;
 ; save stack pointer
       mov             edx     ,       esp
@@ -119,7 +119,7 @@ _asm{
 _asm{
 ;
 ; cmp 486 & CPUID : study bit 21 in flag register EFLAGS. If we can
-; chandged this bit, then used Intel_with_CPUID. If can't - i486.
+; chandged this bit, then used Intel_with_CPUID. If cant - i486.
 ;
 ; copy registr EFLAGS to EAX
 	pushfd
