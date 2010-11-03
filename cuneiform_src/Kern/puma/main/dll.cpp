@@ -135,7 +135,7 @@ PUMA_FUNC(Bool) PUMA_Init(uint16_t wHeightCode, void* hStorage)
 }
 //////////////////////////////////////////////////////////////////////////////////
 //
-PUMA_FUNC(Bool32) PUMA_Done()
+PUMA_FUNC(Bool) PUMA_Done()
 {
 Bool32 rc = ModulesDone((void*)ghStorage);
 
