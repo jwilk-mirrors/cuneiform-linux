@@ -1380,7 +1380,8 @@ CCOM_FUNC(Bool32) CCOM_GetExportData(uint32_t dwType, void * pData)
 	Bool32 rc = TRUE;
     int32_t  vers=CCOM_VERSION_CODE;
 
-#define EXPORT(a) *(uint32_t*)(pData)=          (uint32_t)a;
+#define EXPORTNUM(a) *(uint32_t*)(pData)=          (uint32_t)a;
+#define EXPORT(a) *(uintptr_t*)(pData)=          (uintptr_t)a;
   wLowRC = CCOM_ERR_NO;
 	switch(dwType)
 	{
@@ -1433,7 +1434,7 @@ CCOM_FUNC(Bool32) CCOM_GetExportData(uint32_t dwType, void * pData)
         EXPORT(CCOM_NewUserCode);
         break;
     case    CCOM_FNVERSION:             // give version number
-        EXPORT(vers);
+        EXPORTNUM(vers);
         break;
     case    CCOM_FNBACKUP:              // save container to disk
         EXPORT(CCOM_Backup);
