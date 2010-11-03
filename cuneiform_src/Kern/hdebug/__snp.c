@@ -824,19 +824,19 @@ extern "C" {
 	Handle LDPUMA_TimeStamp(const char * name,Handle hTimer)
 	{
 		time_t ltime = 0;
-		int clock1 = 0;
+		intptr_t clock1 = 0;
 		if(LDPUMA_IsActive())
 		{
 			time( &ltime );
 			clock1=clock();
 			if(name==NULL)
-			name = "Time stamp";
+			    name = "Time stamp";
 			if(hTimer==NULL)
-			LDPUMA_Console("%s : %s\n",name,asctime(localtime(&ltime)));
+			    LDPUMA_Console("%s : %s\n",name,asctime(localtime(&ltime)));
 			else
 			{
-				int clockprev = (int)hTimer;
-				LDPUMA_Console("%s : %i msec.\n",name,clock1-clockprev);
+				long clockprev = (long)hTimer;
+				LDPUMA_Console("%s : %ld msec.\n",name,clock1-clockprev);
 			}
 		}
 		return (Handle) clock1;
