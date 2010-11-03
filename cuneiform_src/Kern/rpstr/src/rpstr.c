@@ -519,7 +519,8 @@ RPSTR_FUNC(Bool32) RPSTR_GetExportData(uint32_t dwType, void * pData)
 	Bool32 rc = TRUE;
   #define RPSTR_VERSION_CODE 1
     int32_t  vers = RPSTR_VERSION_CODE;
-#define EXPORT(name) *(uint32_t*)(pData)=(uint32_t)name;
+#define EXPORT(name) *(intptr_t*)(pData)=(intptr_t)name;
+#define EXPORTNUM(name) *(uint32_t*)(pData)=(uint32_t)name;
   wLowRC = RPSTR_ERR_NO;
 	switch(dwType)
 	{
@@ -551,6 +552,7 @@ RPSTR_FUNC(Bool32) RPSTR_GetExportData(uint32_t dwType, void * pData)
         break;
 	}
 #undef EXPORT
+#undef EXPORTNUM
 return rc;
 }
 

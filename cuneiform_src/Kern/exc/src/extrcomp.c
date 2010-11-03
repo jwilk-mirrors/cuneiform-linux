@@ -1184,65 +1184,35 @@ EXC_FUNC(Bool32) REXC_GetExportData(uint32_t dwType, void * pData)
         CASE_DATA(REXC_Word8_Matrix                     ,uchar,matrix);
         CASE_DATA(REXC_Word8_Fax1x2                     ,uchar,fax1x2);
         CASE_DATA(REXC_Word16_ActualResolution  ,uint16_t,actual_resolution);
-/*-Andrey: moved to RRecCom (recognition) and RNorm (autorotate)
-//--------------------------------------------------------------
-        case REXC_FNEVNPROPERT:
-            *(uint32_t*)pData =          (uint32_t)REXC_SetEVNProperties;
-            break;
--*/
         case REXC_FNEXTRACOMP :
-            *(uint32_t*)pData =          (uint32_t)REXCExtracomp;
+            *(intptr_t*)pData =          (intptr_t)REXCExtracomp;
             break;
         case REXC_FNEXTRA :
-            *(uint32_t*)pData =          (uint32_t)REXCExtra;
+            *(intptr_t*)pData =          (intptr_t)REXCExtra;
             break;
         case REXC_FNEXTRADIB:
-            *(uint32_t*)pData =          (uint32_t)REXCExtraDIB;
+            *(intptr_t*)pData =          (intptr_t)REXCExtraDIB;
             break;
 
         case    REXC_FNGETCONTAINER:
-            *(uint32_t*)pData =          (uint32_t)REXCGetContainer;
+            *(intptr_t*)pData =          (intptr_t)REXCGetContainer;
             break;
 
         case    REXC_FNGETLENEREP:
-            *(uint32_t*)pData =          (uint32_t)REXCMakeLP;
+            *(intptr_t*)pData =          (intptr_t)REXCMakeLP;
             break;
         case    REXC_FNVERSION:
-            *(uint32_t*)pData =          (uint32_t)REXC_VERSION_CODE;
+            *(intptr_t*)pData =          (intptr_t)REXC_VERSION_CODE;
             break;
-/*-Andrey: moved to RRecCom (recognition) and RNorm (autorotate)
-//--------------------------------------------------------------
-        case    REXC_FNREX_ISLANGUAGE:
-            *(uint32_t*)pData =          (uint32_t)REXC_IsLanguage;
-            break;
-        case    REXC_FNGETORIENT:
-            *(uint32_t*)pData =          (uint32_t)REXC_GetOrient;
-            break;
--*/
         case    REXC_FNMN2CCOM:
-            *(uint32_t*)pData =          (uint32_t)REXC_MN2CCOM;
+            *(intptr_t*)pData =          (intptr_t)REXC_MN2CCOM;
             break;
         case    REXC_FNGETINVERTION:
-            *(uint32_t*)pData =          (uint32_t)REXC_GetInvertion;
+            *(intptr_t*)pData =          (intptr_t)REXC_GetInvertion;
             break;
-/*-Andrey: moved to RRecCom (recognition) and RNorm (autorotate)
-//--------------------------------------------------------------
-        case    REXC_FNEVNALPHABET:     // установка алфавита для евент
-            *(uint32_t*)pData =          (uint32_t)REXC_SetEVNAlphabet;
-            break;
--*/
         case    REXC_FNEXTRACOMP3CB:    // 3 коллбэка
-            *(uint32_t*)pData =          (uint32_t)REXCExtracomp3CB;
+            *(intptr_t*)pData =          (intptr_t)REXCExtracomp3CB;
             break;
-/*-Andrey: moved to RRecCom (recognition) and RNorm (autorotate)
-//--------------------------------------------------------------
-        case    REXC_FNEXTGETRECRASTERORIENT: // ориентация рабочего растра
-            *(uint32_t*)pData =          (uint32_t)exc_get_rec_raster_orient;
-            break;
-        case    REXC_FNSETALLALPHAGRA: // алфавит нейронной сети
-            *(uint32_t*)pData =          (uint32_t)exc_set_all_alphabet_gra;
-            break;
--*/
         default:
                 wLowRC = REXC_ERR_NOTIMPLEMENT;
                 rc = FALSE;

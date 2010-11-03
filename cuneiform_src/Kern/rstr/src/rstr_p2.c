@@ -435,8 +435,8 @@ int32_t p2_Cstr2Cell( CSTR_line lin,CSTR_rast first,CSTR_rast last,Bool32 needVe
   c1=c2;
 
   // Nick add
-  c2->dupstart=(int32_t)CSTR_GetDup(curr);
-  c2->dupend  =(int32_t)CSTR_GetDupEnd(curr);
+  c2->dupstart=(intptr_t)CSTR_GetDup(curr);
+  c2->dupend  =(intptr_t)CSTR_GetDupEnd(curr);
 
   numCell++;
  }
