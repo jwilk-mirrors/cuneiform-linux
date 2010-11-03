@@ -1375,7 +1375,7 @@ if( !hcont )
 return TRUE;
 }
 
-CCOM_FUNC(Bool32) CCOM_GetExportData(uint32_t dwType, void * pData)
+CCOM_FUNC(Bool32) CCOM_GetExportData(enum CCOMFunctionsExt dwType, void * pData)
 {
 	Bool32 rc = TRUE;
     int32_t  vers=CCOM_VERSION_CODE;
@@ -1502,7 +1502,7 @@ CCOM_FUNC(Bool32) CCOM_GetExportData(uint32_t dwType, void * pData)
 return rc;
 }
 
-CCOM_FUNC(Bool32) CCOM_SetImportData(uint32_t dwType, void * pData)
+CCOM_FUNC(Bool32) CCOM_SetImportData(enum CCOMFunctionsExt dwType, void * pData)
 {
 
   wLowRC = CCOM_ERR_NO;
