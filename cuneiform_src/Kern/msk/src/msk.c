@@ -56,20 +56,16 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #include <stdlib.h>
 #include <ctype.h>
-/*#include <windows.h>*/
 #include <sys/types.h>
 #include <sys/stat.h>
-/*#include <dos.h>
-#include <conio.h>*/
 #include <fcntl.h>
 #include <float.h>
 #include <stdio.h>
-/*#include <io.h>*/
 #include <string.h>
 #include <memory.h>
-/*#include <process.h>*/
 #include <time.h>
 #include <math.h>
+#include <unistd.h>
 
 #include "mskdef.h"
 #include "msk.h"
@@ -911,12 +907,9 @@ int chn_mat(int16_t coo,uint16_t  *bgf,uchar bgf_col,
 /**       coordinates of output matrix.          **/
 /**************************************************/
 /***/
-int chn_mat1(coo,bgfff,buff_col,i1,j1,i2,j2,ss,co1,k0,l0,k1,l1)
-        short coo,i1,j1,i2,j2,co1,k0,l0,k1,l1;
-unsigned short *ss;
-char buff_col;
-uint16_t  *bgfff;
-{
+int chn_mat1(short coo,uint16_t *bgfff,char buff_col,short i1,
+             short j1,short i2,short j2,unsigned short *ss,
+             short co1,short k0,short l0,short k1,short l1) {
     int j,ii,jj,ii1,jj1,pp;
     int co,n,m,i,k,iiold,jjold;
     int tabi[300],tabj[300];
