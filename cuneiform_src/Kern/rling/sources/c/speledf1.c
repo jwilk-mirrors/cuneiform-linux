@@ -717,7 +717,7 @@ int16_t insert_symb(cur_segm, cur_symb,new_symb)
  return(flag_b);
  }
 
-move_to_first( int16_t dir,uchar let,int16_t num)
+int move_to_first( int16_t dir,uchar let,int16_t num)
 /*
  This procedure moves to first space symbol.
  dir -- direction

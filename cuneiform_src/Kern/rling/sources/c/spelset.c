@@ -533,7 +533,7 @@ int16_t truncobj (SOBJ * obj, int16_t * npos)
 
 {
  if (!(obj->pos_part_nmb))         /* is any object partitioning ?        */
-  { register i;                   /* No 		                  */
+  { int16_t i;                   /* No 		                  */
    for(i=MAX_VIEW_SIZE-1;i;i--)
     if(symcode((char *)&(obj->pos[i].orig))==E_DL)
       { *npos=i;
@@ -1028,7 +1028,7 @@ int16_t genwrd (SOBJ * obj)
 {
  int16_t i, j;
  int16_t max_wt=0;
- register cur_wt;
+ int16_t cur_wt;
  obj->word->type        = 0;
  obj->word->type_art    = obj->type_art;
  max_wt=obj->word->dif_wt      = 0;

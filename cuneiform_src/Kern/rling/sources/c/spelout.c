@@ -777,7 +777,7 @@ char suppress_voc = 0;
   }
 /*********************************************************************/
  int16_t setpart_blue(SOBJ *obj,int16_t beg, int16_t end)
-  { register i = 0;
+  { int16_t i = 0;
 #ifdef  RUS_ENG_LANG
 if (multy_language&&language==LANG_RUSSIAN)
     for(i=beg;i<end;i++)
