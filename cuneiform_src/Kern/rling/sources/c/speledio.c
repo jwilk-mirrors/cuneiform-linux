@@ -86,20 +86,20 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 // ---- Revision History
 // --------------------------------------------------------------------
 
-  #include "spelmode.h"
-  
-  #include <stdlib.h>
-  #include <stdio.h>
-  #include <string.h>
-  #include <ctype.h>
-  #include <setjmp.h>
-  #include <unistd.h>
+#include "spelmode.h"
 
-  #include "speldefs.h"
-  #include "spelfunc.h"
-  #include  "tigeremulate.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+#include <setjmp.h>
+#include <unistd.h>
 
-  #include "compat_defs.h"
+#include "speldefs.h"
+#include "spelfunc.h"
+#include  "tigeremulate.h"
+
+#include "compat_defs.h"
 // --------------------------------------------------------------------
   void	ErrorExit(int Code);
   void ed_out_write(puchar p, uint16_t size);
