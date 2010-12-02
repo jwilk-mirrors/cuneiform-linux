@@ -78,6 +78,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <fcntl.h>
 #include <sys/stat.h>
 #include <stdio.h>
+#include <unistd.h>
 
 #ifdef _GETTIME_
  #include <time.h>

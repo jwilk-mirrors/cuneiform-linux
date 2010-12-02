@@ -111,7 +111,7 @@ int SaveWeletAsCTB(welet *wel, CTB_handle *CTBFile) {
 	uint16_t *pword16;
 	uint32_t *pword32;
 	int16_t *pint16;
-	static num = 0;
+	static int num = 0;
 	int i;
 
 	//  if( (j=write(flout,wel,sizeof(welet))) !=sizeof(welet))
