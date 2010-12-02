@@ -72,6 +72,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #endif
 
 #include "ctb.h"
+#include "compat_defs.h"
 
 //********************************************************************
 //*************** static data : **************************************
