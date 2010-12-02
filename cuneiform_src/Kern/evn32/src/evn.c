@@ -60,6 +60,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 /*#include <io.h>*/
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 #include "evn.h"
 #include "struct.h"
 
@@ -80,7 +81,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #endif
 //-------------- FROM DIF.DLL
 extern Bool32 DIF_SetLanguage(uchar lang);
-static evn_error_code=ER_EVN_NO_ERROR;
+static int evn_error_code=ER_EVN_NO_ERROR;
 static  char    load_tab1[256], load_tab2[256];
 char alphabet[256];
 uchar   language;
