@@ -2397,7 +2397,7 @@ static Bool32 IsInAlter(uchar *Code,CSTR_rast c)
 }
 //////////////
 
-static rpstr_is_letter(uchar w)
+static int rpstr_is_letter(uchar w)
 {
    if (w>='A' && w<='Z' || w>=(uchar)'À' && w<=(uchar)'ß' )
 	   return TRUE;
