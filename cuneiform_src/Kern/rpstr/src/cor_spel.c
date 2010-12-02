@@ -651,38 +651,33 @@ c=c ? c : CSTR_GetLastRaster(CSTR_GetRasterLine(cs));
 return c;
 }
 
-static rpstr_is_digital(uchar w)
-{
-return (w>='0' && w<='9' || strchr("~",w) );
+static int rpstr_is_digital(uchar w) {
+    return (w>='0' && w<='9' || strchr("~",w) );
 }
 
 // for russian and english ansi codes
-static rpstr_is_upper(uchar w)
-{
-return (w>='A' && w<='Z' || w>=(uchar)'À' && w<=(uchar)'ß' );
+static int rpstr_is_upper(uchar w) {
+    return (w>='A' && w<='Z' || w>=(uchar)'À' && w<=(uchar)'ß' );
 }
 
-static rpstr_is_lower(uchar w)
-{
-return (w>='a' && w<='z' || w>=(uchar)'à' && w<=(uchar)'ÿ' );
+static int rpstr_is_lower(uchar w) {
+    return (w>='a' && w<='z' || w>=(uchar)'à' && w<=(uchar)'ÿ' );
 }
 
-static rpstr_to_upper(uchar w)
-{
-if( w>='a' && w<='z'  )
-    return (uchar)(w-32);
-if( w>=(uchar)'à' && w<=(uchar)'ÿ' )
-    return (uchar)(w-32);
-return w;
+static uchar rpstr_to_upper(uchar w) {
+    if( w>='a' && w<='z'  )
+        return (uchar)(w-32);
+    if( w>=(uchar)'à' && w<=(uchar)'ÿ' )
+        return (uchar)(w-32);
+    return w;
 }
 
-static rpstr_to_lower(uchar w)
-{
-if( w>='A' && w<='Z'  )
-    return (uchar)(w+32);
-if( w>=(uchar)'À' && w<=(uchar)'ß' )
-    return (uchar)(w+32);
-return w;
+static uchar rpstr_to_lower(uchar w) {
+    if( w>='A' && w<='Z'  )
+        return (uchar)(w+32);
+    if( w>=(uchar)'À' && w<=(uchar)'ß' )
+        return (uchar)(w+32);
+    return w;
 }
 
 Bool32  rpstr_correct_case_old(uchar *in,uchar *out,
