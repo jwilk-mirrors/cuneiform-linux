@@ -62,6 +62,8 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #define CTB_VERSION 7
 #include <stdio.h>
+#include <unistd.h>
+
 /***********************   header structure ****************************/
 #define CTB_DATA_SIZE    256
 
