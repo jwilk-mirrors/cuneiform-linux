@@ -285,7 +285,7 @@ return pos;
 Bool snap_init(void)
 {
 int i;
-static  init=FALSE;
+static int init=FALSE;
 if( init )
     return TRUE;
 init=TRUE;

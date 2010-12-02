@@ -506,7 +506,7 @@ static char txt12[]="B-->L";
 static char txt21[]="B<--B";
 static char txt22[]="L<--B";
 
-static lll=0;
+static int lll=0;
 int16_t glue_to_o (uchar c2, uchar c3, cell *BC, cell *EC)
 {
   if (

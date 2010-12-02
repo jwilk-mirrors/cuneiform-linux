@@ -107,7 +107,7 @@ static char adjust_cut(cell *LC, raster *r, struct cut_elm *cut_list,
 static void spec_pairs();
 static int16_t right_bound(raster *r, int16_t x1, int16_t x2, int16_t y1, int16_t y2);
 static char glue_right_dust();
-static good_path(struct cut_elm *cut_list, int16_t ncut);
+static int good_path(struct cut_elm *cut_list, int16_t ncut);
 
 /*------------------------------------------------------------------
   dp_pass0  линейный проход в растре r на множестве ncut
@@ -1310,7 +1310,7 @@ static char glue_right_dust()
   good_path возвращает 1, если путь в списке ncut точек не содержит
             отрезанных dust'ов в середине и все вероятности >190
 -------------------------------------------------------------*/
-static good_path(struct cut_elm *cut_list, int16_t ncut)
+static int good_path(struct cut_elm *cut_list, int16_t ncut)
 {
   int16_t ncut1=ncut-1;
   int16_t i=ncut1;  struct cut_elm *cut=cut_list+i;

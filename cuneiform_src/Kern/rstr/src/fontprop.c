@@ -116,7 +116,7 @@ STAT *  stat_tab;
 
 void print_stat(FILE * f,STAT * stat)
 {
-register i,j,k;
+ int i,j,k;
 
  for(i=1;i<16;i++){
    for(j=0;j<16;j++){
