@@ -138,7 +138,7 @@ static uchar r35_learn_level=0;
 #ifdef MTR_LEARN
 static r35_fnt=0x80;
 #else
-static r35_fnt=0;
+static uchar r35_fnt=0;
 #endif
 static  int      num_learn=0, max_learn;
 /************************************/
