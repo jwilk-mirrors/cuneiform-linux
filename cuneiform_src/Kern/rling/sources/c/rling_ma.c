@@ -60,6 +60,7 @@
 #include <fcntl.h>
 #include <string.h>
 #include <stdlib.h>
+#include <unistd.h>
 #include "compat_defs.h"
 /*************************************************************************/
 /* tg_spell.c -  general spelling loop. It scans ED-file,

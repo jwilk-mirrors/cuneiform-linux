@@ -93,8 +93,8 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   #include <string.h>
   #include <ctype.h>
   #include <setjmp.h>
+  #include <unistd.h>
 
-//  #include "iolib.h"          // 08-13-93 06:46pm, Mike
   #include "speldefs.h"
   #include "spelfunc.h"
   #include  "tigeremulate.h"

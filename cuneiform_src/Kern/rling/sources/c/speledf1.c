@@ -160,7 +160,7 @@ int16_t begin(uchar batch_run)
  }
 /*********************************************************************/
 
-define_lth(uchar  *symb)
+int define_lth(uchar  *symb)
 /*
     This procedure calculates length of letter.
 */
