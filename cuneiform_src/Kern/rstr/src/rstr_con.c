@@ -64,6 +64,9 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "std.h"
 #include "ctb.h"
 #include "tuner.h"
+#if defined(__MINGW32__)
+#define mkdir(a, b) mkdir(a)
+#endif
 
 extern int16_t line_number;
 extern char  local_grey_ctb[];
