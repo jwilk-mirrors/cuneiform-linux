@@ -93,7 +93,9 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <string.h>
 #include <ctype.h>
 #include <setjmp.h>
+#ifndef _MSC_VER
 #include <unistd.h>
+#endif
 
 #include "speldefs.h"
 #include "spelfunc.h"

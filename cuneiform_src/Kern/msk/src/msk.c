@@ -65,7 +65,9 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <memory.h>
 #include <time.h>
 #include <math.h>
+#ifndef _MSC_VER
 #include <unistd.h>
+#endif
 
 #include "mskdef.h"
 #include "msk.h"
