@@ -60,11 +60,13 @@ mkdir builddir
 cd builddir
 cmake -DCMAKE_BUILD_TYPE=debug ..
 make
-make install 
+make install
 
 By default Cuneiform installs to /usr/local. You can specify a different prefix
 by giving a command line switch "-DCMAKE_INSTALL_PREFIX=/what/ever/you/want"
-to CMake.
+to CMake. You may need to set LD_LIBRARY_PATH if you install no a non-standard
+location. If you install to a system dir, the last command must be run as root
+or with sudo.
 
 Note that this does not use any optimizations. To enable them, replace
 -DCMAKE_BUILD_TYPE=debug with -DCMAKE_BUILD_TYPE=release or with
