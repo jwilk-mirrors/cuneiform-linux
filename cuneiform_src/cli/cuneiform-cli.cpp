@@ -102,7 +102,7 @@ static const langlist langs[] = {
         {LANG_ROMAN,     "rum"},
         {LANG_HUNGAR,    "hun"},
         {LANG_BULGAR,    "bul"},
-        {LANG_SLOVENIAN, "slo"},
+        {LANG_SLOVENIAN, "slv"},
         {LANG_LATVIAN,   "lav"},
         {LANG_LITHUANIAN,"lit"},
         {LANG_ESTONIAN,  "est"},
