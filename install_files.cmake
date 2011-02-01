@@ -11,8 +11,7 @@ else()
 endif()
 
 macro(library_hook name)
-  set_target_properties(${name} PROPERTIES VERSION
-  "${CF_VERSION_MAJOR}.${CF_VERSION_MINOR}.${CF_VERSION_PATCH}")
+  set_target_properties(${name} PROPERTIES SOVERSION ${ABI_VERSION})
   install(
     TARGETS "${name}"
     ARCHIVE DESTINATION ${LIBDIR}

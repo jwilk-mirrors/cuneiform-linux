@@ -16,6 +16,9 @@ set(CF_VERSION_MINOR "0")
 set(CF_VERSION_PATCH "0")
 
 set(CF_VERSION "${CF_VERSION_MAJOR}.${CF_VERSION_MINOR}.${CF_VERSION_PATCH}")
+# Increment this manually whenever breaking ABI.
+# http://tldp.org/HOWTO/Program-Library-HOWTO/shared-libraries.html#AEN135
+set(ABI_VERSION 0)
 
 option(BUILD_TESTING "Enable CTest framework." OFF)
 
