@@ -155,12 +155,12 @@ void punct()
  uchar l;
  int16_t x,d;
 
- if (language == LANG_RUSSIAN)  sv_fantom=NULL;
+ if (language == PUMA_LANG_RUSSIAN)  sv_fantom=NULL;
  snap_newpass('e');
  quockets();
 
  // ACC_ROOF_INF над d,t в Чешском похож на апостроф. 07.09.2000 E.P.
- if (language==LANG_CZECH)
+ if (language==PUMA_LANG_CZECH)
 	czech_dt_glue_apostroph();
 
  bad_to_dust();
@@ -206,7 +206,7 @@ void punct()
              c1=c1->nextl;
              continue;
         }
-        if(language != LANG_RUSSIAN )
+        if(language != PUMA_LANG_RUSSIAN )
         {
             if (memchr("fFrTP",(l=c1->vers[0].let),5))
               x-=(c1->w)/2;
@@ -340,7 +340,7 @@ void punct()
         (c2->flg&c_f_bad || c2->vers[0].let=='i' && c2->vers[0].prob==128) &&
         c->col+c->w/2>c2->col)
 #ifdef PUNCT_CORRECTION
-        ||  ( language==LANG_RUSSIAN && is_dust_2(c) )
+        ||  ( language==PUMA_LANG_RUSSIAN && is_dust_2(c) )
 #endif
       )
     {
@@ -418,11 +418,11 @@ static void bad_to_dust()
       (c->flg&c_f_bad ||
        c->vers[0].prob<PROBOK ||                // Oleg
        memchr("ceo<>",c->vers[0].let,4) && c->vers[0].prob<PROBOK_ceo ||
-       language==LANG_RUSSIAN && memchr("Єўбэкн",c->vers[0].let,6) &&
+       language==PUMA_LANG_RUSSIAN && memchr("Єўбэкн",c->vers[0].let,6) &&
                                  c->vers[0].prob<PROBOK_ceo ||
-       language==LANG_RUSSIAN && memchr("ўн",c->vers[0].let,2) &&
+       language==PUMA_LANG_RUSSIAN && memchr("ўн",c->vers[0].let,2) &&
        c->stick_inc>300 && c->vers[0].prob<PROBOK_ceo+10     ||
-       language==LANG_RUSSIAN && memchr("ЁҐ®",c->vers[0].let,3) &&
+       language==PUMA_LANG_RUSSIAN && memchr("ЁҐ®",c->vers[0].let,3) &&
        c->vers[0].prob<PROBOK_ceo-20
      ) && c->h<=bl.ps && c->row+2>=bl.b2 && c->row+c->h-2<=bl.b3 &&
           (r=chkquocks(bl.ps,2,c))!=0 && check_shevron(c,1)>=3)
@@ -630,7 +630,7 @@ if( !compose_cell(n,clist,c) )
  c->keg=(uchar)bl->ps;
  c->nvers=0;
  // AL-JOE decicion-making was here; all c1-c4 were deleted
- if( (r&MBI) && !(language==LANG_RUSSIAN&&!langUkr&&!langSer))
+ if( (r&MBI) && !(language==PUMA_LANG_RUSSIAN&&!langUkr&&!langSer))
   {
   c->vers[c->nvers].let='i';
   c->vers[c->nvers].prob=128;
@@ -642,14 +642,14 @@ if( !compose_cell(n,clist,c) )
   c->vers[c->nvers].prob=128;
   (c->nvers)++;
   }
- if( language!=LANG_RUSSIAN )
+ if( language!=PUMA_LANG_RUSSIAN )
      {
      c->vers[c->nvers].let='l';
      c->vers[c->nvers].prob=(c->nvers)?100:128;
      (c->nvers)++;
      }
  c->vers[c->nvers].let=0;
- if( language==LANG_RUSSIAN && c->nvers==0 )
+ if( language==PUMA_LANG_RUSSIAN && c->nvers==0 )
     {
     c->vers[0].let=bad_char;
     }
@@ -675,13 +675,13 @@ static void dots()
   if ((let=c->vers[0].let)==liga_ri && (cc=dot_ri(c))!=NULL ||
       (let=='i' || let=='j') && (cc=dot_ij(c))!=NULL ||
       (
-	    ( language == LANG_POLISH &&
+	    ( language == PUMA_LANG_POLISH &&
             ( let == ZZ_dot_accent || let == z_dot_accent ) ||
 		  // 16.07.2001 E.P.
-		  language == LANG_LITHUANIAN &&
+		  language == PUMA_LANG_LITHUANIAN &&
             ( let == EE_dot_accent || let == e_dot_accent ) ||
 		  // 30.05.2002 E.P.
-		  language == LANG_TURKISH &&
+		  language == PUMA_LANG_TURKISH &&
             let == II_dot_accent
 		) &&
             (cc=dot_ij(c))!=NULL ) ||
@@ -1023,7 +1023,7 @@ static void punctsign(cell **ac1,cell **ac2)
   if (fl && c2->prev->flg==c_f_let &&
       ( (let=c2->prev->vers[0].let)=='g' ||
 	  	let=='r' ||
-		language==LANG_TURKISH && let==g_semicircle // 27.06.2002 E.P.
+		language==PUMA_LANG_TURKISH && let==g_semicircle // 27.06.2002 E.P.
 	  ) &&
       c2->prev->cg_flag&c_cg_cutr && c2->cg_flag&c_cg_cutl &&
       abs(c2->row-c2->prev->row)<=2)
@@ -2295,7 +2295,7 @@ void clean_punct()
   {
     if (!(C->flg & c_f_punct))
         continue;
-    if (C->vers[0].let=='\'' && language == LANG_ENGLISH)
+    if (C->vers[0].let=='\'' && language == PUMA_LANG_ENGLISH)
         continue;
     for (L=C; L->prev && !(L->flg & (c_f_let+c_f_bad)); L=L->prev);
     if (!(L->flg & (c_f_let+c_f_bad)))
@@ -2358,7 +2358,7 @@ cell *hide(cell *C)
 {
 	cell *B=C;
 
-	if (language == LANG_RUSSIAN)
+	if (language == PUMA_LANG_RUSSIAN)
 	{
 		C=C->prev;
 

@@ -263,7 +263,7 @@ void make_all_glues()
 #ifdef UFA
  glue_all_dusts();
 #endif
- if( language==LANG_RUSSIAN )
+ if( language==PUMA_LANG_RUSSIAN )
   glue_III();
  if (percgot)    // a % was got at glue (bad to dust)
    perc();
@@ -355,7 +355,7 @@ static void glue_let_dust()
 
   if (decidust(BC))
     p1=discrid(BC,MONdust);
-  if (p1 > TRSG1 && !(language == LANG_RUSSIAN && memchr("£ƒ÷",c1,3)))
+  if (p1 > TRSG1 && !(language == PUMA_LANG_RUSSIAN && memchr("£ƒ÷",c1,3)))
    {   // allow glue with good '¨' '£' 'u'
    BC->flg &= ~c_f_bad;
    BC->flg |= c_f_let;
@@ -584,7 +584,7 @@ passfb:
     BC=BP->nextl;
     EC=BC->nextl;
     if( !EC ) break; //. Oleg : 23mar00
-    if(language==LANG_RUSSIAN)
+    if(language==PUMA_LANG_RUSSIAN)
     {/* Valdemar patch some special cases */
     if( ((c2=='>' && c3=='>') || (c2=='<' && c3=='<')) &&
        BC->vers[0].prob > 200 && EC->vers[0].prob > 200 )
@@ -607,7 +607,7 @@ passfb:
     }
     if (memchr("lI1/J)!",c2,7) ||         // stick character ?
 		c2==liga_i ||
-		   language==LANG_TURKISH &&  // 30.05.2002 E.P.
+		   language==PUMA_LANG_TURKISH &&  // 30.05.2002 E.P.
 			(c2==i_sans_accent||c2==II_dot_accent)
 			||
 		c2==liga_exm
@@ -619,7 +619,7 @@ passfb:
           }
     if (memchr("lI1/J)!",c3,7) ||         // stick character ?
 		c3==liga_i ||
-		   language==LANG_TURKISH &&  // 30.05.2002 E.P.
+		   language==PUMA_LANG_TURKISH &&  // 30.05.2002 E.P.
 			(c3==i_sans_accent||c3==II_dot_accent)
 			||
 		c3==liga_exm
@@ -738,7 +738,7 @@ trygl:
   }
   /* Valdemar 12.11.93
    There is none-serific ë that lay so far */
-  if(language == LANG_RUSSIAN ){
+  if(language == PUMA_LANG_RUSSIAN ){
    if(BC->stick_inc == NO_INCLINE)   // inc don't counted
        stick_center_study(BC,NULL,1);
     if(EC->stick_inc == NO_INCLINE)
@@ -856,7 +856,7 @@ trygl:
    }
 fingb:
   /* cursiv 'ë' confuse with '¬' let's promote him */
-  if( language == LANG_RUSSIAN && rus_iee)
+  if( language == PUMA_LANG_RUSSIAN && rus_iee)
     if( rus_iee == 1 )
       promote(1,BC,'ë',60);
    else if(rus_iee == 2)
@@ -904,7 +904,7 @@ fingb:
     if ((i > 220) && ((i+i) > (p1+p2)))
       goto accel;
   }
-  if( language==LANG_RUSSIAN && BC->vers[0].prob>230 &&
+  if( language==PUMA_LANG_RUSSIAN && BC->vers[0].prob>230 &&
       c2==(uchar)'¯' && c3==(uchar)'ø' && cw==(uchar)'õ' )
       goto accel; // Oleg : 30-03-1995 : near cursive rus n+cursive rus ge
   if ( ((BC->recsource & c_rs_ev) == 0) ||
@@ -967,8 +967,8 @@ accel:                                 // accept new cells
   continue;
   }
   // russian have a special pass to paste 'ë'
- if((flb && language!=LANG_RUSSIAN) ||
-    (flb==2 && language==LANG_RUSSIAN) ) return;
+ if((flb && language!=PUMA_LANG_RUSSIAN) ||
+    (flb==2 && language==PUMA_LANG_RUSSIAN) ) return;
  flb++;                                // glue backward two bad cells
  goto passfb;
  }

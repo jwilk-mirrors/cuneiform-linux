@@ -130,7 +130,7 @@ void criteries()
  while ((c=c->nextl)->nextl != NULL)
  {
   criteria(c);
- if(language == LANG_RUSSIAN )
+ if(language == PUMA_LANG_RUSSIAN )
   {
   r_criteria(c,NULL);
   if( c->nvers>0 && memchr("’вѓЈ",c->vers[0].let,4) &&
@@ -191,30 +191,30 @@ snvers=c->nvers;
 }
 
 
-  if (((language==LANG_FRENCH || language==LANG_ITALIAN) &&
+  if (((language==PUMA_LANG_FRENCH || language==PUMA_LANG_ITALIAN) &&
 				    memchr("ACEIOUaceiou",let,12) || // Включая нижние акценты "c" 05.07.2002 E.P.
-       language==LANG_SPANISH && memchr("AEINOUaeniou",let,12) ||
-       language==LANG_GERMAN && memchr("AOUaou",let,6) ||
-       language==LANG_RUSSIAN && memchr("Ґ…",let,2) ||
-       language==LANG_CROATIAN && memchr("SZCszc",let,6) /*&& !pass_cut*/ ||
-       language==LANG_POLISH   && memchr("AESZCNOaeszcno",let,14) || 	// Включая нижние акценты a,e 05.07.2002 E.P.
-       language==LANG_PORTUGUESE && memchr("AEOUIaeoui",let,10) ||
-       language==LANG_SWEDISH && memchr("AEOaeo",let,6)) && !flacc ||
+       language==PUMA_LANG_SPANISH && memchr("AEINOUaeniou",let,12) ||
+       language==PUMA_LANG_GERMAN && memchr("AOUaou",let,6) ||
+       language==PUMA_LANG_RUSSIAN && memchr("Ґ…",let,2) ||
+       language==PUMA_LANG_CROATIAN && memchr("SZCszc",let,6) /*&& !pass_cut*/ ||
+       language==PUMA_LANG_POLISH   && memchr("AESZCNOaeszcno",let,14) || 	// Включая нижние акценты a,e 05.07.2002 E.P.
+       language==PUMA_LANG_PORTUGUESE && memchr("AEOUIaeoui",let,10) ||
+       language==PUMA_LANG_SWEDISH && memchr("AEOaeo",let,6)) && !flacc ||
 
 	   // 05.09.2000 E.P.
-	   language==LANG_CZECH	   &&
+	   language==PUMA_LANG_CZECH	   &&
 					memchr("AaCcDdEeIiNnOoRrSsTtUuYyZz",let,26) ||
-       language==LANG_ROMAN    && memchr("AaIiSsTt",let,8) ||	// Включая нижние акценты s,t 05.07.2002 E.P.
-       language==LANG_HUNGAR   && memchr("AaEeIiOoUu",let,10) ||
-	   language==LANG_SLOVENIAN	&& memchr("CcSsZz",let,6) ||
+       language==PUMA_LANG_ROMAN    && memchr("AaIiSsTt",let,8) ||	// Включая нижние акценты s,t 05.07.2002 E.P.
+       language==PUMA_LANG_HUNGAR   && memchr("AaEeIiOoUu",let,10) ||
+	   language==PUMA_LANG_SLOVENIAN	&& memchr("CcSsZz",let,6) ||
 
 	   // 09.07.2001 E.P.
-	   language==LANG_LATVIAN    && memchr("AaCcEeGgIiKkLlNnSsUuZz",let,22) ||
-	   language==LANG_LITHUANIAN && memchr("AaCcEeIiSsUuZz",let,14) ||
-	   language==LANG_ESTONIAN   && memchr("AaOoSsUuZz",let,10) ||
+	   language==PUMA_LANG_LATVIAN    && memchr("AaCcEeGgIiKkLlNnSsUuZz",let,22) ||
+	   language==PUMA_LANG_LITHUANIAN && memchr("AaCcEeIiSsUuZz",let,14) ||
+	   language==PUMA_LANG_ESTONIAN   && memchr("AaOoSsUuZz",let,10) ||
 
 	   // 21.05.2002 E.P.
-	   language==LANG_TURKISH   &&
+	   language==PUMA_LANG_TURKISH   &&
 		(memchr("AaCcIiGgOoSsUu",let,14) || let == i_sans_accent
 		) ||
 	   0
@@ -227,25 +227,25 @@ snvers=c->nvers;
 
   // Урезание чужих букв из общих таблиц
   if(
-	  language==LANG_POLISH && memchr("qQ",let,2) ||
+	  language==PUMA_LANG_POLISH && memchr("qQ",let,2) ||
 
 	  // BULGAR 08.09.2000 E.P.
-	  language==LANG_RUSSIAN && langBul &&
+	  language==PUMA_LANG_RUSSIAN && langBul &&
 		(
 		let==155 || let==235 || // Ыы 08.09.2000 E.P.
 		let==157 || let==237 || // Ээ 08.09.2000 E.P.
 		let== r_EE_2dot || let== r_e_2dot
 		) ||
 
-	  language==LANG_SLOVENIAN && isnot_slovenian(let) ||
+	  language==PUMA_LANG_SLOVENIAN && isnot_slovenian(let) ||
 
 	  // 09.07.2001 E.P.
-	  language==LANG_LATVIAN    && isnot_latvian(let) ||
-	  language==LANG_LITHUANIAN && isnot_lithuanian(let) ||
-	  language==LANG_ESTONIAN   && isnot_estonian(let) ||
+	  language==PUMA_LANG_LATVIAN    && isnot_latvian(let) ||
+	  language==PUMA_LANG_LITHUANIAN && isnot_lithuanian(let) ||
+	  language==PUMA_LANG_ESTONIAN   && isnot_estonian(let) ||
 
 	   // 21.05.2002 E.P.
-	   language==LANG_TURKISH   && isnot_turkish(let) ||
+	   language==PUMA_LANG_TURKISH   && isnot_turkish(let) ||
 	  0
 	)
     {
@@ -258,7 +258,7 @@ snvers=c->nvers;
 
   if( c->flg&(c_f_let|c_f_bad) ) // Oleg : 02-28-96 04:55pm : letter only
   if ( ((let=vers->let)=='i' || let=='j' ||
-	  (language==LANG_TURKISH && let==II_dot_accent) // 17.06.2002 E.P.
+	  (language==PUMA_LANG_TURKISH && let==II_dot_accent) // 17.06.2002 E.P.
 	 )
 		&&
 		(r=ij_dot(c))!=0
@@ -270,7 +270,7 @@ snvers=c->nvers;
 	}
 
   // Nick 18.06.2002
-  if ( language == LANG_TURKISH && ((let=vers->let)== i_sans_accent || let == II_dot_accent ) &&
+  if ( language == PUMA_LANG_TURKISH && ((let=vers->let)== i_sans_accent || let == II_dot_accent ) &&
 		(r = upper_right_angle( c )) > 0
 	 )
   {
@@ -280,13 +280,13 @@ snvers=c->nvers;
 
   if ((let=vers->let)=='!' || let=='?')
    {if (excl_dot(c)>0) break; vers--; continue;}
- if(language != LANG_RUSSIAN) // refuse with  ,Ў
+ if(language != PUMA_LANG_RUSSIAN) // refuse with  ,Ў
   if ((let=vers->let)==invers_exm || let==invers_qm)
    {if (inv_dot(c)>0) break; vers--; continue;}
 
   if ( (
-	   language==LANG_FRENCH ||
-	   language==LANG_TURKISH // 18.06.2002 E.P.
+	   language==PUMA_LANG_FRENCH ||
+	   language==PUMA_LANG_TURKISH // 18.06.2002 E.P.
 	   ) && (vers->let=='c' || vers->let=='C'))
    c_to_ctail(c,0);  // AL 940321
   if (vers->let==liga_rt && not_rt(c))
@@ -550,18 +550,18 @@ int16_t ij_test(cell *c)
   return 1;
  get_b_lines(c,&bl);
  H=bl.ps;
- if (language==LANG_FRENCH||language==LANG_CROATIAN ||
-	 language==LANG_CZECH || language==LANG_HUNGAR  || // 05.09.2000 E.P.
-	 language==LANG_LATVIAN	||	// 16.07.2001 E.P.
-	 language==LANG_TURKISH // 31.05.2002 E.P.
+ if (language==PUMA_LANG_FRENCH||language==PUMA_LANG_CROATIAN ||
+	 language==PUMA_LANG_CZECH || language==PUMA_LANG_HUNGAR  || // 05.09.2000 E.P.
+	 language==PUMA_LANG_LATVIAN	||	// 16.07.2001 E.P.
+	 language==PUMA_LANG_TURKISH // 31.05.2002 E.P.
 	 )
   memcpy(&cc,c,sizeof(cell));
  if ((r=ij_dot(c))>=0)
   return r;
- if (language==LANG_FRENCH||language==LANG_CROATIAN ||
-	 language==LANG_CZECH || language==LANG_HUNGAR  || // 05.09.2000 E.P.
-	 language==LANG_LATVIAN	||	// 16.07.2001 E.P.
-	 language==LANG_TURKISH // 31.05.2002 E.P.
+ if (language==PUMA_LANG_FRENCH||language==PUMA_LANG_CROATIAN ||
+	 language==PUMA_LANG_CZECH || language==PUMA_LANG_HUNGAR  || // 05.09.2000 E.P.
+	 language==PUMA_LANG_LATVIAN	||	// 16.07.2001 E.P.
+	 language==PUMA_LANG_TURKISH // 31.05.2002 E.P.
 	 )
   {
   memcpy(c,&cc,sizeof(cell));
@@ -613,7 +613,7 @@ int16_t ij_test(cell *c)
 		return 0;
 */
 
-   if( language == LANG_RUSSIAN && langUkr )
+   if( language == PUMA_LANG_RUSSIAN && langUkr )
      if( c->w >= c->h - 2 )
        goto ret0;
 
@@ -659,7 +659,7 @@ int16_t ij_test(cell *c)
    goto ret0;
   for (c->nvers=0,v1=v2=c->vers; v1->let; v1++)
    if (v1->let=='i' || v1->let=='j' ||
-	   language==LANG_TURKISH && // 31.05.2002 E.P.
+	   language==PUMA_LANG_TURKISH && // 31.05.2002 E.P.
 		v1->let==II_dot_accent
 	   )
     {
@@ -693,7 +693,7 @@ int16_t ij_test(cell *c)
    goto ret0;
   for (v=cc->vers; v->let; v++)
    if (!strchr("/l()J1It[]",v->let) && v->let!=liga_i &&
-	   !(language==LANG_TURKISH && // 30.05.2002 E.P.
+	   !(language==PUMA_LANG_TURKISH && // 30.05.2002 E.P.
 			(v->let==i_sans_accent||v->let==II_dot_accent)
 		) &&
 	   v->prob>=TRPROB
@@ -710,7 +710,7 @@ ret0:
  // if no dot
  for (c->nvers=0,v1=v2=c->vers; v1->let; v1++)
  {
-	if( language==LANG_TURKISH && // 31.05.2002 E.P.
+	if( language==PUMA_LANG_TURKISH && // 31.05.2002 E.P.
 		 v1->let==II_dot_accent &&
 		 !upper_dot_I(	c )      // Nick 23.06.2002
 		)
@@ -831,7 +831,7 @@ cell *dot_ij(cell *c)
  int16_t e,d,H;
  uchar let = 0;
 
-   if( language == LANG_RUSSIAN && langUkr )
+   if( language == PUMA_LANG_RUSSIAN && langUkr )
      return  dot_iUkr(c);
 
  csv=NULL;
@@ -858,15 +858,15 @@ cell *dot_ij(cell *c)
 	 cc->col+cc->w-6<=c->col+c->w &&
      (memchr("ij",( let = c->prevl->vers[0].let),2)==NULL &&
 		// Исправил || на "&& !" 08.09.2000 E.P.
-      !( language == LANG_POLISH &&
+      !( language == PUMA_LANG_POLISH &&
 			( let == ZZ_dot_accent || let == z_dot_accent ) ||
 
 		 // 16.07.2001 E.P.
-		 language == LANG_LITHUANIAN &&
+		 language == PUMA_LANG_LITHUANIAN &&
 			( let == EE_dot_accent || let == e_dot_accent ) ||
 
 		 // 30.05.2002 E.P.
-		 language == LANG_TURKISH &&
+		 language == PUMA_LANG_TURKISH &&
 			let == II_dot_accent
 	   ) ||
            c->prevl->col+c->prevl->w < cc->col) )

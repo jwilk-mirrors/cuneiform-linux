@@ -919,7 +919,7 @@ return;
 Bool32 rpstr_txt_spell(char * s,uchar lang)
 {
 int32_t                      Check = 0;
-if( lang==LANG_ENGLISH && multy_language )
+if( lang==PUMA_LANG_ENGLISH && multy_language )
     { // second dict
     if( !RLING_CheckSecWord((pchar)s, &Check) )
         {
@@ -1053,12 +1053,12 @@ int32_t   size_short_language(uchar language)
 int32_t   s;
 switch( language )
     {
-    case    LANG_GERMAN:
+    case    PUMA_LANG_GERMAN:
         s=2;
         break;
-    case    LANG_RUSSIAN:
-    case    LANG_ENGLISH:
-    case    LANG_RUSENG:
+    case    PUMA_LANG_RUSSIAN:
+    case    PUMA_LANG_ENGLISH:
+    case    PUMA_LANG_RUSENG:
     default:
         s=3;
         break;
@@ -1071,12 +1071,12 @@ int32_t   size_short_language_aux(uchar language)
 int32_t   s;
 switch( language )
     {
-    case    LANG_GERMAN:
+    case    PUMA_LANG_GERMAN:
         s=3;
         break;
-    case    LANG_RUSSIAN:
-    case    LANG_ENGLISH:
-    case    LANG_RUSENG:
+    case    PUMA_LANG_RUSSIAN:
+    case    PUMA_LANG_ENGLISH:
+    case    PUMA_LANG_RUSENG:
     default:
         s=3;
         break;
@@ -1084,7 +1084,7 @@ switch( language )
 return s;
 }
 
-static uchar CodePages[LANG_TOTAL]={
+static uchar CodePages[PUMA_LANG_TOTAL]={
 CSTR_ANSI_CHARSET            , // LANG_ENGLISH		0
 CSTR_ANSI_CHARSET            , // LANG_GERMAN		1
 CSTR_ANSI_CHARSET            , // LANG_FRENCH		2
@@ -1334,7 +1334,7 @@ CSTR_rast       r;
 UniVersions     u;
 char           *arr1, *arr2, *p;
 
-if( lang==LANG_RUSSIAN )
+if( lang==PUMA_LANG_RUSSIAN )
     {
     arr1 = double_rus;
     arr2 = double_eng;
@@ -1369,17 +1369,17 @@ UniVersions     u,u1;
 char           *arr1, *arr2, *p;
 uchar           lang1, charset=CSTR_RUSSIAN_CHARSET;
 
-if( lang==LANG_RUSSIAN )
+if( lang==PUMA_LANG_RUSSIAN )
     {
     arr1 = double_rus;
     arr2 = double_eng;
-    lang1=LANG_ENGLISH;
+    lang1=PUMA_LANG_ENGLISH;
     }
 else
     {
     arr2 = double_rus;
     arr1 = double_eng;
-    lang1=LANG_RUSSIAN;
+    lang1=PUMA_LANG_RUSSIAN;
     }
 
 for(r=beg;r&&r!=end;r=CSTR_GetNext(r))
@@ -1736,7 +1736,7 @@ Bool32 is_first_capital(CSTR_rast eng)
 {
 UniVersions u;
 
-if( language!=LANG_ENGLISH && language!=LANG_RUSSIAN && language!=LANG_RUSENG )
+if( language!=PUMA_LANG_ENGLISH && language!=PUMA_LANG_RUSSIAN && language!=PUMA_LANG_RUSENG )
     return FALSE;
 CSTR_GetCollectionUni(eng,&u);
 if( !u.lnAltCnt || !rpstr_is_upper(u.Alt[0].Code[0]) )
@@ -1887,7 +1887,7 @@ while(1)
                 continue;
                 }
             // анализ двучзычных частей
-            if( lattr.language==LANG_RUSENG && language1!=language )
+            if( lattr.language==PUMA_LANG_RUSENG && language1!=language )
                 {
                 Bool32  pd=rpstr_double_word(prevbeg,prevend,language1);
                 Bool32  d =rpstr_double_word(eng,enge,language);
@@ -2503,7 +2503,7 @@ Bool32 wasLiga = FALSE;
 
 		// окончания активнее для русских ! Nick 03.08.2001
 		CSTR_GetAttr(c,&attr);
-		if( attr.language == LANG_ENGLISH)
+		if( attr.language == PUMA_LANG_ENGLISH)
 			wasEnglish = TRUE;
 
 		if( rpstr_is_upper(vers.Alt[0].Code[0]) )

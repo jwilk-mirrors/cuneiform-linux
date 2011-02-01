@@ -553,9 +553,9 @@ int32_t   code=(int32_t)Code;
 
 switch( language )
     {
-    case    LANG_RUSSIAN:
+    case    PUMA_LANG_RUSSIAN:
         return( code>191 && code<224 || code>47&& code<58 );
-    case    LANG_ENGLISH:
+    case    PUMA_LANG_ENGLISH:
         return( code>64 && code<91 || code>47&& code<58 );
     }
 return FALSE;
@@ -568,9 +568,9 @@ if( code>49 && code<58 || code==48 )
     return TRUE;
 switch( language )
     {
-    case    LANG_RUSSIAN:
+    case    PUMA_LANG_RUSSIAN:
         return( code>191 && !strchr("шШщЩжЖыЫюЮ",code) );
-    case    LANG_ENGLISH:
+    case    PUMA_LANG_ENGLISH:
         return( strchr("QERTYUOPASDFGHJKLZXCVBNMqeyuopasdghkzxcvbn",code)!=NULL );
     }
 return FALSE;
@@ -612,10 +612,10 @@ for(r=beg;r && r!= end; r=CSTR_GetNext(r), nall++)
 
         switch( a.language )
             {
-            case    LANG_RUSSIAN:
+            case    PUMA_LANG_RUSSIAN:
                 unilet=(strchr(rus_uni_letters,u.Alt[0].Liga)!=NULL);
                 break;
-            case    LANG_ENGLISH:
+            case    PUMA_LANG_ENGLISH:
                 unilet=(strchr(eng_uni_letters,u.Alt[0].Liga)!=NULL);
                 break;
             default:
@@ -725,7 +725,7 @@ for(c=eng;c && c!=enge;c=CSTR_GetNext(c))
 			break;
 
         if( rus_lang )
-            attr.language=LANG_RUSSIAN;
+            attr.language=PUMA_LANG_RUSSIAN;
 
         if( !(cn=CSTR_InsertRaster (cn))        ||
             !CSTR_SetAttr (cn, &attr)           ||
@@ -852,13 +852,13 @@ return (CSTR_rast)0;
 RSADD_FUNC(uchar)    RSADD_get_alias_class(uchar let,uchar lang)
 {
 uchar   *fe,*fa,*fs;
-if( lang==LANG_RUSSIAN )
+if( lang==PUMA_LANG_RUSSIAN )
     {
     fe=rus_equal;
     fa=rus_alias;
     fs=rus_similar;
     }
-else if( lang==LANG_ENGLISH )
+else if( lang==PUMA_LANG_ENGLISH )
     {
     fe=eng_equal;
     fa=eng_alias;
@@ -882,7 +882,7 @@ RSADD_FUNC(uchar  *) RSADD_get_aliases( uchar let,uchar lang, uchar alias_class)
 {
 uchar   *fe,*fa,*fs,*se,*sa,*ss, *out, *f,*s, *o;
 
-if( lang==LANG_RUSSIAN )
+if( lang==PUMA_LANG_RUSSIAN )
     {
     fe=rus_equal;
     fa=rus_alias;
@@ -891,7 +891,7 @@ if( lang==LANG_RUSSIAN )
     sa=eng_alias;
     ss=eng_similar;
     }
-else if( lang==LANG_ENGLISH )
+else if( lang==PUMA_LANG_ENGLISH )
     {
     se=rus_equal;
     sa=rus_alias;
@@ -1133,7 +1133,7 @@ for(s[0]=0,r=b;r&&r!=e;r=CSTR_GetNext(r))
     {
     CSTR_GetAttr(r,&a);
     CSTR_GetCollectionUni(r,&u);
-    if( a.language!=LANG_ENGLISH || !u.lnAltCnt)
+    if( a.language!=PUMA_LANG_ENGLISH || !u.lnAltCnt)
         return FALSE;
     strcat(s,u.Alt[0].Code);
     }
@@ -1543,7 +1543,7 @@ while(1)
         if( verdict )
             {
             neng++;
-            rsadd_revert_lang(pruse,rus,LANG_ENGLISH);
+            rsadd_revert_lang(pruse,rus,PUMA_LANG_ENGLISH);
             ruse = rsadd_skip_punct(ruse);
             enge = rsadd_skip_punct(enge);
             rsadd_cstr2word(rus,ruse,rwrd);

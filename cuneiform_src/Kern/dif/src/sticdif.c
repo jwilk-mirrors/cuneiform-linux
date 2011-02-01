@@ -2235,7 +2235,7 @@ ret = similar_wide_frt1(&left_chars,&right_chars);
 if (dy>16 && dx<4)
   ret |= 0x0C;  // 09.07.1993 SUPPRESS 'r'
 
-if (language == LANG_POLISH &&
+if (language == PUMA_LANG_POLISH &&
     similar_l_stroked(&left_chars,&right_chars,&signums) )
   ret |= 0x300;
 return(ret);

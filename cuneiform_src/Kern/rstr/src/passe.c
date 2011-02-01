@@ -122,10 +122,10 @@ Bool short_spell(uchar *wrd,uchar language, uchar nextlet )
 Bool    short_word_solid;
 switch( language )
     {
-    case    LANG_RUSSIAN:
+    case    PUMA_LANG_RUSSIAN:
         short_word_solid=russian_word_all(wrd,language,nextlet);
         break;
-    case    LANG_ENGLISH:
+    case    PUMA_LANG_ENGLISH:
         short_word_solid=english_word_all(wrd,language);
         break;
     default:
@@ -140,10 +140,10 @@ Bool short_spell_re(uchar *wrd,uchar language )
 Bool    short_word_solid;
 switch( language )
     {
-    case    LANG_RUSSIAN:
+    case    PUMA_LANG_RUSSIAN:
         short_word_solid=russian_word(wrd);
         break;
-    case    LANG_ENGLISH:
+    case    PUMA_LANG_ENGLISH:
         short_word_solid=english_word(wrd);
         break;
     default:
@@ -305,7 +305,7 @@ while(1)
                 t=del_cell(t);
 
             }
-        if( language==LANG_RUSSIAN && u>2 && d==1 && cd )
+        if( language==PUMA_LANG_RUSSIAN && u>2 && d==1 && cd )
             {
             if( !strchr("абе\xf0\xf1\xf5\xf7\xf8\xfd",cd->vers[0].let) )
                 {
@@ -659,7 +659,7 @@ int16_t         ret;
 for(pw=w; *s; s++)
  {
  ss = *s;
- if( lang==LANG_RUSSIAN )
+ if( lang==PUMA_LANG_RUSSIAN )
      {
      //                ..  ..
      // recode russian E   e
@@ -677,7 +677,7 @@ for(pw=w; *s; s++)
  }
 if( strlen(w)<4 )
     return 0;
-if( lang==LANG_ENGLISH && multy_language )
+if( lang==PUMA_LANG_ENGLISH && multy_language )
     ret = text_findstat_aux( w);
 else
     ret = text_findstat(w);
@@ -690,7 +690,7 @@ Bool _spell_agressive(pchar s,uchar lang)
 char        w[76]="",*pw; uchar ss;
 int16_t         ret;
 
-if( lang!=LANG_RUSSIAN )
+if( lang!=PUMA_LANG_RUSSIAN )
     return FALSE;
 
 for(pw=w; *s; s++)
@@ -871,7 +871,7 @@ uchar prob=cc->vers[0].prob, ccflg=(uchar)cc->flg;
 if( !(cc->flg&(c_f_let|c_f_bad)) )
   return 0;
 
-language = LANG_ENGLISH;
+language = PUMA_LANG_ENGLISH;
 short_recog_cell(cc);
 
 if( cc->nvers==0 && (ccflg&(c_f_let|c_f_bad)))
@@ -893,7 +893,7 @@ if( cc->nvers==0 && (ccflg&(c_f_let|c_f_bad)))
 cc->flg = ccflg;
 criteria(cc);
 
-language = LANG_RUSSIAN;
+language = PUMA_LANG_RUSSIAN;
 levcut(cc,1);
 
 return  (cc->vers[0].prob>GOOD_PROB)||
@@ -1020,7 +1020,7 @@ Bool russian_word_all(uchar *wrd,uchar language,uchar nextlet)
 int16_t i,ii,iv;
 uchar ww[MAX_LEN_WORD],*w=&ww[0],c;
 
-if( language!=LANG_RUSSIAN )
+if( language!=PUMA_LANG_RUSSIAN )
     return FALSE;
 *w=0;
 for(ii=i=0;i<MAX_LEN_WORD-1&&wrd[i]!='\0';i++)
@@ -1082,7 +1082,7 @@ Bool english_word_all(uchar *wrd,uchar language)
 {
 int16_t i,ii,iv;
 uchar w[MAX_LEN_WORD];
-if( language!=LANG_ENGLISH )
+if( language!=PUMA_LANG_ENGLISH )
     return FALSE;
 for(ii=i=0;wrd[i]!='\0'&&i<MAX_LEN_WORD-1;i++)
   if( !memchr(punct_letters,wrd[i],sizeof(punct_letters)) )
@@ -1119,7 +1119,7 @@ Bool mixed_eng_rus_word(cell *b, cell *e)
   uchar wrd[MAX_LEN_WORD];
 
   for(c=b;c!=e;c=c->next)
-    if( c->language!=LANG_RUSSIAN )
+    if( c->language!=PUMA_LANG_RUSSIAN )
       break;      // another language
   if( c==e )
     return FALSE; // all cell haved actual language
@@ -1149,7 +1149,7 @@ Bool mixed_rus_eng_word(cell *b, cell *e)
   uchar wrd[MAX_LEN_WORD];
 
   for(c=b;c!=e;c=c->next)
-    if( c->language!=LANG_ENGLISH )
+    if( c->language!=PUMA_LANG_ENGLISH )
       break;      // another language
   if( c==e )
     return FALSE; // all cell haved actual language
@@ -1187,7 +1187,7 @@ Bool eng_word_to_rus_word(cell *b, cell *e)
       ch = *(rus_two_lang_letters+pp);
       c->vers[0].let = ch;
       c->vers[1].let = c->vers[1].prob=0;
-      c->language=LANG_RUSSIAN;
+      c->language=PUMA_LANG_RUSSIAN;
 //      if( c->pos_inc&erect_old )  rot=1;
       c->nvers=1;
       }
@@ -1211,7 +1211,7 @@ Bool rus_word_to_eng_word(cell *b, cell *e)
       ch = *(eng_two_lang_letters1+pp);
       c->vers[0].let = ch;
       c->vers[1].let = c->vers[1].prob=0;
-      c->language=LANG_ENGLISH;
+      c->language=PUMA_LANG_ENGLISH;
 //      if( c->pos_inc&erect_old )  rot=1;
       c->nvers=1;
       }

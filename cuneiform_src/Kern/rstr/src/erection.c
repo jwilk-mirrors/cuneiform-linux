@@ -1736,7 +1736,7 @@ for(i=0;i<c->nvers;i++)
     {
     if( !memchr(solid_sticks,c->vers[i].let,sizeof(solid_sticks)) &&
 		c->vers[i].let!= liga_i	&& // 08.09.2000 E.P.
-		!(language == LANG_TURKISH &&  // 30.05.2002 E.P.
+		!(language == PUMA_LANG_TURKISH &&  // 30.05.2002 E.P.
 			(c->vers[i].let==i_sans_accent||c->vers[i].let==II_dot_accent)
 		 )
 		)
@@ -1747,7 +1747,7 @@ return (c->nvers>0);
 
 int16_t erection_cond_language(uchar language)
 {
-return !(language==LANG_RUSSIAN && !langSer && !langUkr);
+return !(language==PUMA_LANG_RUSSIAN && !langSer && !langUkr);
 }
 
 int16_t erection_language(uchar language)
@@ -1757,6 +1757,6 @@ return TRUE;
 
 int16_t erection_cyr_language(uchar language)
 {
-return (language==LANG_RUSSIAN);
+return (language==PUMA_LANG_RUSSIAN);
 }
 

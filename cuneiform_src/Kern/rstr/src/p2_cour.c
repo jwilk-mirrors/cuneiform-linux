@@ -402,10 +402,10 @@ Bool32 RecogLEOcap(RecRaster *Rs,uchar Language,RecVersions *Vs)
 
     switch(Language)
     {
-    case LANG_RUSSIAN:
+    case PUMA_LANG_RUSSIAN:
         alpha = alpha_str_cap;
         break;
-    case LANG_ENGLISH:
+    case PUMA_LANG_ENGLISH:
         alpha = alpha_str_lat_cap;
         break;
     default:
@@ -526,7 +526,7 @@ Bool32   p2_msk_inc(CSTR_rast    rst)
 
     if(!HndTabInc )
         return 0;
-    if(language!=LANG_RUSSIAN && language!=LANG_RUSENG )
+    if(language!=PUMA_LANG_RUSSIAN && language!=PUMA_LANG_RUSENG )
         return 0;
     CSTR_GetImage(rst,(uchar*)&rc,CSTR_TYPE_IMAGE_RS);
     if( !rc.lnPixHeight || !rc.lnPixWidth )

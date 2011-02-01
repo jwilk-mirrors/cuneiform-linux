@@ -487,7 +487,7 @@ snvers=c->nvers;
             break;
         case  (uchar)'н':
 						// В болгарском нет Ээ. 08.09.2000 E.P.
-			if (language==LANG_RUSSIAN && langBul)
+			if (language==PUMA_LANG_RUSSIAN && langBul)
 				{d_cun = 200;break;}
 
             d_cun += check_veza(cc,(segment*)segment_pool,_rst.h,_rst.w,v0->let);
@@ -2763,7 +2763,7 @@ ret:
     case (uchar)'§'  : return pen_z;
     case (uchar)'н'  :
 			   // В болгарском нет э. 08.09.2000 E.P.
-	   if (language==LANG_RUSSIAN && langBul)
+	   if (language==PUMA_LANG_RUSSIAN && langBul)
 			return 200;
 
 		return pen_ie;

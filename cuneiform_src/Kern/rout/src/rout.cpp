@@ -309,7 +309,7 @@ Bool SetLanguage(long language)
     // Настройка на язык распознавания.
 
     // Задан ли язык
-    if ( language < 0 || language >= LANG_TOTAL )
+    if ( language < 0 || language >= PUMA_LANG_TOTAL )
     {
 
         // Язык 255 означает, что язык не задан,
@@ -325,13 +325,13 @@ Bool SetLanguage(long language)
         }
     }
 
-    ASSERT(LANG_UZBEK==16);
+    ASSERT(PUMA_LANG_UZBEK==16);
 
     gLanguage = language;
 
-    langUzbek = ( gLanguage == LANG_UZBEK );
-    langKaz = ( gLanguage == LANG_KAZ ||
-                gLanguage == LANG_KAZ_ENG
+    langUzbek = ( gLanguage == PUMA_LANG_UZBEK );
+    langKaz = ( gLanguage == PUMA_LANG_KAZ ||
+                gLanguage == PUMA_LANG_KAZ_ENG
                 );
 
     if ( !UpdateActiveAlphabet() )
@@ -950,7 +950,7 @@ Bool32 ROUT_LoadRec6List(
         // Номер языка и имя таблицы rec6xxx.dat
         sscanf(buf, "%d%s", &language, &theName[0]);
 
-        if (language <0 || language >= LANG_TOTAL ||
+        if (language <0 || language >= PUMA_LANG_TOTAL ||
             !theName[0] ||
             !LoadAlphabet(language, theName)
             )
@@ -979,7 +979,7 @@ static Bool LoadAlphabet(
     const char line_end = '\r';
 #endif
 
-    ASSERT (language >= 0 && language < LANG_TOTAL);
+    ASSERT (language >= 0 && language < PUMA_LANG_TOTAL);
 
     long sizeAlphabet = 0;
 

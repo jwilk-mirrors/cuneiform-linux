@@ -158,19 +158,19 @@ int16_t stick_w_4()
  if (answ == 0) goto ret;
  s_ans('!');
  if ((answ & 0xC0) == 0x80)   s_ans('1');
- if (language == LANG_RUSSIAN ){ s_ans('|'); goto ret; }
+ if (language == PUMA_LANG_RUSSIAN ){ s_ans('|'); goto ret; }
  if ((answ & 0x03) == 0x02)   s_ans('f');
  if ((answ & 0x0C) == 0x08)   s_ans('r');
  if ((answ & 0x30) == 0x20)   s_ans('t');
 
- if (language == LANG_POLISH )
+ if (language == PUMA_LANG_POLISH )
 	if ((answ & 0x300)== 0x300) s_ans(0xB3 ); // POLISH_l;
 
  if (rec_ptr - start_rec < 7) 	s_ans('j');
  s_ans('l'); s_ans('i'); s_ans('I');
 
  // Добавление турецких палок. 04.06.2002 E.P.
- if(language==LANG_TURKISH)
+ if(language==PUMA_LANG_TURKISH)
 	 {
 	 // 18.06.2002 E.P.
 	 if (!check_letter(i_sans_accent))
@@ -244,7 +244,7 @@ usual:
  if (nvers == 1) goto perfect_letter;
 
  // Добавление турецких палок. 04.06.2002 E.P.
- if(language==LANG_TURKISH &&
+ if(language==PUMA_LANG_TURKISH &&
 		nvers < VERS_IN_CELL - 2 &&
 		check_iIl1() >= 3
    )

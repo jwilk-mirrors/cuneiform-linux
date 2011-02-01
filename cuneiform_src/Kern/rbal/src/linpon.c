@@ -659,7 +659,7 @@ int16_t cut_by_posu(CSTR_rast C, uchar chr, int16_t wp, uchar flg, uchar arg)
     if (Nb2<=0) break;
     if ((i=cpsu(top-b2)+4) <= 0)
 		break;  // Valdemar: what is bsi ?
-    if (bsi > 0 && language != LANG_RUSSIAN)
+    if (bsi > 0 && language != PUMA_LANG_RUSSIAN)
 		i=cpsu(top-b2-bsi)+4;
     if (i <= 0)
 		break;
@@ -1277,7 +1277,7 @@ int16_t levcut(CSTR_rast C, int16_t arg)
    sort_vers(C);
 
  if ((nalive==0) ||
-     ((nalive==1) && (surviver == invers_exm) && language != LANG_RUSSIAN)
+     ((nalive==1) && (surviver == invers_exm) && language != PUMA_LANG_RUSSIAN)
     )
  // entirely killed cell
  {
@@ -1290,7 +1290,7 @@ int16_t levcut(CSTR_rast C, int16_t arg)
    {
      chr = vers.Alt[i].Liga;
      if(! memchr("LTJ()<>[]trI1l!/",chr,16) && (chr!=liga_i) &&
-		 !(language == LANG_TURKISH &&  // 30.05.2002 E.P.
+		 !(language == PUMA_LANG_TURKISH &&  // 30.05.2002 E.P.
 			(chr==i_sans_accent||chr==II_dot_accent)
 		  ) &&
 		 (chr!=liga_inv_exm)
@@ -1617,7 +1617,7 @@ p_prot (11001);
 		   continue;
 		 }
          // agrees to stay as cap and as small --- killed by unstable (splitted) lines
-         if ( (attr.bas_acc & CSTR_ba_chance) || language != LANG_RUSSIAN )
+         if ( (attr.bas_acc & CSTR_ba_chance) || language != PUMA_LANG_RUSSIAN )
          {
            CSTR_rast wd;
 		   CSTR_rast_attr attr2;
@@ -1744,7 +1744,7 @@ p_prot (killed_box);
  if (all_caps)
    goto no_multi;
 
- if(language == LANG_RUSSIAN) // Valdemar
+ if(language == PUMA_LANG_RUSSIAN) // Valdemar
  {
   if( ntot_cells > 10 )
   {
@@ -1763,7 +1763,7 @@ p_prot (killed_box);
    if ((killed_box > 32000) && (dead_cells > 1))
  {
  try_multi:
-   if(language == LANG_RUSSIAN && !stable_b3)
+   if(language == PUMA_LANG_RUSSIAN && !stable_b3)
 	   goto no_multi;  // gleb
    if (multi_bas == 0)
 	   multi_bas = 4;
@@ -2196,7 +2196,7 @@ void basefin(CSTR_line ln)
  if( !CSTR_GetNextRaster(cell_f(),f_letter) )
 	 return;  // line emptied
 
- if(language == LANG_RUSSIAN)
+ if(language == PUMA_LANG_RUSSIAN)
 	 count_line_hi(); // collect some info about line
  mutual_influence();
 
@@ -2364,7 +2364,7 @@ retcv:
 	  CSTR_GetAttr(B1,&attrB);
   }
 
-  if (abs(attrB.bdiff) < 2 && language != LANG_RUSSIAN) // Valdemar
+  if (abs(attrB.bdiff) < 2 && language != PUMA_LANG_RUSSIAN) // Valdemar
   {
    if ((wdn==0) && (wdp==0) && (diff_curv==0))
    {

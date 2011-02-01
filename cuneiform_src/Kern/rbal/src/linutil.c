@@ -158,7 +158,7 @@ int16_t is_hungar_special(uchar let) {
 
 int16_t is_lower(uchar ch) {
 
-	if (language == LANG_RUSSIAN)
+	if (language == PUMA_LANG_RUSSIAN)
 		switch (fEdCode) {
 		case ED_ASCII: // for ASCII
 			if ((ch >= (uchar) ' ' && ch <= (uchar) '¯') || (ch >= (uchar) 'à'
@@ -179,7 +179,7 @@ int16_t is_lower(uchar ch) {
 	return 0;
 }
 int16_t is_upper(uchar ch) {
-	if (language == LANG_RUSSIAN)
+	if (language == PUMA_LANG_RUSSIAN)
 		switch (fEdCode) {
 		case ED_ASCII:
 		case ED_MAC: // for ASCII and Macintosh
@@ -227,12 +227,12 @@ static const uchar lat_twins[] = "cCoOpPsSvVwWxXzZ";
 int16_t twin(uchar ch) {
 	if (!isletter(ch))
 		return 0;
-	if (language == LANG_RUSSIAN)
+	if (language == PUMA_LANG_RUSSIAN)
 		if (memchr(non_twin, ch, sizeof non_twin))
 			return 0;
 		else
 			return 1;
-	if (language != LANG_RUSSIAN && memchr(lat_twins, ch, sizeof lat_twins))
+	if (language != PUMA_LANG_RUSSIAN && memchr(lat_twins, ch, sizeof lat_twins))
 		return 1;
 	return 0;
 }
@@ -241,7 +241,7 @@ int16_t twin(uchar ch) {
 uchar to_upper(uchar c) {
 	if (c >= (uchar) 'a' && c <= (uchar) 'z')
 		return c - (uchar) 'a' + (uchar) 'A';
-	if (language == LANG_RUSSIAN)
+	if (language == PUMA_LANG_RUSSIAN)
 		switch (fEdCode) {
 		case ED_ASCII: // for ASCII
 			if (c >= (uchar) ' ' && c <= (uchar) '¯')
@@ -267,7 +267,7 @@ uchar to_upper(uchar c) {
 uchar to_lower(uchar c) {
 	if (c >= (uchar) 'A' && c <= (uchar) 'Z')
 		return c - (uchar) 'A' + (uchar) 'a';
-	if (language == LANG_RUSSIAN)
+	if (language == PUMA_LANG_RUSSIAN)
 		switch (fEdCode) {
 		case ED_ASCII: // for ASCII
 			if (c >= (uchar) '€' && c <= (uchar) '')
@@ -1172,7 +1172,7 @@ void tell_for_b3(int16_t hist_array[]) {
 
 	stable_b3 = FALSE;
 
-	if (language != LANG_RUSSIAN)
+	if (language != PUMA_LANG_RUSSIAN)
 		return;
 	if (Ns3 < 5)
 		return;

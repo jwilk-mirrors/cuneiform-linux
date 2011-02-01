@@ -603,7 +603,7 @@ static int FindBestClustersBound(int w,int h,uchar *buf,uchar *bufrazmaz,
 
   if( strchr(Palki, wel->let) ||
 	  wel->let==liga_i ||
-	  (language == LANG_TURKISH &&  // 30.05.2002 E.P.
+	  (language == PUMA_LANG_TURKISH &&  // 30.05.2002 E.P.
 		(wel->let==i_sans_accent||wel->let==II_dot_accent)
 	  ) ||
 	  wel->let==liga_exm)
@@ -1106,7 +1106,7 @@ static int FindFirstClusterPorog(int w,int h,
 
   if( strchr(Palki, wel->let) ||
 		wel->let==liga_i ||
-		  (language == LANG_TURKISH &&  // 30.05.2002 E.P.
+		  (language == PUMA_LANG_TURKISH &&  // 30.05.2002 E.P.
 			(wel->let==i_sans_accent||wel->let==II_dot_accent)
 		  ) ||
 		wel->let==liga_exm
@@ -1570,7 +1570,7 @@ uchar decode_ASCII_to_[256][4]=
 /* f*/ "\xe4","\xe4","\x20","\x20","\x20","\xf2","\x20","\xe8","\xe3","\x20","\x20","\x20","\x20","\xe0","\x95","\x20"
 };
 //////////////////
-uchar CodePages[LANG_TOTAL]={
+uchar CodePages[PUMA_LANG_TOTAL]={
 CSTR_ANSI_CHARSET            , // LANG_ENGLISH
 CSTR_ANSI_CHARSET            , // LANG_GERMAN
 CSTR_ANSI_CHARSET            , // LANG_FRENCH

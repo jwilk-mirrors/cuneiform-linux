@@ -206,7 +206,7 @@ static int16_t colcels(all_cells *CL, MN  *mn1, cell *I1,cell *I3, int16_t wd)
  f1 = fl1 = 0;
  CL->flag = 0;
  mincol = 32000; maxend = -32000;
-  pen_badust = (language == LANG_RUSSIAN )? 160:0; // Valdemar
+  pen_badust = (language == PUMA_LANG_RUSSIAN )? 160:0; // Valdemar
  //pen_badust = 0;
  CL->Nb=CL->Nd=fdust=0;
  CL->minb=CL->mind=CL->minf=32000;
@@ -282,7 +282,7 @@ static int16_t colcels(all_cells *CL, MN  *mn1, cell *I1,cell *I3, int16_t wd)
   else
   {
  dustgot:
-    if(language == LANG_RUSSIAN)
+    if(language == PUMA_LANG_RUSSIAN)
     {int16_t midbas, wrow;
     midbas = get_bsm();
     wrow = newcell->row;
@@ -354,13 +354,13 @@ static int16_t dust_is_dot(all_cells *CL, cell *C)
    {
      l = v->let;
      if ((l=='i') || (l=='j') || (l==invers_exm) || (l==invers_qm) ||
-         (language == LANG_POLISH && ( l == 'z' || l == 'Z' ) ) ||
+         (language == PUMA_LANG_POLISH && ( l == 'z' || l == 'Z' ) ) ||
 
 		 // 16.07.2001 E.P.
-         (language == LANG_LITHUANIAN && ( l == 'e' || l == 'E' ) ) ||
+         (language == PUMA_LANG_LITHUANIAN && ( l == 'e' || l == 'E' ) ) ||
 
 		 // 30.05.2002 E.P.
-         (language == LANG_TURKISH && ( l == i_sans_accent || l == 'I' ) )
+         (language == PUMA_LANG_TURKISH && ( l == i_sans_accent || l == 'I' ) )
         )
      { p=v->prob;
        if (p >= 200) goto testdot;
@@ -370,12 +370,12 @@ static int16_t dust_is_dot(all_cells *CL, cell *C)
  testdot:
    if ((l=='i') || (l=='j'))
        dot = dot_ij(C);
-   else if ( language == LANG_POLISH && ( l == 'z' || l == 'Z' ) )
+   else if ( language == PUMA_LANG_POLISH && ( l == 'z' || l == 'Z' ) )
        dot = dot_ij(C);
    // 16.07.2001 E.P.
-   else if ( language == LANG_LITHUANIAN && ( l == 'e' || l == 'E' ) )
+   else if ( language == PUMA_LANG_LITHUANIAN && ( l == 'e' || l == 'E' ) )
        dot = dot_ij(C);
-   else if ( language == LANG_TURKISH && ( l == i_sans_accent || l == 'I' ) )
+   else if ( language == PUMA_LANG_TURKISH && ( l == i_sans_accent || l == 'I' ) )
        dot = dot_ij(C);
    else
        dot = dot_inv(C);
@@ -479,7 +479,7 @@ static cell * try_glue(s_glue *GL, cell *BC)
  if (mn == NULL)
    { glsnap(db_pass,cell_f()->next,"collect extrcomp err"); return NULL; }
     // Valdemar : 03-18-96 05:07pm
-    if(language == LANG_RUSSIAN && GL->ncell > 1)
+    if(language == PUMA_LANG_RUSSIAN && GL->ncell > 1)
     {
     if(GL->celist[0]->stick_inc == NO_INCLINE &&
        (GL->celist[0]->flg&(c_f_bad+c_f_let)))
@@ -543,12 +543,12 @@ cell * finpat(cell *BC, s_glue *GL, int16_t var, uchar flag, uchar pen)
  p1 = BC->vers[0].prob;
  p1-=pen;
  snap_newcell(BC);
- if ((var & 8) && language != LANG_RUSSIAN) // Valdemar
+ if ((var & 8) && language != PUMA_LANG_RUSSIAN) // Valdemar
  {
    glsnap(db_pass,BC,"to cut accent");
 
    // В Литовском много нижних акцентов. 13.08.2001 E.P.
-   if(language==LANG_LITHUANIAN ||
+   if(language==PUMA_LANG_LITHUANIAN ||
 	   is_turkish_language(language)	// 18.06.2002 E.P.
 	 )
 	try_cut_accent(BC, &my_bases, 1);
@@ -623,7 +623,7 @@ static int16_t allow_comp(cell *B1, int16_t bnd1, int16_t bnd2, int16_t p0)
   c1 = B1->vers[0].let;
   if ((p0 > bnd2) &&
       ((c1=='i') || (c1=='j') ||
-      (language == LANG_RUSSIAN &&
+      (language == PUMA_LANG_RUSSIAN &&
 		((c1==(uchar)'©') || (c1==(uchar)'‰'))
 	  ) ||
       (c1==invers_exm) || (c1==invers_qm)))
@@ -843,7 +843,7 @@ fin:
 
   if (
        (ans < 220 ||
-        language == LANG_POLISH &&
+        language == PUMA_LANG_POLISH &&
             ( let0==z_dot_accent  &&
                     ( let1==z_right_accent || let1=='2') ||
               let1==z_dot_accent  &&
@@ -853,14 +853,14 @@ fin:
               let1==ZZ_dot_accent &&
                     ( let0==ZZ_right_accent || let0=='2')
             ) ||
-         language == LANG_CROATIAN &&
+         language == PUMA_LANG_CROATIAN &&
             ( let0==CROAT_cr  && let1==CROAT_ca  ||
               let0==CROAT_CR  && let1==CROAT_CA  ||
               let1==CROAT_cr  && let0==CROAT_ca  ||
               let1==CROAT_CR  && let0==CROAT_CA
             ) ||
 		 // 05.09.2000 E.P.
-         language == LANG_CZECH &&
+         language == PUMA_LANG_CZECH &&
             ( let0==c_right_accent  && let1==c_inv_roof  ||
               let0==CC_right_accent && let1==CC_inv_roof ||
               let1==c_right_accent  && let0==c_inv_roof  ||
@@ -872,14 +872,14 @@ fin:
               let1==EE_right_accent && let0==EE_inv_roof
             ) ||
 		 // 05.09.2000 E.P.
-         language == LANG_ROMAN &&
+         language == PUMA_LANG_ROMAN &&
             ( let0==a_semicircle    && let1==a_roof_accent||
               let0==AA_semicircle   && let1==AA_roof_accent||
               let0==a_roof_accent   && let1==a_semicircle ||
               let0==AA_roof_accent  && let1==AA_semicircle
             ) ||
 		 // 05.09.2000 E.P.
-         language == LANG_HUNGAR &&
+         language == PUMA_LANG_HUNGAR &&
             ( let0==o_2dot_accent   && let1==o_double_right||
               let0==OO_2dot_accent  && let1==OO_double_right||
               let0==o_double_right  && let1==o_2dot_accent ||
@@ -887,14 +887,14 @@ fin:
             ) ||
 
 		 // 16.07.2001 E.P.
-         language == LANG_LATVIAN &&
+         language == PUMA_LANG_LATVIAN &&
             ( let0==II_macron		&& let1=='I'			||
               let0=='I'			    && let1==II_macron		||
               let0==i_macron		&& let1==liga_i			||
               let0==liga_i			&& let1==i_macron
             ) ||
 
-         language == LANG_ESTONIAN &&
+         language == PUMA_LANG_ESTONIAN &&
             (
               let0==OO_2dot_accent  && let1==OO_tild_accent	||
               let0==OO_tild_accent  && let1==OO_2dot_accent	||
@@ -902,7 +902,7 @@ fin:
               let0==o_tild_accent  && let1==o_2dot_accent
             ) ||
 
-         language == LANG_TURKISH &&
+         language == PUMA_LANG_TURKISH &&
             (
               let0==II_dot_accent  && let1=='I'	||
               let0=='I' && let1==II_dot_accent	||
@@ -912,7 +912,7 @@ fin:
 
 		 0
        )  &&
-       (language != LANG_ENGLISH && language != LANG_RUSSIAN)
+       (language != PUMA_LANG_ENGLISH && language != PUMA_LANG_RUSSIAN)
      )
   {
     if (debug_try_cut.count)
@@ -922,7 +922,7 @@ fin:
       }
 
    // В Литовском много нижних акцентов. 13.08.2001 E.P.
-   if(language==LANG_LITHUANIAN ||
+   if(language==PUMA_LANG_LITHUANIAN ||
 	   is_turkish_language(language)	// 18.06.2002 E.P.
 	 )
     cans = try_cut_accent(B1,&my_bases,0);
@@ -1004,24 +1004,24 @@ int16_t estcomp(char user, cell *B1, SVERS *save, int16_t trs, int16_t bnd1, int
  {
  uchar let = B1->vers[0].let;
    if (
-		language!=LANG_ENGLISH &&
-		language!=LANG_CROATIAN && language!=LANG_RUSSIAN&&
+		language!=PUMA_LANG_ENGLISH &&
+		language!=PUMA_LANG_CROATIAN && language!=PUMA_LANG_RUSSIAN&&
 			memchr ("aoeu",let,4)||
-  language == LANG_RUSSIAN && memchr ("Ґ…",let,2)||
-  language == LANG_POLISH && memchr ("SCZNOsczno",let,10) ||
+  language == PUMA_LANG_RUSSIAN && memchr ("Ґ…",let,2)||
+  language == PUMA_LANG_POLISH && memchr ("SCZNOsczno",let,10) ||
 
   // 05.09.2000 E.P.
-  language==LANG_CZECH	&& memchr("AaCcDdEeIiNnOoRrSsTtUuYyZz",let,26) ||
-  language==LANG_ROMAN  && memchr("AaIi",let,4) ||
-  language==LANG_HUNGAR && memchr("AaEeIiOoUu",let,10) ||
-  language==LANG_SLOVENIAN && memchr("CcSsZz",let,6) ||
+  language==PUMA_LANG_CZECH	&& memchr("AaCcDdEeIiNnOoRrSsTtUuYyZz",let,26) ||
+  language==PUMA_LANG_ROMAN  && memchr("AaIi",let,4) ||
+  language==PUMA_LANG_HUNGAR && memchr("AaEeIiOoUu",let,10) ||
+  language==PUMA_LANG_SLOVENIAN && memchr("CcSsZz",let,6) ||
   // 09.07.2001 E.P.
-  language==LANG_LATVIAN    && memchr("AaCcEeGgIiKkLlNnSsUuZz",let,22) ||
-  language==LANG_LITHUANIAN && memchr("AaCcEeIiSsUuZz",let,14) ||
-  language==LANG_ESTONIAN   && memchr("AaOoSsUuZz",let,10) ||
+  language==PUMA_LANG_LATVIAN    && memchr("AaCcEeGgIiKkLlNnSsUuZz",let,22) ||
+  language==PUMA_LANG_LITHUANIAN && memchr("AaCcEeIiSsUuZz",let,14) ||
+  language==PUMA_LANG_ESTONIAN   && memchr("AaOoSsUuZz",let,10) ||
 
   // 21.05.2002 E.P.
-  language==LANG_TURKISH &&
+  language==PUMA_LANG_TURKISH &&
 	(memchr("AaCcIiGgOoSsUu",let,14) || let == i_sans_accent) ||
   0
   )
@@ -1081,30 +1081,30 @@ int16_t estcomp(char user, cell *B1, SVERS *save, int16_t trs, int16_t bnd1, int
    if  ((c=='h') || (c=='b'))
    { p1=(uchar)h_filt(B1,p1,GL,c);  goto deciBOX; }
       c_sacc = let_sans_acc[c];
-   if ( (language!=LANG_CROATIAN && memchr("sSaoO0QGDMNHURdxq6<>cCkwWBEA",c_sacc,28)) ||
+   if ( (language!=PUMA_LANG_CROATIAN && memchr("sSaoO0QGDMNHURdxq6<>cCkwWBEA",c_sacc,28)) ||
         !B1->accent_leader &&
 			(
-			language == LANG_CROATIAN && memchr ("scz",c_sacc,3)    ||
-			language == LANG_POLISH   && memchr ("sczno",c_sacc,5)  ||
+			language == PUMA_LANG_CROATIAN && memchr ("scz",c_sacc,3)    ||
+			language == PUMA_LANG_POLISH   && memchr ("sczno",c_sacc,5)  ||
 		   // 05.09.2000 E.P.
-		    language==LANG_CZECH	  && memchr("AaCcDdEeIiNnOoRrSsTtUuYyZz",let,26) ||
-		    language==LANG_ROMAN      && memchr("AaIi",let,4) ||
-		    language==LANG_HUNGAR     && memchr("AaEeIiOoUu",let,10) ||
-		    language==LANG_SLOVENIAN  && memchr("CcSsZz",let,6) ||
+		    language==PUMA_LANG_CZECH	  && memchr("AaCcDdEeIiNnOoRrSsTtUuYyZz",let,26) ||
+		    language==PUMA_LANG_ROMAN      && memchr("AaIi",let,4) ||
+		    language==PUMA_LANG_HUNGAR     && memchr("AaEeIiOoUu",let,10) ||
+		    language==PUMA_LANG_SLOVENIAN  && memchr("CcSsZz",let,6) ||
 
 			// 09.07.2001 E.P.
-			language==LANG_LATVIAN    && memchr("AaCcEeGgIiKkLlNnSsUuZz",let,22) ||
-			language==LANG_LITHUANIAN && memchr("AaCcEeIiSsUuZz",let,14) ||
-			language==LANG_ESTONIAN   && memchr("AaOoSsUuZz",let,10) ||
+			language==PUMA_LANG_LATVIAN    && memchr("AaCcEeGgIiKkLlNnSsUuZz",let,22) ||
+			language==PUMA_LANG_LITHUANIAN && memchr("AaCcEeIiSsUuZz",let,14) ||
+			language==PUMA_LANG_ESTONIAN   && memchr("AaOoSsUuZz",let,10) ||
 
 		    // 21.05.2002 E.P.
-		    language==LANG_TURKISH &&
+		    language==PUMA_LANG_TURKISH &&
 				(memchr("AaCcIiGgOoSsUu",let,14) ||
 				let == i_sans_accent
 				) ||
 			0
 			) ||
-        ( c_sacc == ss_deaf_sound && language != LANG_RUSSIAN) ) // Vademar 2.2.93
+        ( c_sacc == ss_deaf_sound && language != PUMA_LANG_RUSSIAN) ) // Vademar 2.2.93
     {
     p1=(uchar)abris(GL,B1,c_sacc,p1);
     goto deciBOX;
@@ -1115,9 +1115,9 @@ int16_t estcomp(char user, cell *B1, SVERS *save, int16_t trs, int16_t bnd1, int
 		!is_russian_turkish_conflict(c)		// 21.05.2002 E.P.
 
 	   ||   // 07.01.1993 (see S_TOOLS.C)
-      ( language == LANG_CROATIAN && (c==CROAT_d||c=='d') )  ||
-      ( language == LANG_POLISH   && (c== POLISH_l || c=='l') )  ||
-      ( language != LANG_RUSSIAN  &&
+      ( language == PUMA_LANG_CROATIAN && (c==CROAT_d||c=='d') )  ||
+      ( language == PUMA_LANG_POLISH   && (c== POLISH_l || c=='l') )  ||
+      ( language != PUMA_LANG_RUSSIAN  &&
 		   (c==liga_i ||  c==liga_j  ||
 
 		// Конфликтные коды 07.09.2000 E.P.
@@ -1136,8 +1136,8 @@ int16_t estcomp(char user, cell *B1, SVERS *save, int16_t trs, int16_t bnd1, int
 	  ) ||
 
 		// 05.09.2000 E.P.
-		language==LANG_CZECH && (c==d_inv_roof || c==t_inv_roof) ||
-		language==LANG_ROMAN && c==t_bottom_accent ||
+		language==PUMA_LANG_CZECH && (c==d_inv_roof || c==t_inv_roof) ||
+		language==PUMA_LANG_ROMAN && c==t_bottom_accent ||
 
 		is_baltic_palka(c) ||	// Балтийские палки. 10.07.2001 E.P.
 		is_turkish_palka(c)		// Турецкие палки. 21.05.2002 E.P.
@@ -1206,7 +1206,7 @@ int16_t estcomp(char user, cell *B1, SVERS *save, int16_t trs, int16_t bnd1, int
       goto estiBOX;    // cutten version - estimate by BOX
    }
 	 if (memchr("1lI()[]{}!",c,10) || c==liga_i ||
-		   language==LANG_TURKISH &&  // 30.05.2002 E.P.
+		   language==PUMA_LANG_TURKISH &&  // 30.05.2002 E.P.
 			(c==i_sans_accent||c==II_dot_accent)
 			||
 		 c==liga_exm
@@ -1864,7 +1864,7 @@ repeat_with_doubles:
 
      p1=estcomp('a',T1,&sv1,TRS2,0,0,&GL,&cposd,&cpos1,n1,0,cpnt1->var);
 
-	 if( language == LANG_TURKISH )  // Nick 12.06.02
+	 if( language == PUMA_LANG_TURKISH )  // Nick 12.06.02
 	 {
 		 // не отрезать палки у хороших символов !
 		 if( //( B1->nvers > 0 && B1->vers[0].prob > TUR_PALKA_POROG ||
@@ -1980,7 +1980,7 @@ estim_right:
 
      p3=estcomp('a',T3,&sv3,TRS2,0,0,&GL,&cpos1,&cposd,0,n1,cpnt1->var);
 
-	 if( language == LANG_TURKISH )  // Nick 12.06.02
+	 if( language == PUMA_LANG_TURKISH )  // Nick 12.06.02
 	 {
 		 // не отрезать палки у хороших!
 		 if( //( B1->nvers > 0 && B1->vers[0].prob > TUR_PALKA_POROG ||
@@ -2120,7 +2120,7 @@ acc2d:
 
      p2=estcomp('a',T2,&sv2,TRS2,0,0,&GL,&cpos2,&cpos1,n1,n2,cpnt2->var);
 
-	 if( language == LANG_TURKISH )  // Nick 12.06.02
+	 if( language == PUMA_LANG_TURKISH )  // Nick 12.06.02
 	 {
 		 // не отрезать палки без точек у хороших!
 		 if( cpnt1->versm.nvers > 0 && cpnt1->versm.vers[0].prob > TUR_PALKA_POROG &&
@@ -2580,7 +2580,7 @@ static int16_t forbid_stick_cut(cell *c, cut_pos *cpos, int16_t edge)
   // is it a stick ?
   if ((l!='i') && (l!='l') && (l!='1') && (l!='I') &&
 	  (l!=liga_i) &&
-	   !(language==LANG_TURKISH &&  // 30.05.2002 E.P.
+	   !(language==PUMA_LANG_TURKISH &&  // 30.05.2002 E.P.
 			(l==i_sans_accent||l==II_dot_accent)
 		)
 	 ) return 0;
@@ -2711,7 +2711,7 @@ static void corr_cut()
      // try to recover "stick_to_something" producing 'k', 'd', 'b'
      if (memchr("lI1/J)!",c2,7) ||         // stick character ?
 		c2==liga_i ||
-		   language==LANG_TURKISH &&  // 30.05.2002 E.P.
+		   language==PUMA_LANG_TURKISH &&  // 30.05.2002 E.P.
 			(c2==i_sans_accent||c2==II_dot_accent) ||
 		c2==liga_exm
 		)

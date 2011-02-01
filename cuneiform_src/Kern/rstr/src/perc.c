@@ -225,12 +225,12 @@ perc_struct glstr;
     if (!gpt->BC) break;
     if (!gpt->BC->next) break;   /* dummy cell at end reached  */
 
-    if( language==LANG_CROATIAN )
+    if( language==PUMA_LANG_CROATIAN )
       continue;
 
 	// ќтключаю так как код PRO_NUMBER=0xc3 конфликтует
 	// с румынской буквой AA_semicircle. 31.05.2001 E.P.
-    if( language==LANG_ROMAN)
+    if( language==PUMA_LANG_ROMAN)
       continue;
 
     if  ((gpt->rcps=search_perc_vers()) != (uchar)PRO_NUMBER &&    /* find the proNumber version */
@@ -411,7 +411,7 @@ static int16_t search_perc_vers()
 
 int16_t i,rc;
 uchar l=gpt->BC->vers[0].let;
- if (language==LANG_RUSSIAN)
+ if (language==PUMA_LANG_RUSSIAN)
    if (l==(uchar)'Ђ' || l==(uchar)'Л')  return PRO_NUM_PART;
 
  for (i=0,rc=0; i<=gpt->BC->nvers; i++)
@@ -678,7 +678,7 @@ uchar saveV[VERS_IN_CELL*sizeof(version)];
     if (
 	(pc->vers[wi].let == 'O') ||
     (pc->vers[wi].let == 'o') ||
-        (language==LANG_RUSSIAN && ((pc->vers[wi].let == (uchar)'О')  ||
+        (language==PUMA_LANG_RUSSIAN && ((pc->vers[wi].let == (uchar)'О')  ||
                                     (pc->vers[wi].let == (uchar)'Ѓ')))||
   (pc->vers[wi].let == '0')
        )

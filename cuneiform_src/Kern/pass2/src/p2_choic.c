@@ -185,7 +185,7 @@ static uchar * leo_strchr_codes_ansi(uchar *c1, uchar c2) {
 ////////////////////
 static Bool32 leo_near_letters(RecVersions *fon, uchar leo_code) {
 	// Nick 19.06.2001
-	if (p2globals.language != LANG_RUSSIAN && p2globals.language != LANG_RUSENG)
+	if (p2globals.language != PUMA_LANG_RUSSIAN && p2globals.language != PUMA_LANG_RUSENG)
 		return FALSE;
 
 	if (fon->lnAltCnt < 2)
@@ -269,7 +269,7 @@ static void leo_compress(RecVersions *v) {
 }
 ////////////////////////////
 static Bool32 IsSpecialTwins(uchar name1, uchar name2) {
-	if (p2globals.language == LANG_RUSSIAN && p2globals.langSer) {
+	if (p2globals.language == PUMA_LANG_RUSSIAN && p2globals.langSer) {
 		// serbian 'J','j' (0xA3,0xBC in code page 1251)
 		if (name1 == 0xD6 && name2 == 0xD9 || name2 == 0xD6 && name1 == 0xD9)
 			return TRUE;
@@ -661,7 +661,7 @@ static Bool32 IsInPalki(uchar cc) // 15.09.2000
 {
 	uchar language = p2globals.language;
 
-	if (strchr(Palki, cc) || cc == liga_i || (language == LANG_TURKISH && // 30.05.2002 E.P.
+	if (strchr(Palki, cc) || cc == liga_i || (language == PUMA_LANG_TURKISH && // 30.05.2002 E.P.
 			(cc == i_sans_accent || cc == II_dot_accent)))
 		return TRUE;
 
@@ -709,58 +709,58 @@ static int StayOldPalki(RecVersions *oldVer, RecVersions *newVer,
 ////////////
 static Bool32 SpecificPalka(uchar Code) {
 	switch (p2globals.language) {
-	case LANG_ENGLISH:
+	case PUMA_LANG_ENGLISH:
 		return FALSE;
-	case LANG_RUSSIAN:
+	case PUMA_LANG_RUSSIAN:
 		if (p2globals.langUkr && (Code == 0xAF || Code == 0xBF || Code == 0xB2
 				|| Code == 0xB3))
 			return TRUE;
 		return FALSE;
-	case LANG_GERMAN:
-	case LANG_FRENCH:
-	case LANG_SPANISH:
-	case LANG_ITALIAN:
-	case LANG_PORTUGUESE:
+	case PUMA_LANG_GERMAN:
+	case PUMA_LANG_FRENCH:
+	case PUMA_LANG_SPANISH:
+	case PUMA_LANG_ITALIAN:
+	case PUMA_LANG_PORTUGUESE:
 		if (Code >= 0xCC && Code < 0xD0 || Code >= 0xEC && Code < 0xF0)
 			return TRUE;
 		return FALSE;
-	case LANG_POLISH:
+	case PUMA_LANG_POLISH:
 		if (Code == POLISH_l) // as l
 			return TRUE;
 		return FALSE;
-	case LANG_CZECH:
+	case PUMA_LANG_CZECH:
 		if (Code == II_right_accent || Code == i_right_accent || Code
 				== t_inv_roof)
 			return TRUE;
 		return FALSE;
-	case LANG_HUNGAR:
+	case PUMA_LANG_HUNGAR:
 		if (Code == II_right_accent || Code == i_right_accent)
 			return TRUE;
 		return FALSE;
-	case LANG_ROMAN:
+	case PUMA_LANG_ROMAN:
 		if (Code == i_roof_accent || Code == II_roof_accent || Code
 				== t_bottom_accent)
 			return TRUE;
 		return FALSE;
-	case LANG_DUTCH:
-	case LANG_DANISH:
-	case LANG_CROATIAN:
-	case LANG_SWEDISH:
+	case PUMA_LANG_DUTCH:
+	case PUMA_LANG_DANISH:
+	case PUMA_LANG_CROATIAN:
+	case PUMA_LANG_SWEDISH:
 		return FALSE;
 
 		// Балтийские палки. 10.07.2001 E.P.
-	case LANG_LATVIAN:
+	case PUMA_LANG_LATVIAN:
 		if (Code == II_macron || Code == i_macron || Code == LL_bottom_accent
 				|| Code == l_bottom_accent)
 			return TRUE;
 		return FALSE;
 
-	case LANG_LITHUANIAN:
+	case PUMA_LANG_LITHUANIAN:
 		if (Code == II_bottom_accent || Code == i_bottom_accent)
 			return TRUE;
 		return FALSE;
 
-	case LANG_TURKISH: // Турецкие палки 31.05.2002 E.P.
+	case PUMA_LANG_TURKISH: // Турецкие палки 31.05.2002 E.P.
 		if (Code == II_roof_accent || Code == i_roof_accent || Code
 				== II_dot_accent || Code == i_sans_accent)
 			return TRUE;
@@ -809,7 +809,7 @@ Bool32 TestPalka(CSTR_rast leoStart, CSTR_rast leoEnd, CSTR_rast fonStart,
 	if (IsInPalki(vrLeo.Alt[0].Code))
 		return 0;
 
-	if (p2globals.language == LANG_ESTONIAN) {
+	if (p2globals.language == PUMA_LANG_ESTONIAN) {
 		FontInfo fontinfo;
 		FONFontInfo(&fontinfo);
 
@@ -1102,7 +1102,7 @@ int p2_selectRusEng(CSTR_rast rusStart, CSTR_rast rusEnd, CSTR_rast engStart,
 				int porog;
 				char *qq;
 
-				if (attrEng.language == LANG_ENGLISH) {
+				if (attrEng.language == PUMA_LANG_ENGLISH) {
 					if (MAX(isMultiRus, isMultiEng) <= 1 && (qq = strchr(
 							sameEngRus, vrEng.Alt[0].Code)) != NULL
 							&& (char) vrRus.Alt[0].Code == sameRusEng[qq
@@ -1259,7 +1259,7 @@ int p2_selectRusEng(CSTR_rast rusStart, CSTR_rast rusEnd, CSTR_rast engStart,
 }
 //////////////////////
 static Bool32 TestDobavki(uchar oldName, uchar newName) {
-	if (p2globals.language == LANG_FRENCH) {
+	if (p2globals.language == PUMA_LANG_FRENCH) {
 		if (oldName == 0xf9 && newName == 'u')
 			return TRUE;
 	}

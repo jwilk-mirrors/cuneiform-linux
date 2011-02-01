@@ -130,7 +130,7 @@ int16_t  isKlasterFull( int16_t typl )
 
 static void store_many(uint16_t ibcos, char let, char ff, int16_t typl)
 {
-     if(language==LANG_RUSSIAN) return;
+     if(language==PUMA_LANG_RUSSIAN) return;
   switch (let)
    {
     case 'x': case 'c': case 'v':
@@ -225,7 +225,7 @@ static int16_t letagain(char curleta,int16_t fl)
    fl2 = fl*2;
    fl4 = fl*4;
    wiptr=NULL;
-   if(language==LANG_RUSSIAN) return 0;
+   if(language==PUMA_LANG_RUSSIAN) return 0;
    switch (curleta)
     {
      case 'c':
@@ -675,14 +675,14 @@ second:
   if (typl & 256)
    { if ( memchr("1Iil",ocurlet,4) ||
 			ocurlet==liga_i ||
-			language == LANG_TURKISH &&  // 30.05.2002 E.P.
+			language == PUMA_LANG_TURKISH &&  // 30.05.2002 E.P.
 				(ocurlet==i_sans_accent||ocurlet==II_dot_accent)
 
 		) continue;}
   else
    { if (!memchr("1Iil",ocurlet,4) &&
 		ocurlet!=liga_i &&
-		!(language == LANG_TURKISH &&  // 30.05.2002 E.P.
+		!(language == PUMA_LANG_TURKISH &&  // 30.05.2002 E.P.
 			(ocurlet==i_sans_accent||ocurlet==II_dot_accent)
 		 )
 		) continue;}

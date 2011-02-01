@@ -523,7 +523,7 @@ switch( (uchar)let )
   case (uchar)'ќ' :  case (uchar)'н' :
 
 	   // В болгарском нет Ээ. 08.09.2000 E.P.
-	   if (language==LANG_RUSSIAN && langBul)
+	   if (language==PUMA_LANG_RUSSIAN && langBul)
 			{P=200;break;}
 
 		if( diskr_ee<0 )

@@ -57,69 +57,38 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #ifndef _LANGDEF_INCLUDED_
 #define _LANGDEF_INCLUDED_
 
-#if defined (__NT__) || defined (_WINNT_) || defined(__MINGW32__) // 06.09.00 E.P.
-  #undef LANG_ENGLISH
-  #undef LANG_GERMAN
-  #undef LANG_FRENCH
-  #undef LANG_RUSSIAN
-  #undef LANG_SWEDISH
-  #undef LANG_SPANISH
-  #undef LANG_ITALIAN
-  #undef LANG_UKRAINIAN
-  #undef LANG_TOTAL
-  #undef LANG_SERBIAN
-  #undef LANG_CROATIAN
-  #undef LANG_DANISH
-  #undef LANG_PORTUGUESE
-  #undef LANG_DUTCH
-  #undef LANG_TOTAL
-  #undef LANG_POLISH
-  #undef LANG_UZBEK
-  #undef LANG_KAZ
-  #undef LANG_KAZ_ENG
-  #undef LANG_CZECH
-  #undef LANG_ROMAN
-  #undef LANG_HUNGAR
-  #undef LANG_BULGAR
-  #undef LANG_SLOVENIAN
-  #undef LANG_LATVIAN
-  #undef LANG_LITHUANIAN
-  #undef LANG_ESTONIAN
-  #undef LANG_TURKISH
-#endif
-
 enum Puma_Languages {
-    LANG_ENGLISH    = 0,
-    LANG_GERMAN     = 1,
-    LANG_FRENCH     = 2,
-    LANG_RUSSIAN    = 3,
-    LANG_SWEDISH    = 4,
-    LANG_SPANISH    = 5,
-    LANG_ITALIAN    = 6,
-    LANG_RUSENG     = 7,
-    LANG_UKRAINIAN  = 8,
-    LANG_SERBIAN    = 9,
-    LANG_CROATIAN   = 10,
-    LANG_POLISH     = 11,
-    LANG_DANISH     = 12,
-    LANG_PORTUGUESE = 13,
-    LANG_DUTCH      = 14,
-    LANG_DIG        = 15,
-    LANG_UZBEK      = 16,
-    LANG_KAZ        = 17,
-    LANG_KAZ_ENG    = 18,
-    LANG_CZECH      = 19,
-    LANG_ROMAN      = 20,
-    LANG_HUNGAR     = 21,
-    LANG_BULGAR     = 22,
-    LANG_SLOVENIAN  = 23,
-    LANG_LATVIAN    = 24,
-    LANG_LITHUANIAN = 25,
-    LANG_ESTONIAN   = 26,
-    LANG_TURKISH    = 27,
-    LANG_TOTAL      = 28,
-    LG_LAT          =  1,
-    LG_CYR          =  2,
+    PUMA_LANG_ENGLISH    = 0,
+    PUMA_LANG_GERMAN     = 1,
+    PUMA_LANG_FRENCH     = 2,
+    PUMA_LANG_RUSSIAN    = 3,
+    PUMA_LANG_SWEDISH    = 4,
+    PUMA_LANG_SPANISH    = 5,
+    PUMA_LANG_ITALIAN    = 6,
+    PUMA_LANG_RUSENG     = 7,
+    PUMA_LANG_UKRAINIAN  = 8,
+    PUMA_LANG_SERBIAN    = 9,
+    PUMA_LANG_CROATIAN   = 10,
+    PUMA_LANG_POLISH     = 11,
+    PUMA_LANG_DANISH     = 12,
+    PUMA_LANG_PORTUGUESE = 13,
+    PUMA_LANG_DUTCH      = 14,
+    PUMA_LANG_DIG        = 15,
+    PUMA_LANG_UZBEK      = 16,
+    PUMA_LANG_KAZ        = 17,
+    PUMA_LANG_KAZ_ENG    = 18,
+    PUMA_LANG_CZECH      = 19,
+    PUMA_LANG_ROMAN      = 20,
+    PUMA_LANG_HUNGAR     = 21,
+    PUMA_LANG_BULGAR     = 22,
+    PUMA_LANG_SLOVENIAN  = 23,
+    PUMA_LANG_LATVIAN    = 24,
+    PUMA_LANG_LITHUANIAN = 25,
+    PUMA_LANG_ESTONIAN   = 26,
+    PUMA_LANG_TURKISH    = 27,
+    PUMA_LANG_TOTAL      = 28,
+    PUMA_LG_LAT          =  1,
+    PUMA_LG_CYR          =  2,
 };
 
 #endif

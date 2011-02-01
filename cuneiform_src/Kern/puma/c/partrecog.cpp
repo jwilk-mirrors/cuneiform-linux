@@ -451,7 +451,7 @@ double portion_of_rus_letters(CSTR_line lin_ruseng)
         CSTR_GetCollectionUni(rast,&uv);
         if( attr.flg&(CSTR_f_let) )
         {
-            if( attr.language==LANG_RUSSIAN && uv.lnAltCnt && uv.Alt[0].Prob>100 &&
+            if( attr.language==PUMA_LANG_RUSSIAN && uv.lnAltCnt && uv.Alt[0].Prob>100 &&
                 !strchr("0123456789/%",uv.Alt[0].Code[0]) )
                 nRus++;
             nAll++;
@@ -638,7 +638,7 @@ Bool32 Recognize()
                         ///////////////////////////////
                         // OLEG : 01-05-18 : for GiP //
                         ///////////////////////////////
-                        if(SPEC_PRJ_GIP==gnSpecialProject&&gnLanguage==LANG_RUSENG)
+                        if(SPEC_PRJ_GIP==gnSpecialProject&&gnLanguage==PUMA_LANG_RUSENG)
                         {
                             int         i,j,n;
                             double      s;
@@ -664,7 +664,7 @@ Bool32 Recognize()
                                             CSTR_DeleteLine(lin_ruseng);
                                     }
                                 }
-                                gnLanguage = LANG_ENGLISH;
+                                gnLanguage = PUMA_LANG_ENGLISH;
                                 rc = RecognizeSetup(gnLanguage );
                                 PRGTIME prev = StorePRGTIME(10, 60);
                                 rc = RecognizeStringsPass1();

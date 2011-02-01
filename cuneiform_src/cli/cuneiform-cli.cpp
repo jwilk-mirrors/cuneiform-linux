@@ -79,34 +79,34 @@ struct langlist {
 /* Language codes according to ISO 639-2.
  */
 static const langlist langs[] = {
-        {LANG_ENGLISH,   "eng"},
-        {LANG_GERMAN,    "ger"},
-        {LANG_FRENCH,    "fra"},
-        {LANG_RUSSIAN,   "rus"},
-        {LANG_SWEDISH,   "swe"},
-        {LANG_SPANISH,   "spa"},
-        {LANG_ITALIAN,   "ita"},
-        {LANG_RUSENG,    "ruseng"},
-        {LANG_UKRAINIAN, "ukr"},
-        {LANG_SERBIAN,   "srp"},
-        {LANG_CROATIAN,  "hrv"},
-        {LANG_POLISH,    "pol"},
-        {LANG_DANISH,    "dan"},
-        {LANG_PORTUGUESE,"por"},
-        {LANG_DUTCH,     "dut"},
+        {PUMA_LANG_ENGLISH,   "eng"},
+        {PUMA_LANG_GERMAN,    "ger"},
+        {PUMA_LANG_FRENCH,    "fra"},
+        {PUMA_LANG_RUSSIAN,   "rus"},
+        {PUMA_LANG_SWEDISH,   "swe"},
+        {PUMA_LANG_SPANISH,   "spa"},
+        {PUMA_LANG_ITALIAN,   "ita"},
+        {PUMA_LANG_RUSENG,    "ruseng"},
+        {PUMA_LANG_UKRAINIAN, "ukr"},
+        {PUMA_LANG_SERBIAN,   "srp"},
+        {PUMA_LANG_CROATIAN,  "hrv"},
+        {PUMA_LANG_POLISH,    "pol"},
+        {PUMA_LANG_DANISH,    "dan"},
+        {PUMA_LANG_PORTUGUESE,"por"},
+        {PUMA_LANG_DUTCH,     "dut"},
 //        {LANG_DIG,       "dig"}, // This probably means "recognize digits only".
 //        {LANG_UZBEK,     "uzb"}, // These don't seem to have data files. Thus they are disabled.
 //        {LANG_KAZ,       "kaz"},
 //        {LANG_KAZ_ENG,   "kazeng"},
-        {LANG_CZECH,     "cze"},
-        {LANG_ROMAN,     "rum"},
-        {LANG_HUNGAR,    "hun"},
-        {LANG_BULGAR,    "bul"},
-        {LANG_SLOVENIAN, "slv"},
-        {LANG_LATVIAN,   "lav"},
-        {LANG_LITHUANIAN,"lit"},
-        {LANG_ESTONIAN,  "est"},
-        {LANG_TURKISH,   "tur"},
+        {PUMA_LANG_CZECH,     "cze"},
+        {PUMA_LANG_ROMAN,     "rum"},
+        {PUMA_LANG_HUNGAR,    "hun"},
+        {PUMA_LANG_BULGAR,    "bul"},
+        {PUMA_LANG_SLOVENIAN, "slv"},
+        {PUMA_LANG_LATVIAN,   "lav"},
+        {PUMA_LANG_LITHUANIAN,"lit"},
+        {PUMA_LANG_ESTONIAN,  "est"},
+        {PUMA_LANG_TURKISH,   "tur"},
         {-1, NULL}
 };
 
@@ -234,7 +234,7 @@ static char* read_file(const char *fname) {
 int main(int argc, char **argv) {
     char *dib;
     const char *infilename = NULL;
-    int langcode = LANG_ENGLISH;
+    int langcode = PUMA_LANG_ENGLISH;
     // By default recognize plain english text
     Bool32 dotmatrix = FALSE;
     Bool32 fax = FALSE;

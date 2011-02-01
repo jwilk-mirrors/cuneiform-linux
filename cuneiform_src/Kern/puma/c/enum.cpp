@@ -188,34 +188,34 @@ long	_EnumCodes(long f,long prev)
 }
 
 static long enumLanguage[] = {
-    LANG_ENGLISH   ,	// 0
-    LANG_GERMAN    ,	// 1
-    LANG_FRENCH    ,	// 2
-    LANG_RUSSIAN   ,	// 3
-    LANG_SWEDISH   ,	// 4
-    LANG_SPANISH   ,	// 5
-    LANG_ITALIAN   ,	// 6
-    LANG_RUSENG    ,	// 7
-    LANG_UKRAINIAN ,	// 8
-    LANG_SERBIAN   ,	// 9
-    LANG_CROATIAN  ,	// 10
-    LANG_POLISH    ,	// 11
-    LANG_DANISH    ,	// 12
-    LANG_PORTUGUESE,	// 13
-    LANG_DUTCH     ,	// 14
-    LANG_DIG       ,	// 15
-    LANG_UZBEK     ,	// 16
-    LANG_KAZ       ,	// 17
-    LANG_KAZ_ENG   ,	// 18
-    LANG_CZECH	    ,	// 19 01.09.2000 E.P.
-    LANG_ROMAN     ,   // 20
-    LANG_HUNGAR    ,   // 21
-    LANG_BULGAR    ,   // 22
-    LANG_SLOVENIAN ,	// 23 25.05.2001 E.P.
-    LANG_LATVIAN   ,	// 24 16.07.2001 E.P.
-    LANG_LITHUANIAN,	// 25
-    LANG_ESTONIAN  ,	// 26
-    LANG_TURKISH   ,	// 27
+    PUMA_LANG_ENGLISH   ,	// 0
+    PUMA_LANG_GERMAN    ,	// 1
+    PUMA_LANG_FRENCH    ,	// 2
+    PUMA_LANG_RUSSIAN   ,	// 3
+    PUMA_LANG_SWEDISH   ,	// 4
+    PUMA_LANG_SPANISH   ,	// 5
+    PUMA_LANG_ITALIAN   ,	// 6
+    PUMA_LANG_RUSENG    ,	// 7
+    PUMA_LANG_UKRAINIAN ,	// 8
+    PUMA_LANG_SERBIAN   ,	// 9
+    PUMA_LANG_CROATIAN  ,	// 10
+    PUMA_LANG_POLISH    ,	// 11
+    PUMA_LANG_DANISH    ,	// 12
+    PUMA_LANG_PORTUGUESE,	// 13
+    PUMA_LANG_DUTCH     ,	// 14
+    PUMA_LANG_DIG       ,	// 15
+    PUMA_LANG_UZBEK     ,	// 16
+    PUMA_LANG_KAZ       ,	// 17
+    PUMA_LANG_KAZ_ENG   ,	// 18
+    PUMA_LANG_CZECH	    ,	// 19 01.09.2000 E.P.
+    PUMA_LANG_ROMAN     ,   // 20
+    PUMA_LANG_HUNGAR    ,   // 21
+    PUMA_LANG_BULGAR    ,   // 22
+    PUMA_LANG_SLOVENIAN ,	// 23 25.05.2001 E.P.
+    PUMA_LANG_LATVIAN   ,	// 24 16.07.2001 E.P.
+    PUMA_LANG_LITHUANIAN,	// 25
+    PUMA_LANG_ESTONIAN  ,	// 26
+    PUMA_LANG_TURKISH   ,	// 27
     -1
 };
 

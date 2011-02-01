@@ -127,7 +127,7 @@ for (s=0,c1=c=cell_f()->next; c->next!=NULL; c=c->next)
     if (!(c->cg_flag&c_cg_cutr) &&
         !badcell(c) && (!near_garb(c) || (++s)>GARBLETMAX)
       || c->cg_flag&c_cg_cutr && !badglue(&c,1)
-      || ( c->flg&c_f_let &&language==LANG_RUSSIAN)) // Piter
+      || ( c->flg&c_f_let &&language==PUMA_LANG_RUSSIAN)) // Piter
         break;
     if (c->next->flg&c_f_fict)
         return 0;
@@ -137,7 +137,7 @@ for (s=0,c1=c=cell_f()->next; c->next!=NULL; c=c->next)
     get_b_lines(c->next,&bl);
     if (abs(b3-bl.b3)>=DEFBASE ||
       c->next->col-(c->col+c->w)>=
-		      ((language==LANG_FRENCH)?bl.ps+ps:3*(bl.ps+ps)/4))
+		      ((language==PUMA_LANG_FRENCH)?bl.ps+ps:3*(bl.ps+ps)/4))
     c1=c->next;
     }
 
@@ -145,7 +145,7 @@ for (c=cell_f()->next; c!=c1; c=c2)
     {
     c2=c->next;
     get_b_lines(c,&bl);
-    if(!(language==LANG_RUSSIAN && c->w>bl.ps/2 && c->w>c->h*5))
+    if(!(language==PUMA_LANG_RUSSIAN && c->w>bl.ps/2 && c->w>c->h*5))
         {
         if( line_handfragment )
             set_bad_cell(c);
@@ -159,7 +159,7 @@ for (s=0,c1=c=cell_l()->prev; c->prev!=NULL; c=c->prev)
     if (!(c->cg_flag&c_cg_cutl) &&
         !badcell(c) && (!near_garb(c) || (++s)>GARBLETMAX) ||
          c->cg_flag&c_cg_cutl && !badglue(&c,-1) ||
-        (c->flg&c_f_let && language==LANG_RUSSIAN)) // Pit
+        (c->flg&c_f_let && language==PUMA_LANG_RUSSIAN)) // Pit
         break;
     if (c->prev->flg&c_f_fict)
         return 0;
@@ -176,7 +176,7 @@ for (s=0,c1=c=cell_l()->prev; c->prev!=NULL; c=c->prev)
             max=c2->col+c2->w;
         }
     if (abs(b3-bl.b3)>=DEFBASE ||
-      c->col-max>=((language==LANG_FRENCH)?bl.ps+ps:3*(bl.ps+ps)/4))
+      c->col-max>=((language==PUMA_LANG_FRENCH)?bl.ps+ps:3*(bl.ps+ps)/4))
         c1=c->prev;
     }
 
@@ -211,7 +211,7 @@ static Bool badcell(cell *c)
      (prob=c->vers[0].prob)<PRBAD ||
      (strchr("fijlrtIL1/()",(let=c->vers[0].let)) ||
 		let==liga_i ||
-		 language == LANG_TURKISH &&  // 30.05.2002 E.P.
+		 language == PUMA_LANG_TURKISH &&  // 30.05.2002 E.P.
 			(let==i_sans_accent||let==II_dot_accent)
 	 ) &&
 							 prob<PRSTBAD ||
@@ -249,7 +249,7 @@ static Bool badglue(cell **pc,int16_t direct)
    {
    if (strchr("fijlrtIL1/()",(let=c->vers[0].let)) ||
 	   let==liga_i ||
-		 language == LANG_TURKISH &&  // 30.05.2002 E.P.
+		 language == PUMA_LANG_TURKISH &&  // 30.05.2002 E.P.
 			(let==i_sans_accent||let==II_dot_accent)
 	  )
     s+=c->vers[0].prob-DELST;

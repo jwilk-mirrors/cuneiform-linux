@@ -202,7 +202,7 @@ if( c->pos_inc==erect_no )
  bad_cur_ge = (c->vers[0].let==r_cu_z &&
     (c->recsource==c_rs_ev || c->recsource==(c_rs_ev|c_rs_deskr)) &&
     c->vers[0].prob==254);
- if(language==LANG_RUSSIAN &&
+ if(language==PUMA_LANG_RUSSIAN &&
     (memchr(solid_italic,c->vers[0].let,sizeof(solid_italic))||
     p2_active&&sv_save_stick_inc>250&&sv_save_stick_inc!=NO_INCLINE)&&
       !bad_cur_ge )
@@ -216,7 +216,7 @@ if( c->pos_inc==erect_no )
 
  if( c->save_stick_inc != NO_INCLINE &&
      !memchr("$&#257/",c->vers[0].let,7) &&
-      !(language==LANG_RUSSIAN && c->vers[0].let==r_cu_z) ){
+      !(language==PUMA_LANG_RUSSIAN && c->vers[0].let==r_cu_z) ){
     if( c->save_stick_inc > 250 /*&& !disable_it */)
     {
     if( !disable_it )
@@ -247,7 +247,7 @@ if( c->pos_inc==erect_no )
 //	  let>=ligas_beg && let<=ligas_end ||
 	  is_liga(let) ||  // 14.09.2000 E.P.
       memchr("$&#257/",let,7) ||
-      language==LANG_RUSSIAN && let==r_cu_z )
+      language==PUMA_LANG_RUSSIAN && let==r_cu_z )
   if( !memchr("╚▀",let,2) )
    {
       c->stick_inc |= 0x1000;
@@ -257,7 +257,7 @@ if( c->pos_inc==erect_no )
       c->font^=c_fp_it;
 
   if (let=='I' || let=='i' || let==liga_i ||
-	 language == LANG_TURKISH &&  // 30.05.2002 E.P.
+	 language == PUMA_LANG_TURKISH &&  // 30.05.2002 E.P.
 		(let==i_sans_accent||let==II_dot_accent)
 	 )
    let='l';
@@ -273,7 +273,7 @@ if( c->pos_inc==erect_no )
    prob[nansw]=(*scalarf)(elm->vect,s->matrBOX.vect,s->matrBOX.isq_rt);
    nansw++;
    }
-   if(language==LANG_RUSSIAN) twins=twinsr;
+   if(language==PUMA_LANG_RUSSIAN) twins=twinsr;
         else    twins=twinsl;
   for (l=strlen(twins),i=0; i<l; i++)
    if (let==twins[i])
@@ -295,8 +295,8 @@ if( c->pos_inc==erect_no )
    }
   for (maxi=maxni=i=0; i<nansw; i++)
     {
-    if ( language == LANG_RUSSIAN && (font[i] & c_fp_it) ||
-        language != LANG_RUSSIAN && (font[i]==f_italic || font[i]>=f_italic_add && font[i]<=f_italic_lst)
+    if ( language == PUMA_LANG_RUSSIAN && (font[i] & c_fp_it) ||
+        language != PUMA_LANG_RUSSIAN && (font[i]==f_italic || font[i]>=f_italic_add && font[i]<=f_italic_lst)
       )
         {
         if (maxi<prob[i])
@@ -567,7 +567,7 @@ static int16_t pitch()
 	  is_liga(let) &&  // 14.09.2000 E.P.
 
        let!=liga_i &&
-		!(language == LANG_TURKISH &&  // 30.05.2002 E.P.
+		!(language == PUMA_LANG_TURKISH &&  // 30.05.2002 E.P.
 			(let==i_sans_accent||let==II_dot_accent)
 		 ) &&
 	   let!=liga_j && let!=liga_exm && let!=liga_qm
@@ -582,7 +582,7 @@ static int16_t pitch()
 	  (!is_liga(let) ||  // 14.09.2000 E.P.
 
        let==liga_i ||
-		 language == LANG_TURKISH &&  // 30.05.2002 E.P.
+		 language == PUMA_LANG_TURKISH &&  // 30.05.2002 E.P.
 			(let==i_sans_accent||let==II_dot_accent) ||
 	   let==liga_j || let==liga_exm || let==liga_qm) &&
       (nl<NLETOK && c->flg&c_f_punct || c->flg&(c_f_let|c_f_bad)) &&
@@ -596,7 +596,7 @@ static int16_t pitch()
     center[n]+=c->w/3;
    if ((let=='i' && 5*c->w>2*c->h ||
 		(let==liga_i ||
-		 language == LANG_TURKISH &&  // 30.05.2002 E.P.
+		 language == PUMA_LANG_TURKISH &&  // 30.05.2002 E.P.
 			(let==i_sans_accent||let==II_dot_accent)
 		)&& 4*c->w>c->h) &&
        !(c->font&c_fp_it) && c->font&c_fp_gelv)
@@ -1640,7 +1640,7 @@ static int16_t dens_let(cell *c)
  if (strchr("*#!ijltI1()[]{}",let)!=NULL ||
      let==liga_bull ||
 	 let==liga_i ||
-	 language == LANG_TURKISH &&  // 30.05.2002 E.P.
+	 language == PUMA_LANG_TURKISH &&  // 30.05.2002 E.P.
 		(let==i_sans_accent||let==II_dot_accent) ||
 	 let==liga_j || let==liga_exm ||
      let=='r' && 5*c->w<3*c->h)
@@ -1649,7 +1649,7 @@ static int16_t dens_let(cell *c)
   tab=tabgi;
  else
   {
-  if ( language != LANG_RUSSIAN && pitchsize )
+  if ( language != PUMA_LANG_RUSSIAN && pitchsize )
    {
    if (pitchsize>c->keg)
     tab=tabcr;

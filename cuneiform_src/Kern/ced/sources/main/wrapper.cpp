@@ -101,7 +101,7 @@ CED_FUNC(Handle) CED_CreatePage(char * _imageName,EDSIZE _sizeOfImage,EDSIZE _dp
 	ret->pageBordersInTwips.right=_pageBordersInTwips.right;
 	ret->unrecogChar=_unrecogChar;
 	ret->resizeToFit=_resizeToFit;
-	ret->recogLang=LANG_RUSENG;
+	ret->recogLang=PUMA_LANG_RUSENG;
 	if (logStream)
 	{
 		fprintf(logStream,"CreatePage returned %x\n", pointer_to_num(ret));

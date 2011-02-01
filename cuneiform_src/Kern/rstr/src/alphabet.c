@@ -880,7 +880,7 @@ for(c=cell_f()->next;c!=e;c=c->next)
   if( !c->env->scale )
     {
     criteria(c);
-    if( lang==LANG_RUSSIAN )
+    if( lang==PUMA_LANG_RUSSIAN )
       r_criteria(c,NULL);
     }
 db_pass = (uchar)dbp;

@@ -603,7 +603,7 @@ static int basedraft(CSTR_line ln, uchar isDust) {
 	i = bbs2 - (bbs3 - bbs2) / 2;
 	bsdust_upper = MIN(i, bbs1) - 2 + minrow;
 
-	if (language != LANG_ENGLISH)
+	if (language != PUMA_LANG_ENGLISH)
 		bsdust_upper -= (MAX(2, (bbs3 - bbs2) / 7));
 	bsdust_lower = bbs4 + minrow;
 

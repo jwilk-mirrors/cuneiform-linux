@@ -535,7 +535,7 @@ static uchar wide_let[]={ 0xec,0xe6,0xf8,0xf9,0xfe,0xce,0xcf };
     case  WID_S:  if (!(MEMCHR(wide_let,
                             *((char  *)&(obj->pos[pi2].orig.code))
                             ,sizeof wide_let )) ||
-                            language != LANG_RUSSIAN ) return (No);
+                            language != PUMA_LANG_RUSSIAN ) return (No);
                   break;
   }
  switch(a->cond_sr12)

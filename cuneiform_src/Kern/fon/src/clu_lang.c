@@ -72,10 +72,10 @@ static Bool32 CyrilLanguage(void)
     if( langCyrilRoman == 2)
         return FALSE;
 	if (
-		 language == LANG_RUSSIAN   || language == LANG_ENGLISH ||
-         language == LANG_UKRAINIAN || language == LANG_SERBIAN ||
-         language == LANG_BULGAR    ||
-         language == LANG_RUSENG
+		 language == PUMA_LANG_RUSSIAN   || language == PUMA_LANG_ENGLISH ||
+         language == PUMA_LANG_UKRAINIAN || language == PUMA_LANG_SERBIAN ||
+         language == PUMA_LANG_BULGAR    ||
+         language == PUMA_LANG_RUSENG
 		)
 	{
          langCyrilRoman = 1;
@@ -91,14 +91,14 @@ static Bool32 RomanLanguage(void)
     if( langCyrilRoman == 2)
         return TRUE;
 
-	if	(language == LANG_GERMAN ||
-     language == LANG_FRENCH || language == LANG_SWEDISH ||
-     language == LANG_ITALIAN|| language == LANG_SPANISH ||
-     language == LANG_DANISH || language == LANG_PORTUGUESE ||
-     language == LANG_DUTCH  ||
-	 language == LANG_POLISH || language == LANG_CROATIAN ||
-	 language == LANG_CZECH  || language == LANG_HUNGAR   ||
-	 language == LANG_ROMAN	 || language == LANG_SLOVENIAN||
+	if	(language == PUMA_LANG_GERMAN ||
+     language == PUMA_LANG_FRENCH || language == PUMA_LANG_SWEDISH ||
+     language == PUMA_LANG_ITALIAN|| language == PUMA_LANG_SPANISH ||
+     language == PUMA_LANG_DANISH || language == PUMA_LANG_PORTUGUESE ||
+     language == PUMA_LANG_DUTCH  ||
+	 language == PUMA_LANG_POLISH || language == PUMA_LANG_CROATIAN ||
+	 language == PUMA_LANG_CZECH  || language == PUMA_LANG_HUNGAR   ||
+	 language == PUMA_LANG_ROMAN	 || language == PUMA_LANG_SLOVENIAN||
 	 is_baltic_language(language)	|| // 09.07.2001 E.P.
 	 is_turkish_language(language)
 	 )
@@ -328,27 +328,27 @@ Bool32 NotStandardSymbol(int i)
 
 	  switch(language)
 	  {
-	   case LANG_HUNGAR:
+	   case PUMA_LANG_HUNGAR:
 		   if( is_hungar_special((uchar)i) )
 		      return TRUE;
 		   break;
-       case LANG_CZECH:
+       case PUMA_LANG_CZECH:
 		   if( is_czech_special((uchar)i) )
 		      return TRUE;
 		   break;
-	   case LANG_LITHUANIAN:
+	   case PUMA_LANG_LITHUANIAN:
 		   if( is_lithuanian_special((uchar)i) )
 		      return TRUE;
 		   break;
-       case LANG_LATVIAN:
+       case PUMA_LANG_LATVIAN:
 		   if( is_latvian_special((uchar)i) )
 		      return TRUE;
 		   break;
-       case LANG_ESTONIAN:
+       case PUMA_LANG_ESTONIAN:
 		   if( is_estonian_special((uchar)i) )
 		      return TRUE;
 		   break;
-       case LANG_TURKISH:
+       case PUMA_LANG_TURKISH:
 		   if( is_turkish_special((uchar)i) )
 		      return TRUE;
 		   break;

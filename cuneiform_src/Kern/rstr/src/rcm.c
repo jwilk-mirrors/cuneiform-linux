@@ -262,7 +262,7 @@ uchar decode_rus_ASCII_to_[256][4] = {
 		"\xe3", "\x20", "\x20", "\x20", "\x20", "\xe0", "\x95", "\x20" };
 
 char alphabet[256];
-uchar CodePages[LANG_TOTAL] = { // 29.08.2000 E.P.
+uchar CodePages[PUMA_LANG_TOTAL] = { // 29.08.2000 E.P.
 		CSTR_ANSI_CHARSET, // LANG_ENGLISH    0
 				CSTR_ANSI_CHARSET, // LANG_GERMAN     1
 				CSTR_ANSI_CHARSET, // LANG_FRENCH     2
@@ -463,10 +463,10 @@ Bool32 read_rec_file(int16_t lang, puchar pool, puchar * end) {
 static puchar box_pool_save;
 Bool32 trees_load(void) {
 	int lang = language;
-	if (language >= LANG_TOTAL)
+	if (language >= PUMA_LANG_TOTAL)
 		return FALSE;
-	if (language == LANG_RUSSIAN && multy_language)
-		lang = LANG_RUSENG;
+	if (language == PUMA_LANG_RUSSIAN && multy_language)
+		lang = PUMA_LANG_RUSENG;
 	//if( !EVNInitLanguage( tabevn1[lang], tabevn2[lang],language) )
 	//   return FALSE;
 
@@ -505,7 +505,7 @@ Bool32 set_user_alphabet(uchar * usa_ascii) {
 
 RSTR_FUNC(Bool32) RSTR_IsLanguage(uchar language)
 {
-	if(language<LANG_ENGLISH || language>=LANG_TOTAL )
+	if(language<PUMA_LANG_ENGLISH || language>=PUMA_LANG_TOTAL )
 	return FALSE;
 	chdir(lnOcrPath);
 	if(data_file_exists(tabevn1[language])==-1 )
@@ -514,16 +514,16 @@ RSTR_FUNC(Bool32) RSTR_IsLanguage(uchar language)
 	return FALSE;
 	if(data_file_exists(tab3x5[language])==-1 )
 	return FALSE;
-	if(language==LANG_RUSSIAN || language==LANG_RUSENG )
+	if(language==PUMA_LANG_RUSSIAN || language==PUMA_LANG_RUSENG )
 	{
 		if( 0 )
 		return FALSE;
 	}
 #ifdef     _USE_SPELLING_
-	if( language==LANG_RUSENG )
+	if( language==PUMA_LANG_RUSENG )
 	{
-		if( RLING_IsDictonaryAvailable( LANG_RUSSIAN , (pchar)lnOcrLingPath)<1 ||
-				RLING_IsDictonaryAvailable( LANG_ENGLISH , (pchar)lnOcrLingPath)<1)
+		if( RLING_IsDictonaryAvailable( PUMA_LANG_RUSSIAN , (pchar)lnOcrLingPath)<1 ||
+				RLING_IsDictonaryAvailable( PUMA_LANG_ENGLISH , (pchar)lnOcrLingPath)<1)
 		return FALSE;
 	}
 	else //if( language!=LANG_DIG )
@@ -807,12 +807,12 @@ RSTR_FUNC(Bool32) RSTR_EndPage( Handle myPage )
 	uchar lang=language;
 	snap_page_disable = FALSE;
 	db_status=0;
-	if( language==LANG_RUSSIAN && langSer)
-	lang=LANG_SERBIAN;
-	if( language==LANG_RUSSIAN && langUkr)
-	lang=LANG_UKRAINIAN;
-	if( language==LANG_RUSSIAN && langBul) // 01.09.2000 E.P.
-	lang=LANG_BULGAR;
+	if( language==PUMA_LANG_RUSSIAN && langSer)
+	lang=PUMA_LANG_SERBIAN;
+	if( language==PUMA_LANG_RUSSIAN && langUkr)
+	lang=PUMA_LANG_UKRAINIAN;
+	if( language==PUMA_LANG_RUSSIAN && langBul) // 01.09.2000 E.P.
+	lang=PUMA_LANG_BULGAR;
 
 	if( p2_active==0 )
 	{
@@ -1180,7 +1180,7 @@ Bool copy_cap_drop(CSTR_line lin, CSTR_line lino) {
 	ci = CSTR_GetComp(ri);
 	attr.keg = (attr.h * 2 / 3);
 	if (uvs.Alt[0].Charset == 204 && !attr.language)
-		attr.language = LANG_RUSSIAN;
+		attr.language = PUMA_LANG_RUSSIAN;
 	CSTR_SetAttr(ro, &attr);
 	co = CSTR_GetComp(ro);
 	ub.code = CCOM_UB_CAPDROPLN;
@@ -1196,7 +1196,7 @@ void rstr_make_multylang_loops(CSTR_line lino) {
 	CSTR_attr lattr;
 
 	CSTR_GetLineAttr(lino, &lattr);
-	if (lattr.language != LANG_RUSENG)
+	if (lattr.language != PUMA_LANG_RUSENG)
 		return;
 
 	for (dup = 0, rst = CSTR_GetNext(CSTR_GetFirstRaster(lino)); rst; rst
@@ -1579,11 +1579,11 @@ RSTR_FUNC(Bool32) RSTRRecognizeMain(
 	CSTR_GetLineAttr (lin, &lattr);
 	line_rerecog=FALSE;
 	start:;
-	if( multy_language && language==LANG_ENGLISH )
-	language=LANG_RUSSIAN;
-	if( multy_language && language==LANG_RUSSIAN )
+	if( multy_language && language==PUMA_LANG_ENGLISH )
+	language=PUMA_LANG_RUSSIAN;
+	if( multy_language && language==PUMA_LANG_RUSSIAN )
 	{
-		lang=LANG_RUSENG;
+		lang=PUMA_LANG_RUSENG;
 		CSTR_SetLineAttr (lin, &lattr);
 		if( p2_active )
 		correct_let_tables();
@@ -1776,12 +1776,12 @@ RSTR_FUNC(Bool32) RSTRRecognizeBL(
 	if( p2_active )
 	return FALSE;
 	start:;
-	if( multy_language && language==LANG_ENGLISH )
-	language=LANG_RUSSIAN;
-	if( multy_language && language==LANG_RUSSIAN )
+	if( multy_language && language==PUMA_LANG_ENGLISH )
+	language=PUMA_LANG_RUSSIAN;
+	if( multy_language && language==PUMA_LANG_RUSSIAN )
 	{
 		CSTR_GetLineAttr (lin, &lattr);
-		lang=LANG_RUSENG;
+		lang=PUMA_LANG_RUSENG;
 		CSTR_SetLineAttr (lin, &lattr);
 		if( p2_active )
 		correct_let_tables();
@@ -1934,8 +1934,8 @@ Bool32 Reload_lang_vocs(uchar lang) {
 	//if( lang==LANG_DIG )
 	//    return TRUE;
 	RLING_UnloadDictonary();
-	if( lang == LANG_RUSENG )
-	lang = LANG_RUSSIAN;
+	if( lang == PUMA_LANG_RUSENG )
+	lang = PUMA_LANG_RUSSIAN;
 	if ( !RLING_LoadDictonary( lang , (pchar)lnOcrLingPath) )
 	{
 		wLowRC = RSTR_ERR_NOINITRSTR;
@@ -1952,7 +1952,7 @@ Bool32 Reload_lang_vocs_aux(uchar language) {
 	//if( language==LANG_DIG )
 	//    return TRUE;
 	RLING_UnloadSecDictonary();
-	if( language == LANG_RUSSIAN || language == LANG_ENGLISH )
+	if( language == PUMA_LANG_RUSSIAN || language == PUMA_LANG_ENGLISH )
 	{
 		if ( !RLING_LoadSecDictonary( language , (pchar)lnOcrLingPath) )
 		{
@@ -2015,24 +2015,24 @@ RSTR_FUNC(Bool32) RSTR_SetOptions (RSTR_Options *opt)
 	multy_language=FALSE;
 	slanguage=language;
 
-	if( language==LANG_RUSENG )
+	if( language==PUMA_LANG_RUSENG )
 	{
-		language = LANG_RUSSIAN;
+		language = PUMA_LANG_RUSSIAN;
 		multy_language=TRUE;
 	}
-	if( language==LANG_UKRAINIAN )
+	if( language==PUMA_LANG_UKRAINIAN )
 	{
-		language = LANG_RUSSIAN;
+		language = PUMA_LANG_RUSSIAN;
 		langUkr =TRUE;
 	}
-	if( language==LANG_SERBIAN )
+	if( language==PUMA_LANG_SERBIAN )
 	{
-		language = LANG_RUSSIAN;
+		language = PUMA_LANG_RUSSIAN;
 		langSer =TRUE;
 	}
-	if( language==LANG_BULGAR ) // 01.09.2000 E.P.
+	if( language==PUMA_LANG_BULGAR ) // 01.09.2000 E.P.
 	{
-		language = LANG_RUSSIAN;
+		language = PUMA_LANG_RUSSIAN;
 		langBul =TRUE;
 	}
 
@@ -2049,16 +2049,16 @@ RSTR_FUNC(Bool32) RSTR_SetOptions (RSTR_Options *opt)
 			wLowRC = RSTR_ERR_NOINITRSTR;
 			return FALSE;
 		}
-		if( language==LANG_RUSSIAN && multy_language )
+		if( language==PUMA_LANG_RUSSIAN && multy_language )
 		{
-			if( !Reload_lang_vocs_aux(LANG_ENGLISH) )
+			if( !Reload_lang_vocs_aux(PUMA_LANG_ENGLISH) )
 			{
 				wLowRC = RSTR_ERR_NOINITRSTR;
 				return FALSE;
 			}
 		}
 	}
-	if( language== LANG_RUSSIAN )
+	if( language== PUMA_LANG_RUSSIAN )
 	{
 		cuts_glues_methode = 1;
 		cuts_point_methode = 1;
@@ -2453,24 +2453,24 @@ RSTR_FUNC(Bool32) RSTR_SetImportData (uint32_t dwType, const void * pData)
 		case RSTR_Word8_Language:
 		language=*(uchar*)pData;
 		multy_language=FALSE;
-		if( language==LANG_RUSENG )
+		if( language==PUMA_LANG_RUSENG )
 		{
-			language= LANG_RUSSIAN;
+			language= PUMA_LANG_RUSSIAN;
 			multy_language=TRUE;
 		}
-		if( language==LANG_SERBIAN )
+		if( language==PUMA_LANG_SERBIAN )
 		{
-			language= LANG_RUSSIAN;
+			language= PUMA_LANG_RUSSIAN;
 			langSer=TRUE;
 		}
-		if( language==LANG_UKRAINIAN )
+		if( language==PUMA_LANG_UKRAINIAN )
 		{
-			language= LANG_RUSSIAN;
+			language= PUMA_LANG_RUSSIAN;
 			langUkr=TRUE;
 		}
-		if( language==LANG_BULGAR ) // 01.09.2000 E.P.
+		if( language==PUMA_LANG_BULGAR ) // 01.09.2000 E.P.
 		{
-			language= LANG_RUSSIAN;
+			language= PUMA_LANG_RUSSIAN;
 			langBul=TRUE;
 		}
 

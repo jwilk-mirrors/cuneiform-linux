@@ -656,8 +656,8 @@ static int32_t p2_processWord(CSTR_line lineRaw, CSTR_line lineFon,
 						CSTR_rast firOut,int lang, int nNaklon);
 				int lang=p2globals.language;
 
-				if( lang==LANG_ENGLISH && p2globals.multy_language )
-				lang = LANG_RUSENG;
+				if( lang==PUMA_LANG_ENGLISH && p2globals.multy_language )
+				lang = PUMA_LANG_RUSENG;
 				// удалим старое-новое
 				for(lastNew=CSTR_GetNext(firstNew);lastNew;lastNew=CSTR_GetNext(firstNew))
 				CSTR_DelRaster(lastNew);
@@ -734,11 +734,11 @@ static int32_t p2_processWord(CSTR_line lineRaw, CSTR_line lineFon,
 ////////////////////////
 // язык подходит для ЛЕО ?
 static Bool IsLeoLanguage(uchar lang) {
-	if (lang == LANG_RUSSIAN && !p2globals.langBul && !p2globals.langSer)
+	if (lang == PUMA_LANG_RUSSIAN && !p2globals.langBul && !p2globals.langSer)
 		return TRUE;
 
 #ifdef _ENGLISH_LEO_
-	if (lang == LANG_ENGLISH)
+	if (lang == PUMA_LANG_ENGLISH)
 		return TRUE;
 #endif
 
@@ -752,7 +752,7 @@ static Bool32 IsLeoStandardLetter(uchar let, uchar lang) {
 	static char latin_str[] =
 			"QWERTYUIOPASDFGHJKLZXCVBNM0123456789qwertyuiopasdfghjklzxcvbnm#%+";
 
-	if (lang == LANG_RUSSIAN) {
+	if (lang == PUMA_LANG_RUSSIAN) {
 		if (!p2globals.langBul && !p2globals.langSer && !p2globals.langUkr)
 			return TRUE;
 
@@ -763,7 +763,7 @@ static Bool32 IsLeoStandardLetter(uchar let, uchar lang) {
 	}
 
 #ifdef _ENGLISH_LEO_
-	if (lang == LANG_ENGLISH)
+	if (lang == PUMA_LANG_ENGLISH)
 		return TRUE;
 
 	if (strchr(latin_str, let))
@@ -799,7 +799,7 @@ static void SetRecogAlphabet(FontInfo *fontinfo) {
 				aa = (uchar *) (&dig_str[0]);
 				specBadLeo = specBadNon;
 				specVeryBadLeo = specBadNon;
-			} else if (p2globals.language == LANG_RUSSIAN) {
+			} else if (p2globals.language == PUMA_LANG_RUSSIAN) {
 				aa = (uchar *) (&alpha_str[0]);
 				specBadLeo = specBadRus;
 				specVeryBadLeo = specVeryBadRus;
@@ -1137,7 +1137,7 @@ P2_FUNC(int32_t) p2_proc(CSTR_line lineRaw,CSTR_line lineOne,P2GLOBALS *p2glob)
 				// почистим lineFon
 				for(lastNew=CSTR_GetNext(firstNew);lastNew;lastNew=CSTR_GetNext(firstNew))
 				CSTR_DelRaster(lastNew);
-				ret = RerecogLang( lineRaw,lineFon,&dup,dupend,(uchar)(lang==LANG_RUSSIAN?LANG_ENGLISH:LANG_RUSSIAN),&fontinfo,FALSE);
+				ret = RerecogLang( lineRaw,lineFon,&dup,dupend,(uchar)(lang==PUMA_LANG_RUSSIAN?PUMA_LANG_ENGLISH:PUMA_LANG_RUSSIAN),&fontinfo,FALSE);
 				if(ret < 0)
 				break;
 
@@ -1388,11 +1388,11 @@ P2_FUNC(int32_t) p2_recog(RecRaster *recRast,RecVersions *vers,void *sinfo,int32
 
 				// discrim some let
 				if( (!specInfo || !specInfo->palkiLeo) &&
-						p2globals.language != LANG_RUSSIAN &&
+						p2globals.language != PUMA_LANG_RUSSIAN &&
 						(
 								strchr("|!1li",res->Alt[0].Code) ||
 								res->Alt[0].Code == liga_i ||
-								(language == LANG_TURKISH && // 30.05.2002 E.P.
+								(language == PUMA_LANG_TURKISH && // 30.05.2002 E.P.
 										(res->Alt[0].Code==i_sans_accent||
 												res->Alt[0].Code==II_dot_accent
 										)
@@ -1417,7 +1417,7 @@ P2_FUNC(int32_t) p2_recog(RecRaster *recRast,RecVersions *vers,void *sinfo,int32
 				// надо либо распознавать и палки -
 				// ( но в ЛЕО много ошибок на палки)
 				// либо Ы распознавать только ФОНом
-				if( p2globals.language == LANG_RUSSIAN &&
+				if( p2globals.language == PUMA_LANG_RUSSIAN &&
 						strchr("Ьь",res->Alt[0].Code)
 				)
 				return nAlt;
@@ -1446,10 +1446,10 @@ P2_FUNC(int32_t) p2_recog(RecRaster *recRast,RecVersions *vers,void *sinfo,int32
 					// owerwrite special methods leo
 					vers->Alt[ii].Method=REC_METHOD_LEO;
 					ii++;
-					if( p2globals.language==LANG_RUSSIAN &&
+					if( p2globals.language==PUMA_LANG_RUSSIAN &&
 							res->Alt[i].Code >= 194 &&
 							!strchr("абеЕ",res->Alt[i].Code) ||
-							p2globals.language != LANG_RUSSIAN &&
+							p2globals.language != PUMA_LANG_RUSSIAN &&
 							strchr("CcOoPpSsVvWwXxZz",res->Alt[i].Code)
 					)
 					{
@@ -1525,10 +1525,10 @@ static Bool32 IsKusokBroken(uchar Code) {
 	int32_t language = p2globals.language;
 
 	if (strchr(kuskiBroken, Code) || Code == liga_i || // 19.06.2001
-			Code == liga_exm || language == LANG_LITHUANIAN && (Code == 'i'
+			Code == liga_exm || language == PUMA_LANG_LITHUANIAN && (Code == 'i'
 			|| Code == i_bottom_accent) ||
 	// 30.05.2002 E.P.
-			language == LANG_TURKISH && (Code == 'i' || Code == i_sans_accent
+			language == PUMA_LANG_TURKISH && (Code == 'i' || Code == i_sans_accent
 					|| Code == 'I' || Code == II_dot_accent || Code
 					== II_roof_accent || Code == i_roof_accent))
 		return TRUE;
@@ -1562,7 +1562,7 @@ static int32_t CheckWord(CSTR_rast first, CSTR_rast last, CSTR_line lineOut,
 	int32_t porogFine;
 
 	// Nick 10.07.2002
-	if (language == LANG_TURKISH)
+	if (language == PUMA_LANG_TURKISH)
 		porogFine = TRSFI + 10;
 	else
 		porogFine = TRSFI;
@@ -1809,7 +1809,7 @@ static int RerecogInRect(Rect32 *rect, CSTR_line lineRaw, CSTR_rast firstNew,
 
 	if (rect->right - rect->left < rect->bottom - rect->top) {
 		// Nick 10.07.2002 - better for all lang ??? TO TEST
-		if (p2globals.language == LANG_TURKISH) {
+		if (p2globals.language == PUMA_LANG_TURKISH) {
 			if ((rect->right - rect->left) * 5 < (rect->bottom - rect->top) * 4)
 				return 0;
 		} else
@@ -1823,7 +1823,7 @@ static int RerecogInRect(Rect32 *rect, CSTR_line lineRaw, CSTR_rast firstNew,
 			rect->right, 4, p2globals.nIncline);
 	if (nOld <= 0) {
 		// Nick 10.07.2002   - better for all ??? TO TEST
-		if (p2globals.language == LANG_TURKISH) {
+		if (p2globals.language == PUMA_LANG_TURKISH) {
 			firOld = firstNew;
 			lasOld = lastNew;
 		} else
@@ -1860,8 +1860,8 @@ static int GlueRerecog(CSTR_rast first, CSTR_rast last, CSTR_line lineRaw,
 	uint16_t firConf = 0;
 	uchar firCut = 0;
 
-	if (lang == LANG_ENGLISH && p2globals.multy_language)
-		lang = LANG_RUSENG;
+	if (lang == PUMA_LANG_ENGLISH && p2globals.multy_language)
+		lang = PUMA_LANG_RUSENG;
 
 	//
 	for (rst = first, nLet = 0, firstNew = NULL; rst && rst != last; rst
@@ -1986,8 +1986,8 @@ static int BrokenRerecog(CSTR_rast first, CSTR_rast last, CSTR_line lineRaw,
 	int initClink = 0;
 	int leftBou;
 
-	if (language == LANG_ENGLISH && p2globals.multy_language)
-		language = LANG_RUSENG;
+	if (language == PUMA_LANG_ENGLISH && p2globals.multy_language)
+		language = PUMA_LANG_RUSENG;
 	//
 	//
 	for (rst = first, nLet = 0, firstNew = NULL; rst && rst != last;) {
@@ -2045,7 +2045,7 @@ static int BrokenRerecog(CSTR_rast first, CSTR_rast last, CSTR_line lineRaw,
 
 			CSTR_GetAttr(rst, &attr);
 			if (attr.clink >= TRSFINE && attr.col > rect.left + (rect.right
-					- rect.left) / 3 && (p2globals.language != LANG_TURKISH
+					- rect.left) / 3 && (p2globals.language != PUMA_LANG_TURKISH
 					|| attr.col > rect.left + (2* (rect .right-rect.left))/3
 					)
 
@@ -2198,8 +2198,8 @@ static int RerecogPalki(CSTR_rast first, CSTR_rast last, CSTR_line lineRaw) {
 	return 0;
 #endif
 
-	if (language == LANG_ENGLISH && p2globals.multy_language)
-		language = LANG_RUSENG;
+	if (language == PUMA_LANG_ENGLISH && p2globals.multy_language)
+		language = PUMA_LANG_RUSENG;
 
 	for (rst = first, goodBrok = 0, firstNew = NULL; rst && rst != last;) {
 		if (!CSTR_GetAttr(rst, &attr) || !CSTR_GetCollection(rst, &verOld))
@@ -2451,7 +2451,7 @@ static Bool32 SomnitelnyjBlRazrez(CSTR_rast_attr *attrFon, RecVersions *vrFon,
 }
 ///////////////////
 static Bool32 testUkrKryshki(uchar leoName, uchar fonName) {
-	if (p2globals.language == LANG_RUSSIAN && p2globals.langUkr) {
+	if (p2globals.language == PUMA_LANG_RUSSIAN && p2globals.langUkr) {
 		if (fonName == 0xa9 && (leoName == 0xda || leoName == 0xc2 || leoName
 				== 0x69))
 			return FALSE;
@@ -2492,8 +2492,8 @@ static int SelectLeoFon(CSTR_rast leoStart, CSTR_rast leoEnd,
 
 	// не порезали на палки?
 	if (nold == 1 && (palkiNew = TestPalka(fonStart, fonEnd, leoStart, leoEnd,
-			(p2globals.language == LANG_RUSSIAN || p2globals.language
-					== LANG_ENGLISH ? 215 : 199))) == 1)
+			(p2globals.language == PUMA_LANG_RUSSIAN || p2globals.language
+					== PUMA_LANG_ENGLISH ? 215 : 199))) == 1)
 		return 0;
 	// новое - с дустами ?
 	if (nold == 1 && TestNewDust(fonStart, fonEnd, leoStart, 22))

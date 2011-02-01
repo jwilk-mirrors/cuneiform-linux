@@ -215,13 +215,13 @@ loop:;
         NHcell  (C);
         TYcell  (C);
         GCcell  (C);
-   if( language == LANG_RUSSIAN && langUkr ){
+   if( language == PUMA_LANG_RUSSIAN && langUkr ){
       int16_t  i;
       for(i=0;i<C->nvers;i++)
         if( C->vers[i].let == liga_i )
           C->vers[i].let = 'i';
    }
-   if( language == LANG_RUSSIAN && langSer ){
+   if( language == PUMA_LANG_RUSSIAN && langSer ){
       int16_t  i;
       for(i=0;i<C->nvers;i++){
         if( C->vers[i].let == liga_j )
@@ -242,7 +242,7 @@ int16_t was_a = (let_sans_acc[C->vers[0].let] == 'a')?1:0;
 	int16_t res_o = 0;
 
     oa_accent_existing_flag = ACCENT_NOT_FOUND;
-    if ( language != LANG_ENGLISH )
+    if ( language != PUMA_LANG_ENGLISH )
         oa_accent_existing_flag = oa_accent_removing( C );
     if (check_two_case (C, "oa") && tsimple(C))
     {
@@ -279,7 +279,7 @@ int16_t was_a = (let_sans_acc[C->vers[0].let] == 'a')?1:0;
 	// Распознавание эстонской тильды после замены версии a->o.
 	res_o = (let_sans_acc[C->vers[0].let] == 'o')? 1:0;
 
-	if(language == LANG_ESTONIAN && was_a && res_o)
+	if(language == PUMA_LANG_ESTONIAN && was_a && res_o)
 		{
 		C->vers[0].let = 'o';
 		C->accent_leader = 0;

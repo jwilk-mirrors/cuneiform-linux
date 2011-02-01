@@ -262,7 +262,7 @@ Bool is_liga_ffl(uchar c)
 
 int16_t is_russian(uchar ch)
 {
-if( language==LANG_RUSSIAN || language==LANG_ENGLISH && multy_language )
+if( language==PUMA_LANG_RUSSIAN || language==PUMA_LANG_ENGLISH && multy_language )
 switch(fEdCode){
   case ED_ASCII: // for ASCII
    if((ch >=(uchar)' ' && ch <=(uchar)'¯') ||
@@ -571,7 +571,7 @@ return (
 int16_t is_lower(uchar ch)
 {
 
-if(language==LANG_RUSSIAN)
+if(language==PUMA_LANG_RUSSIAN)
         switch(fEdCode){
   case ED_ASCII: // for ASCII
    if((ch >=(uchar)' ' && ch <=(uchar)'¯') ||
@@ -593,7 +593,7 @@ if(language==LANG_RUSSIAN)
 }
 int16_t is_upper(uchar ch)
 {
-if(language==LANG_RUSSIAN)
+if(language==PUMA_LANG_RUSSIAN)
     switch(fEdCode){
     case ED_ASCII:
     case ED_MAC: // for ASCII and Macintosh
@@ -628,10 +628,10 @@ static const uchar lat_twins[]="cCoOpPsSvVwWxXzZ";
 int16_t twin(uchar ch)
 {
 if(!isletter(ch)) return 0;
-if( language==LANG_RUSSIAN )
+if( language==PUMA_LANG_RUSSIAN )
  if(memchr(non_twin,ch,sizeof non_twin)) return 0;
  else                                    return 1;
-if( language!=LANG_RUSSIAN && memchr(lat_twins,ch,sizeof lat_twins)) return 1;
+if( language!=PUMA_LANG_RUSSIAN && memchr(lat_twins,ch,sizeof lat_twins)) return 1;
 return 0;
 }
 
@@ -647,7 +647,7 @@ uchar get_homot(uchar ch )
 uchar to_upper( uchar c )
 {
   if ( c >= (uchar)'a' && c <= (uchar)'z') return c - (uchar)'a' + (uchar)'A';
-  if(language==LANG_RUSSIAN)
+  if(language==PUMA_LANG_RUSSIAN)
        switch(fEdCode){
   case ED_ASCII:  // for ASCII
     if ( c >= (uchar)' ' && c <= (uchar)'¯') return c - (uchar)' ' + (uchar)'€';
@@ -668,7 +668,7 @@ uchar to_upper( uchar c )
 uchar to_lower(uchar c)
 {
   if ( c >= (uchar)'A' && c <= (uchar)'Z') return c - (uchar)'A'+ (uchar)'a' ;
-  if(language==LANG_RUSSIAN)
+  if(language==PUMA_LANG_RUSSIAN)
         switch(fEdCode){
   case ED_ASCII: // for ASCII
     if ( c >= (uchar)'€' && c <= (uchar)'') return c - (uchar)'€'+ (uchar)' ' ;

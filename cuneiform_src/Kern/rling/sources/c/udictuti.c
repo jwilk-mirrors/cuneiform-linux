@@ -230,7 +230,7 @@ static byte tab_alphas [256] =
 void init_tab_alpha(uchar *s1,uchar *s2,int16_t num)
 {
 int16_t i;
-if( language==LANG_RUSSIAN && multy_language || language==LANG_RUSENG)
+if( language==PUMA_LANG_RUSSIAN && multy_language || language==PUMA_LANG_RUSENG)
   memset(&tab_alphas[128],0,128);
 else
   memset(tab_alphas,0,256);

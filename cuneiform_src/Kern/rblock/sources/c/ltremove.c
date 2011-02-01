@@ -460,7 +460,7 @@ void BlockRemove (BLOCK *p)
 // Pit 02-11-94
 void BlockEnglish(BLOCK *p)
 {
-  p -> language = LANG_ENGLISH;
+  p -> language = PUMA_LANG_ENGLISH;
 }
 // new page
 void BlockConvertToDust (BLOCK *p)

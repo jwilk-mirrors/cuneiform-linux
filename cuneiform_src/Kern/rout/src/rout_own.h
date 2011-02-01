@@ -412,10 +412,10 @@ EXTERN char gPageFilesFolder[256]	VAL("");
 
 // Таблица алфавитов
 #define kMaxSizeAlphabet 63
-EXTERN long gAT_sizeAlphabet[LANG_TOTAL] VAL({0});
-EXTERN char gAT_upper[LANG_TOTAL][kMaxSizeAlphabet+1]	VAL({0});
-EXTERN char gAT_lower[LANG_TOTAL][kMaxSizeAlphabet+1]	VAL({0});
-EXTERN char gAT_vowels[LANG_TOTAL][kMaxSizeAlphabet+1] VAL({0});
+EXTERN long gAT_sizeAlphabet[PUMA_LANG_TOTAL] VAL({0});
+EXTERN char gAT_upper[PUMA_LANG_TOTAL][kMaxSizeAlphabet+1]	VAL({0});
+EXTERN char gAT_lower[PUMA_LANG_TOTAL][kMaxSizeAlphabet+1]	VAL({0});
+EXTERN char gAT_vowels[PUMA_LANG_TOTAL][kMaxSizeAlphabet+1] VAL({0});
 
 //*****************************************************************
 // Конец глобальных данных

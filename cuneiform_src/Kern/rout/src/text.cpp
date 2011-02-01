@@ -243,9 +243,9 @@ Bool OneChar(Handle charHandle)
 		// Дифтонг oe / OE
 		case oe_deaf_sound:
 			if( FALSE == (
-					gLanguage==LANG_RUSSIAN ||
+					gLanguage==PUMA_LANG_RUSSIAN ||
 					langKaz ||   // 18.08.98 E.P.
-					gLanguage==LANG_FRENCH &&
+					gLanguage==PUMA_LANG_FRENCH &&
 					gActiveCode==ROUT_CODE_ANSI
 					) ||
 					gFormat == ROUT_FMT_HTML || gFormat == ROUT_FMT_HOCR
@@ -258,9 +258,9 @@ Bool OneChar(Handle charHandle)
 
 		case OE_cap_deaf_sound:
 			if( FALSE == (
-					gLanguage==LANG_RUSSIAN ||
+					gLanguage==PUMA_LANG_RUSSIAN ||
 					langKaz ||   // 18.08.98 E.P.
-					gLanguage==LANG_FRENCH &&
+					gLanguage==PUMA_LANG_FRENCH &&
 					gActiveCode==ROUT_CODE_ANSI
 					) ||
 					gFormat == ROUT_FMT_HTML || gFormat == ROUT_FMT_HOCR

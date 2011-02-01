@@ -198,8 +198,8 @@ int32_t p2_testAccents(CSTR_rast first,CSTR_rast last )
  int  porog ;  // TRSFINE
  int32_t goodBrok=0;
 
-   if( language==LANG_ENGLISH && p2globals.multy_language )
-                  language    = LANG_RUSENG;
+   if( language==PUMA_LANG_ENGLISH && p2globals.multy_language )
+                  language    = PUMA_LANG_RUSENG;
 //
 //
    for(rst=first; rst && rst != last; )

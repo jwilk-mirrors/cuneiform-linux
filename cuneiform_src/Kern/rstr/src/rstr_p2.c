@@ -695,15 +695,15 @@ static void p2_TestAccent()
  int savNum;
  uint16_t savFlg;
 
- if( language == LANG_LITHUANIAN )
+ if( language == PUMA_LANG_LITHUANIAN )
 	 accents = lithvanianAccent;
- else if( language == LANG_LATVIAN )
+ else if( language == PUMA_LANG_LATVIAN )
 	 accents = latvianAccent;
- else if( language == LANG_ESTONIAN )
+ else if( language == PUMA_LANG_ESTONIAN )
 	 accents = estonianAccent;
- else if( language == LANG_TURKISH )
+ else if( language == PUMA_LANG_TURKISH )
 	 accents = turkishAccent;
- else if( language!=LANG_ENGLISH )
+ else if( language!=PUMA_LANG_ENGLISH )
          accents=basicAccent;
  else
          accents=basicEngAccent;
@@ -716,7 +716,7 @@ static void p2_TestAccent()
            continue;
 
    // i_bottom_accent часто без точки!
-   if( !(language == LANG_LITHUANIAN && c->vers[0].let == i_bottom_accent ) &&
+   if( !(language == PUMA_LANG_LITHUANIAN && c->vers[0].let == i_bottom_accent ) &&
        !strchr(accents,c->vers[0].let)
 	 )
            continue;
@@ -746,7 +746,7 @@ static int32_t CritVers(cell * BC,s_glue * GL,uchar let,uchar prob)
 {
 void r_criteria(cell *c, const s_glue * gl);         // difrv
 cell cc=*BC;
- if( language==LANG_RUSSIAN )
+ if( language==PUMA_LANG_RUSSIAN )
  {
   cc.nvers = 1;
   cc.vers[0].let =let;
@@ -754,7 +754,7 @@ cell cc=*BC;
   cc.vers[1].let=cc.vers[1].prob=0;
   r_criteria(&cc,GL);
  }
- else if( language==LANG_ENGLISH )
+ else if( language==PUMA_LANG_ENGLISH )
  {
     stick_center_study(&cc,NULL,1);
  }
@@ -809,7 +809,7 @@ int nClust=0;
   {
     if( // Макры для лиг 10.09.2000 E.P.
 		liga_i == vers.Alt[i].Code ||
-		language == LANG_TURKISH &&  // 30.05.2002 E.P.
+		language == PUMA_LANG_TURKISH &&  // 30.05.2002 E.P.
 			(vers.Alt[i].Code==i_sans_accent||vers.Alt[i].Code==II_dot_accent)
 		||
 		liga_exm == vers.Alt[i].Code ||
@@ -897,7 +897,7 @@ void make_all_glues(void);
   return 0;
  }
 
- if( language!=LANG_RUSSIAN )
+ if( language!=PUMA_LANG_RUSSIAN )
  {
   cell *c;
   uchar sv = cuts_point_methode;
@@ -924,7 +924,7 @@ void make_all_glues(void);
 
   cuts_glues();
 
-  if( language == LANG_RUSSIAN )
+  if( language == PUMA_LANG_RUSSIAN )
   {
    if( !langUkr )
     proc_bI(0);//paste cutted '|'
@@ -1022,7 +1022,7 @@ int32_t p2_setBasLines(CSTR_line lineIn)
     bsdust_ps = Ps;
     i = bbs2 - (bbs3-bbs2)/2;
     bsdust_upper = MIN(i,bbs1) - 2 + minrow;
-    if (language != LANG_ENGLISH)
+    if (language != PUMA_LANG_ENGLISH)
     bsdust_upper -= (MAX(2,(bbs3-bbs2)/7));
     bsdust_lower = bbs4 + minrow;
 
@@ -1047,7 +1047,7 @@ Bool p2_NoStopSnapLEO(void)
 ///////////////
 void p2_SetP2Alphabet(int lang,char *alBet)
 {
-	memcpy(alBet,fon_alphabet_language[lang==LANG_DIG?2:lang==LANG_RUSSIAN?1:0],256);
+	memcpy(alBet,fon_alphabet_language[lang==PUMA_LANG_DIG?2:lang==PUMA_LANG_RUSSIAN?1:0],256);
     if( line_tabcell )
         alBet[liga_exm]=0;
 
@@ -1256,7 +1256,7 @@ static const uchar lat_twins[]="cCoOpPsSvVwWxXzZ";
 
 static Bool32 p2_twin(uchar ch)
 {
- if( language==LANG_RUSSIAN )
+ if( language==PUMA_LANG_RUSSIAN )
  {
   if(memchr(non_twin,ch,sizeof non_twin))
 	 return FALSE;
@@ -1503,7 +1503,7 @@ static int CheckCluHeights(int heiUp, int heiDn, int basUp, int basDn)
 	 // по соседу - для й Й
 	 if	(!(ch & v_bs1) || !(chTwin & v_bs2) )
 	 {
-		 if( language != LANG_RUSSIAN || name != 137 )
+		 if( language != PUMA_LANG_RUSSIAN || name != 137 )
 		       continue;
 
 		 prev = c->prevl;
@@ -2157,8 +2157,8 @@ static int p2_checkUpperLower(void)
  uchar sav_lang=language;
 
  // на втором проходе языки могут смешиваться!
- if( language == LANG_ENGLISH && multy_language )
-     language = LANG_RUSSIAN;
+ if( language == PUMA_LANG_ENGLISH && multy_language )
+     language = PUMA_LANG_RUSSIAN;
 
  memset(bufHeight,0,MAXHEI*sizeof(int));
  memset(bufBase,0,MAXHEI*sizeof(int));

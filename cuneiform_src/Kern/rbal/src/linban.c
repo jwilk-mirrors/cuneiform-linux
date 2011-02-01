@@ -931,7 +931,7 @@ int16_t defbas(int16_t filter) {
 	if (fl_artifact > 1)
 		return 1;
 
-	if (mult && language != LANG_RUSSIAN && all_b1(7, 8, 1, 6)) // all letters are capital
+	if (mult && language != PUMA_LANG_RUSSIAN && all_b1(7, 8, 1, 6)) // all letters are capital
 	{
 		diffs_by_cells();
 		histofl = 2;
@@ -942,8 +942,8 @@ int16_t defbas(int16_t filter) {
 	// Valdemar 03-22-94 03:22pm
 	if ( // for English
 	(((Ns3 < 4) || ((i < 5) && (3* i < ncbs)) || sum_ans) && language
-			!= LANG_RUSSIAN) || // for Russian
-			(sum_ans && language == LANG_RUSSIAN && HIST_STATISTIC == 0))
+			!= PUMA_LANG_RUSSIAN) || // for Russian
+			(sum_ans && language == PUMA_LANG_RUSSIAN && HIST_STATISTIC == 0))
 	// unable to make averages
 	{
 		if (mult && (mb1 = mult_b1(3, 4, 1, 4))) // caps only
@@ -994,7 +994,7 @@ int16_t defbas(int16_t filter) {
 		}
 
 		set_basarr(&all_bases[0], -32000, 32000);
-		if (language == LANG_RUSSIAN)
+		if (language == PUMA_LANG_RUSSIAN)
 			if (ncbs < 8 || (Ns1 + Ns2) > 2)
 				goto stand_bas;
 		// NO histo
@@ -1006,7 +1006,7 @@ int16_t defbas(int16_t filter) {
 #endif
 			if (!snap_baselines_rbal('a'))//IGOR
 			{//IGOR
-				if ((bbh < 0 && (!HIST_STATISTIC && language == LANG_RUSSIAN))
+				if ((bbh < 0 && (!HIST_STATISTIC && language == PUMA_LANG_RUSSIAN))
 						&& (!(bbh = bas_by_hist(-32000, 32000, 3))))
 				// histogramms unable to make b1/b2
 				{
@@ -1050,7 +1050,7 @@ int16_t defbas(int16_t filter) {
 			 *******************************************************/
 			if (!snap_baselines_rbal('a'))//IGOR
 			{//IGOR
-				if ((bbh < 0 && (!HIST_STATISTIC && language == LANG_RUSSIAN))
+				if ((bbh < 0 && (!HIST_STATISTIC && language == PUMA_LANG_RUSSIAN))
 						&& (!(bbh = bas_by_hist(-32000, 32000, 3))))
 				// histogramms unable to make b1/b2
 				{
@@ -1386,7 +1386,7 @@ void make_difbas(CSTR_rast B1, int16_t filter) {
 	attr.basflg = 0;
 	CSTR_SetAttr(B1, &attr);
 
-	if (language != LANG_RUSSIAN)
+	if (language != PUMA_LANG_RUSSIAN)
 		set_difflg(B1, filter);
 	else
 		set_rus_difflg(B1, filter);
@@ -1709,7 +1709,7 @@ int16_t dbsum(int16_t filter) {
 	}
 	//IGOR
 	// Valdemar 17.11.93  Russian short indefinite lines
-	if (language == LANG_RUSSIAN) {
+	if (language == PUMA_LANG_RUSSIAN) {
 		if (Ns2 == 0 && Ns1 == 0 && Ns3 > 1 && !draft_cut_3) {
 			draft_cut_3 = 1;
 			disable_twins = 2; // pPyY
@@ -1946,7 +1946,7 @@ int16_t calc_base() {
 		if (ncbs)
 		{
 			fl_artifact = 1;
-			if(language!=LANG_RUSSIAN ) {
+			if(language!=PUMA_LANG_RUSSIAN ) {
 				bbs3=sbsd/ncbs;
 				bbs1=sbsu/ncbs;
 			}
@@ -2012,7 +2012,7 @@ int16_t calc_base() {
 	else
 	Nb4=-1;
 
-	if( language == LANG_RUSSIAN && (stable_b3 || Ns3<5))
+	if( language == PUMA_LANG_RUSSIAN && (stable_b3 || Ns3<5))
 	{
 		int16_t pSt;
 		if( pSt=GetPsFromHeights(), pSt!=0)
@@ -2053,7 +2053,7 @@ int16_t calc_base() {
 	}
 	// B1, B2 absent
 	page_stat:
-	if(language == LANG_RUSSIAN)
+	if(language == PUMA_LANG_RUSSIAN)
 	{ // try to get b1,b2 from page statistic
 		int16_t tmp;
 #ifdef UFA

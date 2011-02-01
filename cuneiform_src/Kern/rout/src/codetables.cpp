@@ -174,7 +174,7 @@ static uchar iso_turkish[257]={
 /*e0*/ 0xe0,0xe1,0xe2,0xe3,0xe4,0xe5,0xe6,0xe7,0xe8,0xe9,0xea,0xeb,0xec,0xed,0xee,0xef,
 /*f0*/ 0xf0,0xf1,0xf2,0xf3,0xf4,0xf5,0xf6,0xf7,0xf8,0xf9,0xfa,0xfb,0xfc,0xfd,0xfe,0xff};
 
-static puchar iso_table[LANG_TOTAL]={
+static puchar iso_table[PUMA_LANG_TOTAL]={
   iso_euro,		// LANG_ENGLISH    0
   iso_euro,		// LANG_GERMAN     1
   iso_euro,		// LANG_FRENCH     2
@@ -332,7 +332,7 @@ static uchar ansi_turkish[257]={
 /*e0*/ 0xe0,0xe1,0xe2,0xe3,0xe4,0xe5,0xe6,0xe7,0xe8,0xe9,0xea,0xeb,0xec,0xed,0xee,0xef,
 /*f0*/ 0xf0,0xf1,0xf2,0xf3,0xf4,0xf5,0xf6,0xf7,0xf8,0xf9,0xfa,0xfb,0xfc,0xfd,0xfe,0xff};
 
-static puchar ansi_table[LANG_TOTAL]={
+static puchar ansi_table[PUMA_LANG_TOTAL]={
   ansi_euro,	// LANG_ENGLISH    0
   ansi_euro,    // LANG_GERMAN     1
   ansi_euro,    // LANG_FRENCH     2
@@ -470,7 +470,7 @@ static uchar ascii_turkish[257]={
 /*f0*/  167,0xf1,0xf2,0xf3,0xf4,0xf5, 148,0xf7,0xf8,0xf9,0xfa, 150, 129, 141, 159,0xff};
 
 
-static puchar ascii_table[LANG_TOTAL]={
+static puchar ascii_table[PUMA_LANG_TOTAL]={
   ascii_euro,    // LANG_ENGLISH    0
   ascii_euro,    // LANG_GERMAN     1
   ascii_euro,    // LANG_FRENCH     2
@@ -523,7 +523,7 @@ static uchar koi8r_cyr[257]={
 /* f*/ 0xD2,0xD3,0xD4,0xD5,0xC6,0xC8,0xC3,0xDE,0xDB,0xDD,0xDF,0xD9,0xD8,0xDC,0xC0,0xD1
             };
 
-static puchar koi8r_table[LANG_TOTAL]={
+static puchar koi8r_table[PUMA_LANG_TOTAL]={
   koi8r_cyr,     // LANG_ENGLISH    0
   ansi_euro,     // LANG_GERMAN     1
   ansi_euro,     // LANG_FRENCH     2
@@ -620,7 +620,7 @@ static uchar mac_turkish[257]={
 /*e0*/ 0xe0,0xe1, 137,0xe3,0xe4,0xe5,0xe6, 141,0xe8,0xe9,0xea,0xeb,0xec,0xed, 148,0xef,
 /*f0*/  219,0xf1,0xf2,0xf3,0xf4,0xf5, 154,0xf7,0xf8,0xf9,0xfa, 158, 159, 221, 223,0xff};
 
-static puchar mac_table[LANG_TOTAL]={
+static puchar mac_table[PUMA_LANG_TOTAL]={
   mac_euro,    // LANG_ENGLISH    0
   mac_euro,    // LANG_GERMAN     1
   mac_euro,    // LANG_FRENCH     2
@@ -808,7 +808,7 @@ long GetCodePage()
 
 */
 
-static long cp_ascii[LANG_TOTAL]={
+static long cp_ascii[PUMA_LANG_TOTAL]={
 	850,	// LANG_ENGLISH    0
 	850,	// LANG_GERMAN     1
 	850,  	// LANG_FRENCH     2
@@ -839,7 +839,7 @@ static long cp_ascii[LANG_TOTAL]={
 	875		// LANG_TURKISH	   27
 };
 
-static long cp_ansi[LANG_TOTAL]={
+static long cp_ansi[PUMA_LANG_TOTAL]={
 	1252,	// LANG_ENGLISH    0
 	1252,	// LANG_GERMAN     1
 	1252,  	// LANG_FRENCH     2

@@ -782,7 +782,7 @@ static uchar alph_digital[256]={
  // русский, английский и цифровой !!!
 uchar fon_alphabet_language[3][256];
 
-uchar *alphabet_language[LANG_TOTAL]={	// 31.08.2000 E.P.
+uchar *alphabet_language[PUMA_LANG_TOTAL]={	// 31.08.2000 E.P.
 alph_english        , // LANG_ENGLISH     0
 alph_english        , // LANG_GERMAN      1
 alph_english        , // LANG_FRENCH      2
@@ -828,7 +828,7 @@ for(i=128;i<256;i++)
     {
     switch( language )
         {
-        case    LANG_RUSSIAN:
+        case    PUMA_LANG_RUSSIAN:
             strcpy(decode_ASCII_to_[i],decode_rus_ASCII_to_[i]);
             break;
         default:
@@ -839,7 +839,7 @@ for(i=128;i<256;i++)
 if( alphabet_language[language] )
 memcpy(alphabet,alphabet_language[language],256);
 
-if(language==LANG_RUSSIAN){
+if(language==PUMA_LANG_RUSSIAN){
         let_linpos  = let_linpos_rus;
         accent_tab  = accent_tab_rus;
         let_lindef  = let_lindef_rus;
@@ -1309,7 +1309,7 @@ if(is_baltic_language(language))
 
 	}
 
-  if(language==LANG_CROATIAN){
+  if(language==PUMA_LANG_CROATIAN){
      alphabet[CROAT_D ]=1;
      alphabet[CROAT_d ]=1;
      alphabet[CROAT_SR]=1;
@@ -1396,7 +1396,7 @@ if(is_baltic_language(language))
      accent_tab[CROAT_CR]=ACC_ROOF_INV|ACC_SUPERUP;
      accent_tab[CROAT_cr]=ACC_ROOF_INV  ;
   }
-  else if(language == LANG_POLISH ){
+  else if(language == PUMA_LANG_POLISH ){
     alphabet[POLISH_SS ]=1;
     alphabet[POLISH_s  ]=1;
     alphabet[POLISH_ZZR]=1;
@@ -1552,7 +1552,7 @@ if(is_baltic_language(language))
 
     } // POLISH
 
-	if(language==LANG_CZECH){
+	if(language==PUMA_LANG_CZECH){
 
 	 // CZECH 31.08.2000 E.P.
      alphabet[AA_right_accent]=		alphabet[a_right_accent]=1;
@@ -1737,7 +1737,7 @@ if(is_baltic_language(language))
 
   } // CZECH
 
-	if(language==LANG_ROMAN){
+	if(language==PUMA_LANG_ROMAN){
 
 	 // ROMAN 31.08.2000 E.P.
      alphabet[AA_semicircle]=			alphabet[a_semicircle]=1;
@@ -1813,7 +1813,7 @@ if(is_baltic_language(language))
 
 	} // ROMAN
 
-	if(language==LANG_HUNGAR){ // 31.08.2000 E.P.
+	if(language==PUMA_LANG_HUNGAR){ // 31.08.2000 E.P.
      alphabet[AA_right_accent]=		alphabet[a_right_accent]=1;
      alphabet[EE_right_accent]=		alphabet[e_right_accent]=1;
      alphabet[II_right_accent]=		alphabet[i_right_accent]=1;
@@ -1935,7 +1935,7 @@ if(is_baltic_language(language))
 
 	} // HUNGAR
 
-	if(language==LANG_SLOVENIAN){
+	if(language==PUMA_LANG_SLOVENIAN){
 
 	 // SLOVENIAN 25.05.2001 E.P.
      alphabet[CC_inv_roof]=			alphabet[c_inv_roof]=1;
@@ -1994,7 +1994,7 @@ if(is_baltic_language(language))
   } // SLOVENIAN
 
 //  Конец фигурной скобки RUSSIAN перенес ниже  01.09.2000 E.P.
-if( language==LANG_GERMAN )
+if( language==PUMA_LANG_GERMAN )
     {
     alphabet[AA_2dot_accent ]=1;
     alphabet[a_2dot_accent  ]=1;
@@ -2004,7 +2004,7 @@ if( language==LANG_GERMAN )
     alphabet[o_2dot_accent  ]=1;
     alphabet[0xDF  ]=1;  // ??? small S-cet
     }
-if( language==LANG_FRENCH )
+if( language==PUMA_LANG_FRENCH )
     {
     alphabet[AA_left_accent ]=1;
     alphabet[AA_roof_accent ]=1;
@@ -2038,7 +2038,7 @@ if( language==LANG_FRENCH )
     alphabet[u_roof_accent ]=1;
     alphabet[u_2dot_accent ]=1;
     }
-if( language==LANG_SWEDISH )
+if( language==PUMA_LANG_SWEDISH )
     {
     alphabet[AA_2dot_accent ]=1;
     alphabet[OO_2dot_accent ]=1;
@@ -2048,7 +2048,7 @@ if( language==LANG_SWEDISH )
     alphabet[o_2dot_accent ]=1;
     alphabet[a_circle_accent ]=1;
     }
-if( language==LANG_SPANISH )
+if( language==PUMA_LANG_SPANISH )
     {
     alphabet[AA_right_accent ]=1;
     alphabet[EE_right_accent ]=1;
@@ -2066,7 +2066,7 @@ if( language==LANG_SPANISH )
     alphabet[u_2dot_accent  ]=1;
     alphabet[n_tild_accent  ]=1;
     }
-if( language==LANG_ITALIAN )
+if( language==PUMA_LANG_ITALIAN )
     {
     alphabet[AA_left_accent ]=1;
     alphabet[EE_left_accent ]=1;
@@ -2090,7 +2090,7 @@ if( language==LANG_ITALIAN )
     alphabet[u_left_accent ]=1;
     alphabet[u_right_accent]=1;
     }
-if( language==LANG_DANISH )
+if( language==PUMA_LANG_DANISH )
     {
     alphabet[AE_cap_deaf_sound  ]=1;
     alphabet[AA_circle_accent   ]=1;
@@ -2100,7 +2100,7 @@ if( language==LANG_DANISH )
     alphabet[a_circle_accent   ]=1;
     alphabet[o_crossed         ]=1;
     }
-if( language==LANG_PORTUGUESE )
+if( language==PUMA_LANG_PORTUGUESE )
     {
     alphabet[AA_left_accent ]=1;
     alphabet[AA_right_accent]=1;
@@ -2136,7 +2136,7 @@ if( language==LANG_PORTUGUESE )
     alphabet[i_2dot_accent ]=1;
     alphabet[u_roof_accent ]=1;
     }
-if( language==LANG_DUTCH )
+if( language==PUMA_LANG_DUTCH )
     {
     alphabet[AA_left_accent ]=1;
     alphabet[AA_2dot_accent ]=1;
@@ -2170,7 +2170,7 @@ if( language==LANG_DUTCH )
     }
 
 // Прибалтийские языки. 09.07.2001 E.P.
-if( language==LANG_LATVIAN )
+if( language==PUMA_LANG_LATVIAN )
 	{
 	 // LATVIAN 09.07.2001 E.P.
      alphabet[AA_macron]=			alphabet[a_macron]=1;
@@ -2317,7 +2317,7 @@ if( language==LANG_LATVIAN )
 
 	}	// LATVIAN
 
-if( language==LANG_LITHUANIAN )
+if( language==PUMA_LANG_LITHUANIAN )
 	{
 
 	 // LITHUANIAN 09.07.2001 E.P.
@@ -2453,7 +2453,7 @@ if( language==LANG_LITHUANIAN )
 
 	}	// LITHUANIAN
 
-if( language==LANG_ESTONIAN )
+if( language==PUMA_LANG_ESTONIAN )
 	{
 
 	 // ESTONIAN 09.07.2001 E.P.
@@ -2559,7 +2559,7 @@ if( language==LANG_ESTONIAN )
 	}	// ESTONIAN
 
 // Турецкий язык. 20.05.2002 E.P.
-if(language == LANG_TURKISH)
+if(language == PUMA_LANG_TURKISH)
 	{
 	// Турецкие лиги, отличные от западноевропейских
 
@@ -2784,7 +2784,7 @@ if( CodePages[language]==CSTR_ANSI_CHARSET    )
     strcpy(decode_ASCII_to_[(uchar)invers_exm        ],   "\xA1");
     strcpy(decode_ASCII_to_[(uchar)invers_qm         ],   "\xA0");
 
-	if( language==LANG_DANISH )
+	if( language==PUMA_LANG_DANISH )
 		{
 		strcpy(decode_ASCII_to_[(uchar)OO_crossed    ],   "\xD8");
 		strcpy(decode_ASCII_to_[(uchar)o_crossed     ],   "\xF8");
@@ -2898,36 +2898,36 @@ if( CodePages[language]==TURKISH_CHARSET )
 
 switch( language )
     {
-    case    LANG_ENGLISH :
-    case    LANG_GERMAN :
-    case    LANG_FRENCH :
-    case    LANG_DUTCH :
-    case    LANG_DANISH :
-    case    LANG_PORTUGUESE :
-    case    LANG_CROATIAN :
-    case    LANG_POLISH :
-    case    LANG_CZECH :	// 01.09.2000 E.P.
-    case    LANG_ROMAN :
-    case    LANG_HUNGAR :
-    case    LANG_SPANISH :
-    case    LANG_ITALIAN :
-    case    LANG_SWEDISH :
-    case    LANG_SLOVENIAN :
-	case	LANG_LATVIAN:
-	case	LANG_LITHUANIAN:
-	case	LANG_ESTONIAN:
-	case	LANG_TURKISH:
+    case    PUMA_LANG_ENGLISH :
+    case    PUMA_LANG_GERMAN :
+    case    PUMA_LANG_FRENCH :
+    case    PUMA_LANG_DUTCH :
+    case    PUMA_LANG_DANISH :
+    case    PUMA_LANG_PORTUGUESE :
+    case    PUMA_LANG_CROATIAN :
+    case    PUMA_LANG_POLISH :
+    case    PUMA_LANG_CZECH :	// 01.09.2000 E.P.
+    case    PUMA_LANG_ROMAN :
+    case    PUMA_LANG_HUNGAR :
+    case    PUMA_LANG_SPANISH :
+    case    PUMA_LANG_ITALIAN :
+    case    PUMA_LANG_SWEDISH :
+    case    PUMA_LANG_SLOVENIAN :
+	case	PUMA_LANG_LATVIAN:
+	case	PUMA_LANG_LITHUANIAN:
+	case	PUMA_LANG_ESTONIAN:
+	case	PUMA_LANG_TURKISH:
         memcpy(fon_alphabet_language[0],alphabet,256);
         fon_alphabet_language[0][0x21]=1;
         break;
-    case    LANG_RUSSIAN :
-    case    LANG_UKRAINIAN :
-    case    LANG_SERBIAN :
-    case    LANG_UZBEK :
-    case    LANG_BULGAR :	// 01.09.2000 E.P.
+    case    PUMA_LANG_RUSSIAN :
+    case    PUMA_LANG_UKRAINIAN :
+    case    PUMA_LANG_SERBIAN :
+    case    PUMA_LANG_UZBEK :
+    case    PUMA_LANG_BULGAR :	// 01.09.2000 E.P.
         memcpy(fon_alphabet_language[1],alphabet,256);
         break;
-    case    LANG_DIG :   // 20.10.2000 Nick
+    case    PUMA_LANG_DIG :   // 20.10.2000 Nick
         memcpy(fon_alphabet_language[2],alphabet,256);
 		break;
     default:
@@ -2937,9 +2937,9 @@ switch( language )
 
 Bool    is_russian_language(uchar lang)
 {
-return (lang==LANG_RUSSIAN ||lang==LANG_UKRAINIAN ||
-		lang==LANG_SERBIAN ||lang==LANG_UZBEK ||
-		lang==LANG_BULGAR	// 01.09.2000 E.P.
+return (lang==PUMA_LANG_RUSSIAN ||lang==PUMA_LANG_UKRAINIAN ||
+		lang==PUMA_LANG_SERBIAN ||lang==PUMA_LANG_UZBEK ||
+		lang==PUMA_LANG_BULGAR	// 01.09.2000 E.P.
 		);
 }
 //************************************************************
