@@ -55,7 +55,7 @@ enum PUMA_FORMATS {
     PUMA_TOHOCR = 0x4000,
 };
 
-enum Languages {
+enum Puma_Languages {
     LANG_ENGLISH    = 0,
     LANG_GERMAN     = 1,
     LANG_FRENCH     = 2,

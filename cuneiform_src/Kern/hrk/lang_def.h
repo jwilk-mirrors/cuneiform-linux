@@ -88,7 +88,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   #undef LANG_TURKISH
 #endif
 
-enum Languages {
+enum Puma_Languages {
     LANG_ENGLISH    = 0,
     LANG_GERMAN     = 1,
     LANG_FRENCH     = 2,
