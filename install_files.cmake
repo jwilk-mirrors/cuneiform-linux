@@ -10,8 +10,11 @@ else()
     set(LIBDIR "lib")
 endif()
 
+# Library versioning done as instructed in
+# http://techbase.kde.org/index.php?title=Development/Tutorials/Creating_Libraries
+
 macro(library_hook name)
-  set_target_properties(${name} PROPERTIES SOVERSION ${ABI_VERSION})
+  set_target_properties(${name} PROPERTIES VERSION ${CF_VERSION} SOVERSION ${ABI_VERSION})
   install(
     TARGETS "${name}"
     ARCHIVE DESTINATION ${LIBDIR}
