@@ -164,6 +164,8 @@ enum PUMA_EXPORT_ENTRIES {
 // It has a different name so it does not clash
 // with other libraries' boolean definitions.
 typedef int PumaBool;
+// Same for this one.
+typedef void* PumaHandle;
 
 PumaBool PUMA_Init(uint16_t wHeightCode, void* hStorage);
 PumaBool PUMA_Done();
@@ -176,6 +178,7 @@ PumaBool PUMA_XOpen(void * DIB_image, const char *identifier);
 PumaBool PUMA_XClose(void);
 PumaBool PUMA_XFinalRecognition(void);
 PumaBool PUMA_XSave(const char * lpOutFileName, int32_t lnFormat, int32_t lnCode );
+uint32_t PUMA_SaveToMemory(PumaHandle hEdPage, int32_t lnFormat, int32_t lnCode, char * lpMem, uint32_t size );
 /*
 PumaBool32 PUMA_XPageAnalysis(void);
 int32_t PUMA_EnumLanguages(int32_t nPrev );
@@ -190,7 +193,6 @@ PumaBool32 PUMA_XSetTemplate(Rect32 rect);
 PumaBool32 PUMA_XGetTemplate(Rect32 *pRect);
 PumaBool32 PUMA_Save(Handle hEdPage, const char * lpOutFileName, int32_t lnFormat, int32_t lnCode, PumaBool32 bAppend );
 PumaBool32 PUMA_XOpenClbk,(PUMAIMAGECALLBACK CallBack,const char * lpFileName);
-uint32_t PUMA_SaveToMemory(Handle hEdPage, int32_t lnFormat, int32_t lnCode, char * lpMem, uint32_t size );
 void PUMA_GetSpecialBuffer(char * szResult,int32_t *nResultLength);
 PumaBool32 PUMA_SetSpecialProject(uint8_t nSpecPrj);
 */
